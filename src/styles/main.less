@@ -1,11 +1,20 @@
 @import 'normalize';
+@import 'colors';
 
 body {
-  background: #1e1e2a;
+  background: @mainThemeColor;
+  color: #fff;
+  font: 1em 'Frutiger', 'Helvetica Neue', sans-serif;
+
+  h1 {
+    font-weight: 400;
+  }
+
+  a {
+    text-decoration: none;
+  }
 
   .section {
     margin: 1em;
-    color: #fff;
-    font: 1em sans-serif;
   }
 }
