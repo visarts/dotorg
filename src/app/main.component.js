@@ -6,7 +6,7 @@ import ArtsHome from './artsHome/artsHome.component';
 
 const Main = (props) => {
   return (
-    <main>
+    <main className="section">
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/arts' component={ArtsHome} />

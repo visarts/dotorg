@@ -1,8 +1,31 @@
 .globalNav {
   padding: 1em;
+  margin: 1em;
+  color: #fff;
+  font: 1em sans-serif;
 
   a {
-    color: palegoldenrod;
+    color: #fafafa;
     text-decoration: none;
+
+    .navDescription {
+      box-sizing: border-box;
+      width: 300px;
+      display: inline-block;
+      background-color: black;
+      padding: 1em;
+      margin-bottom: 1em;
+      margin-right: 1em;
+
+      &:hover {
+        background: #0e0e1a;
+        color: palegoldenrod;
+      }
+
+      &.selected {
+        background: #0e0e1a;
+        border: 2px solid #2e2e3a;
+      }
+    }
   }
 }
