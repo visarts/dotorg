@@ -1,0 +1,46 @@
+{
+  "authors": [
+    {
+      "fname": "Aesop",
+      "lname": "Smith",
+      "bio": "Much has been said of Aesop which cannot be detailed here.",
+      "content": {
+        "shortStories": [],
+        "nonFiction": [],
+        "tales": [
+          {
+            "title": "One Flew Over the Cuckoo's Nest",
+            "date": "1574",
+            "id": "as_tl_ofotcn"
+          },
+          {
+            "title": "Give My Love to Rose",
+            "date": "1765",
+            "id": "as_tl_gmltr"
+          }
+        ]
+      }
+    },
+    {
+      "fname": "Hans Christian",
+      "lname": "Anderson",
+      "bio": "Much has been said of Hans which cannot be detailed here.",
+      "content": {
+        "shortStories": [],
+        "nonFiction": [],
+        "tales": [
+          {
+            "title": "A Cinderella Story",
+            "date": "1902",
+            "id": "hca_tl_acs"
+          },
+          {
+            "title": "A Mermaid's Tale",
+            "date": "1899",
+            "id": "hca_tl_amt"
+          }
+        ]
+      }
+    }
+  ]
+}

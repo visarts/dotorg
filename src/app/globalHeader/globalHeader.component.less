@@ -1,16 +1,17 @@
-@import '../../styles/colors';
+@import '../../styles/globals';
 
 .globalHeader {
-  padding: .5em 2em;
   background: black;
 
   h1 {
+    display: inline-block;
     font-size: 1.5em;
-    padding: 0;
-    margin: 0;
+    margin: 0 @vMargin;
 
     a {
+      display: inline-block;
       color: @mainLinkColor;
+      padding: @hPadding @vPadding;
     }
   }
 }

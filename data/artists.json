@@ -1,0 +1,36 @@
+{
+  "artists": [
+    {
+      "fname": "Leonardo",
+      "lname": "Davinci",
+      "bio": "Much has been said of Leo which cannot be detailed here.",
+      "works": [
+        {
+          "title": "Woman's Head, Profile",
+          "date": "1426",
+          "thumb": "ld_whp_sm",
+          "image": "ld_whp_lg"
+        },
+        {
+          "title": "Man's Head, Profile",
+          "date": "1426",
+          "thumb": "ld_mhp_sm",
+          "image": "ld_mhp_lg"
+        }
+      ]
+    },
+    {
+      "fname": "Claude",
+      "lname": "Monet",
+      "bio": "Much has been said of Claude which cannot be detailed here.",
+      "works": [
+        {
+          "title": "By the Reine",
+          "date": "1887",
+          "thumb": "cm_btr_sm",
+          "image": "cm_btr_lg"
+        }
+      ]
+    }
+  ]
+}

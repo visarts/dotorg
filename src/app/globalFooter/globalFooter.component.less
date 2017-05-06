@@ -1,4 +1,4 @@
-@import '../../styles/colors';
+@import '../../styles/globals';
 
 .globalFooter {
   position: absolute;
@@ -7,9 +7,11 @@
   right: 0;
   background: @mainHighlightColor;
   color: @mainLinkColor;
-  padding: .5em 2em;
 
   .copyright {
+    display: inline-block;
     font-size: .9em;
+    margin: 0 @vMargin;
+    padding: @hPadding @vPadding;
   }
 }

@@ -10,14 +10,16 @@ const GlobalNav = (props) => {
     <nav className="globalNav">
 
 
-      <Link to='/literature'>
-        <div className={`navDescription ${litSelected}`}>
-          Literature by classic authors line the walls of this section.
+      <Link to='/literature' className={litSelected}>
+        <div className="navDescription">
+          <span className="title">The Authors</span>
+          <span className="desc">Literature by classic authors line the walls of this section.</span>
         </div>
       </Link>
-      <Link to='/arts'>
-        <div className={`navDescription ${artsSelected}`}>
-          A fantastic collection of artwork by history's greatest artists.
+      <Link to='/arts' className={artsSelected}>
+        <div className="navDescription">
+          <span className="title">The Artists</span>
+          <span className="desc">A fantastic collection of artwork by history's greatest artists.</span>
         </div>
       </Link>
     </nav>
