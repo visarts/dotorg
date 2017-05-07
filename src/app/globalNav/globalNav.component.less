@@ -7,23 +7,20 @@
   font: 1em sans-serif;
   display: flex;
   flex-wrap: wrap;
+  max-width: 1100px;
 
   a {
     width: calc(50% - 2px);
     min-width: 250px;
     display: inline-flex;
     vertical-align: top;
-    color: @mainLinkColor;
     text-decoration: none;
     background-color: black;
     transition: all .2s;
     border-left: 2px solid @mainThemeColor;
-    //margin-bottom: @hMargin;
-    //margin-right: 1em;
 
     &:hover {
       background: #0e0e1a;
-      color: palegoldenrod;
     }
 
     &.selected {
@@ -35,6 +32,10 @@
         background: #0e0e1a;
         color: palegoldenrod;
       }
+    }
+
+    &.unselected {
+      color: @darkLinkColor;
     }
 
     .navDescription {

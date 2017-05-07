@@ -5,13 +5,29 @@
 
   h1 {
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 2.5em;
     margin: 0 @vMargin;
+    transition: font-size, .2s;
+
+    &.smallLogo {
+      font-size: 1.5em;
+    }
 
     a {
       display: inline-block;
-      color: @mainLinkColor;
+      min-width: 220px;
+      color: @mainTextColor;
       padding: @hPadding @vPadding;
+
+      &:hover {
+        color: inherit;
+      }
+
+      .subHead {
+        vertical-align: middle;
+        font-size: .8em;
+        color: @darkLinkColor;
+      }
     }
   }
 }

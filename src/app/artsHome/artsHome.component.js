@@ -1,5 +1,6 @@
 import React from 'react';
-//import './home.component.less';
+import { Link } from 'react-router-dom';
+import './artsHome.component.less';
 
 const ArtsHome = (props) => {
   return (
@@ -7,6 +8,10 @@ const ArtsHome = (props) => {
       <div className="section">
         <h1>This is the arts home page</h1>
         These woods are lovely, dark, and deep, but I have promises to keep, and miles to go before I sleep
+
+        <p>
+          <Link to="/arts/davinci">DaVinci</Link>
+        </p>
       </div>
     </div>
   );

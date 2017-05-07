@@ -78,10 +78,12 @@ module.exports = {
     extensions: ['*', '.js', '.jsx', '.json', '.less'],
     alias:{
       Services: path.resolve(ROOT_PATH, 'src/app/services'),
-      Styles: path.resolve(ROOT_PATH, 'src/app/styles')
+      Styles: path.resolve(ROOT_PATH, 'src/app/styles'),
+      Data: path.resolve(ROOT_PATH, 'data')
     },
     modules: [
       path.resolve('./src'),
+      path.resolve('./data'),
       path.resolve('./node_modules')
     ]
   }

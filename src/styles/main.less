@@ -3,7 +3,7 @@
 
 body {
   background: @mainThemeColor;
-  color: #fff;
+  color: @mainTextColor;
   font: 1em 'Frutiger', 'Helvetica Neue', sans-serif;
 
   h1 {
@@ -13,6 +13,27 @@ body {
 
   a {
     text-decoration: none;
+    color: @mainLinkColor;
+
+    &:hover {
+      color: palegoldenrod;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+   }
+
+   li {
+    text-indent: 0;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
   }
 
   .section {
