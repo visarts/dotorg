@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, BrowserRouter as Router } from 'react-router-dom';
 import GlobalHeader from './globalHeader/globalHeader.component';
 import GlobalNav from './globalNav/globalNav.component';
 import GlobalFooter from './globalFooter/globalFooter.component';
@@ -29,22 +29,24 @@ export default class App extends React.Component {
 */
 
     return (
-      <div className="appMain">
-        <Route path='/' render={({location, match}) => (
-          <GlobalHeader currentPath={location.pathname} currentMatch={match} />
-        )}/>
-        <Route path='/' render={({location}) => (
-          <GlobalNav currentPath={location.pathname}  />
-        )} />
-        <Route exact path='/' component={Home} />
-        <Route exact path='/literature' component={LitHome} />
-        <Route exact path='/literature/:author' component={AuthorsHome} />
-        <Route exact path='/arts' component={ArtsHome} />
-        <Route exact path='/arts/:artist' component={ArtistsHome} />
-        <Route path='/' render={() => (
-          <GlobalFooter />
-        )} />
-      </div>
+      <Router>
+        <div className="appHome">
+          <Route path='/' render={({location, match}) => (
+            <GlobalHeader currentPath={location.pathname} currentMatch={match} />
+          )}/>
+          <Route path='/' render={({location}) => (
+            <GlobalNav currentPath={location.pathname}  />
+          )} />
+          <Route exact path='/' component={Home} />
+          <Route exact path='/literature' component={LitHome} />
+          <Route exact path='/literature/:author' component={AuthorsHome} />
+          <Route exact path='/arts' component={ArtsHome} />
+          <Route exact path='/arts/:artist' component={ArtistsHome} />
+          <Route path='/' render={() => (
+            <GlobalFooter />
+          )} />
+        </div>
+      </Router>
     )
   }
 
