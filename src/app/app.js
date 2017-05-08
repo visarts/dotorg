@@ -1,5 +1,6 @@
 import React from 'react';
-import { Route, BrowserRouter as Router } from 'react-router-dom';
+import { Route, HashRouter as Router } from 'react-router-dom';
+import dataService from 'Services/data.service';
 import GlobalHeader from './globalHeader/globalHeader.component';
 import GlobalNav from './globalNav/globalNav.component';
 import GlobalFooter from './globalFooter/globalFooter.component';
@@ -8,12 +9,14 @@ import LitHome from './litHome/litHome.component';
 import AuthorsHome from './authorsHome/authorsHome.component';
 import ArtsHome from './artsHome/artsHome.component';
 import ArtistsHome from './artistsHome/artistsHome.component';
+import AuthorLitHome from './authorLitHome/authorLitHome.component';
 
 
 export default class App extends React.Component {
 
   constructor () {
     super();
+    this.authorsData = dataService.getAuthorsData();
   }
   render () {
 
@@ -24,8 +27,8 @@ export default class App extends React.Component {
       based on which view we're in
     figure out why styles like a:hover aren't inheriting
     rethink folder structure?
-    break all artist and authors out into their own respective json files
-    create json files that are simply lists of author/artist last names, or other data
+    make a webpack plugin that will create a master json file from subs
+
 */
 
     return (
@@ -38,8 +41,11 @@ export default class App extends React.Component {
             <GlobalNav currentPath={location.pathname}  />
           )} />
           <Route exact path='/' component={Home} />
-          <Route exact path='/literature' component={LitHome} />
+          <Route exact path='/literature' render={() => (
+            <LitHome data={this.authorsData.authors} />
+          )} />
           <Route exact path='/literature/:author' component={AuthorsHome} />
+          <Route exact path='/literature/:author/:work' component={AuthorLitHome} />
           <Route exact path='/arts' component={ArtsHome} />
           <Route exact path='/arts/:artist' component={ArtistsHome} />
           <Route path='/' render={() => (

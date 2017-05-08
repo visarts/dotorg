@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { getArtistData } from 'Services/data.service';
+import dataService from 'Services/data.service';
 import './artistsHome.component.less';
 
 
 const ArtistsHome = (props) => {
   const artist = props.match.params.artist;
-  const artistData = getArtistData(artist);
+  const artistData = dataService.getArtistData(artist);
   const titles = artistData.works.map((item, index) => {
     return (
       <ul key={index}>

@@ -1,0 +1,13 @@
+{
+  "fname": "Franz",
+  "lname": "Kafka",
+  "bio": "Much has been said of Kafka which cannot be detailed here.",
+  "content": [
+    {
+      "title": "Metamorphosis",
+      "date": "1915",
+      "fileName": "kafka-metamorphosis-1915",
+      "genre": "shorts"
+    }
+  ]
+}
