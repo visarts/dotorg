@@ -45,7 +45,9 @@ export default class App extends React.Component {
             <LitHome data={this.authorsData.authors} />
           )} />
           <Route exact path='/literature/:author' component={AuthorsHome} />
-          <Route exact path='/literature/:author/:work' component={AuthorLitHome} />
+          <Route exact path='/literature/:author/:work' render={({location, match}) => (
+            <AuthorLitHome currentLocation={location} currentMatch={match} />
+          )} />
           <Route exact path='/arts' component={ArtsHome} />
           <Route exact path='/arts/:artist' component={ArtistsHome} />
           <Route path='/' render={() => (
