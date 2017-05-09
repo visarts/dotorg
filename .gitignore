@@ -1,5 +1,4 @@
 /node_modules
-/content
 /.git
 .DS_Store
 npm-debug.log

@@ -1,6 +1,22 @@
 @import 'normalize';
 @import 'globals';
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  a {
+    text-decoration: none;
+    color: @mainLinkColor;
+
+    &:hover {
+      color: @mainLinkHoverColor;
+    }
+}
 body {
   background: @mainThemeColor;
   color: @mainTextColor;
@@ -11,13 +27,7 @@ body {
     margin: 0;
   }
 
-  a {
-    text-decoration: none;
-    color: @mainLinkColor;
 
-    &:hover {
-      color: palegoldenrod;
-    }
   }
 
   ul {

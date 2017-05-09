@@ -79,7 +79,7 @@ module.exports = {
 		]
 	},
   resolve: {
-    extensions: ['*', '.js', '.jsx', '.json', '.less'],
+    extensions: ['*', '.js', '.jsx', '.json', '.less', '.html'],
     alias:{
       Services: path.resolve(ROOT_PATH, 'src/app/services'),
       Styles: path.resolve(ROOT_PATH, 'src/app/styles'),
