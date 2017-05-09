@@ -1,24 +1,24 @@
 const getAuthorData = (author) => {
-  const authorData = require(`../../../data/authors/${author}.json`);
+  const authorData = require(`authors/${author}.json`);
   return authorData;
 };
 
 const getAuthorsData = () => {
-  const authorsData = require('../../../data/authors.json');
+  const authorsData = require('authors.json');
   return authorsData;
 }
 const getArtistData = (artist) => {
-  const artistData = require(`../../../data/artists/${artist}.json`);
+  const artistData = require(`artists/${artist}.json`);
   return artistData;
 };
 
 const getArtistNames = () => {
-  const namesData = require('../../../data/names.json');
+  const namesData = require('names.json');
   return namesData.artists;
 };
 
 const getAuthorNames = () => {
-  const namesData = require('../../../data/names.json');
+  const namesData = require('names.json');
   return namesData.authors;
 };
 

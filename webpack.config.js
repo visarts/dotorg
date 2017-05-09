@@ -83,7 +83,7 @@ module.exports = {
     alias:{
       Services: path.resolve(ROOT_PATH, 'src/app/services'),
       Styles: path.resolve(ROOT_PATH, 'src/app/styles'),
-      Data: path.resolve(ROOT_PATH, 'data')
+      Literature: path.resolve(ROOT_PATH, 'content/literature')
     },
     modules: [
       path.resolve('./src'),

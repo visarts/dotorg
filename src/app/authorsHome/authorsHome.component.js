@@ -6,11 +6,11 @@ import './authorsHome.component.less';
 
 const AuthorsHome = (props) => {
   const author = props.match.params.author;
-  const authorData = dataService.getAuthorData(author);
+  const authorData = dataService.getAuthorData(author);console.log(props);
   const titles = authorData.content.map((item, index) => {
     return (
       <li key={index}>
-        <Link to={`${author}/${item.fileName}`}>{item.title}</Link>
+        {props.location.pathname !== `/literature/${author}/${item.fileName}` ? <Link to={`${author}/${item.fileName}`}>{item.title}</Link> : <span>{item.title}</span>}
       </li>
     );
   });
