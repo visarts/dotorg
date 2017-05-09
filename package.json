@@ -8,7 +8,7 @@
     "literature"
   ],
   "scripts": {
-    "start": "webpack && webpack-dev-server --watch --hot",
+    "start": "webpack-dev-server",
     "build": "webpack",
     "watch": "webpack -d --watch"
   },
@@ -24,6 +24,7 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-loader": "^7.0.0",
+    "babel-plugin-array-includes": "^2.0.3",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^0.1.16",
