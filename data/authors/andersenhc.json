@@ -24,7 +24,7 @@
     {
       "title": "At the Uttermost Parts of the Sea",
       "date": "1855",
-      "fileName": "andersen-uttermost-parts-of-the-sea-1855",
+      "fileName": "andersen-at-the-uttermost-parts-of-the-sea-1855",
       "genre": "tales"
     },
     {
@@ -120,7 +120,7 @@
     {
       "title": "The Child in the Grave",
       "date": "1859",
-      "fileName": "andersen-child-in-the-grave",
+      "fileName": "andersen-child-in-the-grave-1859",
       "genre": "tales"
     },
     {
@@ -316,6 +316,12 @@
       "genre": "tales"
     },
     {
+      "title": "Godfather's Picture Book",
+      "date": "1868",
+      "fileName": "andersen-godfathers-picture-book-1868",
+      "genre": "tales"
+    },
+    {
       "title": "Golden Treasure",
       "date": "1865",
       "fileName": "andersen-golden-treasure-1865",
@@ -336,7 +342,7 @@
     {
       "title": "Great-Grandfather",
       "date": "1870",
-      "fileName": "andersen-great-grandmother-1870",
+      "fileName": "andersen-great-grandfather-1870",
       "genre": "tales"
     },
     {
@@ -954,7 +960,7 @@
     {
       "title": "What One Can Invent",
       "date": "1869",
-      "fileName": "andersen-what-no-one-can-invent-1869",
+      "fileName": "andersen-what-one-can-invent-1869",
       "genre": "tales"
     },
     {
