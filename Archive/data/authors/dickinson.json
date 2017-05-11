@@ -1,0 +1,127 @@
+{
+  "fname": "Emily",
+  "lname": "Dickinson",
+  "bio": "Much has been said of Emily which cannot be detailed here.",
+  "content": [
+    {
+      "title": "Because I Could Not Stop for Death",
+      "date": "1890",
+      "fileName": "dickinson-because-i-could-not-stop-for-death-1890",
+      "genre": "poetry"
+    },
+    {
+      "title": "A Book",
+      "date": "1873",
+      "fileName": "dickinson-book-1873",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Bustle in a House",
+      "date": "1890",
+      "fileName": "dickinson-bustle-in-a-house-1890",
+      "genre": "poetry"
+    },
+    {
+      "title": "Come slowly, Eden!",
+      "date": "1861",
+      "fileName": "dickinson-come-slowly-eden-1861",
+      "genre": "poetry"
+    },
+    {
+      "title": "Death Sets A Thing",
+      "date": "1924",
+      "fileName": "dickinson-death-sets-a-thing-1924",
+      "genre": "poetry"
+    },
+    {
+      "title": "Heart, we will forget him!",
+      "date": "1924",
+      "fileName": "dickinson-heart-we-will-forget-him-1924",
+      "genre": "poetry"
+    },
+    {
+      "title": "Hope is the Thing with Feathers",
+      "date": "1891",
+      "fileName": "dickinson-hope-is-the-thing-with-feathers-1891",
+      "genre": "poetry"
+    },
+    {
+      "title": "I Felt a Funeral in My Brain",
+      "date": "1861",
+      "fileName": "dickinson-i-felt-a-funeral-in-my-brain-1861",
+      "genre": "poetry"
+    },
+    {
+      "title": "I Went to Heaven",
+      "date": "1863",
+      "fileName": "dickinson-i-went-to-heaven-1863",
+      "genre": "poetry"
+    },
+    {
+      "title": "My Life Closed Twice Before it Closed",
+      "date": "1896",
+      "fileName": "dickinson-my-life-closed-twice-before-it-closed-1896",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Mystery of Pain",
+      "date": "1896",
+      "fileName": "dickinson-mystery-of-pain-1896",
+      "genre": "poetry"
+    },
+    {
+      "title": "A Narrow Fellow in the Grass",
+      "date": "1866",
+      "fileName": "dickinson-narrow-fellow-in-the-grass-1866",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Only News I Know",
+      "date": "1864",
+      "fileName": "dickinson-only-news-i-know-1864",
+      "genre": "poetry"
+    },
+    {
+      "title": "Success is Counted Sweetest",
+      "date": "1864",
+      "fileName": "dickinson-success-is-counted-sweetest-1864",
+      "genre": "poetry"
+    },
+    {
+      "title": "Summer Shower",
+      "date": "1890",
+      "fileName": "dickinson-summer-showers-1890",
+      "genre": "poetry"
+    },
+    {
+      "title": "There is a Word",
+      "date": "1924",
+      "fileName": "dickinson-there-is-a-word-1924",
+      "genre": "poetry"
+    },
+    {
+      "title": "This is my Letter to the World",
+      "date": "1890",
+      "fileName": "dickinson-this-is-my-letter-to-the-world-1890",
+      "genre": "poetry"
+    },
+    {
+      "title": "A Thunderstorm",
+      "date": "1896",
+      "fileName": "dickinson-thunderstorm-1896",
+      "genre": "poetry"
+    },
+    {
+      "title": "We Like March",
+      "date": "1924",
+      "fileName": "dickinson-we-like-march-1924",
+      "genre": "poetry"
+    },
+    {
+      "title": "When Roses Cease to Bloom, Dear",
+      "date": "1924",
+      "fileName": "dickinson-when-roses-cease-to-bloom-dear-1924",
+      "genre": "poetry"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+@import 'normalize';
+@import 'globals';
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  a {
+    text-decoration: none;
+    color: @mainLinkColor;
+
+    &:hover {
+      color: @mainLinkHoverColor;
+    }
+}
+body {
+  background: @mainThemeColor;
+  color: @mainTextColor;
+  font: 1em 'Frutiger', 'Helvetica Neue', sans-serif;
+
+  h1 {
+    font-weight: 400;
+    margin: 0;
+  }
+
+
+  }
+
+  ul {
+    list-style-type: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+   }
+
+   li {
+    text-indent: 0;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  pre {
+    font: inherit;
+  }
+  .section {
+    margin: @vMargin;
+    padding: @hMargin;
+  }
+}

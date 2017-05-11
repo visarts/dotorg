@@ -2015,6 +2015,20 @@
       ]
     },
     {
+      "fname": "O.",
+      "lname": "Henry",
+      "authorKey": "ohenry",
+      "bio": "Much has been said of O. Henry which cannot be detailed here.",
+      "content": [
+        {
+          "title": "",
+          "date": "",
+          "fileName": "",
+          "genre": ""
+        }
+      ]
+    },
+    {
       "fname": "Franz",
       "lname": "Kafka",
       "authorKey": "kafka",
@@ -2035,158 +2049,6 @@
       "bio": "Much has been said of Rudyard which cannot be detailed here.",
       "content": [
         {
-          "title": "The Answer",
-          "date": "1892",
-          "fileName": "kipling-answer-1892",
-          "genre": "poetry"
-        },
-        {
-          "title": "The Ballad Of East And West",
-          "date": "1899",
-          "fileName": "kipling-ballad-of-east-and-west-1899",
-          "genre": "poetry"
-        },
-        {
-          "title": "The Beginning of the Armadillos",
-          "date": "1900",
-          "fileName": "kipling-beginning-of-the-armadillos-1900",
-          "genre": "shorts"
-        },
-        {
-          "title": "The Butterfly That Stamped",
-          "date": "1903",
-          "fileName": "kipling-butterfly-that-stamped-1903",
-          "genre": "shorts"
-        },
-        {
-          "title": "Cities And Thrones And Powers",
-          "date": "1906",
-          "fileName": "kipling-cities-and-thrones-and-powers-1903",
-          "genre": "poetry"
-        },
-        {
-          "title": "Dedication",
-          "date": "1897",
-          "fileName": "kipling-dedication-1897",
-          "genre": "poetry"
-        },
-        {
-          "title": "Edgehill Fight",
-          "date": "1911",
-          "fileName": "kipling-edgehill-fight-1897",
-          "genre": "poetry"
-        },
-        {
-          "title": "The Elephant's Child",
-          "date": "1902",
-          "fileName": "kipling-elephants-child-1902",
-          "genre": "shorts"
-        },
-        {
-          "title": "The Explanation",
-          "date": "1890",
-          "fileName": "kipling-explanation-1890",
-          "genre": "poetry"
-        },
-        {
-          "title": "Fuzzy-wuzzy",
-          "date": "1892",
-          "fileName": "kipling-fuzzy-wuzzy-1892",
-          "genre": "poetry"
-        },
-        {
-          "title": "Gunga Din",
-          "date": "1892",
-          "fileName": "kipling-gunga-din-1892",
-          "genre": "poetry"
-        },
-        {
-          "title": "How the Alphabet Was Made",
-          "date": "1923",
-          "fileName": "kipling-how-the-alphabet-was-made-1923",
-          "genre": "shorts"
-        },
-        {
-          "title": "How the Camel Got His Hump",
-          "date": "1902",
-          "fileName": "kipling-how-the-camel-got-his-hump-1902",
-          "genre": "shorts"
-        },
-        {
-          "title": "The Legend Of Evil",
-          "date": "1892",
-          "fileName": "kipling-legend-of-evil-1892",
-          "genre": "poetry"
-        },
-        {
-          "title": "Loot",
-          "date": "1890",
-          "fileName": "kipling-loot-1890",
-          "genre": "poetry"
-        },
-        {
-          "title": "The Man Who Was",
-          "date": "1898",
-          "fileName": "kipling-man-who-was-1898",
-          "genre": "shorts"
-        },
-        {
-          "title": "The Man Who Would Be King",
-          "date": "1888",
-          "fileName": "kipling-man-who-would-be-king-1888",
-          "genre": "shorts"
-        },
-        {
-          "title": "The Miracles",
-          "date": "1894",
-          "fileName": "kipling-miracles-1894",
-          "genre": "poetry"
-        },
-        {
-          "title": "A Pilgrim's Way",
-          "date": "1918",
-          "fileName": "kipling-pilgrims-way-1918",
-          "genre": "poetry"
-        },
-        {
-          "title": "Soldier, Soldier",
-          "date": "1916",
-          "fileName": "kipling-soldier-soldier-1916",
-          "genre": "poetry"
-        },
-        {
-          "title": "The Song Of The Dead",
-          "date": "1922",
-          "fileName": "kipling-song-of-the-dead-1922",
-          "genre": "poetry"
-        },
-        {
-          "title": "Tommy",
-          "date": "1890",
-          "fileName": "kipling-tommy-1890",
-          "genre": "poetry"
-        },
-        {
-          "title": "The Vampire",
-          "date": "1922",
-          "fileName": "kipling-vampire-1922",
-          "genre": "poetry"
-        },
-        {
-          "title": "When Earth's Last Picture Is Painted",
-          "date": "1892",
-          "fileName": "kipling-when-earths-last-picture-is-painted-1892",
-          "genre": "poetry"
-        }
-      ]
-    },
-    {
-      "fname": "Henry Wadsworth",
-      "lname": "Longfellow",
-      "authorKey": "longfellow",
-      "bio": "Much has been said of Mr. Longfellow which cannot be detailed here.",
-      "content": [
-        {
           "title": "",
           "date": "",
           "fileName": "",
@@ -2195,10 +2057,10 @@
       ]
     },
     {
-      "fname": "O.",
-      "lname": "Henry",
-      "authorKey": "ohenry",
-      "bio": "Much has been said of O. Henry which cannot be detailed here.",
+      "fname": "Henry Wadsworth",
+      "lname": "Longfellow",
+      "authorKey": "longfellow",
+      "bio": "Much has been said of Mr. Longfellow which cannot be detailed here.",
       "content": [
         {
           "title": "",
