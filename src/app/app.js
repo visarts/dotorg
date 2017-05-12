@@ -29,6 +29,9 @@ export default class App extends React.Component {
     rethink folder structure?
     make a webpack plugin that will create a master json file from subs
 
+    courtship of miles standish, Evangeline, song of hiawatha needs special, multi part section
+      might need some special indicator to route separately
+
 */
 
     return (

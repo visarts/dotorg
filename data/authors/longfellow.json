@@ -1,13 +1,470 @@
 {
   "fname": "Henry Wadsworth",
   "lname": "Longfellow",
+  "authorKey": "longfellow",
   "bio": "Much has been said of Mr. Longfellow which cannot be detailed here.",
   "content": [
     {
-      "title": "",
-      "date": "",
-      "fileName": "",
-      "genre": ""
+      "title": "Afternoon in February",
+      "date": "1845",
+      "fileName": "longfellow-afternoon-in-february-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "An April Day",
+      "date": "1825",
+      "fileName": "longfellow-an-april-day-1825",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Arrow and the Song",
+      "date": "1845",
+      "fileName": "longfellow-arrow-and-the-song-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Arsenal at Springfield",
+      "date": "1845",
+      "fileName": "longfellow-arsenal-at-springfield-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "Autumn",
+      "date": "1845",
+      "fileName": "longfellow-autumn-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "Autumn Within",
+      "date": "1882",
+      "fileName": "longfellow-autumn-within-1882",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Beleaguered City",
+      "date": "1839",
+      "fileName": "longfellow-beleaguered-city-1839",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Belfry of Bruges",
+      "date": "1845",
+      "fileName": "longfellow-belfry-of-bruges-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "Birds Of Passage",
+      "date": "1858",
+      "fileName": "longfellow-birds-of-passage-1858",
+      "genre": "poetry"
+    },
+    {
+      "title": "Blind Bartimeus",
+      "date": "1842",
+      "fileName": "longfellow-blind-bartimeus-1842",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Bridge",
+      "date": "1845",
+      "fileName": "longfellow-bridge-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "Burial of the Minnisink",
+      "date": "1839",
+      "fileName": "longfellow-burial-of-the-minnisink-1839",
+      "genre": "poetry"
+    },
+    {
+      "title": "Carillon",
+      "date": "1845",
+      "fileName": "longfellow-carillon-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "Changed",
+      "date": "1873",
+      "fileName": "longfellow-changed-1873",
+      "genre": "poetry"
+    },
+    {
+      "title": "Children",
+      "date": "1858",
+      "fileName": "longfellow-children-1858",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Children's Hour",
+      "date": "1863",
+      "fileName": "longfellow-childrens-hour-1863",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Courtship of Miles Standish",
+      "date": "1858",
+      "fileName": "longfellow-courtship-of-miles-standish-1858",
+      "genre": "poetry"
+    },
+    {
+      "title": "Curfew",
+      "date": "1845",
+      "fileName": "longfellow-curfew-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "Dante",
+      "date": "1845",
+      "fileName": "longfellow-dante-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Day is Done",
+      "date": "1845",
+      "fileName": "longfellow-day-is-done-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "Drinking Song",
+      "date": "1845",
+      "fileName": "longfellow-drinking-song-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "Endymion",
+      "date": "1842",
+      "fileName": "longfellow-endymion-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "Evangeline: A Tale of Acadie",
+      "date": "1847",
+      "fileName": "longfellow-evangeline-1847",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Evening Star",
+      "date": "1845",
+      "fileName": "longfellow-evening-star-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "Excelsior",
+      "date": "1842",
+      "fileName": "longfellow-excelsior-1842",
+      "genre": "poetry"
+    },
+    {
+      "title": "Fata Morgana",
+      "date": "1873",
+      "fileName": "longfellow-fata-morgana-1873",
+      "genre": "poetry"
+    },
+    {
+      "title": "Flowers",
+      "date": "1839",
+      "fileName": "longfellow-flowers-1839",
+      "genre": "poetry"
+    },
+    {
+      "title": "Footsteps of Angels",
+      "date": "1839",
+      "fileName": "longfellow-footsteps-of-angels-1839",
+      "genre": "poetry"
+    },
+    {
+      "title": "A Gleam of Sunshine",
+      "date": "1845",
+      "fileName": "longfellow-gleam-of-sunshine-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "Goblet of Life",
+      "date": "1842",
+      "fileName": "longfellow-goblet-of-life-1842",
+      "genre": "poetry"
+    },
+    {
+      "title": "God's Acre",
+      "date": "1842",
+      "fileName": "longfellow-gods-acre-1842",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Good Part, That Shall Not be Taken Away",
+      "date": "1842",
+      "fileName": "longfellow-good-part-1842",
+      "genre": "poetry"
+    },
+    {
+      "title": "Hymn of the Moravian Nuns of Bethlehem",
+      "date": "1839",
+      "fileName": "longfellow-hymn-of-the-moravian-nuns-1839",
+      "genre": "poetry"
+    },
+    {
+      "title": "Hymn to the Night",
+      "date": "1839",
+      "fileName": "longfellow-hymn-to-the-night-1839",
+      "genre": "poetry"
+    },
+    {
+      "title": "It Is Not Always May",
+      "date": "1842",
+      "fileName": "longfellow-it-is-not-always-may-1842",
+      "genre": "poetry"
+    },
+    {
+      "title": "L'Envoi",
+      "date": "1839",
+      "fileName": "longfellow-l-envoi-1839",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Ladder of St. Augustine",
+      "date": "1858",
+      "fileName": "longfellow-ladder-of-st-augustine-1858",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Light of Stars",
+      "date": "1839",
+      "fileName": "longfellow-light-of-stars-1839",
+      "genre": "poetry"
+    },
+    {
+      "title": "Loss And Gain",
+      "date": "1882",
+      "fileName": "longfellow-loss-and-gain-1882",
+      "genre": "poetry"
+    },
+    {
+      "title": "Maidenhood",
+      "date": "1842",
+      "fileName": "longfellow-maidenhood-1842",
+      "genre": "poetry"
+    },
+    {
+      "title": "Mezzo Cammin",
+      "date": "1845",
+      "fileName": "longfellow-mezzo-cammin-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "Midnight Mass for the Dying Year",
+      "date": "1839",
+      "fileName": "longfellow-midnight-mass-for-the-dying-year-1839",
+      "genre": "poetry"
+    },
+    {
+      "title": "My Lost Youth",
+      "date": "1858",
+      "fileName": "longfellow-lost-youth-1858",
+      "genre": "poetry"
+    },
+    {
+      "title": "Nature",
+      "date": "1878",
+      "fileName": "longfellow-nature-1878",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Norman Baron",
+      "date": "1845",
+      "fileName": "longfellow-norman-baron-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "Nuremburg",
+      "date": "1845",
+      "fileName": "longfellow-nuremburg-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Occultation of Orion",
+      "date": "1845",
+      "fileName": "longfellow-occultation-of-orion-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Old Clock on the Stairs",
+      "date": "1845",
+      "fileName": "longfellow-old-clock-on-the-stairs-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "Paul Revere's Ride",
+      "date": "1863",
+      "fileName": "longfellow-paul-reveres-ride-1863",
+      "genre": "poetry"
+    },
+    {
+      "title": "A Psalm of Life",
+      "date": "1839",
+      "fileName": "longfellow-psalm-of-life-1839",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Quadroon Girl",
+      "date": "1842",
+      "fileName": "longfellow-quadroon-girl-1842",
+      "genre": "poetry"
+    },
+    {
+      "title": "Rain in Summer",
+      "date": "1845",
+      "fileName": "longfellow-rain-in-summer-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Rainy Day",
+      "date": "1842",
+      "fileName": "longfellow-rainy-day-1842",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Reaper and the Flowers",
+      "date": "1839",
+      "fileName": "longfellow-reaper-and-the-flowers-1839",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Republic",
+      "date": "1850",
+      "fileName": "longfellow-republic-1850",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Skeleton in Armor",
+      "date": "1842",
+      "fileName": "longfellow-skeleton-in-armor-1842",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Slave in the Dismal Swamp",
+      "date": "1842",
+      "fileName": "longfellow-slave-in-the-dismal-swamp-1842",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Slave Singing at Midnight",
+      "date": "1842",
+      "fileName": "longfellow-slave-singing-at-midnight-1842",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Slave's Dream",
+      "date": "1842",
+      "fileName": "longfellow-slaves-dream-1842",
+      "genre": "poetry"
+    },
+    {
+      "title": "Snow-Flakes",
+      "date": "1863",
+      "fileName": "longfellow-snow-flakes-1863",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Sound Of The Sea",
+      "date": "1875",
+      "fileName": "longfellow-sound-of-the-sea-1875",
+      "genre": "poetry"
+    },
+    {
+      "title": "Spirit of Poetry",
+      "date": "1828",
+      "fileName": "longfellow-spirit-of-poetry-1828",
+      "genre": "poetry"
+    },
+    {
+      "title": "St. John's, Cambridge",
+      "date": "1878",
+      "fileName": "longfellow-st-johns-cambridge-1878",
+      "genre": "poetry"
+    },
+    {
+      "title": "Sunrise on the Hills",
+      "date": "1839",
+      "fileName": "longfellow-sunrise-on-the-hills-1839",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Tide Rises, the Tide Falls",
+      "date": "1880",
+      "fileName": "longfellow-tide-rises-tide-falls-1880",
+      "genre": "poetry"
+    },
+    {
+      "title": "To a Child",
+      "date": "1845",
+      "fileName": "longfellow-to-a-child-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "To an Old Danish Song-Book",
+      "date": "1845",
+      "fileName": "longfellow-to-an-old-danish-song-book-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "To the Driving Cloud",
+      "date": "1845",
+      "fileName": "longfellow-to-the-driving-cloud-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "To the River Charles",
+      "date": "1842",
+      "fileName": "longfellow-to-the-river-charles-1842",
+      "genre": "poetry"
+    },
+    {
+      "title": "To William E. Channing",
+      "date": "1842",
+      "fileName": "longfellow-to-william-e-channing-1842",
+      "genre": "poetry"
+    },
+    {
+      "title": "Village Blacksmith",
+      "date": "1842",
+      "fileName": "longfellow-village-blacksmith-1842",
+      "genre": "poetry"
+    },
+    {
+      "title": "Voices of the Night",
+      "date": "1839",
+      "fileName": "longfellow-voices-of-the-night-1839",
+      "genre": "poetry"
+    },
+    {
+      "title": "Walter Von Der Vogelweid",
+      "date": "1845",
+      "fileName": "longfellow-walter-von-der-volgelweid-1845",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Warning",
+      "date": "1842",
+      "fileName": "longfellow-warning-1842",
+      "genre": "poetry"
+    },
+    {
+      "title": "The Witnesses",
+      "date": "1842",
+      "fileName": "longfellow-witnesses-1842",
+      "genre": "poetry"
+    },
+    {
+      "title": "Woods in Winter",
+      "date": "1839",
+      "fileName": "longfellow-woods-in-winter-1839",
+      "genre": "poetry"
+    },
+    {
+      "title": "Wreck of the Hesperus",
+      "date": "1842",
+      "fileName": "longfellow-wreck-of-the-hesperus-1842",
+      "genre": "poetry"
     }
   ]
 }
