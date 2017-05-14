@@ -3321,28 +3321,232 @@
     {
       "fname": "Mark",
       "lname": "Twain",
-      "authorKey": "twain",
       "bio": "Much has been said of Mark Twain which cannot be detailed here.",
+      "authorKey": "twain",
       "content": [
         {
-          "title": "",
-          "date": "",
-          "fileName": "",
+          "title": "At The Shrine Of St. Wagner",
+          "date": "1891",
+          "fileName": "twain-at-the-shrine-of-st-wagner-1891",
+          "genre": "nonfiction"
+        },
+        {
+          "title": "A Burlesque Biography",
+          "date": "1871",
+          "fileName": "twain-burlesque-biography-1871",
+          "genre": "shorts"
+        },
+        {
+          "title": "Californian's Tale",
+          "date": "1893",
+          "fileName": "twain-californians-tale-1893",
+          "genre": "shorts"
+        },
+        {
+          "title": "Concerning Tobacco",
+          "date": "1909",
+          "fileName": "twain-concerning-tobacco-1909",
+          "genre": "nonfiction"
+        },
+        {
+          "title": "The Death Of Jean",
+          "date": "1909",
+          "fileName": "twain-death-of-jean-1909",
+          "genre": "nonfiction"
+        },
+        {
+          "title": "A Dog's Tale",
+          "date": "1904",
+          "fileName": "twain-dogs-tale-1904",
+          "genre": "shorts"
+        },
+        {
+          "title": "Edward Mills and George Benton: A Tale",
+          "date": "1880",
+          "fileName": "twain-edward-mills-and-george-benton-1880",
           "genre": ""
+        },
+        {
+          "title": "The Five Boons of Life",
+          "date": "1902",
+          "fileName": "twain-five-boons-of-life-1902",
+          "genre": "shorts"
+        },
+        {
+          "title": "A Helpless Situation",
+          "date": "1905",
+          "fileName": "twain-helpless-situation-1905",
+          "genre": "shorts"
+        },
+        {
+          "title": "How To Make History Dates Stick",
+          "date": "1914",
+          "fileName": "twain-how-to-make-history-dates-stick-1914",
+          "genre": "nonfiction"
+        },
+        {
+          "title": "Italian with Grammar",
+          "date": "1904",
+          "fileName": "twain-italian-with-grammar-1904",
+          "genre": "shorts"
+        },
+        {
+          "title": "The Memorable Assassination",
+          "date": "1906",
+          "fileName": "twain-memorable-assassination-1906",
+          "genre": "nonfiction"
+        },
+        {
+          "title": "A Scrap of Curious History",
+          "date": "1914",
+          "fileName": "twain-scrap-of-curious-history-1914",
+          "genre": "nonfiction"
+        },
+        {
+          "title": "A Simplified Alphabet",
+          "date": "1899",
+          "fileName": "twain-simplified-alphabet-1899",
+          "genre": "nonfiction"
+        },
+        {
+          "title": "Taming The Bicycle",
+          "date": "1884",
+          "fileName": "twain-taming-the-bicycle-1884",
+          "genre": "nonfiction"
+        },
+        {
+          "title": "A Telephonic Conversation",
+          "date": "1880",
+          "fileName": "twain-telephonic-conversation-1880",
+          "genre": "shorts"
+        },
+        {
+          "title": "Was it Heaven? Or Hell?",
+          "date": "1902",
+          "fileName": "twain-was-it-heaven-or-hell-1902",
+          "genre": "shorts"
         }
       ]
     },
     {
       "fname": "Oscar",
       "lname": "Wilde",
-      "authorKey": "wilde",
       "bio": "Much has been said of Oscar which cannot be detailed here.",
+      "authorKey": "wilde",
       "content": [
         {
-          "title": "",
-          "date": "",
-          "fileName": "",
-          "genre": ""
+          "title": "The Birthday of the Infanta",
+          "date": "1891",
+          "fileName": "wilde-birthday-of-the-infanta-1891",
+          "genre": "shorts"
+        },
+        {
+          "title": "The Canterville Ghost",
+          "date": "1887",
+          "fileName": "wilde-canterville-ghost-1887",
+          "genre": "shorts"
+        },
+        {
+          "title": "The Critic as Artist",
+          "date": "1891",
+          "fileName": "wilde-critic-as-artist-1891",
+          "genre": "nonfiction"
+        },
+        {
+          "title": "De Profundis",
+          "date": "1905",
+          "fileName": "wilde-de-profundis-1905",
+          "genre": "nonfiction"
+        },
+        {
+          "title": "The Decay Of Lying: An Observation",
+          "date": "1909",
+          "fileName": "wilde-decay-of-lying-1909",
+          "genre": "nonfiction"
+        },
+        {
+          "title": "The Devoted Friend",
+          "date": "1888",
+          "fileName": "wilde-devoted-friend-1888",
+          "genre": "shorts"
+        },
+        {
+          "title": "The Fisherman and His Soul",
+          "date": "1891",
+          "fileName": "wilde-fisherman-and-his-soul-1891",
+          "genre": "shorts"
+        },
+        {
+          "title": "The Happy Prince",
+          "date": "1888",
+          "fileName": "wilde-happy-prince-1888",
+          "genre": "shorts"
+        },
+        {
+          "title": "Lord Arthur Savile's Crime",
+          "date": "1891",
+          "fileName": "wilde-lord-arthur-saviles-crime-1891",
+          "genre": "shorts"
+        },
+        {
+          "title": "The Model Millionaire",
+          "date": "1887",
+          "fileName": "wilde-model-millionaire-1887",
+          "genre": "shorts"
+        },
+        {
+          "title": "The Nightingale and the Rose",
+          "date": "1888",
+          "fileName": "wilde-nightingale-and-the-rose-1888",
+          "genre": "shorts"
+        },
+        {
+          "title": "Pen, Pencil, And Poison - A Study In Green",
+          "date": "1885",
+          "fileName": "wilde-pen-pencil-and-poison-1885",
+          "genre": "nonfiction"
+        },
+        {
+          "title": "The Remarkable Rocket",
+          "date": "1888",
+          "fileName": "wilde-remarkable-rocket-1888",
+          "genre": "shorts"
+        },
+        {
+          "title": "The Selfish Giant",
+          "date": "1888",
+          "fileName": "wilde-selfish-giant-1888",
+          "genre": "shorts"
+        },
+        {
+          "title": "The Soul of Man Under Socialism",
+          "date": "1891",
+          "fileName": "wilde-soul-of-man-under-socialism-1891",
+          "genre": "nonfiction"
+        },
+        {
+          "title": "The Sphinx Without a Secret",
+          "date": "1887",
+          "fileName": "wilde-sphinx-without-a-secret-1887",
+          "genre": "shorts"
+        },
+        {
+          "title": "The Star-Child",
+          "date": "1891",
+          "fileName": "wilde-star-child-1891",
+          "genre": "shorts"
+        },
+        {
+          "title": "The Truth of Masks - a Note On Illusion",
+          "date": "1886",
+          "fileName": "wilde-truth-of-masks-1886",
+          "genre": "nonfiction"
+        },
+        {
+          "title": "The Young King",
+          "date": "1891",
+          "fileName": "wilde-young-king-1891",
+          "genre": "shorts"
         }
       ]
     }

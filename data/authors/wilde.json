@@ -2,12 +2,121 @@
   "fname": "Oscar",
   "lname": "Wilde",
   "bio": "Much has been said of Oscar which cannot be detailed here.",
+  "authorKey": "wilde",
   "content": [
     {
-      "title": "",
-      "date": "",
-      "fileName": "",
-      "genre": ""
+      "title": "The Birthday of the Infanta",
+      "date": "1891",
+      "fileName": "wilde-birthday-of-the-infanta-1891",
+      "genre": "shorts"
+    },
+    {
+      "title": "The Canterville Ghost",
+      "date": "1887",
+      "fileName": "wilde-canterville-ghost-1887",
+      "genre": "shorts"
+    },
+    {
+      "title": "The Critic as Artist",
+      "date": "1891",
+      "fileName": "wilde-critic-as-artist-1891",
+      "genre": "nonfiction"
+    },
+    {
+      "title": "De Profundis",
+      "date": "1905",
+      "fileName": "wilde-de-profundis-1905",
+      "genre": "nonfiction"
+    },
+    {
+      "title": "The Decay Of Lying: An Observation",
+      "date": "1909",
+      "fileName": "wilde-decay-of-lying-1909",
+      "genre": "nonfiction"
+    },
+    {
+      "title": "The Devoted Friend",
+      "date": "1888",
+      "fileName": "wilde-devoted-friend-1888",
+      "genre": "shorts"
+    },
+    {
+      "title": "The Fisherman and His Soul",
+      "date": "1891",
+      "fileName": "wilde-fisherman-and-his-soul-1891",
+      "genre": "shorts"
+    },
+    {
+      "title": "The Happy Prince",
+      "date": "1888",
+      "fileName": "wilde-happy-prince-1888",
+      "genre": "shorts"
+    },
+    {
+      "title": "Lord Arthur Savile's Crime",
+      "date": "1891",
+      "fileName": "wilde-lord-arthur-saviles-crime-1891",
+      "genre": "shorts"
+    },
+    {
+      "title": "The Model Millionaire",
+      "date": "1887",
+      "fileName": "wilde-model-millionaire-1887",
+      "genre": "shorts"
+    },
+    {
+      "title": "The Nightingale and the Rose",
+      "date": "1888",
+      "fileName": "wilde-nightingale-and-the-rose-1888",
+      "genre": "shorts"
+    },
+    {
+      "title": "Pen, Pencil, And Poison - A Study In Green",
+      "date": "1885",
+      "fileName": "wilde-pen-pencil-and-poison-1885",
+      "genre": "nonfiction"
+    },
+    {
+      "title": "The Remarkable Rocket",
+      "date": "1888",
+      "fileName": "wilde-remarkable-rocket-1888",
+      "genre": "shorts"
+    },
+    {
+      "title": "The Selfish Giant",
+      "date": "1888",
+      "fileName": "wilde-selfish-giant-1888",
+      "genre": "shorts"
+    },
+    {
+      "title": "The Soul of Man Under Socialism",
+      "date": "1891",
+      "fileName": "wilde-soul-of-man-under-socialism-1891",
+      "genre": "nonfiction"
+    },
+    {
+      "title": "The Sphinx Without a Secret",
+      "date": "1887",
+      "fileName": "wilde-sphinx-without-a-secret-1887",
+      "genre": "shorts"
+    },
+    {
+      "title": "The Star-Child",
+      "date": "1891",
+      "fileName": "wilde-star-child-1891",
+      "genre": "shorts"
+    },
+    {
+      "title": "The Truth of Masks - a Note On Illusion",
+      "date": "1886",
+      "fileName": "wilde-truth-of-masks-1886",
+      "genre": "nonfiction"
+    },
+    {
+      "title": "The Young King",
+      "date": "1891",
+      "fileName": "wilde-young-king-1891",
+      "genre": "shorts"
     }
   ]
 }

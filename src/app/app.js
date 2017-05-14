@@ -32,6 +32,10 @@ export default class App extends React.Component {
     courtship of miles standish, Evangeline, song of hiawatha needs special, multi part section
       might need some special indicator to route separately
 
+    wilde -- critic as artist needs multi part (i and ii), lord arthur, possibly for shakespeare sonnet set
+
+    possibility -- adding illustrations from books to literature pages
+
 */
 
     return (
