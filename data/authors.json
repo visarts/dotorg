@@ -3289,14 +3289,32 @@
     {
       "fname": "Henry David",
       "lname": "Thoreau",
-      "authorKey": "thoreau",
       "bio": "Much has been said of Thoreau which cannot be detailed here.",
+      "authorKey": "thoreau",
       "content": [
         {
-          "title": "",
-          "date": "",
-          "fileName": "",
-          "genre": ""
+          "title": "Civil Disobedience",
+          "date": "1849",
+          "fileName": "thoreau-civil-disobedience-1849",
+          "genre": "nonfiction"
+        },
+        {
+          "title": "A Plea For Captain John Brown",
+          "date": "1859",
+          "fileName": "thoreau-plea-for-captain-john-brown-1859",
+          "genre": "nonfiction"
+        },
+        {
+          "title": "Slavery in Massachusetts",
+          "date": "1854",
+          "fileName": "thoreau-slavery-in-massachusetts-1854",
+          "genre": "nonfiction"
+        },
+        {
+          "title": "Walking",
+          "date": "1861",
+          "fileName": "thoreau-walking-1861",
+          "genre": "nonfiction"
         }
       ]
     },
