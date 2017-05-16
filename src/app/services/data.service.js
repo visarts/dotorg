@@ -12,6 +12,11 @@ const getArtistData = (artist) => {
   return artistData;
 };
 
+const getArtistsData = () => {
+  const artistsData = require('artists.json');
+  return artistsData;
+}
+
 const getArtistNames = () => {
   const namesData = require('names.json');
   return namesData.artists;
@@ -25,9 +30,10 @@ const getAuthorNames = () => {
 const dataService = {
   getAuthorData,
   getAuthorsData,
+  getAuthorNames,
   getArtistData,
-  getArtistNames,
-  getAuthorNames
+  getArtistsData,
+  getArtistNames
 }
 
 export default dataService;

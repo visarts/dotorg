@@ -17,6 +17,7 @@ export default class App extends React.Component {
   constructor () {
     super();
     this.authorsData = dataService.getAuthorsData();
+    this.artistsData = dataService.getArtistsData();
   }
   render () {
 
@@ -36,6 +37,10 @@ export default class App extends React.Component {
 
     possibility -- adding illustrations from books to literature pages
 
+    add nationality to artists and authors, medium type to art, possible sub-genre's to lit
+
+    add routing for art eras and lit genres
+
 */
 
     return (
@@ -48,6 +53,8 @@ export default class App extends React.Component {
             <GlobalNav currentPath={location.pathname}  />
           )} />
           <Route exact path='/' component={Home} />
+
+
           <Route exact path='/literature' render={() => (
             <LitHome data={this.authorsData.authors} />
           )} />
@@ -55,8 +62,14 @@ export default class App extends React.Component {
           <Route exact path='/literature/:author/:work' render={({location, match}) => (
             <AuthorLitHome data={this.authorsData.authors.filter(item => item.authorKey === match.params.author)[0]} currentMatch={match} />
           )} />
-          <Route exact path='/arts' component={ArtsHome} />
+
+
+          <Route path='/arts' render={({location, match}) => (
+            <ArtsHome data={this.artistsData.artists} currentLocation={location} />
+          )} />
           <Route exact path='/arts/:artist' component={ArtistsHome} />
+
+
           <Route path='/' render={() => (
             <GlobalFooter />
           )} />

@@ -1,13 +1,108 @@
 {
-  "fname": "",
+  "fname": "Claude",
   "lname": "Monet",
-  "bio": "Much has been said of ___ which cannot be detailed here.",
-  "era": "",
-  "works": [
+  "artistKey": "monet",
+  "bio": "Much has been said of Monet which cannot be detailed here.",
+  "era": "Impressionism",
+  "content": [
     {
-      "title": "",
-      "date": "",
-      "fileName": ""
+      "title": "Garden at Sante Adresse",
+      "date": "1867",
+      "fileName": "monet-garden-at-sante-adresse-1867"
+    },
+    {
+      "title": "Lady in the Garden",
+      "date": "1867",
+      "fileName": "monet-lady-in-the-garden-1867"
+    },
+    {
+      "title": "Bathing at la Grenouillere",
+      "date": "1869",
+      "fileName": "monet-bathing-at-la-grenouillere-1869"
+    },
+    {
+      "title": "Thames at Westminster",
+      "date": "1871",
+      "fileName": "monet-thames-at-westminster-1871"
+    },
+    {
+      "title": "Impression Sunrise",
+      "date": "1872",
+      "fileName": "monet-impression-sunrise-1872"
+    },{
+      "title": "Promenade",
+      "date": "1872",
+      "fileName": "monet-promenade-1872"
+    },
+    {
+      "title": "Monet in his Garden at Argenteuil",
+      "date": "1875",
+      "fileName": "monet-monet-in-his-garden-1875"
+    },
+    {
+      "title": "Madame Monet in Japanese Costume",
+      "date": "1876",
+      "fileName": "monet-madame-monet-in-japanese-costume-1876"
+    },
+    {
+      "title": "Boat Studio",
+      "date": "1876",
+      "fileName": "monet-boat-studio-1876"
+    },
+    {
+      "title": "Station St. Lazare",
+      "date": "1877",
+      "fileName": "monet-station-st-lazare-1877"
+    },
+    {
+      "title": "Rock Arch West of Etretat",
+      "date": "1883",
+      "fileName": "monet-rock-arch-west-of-etretat-1883"
+    },
+    {
+      "title": "Bordighera",
+      "date": "1884",
+      "fileName": "monet-bordighera-1884"
+    },
+    {
+      "title": "Corniche of Monaco",
+      "date": "1884",
+      "fileName": "monet-corniche-of-monaco-1884"
+    },
+    {
+      "title": "Woman with Umbrella",
+      "date": "1886",
+      "fileName": "monet-woman-with-umbrella-1886"
+    },
+    {
+      "title": "Haystacks",
+      "date": "1890",
+      "fileName": "monet-haystacks-1890"
+    },
+    {
+      "title": "Poplars Along the River",
+      "date": "1891",
+      "fileName": "monet-poplars-along-the-river-1891"
+    },
+    {
+      "title": "Waterloo Bridge",
+      "date": "1901",
+      "fileName": "monet-waterloo-bridge-1901"
+    },
+    {
+      "title": "Waterlillies",
+      "date": "1903",
+      "fileName": "monet-waterlillies-1903"
+    },
+    {
+      "title": "Sun Breaking Through Fog",
+      "date": "1904",
+      "fileName": "monet-sun-breaking-through-fog-1904"
+    },
+    {
+      "title": "Venice",
+      "date": "1908",
+      "fileName": "monet-venice-1908"
     }
   ]
 }

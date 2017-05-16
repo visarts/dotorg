@@ -1,13 +1,109 @@
 {
-  "fname": "",
+  "fname": "Buonarroti",
   "lname": "Michelangelo",
-  "bio": "Much has been said of ___ which cannot be detailed here.",
-  "era": "",
-  "works": [
+  "artistKey": "michelangelo",
+  "bio": "Much has been said of Michelangelo which cannot be detailed here.",
+  "era": "Renaissance",
+  "content": [
     {
-      "title": "",
-      "date": "",
-      "fileName": ""
+      "title": "Bacchus",
+      "date": "1497",
+      "fileName": "michelangelo-bacchus-1497"
+    },
+    {
+      "title": "David and Goliath",
+      "date": "1500",
+      "fileName": "michelangelo-david-and-goliath-1500"
+    },
+    {
+      "title": "Pieta",
+      "date": "1500",
+      "fileName": "michelangelo-pieta-1500"
+    },
+    {
+      "title": "David",
+      "date": "1501",
+      "fileName": "michelangelo-david-1501"
+    },
+    {
+      "title": "Holy Family",
+      "date": "1505",
+      "fileName": "michelangelo-holy-family-1505"
+    },
+    {
+      "title": "Creation of Eve",
+      "date": "1509",
+      "fileName": "michelangelo-creation-of-eve-1509"
+    },
+    {
+      "title": "Isaiah",
+      "date": "1509",
+      "fileName": "michelangelo-isaiah-1509"
+    },
+    {
+      "title": "Zechariah",
+      "date": "1509",
+      "fileName": "michelangelo-zechariah-1509"
+    },
+    {
+      "title": "Ezekiel",
+      "date": "1510",
+      "fileName": "michelangelo-ezekiel-1510"
+    },
+    {
+      "title": "Daniel",
+      "date": "1511",
+      "fileName": "michelangelo-daniel-1511"
+    },
+    {
+      "title": "Geremia",
+      "date": "1511",
+      "fileName": "michelangelo-geremia-1511"
+    },
+    {
+      "title": "Jonah",
+      "date": "1512",
+      "fileName": "michelangelo-jonah-1512"
+    },
+    {
+      "title": "The Creation",
+      "date": "1512",
+      "fileName": "michelangelo-creation-1512"
+    },
+    {
+      "title": "Sybille de Cummes",
+      "date": "1516",
+      "fileName": "michelangelo-sybille-de-cummes-1516"
+    },
+    {
+      "title": "Moses",
+      "date": "1526",
+      "fileName": "michelangelo-moses-1526"
+    },
+    {
+      "title": "Night",
+      "date": "1530",
+      "fileName": "michelangelo-night-1530"
+    },
+    {
+      "title": "Leda and the Swan",
+      "date": "1531",
+      "fileName": "michelangelo-lady-and-the-swan-1531"
+    },
+    {
+      "title": "Dawn",
+      "date": "1531",
+      "fileName": "michelangelo-dawn-1531"
+    },
+    {
+      "title": "Twilight",
+      "date": "1542",
+      "fileName": "michelangelo-twilight-1542"
+    },
+    {
+      "title": "Conversion of Saul",
+      "date": "1511",
+      "fileName": "michelangelo-conversion-of-saul-1511"
     }
   ]
 }

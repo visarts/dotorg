@@ -1,0 +1,1214 @@
+{
+  "artists": [
+    {
+      "fname": "William",
+      "lname": "Bougeureau",
+      "artistKey": "bouguereau",
+      "bio": "Much has been said of Bougeureau which cannot be detailed here.",
+      "era": "Academic",
+      "content": [
+        {
+          "title": "Dante and Virgil in Hell",
+          "date": "1850",
+          "fileName": "bougeureau-dante-and-virgil-in-hell-1850"
+        },
+        {
+          "title": "Fraternal Love",
+          "date": "1851",
+          "fileName": "bougeureau-fraternal-love-1851"
+        },
+        {
+          "title": "The Bather",
+          "date": "1870",
+          "fileName": "bougeureau-bather-1870"
+        },
+        {
+          "title": "Italian Girl Drawing Water",
+          "date": "1871",
+          "fileName": "bougeureau-italian-girl-drawing-water-1871"
+        },
+        {
+          "title": "Nymphs and Satyr",
+          "date": "1873",
+          "fileName": "bougeureau-nymphs-and-satyr-1873"
+        },
+        {
+          "title": "At the Edge of the Brook (1)",
+          "date": "1875",
+          "fileName": "bougeureau-at-the-edge-of-the-brook-1875"
+        },
+        {
+          "title": "At the Edge of the Brook (2)",
+          "date": "1879",
+          "fileName": "bougeureau-at-the-edge-of-the-brook-1879"
+        },
+        {
+          "title": "Nymphaeum",
+          "date": "1878",
+          "fileName": "bougeureau-nymphaeum-1878"
+        },
+        {
+          "title": "A Young Girl Defending Herself Against Eros",
+          "date": "1880",
+          "fileName": "bougeureau-young-girl-defending-herself-against-eros-1880"
+        },
+        {
+          "title": "Flagellation of Our Lord Jesus Christ",
+          "date": "1880",
+          "fileName": "bougeureau-flagellation-of-our-lord-jesus-christ-1880"
+        },
+        {
+          "title": "Nut Gatherers",
+          "date": "1882",
+          "fileName": "bougeureau-nut-gatherers-1882"
+        },
+        {
+          "title": "Bouguereau Biblis",
+          "date": "1884",
+          "fileName": "bougeureau-bouguereau-biblis-1884"
+        },
+        {
+          "title": "Lost Pleiad",
+          "date": "1884",
+          "fileName": "bougeureau-lost-pleiad-1884"
+        },
+        {
+          "title": "Woman with Shell",
+          "date": "1885",
+          "fileName": "bougeureau-woman-with-shell-1885"
+        },
+        {
+          "title": "Young Girl Going to Fountain",
+          "date": "1885",
+          "fileName": "bougeureau-young-girl-going-to-fountain-1885"
+        },
+        {
+          "title": "Thirst",
+          "date": "1886",
+          "fileName": "bougeureau-thirst-1886"
+        },
+        {
+          "title": "Bohemian",
+          "date": "1890",
+          "fileName": "bougeureau-bohemian-1890"
+        },
+        {
+          "title": "A Private Vocation",
+          "date": "1890",
+          "fileName": "bougeureau-private-vacation-1890"
+        },
+        {
+          "title": "Penelope",
+          "date": "1891",
+          "fileName": "bougeureau-penelope-1891"
+        },
+        {
+          "title": "Youth",
+          "date": "1893",
+          "fileName": "bougeureau-youth-1893"
+        },
+        {
+          "title": "Not too Much to Carry",
+          "date": "1895",
+          "fileName": "bougeureau-not-too-much-to-carry-1895"
+        },
+        {
+          "title": "Spring Breeze",
+          "date": "1895",
+          "fileName": "bougeureau-spring-breeze-1895"
+        },
+        {
+          "title": "A Calling",
+          "date": "1896",
+          "fileName": "bougeureau-calling-1896"
+        },
+        {
+          "title": "Wave",
+          "date": "1896",
+          "fileName": "bougeureau-wave-1896"
+        },
+        {
+          "title": "Admiration",
+          "date": "1897",
+          "fileName": "bougeureau-admiration-1897"
+        },
+        {
+          "title": "Tricoeause",
+          "date": "1897",
+          "fileName": "bougeureau-tricoeause-1897"
+        },
+        {
+          "title": "Head of a Young Girl",
+          "date": "1898",
+          "fileName": "bougeureau-head-of-a-young-girl-1898"
+        },
+        {
+          "title": "A Childhood Idyll",
+          "date": "1900",
+          "fileName": "bougeureau-childhood-idyll-1900"
+        }
+      ]
+    },
+    {
+      "fname": "Mary",
+      "lname": "Cassatt",
+      "artistKey": "cassatt",
+      "bio": "Much has been said of Cassatt which cannot be detailed here.",
+      "era": "Impressionism",
+      "content": [
+        {
+          "title": "Child Drinking Milk",
+          "date": "1868",
+          "fileName": "cassatt-child-drinking-milk-1868"
+        },
+        {
+          "title": "Bacchante",
+          "date": "1872",
+          "fileName": "cassatt-bacchante-1872"
+        },
+        {
+          "title": "During a Carnival",
+          "date": "1872",
+          "fileName": "cassatt-during-a-carnival-1872"
+        },
+        {
+          "title": "A Musical Party",
+          "date": "1874",
+          "fileName": "cassatt-musical-party-1874"
+        },
+        {
+          "title": "Portrait of a Little Girl",
+          "date": "1874",
+          "fileName": "cassatt-portrait-of-a-little-girl-1874"
+        },
+        {
+          "title": "Poppies in a Field",
+          "date": "1880",
+          "fileName": "cassatt-poppies-in-a-field-1880"
+        },
+        {
+          "title": "Lady at the Tea Table",
+          "date": "1883",
+          "fileName": "cassatt-lady-at-the-tea-table-1883"
+        },
+        {
+          "title": "Girl Arranging Her Hair",
+          "date": "1886",
+          "fileName": "cassatt-girl-arranging-her-hair-1886"
+        },
+        {
+          "title": "At the Window",
+          "date": "1889",
+          "fileName": "cassatt-at-the-window-1889"
+        },
+        {
+          "title": "Lilacs in a Window",
+          "date": "1889",
+          "fileName": "cassatt-lilacs-in-a-window-1889"
+        },
+        {
+          "title": "Contemplation",
+          "date": "1889",
+          "fileName": "cassatt-contemplation-1889"
+        },
+        {
+          "title": "Gathering Fruit",
+          "date": "1893",
+          "fileName": "cassatt-gathering-fruit-1893"
+        },
+        {
+          "title": "Girl With Banjo",
+          "date": "1894",
+          "fileName": "cassatt-girl-with-banjo-1894"
+        },
+        {
+          "title": "In the Park",
+          "date": "1894",
+          "fileName": "cassatt-in-the-park-1894"
+        },
+        {
+          "title": "On the Water",
+          "date": "1895",
+          "fileName": "cassatt-on-the-water-1895"
+        },
+        {
+          "title": "Maternal Kiss",
+          "date": "1896",
+          "fileName": "cassatt-maternal-kiss-1896"
+        },
+        {
+          "title": "Breakfast in Bed",
+          "date": "1897",
+          "fileName": "cassatt-breakfast-in-bed-1897"
+        },
+        {
+          "title": "Pattycake",
+          "date": "1897",
+          "fileName": "cassatt-pattycake-1897"
+        },
+        {
+          "title": "Mother and Child",
+          "date": "1900",
+          "fileName": "cassatt-mother-and-child-1900"
+        },
+        {
+          "title": "Margot in Blue",
+          "date": "1902",
+          "fileName": "cassatt-margot-in-blue-1902"
+        }
+      ]
+    },
+    {
+      "fname": "Paul",
+      "lname": "Cezanne",
+      "artistKey": "cezanne",
+      "bio": "Much has been said of Cezanne which cannot be detailed here.",
+      "era": "Post-Impressionism",
+      "content": [
+        {
+          "title": "The Artist's Father",
+          "date": "1866",
+          "fileName": "cezanne-artists-father-1866"
+        },
+        {
+          "title": "The Thaw",
+          "date": "1871",
+          "fileName": "cezanne-thaw-1871"
+        },
+        {
+          "title": "Hanged Man's House<",
+          "date": "1873",
+          "fileName": "cezanne-hanged-mans-house-1873"
+        },
+        {
+          "title": "Hortense Fiquet in a Striped Skirt",
+          "date": "1878",
+          "fileName": "cezanne-hortense-fiquet-in-a-striped-skirt-1878"
+        },
+        {
+          "title": "Bay From L Estaque",
+          "date": "1886",
+          "fileName": "cezanne-bay-from-l-estaque-1886"
+        },
+        {
+          "title": "Mont Sante Victoire",
+          "date": "1887",
+          "fileName": "cezanne-mont-sante-victoire-1887"
+        },
+        {
+          "title": "Still Life with Apples",
+          "date": "1890",
+          "fileName": "cezanne-still-life-with-apples-1890"
+        },
+        {
+          "title": "Boy in a Red Vest",
+          "date": "1890",
+          "fileName": "cezanne-boy-in-a-red-vest-1890"
+        },
+        {
+          "title": "The Drinker",
+          "date": "1890",
+          "fileName": "cezanne-drinker-1890"
+        },
+        {
+          "title": "Man in a Room",
+          "date": "1890",
+          "fileName": "cezanne-man-in-a-room-1890"
+        },
+        {
+          "title": "Peasant",
+          "date": "1891",
+          "fileName": "cezanne-peasant-1891"
+        },
+        {
+          "title": "The Card Players",
+          "date": "1892",
+          "fileName": "cezanne-card-players-1892"
+        },
+        {
+          "title": "Child with Straw Hat",
+          "date": "1896",
+          "fileName": "cezanne-child-with-straw-hat-1896"
+        },
+        {
+          "title": "Great Pine",
+          "date": "1896",
+          "fileName": "cezanne-great-pine-1896"
+        },
+        {
+          "title": "Joachim Gasquet",
+          "date": "1896",
+          "fileName": "cezanne-joachim-gasquet-1896"
+        },
+        {
+          "title": "Chrysanthemums",
+          "date": "1898",
+          "fileName": "cezanne-chrysanthemums-1898"
+        },
+        {
+          "title": "Apples and Oranges",
+          "date": "1899",
+          "fileName": "cezanne-apples-and-oranges-1899"
+        },
+        {
+          "title": "The Skull",
+          "date": "1900",
+          "fileName": "cezanne-skull-1900"
+        },
+        {
+          "title": "Young Italian Girl Resting",
+          "date": "1900",
+          "fileName": "cezanne-young-italian-girl-resting-1900"
+        },
+        {
+          "title": "Woman Seated in Blue",
+          "date": "1902",
+          "fileName": "cezanne-woman-seated-in-blue-1902"
+        }
+      ]
+    },
+    {
+      "fname": "Edgar",
+      "lname": "Degas",
+      "artistKey": "degas",
+      "bio": "Much has been said of Degas which cannot be detailed here.",
+      "era": "Impressionism",
+      "content": [
+        {
+          "title": "Absinthe Drinkers",
+          "date": "1876",
+          "fileName": "degas-absinthe-drinkers-1876"
+        },
+        {
+          "title": "Woman with Opera Glasses",
+          "date": "1876",
+          "fileName": "degas-woman-with-opera-glasses-1876"
+        },
+        {
+          "title": "Café-Concert at Les Ambassadeurs",
+          "date": "1877",
+          "fileName": "degas-cafe-concert-at-les-ambassadeurs-1877"
+        },
+        {
+          "title": "Dancer with Bouquet",
+          "date": "1877",
+          "fileName": "degas-dancer-with-bouquet-1877"
+        },
+        {
+          "title": "The Star",
+          "date": "1877",
+          "fileName": "degas-star-1877"
+        },
+        {
+          "title": "Song of the Dog",
+          "date": "1877",
+          "fileName": "degas-song-of-the-dog-1877"
+        },
+        {
+          "title": "Singer with a Glove",
+          "date": "1878",
+          "fileName": "degas-singer-with-a-glove-1878"
+        },
+        {
+          "title": "Dancer with a Fan",
+          "date": "1879",
+          "fileName": "degas-dancer-with-a-fan-1879"
+        },
+        {
+          "title": "Before the Entrance",
+          "date": "1880",
+          "fileName": "degas-before-the-entrance-1880"
+        },
+        {
+          "title": "Morning Bath",
+          "date": "1883",
+          "fileName": "degas-morning-bath-1883"
+        },
+        {
+          "title": "Dancer in Green Tutu",
+          "date": "1885",
+          "fileName": "degas-dancer-in-green-tutu-1885"
+        },
+        {
+          "title": "The Tub",
+          "date": "1886",
+          "fileName": "degas-tub-1886"
+        },
+        {
+          "title": "Woman Drying Herself",
+          "date": "1886",
+          "fileName": "degas-woman-drying-herself-1886"
+        },
+        {
+          "title": "Race Horses",
+          "date": "1888",
+          "fileName": "degas-race-horses-1888"
+        },
+        {
+          "title": "Woman Having Her Hair Combed",
+          "date": "1888",
+          "fileName": "degas-woman-having-her-hair-combed-1888"
+        },
+        {
+          "title": "Seated Woman Combing Her Hair",
+          "date": "1890",
+          "fileName": "degas-seated-woman-combing-her-hair-1890"
+        },
+        {
+          "title": "The Morning Bath",
+          "date": "1890",
+          "fileName": "degas-morning-bath-1890"
+        },
+        {
+          "title": "After the Bath",
+          "date": "1894",
+          "fileName": "degas-after-the-bath-1894"
+        },
+        {
+          "title": "Ballet Dancers in the Wings",
+          "date": "1895",
+          "fileName": "degas-ballet-dancers-in-the-wings-1895"
+        },
+        {
+          "title": "Two Bathers on the Grass",
+          "date": "1895",
+          "fileName": "degas-bathers-on-the-grass-1895"
+        }
+      ]
+    },
+    {
+      "fname": "Paul",
+      "lname": "Gaugin",
+      "artistKey": "gaugin",
+      "bio": "Much has been said of Gaugin which cannot be detailed here.",
+      "era": "Post-Impressionism",
+      "content": [
+        {
+          "title": "A Clearing",
+          "date": "1874",
+          "fileName": "gaugin-clearing-1874"
+        },
+        {
+          "title": "Blue Barge",
+          "date": "1882",
+          "fileName": "gaugin-blue-barge-1882"
+        },
+        {
+          "title": "Basket of Flowers",
+          "date": "1884",
+          "fileName": "gaugin-basket-of-flowers-1884"
+        },
+        {
+          "title": "Bare Trees",
+          "date": "1885",
+          "fileName": "gaugin-bare-trees-1885"
+        },
+        {
+          "title": "Boy by the Water",
+          "date": "1885",
+          "fileName": "gaugin-boy-by-the-water-1885"
+        },
+        {
+          "title": "Lilac Bouquet",
+          "date": "1885",
+          "fileName": "gaugin-lilac-bouquet-1885"
+        },
+        {
+          "title": "Rocky Coast",
+          "date": "1886",
+          "fileName": "gaugin-rocky-coast-1886"
+        },
+        {
+          "title": "By the Seashore",
+          "date": "1887",
+          "fileName": "gaugin-by-the-seashore-1887"
+        },
+        {
+          "title": "Huts Under the Trees",
+          "date": "1887",
+          "fileName": "gaugin-huts-under-the-trees-1887"
+        },
+        {
+          "title": "Apples and Bowl",
+          "date": "1888",
+          "fileName": "gaugin-apples-and-bowl-1888"
+        },
+        {
+          "title": "Blue Trees",
+          "date": "1888",
+          "fileName": "gaugin-blue-trees-1888"
+        },
+        {
+          "title": "Haymaking",
+          "date": "1888",
+          "fileName": "gaugin-haymaking-1888"
+        },
+        {
+          "title": "Madame Roulin",
+          "date": "1888",
+          "fileName": "gaugin-madame-roulin-1888"
+        },
+        {
+          "title": "Night Cafe at Arles",
+          "date": "1888",
+          "fileName": "gaugin-night-cafe-at-arles-1888"
+        },
+        {
+          "title": "Among the Lillies",
+          "date": "1889",
+          "fileName": "gaugin-among-the-lillies-1889"
+        },
+        {
+          "title": "Flutist on the Cliffs",
+          "date": "1889",
+          "fileName": "gaugin-flutist-on-the-cliffs-1889"
+        },
+        {
+          "title": "Still Life with Fan",
+          "date": "1889",
+          "fileName": "gaugin-still-life-with-fan-1889"
+        },
+        {
+          "title": "Tahitian Woman Bathing",
+          "date": "1892",
+          "fileName": "gaugin-tahitian-woman-bathing-1892"
+        },
+        {
+          "title": "Farm in Brittany",
+          "date": "1894",
+          "fileName": "gaugin-farm-in-brittany-1894"
+        },
+        {
+          "title": "Tahitian Landscape",
+          "date": "1897",
+          "fileName": "gaugin-tahitian-landscape-1897"
+        }
+      ]
+    },
+
+    {
+      "fname": "Jean-Léon",
+      "lname": "Gérôme",
+      "artistKey": "gerome",
+      "bio": "Much has been said of Gérôme which cannot be detailed here.",
+      "era": "Academic",
+      "content": [
+        {
+          "title": "The Cock Fight",
+          "date": "1846",
+          "fileName": "gerome-cock-fight-1846"
+        },
+        {
+          "title": "The Prisoner",
+          "date": "1861",
+          "fileName": "gerome-prisoner-1861"
+        },
+        {
+          "title": "Jean Bart",
+          "date": "1862",
+          "fileName": "gerome-jean-bart-1862"
+        },
+        {
+          "title": "Prayer in the Desert",
+          "date": "1864",
+          "fileName": "gerome-prayer-in-the-desert-1864"
+        },
+        {
+          "title": "Arnaut Smoking",
+          "date": "1865",
+          "fileName": "gerome-arnaut-smoking-1865"
+        },
+        {
+          "title": "Carpet Merchant in Cairo",
+          "date": "1867",
+          "fileName": "gerome-carpet-merchant-in-cairo-1867"
+        },
+        {
+          "title": "Napoleon and His General Staff",
+          "date": "1867",
+          "fileName": "gerome-napoleon-and-his-general-staff-1867"
+        },
+        {
+          "title": "Pho Xai",
+          "date": "1867",
+          "fileName": "gerome-pho-xai-1867"
+        },
+        {
+          "title": "Moorish Bath",
+          "date": "1870",
+          "fileName": "gerome-moorish-bath-1870"
+        },
+        {
+          "title": "Home From the Hunt<",
+          "date": "1876",
+          "fileName": "gerome-home-from-the-hunt-1876"
+        },
+        {
+          "title": "Sabre Dance in a Cafe",
+          "date": "1876",
+          "fileName": "gerome-sabre-dance-in-a-cafe-1876"
+        },
+        {
+          "title": "Arab Purchasing a Bride",
+          "date": "1881",
+          "fileName": "gerome-arab-purchasing-a-bride-1881"
+        },
+        {
+          "title": "Bathing Scene",
+          "date": "1881",
+          "fileName": "gerome-bathing-scene-1881"
+        },
+        {
+          "title": "Oriental Woman",
+          "date": "1882",
+          "fileName": "gerome-oriental-woman-1882"
+        },
+        {
+          "title": "Selling Slaves in Rome",
+          "date": "1886",
+          "fileName": "gerome-selling-slaves-in-rome-1886"
+        },
+        {
+          "title": "Bathsheba",
+          "date": "1889",
+          "fileName": "gerome-bathsheba-1889"
+        },
+        {
+          "title": "Love Conquers All",
+          "date": "1889",
+          "fileName": "gerome-love-conquers-all-1889"
+        },
+        {
+          "title": "Snake Charmer<",
+          "date": "1889",
+          "fileName": "gerome-snake-charmer-1889"
+        },
+        {
+          "title": "Prayer in a Mosque",
+          "date": "1892",
+          "fileName": "gerome-prayer-in-a-mosque-1892"
+        },
+        {
+          "title": "The Harem Bathing",
+          "date": "1901",
+          "fileName": "gerome-harem-bathing-1901"
+        }
+      ]
+    },
+    {
+      "fname": "William",
+      "lname": "Harnett",
+      "artistKey": "harnett",
+      "bio": "Much has been said of Harnett which cannot be detailed here.",
+      "era": "Realism",
+      "content": [
+        {
+          "title": "Mortality and Immortality",
+          "date": "1876",
+          "fileName": "harnett-mortality-and-immortality-1876"
+        },
+        {
+          "title": "Raisin Cake with Fruit and Wine",
+          "date": "1876",
+          "fileName": "harnett-raisin-cake-with-fruit-and-wine-1876"
+        },
+        {
+          "title": "Still Life with Ginger Jar",
+          "date": "1876",
+          "fileName": "harnett-still-life-with-ginger-jar-1876"
+        },
+        {
+          "title": "Writing Table",
+          "date": "1877",
+          "fileName": "harnett-writing-table-1877"
+        },
+        {
+          "title": "Job Lot Cheap",
+          "date": "1878",
+          "fileName": "harnett-job-lot-cheap-1878"
+        },
+        {
+          "title": "Music and Literature<",
+          "date": "1878",
+          "fileName": "harnett-music-and-literature-1878"
+        },
+        {
+          "title": "Pipe and Mug",
+          "date": "1878",
+          "fileName": "harnett-pipe-and-mug-1878"
+        },
+        {
+          "title": "Solace",
+          "date": "1878",
+          "fileName": "harnett-solace-1878"
+        },
+        {
+          "title": "The Social Club",
+          "date": "1879",
+          "fileName": "harnett-social-club-1879"
+        },
+        {
+          "title": "Fruit and Vase",
+          "date": "1881",
+          "fileName": "harnett-fruit-and-vase-1881"
+        },
+        {
+          "title": "Fruit with Champagne Bottle and Newspaper",
+          "date": "1881",
+          "fileName": "harnett-fruit-with-champagne-bottle-and-newspaper-1881"
+        },
+        {
+          "title": "A Study Table",
+          "date": "1882",
+          "fileName": "harnett-study-table-1882"
+        },
+        {
+          "title": "After the Hunt",
+          "date": "1884",
+          "fileName": "harnett-after-the-hunt-1884"
+        },
+        {
+          "title": "Munich Still Life",
+          "date": "1884",
+          "fileName": "harnett-munich-still-life-1884"
+        },
+        {
+          "title": "Music",
+          "date": "1886",
+          "fileName": "harnett-music-1886"
+        },
+        {
+          "title": "The Old Violin",
+          "date": "1886",
+          "fileName": "harnett-old-violin-1886"
+        },
+        {
+          "title": "Ease",
+          "date": "1887",
+          "fileName": "harnett-ease-1887"
+        },
+        {
+          "title": "Violin and Music",
+          "date": "1888",
+          "fileName": "harnett-violin-and-music-1888"
+        },
+        {
+          "title": "The Old Cupboard Door",
+          "date": "1889",
+          "fileName": "harnett-old-cupboard-door-1889"
+        },
+        {
+          "title": "Old Models",
+          "date": "1892",
+          "fileName": "harnett-old-models-1892"
+        }
+      ]
+    },
+    {
+      "fname": "Buonarroti",
+      "lname": "Michelangelo",
+      "artistKey": "michelangelo",
+      "bio": "Much has been said of Michelangelo which cannot be detailed here.",
+      "era": "Renaissance",
+      "content": [
+        {
+          "title": "Bacchus",
+          "date": "1497",
+          "fileName": "michelangelo-bacchus-1497"
+        },
+        {
+          "title": "David and Goliath",
+          "date": "1500",
+          "fileName": "michelangelo-david-and-goliath-1500"
+        },
+        {
+          "title": "Pieta",
+          "date": "1500",
+          "fileName": "michelangelo-pieta-1500"
+        },
+        {
+          "title": "David",
+          "date": "1501",
+          "fileName": "michelangelo-david-1501"
+        },
+        {
+          "title": "Holy Family",
+          "date": "1505",
+          "fileName": "michelangelo-holy-family-1505"
+        },
+        {
+          "title": "Creation of Eve",
+          "date": "1509",
+          "fileName": "michelangelo-creation-of-eve-1509"
+        },
+        {
+          "title": "Isaiah",
+          "date": "1509",
+          "fileName": "michelangelo-isaiah-1509"
+        },
+        {
+          "title": "Zechariah",
+          "date": "1509",
+          "fileName": "michelangelo-zechariah-1509"
+        },
+        {
+          "title": "Ezekiel",
+          "date": "1510",
+          "fileName": "michelangelo-ezekiel-1510"
+        },
+        {
+          "title": "Daniel",
+          "date": "1511",
+          "fileName": "michelangelo-daniel-1511"
+        },
+        {
+          "title": "Geremia",
+          "date": "1511",
+          "fileName": "michelangelo-geremia-1511"
+        },
+        {
+          "title": "Jonah",
+          "date": "1512",
+          "fileName": "michelangelo-jonah-1512"
+        },
+        {
+          "title": "The Creation",
+          "date": "1512",
+          "fileName": "michelangelo-creation-1512"
+        },
+        {
+          "title": "Sybille de Cummes",
+          "date": "1516",
+          "fileName": "michelangelo-sybille-de-cummes-1516"
+        },
+        {
+          "title": "Moses",
+          "date": "1526",
+          "fileName": "michelangelo-moses-1526"
+        },
+        {
+          "title": "Night",
+          "date": "1530",
+          "fileName": "michelangelo-night-1530"
+        },
+        {
+          "title": "Leda and the Swan",
+          "date": "1531",
+          "fileName": "michelangelo-lady-and-the-swan-1531"
+        },
+        {
+          "title": "Dawn",
+          "date": "1531",
+          "fileName": "michelangelo-dawn-1531"
+        },
+        {
+          "title": "Twilight",
+          "date": "1542",
+          "fileName": "michelangelo-twilight-1542"
+        },
+        {
+          "title": "Conversion of Saul",
+          "date": "1511",
+          "fileName": "michelangelo-conversion-of-saul-1511"
+        }
+      ]
+    },
+    {
+      "fname": "Claude",
+      "lname": "Monet",
+      "artistKey": "monet",
+      "bio": "Much has been said of Monet which cannot be detailed here.",
+      "era": "Impressionism",
+      "content": [
+        {
+          "title": "Garden at Sante Adresse",
+          "date": "1867",
+          "fileName": "monet-garden-at-sante-adresse-1867"
+        },
+        {
+          "title": "Lady in the Garden",
+          "date": "1867",
+          "fileName": "monet-lady-in-the-garden-1867"
+        },
+        {
+          "title": "Bathing at la Grenouillere",
+          "date": "1869",
+          "fileName": "monet-bathing-at-la-grenouillere-1869"
+        },
+        {
+          "title": "Thames at Westminster",
+          "date": "1871",
+          "fileName": "monet-thames-at-westminster-1871"
+        },
+        {
+          "title": "Impression Sunrise",
+          "date": "1872",
+          "fileName": "monet-impression-sunrise-1872"
+        },{
+          "title": "Promenade",
+          "date": "1872",
+          "fileName": "monet-promenade-1872"
+        },
+        {
+          "title": "Monet in his Garden at Argenteuil",
+          "date": "1875",
+          "fileName": "monet-monet-in-his-garden-1875"
+        },
+        {
+          "title": "Madame Monet in Japanese Costume",
+          "date": "1876",
+          "fileName": "monet-madame-monet-in-japanese-costume-1876"
+        },
+        {
+          "title": "Boat Studio",
+          "date": "1876",
+          "fileName": "monet-boat-studio-1876"
+        },
+        {
+          "title": "Station St. Lazare",
+          "date": "1877",
+          "fileName": "monet-station-st-lazare-1877"
+        },
+        {
+          "title": "Rock Arch West of Etretat",
+          "date": "1883",
+          "fileName": "monet-rock-arch-west-of-etretat-1883"
+        },
+        {
+          "title": "Bordighera",
+          "date": "1884",
+          "fileName": "monet-bordighera-1884"
+        },
+        {
+          "title": "Corniche of Monaco",
+          "date": "1884",
+          "fileName": "monet-corniche-of-monaco-1884"
+        },
+        {
+          "title": "Woman with Umbrella",
+          "date": "1886",
+          "fileName": "monet-woman-with-umbrella-1886"
+        },
+        {
+          "title": "Haystacks",
+          "date": "1890",
+          "fileName": "monet-haystacks-1890"
+        },
+        {
+          "title": "Poplars Along the River",
+          "date": "1891",
+          "fileName": "monet-poplars-along-the-river-1891"
+        },
+        {
+          "title": "Waterloo Bridge",
+          "date": "1901",
+          "fileName": "monet-waterloo-bridge-1901"
+        },
+        {
+          "title": "Waterlillies",
+          "date": "1903",
+          "fileName": "monet-waterlillies-1903"
+        },
+        {
+          "title": "Sun Breaking Through Fog",
+          "date": "1904",
+          "fileName": "monet-sun-breaking-through-fog-1904"
+        },
+        {
+          "title": "Venice",
+          "date": "1908",
+          "fileName": "monet-venice-1908"
+        }
+      ]
+    },
+    {
+      "fname": "Georgia",
+      "lname": "O'Keeffe",
+      "artistKey": "okeeffe",
+      "bio": "Much has been said of O'Keeffe which cannot be detailed here.",
+      "era": "Modernism",
+      "content": [
+        {
+          "title": "Blue and Green Music",
+          "date": "1919",
+          "fileName": "okeeffe-blue-and-green-music-1919"
+        },
+        {
+          "title": "Black Iris",
+          "date": "1927",
+          "fileName": "okeeffe-black-iris-1927"
+        },
+        {
+          "title": "Tan Clam with Seaweed",
+          "date": "1926",
+          "fileName": "okeeffe-tan-clam-with-seaweed-1926"
+        },
+        {
+          "title": "Oriental Poppies",
+          "date": "1926",
+          "fileName": "okeeffe-oriental-poppies-1926"
+        },
+        {
+          "title": "Mountain in New Mexico",
+          "date": "1931",
+          "fileName": "okeeffe-mountain-in-new-mexico-1931"
+        },
+        {
+          "title": "Broken Shell",
+          "date": "1937",
+          "fileName": "okeeffe-broken-shell-1937"
+        },
+        {
+          "title": "Clam and Mussel",
+          "date": "1938",
+          "fileName": "okeeffe-clam-and-mussel-1938"
+        },
+        {
+          "title": "Red Hill and White Shell",
+          "date": "1938",
+          "fileName": "okeeffe-red-hill-and-white-shell-1938"
+        }
+      ]
+    },
+    {
+      "fname": "",
+      "lname": "Raphael Sanzio da Urbino",
+      "artistKey": "raphael",
+      "bio": "Much has been said of Raphael which cannot be detailed here.",
+      "era": "Renaissance",
+      "content": [
+        {
+          "title": "",
+          "date": "",
+          "fileName": ""
+        }
+      ]
+    },
+    {
+      "fname": "",
+      "lname": "Rembrandt Harmenszoon van Rijn",
+      "artistKey": "rembrandt",
+      "bio": "Much has been said of Rembrandt which cannot be detailed here.",
+      "era": "Baroque",
+      "content": [
+        {
+          "title": "",
+          "date": "",
+          "fileName": ""
+        }
+      ]
+    },
+    {
+      "fname": "Auguste",
+      "lname": "Renoir",
+      "artistKey": "renoir",
+      "bio": "Much has been said of Renoir which cannot be detailed here.",
+      "era": "Impressionism",
+      "content": [
+        {
+          "title": "",
+          "date": "",
+          "fileName": ""
+        }
+      ]
+    },
+    {
+      "fname": "Dante",
+      "lname": "Rossetti",
+      "artistKey": "rossetti",
+      "bio": "Much has been said of Rossetti which cannot be detailed here.",
+      "era": "Pre-Raphaelite",
+      "content": [
+        {
+          "title": "",
+          "date": "",
+          "fileName": ""
+        }
+      ]
+    },
+    {
+      "fname": "Henri",
+      "lname": "Rousseau",
+      "artistKey": "rousseau",
+      "bio": "Much has been said of Rousseau which cannot be detailed here.",
+      "era": "Post-Impressionism",
+      "content": [
+        {
+          "title": "",
+          "date": "",
+          "fileName": ""
+        }
+      ]
+    },
+    {
+      "fname": "John Singer",
+      "lname": "Sargent",
+      "artistKey": "sargent",
+      "bio": "Much has been said of Sargent which cannot be detailed here.",
+      "era": "Realism",
+      "content": [
+        {
+          "title": "",
+          "date": "",
+          "fileName": ""
+        }
+      ]
+    },
+    {
+      "fname": "Georges",
+      "lname": "Seurat",
+      "artistKey": "seurat",
+      "bio": "Much has been said of Seurat which cannot be detailed here.",
+      "era": "Post-Impressionism",
+      "content": [
+        {
+          "title": "",
+          "date": "",
+          "fileName": ""
+        }
+      ]
+    },
+    {
+      "fname": "Vincent",
+      "lname": "Van Gogh",
+      "artistKey": "Van Gogh",
+      "bio": "Much has been said of Van Gogh which cannot be detailed here.",
+      "era": "Post-Impressionism",
+      "content": [
+        {
+          "title": "",
+          "date": "",
+          "fileName": ""
+        }
+      ]
+    },
+    {
+      "fname": "Friedrich",
+      "lname": "Von Amerling",
+      "artistKey": "vonamerling",
+      "bio": "Much has been said of Von Amerling which cannot be detailed here.",
+      "era": "Academic",
+      "content": [
+        {
+          "title": "",
+          "date": "",
+          "fileName": ""
+        }
+      ]
+    },
+    {
+      "fname": "John William",
+      "lname": "Waterhouse",
+      "artistKey": "waterhouse",
+      "bio": "Much has been said of Waterhouse which cannot be detailed here.",
+      "era": "Pre-Raphaelite",
+      "content": [
+        {
+          "title": "",
+          "date": "",
+          "fileName": ""
+        }
+      ]
+    }
+  ]
+}

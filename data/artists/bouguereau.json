@@ -1,13 +1,149 @@
 {
-  "fname": "",
+  "fname": "William",
   "lname": "Bougeureau",
-  "bio": "Much has been said of ___ which cannot be detailed here.",
-  "era": "",
-  "works": [
+  "artistKey": "bouguereau",
+  "bio": "Much has been said of Bougeureau which cannot be detailed here.",
+  "era": "Academic",
+  "content": [
     {
-      "title": "",
-      "date": "",
-      "fileName": ""
+      "title": "Dante and Virgil in Hell",
+      "date": "1850",
+      "fileName": "bougeureau-dante-and-virgil-in-hell-1850"
+    },
+    {
+      "title": "Fraternal Love",
+      "date": "1851",
+      "fileName": "bougeureau-fraternal-love-1851"
+    },
+    {
+      "title": "The Bather",
+      "date": "1870",
+      "fileName": "bougeureau-bather-1870"
+    },
+    {
+      "title": "Italian Girl Drawing Water",
+      "date": "1871",
+      "fileName": "bougeureau-italian-girl-drawing-water-1871"
+    },
+    {
+      "title": "Nymphs and Satyr",
+      "date": "1873",
+      "fileName": "bougeureau-nymphs-and-satyr-1873"
+    },
+    {
+      "title": "At the Edge of the Brook (1)",
+      "date": "1875",
+      "fileName": "bougeureau-at-the-edge-of-the-brook-1875"
+    },
+    {
+      "title": "At the Edge of the Brook (2)",
+      "date": "1879",
+      "fileName": "bougeureau-at-the-edge-of-the-brook-1879"
+    },
+    {
+      "title": "Nymphaeum",
+      "date": "1878",
+      "fileName": "bougeureau-nymphaeum-1878"
+    },
+    {
+      "title": "A Young Girl Defending Herself Against Eros",
+      "date": "1880",
+      "fileName": "bougeureau-young-girl-defending-herself-against-eros-1880"
+    },
+    {
+      "title": "Flagellation of Our Lord Jesus Christ",
+      "date": "1880",
+      "fileName": "bougeureau-flagellation-of-our-lord-jesus-christ-1880"
+    },
+    {
+      "title": "Nut Gatherers",
+      "date": "1882",
+      "fileName": "bougeureau-nut-gatherers-1882"
+    },
+    {
+      "title": "Bouguereau Biblis",
+      "date": "1884",
+      "fileName": "bougeureau-bouguereau-biblis-1884"
+    },
+    {
+      "title": "Lost Pleiad",
+      "date": "1884",
+      "fileName": "bougeureau-lost-pleiad-1884"
+    },
+    {
+      "title": "Woman with Shell",
+      "date": "1885",
+      "fileName": "bougeureau-woman-with-shell-1885"
+    },
+    {
+      "title": "Young Girl Going to Fountain",
+      "date": "1885",
+      "fileName": "bougeureau-young-girl-going-to-fountain-1885"
+    },
+    {
+      "title": "Thirst",
+      "date": "1886",
+      "fileName": "bougeureau-thirst-1886"
+    },
+    {
+      "title": "Bohemian",
+      "date": "1890",
+      "fileName": "bougeureau-bohemian-1890"
+    },
+    {
+      "title": "A Private Vocation",
+      "date": "1890",
+      "fileName": "bougeureau-private-vacation-1890"
+    },
+    {
+      "title": "Penelope",
+      "date": "1891",
+      "fileName": "bougeureau-penelope-1891"
+    },
+    {
+      "title": "Youth",
+      "date": "1893",
+      "fileName": "bougeureau-youth-1893"
+    },
+    {
+      "title": "Not too Much to Carry",
+      "date": "1895",
+      "fileName": "bougeureau-not-too-much-to-carry-1895"
+    },
+    {
+      "title": "Spring Breeze",
+      "date": "1895",
+      "fileName": "bougeureau-spring-breeze-1895"
+    },
+    {
+      "title": "A Calling",
+      "date": "1896",
+      "fileName": "bougeureau-calling-1896"
+    },
+    {
+      "title": "Wave",
+      "date": "1896",
+      "fileName": "bougeureau-wave-1896"
+    },
+    {
+      "title": "Admiration",
+      "date": "1897",
+      "fileName": "bougeureau-admiration-1897"
+    },
+    {
+      "title": "Tricoeause",
+      "date": "1897",
+      "fileName": "bougeureau-tricoeause-1897"
+    },
+    {
+      "title": "Head of a Young Girl",
+      "date": "1898",
+      "fileName": "bougeureau-head-of-a-young-girl-1898"
+    },
+    {
+      "title": "A Childhood Idyll",
+      "date": "1900",
+      "fileName": "bougeureau-childhood-idyll-1900"
     }
   ]
 }

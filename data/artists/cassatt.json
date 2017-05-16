@@ -1,13 +1,109 @@
 {
-  "fname": "",
+  "fname": "Mary",
   "lname": "Cassatt",
-  "bio": "Much has been said of ___ which cannot be detailed here.",
-  "era": "",
-  "works": [
+  "artistKey": "cassatt",
+  "bio": "Much has been said of Cassatt which cannot be detailed here.",
+  "era": "Impressionism",
+  "content": [
     {
-      "title": "",
-      "date": "",
-      "fileName": ""
+      "title": "Child Drinking Milk",
+      "date": "1868",
+      "fileName": "cassatt-child-drinking-milk-1868"
+    },
+    {
+      "title": "Bacchante",
+      "date": "1872",
+      "fileName": "cassatt-bacchante-1872"
+    },
+    {
+      "title": "During a Carnival",
+      "date": "1872",
+      "fileName": "cassatt-during-a-carnival-1872"
+    },
+    {
+      "title": "A Musical Party",
+      "date": "1874",
+      "fileName": "cassatt-musical-party-1874"
+    },
+    {
+      "title": "Portrait of a Little Girl",
+      "date": "1874",
+      "fileName": "cassatt-portrait-of-a-little-girl-1874"
+    },
+    {
+      "title": "Poppies in a Field",
+      "date": "1880",
+      "fileName": "cassatt-poppies-in-a-field-1880"
+    },
+    {
+      "title": "Lady at the Tea Table",
+      "date": "1883",
+      "fileName": "cassatt-lady-at-the-tea-table-1883"
+    },
+    {
+      "title": "Girl Arranging Her Hair",
+      "date": "1886",
+      "fileName": "cassatt-girl-arranging-her-hair-1886"
+    },
+    {
+      "title": "At the Window",
+      "date": "1889",
+      "fileName": "cassatt-at-the-window-1889"
+    },
+    {
+      "title": "Lilacs in a Window",
+      "date": "1889",
+      "fileName": "cassatt-lilacs-in-a-window-1889"
+    },
+    {
+      "title": "Contemplation",
+      "date": "1889",
+      "fileName": "cassatt-contemplation-1889"
+    },
+    {
+      "title": "Gathering Fruit",
+      "date": "1893",
+      "fileName": "cassatt-gathering-fruit-1893"
+    },
+    {
+      "title": "Girl With Banjo",
+      "date": "1894",
+      "fileName": "cassatt-girl-with-banjo-1894"
+    },
+    {
+      "title": "In the Park",
+      "date": "1894",
+      "fileName": "cassatt-in-the-park-1894"
+    },
+    {
+      "title": "On the Water",
+      "date": "1895",
+      "fileName": "cassatt-on-the-water-1895"
+    },
+    {
+      "title": "Maternal Kiss",
+      "date": "1896",
+      "fileName": "cassatt-maternal-kiss-1896"
+    },
+    {
+      "title": "Breakfast in Bed",
+      "date": "1897",
+      "fileName": "cassatt-breakfast-in-bed-1897"
+    },
+    {
+      "title": "Pattycake",
+      "date": "1897",
+      "fileName": "cassatt-pattycake-1897"
+    },
+    {
+      "title": "Mother and Child",
+      "date": "1900",
+      "fileName": "cassatt-mother-and-child-1900"
+    },
+    {
+      "title": "Margot in Blue",
+      "date": "1902",
+      "fileName": "cassatt-margot-in-blue-1902"
     }
   ]
 }
