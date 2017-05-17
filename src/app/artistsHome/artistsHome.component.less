@@ -1,10 +1,33 @@
 @import '../../styles/globals';
 
 .artistsHome {
-  .thumbnail {
-    display: inline-block;
-    vertical-align: top;
-    width: 100px;
-    overflow: hidden;
+  .imageGrid {
+    display: flex;
+    flex-flow: row wrap;
+
+    .thumbnail {
+      display: inline-block;
+      //flex: 1 1 25%;
+      width: 100px;
+      vertical-align: top;
+      margin: 0 4px 4px 0;
+      background-color: lighten(@mainThemeColor, 10%);
+      border-color: lighten(@mainThemeColor, 5%);
+      transition: all .2s;
+
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      &:hover {
+        background: @mainLinkHoverColor;
+
+        a {
+          color: white;
+        }
+      }
+    }
   }
 }

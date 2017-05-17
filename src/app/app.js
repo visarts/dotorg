@@ -52,7 +52,11 @@ export default class App extends React.Component {
           <Route path='/' render={({location}) => (
             <GlobalNav currentPath={location.pathname}  />
           )} />
-          <Route exact path='/' component={Home} />
+          <Route exact path='/' render={() => (
+            <Home
+              artistsData={this.artistsData.artists}
+              authorsData={this.authorsData.authors} />
+          )} />
 
 
           <Route exact path='/literature' render={() => (
@@ -60,11 +64,13 @@ export default class App extends React.Component {
           )} />
           <Route path='/literature/:author' component={AuthorsHome} />
           <Route exact path='/literature/:author/:work' render={({location, match}) => (
-            <AuthorLitHome data={this.authorsData.authors.filter(item => item.authorKey === match.params.author)[0]} currentMatch={match} />
+            <AuthorLitHome
+              data={this.authorsData.authors.filter(item => item.authorKey === match.params.author)[0]}
+              currentMatch={match} />
           )} />
 
 
-          <Route path='/arts' render={({location, match}) => (
+          <Route exact path='/arts' render={({location, match}) => (
             <ArtsHome data={this.artistsData.artists} currentLocation={location} />
           )} />
           <Route exact path='/arts/:artist' component={ArtistsHome} />

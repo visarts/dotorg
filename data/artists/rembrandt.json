@@ -1,13 +1,109 @@
 {
   "fname": "",
-  "lname": "Rembrandt",
-  "bio": "Much has been said of ___ which cannot be detailed here.",
-  "era": "",
-  "works": [
+  "lname": "Rembrandt Harmenszoon van Rijn",
+  "artistKey": "rembrandt",
+  "bio": "Much has been said of Rembrandt which cannot be detailed here.",
+  "era": "Baroque",
+  "content": [
     {
-      "title": "",
-      "date": "",
-      "fileName": ""
+      "title": "Self Portrait (as a young man)",
+      "date": "1628",
+      "fileName": "rembrandt-self-portrait-as-a-young-man-1628"
+    },
+    {
+      "title": "Head of an Old Man",
+      "date": "1630",
+      "fileName": "rembrandt-head-of-an-old-man-1630"
+    },
+    {
+      "title": "Resurrection of Lazarus",
+      "date": "1630",
+      "fileName": "rembrandt-resurrection-of-lazarus-1630"
+    },
+    {
+      "title": "Anatomy",
+      "date": "1632",
+      "fileName": "rembrandt-anatomy-1632"
+    },
+    {
+      "title": "Archangel Leaving Family of Tobias",
+      "date": "1632",
+      "fileName": "rembrandt-archangel-leaving-family-of-tobias-1632"
+    },
+    {
+      "title": "Philosopher in Meditation",
+      "date": "1632",
+      "fileName": "rembrandt-philosopher-in-meditation-1632"
+    },
+    {
+      "title": "Christ in the Storm on the Sea of Galilee",
+      "date": "1633",
+      "fileName": "rembrandt-christ-in-the-storm-1633"
+    },
+    {
+      "title": "The Feast of Belshazzar",
+      "date": "1635",
+      "fileName": "rembrandt-feast-of-belshazzar-1635"
+    },
+    {
+      "title": "Night Watch",
+      "date": "1642",
+      "fileName": "rembrandt-night-watch-1642"
+    },
+    {
+      "title": "Supper at Emmaus",
+      "date": "1648",
+      "fileName": "rembrandt-supper-at-emmaus-1648"
+    },
+    {
+      "title": "The Mill",
+      "date": "1650",
+      "fileName": "rembrandt-mill-1650"
+    },
+    {
+      "title": "Aristotle Contemplating Bust of Homer",
+      "date": "1653",
+      "fileName": "rembrandt-aristotle-contemplating-bust-of-homer-1653"
+    },
+    {
+      "title": "Bathsheba",
+      "date": "1654",
+      "fileName": "rembrandt-bathsheba-1654"
+    },
+    {
+      "title": "Jacob Blessing Sons of Joseph",
+      "date": "1656",
+      "fileName": "rembrandt-jacob-blessing-sons-of-joseph-1656"
+    },
+    {
+      "title": "Young Jew as Christ",
+      "date": "1656",
+      "fileName": "rembrandt-young-jew-as-christ-1656"
+    },
+    {
+      "title": "Lady with an Ostrich Fan",
+      "date": "1660",
+      "fileName": "rembrandt-lady-with-an-ostrich-fan-1660"
+    },
+    {
+      "title": "Return of the Prodigal Son",
+      "date": "1660",
+      "fileName": "rembrandt-return-of-the-prodigal-son-1660"
+    },
+    {
+      "title": "Saul and David",
+      "date": "1660",
+      "fileName": "rembrandt-saul-and-david-1660"
+    },
+    {
+      "title": "Matthew",
+      "date": "1661",
+      "fileName": "rembrandt-matthew-1661"
+    },
+    {
+      "title": "Self Portrait as St. Paul",
+      "date": "1661",
+      "fileName": "rembrandt-self-portrait-as-st-paul-1661"
     }
   ]
 }
