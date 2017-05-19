@@ -1551,7 +1551,7 @@
     {
       "fname": "Vincent",
       "lname": "Van Gogh",
-      "artistKey": "Van Gogh",
+      "artistKey": "vangogh",
       "bio": "Much has been said of Van Gogh which cannot be detailed here.",
       "era": "Post-Impressionism",
       "content": [
@@ -1567,28 +1567,14 @@
       "lname": "Von Amerling",
       "artistKey": "vonamerling",
       "bio": "Much has been said of Von Amerling which cannot be detailed here.",
-      "era": "Academic",
-      "content": [
-        {
-          "title": "",
-          "date": "",
-          "fileName": ""
-        }
-      ]
+      "era": "Academic"
     },
     {
       "fname": "John William",
       "lname": "Waterhouse",
       "artistKey": "waterhouse",
       "bio": "Much has been said of Waterhouse which cannot be detailed here.",
-      "era": "Pre-Raphaelite",
-      "content": [
-        {
-          "title": "",
-          "date": "",
-          "fileName": ""
-        }
-      ]
+      "era": "Pre-Raphaelite"
     }
   ]
 }

@@ -14,7 +14,7 @@ const getArtistData = (artist) => {
 
 const getArtistsData = () => {
   const artistsData = require('artists.json');
-  return artistsData;
+  return artistsData.artists;
 }
 
 const getArtistNames = () => {

@@ -1,13 +1,149 @@
 {
   "fname": "Vincent",
   "lname": "Van Gogh",
-  "bio": "Much has been said of ___ which cannot be detailed here.",
-  "era": "",
-  "works": [
+  "artistKey": "vangogh",
+  "bio": "Much has been said of Van Gogh which cannot be detailed here.",
+  "era": "Post-Impressionism",
+  "content": [
     {
-      "title": "",
-      "date": "",
-      "fileName": ""
+      "title": "View of the Sea at Scheveningen",
+      "date": "1882",
+      "fileName": "vangogh-view-of-the-sea-at-scheveningen-1882"
+    },
+    {
+      "title": "Bulb Field",
+      "date": "1883",
+      "fileName": "vangogh-bulb-field-1883"
+    },
+    {
+      "title": "Basket of Potatoes",
+      "date": "1885",
+      "fileName": "vangogh-basket-of-potatoes-1885"
+    },
+    {
+      "title": "The Cottage",
+      "date": "1885",
+      "fileName": "vangogh-cottage-1885"
+    },
+    {
+      "title": "Still Life with Bible",
+      "date": "1885",
+      "fileName": "vangogh-still-life-with-bible-1885"
+    },
+    {
+      "title": "Still Life of Shoes",
+      "date": "1886",
+      "fileName": "vangogh-still-life-of-shoes-1886"
+    },
+    {
+      "title": "Night Cafe",
+      "date": "1888",
+      "fileName": "vangogh-night-cafe-1888"
+    },
+    {
+      "title": "The Old Mill",
+      "date": "1888",
+      "fileName": "vangogh-old-mill-1888"
+    },
+    {
+      "title": "Poets Garden",
+      "date": "1888",
+      "fileName": "vangogh-poets-garden-1888"
+    },
+    {
+      "title": "Self Portrait (with straw hat)",
+      "date": "1888",
+      "fileName": "vangogh-self-portrait-with-straw-hat-1888"
+    },
+    {
+      "title": "Shoes",
+      "date": "1888",
+      "fileName": "vangogh-shoes-1888"
+    },
+    {
+      "title": "Starry Night Over the Rhone",
+      "date": "1888",
+      "fileName": "vangogh-starry-night-over-the-rhone-1888"
+    },
+    {
+      "title": "Vincent's Bedroom in Arles",
+      "date": "1888",
+      "fileName": "vangogh-vincents-bedroom-in-arles-1888"
+    },
+    {
+      "title": "Angel",
+      "date": "1889",
+      "fileName": "vangogh-angel-1888"
+    },
+    {
+      "title": "Corridor in the Asylum",
+      "date": "1889",
+      "fileName": "vangogh-corridor-in-the-asylum-1889"
+    },
+    {
+      "title": "Cypresses",
+      "date": "1889",
+      "fileName": "vangogh-cypresses-1889"
+    },
+    {
+      "title": "Irises",
+      "date": "1889",
+      "fileName": "vangogh-irises-1889"
+    },
+    {
+      "title": "Pieta",
+      "date": "1889",
+      "fileName": "vangogh-pieta-1889"
+    },
+    {
+      "title": "Potato Eaters",
+      "date": "1889",
+      "fileName": "vangogh-potato-eaters-1889"
+    },
+    {
+      "title": "Siesta",
+      "date": "1889",
+      "fileName": "vangogh-siesta-1889"
+    },
+    {
+      "title": "Starry Night",
+      "date": "1889",
+      "fileName": "vangogh-starry-night-1889"
+    },
+    {
+      "title": "Sunflowers",
+      "date": "1889",
+      "fileName": "vangogh-sunflowers-1889"
+    },
+    {
+      "title": "Trees in the Asylum Garden",
+      "date": "1889",
+      "fileName": "vangogh-trees-in-the-asylum-garden-1889"
+    },
+    {
+      "title": "Church at Auvers",
+      "date": "1889",
+      "fileName": "vangogh-church-at-auvers-1889"
+    },
+    {
+      "title": "Thatched Houses in Cordeville",
+      "date": "1890",
+      "fileName": "vangogh-thatched-houses-in-cordeville-1890"
+    },
+    {
+      "title": "Village Street in Auvers",
+      "date": "1890",
+      "fileName": "vangogh-village-street-in-auvers-1890"
+    },
+    {
+      "title": "Vineyards at Auvers",
+      "date": "1890",
+      "fileName": "vangogh-vineyards-at-auvers-1890"
+    },
+    {
+      "title": "Wheatfield with Crows",
+      "date": "1890",
+      "fileName": "vangogh-wheatfield-with-crows-1890"
     }
   ]
 }

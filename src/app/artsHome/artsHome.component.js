@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './artsHome.component.less';
 
 const ArtsHome = (props) => {
-  const artistsList = props.data.map((item, index) => {
+  const artistsList = props.artistsData.map((item, index) => {
     return (
       <li key={index}>
         {props.currentLocation.pathname !== `/arts/${item.artistKey}` ?

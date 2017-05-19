@@ -3,12 +3,107 @@
   "lname": "Rousseau",
   "artistKey": "rousseau",
   "bio": "Much has been said of Rousseau which cannot be detailed here.",
-  "era": "",
+  "era": "Post-Impressionism",
   "content": [
     {
-      "title": "",
-      "date": "",
-      "fileName": ""
+      "title": "Landscape with Bridge",
+      "date": "1877",
+      "fileName": "rousseau-landscape-with-bridge-1877"
+    },
+    {
+      "title": "The Mill",
+      "date": "1879",
+      "fileName": "rousseau-mill-1879"
+    },
+    {
+      "title": "Landscape",
+      "date": "1886",
+      "fileName": "rousseau-landscape-1886"
+    },
+    {
+      "title": "Riverbank",
+      "date": "1890",
+      "fileName": "rousseau-riverbank-1890"
+    },
+    {
+      "title": "Suprise",
+      "date": "1891",
+      "fileName": "rousseau-suprise-1891"
+    },
+    {
+      "title": "The Artilleryman",
+      "date": "1893",
+      "fileName": "rousseau-artilleryman-1893"
+    },
+    {
+      "title": "Family Fishing",
+      "date": "1895",
+      "fileName": "rousseau-family-fishing-1895"
+    },
+    {
+      "title": "Suburban Scene",
+      "date": "1896",
+      "fileName": "rousseau-suburban-scene-1896"
+    },
+    {
+      "title": "The Chair Factory",
+      "date": "1897",
+      "fileName": "rousseau-chair-factory-1897"
+    },
+    {
+      "title": "The Quarry",
+      "date": "1897",
+      "fileName": "rousseau-quarry-1897"
+    },
+    {
+      "title": "Boat in a Storm",
+      "date": "1898",
+      "fileName": "rousseau-boat-in-a-storm-1898"
+    },
+    {
+      "title": "Happy Quartet",
+      "date": "1902",
+      "fileName": "rousseau-happy-quartet-1902"
+    },
+    {
+      "title": "Child with Puppet",
+      "date": "1903",
+      "fileName": "rousseau-child-with-puppet-1903"
+    },
+    {
+      "title": "Scout Attacked by a Tiger",
+      "date": "1904",
+      "fileName": "rousseau-scout-attacked-by-a-tiger-1904"
+    },
+    {
+      "title": "Girl with Doll",
+      "date": "1905",
+      "fileName": "rousseau-girl-with-doll-1905"
+    },
+    {
+      "title": "Old Juniors Cart",
+      "date": "1908",
+      "fileName": "rousseau-old-juniors-cart-1908"
+    },
+    {
+      "title": "Bouquet of Flowers",
+      "date": "1910",
+      "fileName": "rousseau-bouquet-of-flowers-1910"
+    },
+    {
+      "title": "Jungle with Lion",
+      "date": "1910",
+      "fileName": "rousseau-jungle-with-lion-1910"
+    },
+    {
+      "title": "Meadowland",
+      "date": "1910",
+      "fileName": "rousseau-meadowland-1910"
+    },
+    {
+      "title": "The Dream",
+      "date": "1910",
+      "fileName": "rousseau-dream-1910"
     }
   ]
 }

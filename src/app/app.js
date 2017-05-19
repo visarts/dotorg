@@ -71,7 +71,7 @@ export default class App extends React.Component {
 
 
           <Route exact path='/arts' render={({location, match}) => (
-            <ArtsHome data={this.artistsData.artists} currentLocation={location} />
+            <ArtsHome artistsData={this.artistsData} currentLocation={location} />
           )} />
           <Route exact path='/arts/:artist' component={ArtistsHome} />
 
