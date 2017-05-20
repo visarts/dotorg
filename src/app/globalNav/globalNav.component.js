@@ -4,9 +4,9 @@ import './globalNav.component.less';
 
 const GlobalNav = (props) => {
 
-  const litSelected = props.currentPath.includes('/literature') ? 'selected' : 'unselected';
-  const artSelected = props.currentPath.includes('/arts') ? 'selected' : 'unselected';
-  const hideDesc = props.currentPath === '/' ? '' : 'hideDesc';
+  const litSelected = props.location.pathname.includes('/literature') ? 'selected' : 'unselected';
+  const artSelected = props.location.pathname.includes('/arts') ? 'selected' : 'unselected';
+  const hideDesc = props.location.pathname === '/' ? '' : 'hideDesc';
   return (
     <nav className="globalNav">
 

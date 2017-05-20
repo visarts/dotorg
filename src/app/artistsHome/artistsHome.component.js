@@ -10,8 +10,8 @@ export default class ArtistsHome extends React.Component {
 
   constructor (props) {
     super(props);
-    this.artist = this.props.match.params.artist;
-    this.artistData = dataService.getArtistData(this.artist);
+    this.artist = this.props.currentArtist;
+    this.artistData = dataService.getArtistData(this.artist.artistKey);
     this.thumbs = this.getThumbs();
     this.imageList = this.getImages();
 
@@ -33,12 +33,12 @@ export default class ArtistsHome extends React.Component {
       return (
         <li className="thumbnail" key={index}>
           <a
-            href={`./content/artwork/${this.artist}/${item.fileName}.jpg`}
+            href={`./content/artwork/${this.artist.artistKey}/${item.fileName}.jpg`}
             title={item.title}
             key={index}
             onClick={(e) => this.openLightbox(index, e)}>
             <img
-              src={`./content/artwork/${this.artist}/${item.fileName}_sm.jpg`}
+              src={`./content/artwork/${this.artist.artistKey}/${item.fileName}_sm.jpg`}
               alt={item.title} />
             <span>{item.title}</span>
           </a>
@@ -51,13 +51,13 @@ export default class ArtistsHome extends React.Component {
     const imageList = [];
     this.artistData.content.map((item, index) => {
       imageList.push({
-        src: `./content/artwork/${this.artist}/${item.fileName}.jpg`,
-        thumbnail: `./content/artwork/${this.artist}/${item.fileName}_sm.jpg`,
+        src: `./content/artwork/${this.artist.artistKey}/${item.fileName}.jpg`,
+        thumbnail: `./content/artwork/${this.artist.artistKey}/${item.fileName}_sm.jpg`,
         caption: item.title
       });
       return;
     });
-    console.log(imageList);
+
     return imageList;
   }
 
@@ -99,8 +99,8 @@ export default class ArtistsHome extends React.Component {
     return (
       <div className="artistsHome">
         <div className="section">
-          <h1>{`${this.artistData.fname} ${this.artistData.lname}`}</h1>
-          <div>Anyone lived in a pretty how town with up so floating many bells down.</div>
+          <h1>{`${this.artist.fname} ${this.artist.lname}`}</h1>
+          <div className="artistBio">{this.artist.bio}</div>
           <ul className="imageGrid">{ this.thumbs }</ul>
           <Lightbox
             currentImage={this.state.currentImage}

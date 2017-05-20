@@ -4,8 +4,8 @@ import './globalHeader.component.less';
 
 const GlobalHeader = (props) => {
 
-  const smallLogoClass = !props.currentMatch.isExact ? 'smallLogo' : '';
-  const subHeader = props.currentPath.includes('literature') ? 'library' : props.currentPath.includes('arts') ? 'gallery' : '';
+  const smallLogoClass = !props.match.isExact ? 'smallLogo' : '';
+  const subHeader = props.location.pathname.includes('literature') ? 'library' : props.location.pathname.includes('arts') ? 'gallery' : '';
   const separator = subHeader ? '|' : '';
 
   return (

@@ -1,9 +1,5 @@
 {
-  "fname": "Paul",
-  "lname": "Cezanne",
   "artistKey": "cezanne",
-  "bio": "Much has been said of Cezanne which cannot be detailed here.",
-  "era": "Post-Impressionism",
   "content": [
     {
       "title": "The Artist's Father",

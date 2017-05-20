@@ -1,9 +1,5 @@
 {
-  "fname": "Mary",
-  "lname": "Cassatt",
   "artistKey": "cassatt",
-  "bio": "Much has been said of Cassatt which cannot be detailed here.",
-  "era": "Impressionism",
   "content": [
     {
       "title": "Child Drinking Milk",

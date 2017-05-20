@@ -5,7 +5,7 @@ const getAuthorData = (author) => {
 
 const getAuthorsData = () => {
   const authorsData = require('authors.json');
-  return authorsData;
+  return authorsData.authors;
 }
 const getArtistData = (artist) => {
   const artistData = require(`artists/${artist}.json`);

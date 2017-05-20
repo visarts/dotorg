@@ -1,9 +1,5 @@
 {
-  "fname": "Georges",
-  "lname": "Seurat",
   "artistKey": "seurat",
-  "bio": "Much has been said of Seurat which cannot be detailed here.",
-  "era": "Post-Impressionism",
   "content": [
     {
       "title": "Vase of Flowers",

@@ -1,9 +1,5 @@
 {
-  "fname": "Claude",
-  "lname": "Monet",
   "artistKey": "monet",
-  "bio": "Much has been said of Monet which cannot be detailed here.",
-  "era": "Impressionism",
   "content": [
     {
       "title": "Garden at Sante Adresse",

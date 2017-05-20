@@ -1,9 +1,5 @@
 {
-  "fname": "John Singer",
-  "lname": "Sargent",
   "artistKey": "sargent",
-  "bio": "Much has been said of Sargent which cannot be detailed here.",
-  "era": "Realism",
   "content": [
     {
       "title": "Seascape",

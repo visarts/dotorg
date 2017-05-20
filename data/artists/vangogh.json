@@ -1,9 +1,5 @@
 {
-  "fname": "Vincent",
-  "lname": "Van Gogh",
   "artistKey": "vangogh",
-  "bio": "Much has been said of Van Gogh which cannot be detailed here.",
-  "era": "Post-Impressionism",
   "content": [
     {
       "title": "View of the Sea at Scheveningen",

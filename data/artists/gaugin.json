@@ -1,9 +1,5 @@
 {
-  "fname": "Paul",
-  "lname": "Gaugin",
   "artistKey": "gaugin",
-  "bio": "Much has been said of Gaugin which cannot be detailed here.",
-  "era": "Post-Impressionism",
   "content": [
     {
       "title": "A Clearing",

@@ -2,7 +2,7 @@ import React from 'react';
 import './authorLitHome.component.less';
 
 const AuthorLitHome = (props) => {
-  const currentWorkKey = props.currentMatch.params.work;
+  const currentWorkKey = props.match.params.work;
   const content = require(`Literature/${props.data.authorKey}/${currentWorkKey}.html`);
   const currentWork = props.data.content.filter(item => item.fileName === currentWorkKey)[0];
   const htmlContent = {__html: content};
