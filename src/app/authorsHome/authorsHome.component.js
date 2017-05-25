@@ -4,7 +4,7 @@ import dataService from 'Services/data.service';
 import './authorsHome.component.less';
 
 
-const AuthorsHome = (props) => {console.log(props)
+const AuthorsHome = (props) => {
   const author = props.currentAuthor;
   const authorData = dataService.getAuthorData(author.authorKey);
   const titles = authorData.content.map((title, index) => {

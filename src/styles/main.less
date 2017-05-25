@@ -8,16 +8,7 @@ html {
   box-sizing: inherit;
 }
 
-* {
-  a {
-    text-decoration: none;
-    color: @mainLinkColor;
 
-    &:hover {
-      color: @mainLinkHoverColor;
-    }
-  }
-}
 
 body {
   background: @mainThemeColor;
@@ -53,6 +44,18 @@ body {
     margin-bottom: 5px;
   }
 
+
+  a {
+    text-decoration: none;
+    color: @mainLinkColor;
+
+    &:hover {
+      color: @mainLinkHoverColor;
+      text-decoration: none;
+    }
+  }
+
+
   pre {
     font: inherit;
   }
@@ -64,7 +67,14 @@ body {
   .modal-container {
     position: relative;
   }
+
   .modal-container .modal, .modal-container .modal-backdrop {
     position: absolute;
+  }
+
+  .modal {
+    .modal-content {
+      background: @mainThemeColor;
+    }
   }
 }

@@ -15,12 +15,12 @@
     display: inline-flex;
     vertical-align: top;
     text-decoration: none;
-    background-color: black;
+    background-color: @tertiaryThemeColor;
     transition: all .2s;
     border-left: 2px solid @mainThemeColor;
 
     &:hover {
-      background: #0e0e1a;
+      background: @secondaryThemeColor;
     }
 
     &.selected {
@@ -29,7 +29,7 @@
       color: lighten(palegoldenrod, 10%);
 
       &:hover {
-        background: #0e0e1a;
+        background: @tertiaryThemeColor;
         color: palegoldenrod;
       }
     }
@@ -38,7 +38,7 @@
       color: @darkLinkColor;
 
       &:hover {
-        background: #0e0e1a;
+        background: @secondaryThemeColor;
         color: palegoldenrod;
       }
     }

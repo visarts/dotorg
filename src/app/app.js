@@ -16,9 +16,6 @@ export default class App extends React.Component {
 
   constructor () {
     super();
-    this.state = {
-      currentArtist: {}
-    }
     this.authorsData = dataService.getAuthorsData();
     this.artistsData = dataService.getArtistsData();
   }

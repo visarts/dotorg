@@ -10,7 +10,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
-    "watch": "webpack -d --watch"
+    "watch": "webpack -d --watch --hot"
   },
   "author": "Brendan Best",
   "license": "ISC",
