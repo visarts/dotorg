@@ -73,8 +73,17 @@ body {
   }
 
   .modal {
-    .modal-content {
-      background: @mainThemeColor;
+    .custom-modal {
+      .modal-content {
+        background: @mainThemeColor;
+      }
+
+      &.lightMode {
+        .modal-content {
+          background: #cacaca;
+          color: #333333;
+        }
+      }
     }
   }
 }
