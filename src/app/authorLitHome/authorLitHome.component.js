@@ -15,8 +15,33 @@ export default class AuthorLitHome extends React.Component {
     this.currentWorkKey = props.match.params.work;
     this.content = require(`Literature/${this.props.data.authorKey}/${this.currentWorkKey}.html`);
     this.currentWork = this.props.data.content.filter(item => item.fileName === this.currentWorkKey)[0];
-    this.htmlContent = {__html: this.content};
+    this.pages = [];
+    do {
+      let page = '';
+      page = this.content.slice(0, 1200);
+      this.content = this.content.slice(1200);
+      this.pages.push(page);
+    } while(this.content.length > 1200);
+    this.originalHash = document.location.hash;
+    this.currentPage = 1;
+  }
 
+  setPageNum (pageNum) {
+    document.location.hash = this.originalHash + `?page=${pageNum}`;
+  }
+
+  setNextPage () {
+    if (this.currentPage < this.pages.length) {
+      this.currentPage++;
+      this.setPageNum(this.currentPage);
+    }
+  }
+
+  setPreviousPage () {
+    if (this.currentPage > 1 && this.pages.length > 1) {
+      this.currentPage--;
+      this.setPageNum(this.currentPage);
+    }
   }
 
   showModal () {
@@ -36,6 +61,7 @@ export default class AuthorLitHome extends React.Component {
   }
 
   render () {
+    const htmlContent = {__html: this.pages[this.currentPage - 1]}
     return (
       <div className="authorLitHome">
         <Modal
@@ -54,7 +80,9 @@ export default class AuthorLitHome extends React.Component {
               <h1>{this.currentWork.title}</h1>
               <h2>{this.props.data.fname} {this.props.data.lname}</h2>
             </Modal.Title>
-            <div className="content" dangerouslySetInnerHTML={this.htmlContent}></div>
+            <div className="content" dangerouslySetInnerHTML={htmlContent}></div><br />
+            <span><button onClick={this.setNextPage.bind(this)}>Previous Page</button></span>
+            <span><button onClick={this.setNextPage.bind(this)}>Next Page</button></span>
           </Modal.Body>
           <Modal.Footer>
             <button onClick={this.hideModal.bind(this)}>Close</button>
