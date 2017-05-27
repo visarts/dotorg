@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal } from 'react-bootstrap';
+import { Modal, Glyphicon } from 'react-bootstrap';
 import './authorLitHome.component.less';
 
 export default class AuthorLitHome extends React.Component {
@@ -66,8 +66,8 @@ export default class AuthorLitHome extends React.Component {
     localStorage.setItem('readingMode', flipMode);
   }
 
-  render () {
-    const htmlContent = {__html: this.pages[this.currentPage - 1]}
+  render () {console.log(this.currentPage);
+    const htmlContent = {__html: this.pages[this.currentPage - 1]};
     return (
       <div className="authorLitHome">
         <Modal
@@ -77,10 +77,10 @@ export default class AuthorLitHome extends React.Component {
           <Modal.Header closeButton>
             <h1>Portitude Reader</h1>
           </Modal.Header>
-          <Modal.Header className="modalSubNav">
+          <div className="modal-nav">
             <strong>More by {this.props.data.fname} {this.props.data.lname}</strong>
             <button onClick={this.setReadingMode.bind(this)} className="readingModeButton">{this.state.readingModeText}</button>
-          </Modal.Header>
+          </div>
           <Modal.Body className={this.state.readingModeClass}>
             <Modal.Title>
               <h1>{this.currentWork.title}</h1>
@@ -90,11 +90,11 @@ export default class AuthorLitHome extends React.Component {
 
           </Modal.Body>
           <Modal.Footer>
-            <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, 1)} disabled={this.currentPage === 1} className={this.currentPage === 1 ? 'paginationDisabled' : ''}>&#124;&lt;</button></span>
-            <span className="paginationDirector"><button onClick={this.setPreviousPage.bind(this)} disabled={this.currentPage === 1} className={this.currentPage === 1 ? 'paginationDisabled' : ''}>&lt;&lt;</button></span>
+            <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, 1)} disabled={this.currentPage === 1} className={this.currentPage === 1 ? 'paginationDisabled' : ''}><Glyphicon glyph="fast-backward" /></button></span>
+            <span className="paginationDirector"><button onClick={this.setPreviousPage.bind(this)} disabled={this.currentPage === 1} className={this.currentPage === 1 ? 'paginationDisabled' : ''}><Glyphicon glyph="chevron-left" /></button></span>
             <span className="paginationLocator">Page {this.currentPage} of {this.pages.length}</span>
-            <span className="paginationDirector"><button onClick={this.setNextPage.bind(this)} disabled={this.currentPage === this.pages.length} className={this.currentPage === this.pages.length ? 'paginationDisabled' : ''}>&gt;&gt;</button></span>
-            <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, this.pages.length)} disabled={this.currentPage === this.pages.length} className={this.currentPage === this.pages.length ? 'paginationDisabled' : ''}>&gt;&#124;</button></span>
+            <span className="paginationDirector"><button onClick={this.setNextPage.bind(this)} disabled={this.currentPage === this.pages.length} className={this.currentPage === this.pages.length ? 'paginationDisabled' : ''}><Glyphicon glyph="chevron-right" /></button></span>
+            <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, this.pages.length)} disabled={this.currentPage === this.pages.length} className={this.currentPage === this.pages.length ? 'paginationDisabled' : ''}><Glyphicon glyph="fast-forward" /></button></span>
             <button className="closeModal" onClick={this.hideModal.bind(this)}>Close</button>
           </Modal.Footer>
 

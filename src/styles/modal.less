@@ -28,6 +28,7 @@
   }
 
   .custom-modal {
+    position: relative;
     height: 93vh;
     overflow: hidden;
     border-radius: 4px;
@@ -36,22 +37,22 @@
     .modal-content {
       height: 93vh;
       overflow: hidden;
-      background: @mainThemeColor;
 
       .modal-header {
         background: @secondaryThemeColor;
-        position: fixed;
+        position: sticky;
         top: 0;
         left: 0;
         right: 0;
-        height: 50px;
+        text-align: center;
         border: none;
         z-index: 1800;
+
+        padding: @hPadding @vPadding;
 
         h1 {
           display: inline-block;
           font-size: 1.5em;
-          margin: 0 @vMargin;
           transition: font-size, .2s;
         }
 
@@ -66,13 +67,13 @@
         }
       }
 
-      .modalSubNav {
-        position: relative;
+      .modal-nav {
+        position: sticky;
         z-index: 1700;
         color: white;
-        top: 50px;
         background: @tertiaryThemeColor;
         color: darken(@mainTextColor, 10%);
+        padding: @hPadding @vPadding;
 
         .readingModeButton {
           float: right;
@@ -87,8 +88,8 @@
       }
 
       .modal-body {
-        margin-top: 50px;
         height: 100%;
+        transition: all .2s;
 
         &.lightMode {
           background: #cacaca;
@@ -96,7 +97,7 @@
         }
 
         &.darkMode {
-
+          background: @mainThemeColor;
         }
 
         .modal-title {
@@ -113,6 +114,7 @@
         right: 0;
         background: @tertiaryThemeColor;
         color: darken(@mainTextColor, 10%);
+        border: none;
 
         button {
           display: inline-block;
@@ -123,25 +125,35 @@
           padding: 4px;
           font-size: 11px;
           margin: 0 auto;
+          transition: background-color .2s;
 
           &.closeModal {
             float: right;
+          }
+
+          &:hover {
+            background-color: lighten(@tertiaryThemeColor, 20%);
           }
         }
 
         .paginationDirector {
           button {
-            color: @mainTextColor;
+            margin-right: 4px;
 
             &.paginationDisabled {
               color: @secondaryThemeColor;
+
+              &:hover {
+                background-color: lighten(@tertiaryThemeColor, 10%);
+              }
             }
+
           }
         }
 
         .paginationLocator {
           display: inline-block;
-          width: 100px;
+          width: 110px;
         }
       }
     }
