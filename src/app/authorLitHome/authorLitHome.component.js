@@ -18,16 +18,22 @@ export default class AuthorLitHome extends React.Component {
     this.pages = [];
     do {
       let page = '';
-      page = this.content.slice(0, 1200);
-      this.content = this.content.slice(1200);
+      page = this.content.slice(0, 1100);
+      this.content = this.content.slice(1100);
       this.pages.push(page);
-    } while(this.content.length > 1200);
+      if (this.content.length < 1100) {
+        page = this.content.slice(0);
+        this.pages.push(page);
+      }
+    } while(this.content.length > 1100);
     this.originalHash = document.location.hash;
-    this.currentPage = 1;
+    this.currentPage = document.location.hash.indexOf('?page=') > -1 ? document.location.hash.slice(document.location.hash.indexOf('=') + 1) : 1;
   }
 
   setPageNum (pageNum) {
-    document.location.hash = this.originalHash + `?page=${pageNum}`;
+    this.currentPage = pageNum;
+    const currentHash = this.originalHash.indexOf('?page=') > -1 ? this.originalHash.slice(0, this.originalHash.indexOf('?')) : this.originalHash;
+    document.location.hash = currentHash + `?page=${pageNum}`;
   }
 
   setNextPage () {
@@ -81,11 +87,15 @@ export default class AuthorLitHome extends React.Component {
               <h2>{this.props.data.fname} {this.props.data.lname}</h2>
             </Modal.Title>
             <div className="content" dangerouslySetInnerHTML={htmlContent}></div><br />
-            <span><button onClick={this.setNextPage.bind(this)}>Previous Page</button></span>
-            <span><button onClick={this.setNextPage.bind(this)}>Next Page</button></span>
+
           </Modal.Body>
           <Modal.Footer>
-            <button onClick={this.hideModal.bind(this)}>Close</button>
+            <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, 1)} disabled={this.currentPage === 1} className={this.currentPage === 1 ? 'paginationDisabled' : ''}>&#124;&lt;</button></span>
+            <span className="paginationDirector"><button onClick={this.setPreviousPage.bind(this)} disabled={this.currentPage === 1} className={this.currentPage === 1 ? 'paginationDisabled' : ''}>&lt;&lt;</button></span>
+            <span className="paginationLocator">Page {this.currentPage} of {this.pages.length}</span>
+            <span className="paginationDirector"><button onClick={this.setNextPage.bind(this)} disabled={this.currentPage === this.pages.length} className={this.currentPage === this.pages.length ? 'paginationDisabled' : ''}>&gt;&gt;</button></span>
+            <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, this.pages.length)} disabled={this.currentPage === this.pages.length} className={this.currentPage === this.pages.length ? 'paginationDisabled' : ''}>&gt;&#124;</button></span>
+            <button className="closeModal" onClick={this.hideModal.bind(this)}>Close</button>
           </Modal.Footer>
 
         </Modal>
