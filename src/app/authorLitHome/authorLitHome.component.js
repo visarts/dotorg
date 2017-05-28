@@ -24,7 +24,7 @@ export default class AuthorLitHome extends React.Component {
     this.pages = [];
     do {
       let page = '';
-      let lastChar = 1400;
+      let lastChar = 2000;
       while (this.content[lastChar - 1] !== ' ') {
         lastChar--;
       }
