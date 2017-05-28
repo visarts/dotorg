@@ -7,6 +7,7 @@ const GlobalNav = (props) => {
   const litSelected = props.location.pathname.includes('/literature') ? 'selected' : 'unselected';
   const artSelected = props.location.pathname.includes('/arts') ? 'selected' : 'unselected';
   const hideDesc = props.location.pathname === '/' ? '' : 'hideDesc';
+
   return (
     <nav className="globalNav">
 

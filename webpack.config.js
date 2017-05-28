@@ -21,6 +21,7 @@ module.exports = {
       filename: 'styles/[name].css',
       allChunks: true
     })
+    //new webpack.optimize.UglifyJsPlugin()
     // new CopyWebpackPlugin([
     //   { from: 'src/mockup/styledata.json', to: 'assets' }
     // ])

@@ -18,17 +18,12 @@
     transition: all .2s;
     border-left: 2px solid @mainThemeColor;
 
-    &:hover {
-      background: @secondaryThemeColor;
-    }
-
     &.selected {
       background: @mainHighlightColor;
       border-color: #2e2e3a;
       color: lighten(palegoldenrod, 10%);
 
       &:hover {
-        background: @tertiaryThemeColor;
         color: palegoldenrod;
       }
     }
@@ -37,7 +32,6 @@
       color: @darkLinkColor;
 
       &:hover {
-        background: @secondaryThemeColor;
         color: palegoldenrod;
       }
     }

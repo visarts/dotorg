@@ -12,7 +12,7 @@ const AuthorsHome = (props) => {
       <li key={index}>
         {props.location.pathname !== `/literature/${author.authorKey}/${title.fileName}` ?
           <Link to={`/literature/${author.authorKey}/${title.fileName}`}>{title.title}</Link> :
-          <span>{title.title}</span>
+          <span className="selected">{title.title}</span>
         }
       </li>
     );

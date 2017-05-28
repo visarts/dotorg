@@ -45,6 +45,7 @@ export default class AuthorLitHome extends React.Component {
     this.currentPage = pageNum;
     const currentHash = this.originalHash.indexOf('?page=') > -1 ? this.originalHash.slice(0, this.originalHash.indexOf('?')) : this.originalHash;
     document.location.hash = currentHash + `?page=${pageNum}`;
+    document.querySelector('.modal-body').scrollTop = 0;
   }
 
   setNextPage () {
