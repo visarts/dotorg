@@ -1091,6 +1091,20 @@
       ]
     },
     {
+      "fname": "Charles",
+      "lname": "Dickens",
+      "bio": "Much has been said of Dickens which cannot be detailed here.",
+      "authorKey": "dickens",
+      "content": [
+        {
+          "title": "",
+          "date": "",
+          "fileName": "dickens-",
+          "genre": "shorts"
+        }
+      ]
+    },
+    {
       "fname": "Emily",
       "lname": "Dickinson",
       "authorKey": "dickinson",

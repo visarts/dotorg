@@ -14,7 +14,7 @@
 }
 
 .modal {
-  ::-webkit-scrollbar {
+  /*::-webkit-scrollbar {
     width: 20px;
   }
 
@@ -25,12 +25,11 @@
 
   ::-webkit-scrollbar-track {
     background: @mainThemeColor;
-  }
+  }*/
 
   .custom-modal {
     position: relative;
     height: 93vh;
-    overflow: hidden;
     border-radius: 4px;
     box-shadow: 0px 0px 10px lighten(@mainThemeColor, 10%);
 
@@ -89,7 +88,9 @@
 
       .modal-body {
         height: 100%;
+        padding-bottom: 110px;
         transition: all .2s;
+        overflow: auto;
 
         &.lightMode {
           background: #cacaca;
@@ -115,6 +116,7 @@
         background: @tertiaryThemeColor;
         color: darken(@mainTextColor, 10%);
         border: none;
+        height: 50px;
 
         button {
           display: inline-block;

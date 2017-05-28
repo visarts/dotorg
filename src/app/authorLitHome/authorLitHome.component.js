@@ -9,7 +9,7 @@ export default class AuthorLitHome extends React.Component {
     const readingMode = localStorage.getItem('readingMode');
     this.state = {
       show: true,
-      readingModeClass: readingMode ? readingMode : 'darkMode',
+      readingModeClass: readingMode ? readingMode : 'lightMode',
       readingModeText: readingMode && readingMode === 'lightMode' ? 'Lights Off' : 'Lights On'
     };
     this.currentWorkKey = props.match.params.work;
@@ -18,10 +18,10 @@ export default class AuthorLitHome extends React.Component {
     this.pages = [];
     do {
       let page = '';
-      page = this.content.slice(0, 1100);
-      this.content = this.content.slice(1100);
+      page = this.content.slice(0, 1400);
+      this.content = this.content.slice(1400);
       this.pages.push(page);
-      if (this.content.length < 1100) {
+      if (this.content.length < 1400) {
         page = this.content.slice(0);
         this.pages.push(page);
       }
@@ -61,12 +61,12 @@ export default class AuthorLitHome extends React.Component {
 
   setReadingMode () {
     const currentMode = localStorage.getItem('readingMode');
-    const flipMode = currentMode && currentMode === 'darkMode' ? 'lightMode' : currentMode && currentMode === 'lightMode' ? 'darkMode' : 'darkMode';
+    const flipMode = currentMode && currentMode === 'darkMode' ? 'lightMode' : currentMode && currentMode === 'lightMode' ? 'darkMode' : 'lightMode';
     this.setState({readingModeClass: flipMode, readingModeText: flipMode === 'lightMode' ? 'Lights Off' : 'Lights On'});
     localStorage.setItem('readingMode', flipMode);
   }
 
-  render () {console.log(this.currentPage);
+  render () {
     const htmlContent = {__html: this.pages[this.currentPage - 1]};
     return (
       <div className="authorLitHome">
