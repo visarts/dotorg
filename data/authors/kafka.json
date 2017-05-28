@@ -1,7 +1,5 @@
 {
-  "fname": "Franz",
-  "lname": "Kafka",
-  "bio": "Much has been said of Kafka which cannot be detailed here.",
+  "authorKey": "kafka",
   "content": [
     {
       "title": "Metamorphosis",

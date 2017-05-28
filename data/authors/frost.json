@@ -1,7 +1,5 @@
 {
-  "fname": "Robert",
-  "lname": "Frost",
-  "bio": "Much has been said of Frost which cannot be detailed here.",
+  "authorKey": "frost",
   "content": [
     {
       "title": "Acquainted With the Night",

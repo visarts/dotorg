@@ -1,7 +1,5 @@
 {
-  "fname": "Emily",
-  "lname": "Dickinson",
-  "bio": "Much has been said of Emily which cannot be detailed here.",
+  "authorKey": "dickinson",
   "content": [
     {
       "title": "Because I Could Not Stop for Death",

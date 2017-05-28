@@ -1,7 +1,5 @@
 {
-  "fname": "Hans Christian",
-  "lname": "Andersen",
-  "bio": "Much has been said of Mr. Andersen which cannot be detailed here.",
+  "authorKey": "andersenhc",
   "content": [
     {
       "title": "The A-B-C Book",
@@ -70,7 +68,7 @@
       "genre": "tales"
     },
     {
-      "title": "The Bishop of Borglum and his Men",
+      "title": "The Bishop of Børglum and his Men",
       "date": "1861",
       "fileName": "andersen-bishop-of-borglum-1861",
       "genre": "tales"

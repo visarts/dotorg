@@ -42,6 +42,10 @@ export default class App extends React.Component {
 
       add routing for art eras and lit genres
 
+      add smart breaking for paragraphs in reader modal, prevent breaking mid-pre block
+
+      fix state issues with reader modal lights and disabled buttons
+
     */
 
     return (
@@ -75,7 +79,7 @@ export default class App extends React.Component {
           )} />
           <Route exact path='/literature/:author/:work' render={props => (
             <AuthorLitHome
-              data={this.authorsData.filter(item => item.authorKey === props.match.params.author)[0]}
+              currentAuthor={this.authorsData.filter(item => item.authorKey === props.match.params.author)[0]}
               {...props} />
           )} />
 

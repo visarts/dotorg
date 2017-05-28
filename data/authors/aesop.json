@@ -1,7 +1,5 @@
 {
-  "fname": "Aesop",
-  "lname": "",
-  "bio": "Much has been said of Aesop which cannot be detailed here.",
+  "authorKey": "aesop",
   "content": [
     {
       "title": "The Dancing Monkeys",

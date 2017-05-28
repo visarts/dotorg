@@ -1,7 +1,5 @@
 {
-  "fname": "The Brothers",
-  "lname": "Grimm",
-  "bio": "Much has been said of the Grimm brothers which cannot be detailed here.",
+  "authorKey": "grimm",
   "content": [
     {
       "title": "The Beam",
