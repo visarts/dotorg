@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import dataService from 'Services/data.service';
 import './home.component.less';
 
 const Home = (props) => {
@@ -9,7 +10,8 @@ const Home = (props) => {
   const month = date.getMonth();
   const featuredContent = (() => {
     let author = props.authorsData[day];
-    let lit = author.content[month] ? author.content[month] : author.content[0];
+    let authorData = dataService.getAuthorData(author.authorKey);
+    let lit = authorData.content[month] ? authorData.content[month] : authorData.content[0];
     return (
       <div>
         <div className="featuredBlock">
