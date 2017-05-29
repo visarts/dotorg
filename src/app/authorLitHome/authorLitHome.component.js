@@ -27,9 +27,24 @@ export default class AuthorLitHome extends React.Component {
       let buffer = 300;
       do {
         let page = '';
-        while (this.content[lastChar - 1] !== '.') {
-          lastChar--;
+        while (lastChar < this.content.length) {
+          if (this.content.substring(lastChar - 4, lastChar) === '</p>') {
+            break;
+          } else {
+            lastChar++;
+          }
         }
+
+        /*while (this.content[lastChar - 1] !== '.') {
+          //lastChar++;
+          if (this.content[lastChar - 1] !== '"' &&
+              this.content[lastChar - 1] !== '\'' &&
+              this.content[lastChar - 1] !== '>') {
+            lastChar++;
+          } else {
+            break;
+          }
+        }*/
 
         page = this.content.slice(0, lastChar);
         this.content = this.content.slice(lastChar);
@@ -38,10 +53,12 @@ export default class AuthorLitHome extends React.Component {
           page = this.content.slice(0);
           this.content = this.content.slice(lastChar + buffer);
           this.pages.push(page);
+          break;
         }
       } while(this.content.length > lastChar);
     } else {
       this.pages.push(this.content);
+      console.log(this.content.substring(this.content.length - 5, this.content.length));
     }
     this.originalHash = document.location.hash;
     this.currentPage = document.location.hash.indexOf('?page=') > -1 ? document.location.hash.slice(document.location.hash.indexOf('=') + 1) : 1;

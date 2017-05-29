@@ -1,3 +1,7 @@
+@headerHeight: 40px;
+@navHeight: 35px;
+@footerHeight: 35px;
+
 .modal-container {
   position: relative;
 }
@@ -78,6 +82,7 @@
         top: 0;
         left: 0;
         right: 0;
+        height: @headerHeight;
         text-align: center;
         border: none;
         z-index: 1800;
@@ -104,11 +109,13 @@
 
       .modal-nav {
         position: sticky;
+        height: @navHeight;
         z-index: 1700;
         color: white;
         background: @tertiaryThemeColor;
         color: darken(@mainTextColor, 10%);
         padding: @hPadding @vPadding;
+        border-radius: 0;
 
         .readingControls {
           float: right;
@@ -122,8 +129,11 @@
 
       .modal-body {
         clear: both;
-        height: 100%;
-        padding-bottom: 110px;
+        //height: 100%;
+        padding-bottom: @footerHeight;
+        position: fixed;
+        top: calc(@headerHeight + @navHeight);
+        bottom: @footerHeight;
         transition: background-color .2s;
         overflow: auto;
         font-family: "Georgia";
@@ -170,6 +180,7 @@
         bottom: 0;
         left: 0;
         right: 0;
+        height: @footerHeight;
         background: @tertiaryThemeColor;
         color: darken(@mainTextColor, 10%);
         border: none;
