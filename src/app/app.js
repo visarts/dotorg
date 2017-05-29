@@ -77,7 +77,7 @@ export default class App extends React.Component {
               currentAuthor={this.authorsData.filter(item => item.authorKey === props.match.params.author)[0]}
               {...props} />
           )} />
-          <Route exact path='/literature/:author/:work' render={props => (
+          <Route path='/literature/:author/:work' render={props => (
             <AuthorLitHome
               currentAuthor={this.authorsData.filter(item => item.authorKey === props.match.params.author)[0]}
               {...props} />

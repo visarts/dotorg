@@ -1,0 +1,30 @@
+.dropdown-menu {
+  background: @tertiaryThemeColor;
+
+  li {
+    margin: 0;
+
+    a {
+      color: @mainTextColor;
+      transition: all .2s;
+      padding: @hPadding @vPadding;
+
+      &:hover {
+        background: @mainLinkHoverColor;
+        color: @mainTextColor;
+      }
+    }
+
+    &.active {
+      a {
+        background: lighten(@tertiaryThemeColor, 10%);
+      }
+    }
+  }
+
+  .showMoreButton {
+    cursor: pointer;
+    display: block;
+    text-align: center;
+  }
+}
