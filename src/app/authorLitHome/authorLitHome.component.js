@@ -22,21 +22,27 @@ export default class AuthorLitHome extends React.Component {
     this.currentWork = this.authorData.content.filter(item => item.fileName === this.currentWorkKey)[0];
     this.content = require(`Literature/${this.props.currentAuthor.authorKey}/${this.currentWorkKey}.html`);
     this.pages = [];
-    do {
-      let page = '';
+    if (this.currentWork.genre !== 'poetry') {
       let lastChar = 2000;
-      while (this.content[lastChar - 1] !== ' ') {
-        lastChar--;
-      }
+      let buffer = 300;
+      do {
+        let page = '';
+        while (this.content[lastChar - 1] !== '.') {
+          lastChar--;
+        }
 
-      page = this.content.slice(0, lastChar);
-      this.content = this.content.slice(lastChar);
-      this.pages.push(page);
-      if (this.content.length < lastChar) {
-        page = this.content.slice(0);
+        page = this.content.slice(0, lastChar);
+        this.content = this.content.slice(lastChar);
         this.pages.push(page);
-      }
-    } while(this.content.length > 1100);
+        if (this.content.length < (lastChar + buffer)) {
+          page = this.content.slice(0);
+          this.content = this.content.slice(lastChar + buffer);
+          this.pages.push(page);
+        }
+      } while(this.content.length > lastChar);
+    } else {
+      this.pages.push(this.content);
+    }
     this.originalHash = document.location.hash;
     this.currentPage = document.location.hash.indexOf('?page=') > -1 ? document.location.hash.slice(document.location.hash.indexOf('=') + 1) : 1;
   }
@@ -90,8 +96,11 @@ export default class AuthorLitHome extends React.Component {
     localStorage.setItem('readingMode', flipMode);
   }
 
+  setHTMLContent () {
+    return {__html: this.pages[this.currentPage - 1]};
+  }
+
   render () {
-    const htmlContent = {__html: this.pages[this.currentPage - 1]};
     return (
       <div className="authorLitHome">
         <Modal
@@ -114,15 +123,16 @@ export default class AuthorLitHome extends React.Component {
               <h1>{this.currentWork.title}</h1>
               <h2>{this.props.currentAuthor.fname} {this.props.currentAuthor.lname}</h2>
             </div>
-            <div className={`htmlContent ${this.state.currentFontSizeClass}`} dangerouslySetInnerHTML={htmlContent}></div><br />
-
+            <div className={`htmlContent ${this.state.currentFontSizeClass}`} dangerouslySetInnerHTML={this.setHTMLContent()}></div><br />
           </Modal.Body>
           <Modal.Footer>
-            <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, 1)} disabled={this.currentPage === 1} className={this.currentPage === 1 ? 'buttonDisabled' : ''}><Glyphicon glyph="fast-backward" /></button></span>
-            <span className="paginationDirector"><button onClick={this.setPreviousPage.bind(this)} disabled={this.currentPage === 1} className={this.currentPage === 1 ? 'buttonDisabled' : ''}><Glyphicon glyph="chevron-left" /></button></span>
-            <span className="paginationLocator">{this.currentPage} of {this.pages.length}</span>
-            <span className="paginationDirector"><button onClick={this.setNextPage.bind(this)} disabled={this.currentPage === this.pages.length} className={this.currentPage === this.pages.length ? 'buttonDisabled' : ''}><Glyphicon glyph="chevron-right" /></button></span>
-            <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, this.pages.length)} disabled={this.currentPage === this.pages.length} className={this.currentPage === this.pages.length ? 'buttonDisabled' : ''}><Glyphicon glyph="fast-forward" /></button></span>
+            {this.currentWork.genre !== 'poetry' && <div className="modal-pagination">
+              <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, 1)} disabled={this.currentPage === 1} className={this.currentPage === 1 ? 'buttonDisabled' : ''}><Glyphicon glyph="fast-backward" /></button></span>
+              <span className="paginationDirector"><button onClick={this.setPreviousPage.bind(this)} disabled={this.currentPage === 1} className={this.currentPage === 1 ? 'buttonDisabled' : ''}><Glyphicon glyph="chevron-left" /></button></span>
+              <span className="paginationLocator">{this.currentPage} of {this.pages.length}</span>
+              <span className="paginationDirector"><button onClick={this.setNextPage.bind(this)} disabled={this.currentPage === this.pages.length} className={this.currentPage === this.pages.length ? 'buttonDisabled' : ''}><Glyphicon glyph="chevron-right" /></button></span>
+              <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, this.pages.length)} disabled={this.currentPage === this.pages.length} className={this.currentPage === this.pages.length ? 'buttonDisabled' : ''}><Glyphicon glyph="fast-forward" /></button></span>
+            </div>}
             <button className="closeModal" onClick={this.hideModal.bind(this)}>Close</button>
           </Modal.Footer>
 
