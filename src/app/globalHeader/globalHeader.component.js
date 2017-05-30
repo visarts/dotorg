@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Search from '../search/search.component';
 import './globalHeader.component.less';
 
 const GlobalHeader = (props) => {
@@ -13,6 +14,8 @@ const GlobalHeader = (props) => {
       <h1 className={smallLogoClass}>
         <Link to="/">Portitude <span className="subHead">{separator} {subHeader}</span></Link>
       </h1>
+      <Search
+        updateSearchInput={props.updateSearchInput} />
     </div>
   );
 }

@@ -1,0 +1,41 @@
+@import '../../styles/globals';
+
+.search {
+  display: inline-block;
+  position: relative;
+  float: right;
+  margin: 0 @vMargin;
+  vertical-align: middle;
+  padding: @hPadding @vPadding;
+
+  .searchInput {
+    transition: all .2s;
+    color: @mainTextColor;
+    padding: 4px;
+
+    &.collapsed, &.expanded {
+      background: @mainThemeColor;
+      border: 1px @tertiaryThemeColor solid;
+
+      &:focus, &:active {
+        background: @tertiaryThemeColor;
+        border-color: @tertiaryThemeColor;
+      }
+    }
+
+    &.collapsed {
+      width: 10em;
+    }
+
+    &.expanded {
+      width: 15em;
+    }
+
+    @media(max-width: 768px) {
+      &.expanded {
+        width: 10em;
+      }
+    }
+  }
+
+}

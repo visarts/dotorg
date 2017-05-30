@@ -123,7 +123,7 @@ export default class AuthorLitHome extends React.Component {
   }
 
   componentWillReceiveProps (newprops) {
-    this.setState({currentPage: 1}, () => {
+    this.setState({currentPage: this.state.currentPage}, () => {
       this.setValues();
     })
   }

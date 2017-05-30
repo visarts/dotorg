@@ -10,14 +10,24 @@ import AuthorsHome from './authorsHome/authorsHome.component';
 import ArtsHome from './artsHome/artsHome.component';
 import ArtistsHome from './artistsHome/artistsHome.component';
 import AuthorLitHome from './authorLitHome/authorLitHome.component';
+import SearchHome from './searchHome/searchHome.component';
 
 
 export default class App extends React.Component {
 
-  constructor () {
-    super();
+  constructor (props) {
+    super(props);
     this.authorsData = dataService.getAuthorsData();
     this.artistsData = dataService.getArtistsData();
+    this.updateSearchInput = this.updateSearchInput.bind(this);
+
+    this.state = {
+      searchInput: ''
+    }
+  }
+
+  updateSearchInput (input) {
+    this.setState({ searchInput: input });
   }
 
   render () {
@@ -53,6 +63,7 @@ export default class App extends React.Component {
         <div className="appHome">
           <Route path='/' render={props => (
             <GlobalHeader
+              updateSearchInput={this.updateSearchInput}
               {...props} />
           )}/>
           <Route path='/' render={props => (
@@ -93,6 +104,15 @@ export default class App extends React.Component {
             <ArtistsHome
               currentArtist={this.artistsData.filter(item => item.artistKey === props.match.params.artist)[0]}
               {...props} />
+          )} />
+
+          <Route exact path='/search' render={props => (
+            <SearchHome
+              artistsData={this.artistsData}
+              authorsData={this.authorsData}
+              searchInput={this.state.searchInput}
+              {...props}
+               />
           )} />
 
 
