@@ -1,11 +1,11 @@
 import React from 'react';
+import DOMPurify from '../../lib/purify.js';
 import './search.component.less';
 
 export default class Search extends React.Component {
 
   constructor (props) {
     super(props);
-
     this.state = {
       searchClass: 'collapsed'
     };
@@ -25,7 +25,8 @@ export default class Search extends React.Component {
 
   onChange (event) {
 
-    this.props.updateSearchInput(event.target.value);
+    const clean = DOMPurify.sanitize(event.target.value);
+    this.props.updateSearchInput(clean);
     /*const userInput = event.target.value.toLowerCase();
     if (this.artistNames.indexOf(userInput) > -1) {
       console.log('is an artist');
@@ -44,10 +45,13 @@ export default class Search extends React.Component {
     return (
       <div className="search">
         <input
-          type="text"
+          type="search"
           id="searchInput"
           className={`searchInput ${this.state.searchClass}`}
-          value={this.state.searchInput}
+          value={this.props.searchInput}
+          autoComplete={true}
+          maxLength={75}
+          required={true}
           onFocus={this.expandSearch}
           onBlur={this.collapseSearch}
           onChange={this.onChange}

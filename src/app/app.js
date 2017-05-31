@@ -22,7 +22,7 @@ export default class App extends React.Component {
     this.updateSearchInput = this.updateSearchInput.bind(this);
 
     this.state = {
-      searchInput: ''
+      searchInput: sessionStorage.getItem('searchInput') ? sessionStorage.getItem('searchInput') : ''
     }
   }
 
@@ -63,6 +63,7 @@ export default class App extends React.Component {
         <div className="appHome">
           <Route path='/' render={props => (
             <GlobalHeader
+              searchInput={this.state.searchInput}
               updateSearchInput={this.updateSearchInput}
               {...props} />
           )}/>

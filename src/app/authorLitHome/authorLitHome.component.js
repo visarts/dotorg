@@ -125,6 +125,7 @@ export default class AuthorLitHome extends React.Component {
   componentWillReceiveProps (newprops) {
     this.setState({currentPage: this.state.currentPage}, () => {
       this.setValues();
+      document.querySelector('.modal-body').scrollTop = 0;
     })
   }
 
@@ -161,9 +162,10 @@ export default class AuthorLitHome extends React.Component {
           </Modal.Header>
           <div className="modal-nav">
             <span className="readingMenu">
-              <DropdownButton title="Dropdown" id="bg-vertical-dropdown-1">
+              {this.authorData.content.length > 1 &&
+                <DropdownButton title="Read Another" id="bg-vertical-dropdown-1">
                 {this.setAuthorMenu()}
-              </DropdownButton>
+              </DropdownButton>}
             </span>
             <span className="readingControls">
               <Glyphicon glyph="text-size" />&nbsp;
