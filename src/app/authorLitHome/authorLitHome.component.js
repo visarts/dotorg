@@ -163,7 +163,7 @@ export default class AuthorLitHome extends React.Component {
           <div className="modal-nav">
             <span className="readingMenu">
               {this.authorData.content.length > 1 &&
-                <DropdownButton title="Read Another" id="bg-vertical-dropdown-1">
+                <DropdownButton title="Read More" id="bg-vertical-dropdown-1">
                 {this.setAuthorMenu()}
               </DropdownButton>}
             </span>
