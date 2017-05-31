@@ -176,7 +176,7 @@ export default class AuthorLitHome extends React.Component {
           </div>
           <Modal.Body className={this.state.readingModeClass}>
             <div className="modal-title">
-              <h1>{this.currentWork.title}</h1>
+              <h1>{decodeURIComponent(this.currentWork.title)}</h1>
               <h2>{this.props.currentAuthor.fname} {this.props.currentAuthor.lname}</h2>
             </div>
             <div className={`htmlContent ${this.state.currentFontSizeClass}`} dangerouslySetInnerHTML={this.setHTMLContent()}></div><br />

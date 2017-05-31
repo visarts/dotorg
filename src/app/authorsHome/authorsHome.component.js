@@ -11,7 +11,7 @@ const AuthorsHome = (props) => {
     return (
       <li key={index}>
         {props.location.pathname !== `/literature/${author.authorKey}/${title.fileName}` ?
-          <Link to={`/literature/${author.authorKey}/${title.fileName}`}>{title.title}</Link> :
+          <Link to={`/literature/${author.authorKey}/${title.fileName}`}>{decodeURIComponent(title.title)}</Link> :
           <span className="selected">{title.title}</span>
         }
       </li>

@@ -8,7 +8,7 @@ const ArtsHome = (props) => {
     return (
       <li key={index}>
         <Link key={index} to={`/arts/${artist.artistKey}`}>
-          {artist.fname} {artist.lname}
+          {decodeURIComponent(`${artist.fname} ${artist.lname}`)}
         </Link>
       </li>
     );

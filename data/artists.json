@@ -37,8 +37,8 @@
     },
 
     {
-      "fname": "Jean-Léon",
-      "lname": "Gérôme",
+      "fname": "Jean-L%C3%A9on",
+      "lname": "G%C3%A9r%C3%B4me",
       "artistKey": "gerome",
       "bio": "Much has been said of Gérôme which cannot be detailed here.",
       "era": "Academic"
