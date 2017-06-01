@@ -14,5 +14,13 @@
     font-size: .9em;
     margin: 0 @vMargin;
     padding: @hPadding @vPadding;
+    color: lighten(@mainThemeColor, 20%);
+  }
+
+  @media(max-width: 768px) {
+    .copyright {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }

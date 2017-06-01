@@ -10,6 +10,7 @@ export default class ArtistsHome extends React.Component {
 
   constructor (props) {
     super(props);
+    document.querySelector('body').scrollTop = 0;
     this.artist = this.props.currentArtist;
     this.artistData = dataService.getArtistData(this.artist.artistKey);
     this.thumbs = this.getThumbs();

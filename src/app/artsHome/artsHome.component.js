@@ -4,6 +4,7 @@ import './artsHome.component.less';
 
 const ArtsHome = (props) => {
 
+  document.querySelector('body').scrollTop = 0;
   const artistsList = props.artistsData.map((artist, index) => {
     return (
       <li key={index}>

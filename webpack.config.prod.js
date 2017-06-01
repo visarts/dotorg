@@ -26,13 +26,13 @@ module.exports = {
       filename: 'styles/[name].css',
       allChunks: true
     }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendors'
+    }),
     new webpack.optimize.UglifyJsPlugin(),
     new CopyWebpackPlugin([
       { from: 'data', to: 'data' }
-    ]),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendors'
-    })
+    ])
   ],
   module: {
 		rules: [

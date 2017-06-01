@@ -5,6 +5,7 @@ import './home.component.less';
 
 const Home = (props) => {
 
+  document.querySelector('body').scrollTop = 0;
   const date = new Date();
   const day = date.getDay();
   const month = date.getMonth();

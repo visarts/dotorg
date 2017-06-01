@@ -5,6 +5,7 @@ import './authorsHome.component.less';
 
 
 const AuthorsHome = (props) => {
+
   const author = props.currentAuthor;
   const authorData = dataService.getAuthorData(author.authorKey);
   const titles = authorData.content.map((title, index) => {

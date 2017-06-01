@@ -27,6 +27,7 @@ export default class Search extends React.Component {
   }
 
   submitSearch (event) {
+    event.target.blur();
     if (window.innerWidth > 600 || this.state.searchClass === 'expanded') {
       document.location.hash = '#/search';
     } else if (window.innerWidth <= 600) {
