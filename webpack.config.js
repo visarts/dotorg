@@ -7,10 +7,10 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 //const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: [
-    './src/styles/main.less',
-    './src/index.js'
-  ],
+  entry: {
+    vendors: './src/vendors.js',
+    main: ['./src/styles/main.less', './src/index.js']
+  },
   output: {
     path: path.resolve(ROOT_PATH, 'dist'),
     filename: '[name].js'
@@ -20,6 +20,9 @@ module.exports = {
     new ExtractTextPlugin({
       filename: 'styles/[name].css',
       allChunks: true
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendors'
     })
     //new webpack.optimize.UglifyJsPlugin()
     // new CopyWebpackPlugin([

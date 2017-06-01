@@ -4,8 +4,6 @@ import dataService from 'Services/data.service';
 import './searchHome.component.less';
 
 const SearchHome = (props) => {
-  // prevent a page refresh from clearing the search
-  sessionStorage.setItem('searchInput', props.searchInput ? props.searchInput : sessionStorage.getItem('searchInput'));
 
   // will need grab all content json files and walk through every item to look for a match of item title
 
@@ -45,7 +43,7 @@ const SearchHome = (props) => {
   const getAuthorsList = authorList.length ? authorList.map((nameKey, index) => {
     return (
       <li key={index}>
-        <Link to={`literature/${nameKey}`} key={index}>{nameKey}</Link>
+        <Link to={`literature/${nameKey}`} onClick={() => {props.updateSearchInput(nameKey)}} key={index}>{nameKey}</Link>
       </li>
     );
   }) : null;
@@ -53,7 +51,7 @@ const SearchHome = (props) => {
   const getArtistsList = artistList.length ? artistList.map((nameKey, index) => {
     return (
       <li key={index}>
-        <Link to={`arts/${nameKey}`} key={index}>{nameKey}</Link>
+        <Link to={`arts/${nameKey}`} onClick={() => {props.updateSearchInput(nameKey)}} key={index}>{nameKey}</Link>
       </li>
     );
   }) : null;

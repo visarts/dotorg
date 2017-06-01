@@ -1,14 +1,17 @@
 @import '../../styles/globals';
 
 .search {
-  display: inline-block;
-  position: relative;
-  float: right;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
   margin: 0 @vMargin;
   vertical-align: middle;
   padding: @hPadding @vPadding;
+  padding-right: 0;
 
   .searchInput {
+
     transition: all .2s;
     color: @mainTextColor;
     padding: 4px;
@@ -18,24 +21,36 @@
       border: 1px @tertiaryThemeColor solid;
 
       &:focus, &:active {
-        background: @tertiaryThemeColor;
-        border-color: @tertiaryThemeColor;
+        outline: none;
       }
     }
 
     &.collapsed {
+      color: lighten(@mainThemeColor, 20%);
       width: 10em;
     }
 
     &.expanded {
+      background: @tertiaryThemeColor;
       width: 15em;
     }
 
-    @media(max-width: 768px) {
+    @media(max-width: 600px) {
+      &.collapsed {
+        width: 0px;
+        padding: 0px;
+        border: none;
+      }
       &.expanded {
-        width: 10em;
+        //width: 10em;
       }
     }
+  }
+
+  .glyphicon {
+    cursor: pointer;
+    padding: @hPadding;
+    color: lighten(@mainThemeColor, 20%);
   }
 
 }

@@ -27,6 +27,7 @@ export default class App extends React.Component {
   }
 
   updateSearchInput (input) {
+    sessionStorage.setItem('searchInput', input);
     this.setState({ searchInput: input });
   }
 
@@ -112,6 +113,7 @@ export default class App extends React.Component {
               artistsData={this.artistsData}
               authorsData={this.authorsData}
               searchInput={this.state.searchInput}
+              updateSearchInput={this.updateSearchInput}
               {...props}
                />
           )} />

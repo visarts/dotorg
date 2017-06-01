@@ -1,5 +1,6 @@
 import React from 'react';
 import DOMPurify from '../../lib/purify.js';
+import { Glyphicon } from 'react-bootstrap';
 import './search.component.less';
 
 export default class Search extends React.Component {
@@ -9,30 +10,34 @@ export default class Search extends React.Component {
     this.state = {
       searchClass: 'collapsed'
     };
-    this.expandSearch = this.expandSearch.bind(this);
-    this.collapseSearch = this.collapseSearch.bind(this);
     this.onChange = this.onChange.bind(this);
     this.onKeyDown = this.onKeyDown.bind(this);
+    this.toggleSearch = this.toggleSearch.bind(this);
+    this.submitSearch = this.submitSearch.bind(this);
   }
 
-  expandSearch () {
-    this.setState({ searchClass: 'expanded'});
+  toggleSearch (event) {
+    if (this.state.searchClass === 'collapsed') {
+      document.querySelector('.searchInput').focus();
+      this.setState({ searchClass: 'expanded' });
+    } else {
+      document.querySelector('.searchInput').blur();
+      this.setState({ searchClass: 'collapsed' });
+    }
   }
 
-  collapseSearch () {
-    this.setState({ searchClass: 'collapsed' });
+  submitSearch (event) {
+    if (window.innerWidth > 600 || this.state.searchClass === 'expanded') {
+      document.location.hash = '#/search';
+    } else if (window.innerWidth <= 600) {
+      this.setState({ searchClass: 'expanded' });
+      document.querySelector('.searchInput').focus();
+    }
   }
 
   onChange (event) {
-
     const clean = DOMPurify.sanitize(event.target.value);
-    this.props.updateSearchInput(clean);
-    /*const userInput = event.target.value.toLowerCase();
-    if (this.artistNames.indexOf(userInput) > -1) {
-      console.log('is an artist');
-    } else if (this.authorNames.indexOf(userInput) > -1) {
-      console.log('is an author');
-    }*/
+    this.props.updateSearchInput(clean.toLowerCase());
   }
 
   onKeyDown (event) {
@@ -41,21 +46,25 @@ export default class Search extends React.Component {
     }
   }
 
+
   render () {
     return (
       <div className="search">
-        <input
-          type="search"
-          id="searchInput"
-          className={`searchInput ${this.state.searchClass}`}
-          value={this.props.searchInput}
-          autoComplete={true}
-          maxLength={75}
-          required={true}
-          onFocus={this.expandSearch}
-          onBlur={this.collapseSearch}
-          onChange={this.onChange}
-          onKeyDown={this.onKeyDown} />
+        <form id="searchForm">
+          <input
+            type="search"
+            id="searchInput"
+            className={`searchInput ${this.state.searchClass}`}
+            value={this.props.searchInput}
+            autoComplete={true}
+            maxLength={75}
+            required={true}
+            onFocus={this.toggleSearch}
+            onBlur={this.toggleSearch}
+            onChange={this.onChange}
+            onKeyDown={this.onKeyDown} />
+        </form>
+        <Glyphicon onBlur={this.submitSearch} onClick={this.submitSearch} glyph="search" />
       </div>
     );
   }
