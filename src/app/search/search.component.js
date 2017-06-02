@@ -14,6 +14,7 @@ export default class Search extends React.Component {
     this.onKeyDown = this.onKeyDown.bind(this);
     this.toggleSearch = this.toggleSearch.bind(this);
     this.submitSearch = this.submitSearch.bind(this);
+    this.focusSearchField = this.focusSearchField.bind(this);
   }
 
   toggleSearch (event) {
@@ -32,10 +33,15 @@ export default class Search extends React.Component {
       document.location.hash = '#/search';
     } else if (window.innerWidth <= 600) {
       this.setState({ searchClass: 'expanded' });
-      document.querySelector('.searchInput').focus();
+
+      document.querySelector('.searchInput').removeEventListener('onClick', this.focusSearchField);
+
     }
   }
 
+  focusSearchField () {
+    document.querySelector('.searchInput').focus();
+  }
   onChange (event) {
     const clean = DOMPurify.sanitize(event.target.value);
     this.props.updateSearchInput(clean.toLowerCase());
@@ -65,7 +71,9 @@ export default class Search extends React.Component {
             onChange={this.onChange}
             onKeyDown={this.onKeyDown} />
         </form>
-        <Glyphicon onBlur={this.submitSearch} onClick={this.submitSearch} glyph="search" />
+        <Glyphicon
+          onClick={this.submitSearch}
+          glyph="search" />
       </div>
     );
   }
