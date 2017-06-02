@@ -126,18 +126,38 @@
           float: right;
           display: inline-block;
 
+          .textSizing {
+            border: 1px solid lighten(@tertiaryThemeColor, 20%);
+            display: inline-block;
+            margin-right: 4px;
+            //padding: 2px;
+            background: lighten(@tertiaryThemeColor, 10%);
+            border-radius: 4px;
+
+            .textSizingGlyph {
+              color: darken(@mainTextColor, 40%);
+              display: inline-block;
+              margin: 0 4px;
+            }
+
+            button {
+              margin: 0;
+            }
+          }
+
+          .readingModeButton {
+
+          }
+
           button {
-            //font-size: 9px;
             text-align: center;
 
             .lightMode {
-              margin-right: 4px;
               background: transparent;
               color: palegoldenrod;
             }
 
             .darkMode {
-              margin-right: 4px;
               background: transparent;
               color: @mainThemeColor;
             }
