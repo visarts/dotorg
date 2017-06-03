@@ -13,12 +13,13 @@ export default class AuthorLitHome extends React.Component {
     localStorage.setItem('readingMode', readingMode);
     localStorage.setItem('readingFontSize', readingFontSize);
     this.state = {
-      show: true,
       readingModeClass: readingMode ? readingMode : 'lightMode',
       currentFontSizeClass: readingFontSize,
-      currentPage: document.location.hash.indexOf('?page=') > -1 ? document.location.hash.slice(document.location.hash.indexOf('=') + 1) : 1
+      currentPage: document.location.hash.indexOf('?page=') > -1 ? document.location.hash.slice(document.location.hash.indexOf('=') + 1) : 1,
+      currentMenuPage: 1
     };
     this.setValues = this.setValues.bind(this);
+    this.currentPage = 1;
   }
 
   setValues () {
@@ -64,6 +65,16 @@ export default class AuthorLitHome extends React.Component {
     } else {
       this.pages.push(this.content);
     }
+    this.menuPageMaxLength = 11;
+    this.menuPages = [];
+    this.menuItems = this.authorData.content.slice();
+    do {
+      this.menuPages.push(this.menuItems.splice(0, this.menuPageMaxLength));
+      if (this.menuItems.length && this.menuItems.length < this.menuPageMaxLength) {
+        this.menuPages.push(this.menuItems);
+      }
+    } while (this.menuItems.length > this.menuPageMaxLength);
+
     this.originalHash = document.location.hash;
     this.currentPage = document.location.hash.indexOf('?page=') > -1 ? document.location.hash.slice(document.location.hash.indexOf('=') + 1) : 1;
     //this.currentPage = localStorage.getItem('pageNumber') ? localStorage.getItem('pageNumber') : 1;
@@ -94,6 +105,20 @@ export default class AuthorLitHome extends React.Component {
     }
   }
 
+  setNextMenuPage () {
+    let currentMenuPage = this.state.currentMenuPage;
+    if (this.state.currentMenuPage < this.menuPages.length) {
+      this.setState({ currentMenuPage: currentMenuPage + 1 });
+    }
+  }
+
+  setPreviousMenuPage () {
+    let currentMenuPage = this.state.currentMenuPage;
+    if (this.state.currentMenuPage > 1) {
+      this.setState({ currentMenuPage: currentMenuPage - 1 });
+    }
+  }
+
   increaseFont () {
     const newFontSizeClass = this.state.currentFontSizeClass === 'smFont' ? 'mdFont' : 'lgFont';
     this.setState({ currentFontSizeClass: newFontSizeClass });
@@ -106,12 +131,8 @@ export default class AuthorLitHome extends React.Component {
     localStorage.setItem('readingFontSize', newFontSizeClass);
   }
 
-  showModal () {
-    this.setState({show: true});
-  }
-
   hideModal () {
-    this.setState({show: false});
+    //this.setState({show: false});
     location.hash = `#/literature/${this.props.currentAuthor.authorKey}`;
   }
 
@@ -134,20 +155,12 @@ export default class AuthorLitHome extends React.Component {
   }
 
   setAuthorMenu () {
-    let pages = [];
-    let items = Object.assign(this.authorData.content);
-    return items.map((item, index) => {
-      if (item.fileName !== this.currentWorkKey && index < 12) {
-        return (
-          <LinkContainer to={`/literature/${this.props.currentAuthor.authorKey}/${item.fileName}`} key={index}>
-            <MenuItem eventKey={index} key={index}>{decodeURIComponent(item.title)}</MenuItem>
-          </LinkContainer>
-        );
-      } else if (index === 12) {
-        return (
-          <Glyphicon key={index} glyph="chevron-down" className="showMoreButton" />
-        );
-      }
+    return this.menuPages[this.state.currentMenuPage - 1].map((item, index) => {
+      return (
+        <LinkContainer to={`/literature/${this.props.currentAuthor.authorKey}/${item.fileName}`} key={index}>
+          <MenuItem eventKey={index} key={index}>{decodeURIComponent(item.title)}</MenuItem>
+        </LinkContainer>
+      );
     });
   }
 
@@ -156,7 +169,7 @@ export default class AuthorLitHome extends React.Component {
     return (
       <div className="authorLitHome">
         <Modal
-          show={this.state.show}
+          show={true}
           onHide={this.hideModal.bind(this)}
           dialogClassName="custom-modal">
           <Modal.Header closeButton>
@@ -166,8 +179,10 @@ export default class AuthorLitHome extends React.Component {
             <span className="readingMenu">
               {this.authorData.content.length > 1 &&
                 <DropdownButton title="Read More" id="bg-vertical-dropdown-1">
-                {this.setAuthorMenu()}
-              </DropdownButton>}
+                  <Glyphicon glyph="chevron-up" className={`showMoreButton ${this.state.currentMenuPage === 1 ? 'buttonDisabled' : ''}`} onClick={this.setPreviousMenuPage.bind(this)} />
+                    {this.setAuthorMenu()}
+                  <Glyphicon glyph="chevron-down" className={`showMoreButton ${this.state.currentMenuPage === this.menuPages.length ? 'buttonDisabled' : ''}`} onClick={this.setNextMenuPage.bind(this)} />
+                </DropdownButton>}
             </span>
             <span className="readingControls">
               <span className="textSizing">
@@ -175,7 +190,7 @@ export default class AuthorLitHome extends React.Component {
                 <Glyphicon className="textSizingGlyph" glyph="text-size" />
                 <button onClick={this.increaseFont.bind(this)} className="increaseFont"><Glyphicon glyph="plus" disabled={this.state.currentFontSizeClass === 'lgFont'} /></button>
               </span>
-              <button onClick={this.setReadingMode.bind(this)} className="readingModeButton"><Glyphicon glyph="lamp" className={this.state.readingModeClass} />{/*{this.state.readingModeText}*/}</button>
+              <button onClick={this.setReadingMode.bind(this)} className="readingModeButton"><Glyphicon glyph="lamp" className={this.state.readingModeClass} /></button>
             </span>
           </div>
           <Modal.Body className={this.state.readingModeClass}>

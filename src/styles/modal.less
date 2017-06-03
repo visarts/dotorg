@@ -71,6 +71,7 @@
         }
 
         &.buttonDisabled {
+          cursor: default;
           color: lighten(@secondaryThemeColor, 15%);
           border-color: lighten(@secondaryThemeColor, 15%);
 
@@ -122,9 +123,42 @@
         padding: @hPadding @vPadding;
         border-radius: 0;
 
+        .readingMenu {
+          .dropdown-menu {
+            width: 280px;
+            padding-bottom: 0;
+
+            a {
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+
+            .showMoreButton {
+              transition: all .2s;
+
+              &.buttonDisabled {
+                cursor: default;
+                color: lighten(@secondaryThemeColor, 15%);
+                border-color: lighten(@secondaryThemeColor, 15%);
+
+                &:hover {
+                  color: lighten(@secondaryThemeColor, 15%);
+                  background-color: inherit;
+                }
+              }
+
+              &:hover {
+                color: #fff;
+                background-color: lighten(@tertiaryThemeColor, 20%);
+              }
+            }
+          }
+        }
+
         .readingControls {
           float: right;
           display: inline-block;
+
 
           .textSizing {
             border: 1px solid lighten(@tertiaryThemeColor, 20%);
@@ -176,11 +210,10 @@
         right: 0;
         transition: background-color .2s;
         overflow: auto;
-        font-family: "Georgia";
+        font-family: sans-serif;
 
         .modal-title {
           margin-bottom: 10px;
-
         }
 
         .htmlContent {
