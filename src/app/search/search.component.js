@@ -5,6 +5,28 @@ import './search.component.less';
 
 export default class Search extends React.Component {
 
+  /*
+    Functionality:
+    SEARCH FIELD - DESKTOP
+      onClick = expand search field, darken screen
+      onEnter = collapse search field, lighten screen, change hash, blur
+      onBlur  = collapse search field, lighten screen
+      onFocus = expand search field, darken screen
+
+    SEARCH BUTTON - DESKTOP
+      onClick = collapse search field, lighten screen, change hash, blur
+      onEnter = collapse search field, lighten screen, change hash, blur
+      onBlur  = collapse search field, lighten screen
+
+    SEARCH FIELD - MOBILE
+      onEnter = collapse search field, lighten screen, change hash, blur
+      onBlur  = collapse search field, lighten screen
+
+    SEARCH BUTTON - MOBILE
+      onClick (when search is collapsed) = expand search field, darken screen, focus search field
+      onClick (when search is expanded)  = collapse search field, lighten screen, change hash, blur
+  */
+
   constructor (props) {
     super(props);
     this.state = {

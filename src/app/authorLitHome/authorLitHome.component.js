@@ -6,6 +6,13 @@ import './authorLitHome.component.less';
 
 export default class AuthorLitHome extends React.Component {
 
+  /*
+    To have scrolling on the menu:
+      * Use full list with overflow hidden, scroll auto
+      * Use http://jscrollpane.kelvinluck.com/ jQuery plugin to hide scroll background
+      * The up/down buttons will change scroll position 
+  */
+
   constructor (props) {
     super(props);
     const readingMode = localStorage.getItem('readingMode') ? localStorage.getItem('readingMode') : 'lightMode';
@@ -40,17 +47,6 @@ export default class AuthorLitHome extends React.Component {
             lastChar++;
           }
         }
-
-        /*while (this.content[lastChar - 1] !== '.') {
-          //lastChar++;
-          if (this.content[lastChar - 1] !== '"' &&
-              this.content[lastChar - 1] !== '\'' &&
-              this.content[lastChar - 1] !== '>') {
-            lastChar++;
-          } else {
-            break;
-          }
-        }*/
 
         page = this.content.slice(0, lastChar);
         this.content = this.content.slice(lastChar);
