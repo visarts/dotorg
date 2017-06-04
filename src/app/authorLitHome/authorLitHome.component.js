@@ -23,7 +23,7 @@ export default class AuthorLitHome extends React.Component {
     this.state = {
       readingModeClass: readingMode ? readingMode : 'lightMode',
       currentFontSizeClass: readingFontSize,
-      currentPage: document.location.hash.indexOf('?page=') > -1 ? document.location.hash.slice(document.location.hash.indexOf('=') + 1) : 1,
+      currentPage: document.location.hash.indexOf('?page=') > -1 ? parseInt(document.location.hash.slice(document.location.hash.indexOf('=') + 1)) : 1,
       currentMenuPage: 1
     };
     this.setValues = this.setValues.bind(this);
@@ -74,7 +74,6 @@ export default class AuthorLitHome extends React.Component {
     this.authorMenuButtonLabel = window.innerWidth <= 600 ? <Glyphicon glyph="th" /> : <span>Read More by {this.props.currentAuthor.lname} <Glyphicon glyph="chevron-down" /></span>;
 
     this.originalHash = document.location.hash;
-    this.currentPage = document.location.hash.indexOf('?page=') > -1 ? document.location.hash.slice(document.location.hash.indexOf('=') + 1) : 1;
   }
 
   setPageNum (pageNum) {
@@ -87,16 +86,16 @@ export default class AuthorLitHome extends React.Component {
   }
 
   setNextPage () {
-    if (this.currentPage < this.pages.length) {
-      this.currentPage++;
-      this.setPageNum(this.currentPage);
+    if (this.state.currentPage < this.pages.length) {
+      this.state.currentPage++;
+      this.setPageNum(this.state.currentPage);
     }
   }
 
   setPreviousPage () {
-    if (this.currentPage > 1 && this.pages.length > 1) {
-      this.currentPage--;
-      this.setPageNum(this.currentPage);
+    if (this.state.currentPage > 1 && this.pages.length > 1) {
+      this.state.currentPage--;
+      this.setPageNum(this.state.currentPage);
     }
   }
 
@@ -139,7 +138,7 @@ export default class AuthorLitHome extends React.Component {
   }
 
   setHTMLContent () {
-    return {__html: this.pages[this.currentPage - 1]};
+    return {__html: this.pages[this.state.currentPage - 1]};
   }
 
   setAuthorMenu () {
@@ -201,7 +200,7 @@ export default class AuthorLitHome extends React.Component {
             {this.currentWork.genre !== 'poetry' && <div className="modal-pagination">
               <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, 1)} disabled={this.state.currentPage === 1} className={this.state.currentPage === 1 ? 'buttonDisabled' : ''}><Glyphicon glyph="step-backward" /></button></span>
               <span className="paginationDirector"><button onClick={this.setPreviousPage.bind(this)} disabled={this.state.currentPage === 1} className={this.state.currentPage === 1 ? 'buttonDisabled' : ''}><Glyphicon glyph="chevron-left" /></button></span>
-              <span className="paginationLocator">{this.currentPage} of {this.pages.length}</span>
+              <span className="paginationLocator">{this.state.currentPage} of {this.pages.length}</span>
               <span className="paginationDirector"><button onClick={this.setNextPage.bind(this)} disabled={this.state.currentPage === this.pages.length} className={this.state.currentPage === this.pages.length ? 'buttonDisabled' : ''}><Glyphicon glyph="chevron-right" /></button></span>
               <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, this.pages.length)} disabled={this.state.currentPage === this.pages.length} className={this.state.currentPage === this.pages.length ? 'buttonDisabled' : ''}><Glyphicon glyph="step-forward" /></button></span>
             </div>}
