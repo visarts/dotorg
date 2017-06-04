@@ -80,8 +80,21 @@ body {
     outline: none;
   }
   .section {
-    margin: @vMargin;
-    padding: @hPadding @vPadding;
+    display: block;
+    margin: @hMargin 0px;
+    padding: @hPadding 0px;
+  }
+
+  .globalBody {
+    margin-bottom: 100px;
+  }
+
+  .globalContainer {
+    width: 90%;
+    max-width: 900px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
   }
 
   @media(max-width: 768px) {

@@ -10,7 +10,7 @@ export default class AuthorLitHome extends React.Component {
     To have scrolling on the menu:
       * Use full list with overflow hidden, scroll auto
       * Use http://jscrollpane.kelvinluck.com/ jQuery plugin to hide scroll background
-      * The up/down buttons will change scroll position 
+      * The up/down buttons will change scroll position
   */
 
   constructor (props) {
@@ -51,7 +51,7 @@ export default class AuthorLitHome extends React.Component {
         page = this.content.slice(0, lastChar);
         this.content = this.content.slice(lastChar);
         this.pages.push(page);
-        if (this.content.length < (lastChar + buffer)) {
+        if (this.content.length && this.content.length < (lastChar + buffer)) {
           page = this.content.slice(0);
           this.content = this.content.slice(lastChar + buffer);
           this.pages.push(page);
@@ -70,6 +70,8 @@ export default class AuthorLitHome extends React.Component {
         this.menuPages.push(this.menuItems);
       }
     } while (this.menuItems.length > this.menuPageMaxLength);
+
+    this.authorMenuButtonLabel = window.innerWidth <= 600 ? <Glyphicon glyph="th" /> : <span>Read More by {this.props.currentAuthor.lname} <Glyphicon glyph="chevron-down" /></span>;
 
     this.originalHash = document.location.hash;
     this.currentPage = document.location.hash.indexOf('?page=') > -1 ? document.location.hash.slice(document.location.hash.indexOf('=') + 1) : 1;
@@ -174,10 +176,10 @@ export default class AuthorLitHome extends React.Component {
           <div className="modal-nav">
             <span className="readingMenu">
               {this.authorData.content.length > 1 &&
-                <DropdownButton title="Read More" id="bg-vertical-dropdown-1">
-                  <Glyphicon glyph="chevron-up" className={`showMoreButton ${this.state.currentMenuPage === 1 ? 'buttonDisabled' : ''}`} onClick={this.setPreviousMenuPage.bind(this)} />
+                <DropdownButton noCaret title={this.authorMenuButtonLabel} id="bg-vertical-dropdown-1" className="readerDropdown">
+                  <Glyphicon glyph="menu-up" className={`showMoreButton ${this.state.currentMenuPage === 1 ? 'buttonDisabled' : ''}`} onClick={this.setPreviousMenuPage.bind(this)} />
                     {this.setAuthorMenu()}
-                  <Glyphicon glyph="chevron-down" className={`showMoreButton ${this.state.currentMenuPage === this.menuPages.length ? 'buttonDisabled' : ''}`} onClick={this.setNextMenuPage.bind(this)} />
+                  <Glyphicon glyph="menu-down" className={`showMoreButton ${this.state.currentMenuPage === this.menuPages.length ? 'buttonDisabled' : ''}`} onClick={this.setNextMenuPage.bind(this)} />
                 </DropdownButton>}
             </span>
             <span className="readingControls">
@@ -190,7 +192,7 @@ export default class AuthorLitHome extends React.Component {
             </span>
           </div>
           <Modal.Body className={this.state.readingModeClass}>
-            <div className="modal-title">
+            <div className={this.state.currentPage > 1 ? 'modal-title smallTitles' : 'modal-title'}>
               <h1>{decodeURIComponent(this.currentWork.title)}</h1>
               <h2>{this.props.currentAuthor.fname} {this.props.currentAuthor.lname}</h2>
             </div>
@@ -198,11 +200,11 @@ export default class AuthorLitHome extends React.Component {
           </Modal.Body>
           <Modal.Footer>
             {this.currentWork.genre !== 'poetry' && <div className="modal-pagination">
-              <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, 1)} disabled={this.state.currentPage === 1} className={this.state.currentPage === 1 ? 'buttonDisabled' : ''}><Glyphicon glyph="fast-backward" /></button></span>
+              <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, 1)} disabled={this.state.currentPage === 1} className={this.state.currentPage === 1 ? 'buttonDisabled' : ''}><Glyphicon glyph="step-backward" /></button></span>
               <span className="paginationDirector"><button onClick={this.setPreviousPage.bind(this)} disabled={this.state.currentPage === 1} className={this.state.currentPage === 1 ? 'buttonDisabled' : ''}><Glyphicon glyph="chevron-left" /></button></span>
               <span className="paginationLocator">{this.currentPage} of {this.pages.length}</span>
               <span className="paginationDirector"><button onClick={this.setNextPage.bind(this)} disabled={this.state.currentPage === this.pages.length} className={this.state.currentPage === this.pages.length ? 'buttonDisabled' : ''}><Glyphicon glyph="chevron-right" /></button></span>
-              <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, this.pages.length)} disabled={this.state.currentPage === this.pages.length} className={this.state.currentPage === this.pages.length ? 'buttonDisabled' : ''}><Glyphicon glyph="fast-forward" /></button></span>
+              <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, this.pages.length)} disabled={this.state.currentPage === this.pages.length} className={this.state.currentPage === this.pages.length ? 'buttonDisabled' : ''}><Glyphicon glyph="step-forward" /></button></span>
             </div>}
             <button className="closeModal" onClick={this.hideModal.bind(this)}>Close</button>
           </Modal.Footer>

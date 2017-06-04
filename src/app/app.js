@@ -11,6 +11,7 @@ import ArtsHome from './artsHome/artsHome.component';
 import ArtistsHome from './artistsHome/artistsHome.component';
 import AuthorLitHome from './authorLitHome/authorLitHome.component';
 import SearchHome from './searchHome/searchHome.component';
+import { CSSTransitionGroup } from 'react-transition-group'
 
 
 export default class App extends React.Component {
@@ -72,51 +73,55 @@ export default class App extends React.Component {
             <GlobalNav
               {...props} />
           )} />
-          <Route exact path='/' render={props => (
-            <Home
-              artistsData={this.artistsData}
-              authorsData={this.authorsData}
-              {...props} />
-          )} />
 
 
-          <Route exact path='/literature' render={props => (
-            <LitHome
-              authorsData={this.authorsData}
-              {...props} />
-          )} />
-          <Route path='/literature/:author' render={props => (
-            <AuthorsHome
-              currentAuthor={this.authorsData.filter(item => item.authorKey === props.match.params.author)[0]}
-              {...props} />
-          )} />
-          <Route path='/literature/:author/:work' render={props => (
-            <AuthorLitHome
-              currentAuthor={this.authorsData.filter(item => item.authorKey === props.match.params.author)[0]}
-              {...props} />
-          )} />
+          <div className="globalBody">
+            <Route exact path='/' render={props => (
+              <Home
+                artistsData={this.artistsData}
+                authorsData={this.authorsData}
+                {...props} />
+            )} />
 
 
-          <Route exact path='/arts' render={props => (
-            <ArtsHome
-              artistsData={this.artistsData}
-              {...props} />
-          )} />
-          <Route exact path='/arts/:artist' render={props => (
-            <ArtistsHome
-              currentArtist={this.artistsData.filter(item => item.artistKey === props.match.params.artist)[0]}
-              {...props} />
-          )} />
+            <Route exact path='/literature' render={props => (
+              <LitHome
+                authorsData={this.authorsData}
+                {...props} />
+            )} />
+            <Route path='/literature/:author' render={props => (
+              <AuthorsHome
+                currentAuthor={this.authorsData.filter(item => item.authorKey === props.match.params.author)[0]}
+                {...props} />
+            )} />
+            <Route path='/literature/:author/:work' render={props => (
+              <AuthorLitHome
+                currentAuthor={this.authorsData.filter(item => item.authorKey === props.match.params.author)[0]}
+                {...props} />
+            )} />
 
-          <Route exact path='/search' render={props => (
-            <SearchHome
-              artistsData={this.artistsData}
-              authorsData={this.authorsData}
-              searchInput={this.state.searchInput}
-              updateSearchInput={this.updateSearchInput}
-              {...props}
-               />
-          )} />
+
+            <Route exact path='/arts' render={props => (
+              <ArtsHome
+                artistsData={this.artistsData}
+                {...props} />
+            )} />
+            <Route exact path='/arts/:artist' render={props => (
+              <ArtistsHome
+                currentArtist={this.artistsData.filter(item => item.artistKey === props.match.params.artist)[0]}
+                {...props} />
+            )} />
+
+            <Route exact path='/search' render={props => (
+              <SearchHome
+                artistsData={this.artistsData}
+                authorsData={this.authorsData}
+                searchInput={this.state.searchInput}
+                updateSearchInput={this.updateSearchInput}
+                {...props}
+                 />
+            )} />
+          </div>
 
 
           <Route path='/' render={props => (

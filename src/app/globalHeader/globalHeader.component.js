@@ -11,12 +11,14 @@ const GlobalHeader = (props) => {
 
   return (
     <div className="globalHeader">
-      <h1 className={smallLogoClass}>
-        <Link to="/">Portitude <span className="subHead">{separator} {subHeader}</span></Link>
-      </h1>
-      <Search
-        searchInput={props.searchInput}
-        updateSearchInput={props.updateSearchInput} />
+      <div className="globalContainer">
+        <h1 className={smallLogoClass}>
+          <Link to="/">Portitude <span className="subHead">{separator} {subHeader}</span></Link>
+        </h1>
+        <Search
+          searchInput={props.searchInput}
+          updateSearchInput={props.updateSearchInput} />
+      </div>
     </div>
   );
 }

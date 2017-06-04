@@ -21,7 +21,7 @@ const AuthorsHome = (props) => {
 
   return (
     <div className="authorsHome">
-      <div className="section">
+      <div className="globalContainer">
         <h1>{`${author.fname} ${author.lname}`}</h1>
         <div>{author.bio}</div>
         <ul>{ titles }</ul>

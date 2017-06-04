@@ -99,7 +99,7 @@ export default class ArtistsHome extends React.Component {
   render () {
     return (
       <div className="artistsHome">
-        <div className="section">
+        <div className="globalContainer">
           <h1>{decodeURIComponent(`${this.artist.fname} ${this.artist.lname}`)}</h1>
           <div className="artistBio">{this.artist.bio}</div>
           <ul className="imageGrid">{ this.thumbs }</ul>

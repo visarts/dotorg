@@ -7,11 +7,14 @@ const GlobalNav = (props) => {
   const litSelected = props.location.pathname.includes('/literature') ? 'selected' : 'unselected';
   const artSelected = props.location.pathname.includes('/arts') ? 'selected' : 'unselected';
   const hideDesc = props.location.pathname === '/' ? '' : 'hideDesc';
+  const bannerImg = litSelected === 'selected' ? './images/litp.jpg' : './images/frontp.jpg';
 
   return (
     <nav className="globalNav">
 
-
+      <div className="frontp">
+        <img src={bannerImg} />
+      </div>
       <Link to='/literature' className={litSelected}>
         <div className="navDescription">
           <h3 className="title">The Authors</h3>

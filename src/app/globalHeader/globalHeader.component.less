@@ -8,43 +8,45 @@
   right: 0;
   z-index: 1000;
 
-  h1 {
-    display: inline-block;
-    left: 0;
-    top: 0;
-    margin: 0 @vMargin;
-    transition: font-size, .2s;
-    vertical-align: middle;
-
-    &.smallLogo {
-      font-size: 150%;
-    }
-
-    a {
+  .globalContainer {
+    h1 {
       display: inline-block;
-      min-width: 220px;
-      color: @mainTextColor;
-      padding: @hPadding @vPadding;
+      left: 0;
+      top: 0;
+      //margin: 0 @vMargin;
+      transition: font-size, .2s;
+      vertical-align: middle;
 
-      .subHead {
-        vertical-align: middle;
-        font-size: .8em;
-        color: @darkLinkColor;
+      &.smallLogo {
+        font-size: 150%;
       }
 
-      &:hover {
-        text-decoration: none;
-      }
-
-      &:focus {
-        text-decoration: none;
-      }
-    }
-
-    @media(max-width: 768px) {
       a {
-        padding-left: 0;
-        padding-right: 0;
+        display: inline-block;
+        min-width: 220px;
+        color: @mainTextColor;
+        padding: @hPadding 0px;
+
+        .subHead {
+          vertical-align: middle;
+          font-size: .8em;
+          color: @darkLinkColor;
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        &:focus {
+          text-decoration: none;
+        }
+      }
+
+      @media(max-width: 768px) {
+        a {
+          padding-left: 0;
+          padding-right: 0;
+        }
       }
     }
   }

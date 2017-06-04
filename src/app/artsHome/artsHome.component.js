@@ -17,7 +17,7 @@ const ArtsHome = (props) => {
 
   return (
     <div className="artsHomeComponent">
-      <div className="section">
+      <div className="globalContainer">
         <h1>This is the arts home page</h1>
         <p>These woods are lovely, dark, and deep, but I have promises to keep, and miles to go before I sleep</p>
         <ul>{artistsList}</ul>

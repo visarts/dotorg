@@ -9,12 +9,12 @@ const Home = (props) => {
   const date = new Date();
   const day = date.getDay();
   const month = date.getMonth();
+  const author = props.authorsData[day];
+  const authorData = dataService.getAuthorData(author.authorKey);
+  const lit = authorData.content[month] ? authorData.content[month] : authorData.content[0];
   const featuredContent = (() => {
-    let author = props.authorsData[day];
-    let authorData = dataService.getAuthorData(author.authorKey);
-    let lit = authorData.content[month] ? authorData.content[month] : authorData.content[0];
     return (
-      <div>
+      <div className="featuredContent">
         <div className="featuredBlock">
           <h4>Featured Author: </h4>
           <h2>
@@ -33,12 +33,14 @@ const Home = (props) => {
 
   return (
     <div className="homeComponent">
-      <div className="section">
-        <h1>Portitude Arts and Literature</h1>
-        Immerse yourself in the beauty of artwork and literature from the masters of the genre, and enrich your store of knowledge.
-      </div>
-      <div className="section">
-        {featuredContent}
+      <div className="globalContainer">
+        <div className="section">
+          
+          Immerse yourself in the beauty of artwork and literature from the masters of the genre, and enrich your store of knowledge.
+        </div>
+        <div className="section">
+          {featuredContent}
+        </div>
       </div>
     </div>
   );
