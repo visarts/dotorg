@@ -17,6 +17,7 @@ export default class AuthorLitHome extends React.Component {
     super(props);
     const readingMode = localStorage.getItem('readingMode') ? localStorage.getItem('readingMode') : 'lightMode';
     const readingFontSize = localStorage.getItem('readingFontSize') ? localStorage.getItem('readingFontSize') : 'smFont';
+    this.props = props;
     localStorage.setItem('readingMode', readingMode);
     localStorage.setItem('readingFontSize', readingFontSize);
     this.state = {
@@ -26,7 +27,6 @@ export default class AuthorLitHome extends React.Component {
       currentMenuPage: 1
     };
     this.setValues = this.setValues.bind(this);
-    this.currentPage = 1;
   }
 
   setValues () {
@@ -75,18 +75,15 @@ export default class AuthorLitHome extends React.Component {
 
     this.originalHash = document.location.hash;
     this.currentPage = document.location.hash.indexOf('?page=') > -1 ? document.location.hash.slice(document.location.hash.indexOf('=') + 1) : 1;
-    //this.currentPage = localStorage.getItem('pageNumber') ? localStorage.getItem('pageNumber') : 1;
   }
 
   setPageNum (pageNum) {
     this.setState({currentPage: pageNum}, () => {
-      //this.currentPage = pageNum;
       const currentHash = this.originalHash.indexOf('?page=') > -1 ? this.originalHash.slice(0, this.originalHash.indexOf('?')) : this.originalHash;
       document.location.hash = currentHash + `?page=${pageNum}`;
       document.querySelector('.modal-body').scrollTop = 0;
     });
 
-    //localStorage.setItem('pageNumber', this.currentPage);
   }
 
   setNextPage () {
@@ -141,13 +138,6 @@ export default class AuthorLitHome extends React.Component {
     localStorage.setItem('readingMode', flipMode);
   }
 
-  componentWillReceiveProps (newprops) {
-    this.setState({currentPage: this.state.currentPage}, () => {
-      this.setValues();
-      document.querySelector('.modal-body').scrollTop = 0;
-    })
-  }
-
   setHTMLContent () {
     return {__html: this.pages[this.currentPage - 1]};
   }
@@ -160,6 +150,15 @@ export default class AuthorLitHome extends React.Component {
         </LinkContainer>
       );
     });
+  }
+
+  componentWillReceiveProps (nextProps) {
+    if (this.props.match.params.work !== nextProps.match.params.work) {
+      this.setState({currentPage: 1}, () => {
+        this.setValues();
+        document.querySelector('.modal-body').scrollTop = 0;
+      });
+    }
   }
 
   render () {
