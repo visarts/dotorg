@@ -7,7 +7,7 @@ const SearchHome = (props) => {
 
   // will need grab all content json files and walk through every item to look for a match of item title
 
-
+  document.querySelector('body').scrollTop = 0;
   const searchInput = sessionStorage.getItem('searchInput');
   const artistNames = dataService.getArtistNames();
   const authorNames = dataService.getAuthorNames();
@@ -58,7 +58,7 @@ const SearchHome = (props) => {
 
   return (
     <div className="searchHome">
-      <div className="section">
+      <div className="globalContainer">
         <h1>Results for &quot;{searchInput}&quot;</h1>
         {authorList.length > 0 &&
           <div className="searchResults">

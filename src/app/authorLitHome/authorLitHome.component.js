@@ -37,7 +37,7 @@ export default class AuthorLitHome extends React.Component {
     this.pages = [];
     if (this.currentWork.genre !== 'poetry') {
       let lastChar = 2000;
-      let buffer = 300;
+      let buffer = 500;
       do {
         let page = '';
         while (lastChar < this.content.length) {
@@ -71,7 +71,8 @@ export default class AuthorLitHome extends React.Component {
       }
     } while (this.menuItems.length > this.menuPageMaxLength);
 
-    this.authorMenuButtonLabel = window.innerWidth <= 600 ? <Glyphicon glyph="th" /> : <span>Read More by {this.props.currentAuthor.lname} <Glyphicon glyph="chevron-down" /></span>;
+    this.smallViewSize = 768;
+    this.authorMenuButtonLabel = window.innerWidth <= this.smallViewSize ? <Glyphicon glyph="th" /> : <span>Read More by {this.props.currentAuthor.lname} <Glyphicon glyph="chevron-down" /></span>;
 
     this.originalHash = document.location.hash;
   }
@@ -126,7 +127,6 @@ export default class AuthorLitHome extends React.Component {
   }
 
   hideModal () {
-    //this.setState({show: false});
     location.hash = `#/literature/${this.props.currentAuthor.authorKey}`;
   }
 

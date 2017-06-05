@@ -5,7 +5,7 @@ import './authorsHome.component.less';
 
 
 const AuthorsHome = (props) => {
-
+  document.querySelector('body').scrollTop = 0;
   const author = props.currentAuthor;
   const authorData = dataService.getAuthorData(author.authorKey);
   const titles = authorData.content.map((title, index) => {
