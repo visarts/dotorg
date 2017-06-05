@@ -175,16 +175,16 @@ export default class AuthorLitHome extends React.Component {
             <span className="readingMenu">
               {this.authorData.content.length > 1 &&
                 <DropdownButton noCaret title={this.authorMenuButtonLabel} id="bg-vertical-dropdown-1" className="readerDropdown">
-                  <Glyphicon glyph="menu-up" className={`showMoreButton ${this.state.currentMenuPage === 1 ? 'buttonDisabled' : ''}`} onClick={this.setPreviousMenuPage.bind(this)} />
+                  <Glyphicon glyph="menu-up" disabled={this.state.currentMenuPage === 1} className={`showMoreButton ${this.state.currentMenuPage === 1 ? 'buttonDisabled' : ''}`} onClick={this.setPreviousMenuPage.bind(this)} />
                     {this.setAuthorMenu()}
-                  <Glyphicon glyph="menu-down" className={`showMoreButton ${this.state.currentMenuPage === this.menuPages.length ? 'buttonDisabled' : ''}`} onClick={this.setNextMenuPage.bind(this)} />
+                  <Glyphicon glyph="menu-down" disabled={this.state.currentMenuPage === this.menuPages.length} className={`showMoreButton ${this.state.currentMenuPage === this.menuPages.length ? 'buttonDisabled' : ''}`} onClick={this.setNextMenuPage.bind(this)} />
                 </DropdownButton>}
             </span>
             <span className="readingControls">
               <span className="textSizing">
                 <button onClick={this.decreaseFont.bind(this)} className="decreaseFont" disabled={this.state.currentFontSizeClass === 'smFont'}><Glyphicon glyph="minus" /></button>
                 <Glyphicon className="textSizingGlyph" glyph="text-size" />
-                <button onClick={this.increaseFont.bind(this)} className="increaseFont"><Glyphicon glyph="plus" disabled={this.state.currentFontSizeClass === 'lgFont'} /></button>
+                <button onClick={this.increaseFont.bind(this)} className="increaseFont" disabled={this.state.currentFontSizeClass === 'lgFont'}><Glyphicon glyph="plus" /></button>
               </span>
               <button onClick={this.setReadingMode.bind(this)} className="readingModeButton"><Glyphicon glyph="lamp" className={this.state.readingModeClass} /></button>
             </span>
@@ -198,11 +198,11 @@ export default class AuthorLitHome extends React.Component {
           </Modal.Body>
           <Modal.Footer>
             {this.currentWork.genre !== 'poetry' && <div className="modal-pagination">
-              <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, 1)} disabled={this.state.currentPage === 1} className={this.state.currentPage === 1 ? 'buttonDisabled' : ''}><Glyphicon glyph="step-backward" /></button></span>
-              <span className="paginationDirector"><button onClick={this.setPreviousPage.bind(this)} disabled={this.state.currentPage === 1} className={this.state.currentPage === 1 ? 'buttonDisabled' : ''}><Glyphicon glyph="chevron-left" /></button></span>
+              <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, 1)} disabled={this.state.currentPage === 1}><Glyphicon glyph="step-backward" /></button></span>
+              <span className="paginationDirector"><button onClick={this.setPreviousPage.bind(this)} disabled={this.state.currentPage === 1}><Glyphicon glyph="chevron-left" /></button></span>
               <span className="paginationLocator">{this.state.currentPage} of {this.pages.length}</span>
-              <span className="paginationDirector"><button onClick={this.setNextPage.bind(this)} disabled={this.state.currentPage === this.pages.length} className={this.state.currentPage === this.pages.length ? 'buttonDisabled' : ''}><Glyphicon glyph="chevron-right" /></button></span>
-              <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, this.pages.length)} disabled={this.state.currentPage === this.pages.length} className={this.state.currentPage === this.pages.length ? 'buttonDisabled' : ''}><Glyphicon glyph="step-forward" /></button></span>
+              <span className="paginationDirector"><button onClick={this.setNextPage.bind(this)} disabled={this.state.currentPage === this.pages.length}><Glyphicon glyph="chevron-right" /></button></span>
+              <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, this.pages.length)} disabled={this.state.currentPage === this.pages.length}><Glyphicon glyph="step-forward" /></button></span>
             </div>}
             <button className="closeModal" onClick={this.hideModal.bind(this)}>Close</button>
           </Modal.Footer>

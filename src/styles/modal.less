@@ -1,6 +1,6 @@
 @headerHeight: 33px;
-@navHeight: 43px;
-@footerHeight: 43px;
+@navHeight: 38px;
+@footerHeight: 38px;
 
 .modal-container {
   position: relative;
@@ -33,7 +33,7 @@
 
   .custom-modal {
     position: relative;
-    height: 90vh;
+    height: 93vh;
     border-radius: 0px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, .5);
 
@@ -49,7 +49,7 @@
     .modal-content {
       height: 90vh;
       overflow: hidden;
-      background: @tertiaryThemeColor;
+      background: transparent;
       border: none;
 
       button {
@@ -69,11 +69,10 @@
           background-color: lighten(@tertiaryThemeColor, 30%);
         }
 
-        &.buttonDisabled {
+        &:disabled {
           cursor: default;
           color: lighten(@secondaryThemeColor, 15%);
           border-color: lighten(@secondaryThemeColor, 15%);
-
           &:hover {
             background-color: lighten(@tertiaryThemeColor, 10%);
           }
@@ -119,43 +118,17 @@
         color: white;
         background: @tertiaryThemeColor;
         color: darken(@mainTextColor, 10%);
-        padding: @hPadding @vPadding;
+        padding: 4px @vPadding;
         border-radius: 0;
 
         .readingMenu {
           .readerDropdown {
             min-width: 30px;
             padding: 4px;
-          }
-          .dropdown-menu {
-            width: 280px;
-            padding-bottom: 0;
-            border-radius: 0 0 4px 4px;
 
-            a {
-              overflow: hidden;
-              text-overflow: ellipsis;
-            }
-
-            .showMoreButton {
-              font-size: 1.8em;
-              transition: all .2s;
-
-              &.buttonDisabled {
-                cursor: default;
-                color: lighten(@secondaryThemeColor, 15%);
-                border-color: lighten(@secondaryThemeColor, 15%);
-
-                &:hover {
-                  color: lighten(@secondaryThemeColor, 15%);
-                  background-color: inherit;
-                }
-              }
-
-              &:hover {
-                color: #fff;
-                background-color: lighten(@tertiaryThemeColor, 20%);
-              }
+            &:focus {
+              background: @tertiaryThemeColor;
+              color: @mainTextColor;
             }
           }
         }
@@ -279,11 +252,11 @@
         bottom: 0;
         left: 0;
         right: 0;
-        //height: @footerHeight;
+        height: @footerHeight;
         background: @tertiaryThemeColor;
         color: darken(@mainTextColor, 10%);
         border: none;
-        padding: @hPadding @vPadding;
+        padding: 4px @vPadding;
 
         button {
           //font-size: 11px;
@@ -311,9 +284,26 @@
       }
     }
     @media (min-width: 768px) {
-      .modal-body {
-        padding: 20px 40px;
+      .modal-content {
+        .modal-body {
+          padding: 20px 40px;
+        }
+        .modal-nav, .modal-footer {
+          padding-left: 40px;
+          padding-right: 40px;
+        }
       }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .modal-dialog {
+      margin: 15px auto;
+    }
+  }
+  @media (max-width: 767px) {
+    .modal-dialog {
+      margin: 5px;
     }
   }
 }

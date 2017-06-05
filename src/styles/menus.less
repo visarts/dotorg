@@ -1,10 +1,19 @@
+
+
 .dropdown-menu {
   background: @tertiaryThemeColor;
+  width: 280px;
+  padding-bottom: 0;
+  padding-top: 0;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, .3);
 
   li {
     margin: 0;
 
     a {
+      overflow: hidden;
+      text-overflow: ellipsis;
       color: @mainTextColor;
       transition: all .2s;
       padding: @hPadding @vPadding;
@@ -30,5 +39,24 @@
     cursor: pointer;
     display: block;
     text-align: center;
+    font-size: 1.8em;
+    transition: all .2s;
+
+    &.buttonDisabled {
+      cursor: default;
+      color: lighten(@secondaryThemeColor, 15%);
+      border-color: lighten(@secondaryThemeColor, 15%);
+
+      &:hover {
+        color: lighten(@secondaryThemeColor, 15%);
+        background-color: inherit;
+      }
+    }
+
+    &:hover {
+      color: #fff;
+      background-color: lighten(@tertiaryThemeColor, 20%);
+    }
+
   }
 }
