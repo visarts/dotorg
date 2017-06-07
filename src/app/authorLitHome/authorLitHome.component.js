@@ -27,6 +27,7 @@ export default class AuthorLitHome extends React.Component {
       currentMenuPage: 1
     };
     this.setValues = this.setValues.bind(this);
+
   }
 
   setValues () {
@@ -73,8 +74,14 @@ export default class AuthorLitHome extends React.Component {
 
     this.smallViewSize = 768;
     this.authorMenuButtonLabel = window.innerWidth <= this.smallViewSize ? <Glyphicon glyph="th" /> : <span>Read More by {this.props.currentAuthor.lname} <Glyphicon glyph="chevron-down" /></span>;
-
     this.originalHash = document.location.hash;
+    this.authorMenu = this.menuPages[this.state.currentMenuPage - 1].map((item, index) => {
+      return (
+        <LinkContainer to={`/literature/${this.props.currentAuthor.authorKey}/${item.fileName}`} key={index}>
+          <MenuItem eventKey={index} key={index}>{decodeURIComponent(item.title)}</MenuItem>
+        </LinkContainer>
+      );
+    });
   }
 
   setPageNum (pageNum) {
@@ -142,13 +149,7 @@ export default class AuthorLitHome extends React.Component {
   }
 
   setAuthorMenu () {
-    return this.menuPages[this.state.currentMenuPage - 1].map((item, index) => {
-      return (
-        <LinkContainer to={`/literature/${this.props.currentAuthor.authorKey}/${item.fileName}`} key={index}>
-          <MenuItem eventKey={index} key={index}>{decodeURIComponent(item.title)}</MenuItem>
-        </LinkContainer>
-      );
-    });
+
   }
 
   componentWillReceiveProps (nextProps) {
@@ -176,7 +177,7 @@ export default class AuthorLitHome extends React.Component {
               {this.authorData.content.length > 1 &&
                 <DropdownButton noCaret title={this.authorMenuButtonLabel} id="bg-vertical-dropdown-1" className="readerDropdown">
                   <Glyphicon glyph="menu-up" disabled={this.state.currentMenuPage === 1} className={`showMoreButton ${this.state.currentMenuPage === 1 ? 'buttonDisabled' : ''}`} onClick={this.setPreviousMenuPage.bind(this)} />
-                    {this.setAuthorMenu()}
+                    {this.authorMenu}
                   <Glyphicon glyph="menu-down" disabled={this.state.currentMenuPage === this.menuPages.length} className={`showMoreButton ${this.state.currentMenuPage === this.menuPages.length ? 'buttonDisabled' : ''}`} onClick={this.setNextMenuPage.bind(this)} />
                 </DropdownButton>}
             </span>
