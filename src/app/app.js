@@ -4,7 +4,7 @@ import dataService from 'Services/data.service';
 import GlobalHeader from './globalHeader/globalHeader.component';
 import GlobalNav from './globalNav/globalNav.component';
 import GlobalFooter from './globalFooter/globalFooter.component';
-import Home from './home/home.component';
+import HomeView from './homeView/homeView.component';
 import LitHome from './litHome/litHome.component';
 import AuthorsHome from './authorsHome/authorsHome.component';
 import ArtsHome from './artsHome/artsHome.component';
@@ -77,7 +77,7 @@ export default class App extends React.Component {
 
           <div className="globalBody">
             <Route exact path='/' render={props => (
-              <Home
+              <HomeView
                 artistsData={this.artistsData}
                 authorsData={this.authorsData}
                 {...props} />

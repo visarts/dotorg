@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import dataService from 'Services/data.service';
-import './home.component.less';
+import './homeView.component.less';
 
-const Home = (props) => {
+const HomeView = (props) => {
 
   document.querySelector('body').scrollTop = 0;
   const date = new Date();
@@ -32,10 +32,10 @@ const Home = (props) => {
   })();
 
   return (
-    <div className="homeComponent">
+    <div className="homeViewComponent">
       <div className="globalContainer">
         <div className="section">
-          
+
           Immerse yourself in the beauty of artwork and literature from the masters of the genre, and enrich your store of knowledge.
         </div>
         <div className="section">
@@ -46,4 +46,4 @@ const Home = (props) => {
   );
 }
 
-export default Home;
+export default HomeView;
