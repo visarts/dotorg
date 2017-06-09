@@ -2,9 +2,9 @@ import React from 'react';
 import { Modal, Glyphicon, DropdownButton, MenuItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import dataService from 'Services/data.service';
-import './authorLitHome.component.less';
+import './literatureDisplay.component.less';
 
-export default class AuthorLitHome extends React.Component {
+export default class LiteratureDisplay extends React.Component {
 
   /*
     To have scrolling on the menu:
@@ -164,7 +164,7 @@ export default class AuthorLitHome extends React.Component {
   render () {
     this.setValues();
     return (
-      <div className="authorLitHome">
+      <div className="literatureDisplay">
         <Modal
           show={true}
           onHide={this.hideModal.bind(this)}

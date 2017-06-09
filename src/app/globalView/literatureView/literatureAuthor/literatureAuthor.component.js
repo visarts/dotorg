@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 import dataService from 'Services/data.service';
-import './authorsHome.component.less';
+import LiteratureDisplay from '../literatureDisplay/literatureDisplay.component';
+import './literatureAuthor.component.less';
 
 
-const AuthorsHome = (props) => {
+const LiteratureAuthor = (props) => {
   document.querySelector('body').scrollTop = 0;
   const author = props.currentAuthor;
   const authorData = dataService.getAuthorData(author.authorKey);
@@ -20,14 +21,12 @@ const AuthorsHome = (props) => {
   });
 
   return (
-    <div className="authorsHome">
-      <div className="globalContainer">
-        <h1>{`${author.fname} ${author.lname}`}</h1>
-        <div>{author.bio}</div>
-        <ul>{ titles }</ul>
-      </div>
+    <div className="literatureAuthor">
+      <h1>{`${author.fname} ${author.lname}`}</h1>
+      <div>{author.bio}</div>
+      <ul>{ titles }</ul>
     </div>
   );
 }
 
-export default AuthorsHome;
+export default LiteratureAuthor;

@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import { Modal } from 'react-bootstrap';
 import Lightbox from 'react-images';
 import dataService from 'Services/data.service';
-import './artistsHome.component.less';
+import './artsArtist.component.less';
 
 
-export default class ArtistsHome extends React.Component {
+export default class ArtsArtist extends React.Component {
 
   constructor (props) {
     super(props);
@@ -98,24 +98,22 @@ export default class ArtistsHome extends React.Component {
 
   render () {
     return (
-      <div className="artistsHome">
-        <div className="globalContainer">
-          <h1>{decodeURIComponent(`${this.artist.fname} ${this.artist.lname}`)}</h1>
-          <div className="artistBio">{this.artist.bio}</div>
-          <ul className="imageGrid">{ this.thumbs }</ul>
-          <Lightbox
-            currentImage={this.state.currentImage}
-            images={this.imageList}
-            isOpen={this.state.lightboxIsOpen}
-            onClickPrev={this.gotoPrevious}
-            onClickNext={this.gotoNext}
-            onClose={this.closeLightbox}
-            onClickThumbnail={this.gotoImage}
-            showThumbnails={true}
-            preloadNextImage={true}
-            backdropClosesModal={true}
-          />
-        </div>
+      <div className="artsArtist">
+        <h1>{decodeURIComponent(`${this.artist.fname} ${this.artist.lname}`)}</h1>
+        <div className="artistBio">{this.artist.bio}</div>
+        <ul className="imageGrid">{ this.thumbs }</ul>
+        <Lightbox
+          currentImage={this.state.currentImage}
+          images={this.imageList}
+          isOpen={this.state.lightboxIsOpen}
+          onClickPrev={this.gotoPrevious}
+          onClickNext={this.gotoNext}
+          onClose={this.closeLightbox}
+          onClickThumbnail={this.gotoImage}
+          showThumbnails={true}
+          preloadNextImage={true}
+          backdropClosesModal={true}
+        />
       </div>
     );
   }

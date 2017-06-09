@@ -32,15 +32,12 @@ const HomeView = (props) => {
   })();
 
   return (
-    <div className="homeViewComponent">
-      <div className="globalContainer">
-        <div className="section">
-
-          Immerse yourself in the beauty of artwork and literature from the masters of the genre, and enrich your store of knowledge.
-        </div>
-        <div className="section">
-          {featuredContent}
-        </div>
+    <div className="homeView">
+      <div className="section">
+        Immerse yourself in the beauty of artwork and literature from the masters of the genre, and enrich your store of knowledge.
+      </div>
+      <div className="section">
+        {featuredContent}
       </div>
     </div>
   );

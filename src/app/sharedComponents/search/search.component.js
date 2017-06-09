@@ -1,5 +1,5 @@
 import React from 'react';
-import DOMPurify from '../../lib/purify.js';
+import DOMPurify from '../../../lib/purify.js';
 import { Glyphicon } from 'react-bootstrap';
 import './search.component.less';
 

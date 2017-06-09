@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import dataService from 'Services/data.service';
-import './searchHome.component.less';
+import './searchView.component.less';
 
-const SearchHome = (props) => {
+const SearchView = (props) => {
 
   // will need grab all content json files and walk through every item to look for a match of item title
 
@@ -57,26 +57,24 @@ const SearchHome = (props) => {
   }) : null;
 
   return (
-    <div className="searchHome">
-      <div className="globalContainer">
-        <h1>Results for &quot;{searchInput}&quot;</h1>
-        {authorList.length > 0 &&
-          <div className="searchResults">
-            <h3>Authors</h3>
-            <ul className="authorSearchList">
-              {getAuthorsList}
-            </ul>
-          </div>}
-        {artistList.length > 0 &&
-          <div className="searchResults">
-            <h3>Artists</h3>
-            <ul className="artistSearchList">
-              {getArtistsList}
-            </ul>
-          </div>}
-      </div>
+    <div className="searchView">
+      <h1>Results for &quot;{searchInput}&quot;</h1>
+      {authorList.length > 0 &&
+        <div className="searchResults">
+          <h3>Authors</h3>
+          <ul className="authorSearchList">
+            {getAuthorsList}
+          </ul>
+        </div>}
+      {artistList.length > 0 &&
+        <div className="searchResults">
+          <h3>Artists</h3>
+          <ul className="artistSearchList">
+            {getArtistsList}
+          </ul>
+        </div>}
     </div>
   );
 }
 
-export default SearchHome;
+export default SearchView;

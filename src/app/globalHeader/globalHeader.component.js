@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Search from '../search/search.component';
+import Search from 'SharedComponents/search/search.component';
 import './globalHeader.component.less';
 
 const GlobalHeader = (props) => {
