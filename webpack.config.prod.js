@@ -96,7 +96,8 @@ module.exports = {
       Services: path.resolve(ROOT_PATH, 'src/app/services'),
       Styles: path.resolve(ROOT_PATH, 'src/app/styles'),
       Literature: path.resolve(ROOT_PATH, 'content/literature'),
-      Artwork: path.resolve(ROOT_PATH, 'content/artwork')
+      Artwork: path.resolve(ROOT_PATH, 'content/artwork'),
+      SharedComponents: path.resolve(ROOT_PATH, 'src/app/sharedComponents')
     },
     modules: [
       path.resolve('./src'),

@@ -62,7 +62,8 @@ export default class LiteratureDisplay extends React.Component {
     } else {
       this.pages.push(this.content);
     }
-    this.menuPageMaxLength = 11;
+    this.smallViewSize = 768;
+    this.menuPageMaxLength = window.innerWidth <= this.smallViewSize ? 9 : 11;
     this.menuPages = [];
     this.menuItems = this.authorData.content.slice();
     do {
@@ -72,7 +73,7 @@ export default class LiteratureDisplay extends React.Component {
       }
     } while (this.menuItems.length > this.menuPageMaxLength);
 
-    this.smallViewSize = 768;
+
     this.authorMenuButtonLabel = window.innerWidth <= this.smallViewSize ? <Glyphicon glyph="th" /> : <span>Read More by {this.props.currentAuthor.lname} <Glyphicon glyph="chevron-down" /></span>;
     this.originalHash = document.location.hash;
     this.authorMenu = this.menuPages[this.state.currentMenuPage - 1].map((item, index) => {
