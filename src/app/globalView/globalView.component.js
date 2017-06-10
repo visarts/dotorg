@@ -12,29 +12,29 @@ export default class GlobalView extends React.Component {
     return (
       <div className="globalView">
         <div className="globalContainer">
-          <Route exact path='/' render={defaultProps => (
+          <Route exact path='/' render={routeProps => (
             <HomeView
               artistsData={this.props.artistsData}
               authorsData={this.props.authorsData}
-              {...defaultProps} />
+              {...routeProps} />
           )} />
-          <Route path="/literature" render={defaultProps => (
+          <Route path="/literature" render={routeProps => (
             <LiteratureView
               authorsData={this.props.authorsData}
-              {...defaultProps} />
+              {...routeProps} />
           )} />
-          <Route path="/arts" render={defaultProps => (
+          <Route path="/arts" render={routeProps => (
             <ArtsView
               artistsData={this.props.artistsData}
-              {...defaultProps} />
+              {...routeProps} />
           )} />
-          <Route path="/search" render={defaultProps => (
+          <Route path="/search" render={routeProps => (
             <SearchView
               artistsData={this.props.artistsData}
               authorsData={this.props.authorsData}
               searchInput={this.props.searchInput}
               updateSearchInput={this.props.updateSearchInput}
-              {...defaultProps} />
+              {...routeProps} />
           )} />
         </div>
       </div>

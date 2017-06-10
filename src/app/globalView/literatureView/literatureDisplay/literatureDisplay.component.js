@@ -184,7 +184,7 @@ export default class LiteratureDisplay extends React.Component {
             <span className="readingControls">
               <span className="textSizing">
                 <button onClick={this.decreaseFont.bind(this)} className="decreaseFont" disabled={this.state.currentFontSizeClass === 'smFont'}><Glyphicon glyph="minus" /></button>
-                <Glyphicon className="textSizingGlyph" glyph="text-size" />
+                {false && <Glyphicon className="textSizingGlyph" glyph="text-size" />}
                 <button onClick={this.increaseFont.bind(this)} className="increaseFont" disabled={this.state.currentFontSizeClass === 'lgFont'}><Glyphicon glyph="plus" /></button>
               </span>
               <button onClick={this.setReadingMode.bind(this)} className="readingModeButton"><Glyphicon glyph="lamp" className={this.state.readingModeClass} /></button>

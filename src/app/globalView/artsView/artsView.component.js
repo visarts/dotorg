@@ -9,15 +9,15 @@ const ArtsView = (props) => {
 
   return (
     <div className="artsView">
-      <Route exact path='/arts' render={defaultProps => (
+      <Route exact path='/arts' render={routeProps => (
         <ArtsHome
           artistsData={props.artistsData}
-          {...defaultProps} />
+          {...routeProps} />
       )} />
-      <Route exact path='/arts/:artist' render={defaultProps => (
+      <Route exact path='/arts/:artist' render={routeProps => (
         <ArtsArtist
-          currentArtist={props.artistsData.filter(item => item.artistKey === defaultProps.match.params.artist)[0]}
-          {...defaultProps} />
+          currentArtist={props.artistsData.filter(item => item.artistKey === routeProps.match.params.artist)[0]}
+          {...routeProps} />
       )} />
     </div>
   );

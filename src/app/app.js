@@ -48,29 +48,29 @@ export default class App extends React.Component {
     return (
       <Router>
         <div className="app">
-          <Route path='/' render={defaultProps => (
+          <Route path='/' render={routeProps => (
             <GlobalHeader
               searchInput={this.state.searchInput}
               updateSearchInput={this.updateSearchInput}
-              {...defaultProps} />
+              {...routeProps} />
           )}/>
-          <Route path='/' render={defaultProps => (
+          <Route path='/' render={routeProps => (
             <GlobalNav
-              {...defaultProps} />
+              {...routeProps} />
           )} />
 
-          <Route path='/' render={defaultProps => (
+          <Route path='/' render={routeProps => (
             <GlobalView
               artistsData={this.artistsData}
               authorsData={this.authorsData}
               searchInput={this.state.searchInput}
               updateSearchInput={this.updateSearchInput}
-              {...defaultProps} />
+              {...routeProps} />
           )} />
 
-          <Route path='/' render={defaultProps => (
+          <Route path='/' render={routeProps => (
             <GlobalFooter
-              {...defaultProps} />
+              {...routeProps} />
           )} />
         </div>
       </Router>

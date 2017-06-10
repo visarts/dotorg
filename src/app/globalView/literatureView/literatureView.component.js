@@ -12,20 +12,20 @@ export default class LiteratureView extends React.Component {
   render () {
     return (
       <div className="literatureView">
-        <Route exact path='/literature' render={defaultProps => (
+        <Route exact path='/literature' render={routeProps => (
           <LiteratureHome
             authorsData={this.props.authorsData}
-            {...defaultProps} />
+            {...routeProps} />
         )} />
-        <Route path='/literature/:author' render={defaultProps => (
+        <Route path='/literature/:author' render={routeProps => (
           <LiteratureAuthor
-            currentAuthor={this.props.authorsData.filter(item => item.authorKey === defaultProps.match.params.author)[0]}
-            {...defaultProps} />
+            currentAuthor={this.props.authorsData.filter(item => item.authorKey === routeProps.match.params.author)[0]}
+            {...routeProps} />
         )} />
-        <Route path='/literature/:author/:work' render={defaultProps => (
+        <Route path='/literature/:author/:work' render={routeProps => (
           <LiteratureDisplay
-            currentAuthor={this.props.authorsData.filter(item => item.authorKey === defaultProps.match.params.author)[0]}
-            {...defaultProps} />
+            currentAuthor={this.props.authorsData.filter(item => item.authorKey === routeProps.match.params.author)[0]}
+            {...routeProps} />
         )} />
       </div>
     );
