@@ -151,7 +151,7 @@ export default class LiteratureDisplay extends React.Component {
   }
 
   onMenuClick (event) {
-    const menuIsOpen = document.querySelector('.open');
+    /*const menuIsOpen = document.querySelector('.open');
     this.setState({ menuIsOpen: !this.state.menuIsOpen }, () => {
       if (this.state.menuIsOpen) {
         document.querySelector('.readerOverlay').style.display = 'block';
@@ -161,7 +161,7 @@ export default class LiteratureDisplay extends React.Component {
         }
 
       }
-    });
+    });*/
   }
 
   onMenuBlur (event) {
