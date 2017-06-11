@@ -24,7 +24,8 @@ export default class LiteratureDisplay extends React.Component {
       readingModeClass: readingMode ? readingMode : 'lightMode',
       currentFontSizeClass: readingFontSize,
       currentPage: document.location.hash.indexOf('?page=') > -1 ? parseInt(document.location.hash.slice(document.location.hash.indexOf('=') + 1)) : 1,
-      currentMenuPage: 1
+      currentMenuPage: 1,
+      menuIsOpen: false
     };
     this.setValues = this.setValues.bind(this);
 
@@ -63,7 +64,7 @@ export default class LiteratureDisplay extends React.Component {
       this.pages.push(this.content);
     }
     this.smallViewSize = 768;
-    this.menuPageMaxLength = window.innerWidth <= this.smallViewSize ? 9 : 11;
+    this.menuPageMaxLength = window.innerWidth <= this.smallViewSize ? 9 : 12;
     this.menuPages = [];
     this.menuItems = this.authorData.content.slice();
     do {
@@ -149,7 +150,21 @@ export default class LiteratureDisplay extends React.Component {
     return {__html: this.pages[this.state.currentPage - 1]};
   }
 
-  setAuthorMenu () {
+  onMenuClick (event) {
+    const menuIsOpen = document.querySelector('.open');
+    this.setState({ menuIsOpen: !this.state.menuIsOpen }, () => {
+      if (this.state.menuIsOpen) {
+        document.querySelector('.readerOverlay').style.display = 'block';
+      } else {
+        if (menuIsOpen && menuIsOpen.className !== 'dropdown open btn-group') {
+          document.querySelector('.readerOverlay').style.display = 'none';
+        }
+
+      }
+    });
+  }
+
+  onMenuBlur (event) {
 
   }
 
@@ -176,7 +191,7 @@ export default class LiteratureDisplay extends React.Component {
           <div className="modal-nav">
             <span className="readingMenu">
               {this.authorData.content.length > 1 &&
-                <DropdownButton noCaret title={this.authorMenuButtonLabel} id="bg-vertical-dropdown-1" className="readerDropdown">
+                <DropdownButton noCaret title={this.authorMenuButtonLabel} id="bg-vertical-dropdown-1" className="readerDropdown" onClick={this.onMenuClick.bind(this)} onBlur={this.onMenuBlur.bind(this)}>
                   <Glyphicon glyph="menu-up" disabled={this.state.currentMenuPage === 1} className={`showMoreButton ${this.state.currentMenuPage === 1 ? 'buttonDisabled' : ''}`} onClick={this.setPreviousMenuPage.bind(this)} />
                     {this.authorMenu}
                   <Glyphicon glyph="menu-down" disabled={this.state.currentMenuPage === this.menuPages.length} className={`showMoreButton ${this.state.currentMenuPage === this.menuPages.length ? 'buttonDisabled' : ''}`} onClick={this.setNextMenuPage.bind(this)} />
@@ -198,6 +213,7 @@ export default class LiteratureDisplay extends React.Component {
             </div>
             <div className={`htmlContent ${this.state.currentFontSizeClass}`} dangerouslySetInnerHTML={this.setHTMLContent()}></div><br />
           </Modal.Body>
+          <Modal.Body className="readerOverlay"></Modal.Body>
           <Modal.Footer>
             {this.currentWork.genre !== 'poetry' && <div className="modal-pagination">
               <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, 1)} disabled={this.state.currentPage === 1}><Glyphicon glyph="step-backward" /></button></span>

@@ -1,6 +1,7 @@
 @headerHeight: 33px;
 @navHeight: 38px;
 @footerHeight: 38px;
+@disabledTextColor: lighten(@secondaryThemeColor, 25%);
 
 .modal-container {
   position: relative;
@@ -44,6 +45,7 @@
 
     .darkMode {
       background: @mainThemeColor;
+      color: darken(@mainTextColor, 10%);
     }
 
     .modal-content {
@@ -55,10 +57,10 @@
       button {
         display: inline-block;
         margin-right: 4px;
-        color: @mainTextColor;
+        color: darken(@mainTextColor, 20%);
         //background: lighten(@tertiaryThemeColor, 10%);
         background: transparent;
-        border: 1px solid lighten(@tertiaryThemeColor, 20%);
+        border: 1px solid lighten(@tertiaryThemeColor, 10%);
         border-radius: 4px;
         transition: background-color .2s;
 
@@ -73,7 +75,7 @@
         &:disabled {
           cursor: default;
           //color: lighten(@secondaryThemeColor, 15%);
-          color: lighten(@secondaryThemeColor, 25%);
+          color: @disabledTextColor;
           border-color: lighten(@secondaryThemeColor, 15%);
           &:hover {
             background-color: transparent;
@@ -97,8 +99,9 @@
 
         h1 {
           display: inline-block;
-          font-size: .9em;
+          font-size: .75em;
           transition: font-size, .2s;
+          color: darken(@mainTextColor, 20%);
         }
 
         button {
@@ -108,7 +111,6 @@
 
           &.close {
             border: none;
-            color: @mainTextColor;
             background-color: transparent;
             font-size: 1.5em;
           }
@@ -142,7 +144,7 @@
           display: inline-block;
 
           .textSizing {
-            border: 1px solid lighten(@tertiaryThemeColor, 20%);
+            border: 1px solid lighten(@tertiaryThemeColor, 10%);
             display: inline-block;
             margin-right: 4px;
             //background: lighten(@tertiaryThemeColor, 10%);
@@ -175,7 +177,7 @@
 
             .darkMode {
               background: transparent;
-              color: @mainThemeColor;
+              color: @disabledTextColor;
             }
           }
         }
@@ -191,6 +193,14 @@
         transition: background-color .2s;
         overflow: auto;
         font-family: sans-serif;
+
+        &.readerOverlay {
+          display: none;
+          opacity: .75;
+          background: @mainThemeColor;
+          margin-bottom: calc(0 - @footerHeight);
+          z-index: 1600;
+        }
 
         .modal-title {
           border-bottom: 1px solid @tertiaryThemeColor;
@@ -284,6 +294,7 @@
           }
 
           .paginationLocator {
+            color: darken(@mainTextColor, 20%);
             display: inline-block;
             width: 70px;
           }
