@@ -222,7 +222,7 @@ export default class LiteratureDisplay extends React.Component {
               <span className="paginationDirector"><button onClick={this.setNextPage.bind(this)} disabled={this.state.currentPage === this.pages.length}><Glyphicon glyph="chevron-right" /></button></span>
               <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, this.pages.length)} disabled={this.state.currentPage === this.pages.length}><Glyphicon glyph="step-forward" /></button></span>
             </div>}
-            <button className="closeModal" onClick={this.hideModal.bind(this)}>Close</button>
+            {/*<button className="closeModal" onClick=this.hideModal.bind(this)>Close</button>*/}
           </Modal.Footer>
 
         </Modal>

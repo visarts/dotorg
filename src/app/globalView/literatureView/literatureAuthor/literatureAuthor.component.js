@@ -23,8 +23,8 @@ const LiteratureAuthor = (props) => {
   return (
     <div className="literatureAuthor">
       <h1>{`${author.fname} ${author.lname}`}</h1>
-      <div>{author.bio}</div>
-      <ul>{ titles }</ul>
+      <div className="bio">{author.bio}</div>
+      <ul className="titles">{ titles }</ul>
     </div>
   );
 }

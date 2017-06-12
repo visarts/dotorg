@@ -1,7 +1,40 @@
 @import '../../../../styles/globals';
 
 .literatureAuthor {
+
+  .bio {
+    margin: @vMargin 0;
+  }
+  .titles {
+    background: darken(@mainThemeColor, 3%);
+    line-height: 1.2em;
+    column-count: 3;
+    a {
+      display: inline-block;
+    }
+    li {
+      margin: 0;
+      a {
+        padding: @hPadding @vPadding;
+      }
+    }
+  }
   .selected {
     background: @secondaryThemeColor;
+  }
+
+  @media(max-width: 767px) {
+    .titles {
+      column-count: 2;
+      background: transparent;
+
+      li {
+        margin-bottom: 7px;
+        a {
+          font-size: .8em;
+          padding: @hPadding 0;
+        }
+      }
+    }
   }
 }
