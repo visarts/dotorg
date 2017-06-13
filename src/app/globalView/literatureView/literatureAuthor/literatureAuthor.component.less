@@ -1,39 +1,92 @@
 @import '../../../../styles/globals';
+@titlesBackground: darken(@mainThemeColor, 3%);
 
 .literatureAuthor {
 
+  .authorPic {
+    width: 100%;
+    max-width: 300px;
+    img {
+      width: 100%;
+    }
+  }
   .bio {
     margin: @vMargin 0;
   }
+
   .titles {
-    background: darken(@mainThemeColor, 3%);
-    line-height: 1.2em;
+    background: @titlesBackground;
+    line-height: 1.4em;
+    -moz-column-count: 3;
     column-count: 3;
+    -moz-column-rule: 4px solid @mainThemeColor;
+    column-rule: 4px solid @mainThemeColor;
+
     a {
+      transition: all .2s;
       display: inline-block;
+      width: 100%;
+
+      &:hover {
+        color: inherit;
+        background: @mainLinkHoverColor;
+      }
     }
+
     li {
       margin: 0;
       a {
         padding: @hPadding @vPadding;
+
+        &.selected {
+          background: @tertiaryThemeColor;
+        }
       }
     }
+
+
   }
-  .selected {
-    background: @secondaryThemeColor;
+
+  .titlesFadeOut {
+    height: 40px;
+    width: 100%;
+    background: linear-gradient(to bottom, @titlesBackground, @mainThemeColor)
+  }
+
+  .backToTop {
+    display: none;
   }
 
   @media(max-width: 767px) {
     .titles {
-      column-count: 2;
+      column-count: 1;
+      -moz-column-count: 1;
       background: transparent;
 
       li {
         margin-bottom: 7px;
         a {
-          font-size: .8em;
-          padding: @hPadding 0;
+          background: @titlesBackground;
         }
+      }
+    }
+    .titlesFadeOut {
+      display: none;
+    }
+
+    .backToTop {
+      position: fixed;
+      opacity: .7;
+      z-index: 2200;
+      height: 30px;
+      width: 30px;
+      bottom: 30px;
+      right: 10px;
+      background: @tertiaryThemeColor;
+      transition: display .2s;
+
+      &.showBackToTop {
+        display: block;
       }
     }
   }

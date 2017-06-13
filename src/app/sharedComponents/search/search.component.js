@@ -87,7 +87,7 @@ export default class Search extends React.Component {
             value={this.props.searchInput}
             autoComplete={true}
             maxLength={75}
-            required={true}
+            required={false}
             onFocus={this.toggleSearch}
             onBlur={this.toggleSearch}
             onChange={this.onChange}
