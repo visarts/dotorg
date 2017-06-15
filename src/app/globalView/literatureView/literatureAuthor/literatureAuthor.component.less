@@ -54,7 +54,19 @@
   }
 
   .backToTop {
+    font-size: 1.5em;
     display: none;
+    position: fixed;
+    opacity: .7;
+    z-index: 2200;
+    height: 30px;
+    width: 30px;
+    bottom: 30px;
+    right: @vMargin;
+    background: transparent;
+    transition: all .5s;
+    opacity: .5;
+    cursor: pointer;
   }
 
   @media(max-width: 767px) {
@@ -72,22 +84,6 @@
     }
     .titlesFadeOut {
       display: none;
-    }
-
-    .backToTop {
-      position: fixed;
-      opacity: .7;
-      z-index: 2200;
-      height: 30px;
-      width: 30px;
-      bottom: 30px;
-      right: 10px;
-      background: @tertiaryThemeColor;
-      transition: display .2s;
-
-      &.showBackToTop {
-        display: block;
-      }
     }
   }
 }

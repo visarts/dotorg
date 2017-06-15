@@ -7,6 +7,8 @@ import GlobalFooter from './globalFooter/globalFooter.component';
 import GlobalView from './globalView/globalView.component';
 import { CSSTransitionGroup } from 'react-transition-group'
 
+import Test from './test/test.component';
+
 
 export default class App extends React.Component {
 
@@ -57,6 +59,11 @@ export default class App extends React.Component {
           <Route path='/' render={routeProps => (
             <GlobalNav
               {...routeProps} />
+          )} />
+
+          <Route path='/test' render={routeProps => (
+              <Test
+                {...routeProps} />
           )} />
 
           <Route path='/' render={routeProps => (

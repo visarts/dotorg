@@ -13,7 +13,7 @@ const GlobalNav = (props) => {
     <nav className="globalNav">
 
       <div className="frontp">
-        <img src={bannerImg} />
+        {/* <img src={bannerImg} />*/}
       </div>
       <Link to='/literature' className={litSelected}>
         <div className="navDescription">
