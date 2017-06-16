@@ -40,7 +40,7 @@ export default class LiteratureAuthor extends React.Component {
     // Listen for scroll events
     window.addEventListener('scroll', function ( event ) {
       that.setState({isScrolling: true}, () =>{
-        document.querySelector('.backToTop').style.display = "none";
+        document.querySelector('.backToTop').style.visibility = "hidden";
       });
         // Clear our timeout throughout the scroll
         window.clearTimeout( this.scrollTimer );
@@ -49,11 +49,11 @@ export default class LiteratureAuthor extends React.Component {
         this.scrollTimer = setTimeout(() => {
           that.setState({isScrolling: false}, () =>{
             if (document.querySelector('body').scrollTop > 100) {
-              document.querySelector('.backToTop').style.display = "block";
+              document.querySelector('.backToTop').style.visibility = "visible";
             }
           });
 
-        }, 500);
+        }, 100);
 
     }, false);
 
