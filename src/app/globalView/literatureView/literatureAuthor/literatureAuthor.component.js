@@ -42,18 +42,18 @@ export default class LiteratureAuthor extends React.Component {
       that.setState({isScrolling: true}, () =>{
         document.querySelector('.backToTop').style.visibility = "hidden";
       });
-        // Clear our timeout throughout the scroll
-        window.clearTimeout( this.scrollTimer );
+      // Clear our timeout throughout the scroll
+      window.clearTimeout( this.scrollTimer );
 
-        // Set a timeout to run after scrolling ends
-        this.scrollTimer = setTimeout(() => {
-          that.setState({isScrolling: false}, () =>{
-            if (document.querySelector('body').scrollTop > 100) {
-              document.querySelector('.backToTop').style.visibility = "visible";
-            }
-          });
+      // Set a timeout to run after scrolling ends
+      this.scrollTimer = setTimeout(() => {
+        that.setState({isScrolling: false}, () =>{
+          if (document.querySelector('body').scrollTop > 100) {
+            document.querySelector('.backToTop').style.visibility = "visible";
+          }
+        });
 
-        }, 100);
+      }, 100);
 
     }, false);
 
@@ -63,14 +63,19 @@ export default class LiteratureAuthor extends React.Component {
     return (
       <div className="literatureAuthor">
         <h1>{`${this.author.fname} ${this.author.lname}`}</h1>
-        <div className="authorPic">
-          <img src="./images/andersenhc.jpg" />
+        <div className="about">
+          <div className="authorPic">
+            <img src="./images/andersenhc.jpg" />
+          </div>
+          <div className="bio">{this.author.bio}</div>
         </div>
-        <div className="bio">{this.author.bio}</div>
-        <ul className="titles">{ this.titles }</ul>
-        <div className="titlesFadeOut"></div>
-        <div className="backToTop" onClick={this.goBackToTop}>
-          <Glyphicon glyph="chevron-up" />
+        <div className="titlesContainer">
+          <div className="titlesTitle"><h3>Explore the library</h3></div>
+          <ul className="titles">{ this.titles }</ul>
+          <div className="titlesFadeOut"></div>
+            <div className="backToTop" onClick={this.goBackToTop}>
+              <Glyphicon glyph="chevron-up" />
+            </div>
         </div>
       </div>
     );

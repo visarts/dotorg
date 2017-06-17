@@ -3,88 +3,135 @@
 
 .literatureAuthor {
 
-  .authorPic {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .about {
     width: 100%;
-    max-width: 300px;
-    img {
-      width: 100%;
-    }
-  }
-  .bio {
-    margin: @vMargin 0;
-  }
-
-  .titles {
-    background: @titlesBackground;
-    line-height: 1.4em;
-    -moz-column-count: 3;
-    column-count: 3;
-    -moz-column-rule: 4px solid @mainThemeColor;
-    column-rule: 4px solid @mainThemeColor;
-
-    a {
-      transition: all .2s;
+    border-top-right-radius: @roundedEdge;
+    border-top-left-radius: @roundedEdge;
+    border-top: 6px solid @titlesBackground;
+    background: @tertiaryThemeColor;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: @hMargin 0;
+    .authorPic, .bio {
       display: inline-block;
-      width: 100%;
+      padding: @vPadding;
+    }
+    .authorPic {
+      text-align: center;
 
-      &:hover {
-        color: inherit;
-        background: @mainLinkHoverColor;
+      img {
+        border: 1px solid @titlesBackground;
+        max-width: 200px;
+        //width: 100%;
       }
     }
+    .bio {
+      //max-width: 40%;
+      //margin: @vMargin 0;
+    }
+  }
 
-    li {
-      margin: 0;
+  .titlesContainer {
+    .titlesTitle {
+      background: @secondaryThemeColor;
+      padding: @hPadding;
+      text-align: center;
+      border-top-right-radius: @roundedEdge;
+      border-top-left-radius: @roundedEdge;
+
+      h3 {
+        font-size: @smallHeadline;
+      }
+    }
+    .titles {
+      background: @titlesBackground;
+      line-height: 1.4em;
+      -moz-column-count: 3;
+      column-count: 3;
+      -moz-column-rule: 4px solid @mainThemeColor;
+      column-rule: 4px solid @mainThemeColor;
+
       a {
-        padding: @hPadding @vPadding;
+        transition: all .2s;
+        display: inline-block;
+        width: 100%;
 
-        &.selected {
-          background: @tertiaryThemeColor;
+        &:hover {
+          color: inherit;
+          background: @mainLinkHoverColor;
+        }
+      }
+
+      li {
+        margin: 0;
+        a {
+          padding: @hPadding @vPadding;
+
+          &.selected {
+            background: @tertiaryThemeColor;
+          }
         }
       }
     }
 
+    .titlesFadeOut {
+      position: relative;
+      top: 0;
+      height: 40px;
+      width: 100%;
+      background: linear-gradient(to bottom, @titlesBackground, @mainThemeColor)
+    }
 
-  }
+    .backToTop {
+      font-size: 1.5em;
+      visibility: hidden;
+      position: fixed;
+      opacity: .7;
+      height: 30px;
+      width: 30px;
+      bottom: 30px;
+      right: @vMargin;
+      background: transparent;
+      transition: all .2s;
+      opacity: .5;
+      cursor: pointer;
 
-  .titlesFadeOut {
-    position: relative;
-    top: 0;
-    height: 40px;
-    width: 100%;
-    background: linear-gradient(to bottom, @titlesBackground, @mainThemeColor)
-  }
-
-  .backToTop {
-    font-size: 1.5em;
-    visibility: hidden;
-    position: fixed;
-    opacity: .7;
-    height: 30px;
-    width: 30px;
-    bottom: 30px;
-    right: @vMargin;
-    background: transparent;
-    transition: all .2s ease-out;
-    opacity: .5;
-    cursor: pointer;
+      &:hover {
+        opacity: .9;
+      }
+    }
   }
 
   @media(max-width: 767px) {
-    .titles {
-      column-count: 1;
-      -moz-column-count: 1;
-      background: transparent;
+    .about {
+      flex-wrap: wrap;
 
-      li {
-        margin-bottom: 7px;
-        a {
-          background: @titlesBackground;
-        }
+      .authorPic {
+        width: 100%;
       }
     }
-    .titlesFadeOut {
-      display: none;
+    .titlesContainer {
+      .titles {
+        column-count: 1;
+        -moz-column-count: 1;
+        background: transparent;
+
+        li {
+          margin-bottom: 7px;
+          a {
+            background: @titlesBackground;
+          }
+        }
+      }
+      .titlesFadeOut {
+        display: none;
+      }
     }
   }
 }
