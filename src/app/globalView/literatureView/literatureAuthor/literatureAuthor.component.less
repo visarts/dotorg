@@ -1,4 +1,5 @@
 @import '../../../../styles/globals';
+
 @titlesBackground: darken(@mainThemeColor, 3%);
 
 .literatureAuthor {
@@ -18,6 +19,12 @@
     justify-content: flex-start;
     align-items: stretch;
     margin: @hMargin 0;
+
+    .readMoreLink {
+      float: right;
+      margin-top: 10px;
+      font-size: @smallHeadline;
+    }
     .authorPic, .bio {
       display: inline-block;
       padding: @vPadding;
@@ -57,24 +64,24 @@
       -moz-column-rule: 4px solid @mainThemeColor;
       column-rule: 4px solid @mainThemeColor;
 
-      a {
-        transition: all .2s;
-        display: inline-block;
-        width: 100%;
-
-        &:hover {
-          color: inherit;
-          background: @mainLinkHoverColor;
-        }
-      }
-
       li {
         margin: 0;
         a {
           padding: @hPadding @vPadding;
+          transition: all .2s;
+          display: inline-block;
+          width: 100%;
 
-          &.selected {
+          &:focus {
             background: @tertiaryThemeColor;
+            color: inherit;
+            text-decoration: none;
+            outline: none;
+          }
+
+          &:hover {
+            color: inherit;
+            background: @mainLinkHoverColor;
           }
         }
       }

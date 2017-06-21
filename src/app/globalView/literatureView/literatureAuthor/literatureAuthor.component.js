@@ -10,22 +10,10 @@ export default class LiteratureAuthor extends React.Component {
   //document.querySelector('body').scrollTop = 0;
   constructor (props) {
     super(props);
-    this.state = {
-      isScrolling: false
-    };
     this.props = props;
     this.author = props.currentAuthor;
     this.authorData = dataService.getAuthorData(this.author.authorKey);
-    this.titles = this.authorData.content.map((title, index) => {
-      return (
-        <li key={index}>
-          {this.props.location.pathname !== `/literature/${this.author.authorKey}/${title.fileName}` ?
-            <Link to={`/literature/${this.author.authorKey}/${title.fileName}`}>{decodeURIComponent(title.title)}</Link> :
-            <a href="#" className="selected">{title.title}</a>
-          }
-        </li>
-      );
-    });
+    this.titles = this.getTitles();
     this.scrollTimer = null;
     this.goBackToTop = this.goBackToTop.bind(this);
   }
@@ -38,25 +26,31 @@ export default class LiteratureAuthor extends React.Component {
 
     let that = this;
     // Listen for scroll events
-    window.addEventListener('scroll', function ( event ) {
-      that.setState({isScrolling: true}, () =>{
-        document.querySelector('.backToTop').style.visibility = "hidden";
-      });
+    window.addEventListener('scroll', ( event ) => {
+      document.querySelector('.backToTop').style.visibility = "hidden";
       // Clear our timeout throughout the scroll
       window.clearTimeout( this.scrollTimer );
 
       // Set a timeout to run after scrolling ends
       this.scrollTimer = setTimeout(() => {
-        that.setState({isScrolling: false}, () =>{
-          if (document.querySelector('body').scrollTop > 100) {
-            document.querySelector('.backToTop').style.visibility = "visible";
-          }
-        });
+        if (document.querySelector('body').scrollTop > 100) {
+          document.querySelector('.backToTop').style.visibility = "visible";
+        }
 
       }, 100);
 
     }, false);
 
+  }
+
+  getTitles () {
+    return this.authorData.content.map((title, index) => {
+      return (
+        <li key={index}>
+          <Link to={`/literature/${this.author.authorKey}/${title.fileName}`}>{decodeURIComponent(title.title)}</Link>
+        </li>
+      );
+    });
   }
 
   render () {
@@ -67,7 +61,7 @@ export default class LiteratureAuthor extends React.Component {
           <div className="authorPic">
             <img src="./images/andersenhc.jpg" />
           </div>
-          <div className="bio">{this.author.bio}</div>
+          <div className="bio">{this.author.bio}<div className="readMoreLink"><a href="#" target="_blank">Read More <Glyphicon glyph="new-window" /></a></div></div>
         </div>
         <div className="titlesContainer">
           <div className="titlesTitle"><h3>Explore the library</h3></div>

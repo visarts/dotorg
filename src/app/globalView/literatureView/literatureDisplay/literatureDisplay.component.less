@@ -1,7 +1,9 @@
 @import '../../../../styles/globals';
 @import '../../../../styles/modal';
 @import '../../../../styles/menus';
-
+/*.globalView, .globalHeader, .globalFooter {
+  filter: blur(4px);
+}*/
 .modal {
   /*::-webkit-scrollbar {
     width: 20px;
@@ -171,7 +173,6 @@
         right: 0;
         transition: background-color .2s;
         overflow: auto;
-        font-family: sans-serif;
 
         &.readerOverlay {
           display: none;
@@ -242,6 +243,7 @@
       }
 
       .modal-footer {
+        opacity: .75;
         border-radius: 0 0 6px 6px;
         position: absolute;
         text-align: center;

@@ -6,6 +6,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
+  devtool: 'inline-source-map',
   entry: {
     vendors: './src/vendors.js',
     main: ['./src/styles/main.less', './src/index.js']
@@ -25,7 +26,8 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       { from: 'src/images', to: 'images'}
-    ])
+    ]),
+    new webpack.HotModuleReplacementPlugin()
     //new webpack.optimize.UglifyJsPlugin()
     // new CopyWebpackPlugin([
     //   { from: 'src/mockup/styledata.json', to: 'assets' }

@@ -4,6 +4,7 @@ import HomeView from './homeView/homeView.component';
 import ArtsView from './artsView/artsView.component';
 import LiteratureView from './literatureView/literatureView.component';
 import SearchView from './searchView/searchView.component';
+import TestView from './testView/testView.component';
 
 
 export default class GlobalView extends React.Component {
@@ -36,6 +37,7 @@ export default class GlobalView extends React.Component {
               updateSearchInput={this.props.updateSearchInput}
               {...routeProps} />
           )} />
+        <Route exact path="/test" component={TestView} />
         </div>
       </div>
     );
