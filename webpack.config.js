@@ -25,7 +25,9 @@ module.exports = {
       name: 'vendors'
     }),
     new CopyWebpackPlugin([
-      { from: 'src/images', to: 'images'}
+      { from: 'index.html', to: 'index.html' },
+      { from: 'src/images', to: 'images'},
+      { from: 'content', to: 'content'}
     ]),
     new webpack.HotModuleReplacementPlugin()
     //new webpack.optimize.UglifyJsPlugin()

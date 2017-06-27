@@ -16,6 +16,7 @@ export default class LiteratureAuthor extends React.Component {
     this.titles = this.getTitles();
     this.scrollTimer = null;
     this.goBackToTop = this.goBackToTop.bind(this);
+    this.loadDefaultProfileImage = this.loadDefaultProfileImage.bind(this);
   }
 
   goBackToTop (event) {
@@ -53,13 +54,17 @@ export default class LiteratureAuthor extends React.Component {
     });
   }
 
+  loadDefaultProfileImage (event) {
+    event.target.src='./content/portraits/profile.jpg';
+  }
+
   render () {
     return (
       <div className="literatureAuthor">
         <h1>{`${this.author.fname} ${this.author.lname}`}</h1>
         <div className="about">
           <div className="authorPic">
-            <img src="./images/andersenhc.jpg" />
+            <img src={`./content/portraits/authors/${this.author.authorKey}.jpg`} onError={this.loadDefaultProfileImage} />
           </div>
           <div className="bio">{this.author.bio}<div className="readMoreLink"><a href="#" target="_blank">Read More <Glyphicon glyph="new-window" /></a></div></div>
         </div>

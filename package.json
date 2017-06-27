@@ -8,7 +8,7 @@
     "literature"
   ],
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack && webpack-dev-server --content-base dist/",
     "build": "webpack --config webpack.config.prod.js",
     "watch": "webpack -d --watch --hot"
   },
