@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Modal } from 'react-bootstrap';
 import Lightbox from 'react-images';
 import dataService from 'Services/data.service';
+import BackToTop from 'SharedComponents/backToTop/backToTop.component';
 import './artsArtist.component.less';
 
 
@@ -114,6 +115,7 @@ export default class ArtsArtist extends React.Component {
           preloadNextImage={true}
           backdropClosesModal={true}
         />
+      <BackToTop />
       </div>
     );
   }

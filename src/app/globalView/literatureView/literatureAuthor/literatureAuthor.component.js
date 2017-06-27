@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import { Glyphicon } from 'react-bootstrap';
 import dataService from 'Services/data.service';
-import LiteratureDisplay from '../literatureDisplay/literatureDisplay.component';
+import BackToTop from 'SharedComponents/backToTop/backToTop.component';
 import './literatureAuthor.component.less';
 
 
@@ -14,35 +14,9 @@ export default class LiteratureAuthor extends React.Component {
     this.author = props.currentAuthor;
     this.authorData = dataService.getAuthorData(this.author.authorKey);
     this.titles = this.getTitles();
-    this.scrollTimer = null;
-    this.goBackToTop = this.goBackToTop.bind(this);
     this.loadDefaultProfileImage = this.loadDefaultProfileImage.bind(this);
   }
 
-  goBackToTop (event) {
-    document.querySelector('body').scrollTop = 0;
-  }
-
-  componentDidMount () {
-
-    let that = this;
-    // Listen for scroll events
-    window.addEventListener('scroll', ( event ) => {
-      document.querySelector('.backToTop').style.visibility = "hidden";
-      // Clear our timeout throughout the scroll
-      window.clearTimeout( this.scrollTimer );
-
-      // Set a timeout to run after scrolling ends
-      this.scrollTimer = setTimeout(() => {
-        if (document.querySelector('body').scrollTop > 100) {
-          document.querySelector('.backToTop').style.visibility = "visible";
-        }
-
-      }, 100);
-
-    }, false);
-
-  }
 
   getTitles () {
     return this.authorData.content.map((title, index) => {
@@ -72,9 +46,7 @@ export default class LiteratureAuthor extends React.Component {
           <div className="titlesTitle"><h3>Explore the library</h3></div>
           <ul className="titles">{ this.titles }</ul>
           <div className="titlesFadeOut"></div>
-            <div className="backToTop" onClick={this.goBackToTop}>
-              <Glyphicon glyph="chevron-up" />
-            </div>
+          <BackToTop />
         </div>
       </div>
     );
