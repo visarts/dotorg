@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 const getAuthorData = (author) => {
   const authorData = require(`authors/${author}.json`);
   return authorData;
@@ -27,13 +29,21 @@ const getAuthorNames = () => {
   return namesData.authors;
 };
 
+const getHTMLContent = (authorKey, currentWorkKey) => {
+  return axios.get(`./content/literature/${authorKey}/${currentWorkKey}.html`)
+    .then((results) => {
+      return results.data;
+    });
+}
+
 const dataService = {
   getAuthorData,
   getAuthorsData,
   getAuthorNames,
   getArtistData,
   getArtistsData,
-  getArtistNames
+  getArtistNames,
+  getHTMLContent
 }
 
 export default dataService;

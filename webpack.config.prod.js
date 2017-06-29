@@ -7,6 +7,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
+  devtool: 'source-map',
   entry: {
     vendors: './src/vendors.js',
     main: ['./src/styles/main.less', './src/index.js']
@@ -29,7 +30,11 @@ module.exports = {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendors'
     }),
-    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      compressor: {
+        warnings: false
+      }
+    }),
     new CopyWebpackPlugin([
       { from: 'data', to: 'data' }
     ]),

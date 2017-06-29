@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "start": "webpack && webpack-dev-server --content-base dist/",
-    "build": "webpack --config webpack.config.prod.js",
+    "build": "webpack --config webpack.config.prod.js --json > stats.json",
     "watch": "webpack -d --watch --hot"
   },
   "author": "Brendan Best",
