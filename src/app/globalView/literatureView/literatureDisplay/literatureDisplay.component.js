@@ -25,9 +25,11 @@ export default class LiteratureDisplay extends React.Component {
       currentFontSizeClass: readingFontSize,
       currentPage: document.location.hash.indexOf('?page=') > -1 ? parseInt(document.location.hash.slice(document.location.hash.indexOf('=') + 1)) : 1,
       currentMenuPage: 1,
-      menuIsOpen: false
+      menuIsOpen: false,
+      authorMenu: []
     };
     this.setValues = this.setValues.bind(this);
+    this.setAuthorMenu = this.setAuthorMenu.bind(this);
     this.setValues();
 
   }
@@ -80,14 +82,7 @@ export default class LiteratureDisplay extends React.Component {
   
         this.authorMenuButtonLabel = window.innerWidth <= this.smallViewSize ? <Glyphicon glyph="th" /> : <span>Read More by {this.props.currentAuthor.lname} <Glyphicon glyph="chevron-down" /></span>;
         this.originalHash = document.location.hash;
-        this.authorMenu = this.menuPages[this.state.currentMenuPage - 1].map((item, index) => {
-          return (
-            <LinkContainer to={`/literature/${this.props.currentAuthor.authorKey}/${item.fileName}`} key={index}>
-              <MenuItem eventKey={index} key={index}>{decodeURIComponent(item.title)}</MenuItem>
-            </LinkContainer>
-          );
-        });
-        this.setState(this.state);
+        this.setState({authorMenu: this.setAuthorMenu()})
       });
   }
 
@@ -126,6 +121,16 @@ export default class LiteratureDisplay extends React.Component {
     if (this.state.currentMenuPage > 1) {
       this.setState({ currentMenuPage: currentMenuPage - 1 });
     }
+  }
+  
+  setAuthorMenu () {
+    return this.menuPages[this.state.currentMenuPage - 1].map((item, index) => {
+      return (
+        <LinkContainer to={`/literature/${this.props.currentAuthor.authorKey}/${item.fileName}`} key={index}>
+          <MenuItem eventKey={index} key={index}>{decodeURIComponent(item.title)}</MenuItem>
+        </LinkContainer>
+      );
+    });
   }
 
   increaseFont () {
@@ -198,7 +203,7 @@ export default class LiteratureDisplay extends React.Component {
               {this.authorData.content.length > 1 &&
                 <DropdownButton noCaret title={this.authorMenuButtonLabel} id="bg-vertical-dropdown-1" className="readerDropdown" onClick={this.onMenuClick.bind(this)} onBlur={this.onMenuBlur.bind(this)}>
                   <Glyphicon glyph="menu-up" disabled={this.state.currentMenuPage === 1} className={`showMoreButton ${this.state.currentMenuPage === 1 ? 'buttonDisabled' : ''}`} onClick={this.setPreviousMenuPage.bind(this)} />
-                    {this.authorMenu}
+                    {this.state.authorMenu}
                   <Glyphicon glyph="menu-down" disabled={this.state.currentMenuPage === this.menuPages.length} className={`showMoreButton ${this.state.currentMenuPage === this.menuPages.length ? 'buttonDisabled' : ''}`} onClick={this.setNextMenuPage.bind(this)} />
                 </DropdownButton>}
             </span>
