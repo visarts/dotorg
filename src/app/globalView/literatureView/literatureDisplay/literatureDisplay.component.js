@@ -54,7 +54,7 @@ export default class LiteratureDisplay extends React.Component {
                 lastChar++;
               }
             }
-  
+
             page = this.content.slice(0, lastChar);
             this.content = this.content.slice(lastChar);
             this.pages.push(page);
@@ -78,11 +78,11 @@ export default class LiteratureDisplay extends React.Component {
             this.menuPages.push(this.menuItems);
           }
         } while (this.menuItems.length > this.menuPageMaxLength);
-  
-  
+
+
         this.authorMenuButtonLabel = window.innerWidth <= this.smallViewSize ? <Glyphicon glyph="th" /> : <span>Read More by {this.props.currentAuthor.lname} <Glyphicon glyph="chevron-down" /></span>;
         this.originalHash = document.location.hash;
-        this.setState({authorMenu: this.setAuthorMenu()})
+        this.setState({authorMenu: this.setAuthorMenu(this.state.currentMenuPage)})
       });
   }
 
@@ -112,19 +112,19 @@ export default class LiteratureDisplay extends React.Component {
   setNextMenuPage () {
     let currentMenuPage = this.state.currentMenuPage;
     if (this.state.currentMenuPage < this.menuPages.length) {
-      this.setState({ currentMenuPage: currentMenuPage + 1 });
+      this.setState({ currentMenuPage: currentMenuPage + 1, authorMenu: this.setAuthorMenu(currentMenuPage + 1) });
     }
   }
 
   setPreviousMenuPage () {
     let currentMenuPage = this.state.currentMenuPage;
     if (this.state.currentMenuPage > 1) {
-      this.setState({ currentMenuPage: currentMenuPage - 1 });
+      this.setState({ currentMenuPage: currentMenuPage - 1, authorMenu: this.setAuthorMenu(currentMenuPage - 1) });
     }
   }
-  
-  setAuthorMenu () {
-    return this.menuPages[this.state.currentMenuPage - 1].map((item, index) => {
+
+  setAuthorMenu (currentMenuPage) {
+    return this.menuPages[currentMenuPage - 1].map((item, index) => {
       return (
         <LinkContainer to={`/literature/${this.props.currentAuthor.authorKey}/${item.fileName}`} key={index}>
           <MenuItem eventKey={index} key={index}>{decodeURIComponent(item.title)}</MenuItem>
@@ -188,7 +188,7 @@ export default class LiteratureDisplay extends React.Component {
   }
 
   render () {
-    
+
     return (
       <div className="literatureDisplay">
         {this.menuPages && <Modal

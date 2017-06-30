@@ -35,10 +35,6 @@ module.exports = {
       { from: 'content', to: 'content'}
     ]),
     new webpack.HotModuleReplacementPlugin()
-    //new webpack.optimize.UglifyJsPlugin()
-    // new CopyWebpackPlugin([
-    //   { from: 'src/mockup/styledata.json', to: 'assets' }
-    // ])
   ],
   module: {
 		rules: [
