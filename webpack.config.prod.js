@@ -31,10 +31,9 @@ module.exports = {
     }),
     new webpack.optimize.UglifyJsPlugin(),
     new CopyWebpackPlugin([
-      { from: 'data', to: 'data' }
-    ]),
-    new CopyWebpackPlugin([
-      { from: 'src/images', to: 'images'}
+      { from: 'index.html', to: 'index.html' },
+      { from: 'src/images', to: 'images'},
+      { from: 'content', to: 'content'}
     ])
   ],
   module: {
