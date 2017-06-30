@@ -37,7 +37,7 @@ export default class GlobalView extends React.Component {
               updateSearchInput={this.props.updateSearchInput}
               {...routeProps} />
           )} />
-        <Route exact path="/test" component={TestView} />
+          <Route exact path="/test" component={TestView} />
         </div>
       </div>
     );

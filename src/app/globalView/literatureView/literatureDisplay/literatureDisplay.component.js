@@ -25,9 +25,12 @@ export default class LiteratureDisplay extends React.Component {
       currentFontSizeClass: readingFontSize,
       currentPage: document.location.hash.indexOf('?page=') > -1 ? parseInt(document.location.hash.slice(document.location.hash.indexOf('=') + 1)) : 1,
       currentMenuPage: 1,
-      menuIsOpen: false
+      menuIsOpen: false,
+      authorMenu: []
     };
     this.setValues = this.setValues.bind(this);
+    this.setAuthorMenu = this.setAuthorMenu.bind(this);
+    this.setValues();
 
   }
 
@@ -35,55 +38,52 @@ export default class LiteratureDisplay extends React.Component {
     this.authorData = dataService.getAuthorData(this.props.currentAuthor.authorKey);
     this.currentWorkKey = this.props.match.params.work;
     this.currentWork = this.authorData.content.filter(item => item.fileName === this.currentWorkKey)[0];
-    this.content = require(`Literature/${this.props.currentAuthor.authorKey}/${this.currentWorkKey}.html`);
-    this.pages = [];
-    if (this.currentWork.genre !== 'poetry') {
-      let lastChar = 2000;
-      let buffer = 500;
-      do {
-        let page = '';
-        while (lastChar < this.content.length) {
-          if (this.content.substring(lastChar - 4, lastChar) === '</p>') {
-            break;
-          } else {
-            lastChar++;
+    dataService.getHTMLContent(this.props.currentAuthor.authorKey, this.currentWorkKey)
+      .then((results) => {
+        this.content = results;
+        this.pages = [];
+        if (this.currentWork.genre !== 'poetry') {
+          let lastChar = 2000;
+          let buffer = 500;
+          do {
+            let page = '';
+            while (lastChar < this.content.length) {
+              if (this.content.substring(lastChar - 4, lastChar) === '</p>') {
+                break;
+              } else {
+                lastChar++;
+              }
+            }
+  
+            page = this.content.slice(0, lastChar);
+            this.content = this.content.slice(lastChar);
+            this.pages.push(page);
+            if (this.content.length && this.content.length < (lastChar + buffer)) {
+              page = this.content.slice(0);
+              this.content = this.content.slice(lastChar + buffer);
+              this.pages.push(page);
+              break;
+            }
+          } while(this.content.length > lastChar);
+        } else {
+          this.pages.push(this.content);
+        }
+        this.smallViewSize = 768;
+        this.menuPageMaxLength = window.innerWidth <= this.smallViewSize ? 9 : 12;
+        this.menuPages = [];
+        this.menuItems = this.authorData.content.slice();
+        do {
+          this.menuPages.push(this.menuItems.splice(0, this.menuPageMaxLength));
+          if (this.menuItems.length && this.menuItems.length < this.menuPageMaxLength) {
+            this.menuPages.push(this.menuItems);
           }
-        }
-
-        page = this.content.slice(0, lastChar);
-        this.content = this.content.slice(lastChar);
-        this.pages.push(page);
-        if (this.content.length && this.content.length < (lastChar + buffer)) {
-          page = this.content.slice(0);
-          this.content = this.content.slice(lastChar + buffer);
-          this.pages.push(page);
-          break;
-        }
-      } while(this.content.length > lastChar);
-    } else {
-      this.pages.push(this.content);
-    }
-    this.smallViewSize = 768;
-    this.menuPageMaxLength = window.innerWidth <= this.smallViewSize ? 9 : 12;
-    this.menuPages = [];
-    this.menuItems = this.authorData.content.slice();
-    do {
-      this.menuPages.push(this.menuItems.splice(0, this.menuPageMaxLength));
-      if (this.menuItems.length && this.menuItems.length < this.menuPageMaxLength) {
-        this.menuPages.push(this.menuItems);
-      }
-    } while (this.menuItems.length > this.menuPageMaxLength);
-
-
-    this.authorMenuButtonLabel = window.innerWidth <= this.smallViewSize ? <Glyphicon glyph="th" /> : <span>Read More by {this.props.currentAuthor.lname} <Glyphicon glyph="chevron-down" /></span>;
-    this.originalHash = document.location.hash;
-    this.authorMenu = this.menuPages[this.state.currentMenuPage - 1].map((item, index) => {
-      return (
-        <LinkContainer to={`/literature/${this.props.currentAuthor.authorKey}/${item.fileName}`} key={index}>
-          <MenuItem eventKey={index} key={index}>{decodeURIComponent(item.title)}</MenuItem>
-        </LinkContainer>
-      );
-    });
+        } while (this.menuItems.length > this.menuPageMaxLength);
+  
+  
+        this.authorMenuButtonLabel = window.innerWidth <= this.smallViewSize ? <Glyphicon glyph="th" /> : <span>Read More by {this.props.currentAuthor.lname} <Glyphicon glyph="chevron-down" /></span>;
+        this.originalHash = document.location.hash;
+        this.setState({authorMenu: this.setAuthorMenu()})
+      });
   }
 
   setPageNum (pageNum) {
@@ -121,6 +121,16 @@ export default class LiteratureDisplay extends React.Component {
     if (this.state.currentMenuPage > 1) {
       this.setState({ currentMenuPage: currentMenuPage - 1 });
     }
+  }
+  
+  setAuthorMenu () {
+    return this.menuPages[this.state.currentMenuPage - 1].map((item, index) => {
+      return (
+        <LinkContainer to={`/literature/${this.props.currentAuthor.authorKey}/${item.fileName}`} key={index}>
+          <MenuItem eventKey={index} key={index}>{decodeURIComponent(item.title)}</MenuItem>
+        </LinkContainer>
+      );
+    });
   }
 
   increaseFont () {
@@ -171,17 +181,17 @@ export default class LiteratureDisplay extends React.Component {
   componentWillReceiveProps (nextProps) {
     if (this.props.match.params.work !== nextProps.match.params.work) {
       this.setState({currentPage: 1}, () => {
-        this.setValues();
         document.querySelector('.modal-body').scrollTop = 0;
+        this.setValues();
       });
     }
   }
 
   render () {
-    this.setValues();
+    
     return (
       <div className="literatureDisplay">
-        <Modal
+        {this.menuPages && <Modal
           show={true}
           onHide={this.hideModal.bind(this)}
           dialogClassName="custom-modal">
@@ -193,7 +203,7 @@ export default class LiteratureDisplay extends React.Component {
               {this.authorData.content.length > 1 &&
                 <DropdownButton noCaret title={this.authorMenuButtonLabel} id="bg-vertical-dropdown-1" className="readerDropdown" onClick={this.onMenuClick.bind(this)} onBlur={this.onMenuBlur.bind(this)}>
                   <Glyphicon glyph="menu-up" disabled={this.state.currentMenuPage === 1} className={`showMoreButton ${this.state.currentMenuPage === 1 ? 'buttonDisabled' : ''}`} onClick={this.setPreviousMenuPage.bind(this)} />
-                    {this.authorMenu}
+                    {this.state.authorMenu}
                   <Glyphicon glyph="menu-down" disabled={this.state.currentMenuPage === this.menuPages.length} className={`showMoreButton ${this.state.currentMenuPage === this.menuPages.length ? 'buttonDisabled' : ''}`} onClick={this.setNextMenuPage.bind(this)} />
                 </DropdownButton>}
             </span>
@@ -225,7 +235,7 @@ export default class LiteratureDisplay extends React.Component {
             {/*<button className="closeModal" onClick=this.hideModal.bind(this)>Close</button>*/}
           </Modal.Footer>
 
-        </Modal>
+        </Modal>}
       </div>
     );
   }

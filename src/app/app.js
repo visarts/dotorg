@@ -17,7 +17,7 @@ export default class App extends React.Component {
 
     this.state = {
       searchInput: sessionStorage.getItem('searchInput') ? sessionStorage.getItem('searchInput') : ''
-    }
+    };
   }
 
   updateSearchInput (input) {
@@ -28,7 +28,6 @@ export default class App extends React.Component {
   render () {
 
     /* TODO
-      figure out why styles like a:hover aren't inheriting
       make a webpack plugin that will create a master json file from subs
 
       courtship of miles standish, Evangeline, song of hiawatha needs special, multi part section
@@ -46,33 +45,25 @@ export default class App extends React.Component {
 
     return (
       <Router>
-        <div className="app">
           <Route path='/' render={routeProps => (
-            <GlobalHeader
-              searchInput={this.state.searchInput}
-              updateSearchInput={this.updateSearchInput}
-              {...routeProps} />
+            <div className="app">
+              <GlobalHeader
+                searchInput={this.state.searchInput}
+                updateSearchInput={this.updateSearchInput}
+                {...routeProps} />
+              <GlobalNav
+                {...routeProps} />
+              <GlobalView
+                artistsData={this.artistsData}
+                authorsData={this.authorsData}
+                searchInput={this.state.searchInput}
+                updateSearchInput={this.updateSearchInput}
+                {...routeProps} />
+              <GlobalFooter
+                {...routeProps} />
+            </div>
           )}/>
-          <Route path='/' render={routeProps => (
-            <GlobalNav
-              {...routeProps} />
-          )} />
-
-          <Route path='/' render={routeProps => (
-            <GlobalView
-              artistsData={this.artistsData}
-              authorsData={this.authorsData}
-              searchInput={this.state.searchInput}
-              updateSearchInput={this.updateSearchInput}
-              {...routeProps} />
-          )} />
-
-          <Route path='/' render={routeProps => (
-            <GlobalFooter
-              {...routeProps} />
-          )} />
-        </div>
       </Router>
-    )
+    );
   }
 }

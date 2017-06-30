@@ -6,7 +6,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  devtool: 'inline-source-map',
+  devtool: 'eval',
   entry: {
     vendors: './src/vendors.js',
     main: ['./src/styles/main.less', './src/index.js']
@@ -17,6 +17,11 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin('dist'),
+    new webpack.DefinePlugin({
+      'process.env':{
+        'NODE_ENV': JSON.stringify('development')
+      }
+    }),
     new ExtractTextPlugin({
       filename: 'styles/[name].css',
       allChunks: true
