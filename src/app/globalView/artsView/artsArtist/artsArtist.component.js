@@ -34,8 +34,8 @@ export default class ArtsArtist extends React.Component {
     return this.artistData.content.map((item, index) => {
       return (
         <li className="thumbnail" key={index}>
-          <a
-            href={`./content/artwork/${this.artist.artistKey}/${item.fileName}.jpg`}
+          <Link
+            to={`./content/artwork/${this.artist.artistKey}/${item.fileName}.jpg`}
             title={item.title}
             key={index}
             onClick={(e) => this.openLightbox(index, e)}>
@@ -43,7 +43,7 @@ export default class ArtsArtist extends React.Component {
               src={`./content/artwork/${this.artist.artistKey}/${item.fileName}_sm.jpg`}
               alt={item.title} />
             <span>{item.title}</span>
-          </a>
+          </Link>
         </li>
       );
     });

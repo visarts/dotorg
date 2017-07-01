@@ -2,36 +2,46 @@ import React from 'react';
 import { Glyphicon } from 'react-bootstrap';
 import './backToTop.component.less';
 
-const goBackToTop = (event) => {
-  document.querySelector('body').scrollTop = 0;
-};
+export default class BackToTop extends React.Component  {
 
-let scrollTimer = null;
+  constructor (props) {
+    super(props);
+    this.scrollTimer = null;
+    this.goBackToTop = this.goBackToTop.bind(this);
+  }
 
+  componentDidMount () {
+    // Listen for scroll events
+    window.addEventListener('scroll', this.setScroll, false);
+  }
 
-const BackToTop = (props) => {
+  componentWillUnmount () {
+    window.removeEventListener('scroll', this.setScroll);
+  }
 
-  // Listen for scroll events
-  window.addEventListener('scroll', ( event ) => {
+  setScroll (event) {
     document.querySelector('.backToTop').style.visibility = "hidden";
     // Clear our timeout throughout the scroll
-    window.clearTimeout( scrollTimer );
+    window.clearTimeout( this.scrollTimer );
 
     // Set a timeout to run after scrolling ends
-    scrollTimer = setTimeout(() => {
-      if (document.querySelector('body').scrollTop > 100) {
+    this.scrollTimer = setTimeout(() => {
+      if (document.querySelector('body').scrollTop > 100 && document.querySelector('.backToTop')) {
         document.querySelector('.backToTop').style.visibility = "visible";
       }
 
     }, 100);
+  }
 
-  }, false);
+  goBackToTop (event) {
+    document.querySelector('body').scrollTop = 0;
+  }
 
-  return (
-    <div className="backToTop" onClick={goBackToTop}>
-      <Glyphicon glyph="chevron-up" />
-    </div>
-  );
+  render () {
+    return (
+      <div className="backToTop" onClick={this.goBackToTop}>
+        <Glyphicon glyph="chevron-up" />
+      </div>
+    );
+  }
 };
-
-export default BackToTop;

@@ -1,0 +1,23 @@
+@import '../../../styles/globals';
+
+
+.litHistoryList {
+  margin: @hMargin 0px;
+  padding: @hPadding @vPadding;
+  background: @tertiaryThemeColor;
+
+  &.hideLitHistory {
+    visibility: hidden;
+  }
+
+  .litHistoryObj {
+    line-height: 1.2em;
+    display: inline-block;
+    padding: @hPadding @vPadding;
+
+    .litHistoryObjDesc {
+      font-size: .75em;
+      color: darken(@mainLinkColor, 15%);
+    }
+  }
+}

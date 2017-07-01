@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import { Glyphicon } from 'react-bootstrap';
 import dataService from 'Services/data.service';
+import historyService from 'Services/history.service';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
 import './literatureAuthor.component.less';
 
@@ -17,12 +18,12 @@ export default class LiteratureAuthor extends React.Component {
     this.loadDefaultProfileImage = this.loadDefaultProfileImage.bind(this);
   }
 
-
   getTitles () {
     return this.authorData.content.map((title, index) => {
+      title.author = this.author;
       return (
-        <li key={index}>
-          <Link to={`/literature/${this.author.authorKey}/${title.fileName}`}>{decodeURIComponent(title.title)}</Link>
+        <li key={title.fileName}>
+          <Link to={`/literature/${this.author.authorKey}/${title.fileName}`} onClick={historyService.addLiteratureToHistory.bind(this, title)}>{decodeURIComponent(title.title)}</Link>
         </li>
       );
     });

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import LiteratureHistory from 'SharedComponents/literatureHistory/literatureHistory.component';
 import './literatureHome.component.less';
 
 const LiteratureHome = (props) => {
@@ -20,7 +21,8 @@ const LiteratureHome = (props) => {
     <div className="literatureHome">
       <h1>Welcome to the Portitude Library</h1>
       <h3>Classic literature lines the dusty shelves. Make yourself right at home.</h3>
-      <ul>{authorsList}</ul>
+      <LiteratureHistory />
+      <ul className="authorsList">{authorsList}</ul>
     </div>
   )
 }
