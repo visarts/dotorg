@@ -41,6 +41,8 @@ export default class App extends React.Component {
 
       add routing for art eras and lit genres
 
+      prevent history from pushing a duplicate object
+
     */
 
     return (

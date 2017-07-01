@@ -33,11 +33,17 @@ const getLiteratureHistory = () => {
   return literatureHistory;
 };
 
+const clearHistory = (type) => {
+  localStorage.removeItem(type);
+  location.reload();
+}
+
 const historyService = {
   addArtToHistory,
   addLiteratureToHistory,
   getArtHistory,
-  getLiteratureHistory
+  getLiteratureHistory,
+  clearHistory
 };
 
 export default historyService;
