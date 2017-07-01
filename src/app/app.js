@@ -42,6 +42,7 @@ export default class App extends React.Component {
       add routing for art eras and lit genres
 
       prevent history from pushing a duplicate object
+          push the duplicate object to the front and delete the other
 
     */
 

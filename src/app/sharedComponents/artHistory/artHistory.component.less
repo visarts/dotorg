@@ -1,0 +1,28 @@
+@import '../../../styles/globals';
+
+.artHistoryList {
+  margin: @hMargin 0px;
+  padding: @hPadding @vPadding;
+  background: @tertiaryThemeColor;
+
+  &.hideArtHistory {
+    display: none;
+  }
+
+  .artHistoryObj {
+    line-height: 1.2em;
+    display: inline-block;
+    padding: @hPadding @vPadding;
+
+    .artHistoryObjThumb {
+      display: inline-block;
+      float: left;
+      margin-right: 5px;
+    }
+
+    .artHistoryObjDesc {
+      font-size: .75em;
+      color: darken(@mainLinkColor, 15%);
+    }
+  }
+}

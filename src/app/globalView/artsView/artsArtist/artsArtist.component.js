@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Modal } from 'react-bootstrap';
 import Lightbox from 'react-images';
 import dataService from 'Services/data.service';
+import historyService from 'Services/history.service';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
 import './artsArtist.component.less';
 
@@ -32,13 +33,14 @@ export default class ArtsArtist extends React.Component {
 
   getThumbs () {
     return this.artistData.content.map((item, index) => {
+      item.artist = this.artist;
       return (
-        <li className="thumbnail" key={index}>
+        <li className="thumbnail" key={item.fileName}>
           <Link
             to={`./content/artwork/${this.artist.artistKey}/${item.fileName}.jpg`}
             title={item.title}
-            key={index}
-            onClick={(e) => this.openLightbox(index, e)}>
+            key={item.fileName}
+            onClick={(e) => this.openLightbox(index, item, e)}>
             <img
               src={`./content/artwork/${this.artist.artistKey}/${item.fileName}_sm.jpg`}
               alt={item.title} />
@@ -63,12 +65,13 @@ export default class ArtsArtist extends React.Component {
     return imageList;
   }
 
-  openLightbox (index, event) {
+  openLightbox (index, item, event) {
 		event.preventDefault();
 		this.setState({
 			currentImage: index,
 			lightboxIsOpen: true,
 		});
+    historyService.addArtToHistory(item);
 	}
 	closeLightbox () {
 		this.setState({

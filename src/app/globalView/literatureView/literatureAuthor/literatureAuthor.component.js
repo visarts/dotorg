@@ -6,7 +6,6 @@ import historyService from 'Services/history.service';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
 import './literatureAuthor.component.less';
 
-
 export default class LiteratureAuthor extends React.Component {
   //document.querySelector('body').scrollTop = 0;
   constructor (props) {
