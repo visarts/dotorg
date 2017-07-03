@@ -30,11 +30,11 @@ module.exports = {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendors'
     }),
-    new webpack.optimize.UglifyJsPlugin({
+    /*new webpack.optimize.UglifyJsPlugin({
       compressor: {
         warnings: false
       }
-    }),
+    }),*/
     new CopyWebpackPlugin([
       { from: 'index.html', to: 'index.html' },
       { from: 'src/images', to: 'images'},

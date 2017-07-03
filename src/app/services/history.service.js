@@ -18,11 +18,15 @@ const addArtToHistory = (artObj) => {
 
 const addLiteratureToHistory = (litObj) => {
   litObj.timestamp = setTimestamp();
-  literatureHistory.push(litObj);
-  if (literatureHistory.length > historyLimit) {
-    literatureHistory.shift();
+  let duplicateIndex = getDuplicateIndex(litObj, literatureHistory);
+  if (duplicateIndex > -1) {
+    literatureHistory.splice(duplicateIndex, 1);
   }
-  localStorage.setItem('litHistory', JSON.stringify(literatureHistory.reverse()));
+  literatureHistory.unshift(litObj);
+  if (literatureHistory.length > historyLimit) {
+    literatureHistory.pop();
+  }
+  localStorage.setItem('litHistory', JSON.stringify(literatureHistory));
 };
 
 const getArtHistory = () => {
@@ -37,6 +41,17 @@ const clearHistory = (type) => {
   localStorage.removeItem(type);
   location.reload();
 }
+
+const getDuplicateIndex = (obj, arr) => {
+  let isDuplicate = -1;
+  for (let i in arr) {
+    if (obj.fileName === arr[i].fileName) {
+      isDuplicate = i;
+      break;
+    }
+  }
+  return isDuplicate;
+};
 
 const historyService = {
   addArtToHistory,
