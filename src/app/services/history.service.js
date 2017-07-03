@@ -1,3 +1,23 @@
+// import {createStore} from 'redux';
+// 
+// function reducer (state, action) {
+//   switch (action.type) {
+//     case 'thing1': 
+//       return Object.assign({}, state, {
+//         stuff: action.payload
+//       })
+//     case 'thing2':
+//       return Object.assign({}, state, {
+//         otherstuff: action.payload
+//       })
+//     default:
+//       return state
+//   }
+// }
+// 
+// const store = createStore(reducer);
+
+
 const artHistory = localStorage.getItem('artHistory') ? JSON.parse(localStorage.getItem('artHistory')) : [];
 const literatureHistory = localStorage.getItem('litHistory') ? JSON.parse(localStorage.getItem('litHistory')) : [];
 const historyLimit = 10;
@@ -5,15 +25,19 @@ const historyLimit = 10;
 const setTimestamp = () => {
   let date = new Date();
   return date.toLocaleDateString();
-}
+};
 
 const addArtToHistory = (artObj) => {
   artObj.timestamp = setTimestamp();
-  artHistory.push(artObj);
-  if (artHistory.length > historyLimit) {
-    artHistory.shift();
+  let duplicateIndex = getDuplicateIndex(artObj, artHistory);
+  if (duplicateIndex > -1) {
+    artHistory.splice(duplicateIndex, 1);
   }
-  localStorage.setItem('artHistory', JSON.stringify(artHistory.reverse()));
+  artHistory.unshift(artObj);
+  if (artHistory.length > historyLimit) {
+    artHistory.pop();
+  }
+  localStorage.setItem('artHistory', JSON.stringify(artHistory));
 };
 
 const addLiteratureToHistory = (litObj) => {
