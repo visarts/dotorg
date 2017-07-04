@@ -5,7 +5,7 @@ import historyService from 'Services/history.service';
 import './artHistory.component.less';
 
 const ArtHistory = (props) => {
-  let historyList = historyService.getArtHistory();
+  let historyList = historyService.getHistory('artHistory');
   let historyListMap = historyList.map((historyObj, index) => {
     return (
       <li className="artHistoryObj" key={historyObj.fileName}>
@@ -19,7 +19,7 @@ const ArtHistory = (props) => {
             alt={historyObj.title} />
         </Link>
         <Link to={`/artwork/${historyObj.artist.artistKey}/${historyObj.fileName}`}>{decodeURIComponent(historyObj.title)}</Link>
-        <div className="artHistoryObjDesc">By {historyObj.artist.fname} {historyObj.artist.lname}<br />
+        <div className="artHistoryObjDesc">By {decodeURIComponent(`${historyObj.artist.fname} ${historyObj.artist.lname}`)}<br />
           {historyObj.timestamp}
         </div>
       </li>

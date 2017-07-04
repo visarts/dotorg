@@ -5,7 +5,7 @@ import historyService from 'Services/history.service';
 import './literatureHistory.component.less';
 
 const LiteratureHistory = (props) => {
-  let historyList = historyService.getLiteratureHistory();
+  let historyList = historyService.getHistory('litHistory');
   let historyListMap = historyList.map((historyObj, index) => {
     return (
       <li className="litHistoryObj" key={historyObj.fileName}>

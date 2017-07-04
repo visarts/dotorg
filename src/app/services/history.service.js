@@ -1,8 +1,8 @@
 // import {createStore} from 'redux';
-// 
+//
 // function reducer (state, action) {
 //   switch (action.type) {
-//     case 'thing1': 
+//     case 'thing1':
 //       return Object.assign({}, state, {
 //         stuff: action.payload
 //       })
@@ -14,7 +14,7 @@
 //       return state
 //   }
 // }
-// 
+//
 // const store = createStore(reducer);
 
 
@@ -27,44 +27,30 @@ const setTimestamp = () => {
   return date.toLocaleDateString();
 };
 
-const addArtToHistory = (artObj) => {
-  artObj.timestamp = setTimestamp();
-  let duplicateIndex = getDuplicateIndex(artObj, artHistory);
+const addToHistory = (history) => {
+  let data = history.data;
+  let historyList = history.type === 'artHistory' ? artHistory : literatureHistory;
+  let historyType = history.type;
+  let duplicateIndex = getDuplicateIndex(data, historyList);
+  data.timestamp = setTimestamp();
   if (duplicateIndex > -1) {
-    artHistory.splice(duplicateIndex, 1);
+    historyList.splice(duplicateIndex, 1);
   }
-  artHistory.unshift(artObj);
-  if (artHistory.length > historyLimit) {
-    artHistory.pop();
+  historyList.unshift(data);
+  if (historyList.length > historyLimit) {
+    historyList.pop();
   }
-  localStorage.setItem('artHistory', JSON.stringify(artHistory));
+  localStorage.setItem(historyType, JSON.stringify(historyList));
 };
 
-const addLiteratureToHistory = (litObj) => {
-  litObj.timestamp = setTimestamp();
-  let duplicateIndex = getDuplicateIndex(litObj, literatureHistory);
-  if (duplicateIndex > -1) {
-    literatureHistory.splice(duplicateIndex, 1);
-  }
-  literatureHistory.unshift(litObj);
-  if (literatureHistory.length > historyLimit) {
-    literatureHistory.pop();
-  }
-  localStorage.setItem('litHistory', JSON.stringify(literatureHistory));
-};
-
-const getArtHistory = () => {
-  return artHistory;
-};
-
-const getLiteratureHistory = () => {
-  return literatureHistory;
-};
+const getHistory = (type) => {
+  return type === 'artHistory' ? artHistory : literatureHistory;
+}
 
 const clearHistory = (type) => {
   localStorage.removeItem(type);
   location.reload();
-}
+};
 
 const getDuplicateIndex = (obj, arr) => {
   let isDuplicate = -1;
@@ -78,10 +64,8 @@ const getDuplicateIndex = (obj, arr) => {
 };
 
 const historyService = {
-  addArtToHistory,
-  addLiteratureToHistory,
-  getArtHistory,
-  getLiteratureHistory,
+  addToHistory,
+  getHistory,
   clearHistory
 };
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Modal } from 'react-bootstrap';
 import Lightbox from 'react-images';
 import dataService from 'Services/data.service';
 import historyService from 'Services/history.service';
@@ -37,7 +36,7 @@ export default class ArtsArtist extends React.Component {
       return (
         <li className="thumbnail" key={item.fileName}>
           <Link
-            to={`./content/artwork/${this.artist.artistKey}/${item.fileName}.jpg`}
+            to={`arts/${this.artist.artistKey}/${item.fileName}`}
             title={item.title}
             key={item.fileName}
             onClick={(e) => this.openLightbox(index, item, e)}>
@@ -71,29 +70,35 @@ export default class ArtsArtist extends React.Component {
 			currentImage: index,
 			lightboxIsOpen: true,
 		});
-    historyService.addArtToHistory(item);
+    item.artist = this.artist;
+    historyService.addToHistory({type: 'artHistory', data: item});
 	}
+
 	closeLightbox () {
 		this.setState({
 			currentImage: 0,
 			lightboxIsOpen: false,
 		});
 	}
+
 	gotoPrevious () {
 		this.setState({
 			currentImage: this.state.currentImage - 1,
 		});
 	}
+
 	gotoNext () {
 		this.setState({
 			currentImage: this.state.currentImage + 1,
 		});
 	}
+
 	gotoImage (index) {
 		this.setState({
 			currentImage: index,
 		});
 	}
+
 	handleClickImage () {
 		if (this.state.currentImage === this.props.images.length - 1) return;
 

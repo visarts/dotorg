@@ -22,7 +22,7 @@ export default class LiteratureAuthor extends React.Component {
       title.author = this.author;
       return (
         <li key={title.fileName}>
-          <Link to={`/literature/${this.author.authorKey}/${title.fileName}`} onClick={historyService.addLiteratureToHistory.bind(this, title)}>{decodeURIComponent(title.title)}</Link>
+          <Link to={`/literature/${this.author.authorKey}/${title.fileName}`} onClick={historyService.addToHistory.bind(this, {type: 'litHistory', data: title})}>{decodeURIComponent(title.title)}</Link>
         </li>
       );
     });
