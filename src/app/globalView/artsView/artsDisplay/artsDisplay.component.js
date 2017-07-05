@@ -1,12 +1,17 @@
 import React from 'react';
+import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from 'react-router-dom';
 import Lightbox from 'react-images';
+import dataService from 'Services/data.service';
+
 
 export default class ArtsDisplay extends React.Component {
 
   constructor (props) {
     super(props);
 
+    this.artist = this.props.currentArtist;
+    this.artistData = dataService.getArtistData(this.artist.artistKey);
     this.imageList = this.getImages();
 
     this.state = {
@@ -36,6 +41,8 @@ export default class ArtsDisplay extends React.Component {
     this.setState({
       currentImage: 0,
       lightboxIsOpen: false,
+    }, () => {
+      location.hash = `#/arts/${this.artist.artistKey}`;
     });
   }
 
@@ -61,6 +68,20 @@ export default class ArtsDisplay extends React.Component {
     if (this.state.currentImage === this.props.images.length - 1) return;
 
     this.gotoNext();
+  }
+
+  getImages () {
+    const imageList = [];
+    this.artistData.content.map((item, index) => {
+      imageList.push({
+        src: `./content/artwork/${this.artist.artistKey}/${item.fileName}.jpg`,
+        thumbnail: `./content/artwork/${this.artist.artistKey}/${item.fileName}_sm.jpg`,
+        caption: item.title
+      });
+      return;
+    });
+
+    return imageList;
   }
 
   render () {

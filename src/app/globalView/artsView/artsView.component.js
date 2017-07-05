@@ -4,7 +4,6 @@ import ArtsHome from './artsHome/artsHome.component';
 import ArtsArtist from './artsArtist/artsArtist.component';
 import ArtsDisplay from './artsDisplay/artsDisplay.component';
 
-
 const ArtsView = (props) => {
 
   return (
@@ -16,6 +15,11 @@ const ArtsView = (props) => {
       )} />
       <Route exact path='/arts/:artist' render={routeProps => (
         <ArtsArtist
+          currentArtist={props.artistsData.filter(item => item.artistKey === routeProps.match.params.artist)[0]}
+          {...routeProps} />
+      )} />
+      <Route path='/arts/:artist/:artwork' render={routeProps => (
+        <ArtsDisplay
           currentArtist={props.artistsData.filter(item => item.artistKey === routeProps.match.params.artist)[0]}
           {...routeProps} />
       )} />

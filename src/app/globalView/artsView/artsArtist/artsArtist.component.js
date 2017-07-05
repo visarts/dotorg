@@ -36,7 +36,7 @@ export default class ArtsArtist extends React.Component {
       return (
         <li className="thumbnail" key={item.fileName}>
           <Link
-            to={`arts/${this.artist.artistKey}/${item.fileName}`}
+            to={`${this.artist.artistKey}/${item.fileName}`}
             title={item.title}
             key={item.fileName}
             onClick={(e) => this.openLightbox(index, item, e)}>
@@ -65,7 +65,7 @@ export default class ArtsArtist extends React.Component {
   }
 
   openLightbox (index, item, event) {
-		event.preventDefault();
+		//event.preventDefault();
 		this.setState({
 			currentImage: index,
 			lightboxIsOpen: true,
