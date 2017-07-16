@@ -30,7 +30,6 @@ const setTimestamp = () => {
 const addToHistory = (history) => {
   let data = history.data;
   let historyList = history.type === 'artHistory' ? artHistory : literatureHistory;
-  let historyType = history.type;
   let duplicateIndex = getDuplicateIndex(data, historyList);
   data.timestamp = setTimestamp();
   if (duplicateIndex > -1) {
@@ -40,7 +39,7 @@ const addToHistory = (history) => {
   if (historyList.length > historyLimit) {
     historyList.pop();
   }
-  localStorage.setItem(historyType, JSON.stringify(historyList));
+  localStorage.setItem(history.type, JSON.stringify(historyList));
 };
 
 const getHistory = (type) => {
