@@ -12,11 +12,9 @@ export default class ArtsDisplay extends React.Component {
 
     this.artist = this.props.currentArtist;
     this.artistData = dataService.getArtistData(this.artist.artistKey);
-    this.imageList = this.getImages();
-
+    this.imageList = this.props.imageList;
     this.state = {
-			lightboxIsOpen: true,
-			currentImage: 0,
+			currentImage: props.currentImage
 		};
 
     this.closeLightbox = this.closeLightbox.bind(this);
@@ -24,17 +22,6 @@ export default class ArtsDisplay extends React.Component {
 		this.gotoPrevious = this.gotoPrevious.bind(this);
 		this.gotoImage = this.gotoImage.bind(this);
 		this.handleClickImage = this.handleClickImage.bind(this);
-		this.openLightbox = this.openLightbox.bind(this);
-  }
-
-  openLightbox (index, item, event) {
-    event.preventDefault();
-    this.setState({
-      currentImage: index,
-      lightboxIsOpen: true,
-    });
-    item.artist = this.artist;
-    historyService.addToHistory({type: 'artHistory', data: item});
   }
 
   closeLightbox () {
@@ -46,50 +33,42 @@ export default class ArtsDisplay extends React.Component {
     });
   }
 
-  gotoPrevious () {
+  gotoPrevious (e) {
     this.setState({
-      currentImage: this.state.currentImage - 1,
+      currentImage: this.state.currentImage - 1
+    }, () => {
+      location.hash = `#/arts/${this.artist.artistKey}/${this.imageList[this.state.currentImage].itemKey}`;
     });
   }
 
-  gotoNext () {
+  gotoNext (e) {
     this.setState({
-      currentImage: this.state.currentImage + 1,
+      currentImage: this.state.currentImage + 1
+    }, () => {
+      location.hash = `#/arts/${this.artist.artistKey}/${this.imageList[this.state.currentImage].itemKey}`;
     });
   }
 
   gotoImage (index) {
     this.setState({
-      currentImage: index,
+      currentImage: index
+    }, () => {
+      location.hash = `#/arts/${this.artist.artistKey}/${this.imageList[this.state.currentImage].itemKey}`;
     });
   }
 
   handleClickImage () {
     if (this.state.currentImage === this.props.images.length - 1) return;
-
     this.gotoNext();
   }
 
-  getImages () {
-    const imageList = [];
-    this.artistData.content.map((item, index) => {
-      imageList.push({
-        src: `./content/artwork/${this.artist.artistKey}/${item.fileName}.jpg`,
-        thumbnail: `./content/artwork/${this.artist.artistKey}/${item.fileName}_sm.jpg`,
-        caption: item.title
-      });
-      return;
-    });
-
-    return imageList;
-  }
 
   render () {
     return (
       <Lightbox
         currentImage={this.state.currentImage}
         images={this.imageList}
-        isOpen={this.state.lightboxIsOpen}
+        isOpen={true}
         onClickPrev={this.gotoPrevious}
         onClickNext={this.gotoNext}
         onClose={this.closeLightbox}
