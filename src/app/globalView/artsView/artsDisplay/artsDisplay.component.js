@@ -9,12 +9,11 @@ export default class ArtsDisplay extends React.Component {
 
   constructor (props) {
     super(props);
-
     this.artist = this.props.currentArtist;
     this.artistData = dataService.getArtistData(this.artist.artistKey);
     this.imageList = this.props.imageList;
     this.state = {
-			currentImage: props.currentImage
+			currentImage: this.getCurrentImage()
 		};
 
     this.closeLightbox = this.closeLightbox.bind(this);
@@ -22,6 +21,18 @@ export default class ArtsDisplay extends React.Component {
 		this.gotoPrevious = this.gotoPrevious.bind(this);
 		this.gotoImage = this.gotoImage.bind(this);
 		this.handleClickImage = this.handleClickImage.bind(this);
+  }
+
+  getCurrentImage () {
+    let currentImage = {};
+    const currentImageKey = this.props.match.params.artwork;
+    for (let i in this.imageList) {
+      if (this.imageList[i].itemKey === currentImageKey) {
+        currentImage = parseInt(i);
+        break;
+      }
+    }
+    return currentImage;
   }
 
   closeLightbox () {
