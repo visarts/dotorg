@@ -2,7 +2,6 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import LiteratureHome from './literatureHome/literatureHome.component';
 import LiteratureAuthor from './literatureAuthor/literatureAuthor.component';
-import LiteratureDisplay from './literatureDisplay/literatureDisplay.component';
 
 export default class LiteratureView extends React.Component {
   constructor (props) {
@@ -19,11 +18,6 @@ export default class LiteratureView extends React.Component {
         )} />
         <Route path='/literature/:author' render={routeProps => (
           <LiteratureAuthor
-            currentAuthor={this.props.authorsData.filter(item => item.authorKey === routeProps.match.params.author)[0]}
-            {...routeProps} />
-        )} />
-        <Route path='/literature/:author/:work' render={routeProps => (
-          <LiteratureDisplay
             currentAuthor={this.props.authorsData.filter(item => item.authorKey === routeProps.match.params.author)[0]}
             {...routeProps} />
         )} />

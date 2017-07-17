@@ -3,6 +3,7 @@ import { Route, Link } from 'react-router-dom';
 import { Glyphicon } from 'react-bootstrap';
 import dataService from 'Services/data.service';
 import historyService from 'Services/history.service';
+import LiteratureDisplay from '../literatureDisplay/literatureDisplay.component';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
 import './literatureAuthor.component.less';
 
@@ -52,6 +53,11 @@ export default class LiteratureAuthor extends React.Component {
           <div className="titlesFadeOut"></div>
           <BackToTop />
         </div>
+        <Route path='/literature/:author/:work' render={routeProps => (
+          <LiteratureDisplay
+            currentAuthor={this.author}
+            {...routeProps} />
+        )} />
       </div>
     );
   }
