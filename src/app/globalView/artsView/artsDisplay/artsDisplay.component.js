@@ -1,6 +1,7 @@
 import React from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from 'react-router-dom';
+import { Modal, Glyphicon, DropdownButton, MenuItem } from 'react-bootstrap';
 import Lightbox from 'react-images';
 import dataService from 'Services/data.service';
 
@@ -73,21 +74,37 @@ export default class ArtsDisplay extends React.Component {
     this.gotoNext();
   }
 
+  hideModal () {
+    location.hash = `#/arts/${this.artist.artistKey}`;
+  }
 
   render () {
     return (
-      <Lightbox
-        currentImage={this.state.currentImage}
-        images={this.imageList}
-        isOpen={true}
-        onClickPrev={this.gotoPrevious}
-        onClickNext={this.gotoNext}
-        onClose={this.closeLightbox}
-        onClickThumbnail={this.gotoImage}
-        showThumbnails={true}
-        preloadNextImage={true}
-        backdropClosesModal={true}
-      />
+      // <Lightbox
+      //   currentImage={this.state.currentImage}
+      //   images={this.imageList}
+      //   isOpen={true}
+      //   onClickPrev={this.gotoPrevious}
+      //   onClickNext={this.gotoNext}
+      //   onClose={this.closeLightbox}
+      //   onClickThumbnail={this.gotoImage}
+      //   showThumbnails={true}
+      //   preloadNextImage={true}
+      //   backdropClosesModal={true}
+      // />
+      <div className="artsDisplay">
+        <Modal
+          show={true}
+          onHide={this.hideModal.bind(this)}
+          dialogClassName="custom-modal">
+          <Modal.Header closeButton>
+            <h1>Portitude Gallery</h1>
+          </Modal.Header>
+          <Modal.Body>
+            <h2>Art content</h2>
+          </Modal.Body>
+        </Modal>
+      </div>
     );
   }
 }
