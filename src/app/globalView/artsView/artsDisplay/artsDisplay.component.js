@@ -4,16 +4,18 @@ import { Link } from 'react-router-dom';
 import { Modal, Glyphicon, DropdownButton, MenuItem } from 'react-bootstrap';
 import Lightbox from 'react-images';
 import dataService from 'Services/data.service';
-
+import './artsDisplay.component.less';
 
 export default class ArtsDisplay extends React.Component {
 
   constructor (props) {
     super(props);
+    console.log(props);
     this.artist = this.props.currentArtist;
-    this.artistData = dataService.getArtistData(this.artist.artistKey);
-    this.imageList = this.props.imageList;
-    this.state = {
+    this.currentImage = this.props.currentImage ? this.props.currentImage : '';
+    //this.artistData = dataService.getArtistData(this.artist.artistKey);
+    //this.imageList = this.props.imageList;
+    /*this.state = {
 			currentImage: this.getCurrentImage()
 		};
 
@@ -21,10 +23,10 @@ export default class ArtsDisplay extends React.Component {
 		this.gotoNext = this.gotoNext.bind(this);
 		this.gotoPrevious = this.gotoPrevious.bind(this);
 		this.gotoImage = this.gotoImage.bind(this);
-		this.handleClickImage = this.handleClickImage.bind(this);
+		this.handleClickImage = this.handleClickImage.bind(this);*/
   }
 
-  getCurrentImage () {
+  /*getCurrentImage () {
     let currentImage = {};
     const currentImageKey = this.props.match.params.artwork;
     for (let i in this.imageList) {
@@ -72,7 +74,7 @@ export default class ArtsDisplay extends React.Component {
   handleClickImage () {
     if (this.state.currentImage === this.props.images.length - 1) return;
     this.gotoNext();
-  }
+  }*/
 
   hideModal () {
     location.hash = `#/arts/${this.artist.artistKey}`;
@@ -101,7 +103,10 @@ export default class ArtsDisplay extends React.Component {
             <h1>Portitude Gallery</h1>
           </Modal.Header>
           <Modal.Body>
-            <h2>Art content</h2>
+            <h1 className="artsTitle">{this.props.currentImage.title}</h1>
+            <div className="artsContent">
+              <img src={`./content/artwork/${this.artist.artistKey}/${this.props.currentImage.fileName}.jpg`} className="artsDisplayImage" />
+            </div>
           </Modal.Body>
         </Modal>
       </div>

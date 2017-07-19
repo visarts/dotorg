@@ -7,19 +7,28 @@ import ArtsDisplay from '../artsDisplay/artsDisplay.component';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
 import './artsArtist.component.less';
 
-const ArtsArtist = (props) => {
 
-  document.querySelector('body').scrollTop = 0;
-  const artist = props.currentArtist;
-  const artistData = dataService.getArtistData(artist.artistKey);
+export default class ArtsArtist extends React.Component {
 
+  constructor (props) {
+    super(props);
+    document.querySelector('body').scrollTop = 0;
+    this.artist = this.props.currentArtist;
+    this.artistData = dataService.getArtistData(this.artist.artistKey);
+    this.imageList = this.getImages();
+    this.thumbs = this.getThumbs();
 
-  const getImages = () => {
+    this.state = {
+      currentImage: null
+    };
+  }
+
+  getImages () {
     const imageList = [];
-    artistData.content.map((item, index) => {
+    this.artistData.content.map((item, index) => {
       imageList.push({
-        src: `./content/artwork/${artist.artistKey}/${item.fileName}.jpg`,
-        thumbnail: `./content/artwork/${artist.artistKey}/${item.fileName}_sm.jpg`,
+        src: `./content/artwork/${this.artist.artistKey}/${item.fileName}.jpg`,
+        thumbnail: `./content/artwork/${this.artist.artistKey}/${item.fileName}_sm.jpg`,
         caption: item.title,
         itemKey: item.fileName
       });
@@ -29,19 +38,19 @@ const ArtsArtist = (props) => {
     return imageList;
   }
 
-  const getThumbs = () => {
-    return artistData.content.map((item, index) => {
-      item.artist = artist;
-      item.index = index;
+  getThumbs () {
+    return this.artistData.content.map((item, index) => {
+      item.artist = this.artist;
+      //item.index = index;
       return (
         <li className="thumbnail" key={item.fileName}>
           <Link
-            to={`${artist.artistKey}/${item.fileName}`}
+            to={`${this.artist.artistKey}/${item.fileName}`}
             title={item.title}
             key={item.fileName}
-            onClick={historyService.addToHistory.bind(this, {type: 'artHistory', data: item})}>
+            onClick={this.openImage.bind(this, item)}>
             <img
-              src={`./content/artwork/${artist.artistKey}/${item.fileName}_sm.jpg`}
+              src={`./content/artwork/${this.artist.artistKey}/${item.fileName}_sm.jpg`}
               alt={item.title} />
             <span>{item.title}</span>
           </Link>
@@ -50,23 +59,26 @@ const ArtsArtist = (props) => {
     });
   }
 
-  const imageList = getImages();
-  const thumbs = getThumbs();
+  openImage (item) {
+    historyService.addToHistory({type: 'artHistory', data: item});
+    this.setState({currentImage: item})
+  }
 
-  return (
-    <div className="artsArtist">
-      <h1>{decodeURIComponent(`${artist.fname} ${artist.lname}`)}</h1>
-      <div className="artistBio">{ artist.bio }</div>
-      <ul className="imageGrid">{ thumbs }</ul>
-      <BackToTop />
-      <Route path='/arts/:artist/:artwork' render={routeProps => (
-        <ArtsDisplay
-          currentArtist={artist}
-          imageList={imageList}
-          {...routeProps} />
-      )} />
-    </div>
-  );
+  render () {
+    return (
+      <div className="artsArtist">
+        <h1>{decodeURIComponent(`${this.artist.fname} ${this.artist.lname}`)}</h1>
+        <div className="artistBio">{ this.artist.bio }</div>
+        <ul className="imageGrid">{ this.thumbs }</ul>
+        <BackToTop />
+        <Route path='/arts/:artist/:artwork' render={routeProps => (
+          <ArtsDisplay
+            currentArtist={this.artist}
+            currentImage={this.state.currentImage}
+            imageList={this.imageList}
+            {...routeProps} />
+        )} />
+      </div>
+    );
+  }
 }
-
-export default ArtsArtist;
