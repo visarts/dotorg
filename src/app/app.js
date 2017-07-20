@@ -14,15 +14,28 @@ export default class App extends React.Component {
     this.authorsData = dataService.getAuthorsData();
     this.artistsData = dataService.getArtistsData();
     this.updateSearchInput = this.updateSearchInput.bind(this);
-
-    this.state = {
-      searchInput: sessionStorage.getItem('searchInput') ? sessionStorage.getItem('searchInput') : ''
+    this.updateCurrent = this.updateCurrent.bind(this);
+    let current = {
+      section: null,
+      creator: null,
+      category: null,
+      work: null
     };
+    this.state = {
+      searchInput: sessionStorage.getItem('searchInput') ? sessionStorage.getItem('searchInput') : '',
+      current: sessionStorage.getItem('current') ? JSON.parse(sessionStorage.getItem('current')) : current
+    };
+    sessionStorage.setItem('current', JSON.stringify(this.state.current));
   }
 
   updateSearchInput (input) {
     sessionStorage.setItem('searchInput', input);
     this.setState({ searchInput: input });
+  }
+
+  updateCurrent (key, value) {
+    const current = this.state.current;
+    this.setState({ current: Object.assign(current, {[key]: value})});
   }
 
   render () {
@@ -61,6 +74,7 @@ export default class App extends React.Component {
                 authorsData={this.authorsData}
                 searchInput={this.state.searchInput}
                 updateSearchInput={this.updateSearchInput}
+                updateCurrent={this.updateCurrent}
                 {...routeProps} />
               <GlobalFooter
                 {...routeProps} />

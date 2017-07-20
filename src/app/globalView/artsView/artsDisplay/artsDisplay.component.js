@@ -102,7 +102,15 @@ export default class ArtsDisplay extends React.Component {
           <Modal.Header closeButton>
             <h1>Portitude Gallery</h1>
           </Modal.Header>
-          <Modal.Body>
+          <div className="modal-nav">
+            <span className="readingMenu">
+              &nbsp;
+            </span>
+            <span className="readingControls">
+              &nbsp;        
+            </span>
+          </div>
+          <Modal.Body className="darkMode">
             <h1 className="artsTitle">{this.props.currentImage.title}</h1>
             <div className="artsContent">
               <img src={`./content/artwork/${this.artist.artistKey}/${this.props.currentImage.fileName}.jpg`} className="artsDisplayImage" />
