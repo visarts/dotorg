@@ -33,9 +33,10 @@ export default class App extends React.Component {
     this.setState({ searchInput: input });
   }
 
-  updateCurrent (key, value) {
-    const current = this.state.current;
-    this.setState({ current: Object.assign(current, {[key]: value})});
+  updateCurrent (newValues) {
+    const newCurrent = Object.assign(this.state.current, newValues);
+    this.setState({ current: newCurrent });
+    sessionStorage.setItem('current', JSON.stringify(newCurrent));
   }
 
   render () {

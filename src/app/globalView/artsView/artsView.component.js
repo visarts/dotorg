@@ -10,6 +10,7 @@ const ArtsView = (props) => {
       <Route exact path='/arts' render={routeProps => (
         <ArtsHome
           artistsData={props.artistsData}
+          updateCurrent={props.updateCurrent}
           {...routeProps} />
       )} />
       <Route path='/arts/:artist' render={routeProps => (

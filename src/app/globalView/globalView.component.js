@@ -27,6 +27,7 @@ export default class GlobalView extends React.Component {
           <Route path="/arts" render={routeProps => (
             <ArtsView
               artistsData={this.props.artistsData}
+              updateCurrent={this.props.updateCurrent}
               {...routeProps} />
           )} />
           <Route path="/search" render={routeProps => (

@@ -17,7 +17,6 @@ export default class ArtsArtist extends React.Component {
     this.artistData = dataService.getArtistData(this.artist.artistKey);
     this.imageList = this.getImages();
     this.thumbs = this.getThumbs();
-
     this.state = {
       currentImage: null
     };
@@ -61,7 +60,8 @@ export default class ArtsArtist extends React.Component {
 
   openImage (item) {
     historyService.addToHistory({type: 'artHistory', data: item});
-    this.setState({currentImage: item})
+    this.setState({currentImage: item});
+    this.props.updateCurrent({work: item});
   }
 
   render () {

@@ -6,10 +6,11 @@ import './artsHome.component.less';
 const ArtsHome = (props) => {
 
   document.querySelector('body').scrollTop = 0;
+
   const artistsList = props.artistsData.map((artist, index) => {
     return (
       <li key={index}>
-        <Link key={index} to={`/arts/${artist.artistKey}`}>
+        <Link key={index} to={`/arts/${artist.artistKey}`} onClick={() => props.updateCurrent({creator: artist})}>
           {decodeURIComponent(`${artist.fname} ${artist.lname}`)}
         </Link>
       </li>
