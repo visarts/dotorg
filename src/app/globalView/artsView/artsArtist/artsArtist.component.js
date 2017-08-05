@@ -77,6 +77,7 @@ export default class ArtsArtist extends React.Component {
             currentImage={this.state.currentImage}
             imageList={this.imageList}
             updateCurrent={this.props.updateCurrent}
+            appState={this.props.appState}
             {...routeProps} />
         )} />
       </div>

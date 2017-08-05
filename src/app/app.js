@@ -29,8 +29,8 @@ export default class App extends React.Component {
   }
 
   updateSearchInput (input) {
-    sessionStorage.setItem('searchInput', input);
     this.setState({ searchInput: input });
+    sessionStorage.setItem('searchInput', input);
   }
 
   updateCurrent (newValues) {
@@ -55,9 +55,6 @@ export default class App extends React.Component {
 
       add routing for art eras and lit genres
 
-      prevent history from pushing a duplicate object
-          push the duplicate object to the front and delete the other
-
     */
 
     return (
@@ -76,6 +73,7 @@ export default class App extends React.Component {
                 searchInput={this.state.searchInput}
                 updateSearchInput={this.updateSearchInput}
                 updateCurrent={this.updateCurrent}
+                appState={this.state}
                 {...routeProps} />
               <GlobalFooter
                 {...routeProps} />

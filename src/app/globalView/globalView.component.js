@@ -22,12 +22,14 @@ export default class GlobalView extends React.Component {
           <Route path="/literature" render={routeProps => (
             <LiteratureView
               authorsData={this.props.authorsData}
+              appState={this.props.appState}
               {...routeProps} />
           )} />
           <Route path="/arts" render={routeProps => (
             <ArtsView
               artistsData={this.props.artistsData}
               updateCurrent={this.props.updateCurrent}
+              appState={this.props.appState}
               {...routeProps} />
           )} />
           <Route path="/search" render={routeProps => (
