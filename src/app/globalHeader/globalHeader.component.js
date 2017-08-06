@@ -16,8 +16,8 @@ const GlobalHeader = (props) => {
           <Link to="/">Portitude <span className="subHead">{separator} {subHeader}</span></Link>
         </h1>
         <Search
-          searchInput={props.searchInput}
-          updateSearchInput={props.updateSearchInput} />
+          storeService={props.storeService}
+         />
       </div>
     </div>
   );

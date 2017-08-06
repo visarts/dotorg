@@ -23,6 +23,7 @@ export default class GlobalView extends React.Component {
             <LiteratureView
               authorsData={this.props.authorsData}
               appState={this.props.appState}
+              storeService={this.props.storeService}
               {...routeProps} />
           )} />
           <Route path="/arts" render={routeProps => (
@@ -30,6 +31,7 @@ export default class GlobalView extends React.Component {
               artistsData={this.props.artistsData}
               updateCurrent={this.props.updateCurrent}
               appState={this.props.appState}
+              storeService={this.props.storeService}
               {...routeProps} />
           )} />
           <Route path="/search" render={routeProps => (
@@ -38,6 +40,7 @@ export default class GlobalView extends React.Component {
               authorsData={this.props.authorsData}
               searchInput={this.props.searchInput}
               updateSearchInput={this.props.updateSearchInput}
+              storeService={this.props.storeService}
               {...routeProps} />
           )} />
           <Route exact path="/test" component={TestView} />

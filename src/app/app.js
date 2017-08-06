@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, HashRouter as Router } from 'react-router-dom';
 import dataService from 'Services/data.service';
+import StoreService from 'Services/store.service';
 import GlobalHeader from './globalHeader/globalHeader.component';
 import GlobalNav from './globalNav/globalNav.component';
 import GlobalFooter from './globalFooter/globalFooter.component';
@@ -11,32 +12,10 @@ export default class App extends React.Component {
 
   constructor (props) {
     super(props);
+    this.storeService = new StoreService();
     this.authorsData = dataService.getAuthorsData();
     this.artistsData = dataService.getArtistsData();
-    this.updateSearchInput = this.updateSearchInput.bind(this);
-    this.updateCurrent = this.updateCurrent.bind(this);
-    let current = {
-      section: null,
-      creator: null,
-      category: null,
-      work: null
-    };
-    this.state = {
-      searchInput: sessionStorage.getItem('searchInput') ? sessionStorage.getItem('searchInput') : '',
-      current: sessionStorage.getItem('current') ? JSON.parse(sessionStorage.getItem('current')) : current
-    };
-    sessionStorage.setItem('current', JSON.stringify(this.state.current));
-  }
-
-  updateSearchInput (input) {
-    this.setState({ searchInput: input });
-    sessionStorage.setItem('searchInput', input);
-  }
-
-  updateCurrent (newValues) {
-    const newCurrent = Object.assign(this.state.current, newValues);
-    this.setState({ current: newCurrent });
-    sessionStorage.setItem('current', JSON.stringify(newCurrent));
+    this.state = this.storeService.getStore();
   }
 
   render () {
@@ -55,6 +34,10 @@ export default class App extends React.Component {
 
       add routing for art eras and lit genres
 
+      FIX ISSUE WITH SEARCH NOT REFRESHING RESULTS
+
+      wire up literature with store service and reduce complexity 
+
     */
 
     return (
@@ -62,18 +45,14 @@ export default class App extends React.Component {
           <Route path='/' render={routeProps => (
             <div className="app">
               <GlobalHeader
-                searchInput={this.state.searchInput}
-                updateSearchInput={this.updateSearchInput}
+                storeService={this.storeService}
                 {...routeProps} />
               <GlobalNav
                 {...routeProps} />
               <GlobalView
                 artistsData={this.artistsData}
                 authorsData={this.authorsData}
-                searchInput={this.state.searchInput}
-                updateSearchInput={this.updateSearchInput}
-                updateCurrent={this.updateCurrent}
-                appState={this.state}
+                storeService={this.storeService}
                 {...routeProps} />
               <GlobalFooter
                 {...routeProps} />

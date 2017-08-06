@@ -64,9 +64,10 @@ export default class Search extends React.Component {
   focusSearchField () {
     document.querySelector('.searchInput').focus();
   }
+
   onChange (event) {
     const clean = DOMPurify.sanitize(event.target.value);
-    this.props.updateSearchInput(clean.toLowerCase());
+    this.props.storeService.updateStore({searchInput: clean.toLowerCase()});
   }
 
   onKeyDown (event) {
