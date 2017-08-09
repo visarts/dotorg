@@ -10,13 +10,15 @@ const ArtsView = (props) => {
       <Route exact path='/arts' render={routeProps => (
         <ArtsHome
           artistsData={props.artistsData}
-          storeService={props.storeService}
+          updateStore={props.updateStore}
+          store={props.store}
           {...routeProps} />
       )} />
       <Route path='/arts/:artist' render={routeProps => (
         <ArtsArtist
           currentArtist={props.artistsData.filter(item => item.artistKey === routeProps.match.params.artist)[0]}
-          storeService={props.storeService}
+          updateStore={props.updateStore}
+          store={props.store}
           {...routeProps} />
       )} />
     </div>

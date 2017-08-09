@@ -61,7 +61,7 @@ export default class ArtsArtist extends React.Component {
   openImage (item) {
     historyService.addToHistory({type: 'artHistory', data: item});
     this.setState({currentImage: item});
-    this.props.storeService.updateStore({currentWork: item});
+    this.props.updateStore({currentWork: item});
   }
 
   render () {
@@ -76,9 +76,8 @@ export default class ArtsArtist extends React.Component {
             currentArtist={this.artist}
             currentImage={this.state.currentImage}
             imageList={this.imageList}
-            updateCurrent={this.props.updateCurrent}
-            appState={this.props.appState}
-            storeService={this.props.storeService}
+            updateStore={this.props.updateStore}
+            store={this.props.store}
             {...routeProps} />
         )} />
       </div>

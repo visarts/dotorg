@@ -22,16 +22,15 @@ export default class GlobalView extends React.Component {
           <Route path="/literature" render={routeProps => (
             <LiteratureView
               authorsData={this.props.authorsData}
-              appState={this.props.appState}
-              storeService={this.props.storeService}
+              updateStore={this.props.updateStore}
+              store={this.props.store}
               {...routeProps} />
           )} />
           <Route path="/arts" render={routeProps => (
             <ArtsView
               artistsData={this.props.artistsData}
-              updateCurrent={this.props.updateCurrent}
-              appState={this.props.appState}
-              storeService={this.props.storeService}
+              updateStore={this.props.updateStore}
+              store={this.props.store}
               {...routeProps} />
           )} />
           <Route path="/search" render={routeProps => (
@@ -39,8 +38,8 @@ export default class GlobalView extends React.Component {
               artistsData={this.props.artistsData}
               authorsData={this.props.authorsData}
               searchInput={this.props.searchInput}
-              updateSearchInput={this.props.updateSearchInput}
-              storeService={this.props.storeService}
+              updateStore={this.props.updateStore}
+              store={this.props.store}
               {...routeProps} />
           )} />
           <Route exact path="/test" component={TestView} />

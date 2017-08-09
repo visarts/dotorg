@@ -12,9 +12,10 @@ export default class LiteratureAuthor extends React.Component {
   constructor (props) {
     super(props);
     this.props = props;
-    this.author = props.currentAuthor;
+    this.author = props.store.currentCreator;
     this.authorData = dataService.getAuthorData(this.author.authorKey);
     this.titles = this.getTitles();
+    //this.openTitle = this.openTitle.bind(this);
     this.loadDefaultProfileImage = this.loadDefaultProfileImage.bind(this);
   }
 
@@ -25,12 +26,16 @@ export default class LiteratureAuthor extends React.Component {
         <li key={title.fileName}>
           <Link
             to={`/literature/${this.author.authorKey}/${title.fileName}`}
-            onClick={historyService.addToHistory.bind(this, {type: 'litHistory', data: title})}>
+            onClick={this.openTitle.bind(this, title)}>
               <span>{decodeURIComponent(title.title)}</span>
             </Link>
         </li>
       );
     });
+  }
+
+  openTitle (title) {
+    historyService.addToHistory({type: 'litHistory', data: title})
   }
 
   loadDefaultProfileImage (event) {

@@ -10,7 +10,7 @@ const ArtsHome = (props) => {
   const artistsList = props.artistsData.map((artist, index) => {
     return (
       <li key={index}>
-        <Link key={index} to={`/arts/${artist.artistKey}`} onClick={() => props.storeService.updateStore({currentCreator: artist})}>
+        <Link key={index} to={`/arts/${artist.artistKey}`} onClick={() => props.updateStore({currentCreator: artist})}>
           {decodeURIComponent(`${artist.fname} ${artist.lname}`)}
         </Link>
       </li>

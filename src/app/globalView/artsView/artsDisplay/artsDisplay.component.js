@@ -8,9 +8,8 @@ import './artsDisplay.component.less';
 
 const ArtsDisplay = (props) => {
 
-  const store = props.storeService.getStore();
-  const currentImage = store.currentWork;
-  const currentArtist = store.currentCreator;
+  const currentImage = props.store.currentWork;
+  const currentArtist = props.store.currentCreator;
 
   const hideModal = () => {
     location.hash = `#/arts/${currentArtist.artistKey}`;

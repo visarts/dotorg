@@ -10,7 +10,7 @@ const LiteratureHome = (props) => {
   const authorsList = props.authorsData.map((author, index) => {
     return (
       <li key={index}>
-        <Link key={index} to={`literature/${author.authorKey}`}>
+        <Link key={index} to={`literature/${author.authorKey}`} onClick={() => props.updateStore({currentCreator: author})}>
           {author.fname} {author.lname}
         </Link>
       </li>

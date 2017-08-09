@@ -8,8 +8,7 @@ const SearchView = (props) => {
   // will need grab all content json files and walk through every item to look for a match of item title
 
   document.querySelector('body').scrollTop = 0;
-  const store = props.storeService.getStore();
-  const searchInput = store.searchInput ? store.searchInput : '';
+  const searchInput = props.store.searchInput ? props.store.searchInput : '';
   const artistNames = dataService.getArtistNames();
   const authorNames = dataService.getAuthorNames();
   const isArtist = false;
@@ -44,7 +43,7 @@ const SearchView = (props) => {
   const getAuthorsList = authorList.length ? authorList.map((nameKey, index) => {
     return (
       <li key={index}>
-        <Link to={`literature/${nameKey}`} onClick={() => {props.storeService.updateStore({searchInput: nameKey})}} key={index}>{nameKey}</Link>
+        <Link to={`literature/${nameKey}`} onClick={() => {props.updateStore({searchInput: nameKey})}} key={index}>{nameKey}</Link>
       </li>
     );
   }) : null;
@@ -52,7 +51,7 @@ const SearchView = (props) => {
   const getArtistsList = artistList.length ? artistList.map((nameKey, index) => {
     return (
       <li key={index}>
-        <Link to={`arts/${nameKey}`} onClick={() => {props.storeService.updateStore({searchInput: nameKey})}} key={index}>{nameKey}</Link>
+        <Link to={`arts/${nameKey}`} onClick={() => {props.updateStore({searchInput: nameKey})}} key={index}>{nameKey}</Link>
       </li>
     );
   }) : null;

@@ -13,9 +13,15 @@ export default class App extends React.Component {
   constructor (props) {
     super(props);
     this.storeService = new StoreService();
+    this.updateStore = this.updateStore.bind(this);
     this.authorsData = dataService.getAuthorsData();
     this.artistsData = dataService.getArtistsData();
     this.state = this.storeService.getStore();
+  }
+
+  updateStore (newStore) {
+    this.storeService.updateStore(newStore);
+    this.setState(this.storeService.getStore());
   }
 
   render () {
@@ -34,9 +40,8 @@ export default class App extends React.Component {
 
       add routing for art eras and lit genres
 
-      FIX ISSUE WITH SEARCH NOT REFRESHING RESULTS
-
-      wire up literature with store service and reduce complexity 
+      Resolve issue where clearing session storage and going to a bookmark loses author/work data
+        Consider redoing store where current work and creator is fetched by location parts
 
     */
 
@@ -45,16 +50,22 @@ export default class App extends React.Component {
           <Route path='/' render={routeProps => (
             <div className="app">
               <GlobalHeader
-                storeService={this.storeService}
+                updateStore={this.updateStore}
+                store={this.state}
                 {...routeProps} />
               <GlobalNav
+                updateStore={this.updateStore}
+                store={this.state}
                 {...routeProps} />
               <GlobalView
                 artistsData={this.artistsData}
                 authorsData={this.authorsData}
-                storeService={this.storeService}
+                updateStore={this.updateStore}
+                store={this.state}
                 {...routeProps} />
               <GlobalFooter
+                updateStore={this.updateStore}
+                store={this.state}
                 {...routeProps} />
             </div>
           )}/>
