@@ -12,8 +12,9 @@ export default class App extends React.Component {
 
   constructor (props) {
     super(props);
-    this.storeService = new StoreService();
+    this.storeService = new StoreService(dataService.getAuthorsData(), dataService.getArtistsData());
     this.updateStore = this.updateStore.bind(this);
+    //this.updateCurrentAuthor = this.updateCurrentAuthor.bind(this);
     this.authorsData = dataService.getAuthorsData();
     this.artistsData = dataService.getArtistsData();
     this.state = this.storeService.getStore();
@@ -21,6 +22,11 @@ export default class App extends React.Component {
 
   updateStore (newStore) {
     this.storeService.updateStore(newStore);
+    this.setState(this.storeService.getStore());
+  }
+
+  updateCurrentAuthor (newAuthor) {
+    this.storeService.updateCurrentAuthor(newAuthor);
     this.setState(this.storeService.getStore());
   }
 

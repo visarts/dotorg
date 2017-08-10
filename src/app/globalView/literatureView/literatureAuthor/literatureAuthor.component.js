@@ -12,9 +12,10 @@ export default class LiteratureAuthor extends React.Component {
   constructor (props) {
     super(props);
     this.props = props;
-    this.props.updateCurrentAuthor(this.props.match.params.author);
-    this.author = props.store.currentCreator;
-    this.authorData = dataService.getAuthorData(this.author.authorKey);
+    this.author = this.props.updateCurrentAuthor(this.props.match.params.author);
+    console.log(this.author);
+    //this.author = this.props.store.currentCreator;
+    this.authorData = dataService.getAuthorData(this.author.creatorKey);
     this.titles = this.getTitles();
     //this.openTitle = this.openTitle.bind(this);
     this.loadDefaultProfileImage = this.loadDefaultProfileImage.bind(this);
@@ -26,7 +27,7 @@ export default class LiteratureAuthor extends React.Component {
       return (
         <li key={title.fileName}>
           <Link
-            to={`/literature/${this.author.authorKey}/${title.fileName}`}
+            to={`/literature/${this.author.creatorKey}/${title.fileName}`}
             onClick={this.openTitle.bind(this, title)}>
               <span>{decodeURIComponent(title.title)}</span>
             </Link>
@@ -50,7 +51,7 @@ export default class LiteratureAuthor extends React.Component {
         <h1>{`${this.author.fname} ${this.author.lname}`}</h1>
         <div className="about">
           <div className="authorPic">
-            <img src={`./content/portraits/authors/${this.author.authorKey}.jpg`} onError={this.loadDefaultProfileImage} />
+            <img src={`./content/portraits/authors/${this.author.creatorKey}.jpg`} onError={this.loadDefaultProfileImage} />
           </div>
           <div className="bio">{this.author.bio}<div className="readMoreLink"><a href="#" target="_blank">Read More <Glyphicon glyph="new-window" /></a></div></div>
         </div>

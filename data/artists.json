@@ -3,35 +3,35 @@
     {
       "fname": "William",
       "lname": "Bougeureau",
-      "artistKey": "bouguereau",
+      "creatorKey": "bouguereau",
       "bio": "Much has been said of Bougeureau which cannot be detailed here.",
       "era": "Academic"
     },
     {
       "fname": "Mary",
       "lname": "Cassatt",
-      "artistKey": "cassatt",
+      "creatorKey": "cassatt",
       "bio": "Much has been said of Cassatt which cannot be detailed here.",
       "era": "Impressionism"
     },
     {
       "fname": "Paul",
       "lname": "Cezanne",
-      "artistKey": "cezanne",
+      "creatorKey": "cezanne",
       "bio": "Much has been said of Cezanne which cannot be detailed here.",
       "era": "Post-Impressionism"
     },
     {
       "fname": "Edgar",
       "lname": "Degas",
-      "artistKey": "degas",
+      "creatorKey": "degas",
       "bio": "Much has been said of Degas which cannot be detailed here.",
       "era": "Impressionism"
     },
     {
       "fname": "Paul",
       "lname": "Gaugin",
-      "artistKey": "gaugin",
+      "creatorKey": "gaugin",
       "bio": "Much has been said of Gaugin which cannot be detailed here.",
       "era": "Post-Impressionism"
     },
@@ -39,105 +39,105 @@
     {
       "fname": "Jean-L%C3%A9on",
       "lname": "G%C3%A9r%C3%B4me",
-      "artistKey": "gerome",
+      "creatorKey": "gerome",
       "bio": "Much has been said of Gérôme which cannot be detailed here.",
       "era": "Academic"
     },
     {
       "fname": "William",
       "lname": "Harnett",
-      "artistKey": "harnett",
+      "creatorKey": "harnett",
       "bio": "Much has been said of Harnett which cannot be detailed here.",
       "era": "Realism"
     },
     {
       "fname": "Buonarroti",
       "lname": "Michelangelo",
-      "artistKey": "michelangelo",
+      "creatorKey": "michelangelo",
       "bio": "Much has been said of Michelangelo which cannot be detailed here.",
       "era": "Renaissance"
     },
     {
       "fname": "Claude",
       "lname": "Monet",
-      "artistKey": "monet",
+      "creatorKey": "monet",
       "bio": "Much has been said of Monet which cannot be detailed here.",
       "era": "Impressionism"
     },
     {
       "fname": "Georgia",
       "lname": "O'Keeffe",
-      "artistKey": "okeeffe",
+      "creatorKey": "okeeffe",
       "bio": "Much has been said of O'Keeffe which cannot be detailed here.",
       "era": "Modernism"
     },
     {
       "fname": "",
       "lname": "Raphael Sanzio da Urbino",
-      "artistKey": "raphael",
+      "creatorKey": "raphael",
       "bio": "Much has been said of Raphael which cannot be detailed here.",
       "era": "Renaissance"
     },
     {
       "fname": "",
       "lname": "Rembrandt Harmenszoon van Rijn",
-      "artistKey": "rembrandt",
+      "creatorKey": "rembrandt",
       "bio": "Much has been said of Rembrandt which cannot be detailed here.",
       "era": "Baroque"
     },
     {
       "fname": "Auguste",
       "lname": "Renoir",
-      "artistKey": "renoir",
+      "creatorKey": "renoir",
       "bio": "Much has been said of Renoir which cannot be detailed here.",
       "era": "Impressionism"
     },
     {
       "fname": "Dante",
       "lname": "Rossetti",
-      "artistKey": "rossetti",
+      "creatorKey": "rossetti",
       "bio": "Much has been said of Rossetti which cannot be detailed here.",
       "era": "Pre-Raphaelite"
     },
     {
       "fname": "Henri",
       "lname": "Rousseau",
-      "artistKey": "rousseau",
+      "creatorKey": "rousseau",
       "bio": "Much has been said of Rousseau which cannot be detailed here.",
       "era": "Post-Impressionism"
     },
     {
       "fname": "John Singer",
       "lname": "Sargent",
-      "artistKey": "sargent",
+      "creatorKey": "sargent",
       "bio": "Much has been said of Sargent which cannot be detailed here.",
       "era": "Realism"
     },
     {
       "fname": "Georges",
       "lname": "Seurat",
-      "artistKey": "seurat",
+      "creatorKey": "seurat",
       "bio": "Much has been said of Seurat which cannot be detailed here.",
       "era": "Post-Impressionism"
     },
     {
       "fname": "Vincent",
       "lname": "Van Gogh",
-      "artistKey": "vangogh",
+      "creatorKey": "vangogh",
       "bio": "Much has been said of Van Gogh which cannot be detailed here.",
       "era": "Post-Impressionism"
     },
     {
       "fname": "Friedrich",
       "lname": "Von Amerling",
-      "artistKey": "vonamerling",
+      "creatorKey": "vonamerling",
       "bio": "Much has been said of Von Amerling which cannot be detailed here.",
       "era": "Academic"
     },
     {
       "fname": "John William",
       "lname": "Waterhouse",
-      "artistKey": "waterhouse",
+      "creatorKey": "waterhouse",
       "bio": "Much has been said of Waterhouse which cannot be detailed here.",
       "era": "Pre-Raphaelite"
     }

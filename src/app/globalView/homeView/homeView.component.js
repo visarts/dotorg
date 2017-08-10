@@ -10,7 +10,7 @@ const HomeView = (props) => {
   const day = date.getDay();
   const month = date.getMonth();
   const author = props.authorsData[day];
-  const authorData = dataService.getAuthorData(author.authorKey);
+  const authorData = dataService.getAuthorData(author.creatorKey);
   const lit = authorData.content[month] ? authorData.content[month] : authorData.content[0];
   const featuredContent = (() => {
     return (
@@ -18,13 +18,13 @@ const HomeView = (props) => {
         <div className="featuredBlock">
           <h4>Featured Author: </h4>
           <h2>
-            <Link to={`literature/${author.authorKey}`}>{author.fname} {author.lname}</Link>
+            <Link to={`literature/${author.creatorKey}`}>{author.fname} {author.lname}</Link>
           </h2>
         </div>
         <div className="featuredBlock">
           <h4>Today's lit pick: </h4>
           <h2>
-            <Link to={`/literature/${author.authorKey}/${lit.fileName}`}>{lit.title}</Link>
+            <Link to={`/literature/${author.creatorKey}/${lit.fileName}`}>{lit.title}</Link>
           </h2>
         </div>
       </div>

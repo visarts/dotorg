@@ -20,17 +20,17 @@ const getArtistsData = () => {
 }
 
 const getArtistNames = () => {
-  const namesData = require('names.json');
+  const namesData = require('creatorKeys.json');
   return namesData.artists;
 };
 
 const getAuthorNames = () => {
-  const namesData = require('names.json');
+  const namesData = require('creatorKeys.json');
   return namesData.authors;
 };
 
-const getHTMLContent = (authorKey, currentWorkKey) => {
-  return axios.get(`./content/literature/${authorKey}/${currentWorkKey}.html`)
+const getHTMLContent = (creatorKey, currentWorkKey) => {
+  return axios.get(`./content/literature/${creatorKey}/${currentWorkKey}.html`)
     .then((results) => {
       return results.data;
     });

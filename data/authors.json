@@ -3,92 +3,92 @@
     {
       "fname": "",
       "lname": "Aesop",
-      "authorKey": "aesop",
+      "creatorKey": "aesop",
       "bio": "Much has been said of Aesop which cannot be detailed here."
     },
     {
       "fname": "Hans Christian",
       "lname": "Andersen",
-      "authorKey": "andersenhc",
+      "creatorKey": "andersenhc",
       "bio": "Hans Christian Andersen was born in the town of Odense, Denmark, on 2 April 1805. He was an only child. Andersen's father, also Hans, considered himself related to nobility. His paternal grandmother had told his father that their family had in the past belonged to a higher social class, but investigations prove these stories unfounded. A persistent theory suggests that Andersen was an illegitimate son of King Christian VIII, but this theory has been criticized by others."
     },
     {
       "fname": "Charles",
       "lname": "Dickens",
       "bio": "Much has been said of Dickens which cannot be detailed here.",
-      "authorKey": "dickens"
+      "creatorKey": "dickens"
     },
     {
       "fname": "Emily",
       "lname": "Dickinson",
-      "authorKey": "dickinson",
+      "creatorKey": "dickinson",
       "bio": "Much has been said of Emily which cannot be detailed here."
     },
     {
       "fname": "Robert",
       "lname": "Frost",
-      "authorKey": "frost",
+      "creatorKey": "frost",
       "bio": "Much has been said of Frost which cannot be detailed here."
     },
     {
       "fname": "The Brothers",
       "lname": "Grimm",
-      "authorKey": "grimm",
+      "creatorKey": "grimm",
       "bio": "Much has been said of the Grimm brothers which cannot be detailed here."
     },
     {
       "fname": "Franz",
       "lname": "Kafka",
-      "authorKey": "kafka",
+      "creatorKey": "kafka",
       "bio": "Much has been said of Kafka which cannot be detailed here."
     },
     {
       "fname": "Rudyard",
       "lname": "Kipling",
-      "authorKey": "kipling",
+      "creatorKey": "kipling",
       "bio": "Much has been said of Rudyard which cannot be detailed here."
     },
     {
       "fname": "Henry Wadsworth",
       "lname": "Longfellow",
-      "authorKey": "longfellow",
+      "creatorKey": "longfellow",
       "bio": "Much has been said of Mr. Longfellow which cannot be detailed here."
     },
     {
       "fname": "O. Henry",
       "lname": "",
-      "authorKey": "ohenry",
+      "creatorKey": "ohenry",
       "bio": "Much has been said of O. Henry which cannot be detailed here."
     },
     {
       "fname": "Edgar Allan",
       "lname": "Poe",
       "bio": "Much has been said of Mr. Poe which cannot be detailed here.",
-      "authorKey": "poe"
+      "creatorKey": "poe"
     },
     {
       "fname": "William",
       "lname": "Shakespeare",
       "bio": "Much has been said of Shakespeare which cannot be detailed here.",
-      "authorKey": "shakespeare"
+      "creatorKey": "shakespeare"
     },
     {
       "fname": "Henry David",
       "lname": "Thoreau",
       "bio": "Much has been said of Thoreau which cannot be detailed here.",
-      "authorKey": "thoreau"
+      "creatorKey": "thoreau"
     },
     {
       "fname": "Mark",
       "lname": "Twain",
       "bio": "Much has been said of Mark Twain which cannot be detailed here.",
-      "authorKey": "twain"
+      "creatorKey": "twain"
     },
     {
       "fname": "Oscar",
       "lname": "Wilde",
       "bio": "Much has been said of Oscar which cannot be detailed here.",
-      "authorKey": "wilde"
+      "creatorKey": "wilde"
     }
   ]
 }

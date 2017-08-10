@@ -33,7 +33,7 @@ const SearchView = (props) => {
   let works = '';
   if (nameKey) {
     let dataType = isArtist ? 'artistsData' : 'authorsData';
-    let keyType = isArtist ? 'artistKey' : 'authorKey';
+    let keyType = isArtist ? 'creatorKey' : 'creatorKey';
     creator = props[dataType].filter((item, index) => {
       return item[keyType] === nameKey ? item : false;
     });

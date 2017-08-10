@@ -1,10 +1,8 @@
-import dataService from 'Services/data.service';
-
 /* a pseudo Redux lite */
 export default class StoreService {
-  constructor () {
-    this.authorsData = dataService.getAuthorsData();
-    this.artistsData = dataService.getArtistsData();
+  constructor (authorsData, artistsData) {
+    this.authorsData = authorsData;
+    this.artistsData = artistsData;
     this.updateStore = this.updateStore.bind(this);
     this.updateCurrentAuthor = this.updateCurrentAuthor.bind(this);
     this.getStore = this.getStore.bind(this);
@@ -25,12 +23,13 @@ export default class StoreService {
 
   updateCurrentAuthor (newAuthor) {
     let newStore = this.getStore();
-    if (!newStore.currentCreator || newStore.currentCreator.authorKey !== newAuthor) {
+    if (!newStore.currentCreator || newStore.currentCreator.creatorKey !== newAuthor) {
       newStore.currentCreator = this.authorsData.filter((item) => {
-        return item.authorKey === newAuthor;
+        return item.creatorKey === newAuthor;
       })[0];
     }
     sessionStorage.setItem('pStore', JSON.stringify(newStore));
+    return newStore.currentCreator;
 
   }
 

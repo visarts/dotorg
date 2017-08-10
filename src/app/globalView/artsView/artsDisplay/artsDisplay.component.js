@@ -12,7 +12,7 @@ const ArtsDisplay = (props) => {
   const currentArtist = props.store.currentCreator;
 
   const hideModal = () => {
-    location.hash = `#/arts/${currentArtist.artistKey}`;
+    location.hash = `#/arts/${currentArtist.creatorKey}`;
   }
 
   return (
@@ -35,7 +35,7 @@ const ArtsDisplay = (props) => {
         <Modal.Body className="darkMode">
           <h1 className="artsTitle">{currentImage.title}</h1>
           <div className="artsContent">
-            <img src={`./content/artwork/${currentArtist.artistKey}/${currentImage.fileName}.jpg`} className="artsDisplayImage" />
+            <img src={`./content/artwork/${currentArtist.creatorKey}/${currentImage.fileName}.jpg`} className="artsDisplayImage" />
           </div>
         </Modal.Body>
       </Modal>

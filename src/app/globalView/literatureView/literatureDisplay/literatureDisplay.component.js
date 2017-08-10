@@ -35,10 +35,10 @@ export default class LiteratureDisplay extends React.Component {
   }
 
   setValues () {
-    this.authorData = dataService.getAuthorData(this.props.currentAuthor.authorKey);
+    this.authorData = dataService.getAuthorData(this.props.currentAuthor.creatorKey);
     this.currentWorkKey = this.props.match.params.work;
     this.currentWork = this.authorData.content.filter(item => item.fileName === this.currentWorkKey)[0];
-    dataService.getHTMLContent(this.props.currentAuthor.authorKey, this.currentWorkKey)
+    dataService.getHTMLContent(this.props.currentAuthor.creatorKey, this.currentWorkKey)
       .then((results) => {
         this.content = results;
         this.pages = [];
@@ -126,7 +126,7 @@ export default class LiteratureDisplay extends React.Component {
   setAuthorMenu (currentMenuPage) {
     return this.menuPages[currentMenuPage - 1].map((item, index) => {
       return (
-        <LinkContainer to={`/literature/${this.props.currentAuthor.authorKey}/${item.fileName}`} key={index}>
+        <LinkContainer to={`/literature/${this.props.currentAuthor.creatorKey}/${item.fileName}`} key={index}>
           <MenuItem eventKey={index} key={index}>{decodeURIComponent(item.title)}</MenuItem>
         </LinkContainer>
       );
@@ -146,7 +146,7 @@ export default class LiteratureDisplay extends React.Component {
   }
 
   hideModal () {
-    location.hash = `#/literature/${this.props.currentAuthor.authorKey}`;
+    location.hash = `#/literature/${this.props.currentAuthor.creatorKey}`;
   }
 
   setReadingMode () {

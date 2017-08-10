@@ -14,7 +14,7 @@ export default class ArtsArtist extends React.Component {
     super(props);
     document.querySelector('body').scrollTop = 0;
     this.artist = this.props.currentArtist;
-    this.artistData = dataService.getArtistData(this.artist.artistKey);
+    this.artistData = dataService.getArtistData(this.artist.creatorKey);
     this.imageList = this.getImages();
     this.thumbs = this.getThumbs();
     this.state = {
@@ -26,8 +26,8 @@ export default class ArtsArtist extends React.Component {
     const imageList = [];
     this.artistData.content.map((item, index) => {
       imageList.push({
-        src: `./content/artwork/${this.artist.artistKey}/${item.fileName}.jpg`,
-        thumbnail: `./content/artwork/${this.artist.artistKey}/${item.fileName}_sm.jpg`,
+        src: `./content/artwork/${this.artist.creatorKey}/${item.fileName}.jpg`,
+        thumbnail: `./content/artwork/${this.artist.creatorKey}/${item.fileName}_sm.jpg`,
         caption: item.title,
         itemKey: item.fileName
       });
@@ -44,12 +44,12 @@ export default class ArtsArtist extends React.Component {
       return (
         <li className="thumbnail" key={item.fileName}>
           <Link
-            to={`${this.artist.artistKey}/${item.fileName}`}
+            to={`${this.artist.creatorKey}/${item.fileName}`}
             title={item.title}
             key={item.fileName}
             onClick={this.openImage.bind(this, item)}>
             <img
-              src={`./content/artwork/${this.artist.artistKey}/${item.fileName}_sm.jpg`}
+              src={`./content/artwork/${this.artist.creatorKey}/${item.fileName}_sm.jpg`}
               alt={item.title} />
             <span>{item.title}</span>
           </Link>

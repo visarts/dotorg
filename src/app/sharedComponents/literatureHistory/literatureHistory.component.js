@@ -9,7 +9,7 @@ const LiteratureHistory = (props) => {
   let historyListMap = historyList.map((historyObj, index) => {
     return (
       <li className="litHistoryObj" key={historyObj.fileName}>
-        <Link to={`/literature/${historyObj.author.authorKey}/${historyObj.fileName}`}>{decodeURIComponent(historyObj.title)}</Link>
+        <Link to={`/literature/${historyObj.author.creatorKey}/${historyObj.fileName}`}>{decodeURIComponent(historyObj.title)}</Link>
         <div className="litHistoryObjDesc">By {historyObj.author.fname} {historyObj.author.lname}<br />
           {historyObj.timestamp}
         </div>
