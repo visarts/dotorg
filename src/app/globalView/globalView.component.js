@@ -23,6 +23,7 @@ export default class GlobalView extends React.Component {
             <LiteratureView
               authorsData={this.props.authorsData}
               updateStore={this.props.updateStore}
+              updateCurrentAuthor={this.props.updateCurrentAuthor}
               store={this.props.store}
               {...routeProps} />
           )} />

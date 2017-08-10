@@ -12,6 +12,7 @@ export default class LiteratureAuthor extends React.Component {
   constructor (props) {
     super(props);
     this.props = props;
+    this.props.updateCurrentAuthor(this.props.match.params.author);
     this.author = props.store.currentCreator;
     this.authorData = dataService.getAuthorData(this.author.authorKey);
     this.titles = this.getTitles();
@@ -43,6 +44,7 @@ export default class LiteratureAuthor extends React.Component {
   }
 
   render () {
+
     return (
       <div className="literatureAuthor">
         <h1>{`${this.author.fname} ${this.author.lname}`}</h1>

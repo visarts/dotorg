@@ -61,6 +61,7 @@ export default class App extends React.Component {
                 artistsData={this.artistsData}
                 authorsData={this.authorsData}
                 updateStore={this.updateStore}
+                updateCurrentAuthor={this.storeService.updateCurrentAuthor}
                 store={this.state}
                 {...routeProps} />
               <GlobalFooter

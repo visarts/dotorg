@@ -17,6 +17,7 @@ const LiteratureView = (props) => {
       <Route path='/literature/:author' render={routeProps => (
         <LiteratureAuthor
           updateStore={props.updateStore}
+          updateCurrentAuthor={props.updateCurrentAuthor}
           store={props.store}
           {...routeProps} />
       )} />
