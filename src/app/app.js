@@ -10,8 +10,8 @@ import GlobalView from './globalView/globalView.component';
 
 export default class App extends React.Component {
 
-  constructor (props) {
-    super(props);
+  constructor () {
+    super();
     this.storeService = new StoreService(dataService.getAuthorsData(), dataService.getArtistsData());
     this.updateStore = this.updateStore.bind(this);
     //this.updateCurrentAuthor = this.updateCurrentAuthor.bind(this);

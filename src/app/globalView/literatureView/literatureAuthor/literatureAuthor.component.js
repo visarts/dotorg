@@ -13,7 +13,6 @@ export default class LiteratureAuthor extends React.Component {
     super(props);
     this.props = props;
     this.author = this.props.updateCurrentAuthor(this.props.match.params.author);
-    console.log(this.author);
     //this.author = this.props.store.currentCreator;
     this.authorData = dataService.getAuthorData(this.author.creatorKey);
     this.titles = this.getTitles();
