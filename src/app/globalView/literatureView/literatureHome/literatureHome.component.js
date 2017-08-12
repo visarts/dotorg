@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LiteratureHistory from 'SharedComponents/literatureHistory/literatureHistory.component';
+import ListLink from 'SharedComponents/listLink/listLink.component';
 import './literatureHome.component.less';
 
 const LiteratureHome = (props) => {
@@ -9,11 +10,10 @@ const LiteratureHome = (props) => {
 
   const authorsList = props.authorsData.map((author, index) => {
     return (
-      <li key={index}>
-        <Link key={index} to={`literature/${author.creatorKey}`}>
-          {author.fname} {author.lname}
-        </Link>
-      </li>
+      <ListLink
+        key={author.creatorKey}
+        url={`literature/${author.creatorKey}`}
+        text={`${author.fname} ${author.lname}`} />
     );
   });
 

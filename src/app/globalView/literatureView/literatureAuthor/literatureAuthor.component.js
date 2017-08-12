@@ -5,6 +5,7 @@ import dataService from 'Services/data.service';
 import historyService from 'Services/history.service';
 import LiteratureDisplay from '../literatureDisplay/literatureDisplay.component';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
+import ListLink from 'SharedComponents/listLink/listLink.component';
 import './literatureAuthor.component.less';
 
 export default class LiteratureAuthor extends React.Component {
@@ -24,13 +25,11 @@ export default class LiteratureAuthor extends React.Component {
     return this.authorData.content.map((title, index) => {
       title.author = this.author;
       return (
-        <li key={title.fileName}>
-          <Link
-            to={`/literature/${this.author.creatorKey}/${title.fileName}`}
-            onClick={this.openTitle.bind(this, title)}>
-              <span>{decodeURIComponent(title.title)}</span>
-            </Link>
-        </li>
+        <ListLink
+          key={title.fileName}
+          url={`/literature/${this.author.creatorKey}/${title.fileName}`}
+          action={this.openTitle.bind(this, title)}
+          text={title.title} />
       );
     });
   }

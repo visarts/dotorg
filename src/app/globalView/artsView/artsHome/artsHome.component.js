@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ListLink from 'SharedComponents/listLink/listLink.component';
 import ArtHistory from 'SharedComponents/artHistory/artHistory.component';
 import './artsHome.component.less';
 
@@ -9,11 +10,11 @@ const ArtsHome = (props) => {
 
   const artistsList = props.artistsData.map((artist, index) => {
     return (
-      <li key={index}>
-        <Link key={index} to={`/arts/${artist.creatorKey}`} onClick={() => props.updateStore({currentCreator: artist})}>
-          {decodeURIComponent(`${artist.fname} ${artist.lname}`)}
-        </Link>
-      </li>
+      <ListLink
+        key={artist.creatorKey}
+        url={`/arts/${artist.creatorKey}`}
+        action={() => props.updateStore({currentCreator: artist})}
+        text={`${artist.fname} ${artist.lname}`} />
     );
   });
 
