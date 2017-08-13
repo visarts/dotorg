@@ -20,10 +20,10 @@ const ArtsHome = (props) => {
 
   return (
     <div className="artsHome">
-      <h1>This is the arts home page</h1>
-      <p>These woods are lovely, dark, and deep, but I have promises to keep, and miles to go before I sleep</p>
+      <h1>Welcome to the Portitude Art Gallery</h1>
+      <h3>The greatest art in history by some of history's greatest artists</h3>
       <ArtHistory />
-      <ul>{artistsList}</ul>
+      <ul className="artistsList">{artistsList}</ul>
     </div>
   );
 }

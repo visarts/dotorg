@@ -4,7 +4,7 @@ import './listLink.component.less';
 
 const ListLink = (props) => {
   return (
-    <li>
+    <li className="listLink">
       <Link
         to={props.url}
         onClick={props.action}>

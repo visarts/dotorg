@@ -30,7 +30,6 @@ export default class StoreService {
     }
     sessionStorage.setItem('pStore', JSON.stringify(newStore));
     return newStore.currentCreator;
-
   }
 
   clearStore () {
