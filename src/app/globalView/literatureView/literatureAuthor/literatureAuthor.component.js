@@ -43,7 +43,6 @@ export default class LiteratureAuthor extends React.Component {
   }
 
   render () {
-
     return (
       <div className="literatureAuthor">
         <h1>{`${this.author.fname} ${this.author.lname}`}</h1>

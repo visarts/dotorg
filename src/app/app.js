@@ -10,14 +10,15 @@ import GlobalView from './globalView/globalView.component';
 
 export default class App extends React.Component {
 
-  constructor () {
-    super();
+  constructor (props) {
+    super(props);
     this.storeService = new StoreService(dataService.getAuthorsData(), dataService.getArtistsData());
     this.updateStore = this.updateStore.bind(this);
     //this.updateCurrentAuthor = this.updateCurrentAuthor.bind(this);
     this.authorsData = dataService.getAuthorsData();
     this.artistsData = dataService.getArtistsData();
     this.state = this.storeService.getStore();
+    this.updateAppState = this.updateAppState.bind(this);
   }
 
   updateStore (newStore) {
@@ -52,31 +53,29 @@ export default class App extends React.Component {
     */
 
     return (
-      <Router>
-          <Route path='/' render={routeProps => (
-            <div className="app">
-              <GlobalHeader
-                updateStore={this.updateStore}
-                store={this.state}
-                {...routeProps} />
-              <GlobalNav
-                updateStore={this.updateStore}
-                store={this.state}
-                {...routeProps} />
-              <GlobalView
-                artistsData={this.artistsData}
-                authorsData={this.authorsData}
-                updateStore={this.updateStore}
-                updateCurrentAuthor={this.storeService.updateCurrentAuthor}
-                store={this.state}
-                {...routeProps} />
-              <GlobalFooter
-                updateStore={this.updateStore}
-                store={this.state}
-                {...routeProps} />
-            </div>
-          )}/>
-      </Router>
+      <Route path='/' render={routeProps => (
+        <div className="app">
+          <GlobalHeader
+            updateStore={this.updateStore}
+            store={this.state}
+            {...routeProps} />
+          <GlobalNav
+            updateStore={this.updateStore}
+            store={this.state}
+            {...routeProps} />
+          <GlobalView
+            artistsData={this.artistsData}
+            authorsData={this.authorsData}
+            updateStore={this.updateStore}
+            updateCurrentAuthor={this.storeService.updateCurrentAuthor}
+            store={this.state}
+            {...routeProps} />
+          <GlobalFooter
+            updateStore={this.updateStore}
+            store={this.state}
+            {...routeProps} />
+        </div>
+      )}/>
     );
   }
 }
