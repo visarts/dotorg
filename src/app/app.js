@@ -12,38 +12,38 @@ export default class App extends React.Component {
 
   constructor (props) {
     super(props);
-    //this.updateCurrentAuthor = this.updateCurrentAuthor.bind(this);
     this.authorsData = dataService.getAuthorsData();
     this.artistsData = dataService.getArtistsData();
     this.storeService = new StoreService(this.authorsData, this.artistsData);
+    this.getLocationParams = this.getLocationParams.bind(this);
 
     this.currentLocation = location.hash.slice(2);
-    this.getLocationParams = this.getLocationParams.bind(this);
 
     this.storeService.setStore(this.getLocationParams());
     this.state = this.storeService.getStore();
-
-  }
-
-  componentWillReceiveProps () {
-    let hash = location.hash.slice(2);
-    this.storeService.setStore(this.getLocationParams());
-    if (this.currentLocation !== hash) {
-      this.setState(this.storeService.getStore());
-    }
-
   }
 
   getLocationParams () {
     let hash = location.hash.slice(2);
     let params = hash.split('/');
+    if (!params[0]) {
+      this.storeService.clearStore();
+    }
     const mappedParams = {
-      currentSection: params ? params[0] : '',
+      currentSection: params[0],
       currentCreator: params[1] ? params[1] : '',
       currentWork: params[2] ? params[2] : ''
     }
-
     return mappedParams;
+  }
+
+  componentWillReceiveProps () {
+    let hash = location.hash.slice(2);
+    if (this.currentLocation !== hash) {
+      this.storeService.setStore(this.getLocationParams());
+      this.currentLocation = location.hash.slice(2);
+      this.setState(this.storeService.getStore());
+    }
   }
 
   render () {

@@ -20,7 +20,7 @@ export default class StoreService {
 
   setStore (params) {
     let newStore = this.getStore();
-    newStore.currentSection = params.currentSection || 'home';
+    newStore.currentSection = params.currentSection || '';
 
     if (params.currentCreator) {
       let data = newStore.currentSection === 'arts' ? this.artistsData : this.authorsData;
@@ -58,6 +58,6 @@ export default class StoreService {
   }
 
   clearStore () {
-    sessionStorage.setItem('pStore', JSON.stringify({}));
+    localStorage.setItem('pStore', JSON.stringify({}));
   }
 }
