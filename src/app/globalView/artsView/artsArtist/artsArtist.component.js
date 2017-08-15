@@ -13,8 +13,7 @@ export default class ArtsArtist extends React.Component {
   constructor (props) {
     super(props);
     document.querySelector('body').scrollTop = 0;
-    this.artist = this.props.currentArtist;
-    this.artistData = dataService.getArtistData(this.artist.creatorKey);
+    this.artist = this.props.store.currentCreator;
     this.imageList = this.getImages();
     this.thumbs = this.getThumbs();
     this.state = {
@@ -24,7 +23,7 @@ export default class ArtsArtist extends React.Component {
 
   getImages () {
     const imageList = [];
-    this.artistData.content.map((item, index) => {
+    this.artist.content.map((item, index) => {
       imageList.push({
         src: `./content/artwork/${this.artist.creatorKey}/${item.fileName}.jpg`,
         thumbnail: `./content/artwork/${this.artist.creatorKey}/${item.fileName}_sm.jpg`,
@@ -38,7 +37,7 @@ export default class ArtsArtist extends React.Component {
   }
 
   getThumbs () {
-    return this.artistData.content.map((item, index) => {
+    return this.artist.content.map((item, index) => {
       item.artist = this.artist;
       //item.index = index;
       return (
@@ -59,9 +58,8 @@ export default class ArtsArtist extends React.Component {
   }
 
   openImage (item) {
-    historyService.addToHistory({type: 'artHistory', data: item});
+    //historyService.addToHistory({type: 'artHistory', data: item});
     this.setState({currentImage: item});
-    this.props.updateStore({currentWork: item});
   }
 
   render () {
@@ -73,10 +71,8 @@ export default class ArtsArtist extends React.Component {
         <BackToTop />
         <Route path='/arts/:artist/:artwork' render={routeProps => (
           <ArtsDisplay
-            currentArtist={this.artist}
             currentImage={this.state.currentImage}
             imageList={this.imageList}
-            updateStore={this.props.updateStore}
             store={this.props.store}
             {...routeProps} />
         )} />

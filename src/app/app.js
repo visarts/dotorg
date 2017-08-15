@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, HashRouter as Router } from 'react-router-dom';
+import { Route, BrowserRouter as Router } from 'react-router-dom';
 import dataService from 'Services/data.service';
 import StoreService from 'Services/store.service';
 import GlobalHeader from './globalHeader/globalHeader.component';
@@ -12,23 +12,38 @@ export default class App extends React.Component {
 
   constructor (props) {
     super(props);
-    this.storeService = new StoreService(dataService.getAuthorsData(), dataService.getArtistsData());
-    this.updateStore = this.updateStore.bind(this);
     //this.updateCurrentAuthor = this.updateCurrentAuthor.bind(this);
     this.authorsData = dataService.getAuthorsData();
     this.artistsData = dataService.getArtistsData();
+    this.storeService = new StoreService(this.authorsData, this.artistsData);
+
+    this.currentLocation = location.hash.slice(2);
+    this.getLocationParams = this.getLocationParams.bind(this);
+
+    this.storeService.setStore(this.getLocationParams());
     this.state = this.storeService.getStore();
-    this.updateAppState = this.updateAppState.bind(this);
+
   }
 
-  updateStore (newStore) {
-    this.storeService.updateStore(newStore);
-    this.setState(this.storeService.getStore());
+  componentWillReceiveProps () {
+    let hash = location.hash.slice(2);
+    this.storeService.setStore(this.getLocationParams());
+    if (this.currentLocation !== hash) {
+      this.setState(this.storeService.getStore());
+    }
+
   }
 
-  updateCurrentAuthor (newAuthor) {
-    this.storeService.updateCurrentAuthor(newAuthor);
-    this.setState(this.storeService.getStore());
+  getLocationParams () {
+    let hash = location.hash.slice(2);
+    let params = hash.split('/');
+    const mappedParams = {
+      currentSection: params ? params[0] : '',
+      currentCreator: params[1] ? params[1] : '',
+      currentWork: params[2] ? params[2] : ''
+    }
+
+    return mappedParams;
   }
 
   render () {
@@ -47,8 +62,9 @@ export default class App extends React.Component {
 
       add routing for art eras and lit genres
 
-      Resolve issue where clearing session storage and going to a bookmark loses author/work data
-        Consider redoing store where current work and creator is fetched by location parts
+      Fix potential issue on literature display view with race condition
+
+      Refactor set store to be more agnostic to allow for non-current creator/work related data
 
     */
 
@@ -56,22 +72,17 @@ export default class App extends React.Component {
       <Route path='/' render={routeProps => (
         <div className="app">
           <GlobalHeader
-            updateStore={this.updateStore}
             store={this.state}
             {...routeProps} />
           <GlobalNav
-            updateStore={this.updateStore}
             store={this.state}
             {...routeProps} />
           <GlobalView
             artistsData={this.artistsData}
             authorsData={this.authorsData}
-            updateStore={this.updateStore}
-            updateCurrentAuthor={this.storeService.updateCurrentAuthor}
             store={this.state}
             {...routeProps} />
           <GlobalFooter
-            updateStore={this.updateStore}
             store={this.state}
             {...routeProps} />
         </div>

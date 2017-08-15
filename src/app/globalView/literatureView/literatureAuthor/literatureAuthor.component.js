@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import { Glyphicon } from 'react-bootstrap';
-import dataService from 'Services/data.service';
 import historyService from 'Services/history.service';
 import LiteratureDisplay from '../literatureDisplay/literatureDisplay.component';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
@@ -13,16 +12,14 @@ export default class LiteratureAuthor extends React.Component {
   constructor (props) {
     super(props);
     this.props = props;
-    this.author = this.props.updateCurrentAuthor(this.props.match.params.author);
-    //this.author = this.props.store.currentCreator;
-    this.authorData = dataService.getAuthorData(this.author.creatorKey);
-    this.titles = this.getTitles();
+    this.author = this.props.store.currentCreator;
+    this.titles = this.getTitles(this.author);
     //this.openTitle = this.openTitle.bind(this);
     this.loadDefaultProfileImage = this.loadDefaultProfileImage.bind(this);
   }
 
-  getTitles () {
-    return this.authorData.content.map((title, index) => {
+  getTitles (author) {
+    return author.content.map((title, index) => {
       title.author = this.author;
       return (
         <ListLink
@@ -35,7 +32,7 @@ export default class LiteratureAuthor extends React.Component {
   }
 
   openTitle (title) {
-    historyService.addToHistory({type: 'litHistory', data: title})
+    //historyService.addToHistory({type: 'litHistory', data: title})
   }
 
   loadDefaultProfileImage (event) {
@@ -60,7 +57,7 @@ export default class LiteratureAuthor extends React.Component {
         </div>
         <Route path='/literature/:author/:work' render={routeProps => (
           <LiteratureDisplay
-            currentAuthor={this.author}
+            store={this.props.store}
             {...routeProps} />
         )} />
       </div>

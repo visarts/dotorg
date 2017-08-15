@@ -13,7 +13,6 @@ const ArtsHome = (props) => {
       <ListLink
         key={artist.creatorKey}
         url={`/arts/${artist.creatorKey}`}
-        action={() => props.updateStore({currentCreator: artist})}
         text={`${artist.fname} ${artist.lname}`} />
     );
   });

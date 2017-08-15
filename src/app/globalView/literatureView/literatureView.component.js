@@ -10,14 +10,11 @@ const LiteratureView = (props) => {
       <Route exact path='/literature' render={routeProps => (
         <LiteratureHome
           authorsData={props.authorsData}
-          updateStore={props.updateStore}
           store={props.store}
           {...routeProps} />
       )} />
       <Route path='/literature/:author' render={routeProps => (
         <LiteratureAuthor
-          updateStore={props.updateStore}
-          updateCurrentAuthor={props.updateCurrentAuthor}
           store={props.store}
           {...routeProps} />
       )} />

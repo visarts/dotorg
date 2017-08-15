@@ -35,10 +35,10 @@ export default class LiteratureDisplay extends React.Component {
   }
 
   setValues () {
-    this.authorData = dataService.getAuthorData(this.props.currentAuthor.creatorKey);
+    this.author = this.props.store.currentCreator;
     this.currentWorkKey = this.props.match.params.work;
-    this.currentWork = this.authorData.content.filter(item => item.fileName === this.currentWorkKey)[0];
-    dataService.getHTMLContent(this.props.currentAuthor.creatorKey, this.currentWorkKey)
+    this.currentWork = this.props.store.currentWork;
+    dataService.getHTMLContent(this.author.creatorKey, this.currentWorkKey)
       .then((results) => {
         this.content = results;
         this.pages = [];
@@ -71,7 +71,7 @@ export default class LiteratureDisplay extends React.Component {
         this.smallViewSize = 768;
         this.menuPageMaxLength = window.innerWidth <= this.smallViewSize ? 9 : 12;
         this.menuPages = [];
-        this.menuItems = this.authorData.content.slice();
+        this.menuItems = this.author.content.slice();
         do {
           this.menuPages.push(this.menuItems.splice(0, this.menuPageMaxLength));
           if (this.menuItems.length && this.menuItems.length < this.menuPageMaxLength) {
@@ -80,7 +80,7 @@ export default class LiteratureDisplay extends React.Component {
         } while (this.menuItems.length > this.menuPageMaxLength);
 
 
-        this.authorMenuButtonLabel = window.innerWidth <= this.smallViewSize ? <Glyphicon glyph="th" /> : <span>Read More by {this.props.currentAuthor.lname} <Glyphicon glyph="chevron-down" /></span>;
+        this.authorMenuButtonLabel = window.innerWidth <= this.smallViewSize ? <Glyphicon glyph="th" /> : <span>Read More by {this.author.lname} <Glyphicon glyph="chevron-down" /></span>;
         this.originalHash = document.location.hash;
         this.setState({authorMenu: this.setAuthorMenu(this.state.currentMenuPage)})
       });
@@ -126,7 +126,7 @@ export default class LiteratureDisplay extends React.Component {
   setAuthorMenu (currentMenuPage) {
     return this.menuPages[currentMenuPage - 1].map((item, index) => {
       return (
-        <LinkContainer to={`/literature/${this.props.currentAuthor.creatorKey}/${item.fileName}`} key={index}>
+        <LinkContainer to={`/literature/${this.author.creatorKey}/${item.fileName}`} key={index}>
           <MenuItem eventKey={index} key={index}>{decodeURIComponent(item.title)}</MenuItem>
         </LinkContainer>
       );
@@ -146,7 +146,7 @@ export default class LiteratureDisplay extends React.Component {
   }
 
   hideModal () {
-    location.hash = `#/literature/${this.props.currentAuthor.creatorKey}`;
+    location.hash = `#/literature/${this.author.creatorKey}`;
   }
 
   setReadingMode () {
@@ -200,7 +200,7 @@ export default class LiteratureDisplay extends React.Component {
           </Modal.Header>
           <div className="modal-nav">
             <span className="readingMenu">
-              {this.authorData.content.length > 1 &&
+              {this.author.content.length > 1 &&
                 <DropdownButton noCaret title={this.authorMenuButtonLabel} id="bg-vertical-dropdown-1" className="readerDropdown" onClick={this.onMenuClick.bind(this)} onBlur={this.onMenuBlur.bind(this)}>
                   <Glyphicon glyph="menu-up" disabled={this.state.currentMenuPage === 1} className={`showMoreButton ${this.state.currentMenuPage === 1 ? 'buttonDisabled' : ''}`} onClick={this.setPreviousMenuPage.bind(this)} />
                     {this.state.authorMenu}
@@ -219,7 +219,7 @@ export default class LiteratureDisplay extends React.Component {
           <Modal.Body className={this.state.readingModeClass}>
             <div className={this.state.currentPage > 1 ? 'modal-title smallTitles' : 'modal-title'}>
               <h1>{decodeURIComponent(this.currentWork.title)}</h1>
-              <h2>{this.props.currentAuthor.fname} {this.props.currentAuthor.lname}</h2>
+              <h2>{this.author.fname} {this.author.lname}</h2>
             </div>
             <div className={`htmlContent ${this.state.currentFontSizeClass}`} dangerouslySetInnerHTML={this.setHTMLContent()}></div><br />
           </Modal.Body>
