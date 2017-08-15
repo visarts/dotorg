@@ -16,6 +16,7 @@ export default class App extends React.Component {
     this.artistsData = dataService.getArtistsData();
     this.storeService = new StoreService(this.authorsData, this.artistsData);
     this.getLocationParams = this.getLocationParams.bind(this);
+    this.updateStore = this.updateStore.bind(this);
 
     this.currentLocation = location.hash.slice(2);
 
@@ -35,6 +36,11 @@ export default class App extends React.Component {
       currentWork: params[2] ? params[2] : ''
     }
     return mappedParams;
+  }
+
+  updateStore (newStore) {
+    this.storeService.updateStore(newStore);
+    this.setState(this.storeService.getStore());
   }
 
   componentWillReceiveProps () {
@@ -73,6 +79,7 @@ export default class App extends React.Component {
         <div className="app">
           <GlobalHeader
             store={this.state}
+            updateStore={this.updateStore}
             {...routeProps} />
           <GlobalNav
             store={this.state}
