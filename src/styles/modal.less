@@ -1,3 +1,5 @@
+@import 'globals';
+
 @headerHeight: 33px;
 @navHeight: 38px;
 @footerHeight: 38px;
@@ -287,7 +289,7 @@
         }
       }
     }
-    @media (min-width: 768px) {
+    @media (min-width: @smallScreen) {
       .modal-content {
         .modal-body {
           padding: 20px 40px;
@@ -317,12 +319,12 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: @smallScreen) {
     .modal-dialog {
       margin: 15px auto;
     }
   }
-  @media (max-width: 767px) {
+  @media (max-width: @smallScreen) {
     .modal-dialog {
       margin: 5px;
     }

@@ -6,8 +6,8 @@ import './globalHeader.component.less';
 const GlobalHeader = (props) => {
 
   const smallLogoClass = !props.match.isExact ? 'smallLogo' : '';
-  const subHeader = props.store.currentSection === 'literature' ? ' | library' : props.store.currentSection === 'arts' ? ' | gallery' : '';
-  const subSubHeader = props.store.currentCreator ? ` | ${props.store.currentCreator.lname}` : '';
+  const subHeader = props.store.currentSection === 'literature' ? 'library' : props.store.currentSection === 'arts' ? 'gallery' : '';
+  const subSubHeader = props.store.currentCreator ? `${props.store.currentCreator.lname.toLowerCase()}` : '';
 
   const sectionUrl = `/${props.store.currentSection}`;
   const creatorUrl = props.store.currentCreator ? `${sectionUrl}/${props.store.currentCreator.creatorKey}` : '';
@@ -16,15 +16,15 @@ const GlobalHeader = (props) => {
     <div className="globalHeader">
       <div className="globalContainer">
         <h1 className={smallLogoClass}>
-          <Link to="/">Portitude</Link>
-          <Link to={sectionUrl}>
+          <Link to="/" className="portitudeTitle">Portitude</Link>
+          <Link to={sectionUrl} className={props.store.currentSection ? '' : 'hidden'}>
             <span className="subHead">
-              &nbsp;{subHeader}
+              {subHeader}
             </span>
           </Link>
-          <Link to={creatorUrl}>
+          <Link to={creatorUrl} className={props.store.currentCreator ? '' : 'hidden'}>
             <span className="subHead">
-              &nbsp;{subSubHeader}
+              {subSubHeader}
             </span>
           </Link>
         </h1>

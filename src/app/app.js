@@ -12,26 +12,18 @@ export default class App extends React.Component {
 
   constructor (props) {
     super(props);
-    this.authorsData = dataService.getAuthorsData();
-    this.artistsData = dataService.getArtistsData();
-    this.storeService = new StoreService(this.authorsData, this.artistsData);
-    this.getLocationParams = this.getLocationParams.bind(this);
+    this.storeService = new StoreService(dataService);
+    this.getMappedLocationParams = this.getMappedLocationParams.bind(this);
     this.updateStore = this.updateStore.bind(this);
-
-    this.currentLocation = location.hash.slice(2);
-
-    this.storeService.setStore(this.getLocationParams());
+    this.currentLocation = location.hash.slice(1);
     this.state = this.storeService.getStore();
   }
 
-  getLocationParams () {
-    let hash = location.hash.slice(2);
-    let params = hash.split('/');
-    if (!params[0]) {
-      this.storeService.clearStore();
-    }
+  // peel the location off into parameters to indicate current location state
+  getMappedLocationParams (updatedLocation) {
+    let params = updatedLocation.slice(1).split('/');
     const mappedParams = {
-      currentSection: params[0],
+      currentSection: params[0] || '',
       currentCreator: params[1] ? params[1] : '',
       currentWork: params[2] ? params[2] : ''
     }
@@ -43,11 +35,12 @@ export default class App extends React.Component {
     this.setState(this.storeService.getStore());
   }
 
-  componentWillReceiveProps () {
-    let hash = location.hash.slice(2);
-    if (this.currentLocation !== hash) {
-      this.storeService.setStore(this.getLocationParams());
-      this.currentLocation = location.hash.slice(2);
+  // this will update when the route changes and set state and store with new params
+  componentWillReceiveProps (nextProps) {
+    let updatedLocation = nextProps.location.pathname;
+    if (this.currentLocation !== updatedLocation) {
+      this.storeService.setStore(this.getMappedLocationParams(updatedLocation));
+      this.currentLocation = updatedLocation;
       this.setState(this.storeService.getStore());
     }
   }
@@ -75,7 +68,7 @@ export default class App extends React.Component {
     */
 
     return (
-      <Route path='/' render={routeProps => (
+      <Route path="/" render={routeProps => (
         <div className="app">
           <GlobalHeader
             store={this.state}
@@ -85,8 +78,6 @@ export default class App extends React.Component {
             store={this.state}
             {...routeProps} />
           <GlobalView
-            artistsData={this.artistsData}
-            authorsData={this.authorsData}
             store={this.state}
             {...routeProps} />
           <GlobalFooter

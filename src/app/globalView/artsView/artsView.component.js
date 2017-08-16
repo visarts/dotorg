@@ -9,7 +9,6 @@ const ArtsView = (props) => {
     <div className="artsView">
       <Route exact path='/arts' render={routeProps => (
         <ArtsHome
-          artistsData={props.artistsData}
           store={props.store}
           {...routeProps} />
       )} />

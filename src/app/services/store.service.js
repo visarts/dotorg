@@ -1,16 +1,15 @@
-import dataService from 'Services/data.service';
 
 /* a pseudo Redux lite */
 export default class StoreService {
-  constructor (authorsData, artistsData) {
-    this.authorsData = authorsData;
-    this.artistsData = artistsData;
+  constructor (dataService) {
+    this.dataService = dataService;
+    this.authorsData = this.dataService.getAuthorsData();
+    this.artistsData = this.dataService.getArtistsData();
+
     this.updateStore = this.updateStore.bind(this);
     this.getStore = this.getStore.bind(this);
     this.clearStore = this.clearStore.bind(this);
-
     this.setStore = this.setStore.bind(this);
-
   }
 
   getStore () {
@@ -19,12 +18,19 @@ export default class StoreService {
   }
 
   setStore (params) {
-    let newStore = this.getStore();
-    newStore.currentSection = params.currentSection || '';
+    // set an initial store if the localStorage object doesn't exist
+    let newStore = !localStorage.getItem('pStore') ? {
+      currentSection: '',
+      currentCreator: '',
+      currentWork: '',
+      artistsData: this.artistsData,
+      authorsData: this.authorsData
+    } : this.getStore();
+    newStore.currentSection = params.currentSection;
 
     if (params.currentCreator) {
       let data = newStore.currentSection === 'arts' ? this.artistsData : this.authorsData;
-      let creatorData = newStore.currentSection === 'arts' ? dataService.getArtistData(params.currentCreator) : dataService.getAuthorData(params.currentCreator);
+      let creatorData = newStore.currentSection === 'arts' ? this.dataService.getArtistData(params.currentCreator) : this.dataService.getAuthorData(params.currentCreator);
 
       if (!newStore.currentCreator || newStore.currentCreator.creatorKey !== params.currentCreator) {
         newStore.currentCreator = data.filter(item => {
@@ -58,6 +64,6 @@ export default class StoreService {
   }
 
   clearStore () {
-    localStorage.setItem('pStore', JSON.stringify({}));
+    localStorage.removeItem('pStore');
   }
 }

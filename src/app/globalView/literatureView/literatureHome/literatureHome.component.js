@@ -8,7 +8,7 @@ const LiteratureHome = (props) => {
 
   document.querySelector('body').scrollTop = 0;
 
-  const authorsList = props.authorsData.map((author, index) => {
+  const authorsList = props.store.authorsData.map((author, index) => {
     return (
       <ListLink
         key={author.creatorKey}
