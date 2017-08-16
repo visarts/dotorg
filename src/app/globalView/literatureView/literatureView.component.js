@@ -4,12 +4,10 @@ import LiteratureHome from './literatureHome/literatureHome.component';
 import LiteratureAuthor from './literatureAuthor/literatureAuthor.component';
 
 const LiteratureView = (props) => {
-  //currentAuthor={props.authorsData.filter(item => item.creatorKey === routeProps.match.params.author)[0]}
   return (
     <div className="literatureView">
       <Route exact path='/literature' render={routeProps => (
         <LiteratureHome
-          authorsData={props.authorsData}
           store={props.store}
           {...routeProps} />
       )} />

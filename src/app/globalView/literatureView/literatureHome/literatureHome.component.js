@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import dataService from 'Services/data.service';
+
 import LiteratureHistory from 'SharedComponents/literatureHistory/literatureHistory.component';
 import ListLink from 'SharedComponents/listLink/listLink.component';
 import './literatureHome.component.less';
@@ -9,11 +11,12 @@ const LiteratureHome = (props) => {
   document.querySelector('body').scrollTop = 0;
 
   const authorsList = props.store.authorsData.map((author, index) => {
+    author.content = dataService.getAuthorData(author.creatorKey).content;
     return (
       <ListLink
         key={author.creatorKey}
         url={`literature/${author.creatorKey}`}
-        text={`${author.fname} ${author.lname}`} />
+        text={`${author.fname} ${author.lname} (${author.content.length})`} />
     );
   });
 
