@@ -13,21 +13,9 @@ export default class App extends React.Component {
   constructor (props) {
     super(props);
     this.storeService = new StoreService(dataService);
-    this.getMappedLocationParams = this.getMappedLocationParams.bind(this);
     this.updateStore = this.updateStore.bind(this);
     this.currentLocation = location.hash.slice(1);
-    this.state = this.storeService.getStore();
-  }
-
-  // peel the location off into parameters to indicate current location state
-  getMappedLocationParams (updatedLocation) {
-    let params = updatedLocation.slice(1).split('/');
-    const mappedParams = {
-      currentSection: params[0] || '',
-      currentCreator: params[1] ? params[1] : '',
-      currentWork: params[2] ? params[2] : ''
-    }
-    return mappedParams;
+    this.state = this.storeService.getStore(this.currentLocation);
   }
 
   updateStore (newStore) {
@@ -39,7 +27,7 @@ export default class App extends React.Component {
   componentWillReceiveProps (nextProps) {
     let updatedLocation = nextProps.location.pathname;
     if (this.currentLocation !== updatedLocation) {
-      this.storeService.setStore(this.getMappedLocationParams(updatedLocation));
+      this.storeService.setStore(updatedLocation);
       this.currentLocation = updatedLocation;
       this.setState(this.storeService.getStore());
     }

@@ -6,18 +6,34 @@ export default class StoreService {
     this.authorsData = this.dataService.getAuthorsData();
     this.artistsData = this.dataService.getArtistsData();
 
-    this.updateStore = this.updateStore.bind(this);
+    this.getMappedLocationParams = this.getMappedLocationParams.bind(this);
     this.getStore = this.getStore.bind(this);
-    this.clearStore = this.clearStore.bind(this);
     this.setStore = this.setStore.bind(this);
+    this.updateStore = this.updateStore.bind(this);
+    this.clearStore = this.clearStore.bind(this);
   }
 
-  getStore () {
+  // peel the location off into parameters to indicate current location state
+  getMappedLocationParams (updatedLocation) {
+    let params = updatedLocation.slice(1).split('/');
+    const mappedParams = {
+      currentSection: params[0] || '',
+      currentCreator: params[1] ? params[1] : '',
+      currentWork: params[2] ? params[2] : ''
+    }
+    return mappedParams;
+  }
+
+  getStore (updatedLocation) {
+    if (updatedLocation) {
+      this.setStore(updatedLocation);
+    }
     let store = localStorage.getItem('pStore');
     return store ? JSON.parse(store) : {};
   }
 
-  setStore (params) {
+  setStore (updatedLocation) {
+    let params = this.getMappedLocationParams(updatedLocation);
     // set an initial store if the localStorage object doesn't exist
     let newStore = !localStorage.getItem('pStore') ? {
       currentSection: '',
