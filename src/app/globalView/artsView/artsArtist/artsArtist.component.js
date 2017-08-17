@@ -12,10 +12,6 @@ const ArtsArtist = (props) => {
   document.querySelector('body').scrollTop = 0;
   const artist = props.store.currentCreator;
 
-  /*state = {
-    currentImage: null
-  };*/
-
   const getImages = () => {
     const imageList = [];
     artist.content.map((item, index) => {
@@ -27,7 +23,6 @@ const ArtsArtist = (props) => {
       });
       return;
     });
-    console.log(imageList);
     return imageList;
   };
 
@@ -51,8 +46,6 @@ const ArtsArtist = (props) => {
     });
   };
 
-  const imageList = getImages();
-  const thumbs = getThumbs();
 
   /*openImage (item) {
     //historyService.addToHistory({type: 'artHistory', data: item});
@@ -63,11 +56,11 @@ const ArtsArtist = (props) => {
     <div className="artsArtist">
       <h1>{decodeURIComponent(`${artist.fname} ${artist.lname}`)}</h1>
       <div className="artistBio">{ artist.bio }</div>
-      <ul className="imageGrid">{ thumbs }</ul>
+      <ul className="imageGrid">{ getThumbs() }</ul>
       <BackToTop />
       <Route path='/arts/:artist/:artwork' render={routeProps => (
         <ArtsDisplay
-          imageList={imageList}
+          imageList={getImages()}
           store={props.store}
           {...routeProps} />
       )} />

@@ -8,6 +8,60 @@
     max-width: 100%;
   }
 
+  .artsThumbs {
+    margin-top: @hMargin;
+    .imageGrid {
+      overflow-x: hidden;
+      display: flex;
+      //flex-flow: row wrap;
+      flex-direction: row;
+
+      .thumbnail {
+        //display: inline-block;
+        //flex: 1 1 25%;
+
+        vertical-align: top;
+        margin: 0 4px 4px 0;
+        background-color: @tertiaryThemeColor;
+        border-color: lighten(@mainThemeColor, 5%);
+        transition: all .2s;
+        word-wrap: break-word;
+
+        a {
+          display: block;
+          font-size: .8em;
+
+          img {
+            width: 80px;
+            max-width: 80px;
+            opacity: .5;
+            transition: all .2s;
+          }
+        }
+
+        &.selected {
+          background: @mainLinkHoverColor;
+
+          img {
+            opacity: 1;
+          }
+        }
+
+        &:hover {
+          background: @mainLinkHoverColor;
+
+          a {
+            color: white;
+
+            img {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
   &.modal-dialog {
     //width: 800px;
   }

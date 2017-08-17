@@ -10,6 +10,37 @@ const ArtsDisplay = (props) => {
 
   const currentImage = props.store.currentWork;
   const currentArtist = props.store.currentCreator;
+  const getPosition = () => {
+    let position = 0;
+    for (let i in currentArtist.content) {
+      if (currentArtist.content[i].fileName === currentImage.fileName) {
+        position = i;
+        break;
+      }
+    }
+    return parseInt(position);
+  }
+  const currentPosition = getPosition();
+  const nextPosition = currentPosition === currentArtist.content.length - 1 ? currentPosition : currentPosition + 1;
+  const prevPosition = currentPosition === 0 ? currentPosition : currentPosition - 1;
+  const getThumbs = () => {
+    return currentArtist.content.map((item, index) => {
+      //item.artist = currentArtist;
+      //item.index = index;
+      return (
+        <li className={item.fileName === currentImage.fileName ? 'thumbnail selected' : 'thumbnail'} key={item.fileName}>
+          <Link
+            to={`${item.fileName}`}
+            title={item.title}
+            key={item.fileName}>
+            <img
+              src={`./content/artwork/${currentArtist.creatorKey}/${item.fileName}_sm.jpg`}
+              alt={item.title} />
+          </Link>
+        </li>
+      );
+    });
+  };
 
   const hideModal = () => {
     location.hash = `#/arts/${currentArtist.creatorKey}`;
@@ -26,7 +57,8 @@ const ArtsDisplay = (props) => {
         </Modal.Header>
         <div className="modal-nav">
           <span className="readingMenu">
-            &nbsp;
+            <Link to={currentArtist.content[prevPosition].fileName}><Glyphicon glyph="chevron-left" /></Link>
+            <Link to={currentArtist.content[nextPosition].fileName}><Glyphicon glyph="chevron-right" /></Link>
           </span>
           <span className="readingControls">
             &nbsp;
@@ -36,6 +68,11 @@ const ArtsDisplay = (props) => {
           <h1 className="artsTitle">{currentImage.title}</h1>
           <div className="artsContent">
             <img src={`./content/artwork/${currentArtist.creatorKey}/${currentImage.fileName}.jpg`} className="artsDisplayImage" />
+          </div>
+          <div className="artsThumbs">
+            <div className="imageGrid">
+              {getThumbs()}
+            </div>
           </div>
         </Modal.Body>
       </Modal>
