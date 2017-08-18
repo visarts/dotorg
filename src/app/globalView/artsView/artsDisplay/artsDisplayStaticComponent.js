@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { Modal, Glyphicon, DropdownButton, MenuItem } from 'react-bootstrap';
 import Lightbox from 'react-images';
 import dataService from 'Services/data.service';
-import ArtCarousel from 'SharedComponents/artCarousel/artCarousel.component';
 import './artsDisplay.component.less';
 
 const ArtsDisplay = (props) => {
@@ -70,14 +69,11 @@ const ArtsDisplay = (props) => {
           <div className="artsContent">
             <img src={`./content/artwork/${currentArtist.creatorKey}/${currentImage.fileName}.jpg`} className="artsDisplayImage" />
           </div>
-          <ArtCarousel
-            currentArtist={currentArtist}
-            currentImage={currentImage}
-            lgThumbPageSize={6}
-            smThumbPageSize={4}
-            currentPosition={currentPosition}
-            match={props.match}
-          />
+          <div className="artsThumbs">
+            <div className="imageGrid">
+              {getThumbs()}
+            </div>
+          </div>
         </Modal.Body>
       </Modal>
     </div>
