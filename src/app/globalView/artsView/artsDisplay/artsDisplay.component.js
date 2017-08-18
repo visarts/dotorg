@@ -6,78 +6,132 @@ import Lightbox from 'react-images';
 import dataService from 'Services/data.service';
 import './artsDisplay.component.less';
 
-const ArtsDisplay = (props) => {
+export default class ArtsDisplay extends React.Component {
 
-  const currentImage = props.store.currentWork;
-  const currentArtist = props.store.currentCreator;
-  const getPosition = () => {
+  constructor (props) {
+    super(props);
+    this.setValues = this.setValues.bind(this);
+    this.getPosition = this.getPosition.bind(this);
+    this.getThumbs = this.getThumbs.bind(this);
+    this.getThumbPages = this.getThumbPages.bind(this);
+    this.getCurrentThumbPage = this.getCurrentThumbPage.bind(this);
+    this.hideModal = this.hideModal.bind(this);
+
+    this.state = {
+      currentThumbPage: 0
+
+    };
+    this.setValues();
+  }
+
+  setValues () {
+    this.currentImage = this.props.store.currentWork;
+    this.currentArtist = this.props.store.currentCreator;
+    this.currentPosition = this.getPosition();
+    this.nextPosition = this.currentPosition === this.currentArtist.content.length - 1 ? this.currentPosition : this.currentPosition + 1;
+    this.prevPosition = this.currentPosition === 0 ? this.currentPosition : this.currentPosition - 1;
+
+    this.thumbs = this.getThumbs();
+    this.lgThumbPageSize = 6;
+    this.smThumbPageSize = 4;
+    this.thumbPages = this.getThumbPages();
+    //this.setState({currentThumbPage: this.getCurrentThumbPage()});
+  }
+
+  getPosition () {
     let position = 0;
-    for (let i in currentArtist.content) {
-      if (currentArtist.content[i].fileName === currentImage.fileName) {
+    for (let i in this.currentArtist.content) {
+      if (this.currentArtist.content[i].fileName === this.currentImage.fileName) {
         position = i;
         break;
       }
     }
     return parseInt(position);
   }
-  const currentPosition = getPosition();
-  const nextPosition = currentPosition === currentArtist.content.length - 1 ? currentPosition : currentPosition + 1;
-  const prevPosition = currentPosition === 0 ? currentPosition : currentPosition - 1;
-  const getThumbs = () => {
-    return currentArtist.content.map((item, index) => {
-      //item.artist = currentArtist;
+
+  getThumbs () {
+    return this.currentArtist.content.map((item, index) => {
+      //item.artist = this.currentArtist;
       //item.index = index;
       return (
-        <li className={item.fileName === currentImage.fileName ? 'thumbnail selected' : 'thumbnail'} key={item.fileName}>
+        <li className={item.fileName === this.currentImage.fileName ? 'thumbnail selected' : 'thumbnail'} key={item.fileName}>
           <Link
             to={`${item.fileName}`}
             title={item.title}
             key={item.fileName}>
             <img
-              src={`./content/artwork/${currentArtist.creatorKey}/${item.fileName}_sm.jpg`}
+              src={`./content/artwork/${this.currentArtist.creatorKey}/${item.fileName}_sm.jpg`}
               alt={item.title} />
           </Link>
         </li>
       );
     });
-  };
-
-  const hideModal = () => {
-    location.hash = `#/arts/${currentArtist.creatorKey}`;
   }
 
-  return (
-    <div className="artsDisplay">
-      <Modal
-        show={true}
-        onHide={hideModal.bind(this)}
-        dialogClassName="custom-modal">
-        <Modal.Header closeButton>
-          <h1>Portitude Gallery</h1>
-        </Modal.Header>
-        <div className="modal-nav">
-          <span className="readingMenu">
-            <Link to={currentArtist.content[prevPosition].fileName}><Glyphicon glyph="chevron-left" /></Link>
-            <Link to={currentArtist.content[nextPosition].fileName}><Glyphicon glyph="chevron-right" /></Link>
-          </span>
-          <span className="readingControls">
-            &nbsp;
-          </span>
-        </div>
-        <Modal.Body className="darkMode">
-          <h1 className="artsTitle">{currentImage.title}</h1>
-          <div className="artsContent">
-            <img src={`./content/artwork/${currentArtist.creatorKey}/${currentImage.fileName}.jpg`} className="artsDisplayImage" />
-          </div>
-          <div className="artsThumbs">
-            <div className="imageGrid">
-              {getThumbs()}
-            </div>
-          </div>
-        </Modal.Body>
-      </Modal>
-    </div>
-  );
-}
+  getThumbPages () {
+    let thumbPages = [];
+    const lgThumbPageCount = Math.ceil(this.thumbs.length / this.lgThumbPageSize);
+    const smThumbPageCount = Math.ceil(this.thumbs.length / this.smThumbPageSize);
 
-export default ArtsDisplay;
+    for (let i = 0; i < lgThumbPageCount; i++) {
+        let j = parseInt(i) * this.lgThumbPageSize;
+        thumbPages.push(this.thumbs.slice(parseInt(j), (parseInt(j) + this.lgThumbPageSize )))
+    }
+    return thumbPages;
+  }
+
+  getCurrentThumbPage () {
+    const mathPos = (this.currentPosition + 1) % this.lgThumbPageSize === 0 ? Math.floor : Math.ceil;
+    const currentThumbPage = mathPos(((this.currentPosition + 1) / this.lgThumbPageSize)) - 1 || 0;
+    return currentThumbPage;
+  }
+
+  hideModal () {
+    location.hash = `#/arts/${this.currentArtist.creatorKey}`;
+  }
+
+  componentWillReceiveProps (nextProps) {
+    if (this.props.match.params.artwork !== nextProps.match.params.artwork) {
+      //this.setValues();
+      this.setState({currentThumbPage: this.getCurrentThumbPage()}, () => {
+        document.querySelector('.modal-body').scrollTop = 0;
+        this.setValues();
+      });
+    }
+  }
+
+  render () {
+    return (
+      <div className="artsDisplay">
+        <Modal
+          show={true}
+          onHide={this.hideModal}
+          dialogClassName="custom-modal">
+          <Modal.Header closeButton>
+            <h1>Portitude Gallery</h1>
+          </Modal.Header>
+          <div className="modal-nav">
+            <span className="readingMenu">
+              <Link to={this.currentArtist.content[this.prevPosition].fileName}><Glyphicon glyph="chevron-left" /></Link>
+              <Link to={this.currentArtist.content[this.nextPosition].fileName}><Glyphicon glyph="chevron-right" /></Link>
+            </span>
+            <span className="readingControls">
+              &nbsp;
+            </span>
+          </div>
+          <Modal.Body className="darkMode">
+            <h1 className="artsTitle">{this.currentImage.title}</h1>
+            <div className="artsContent">
+              <img src={`./content/artwork/${this.currentArtist.creatorKey}/${this.currentImage.fileName}.jpg`} className="artsDisplayImage" />
+            </div>
+            <div className="artsThumbs">
+              <div className="imageGrid">
+                {this.thumbPages[this.state.currentThumbPage].map(item => item)}
+              </div>
+            </div>
+          </Modal.Body>
+        </Modal>
+      </div>
+    );
+  }
+}

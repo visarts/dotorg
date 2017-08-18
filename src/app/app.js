@@ -53,8 +53,6 @@ export default class App extends React.Component {
 
       Refactor set store to be more agnostic to allow for non-current creator/work related data
 
-
-      resolve issue where clearing localStorage and returning to a bookmark causes data read errors
     */
 
     return (
