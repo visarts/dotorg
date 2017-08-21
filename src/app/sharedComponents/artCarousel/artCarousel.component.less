@@ -7,8 +7,9 @@
     display: flex;
     flex-direction: row;
 
-    .thumbnail {
+    .carouselThumb {
       vertical-align: top;
+      padding: 4px;
       margin: 0 4px 4px 0;
       background-color: @tertiaryThemeColor;
       border-color: lighten(@mainThemeColor, 5%);
@@ -27,7 +28,7 @@
         }
       }
 
-      &.selected {
+      &.selectedThumb {
         background: @mainLinkHoverColor;
 
         img {

@@ -7,22 +7,22 @@ export default class ArtCarousel extends React.Component {
 
   constructor (props) {
     super(props);
-
-    this.getThumbs = this.getThumbs.bind(this);
-    this.getThumbPages = this.getThumbPages.bind(this);
     this.getCurrentThumbPage = this.getCurrentThumbPage.bind(this);
-    this.getThumbs = this.getThumbs.bind(this);
-    this.thumbPages = this.getThumbPages();
-
     this.state = {
-      currentThumbPage: this.getCurrentThumbPage()
+      currentThumbPage: this.getCurrentThumbPage(),
+      currentImage: this.props.currentImage
     };
+    this.getThumbPages = this.getThumbPages.bind(this);
+    this.thumbPages = this.getThumbPages();
+    //this.onThumbClick = this.onThumbClick.bind(this);
+    this.getThumbs = this.getThumbs.bind(this);
+
   }
 
   getThumbs () {
     return this.props.currentArtist.content.map((item, index) => {
       return (
-        <li className={item.fileName === this.props.currentImage.fileName ? 'thumbnail selected' : 'thumbnail'} key={item.fileName}>
+        <li className="carouselThumb" id={item.fileName} key={item.fileName}>
           <Link
             to={`${item.fileName}`}
             title={item.title}
@@ -49,24 +49,28 @@ export default class ArtCarousel extends React.Component {
     return thumbPages;
   }
 
-  getCurrentThumbPage () {
-    const mathPos = (this.props.currentPosition + 1) % this.props.lgThumbPageSize === 0 ? Math.floor : Math.ceil;
-    const currentThumbPage = mathPos(((this.props.currentPosition + 1) / this.props.lgThumbPageSize)) - 1 || 0;
+  getCurrentThumbPage (curPos) {
+    const currentPos = curPos ? curPos : this.props.currentPosition;
+    const mathPos = (currentPos + 1) % this.props.lgThumbPageSize === 0 ? Math.floor : Math.ceil;
+    const currentThumbPage = mathPos(((currentPos + 1) / this.props.lgThumbPageSize)) - 1 || 0;
     return currentThumbPage;
   }
 
   componentWillReceiveProps (nextProps) {
     if (nextProps.match.params.work !== this.props.currentImage.fileName) {
-      this.setState({currentThumbPage: this.getCurrentThumbPage()});
+      document.querySelector(`#${this.props.currentImage.fileName}`).classList.remove('selectedThumb');
+      this.setState({currentThumbPage: this.getCurrentThumbPage(nextProps.currentPosition), currentImage: nextProps.currentImage}, () => {
+        document.querySelector(`#${nextProps.currentImage.fileName}`).classList.add('selectedThumb');
+      });
     }
   }
 
   render () {
     return (
       <div className="artCarousel">
-        <div className="imageGrid">
+        <ul className="imageGrid">
           {this.thumbPages[this.state.currentThumbPage].map(item => item)}
-        </div>
+        </ul>
       </div>
     );
   }

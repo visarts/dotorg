@@ -49,8 +49,6 @@ export default class App extends React.Component {
 
       add routing for art eras and lit genres
 
-      Fix potential issue on literature display view with race condition
-
       Refactor set store to be more agnostic to allow for non-current creator/work related data
 
     */

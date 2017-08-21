@@ -8,8 +8,8 @@ import ArtCarousel from 'SharedComponents/artCarousel/artCarousel.component';
 import './artsDisplay.component.less';
 
 const ArtsDisplay = (props) => {
-
   const currentImage = props.store.currentWork;
+  const getCurrentImage = () => props.store.currentWork;
   const currentArtist = props.store.currentCreator;
   const getPosition = () => {
     let position = 0;
@@ -72,10 +72,10 @@ const ArtsDisplay = (props) => {
           </div>
           <ArtCarousel
             currentArtist={currentArtist}
-            currentImage={currentImage}
+            currentImage={getCurrentImage()}
             lgThumbPageSize={6}
             smThumbPageSize={4}
-            currentPosition={currentPosition}
+            currentPosition={getPosition()}
             match={props.match}
           />
         </Modal.Body>
