@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Glyphicon } from 'react-bootstrap';
 import './artCarousel.component.less';
 
 
@@ -16,6 +17,9 @@ export default class ArtCarousel extends React.Component {
     this.thumbPages = this.getThumbPages();
     //this.onThumbClick = this.onThumbClick.bind(this);
     this.getThumbs = this.getThumbs.bind(this);
+
+    this.onLeftArrowClick = this.onLeftArrowClick.bind(this);
+    this.onRightArrowClick = this.onRightArrowClick.bind(this);
 
   }
 
@@ -56,9 +60,20 @@ export default class ArtCarousel extends React.Component {
     return currentThumbPage;
   }
 
+  onLeftArrowClick () {
+    this.setState({currentThumbPage: this.state.currentThumbPage - 1})
+  }
+
+  onRightArrowClick () {
+    this.setState({currentThumbPage: this.state.currentThumbPage + 1})
+  }
+
   componentWillReceiveProps (nextProps) {
     if (nextProps.match.params.work !== this.props.currentImage.fileName) {
-      document.querySelector(`#${this.props.currentImage.fileName}`).classList.remove('selectedThumb');
+      if (document.querySelector(`#${this.props.currentImage.fileName}`)) {
+        document.querySelector(`#${this.props.currentImage.fileName}`).classList.remove('selectedThumb');
+        
+      }
       this.setState({currentThumbPage: this.getCurrentThumbPage(nextProps.currentPosition), currentImage: nextProps.currentImage}, () => {
         document.querySelector(`#${nextProps.currentImage.fileName}`).classList.add('selectedThumb');
       });
@@ -68,9 +83,17 @@ export default class ArtCarousel extends React.Component {
   render () {
     return (
       <div className="artCarousel">
+        {this.state.currentThumbPage !== 0 &&
+        <a className="thumbArrow thumbArrowLeft" onClick={this.onLeftArrowClick}>
+          <Glyphicon glyph="chevron-left" />
+        </a>}
         <ul className="imageGrid">
           {this.thumbPages[this.state.currentThumbPage].map(item => item)}
         </ul>
+        {this.state.currentThumbPage !== this.thumbPages.length - 1 &&
+        <a className="thumbArrow thumbArrowRight" onClick={this.onRightArrowClick}>
+          <Glyphicon glyph="chevron-right" />
+        </a>}
       </div>
     );
   }
