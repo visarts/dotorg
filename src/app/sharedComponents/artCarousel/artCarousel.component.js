@@ -26,7 +26,7 @@ export default class ArtCarousel extends React.Component {
   getThumbs () {
     return this.props.currentArtist.content.map((item, index) => {
       return (
-        <li className="carouselThumb" id={item.fileName} key={item.fileName}>
+        <li className="carouselThumb" id={item.fileName} key={item.fileName} aria-label={item.title}>
           <Link
             to={`${item.fileName}`}
             title={item.title}
@@ -72,7 +72,7 @@ export default class ArtCarousel extends React.Component {
     if (nextProps.match.params.work !== this.props.currentImage.fileName) {
       if (document.querySelector(`#${this.props.currentImage.fileName}`)) {
         document.querySelector(`#${this.props.currentImage.fileName}`).classList.remove('selectedThumb');
-        
+
       }
       this.setState({currentThumbPage: this.getCurrentThumbPage(nextProps.currentPosition), currentImage: nextProps.currentImage}, () => {
         document.querySelector(`#${nextProps.currentImage.fileName}`).classList.add('selectedThumb');
