@@ -2,12 +2,83 @@
 @import '../../../../styles/modal';
 @import '../../../../styles/menus';
 
-.custom-modal {
-  .artsDisplayImage {
-    max-width: 100%;
-  }
+@headerHeight: 33px;
+@footerHeight: 100px;
 
-  &.modal-dialog {
-    //width: 800px;
+.modal {
+  .custom-modal.arts-modal {
+    .artsDisplayImage {
+      max-width: 100%;
+    }
+
+    .modal-content {
+
+      .modal-header {
+
+      }
+
+      .modal-body {
+        top: @headerHeight;
+        bottom: @footerHeight;
+
+        .artsTitle {
+          padding-bottom: @hPadding;
+        }
+
+        .artsContent {
+          position: relative;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          height: 60vh;
+
+          .artsDisplayImage {
+            max-height: 60vh;
+          }
+
+          .thumbArrow {
+            color: #fff;
+            display: flex;
+            align-items: center;
+
+            cursor: pointer;
+            font-size: 1.3em;
+            opacity: .5;
+            padding: 5px;
+            position: absolute;
+            top: 0px;
+            height: 100%;
+            width: 25px;
+            z-index: 1000;
+            transition: all .2s;
+
+            .glyphicon {
+              text-shadow: 1px 1px 1px #000;
+            }
+
+            &.thumbArrowLeft {
+              left: 0;
+            }
+
+            &.thumbArrowRight {
+              right: 0;
+            }
+
+            &:hover {
+              opacity: 1;
+              background: rgba(50, 50, 50, .5);
+            }
+          }
+        }
+      }
+
+      .modal-footer {
+        height: @footerHeight;
+      }
+    }
+
+    &.modal-dialog {
+      //width: 800px;
+    }
   }
 }

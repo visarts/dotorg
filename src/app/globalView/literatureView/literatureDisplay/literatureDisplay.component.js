@@ -194,7 +194,7 @@ export default class LiteratureDisplay extends React.Component {
         {this.menuPages && <Modal
           show={true}
           onHide={this.hideModal.bind(this)}
-          dialogClassName="custom-modal">
+          dialogClassName="custom-modal literature-modal">
           <Modal.Header closeButton>
             <h1>Portitude Reader</h1>
           </Modal.Header>

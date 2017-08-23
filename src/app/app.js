@@ -51,6 +51,7 @@ export default class App extends React.Component {
 
       Refactor set store to be more agnostic to allow for non-current creator/work related data
 
+      Rethink localstorage approach -- when new creator/work is added, it doesn't show up
     */
 
     return (

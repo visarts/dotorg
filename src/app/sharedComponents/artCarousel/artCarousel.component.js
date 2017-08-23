@@ -10,7 +10,7 @@ export default class ArtCarousel extends React.Component {
     super(props);
     this.getCurrentThumbPage = this.getCurrentThumbPage.bind(this);
     this.state = {
-      currentThumbPage: this.getCurrentThumbPage(),
+      currentThumbPage: this.getCurrentThumbPage(this.props.currentPosition),
       currentImage: this.props.currentImage
     };
     this.getThumbPages = this.getThumbPages.bind(this);
@@ -52,8 +52,7 @@ export default class ArtCarousel extends React.Component {
     return thumbPages;
   }
 
-  getCurrentThumbPage (curPos) {
-    const currentPos = curPos ? curPos : this.props.currentPosition;
+  getCurrentThumbPage (currentPos) {
     const mathPos = (currentPos + 1) % this.props.lgThumbPageSize === 0 ? Math.floor : Math.ceil;
     const currentThumbPage = mathPos(((currentPos + 1) / this.props.lgThumbPageSize)) - 1 || 0;
     return currentThumbPage;

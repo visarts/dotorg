@@ -1,6 +1,13 @@
 {
   "artists": [
     {
+      "fname": "Fname",
+      "lname": "Lname",
+      "creatorKey": "creatorkey",
+      "bio": "This is an artist for testing",
+      "era": "Impressionism"
+    },
+    {
       "fname": "William",
       "lname": "Bougeureau",
       "creatorKey": "bouguereau",

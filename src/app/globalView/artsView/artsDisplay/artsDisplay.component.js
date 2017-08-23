@@ -24,25 +24,6 @@ const ArtsDisplay = (props) => {
   const currentPosition = getPosition();
   const nextPosition = currentPosition === currentArtist.content.length - 1 ? currentPosition : currentPosition + 1;
   const prevPosition = currentPosition === 0 ? currentPosition : currentPosition - 1;
-  const getThumbs = () => {
-    return currentArtist.content.map((item, index) => {
-      //item.artist = currentArtist;
-      //item.index = index;
-      return (
-        <li className={item.fileName === currentImage.fileName ? 'thumbnail selected' : 'thumbnail'} key={item.fileName}>
-          <Link
-            to={`${item.fileName}`}
-            title={item.title}
-            key={item.fileName}>
-            <img
-              src={`./content/artwork/${currentArtist.creatorKey}/${item.fileName}_sm.jpg`}
-              alt={item.title} />
-          </Link>
-        </li>
-      );
-    });
-  };
-
   const hideModal = () => {
     location.hash = `#/arts/${currentArtist.creatorKey}`;
   }
@@ -52,24 +33,20 @@ const ArtsDisplay = (props) => {
       <Modal
         show={true}
         onHide={hideModal.bind(this)}
-        dialogClassName="custom-modal">
+        dialogClassName="custom-modal arts-modal">
         <Modal.Header closeButton>
           <h1>Portitude Gallery</h1>
         </Modal.Header>
-        <div className="modal-nav">
-          <span className="readingMenu">
-            <Link to={currentArtist.content[prevPosition].fileName}><Glyphicon glyph="chevron-left" /></Link>
-            <Link to={currentArtist.content[nextPosition].fileName}><Glyphicon glyph="chevron-right" /></Link>
-          </span>
-          <span className="readingControls">
-            &nbsp;
-          </span>
-        </div>
         <Modal.Body className="darkMode">
           <h1 className="artsTitle">{currentImage.title}</h1>
           <div className="artsContent">
+            <Link to={currentArtist.content[prevPosition].fileName} className="thumbArrow thumbArrowLeft"><Glyphicon glyph="chevron-left" /></Link>
             <img src={`./content/artwork/${currentArtist.creatorKey}/${currentImage.fileName}.jpg`} className="artsDisplayImage" />
+            <Link to={currentArtist.content[nextPosition].fileName} className="thumbArrow thumbArrowRight"><Glyphicon glyph="chevron-right" /></Link>
           </div>
+
+        </Modal.Body>
+        <Modal.Footer>
           <ArtCarousel
             currentArtist={currentArtist}
             currentImage={getCurrentImage()}
@@ -78,7 +55,7 @@ const ArtsDisplay = (props) => {
             currentPosition={getPosition()}
             match={props.match}
           />
-        </Modal.Body>
+        </Modal.Footer>
       </Modal>
     </div>
   );
