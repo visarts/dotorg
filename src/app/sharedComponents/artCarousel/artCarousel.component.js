@@ -15,7 +15,6 @@ export default class ArtCarousel extends React.Component {
     };
     this.getThumbPages = this.getThumbPages.bind(this);
     this.thumbPages = this.getThumbPages();
-    //this.onThumbClick = this.onThumbClick.bind(this);
     this.getThumbs = this.getThumbs.bind(this);
 
     this.onLeftArrowClick = this.onLeftArrowClick.bind(this);
