@@ -196,7 +196,7 @@ export default class LiteratureDisplay extends React.Component {
           onHide={this.hideModal.bind(this)}
           dialogClassName="custom-modal literature-modal">
           <Modal.Header closeButton>
-            <h1>Portitude Reader</h1>
+            <h1>Portitude Reader | {this.author.lname}</h1>
           </Modal.Header>
           <div className="modal-nav">
             <span className="readingMenu">
@@ -217,7 +217,7 @@ export default class LiteratureDisplay extends React.Component {
             </span>
           </div>
           <Modal.Body className={this.state.readingModeClass}>
-            <div className={this.state.currentPage > 1 ? 'modal-title smallTitles' : 'modal-title'}>
+            <div className={this.state.currentPage > 1 ? 'literatureTitle smallTitles' : 'literatureTitle'}>
               <h1>{decodeURIComponent(this.currentWork.title)}</h1>
               <h2>{this.author.fname} {this.author.lname}</h2>
             </div>

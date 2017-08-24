@@ -2,7 +2,6 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom';
 //import Lightbox from 'react-images';
 import historyService from 'Services/history.service';
-import ArtsDisplay from '../artsDisplay/artsDisplay.component';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
 import './artsArtist.component.less';
 
@@ -58,12 +57,6 @@ const ArtsArtist = (props) => {
       <div className="artistBio">{ artist.bio }</div>
       <ul className="imageGrid">{ getThumbs() }</ul>
       <BackToTop />
-      <Route path='/arts/:artist/:artwork' render={routeProps => (
-        <ArtsDisplay
-          imageList={getImages()}
-          store={props.store}
-          {...routeProps} />
-      )} />
     </div>
   );
 };

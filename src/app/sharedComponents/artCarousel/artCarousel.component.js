@@ -25,7 +25,10 @@ export default class ArtCarousel extends React.Component {
   getThumbs () {
     return this.props.currentArtist.content.map((item, index) => {
       return (
-        <li className="carouselThumb" id={item.fileName} key={item.fileName} aria-label={item.title}>
+        <li className="carouselThumb"
+          id={item.fileName}
+          key={item.fileName}
+          aria-label={item.title}>
           <Link
             to={`${item.fileName}`}
             title={item.title}

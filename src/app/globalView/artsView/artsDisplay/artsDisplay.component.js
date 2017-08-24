@@ -35,16 +35,15 @@ const ArtsDisplay = (props) => {
         onHide={hideModal.bind(this)}
         dialogClassName="custom-modal arts-modal">
         <Modal.Header closeButton>
-          <h1>Portitude Gallery</h1>
+          <h1>Portitude Gallery | {currentArtist.lname}</h1>
         </Modal.Header>
         <Modal.Body className="darkMode">
-          <h1 className="artsTitle">{currentImage.title}</h1>
+          <h1 className="artsTitle">{currentImage.title} &mdash; {currentImage.date}</h1>
           <div className="artsContent">
             {currentPosition > 0 && <Link to={currentArtist.content[prevPosition].fileName} className="thumbArrow thumbArrowLeft"><Glyphicon glyph="menu-left" /></Link>}
             <img src={`./content/artwork/${currentArtist.creatorKey}/${currentImage.fileName}.jpg`} className="artsDisplayImage" />
             {currentPosition < currentArtist.content.length - 1 && <Link to={currentArtist.content[nextPosition].fileName} className="thumbArrow thumbArrowRight"><Glyphicon glyph="menu-right" /></Link>}
           </div>
-
         </Modal.Body>
         <Modal.Footer>
           <ArtCarousel

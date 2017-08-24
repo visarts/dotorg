@@ -2,7 +2,6 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import { Glyphicon } from 'react-bootstrap';
 import historyService from 'Services/history.service';
-import LiteratureDisplay from '../literatureDisplay/literatureDisplay.component';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
 import ListLink from 'SharedComponents/listLink/listLink.component';
 import './literatureAuthor.component.less';
@@ -54,11 +53,6 @@ const LiteratureAuthor = (props) => {
         <div className="titlesFadeOut"></div>
         <BackToTop />
       </div>
-      <Route path='/literature/:author/:work' render={routeProps => (
-        <LiteratureDisplay
-          store={props.store}
-          {...routeProps} />
-      )} />
     </div>
   );
 }

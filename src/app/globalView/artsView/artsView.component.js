@@ -2,6 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import ArtsHome from './artsHome/artsHome.component';
 import ArtsArtist from './artsArtist/artsArtist.component';
+import ArtsDisplay from './artsDisplay/artsDisplay.component';
 
 const ArtsView = (props) => {
 
@@ -14,6 +15,11 @@ const ArtsView = (props) => {
       )} />
       <Route path='/arts/:artist' render={routeProps => (
         <ArtsArtist
+          store={props.store}
+          {...routeProps} />
+      )} />
+      <Route path='/arts/:artist/:artwork' render={routeProps => (
+        <ArtsDisplay
           store={props.store}
           {...routeProps} />
       )} />
