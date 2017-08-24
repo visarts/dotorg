@@ -40,9 +40,9 @@ const ArtsDisplay = (props) => {
         <Modal.Body className="darkMode">
           <h1 className="artsTitle">{currentImage.title}</h1>
           <div className="artsContent">
-            <Link to={currentArtist.content[prevPosition].fileName} className="thumbArrow thumbArrowLeft"><Glyphicon glyph="chevron-left" /></Link>
+            {currentPosition > 0 && <Link to={currentArtist.content[prevPosition].fileName} className="thumbArrow thumbArrowLeft"><Glyphicon glyph="menu-left" /></Link>}
             <img src={`./content/artwork/${currentArtist.creatorKey}/${currentImage.fileName}.jpg`} className="artsDisplayImage" />
-            <Link to={currentArtist.content[nextPosition].fileName} className="thumbArrow thumbArrowRight"><Glyphicon glyph="chevron-right" /></Link>
+            {currentPosition < currentArtist.content.length - 1 && <Link to={currentArtist.content[nextPosition].fileName} className="thumbArrow thumbArrowRight"><Glyphicon glyph="menu-right" /></Link>}
           </div>
 
         </Modal.Body>

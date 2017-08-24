@@ -21,19 +21,27 @@
         top: @headerHeight;
         bottom: @footerHeight;
 
+        &.darkMode {
+          background: @mainThemeColor;
+        }
+
         .artsTitle {
           padding-bottom: @hPadding;
         }
 
         .artsContent {
           position: relative;
-          text-align: center;
+          //text-align: center;
           display: flex;
           align-items: center;
           height: 60vh;
+          //background: @secondaryThemeColor;
 
           .artsDisplayImage {
+            //text-align: center;
+            margin: 0 auto;
             max-height: 60vh;
+            box-shadow: 5px 5px 15px @secondaryThemeColor;
           }
 
           .thumbArrow {
@@ -42,13 +50,13 @@
             align-items: center;
 
             cursor: pointer;
-            font-size: 1.3em;
-            opacity: .5;
+            font-size: 2em;
+            opacity: 0;
             padding: 5px;
             position: absolute;
             top: 0px;
             height: 100%;
-            width: 25px;
+            width: 35px;
             z-index: 1000;
             transition: all .2s;
 
@@ -64,9 +72,17 @@
               right: 0;
             }
 
-            &:hover {
-              opacity: 1;
-              background: rgba(50, 50, 50, .5);
+
+          }
+
+          &:hover {
+            .thumbArrow {
+              opacity: .4;
+
+              &:hover {
+                opacity: 1;
+                background: rgba(35, 35, 40, .5);
+              }
             }
           }
         }

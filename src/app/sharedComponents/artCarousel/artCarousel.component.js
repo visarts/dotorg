@@ -83,14 +83,14 @@ export default class ArtCarousel extends React.Component {
       <div className="artCarousel">
         {this.state.currentThumbPage !== 0 &&
         <a className="thumbArrow thumbArrowLeft" onClick={this.onLeftArrowClick}>
-          <Glyphicon glyph="chevron-left" />
+          <Glyphicon glyph="menu-left" />
         </a>}
         <ul className="imageGrid">
           {this.thumbPages[this.state.currentThumbPage].map(item => item)}
         </ul>
         {this.state.currentThumbPage !== this.thumbPages.length - 1 &&
         <a className="thumbArrow thumbArrowRight" onClick={this.onRightArrowClick}>
-          <Glyphicon glyph="chevron-right" />
+          <Glyphicon glyph="menu-right" />
         </a>}
       </div>
     );
