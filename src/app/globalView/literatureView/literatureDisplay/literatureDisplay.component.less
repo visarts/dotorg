@@ -42,12 +42,12 @@
         color: darken(@mainTextColor, 20%);
         //background: lighten(@tertiaryThemeColor, 10%);
         background: transparent;
-        border: 1px solid lighten(@tertiaryThemeColor, 10%);
+        border: 1px solid @activeBackgroundColor;
         border-radius: 4px;
         transition: background-color .2s;
 
         &:hover {
-          background-color: lighten(@tertiaryThemeColor, 20%);
+          background-color: @activeBackgroundColor;
         }
 
         &:active {
@@ -125,7 +125,7 @@
           display: inline-block;
 
           .textSizing {
-            border: 1px solid lighten(@tertiaryThemeColor, 10%);
+            border: 1px solid @activeBackgroundColor;
             display: inline-block;
             margin-right: 4px;
             //background: lighten(@tertiaryThemeColor, 10%);
