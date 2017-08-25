@@ -20,12 +20,20 @@ const LiteratureHome = (props) => {
     );
   });
 
+
   return (
     <div className="literatureHome">
       <h1>Welcome to the Portitude Library</h1>
       <h3>Classic literature lines the dusty shelves. Make yourself right at home.</h3>
       <LiteratureHistory />
       <ul className="authorsList">{authorsList}</ul>
+      <ul className="genresList">
+        <ListLink url={`literature/genres/shorts`} text="Short Stories" />
+        <ListLink url={`literature/genres/poetry`} text="Poetry" />
+        <ListLink url={`literature/genres/nonfiction`} text="Nonfiction" />
+        <ListLink url={`literature/genres/fables`} text="Fables" />
+        <ListLink url={`literature/genres/tales`} text="Tales" />
+      </ul>
     </div>
   )
 }

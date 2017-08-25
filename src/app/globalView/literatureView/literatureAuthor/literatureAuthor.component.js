@@ -17,19 +17,13 @@ const LiteratureAuthor = (props) => {
   };
 
   const getTitles = (author) => {
-    //let genres = [[], [], [], [], []];
     let genres = {
       shorts: [],
       poetry: [],
       nonfiction: [],
       fables: [],
       tales: []
-    }
-    // 0: shorts
-    // 1: poetry
-    // 2: nonfiction
-    // 3: fables
-    // 4: tales
+    };
     author.content.map((title, index) => {
       title.author = author;
       let titleLink = (<ListLink

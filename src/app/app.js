@@ -48,6 +48,7 @@ export default class App extends React.Component {
       add nationality to artists and authors, medium type to art, possible sub-genre's to lit
 
       add routing for art eras and lit genres
+          -- this creates complications with the store service setup. Will need to refactor
 
       Refactor set store to be more agnostic to allow for non-current creator/work related data
 
