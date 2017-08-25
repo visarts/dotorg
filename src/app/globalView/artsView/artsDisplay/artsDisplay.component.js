@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Modal, Glyphicon, DropdownButton, MenuItem } from 'react-bootstrap';
 import Lightbox from 'react-images';
 import dataService from 'Services/data.service';
+import eventService from 'Services/event.service';
 import ArtCarousel from 'SharedComponents/artCarousel/artCarousel.component';
 import './artsDisplay.component.less';
 
@@ -27,6 +28,25 @@ const ArtsDisplay = (props) => {
   const hideModal = () => {
     location.hash = `#/arts/${currentArtist.creatorKey}`;
   }
+
+  const leftSwipeHandler = () => {
+    let rightArrow = document.querySelector('.thumbArrowRight') ? document.querySelector('.thumbArrowRight') : document.querySelector('.artsDisplayImage');
+    rightArrow.click();
+
+  }
+  const rightSwipeHandler = () => {
+    let leftArrow = document.querySelector('.thumbArrowLeft') ? document.querySelector('.thumbArrowLeft') : document.querySelector('.artsDisplayImage');
+    leftArrow.click();
+
+  }
+
+  eventService.setSwipeActions({
+    node: '.artsContent',
+    leftSwipeHandler,
+    rightSwipeHandler,
+    isFirst: currentPosition > 0 ? false : true,
+    isLast: currentPosition < currentArtist.content.length - 1 ? false : true
+  });
 
   return (
     <div className="artsDisplay">
