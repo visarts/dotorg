@@ -22,7 +22,7 @@
         bottom: @footerHeight;
 
         &.darkMode {
-          background: @mainThemeColor;
+          background: @transparentThemeColor;
         }
 
         .artsTitle {
@@ -89,6 +89,10 @@
 
               &.thumbArrowRight:hover {
                 background: linear-gradient(to left, rgba(35, 35, 40, .75), rgba(35, 35, 40, 0));
+              }
+
+              &:active {
+                font-size: 1.8em;
               }
             }
           }

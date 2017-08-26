@@ -10,15 +10,18 @@ const LiteratureHome = (props) => {
 
   document.querySelector('body').scrollTop = 0;
 
-  const authorsList = props.store.authorsData.map((author, index) => {
-    author.content = dataService.getAuthorData(author.creatorKey).content;
-    return (
+  const authorsList = [];
+
+  for(let index in props.store2.authorsData) {
+    let author = props.store2.authorsData[index];
+    authorsList.push(
       <ListLink
-        key={author.creatorKey}
-        url={`literature/${author.creatorKey}`}
+        key={index}
+        url={`/literature/${index}`}
         text={`${author.fname} ${author.lname} (${author.content.length})`} />
     );
-  });
+  }
+
 
 
   return (

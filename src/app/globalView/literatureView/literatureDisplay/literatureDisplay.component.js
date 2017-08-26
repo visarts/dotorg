@@ -17,7 +17,6 @@ export default class LiteratureDisplay extends React.Component {
     super(props);
     const readingMode = localStorage.getItem('readingMode') ? localStorage.getItem('readingMode') : 'lightMode';
     const readingFontSize = localStorage.getItem('readingFontSize') ? localStorage.getItem('readingFontSize') : 'smFont';
-    this.props = props;
     localStorage.setItem('readingMode', readingMode);
     localStorage.setItem('readingFontSize', readingFontSize);
     this.state = {
@@ -31,14 +30,15 @@ export default class LiteratureDisplay extends React.Component {
     this.setValues = this.setValues.bind(this);
     this.setAuthorMenu = this.setAuthorMenu.bind(this);
     this.setValues();
-
   }
 
   setValues () {
-    this.author = this.props.store.currentCreator;
+    this.authorKey = this.props.match.params.author;
+    this.author = this.props.store2.authorsData[this.authorKey];
     this.currentWorkKey = this.props.match.params.work;
-    this.currentWork = this.props.store.currentWork;
-    dataService.getHTMLContent(this.author.creatorKey, this.currentWorkKey)
+    //this.currentWork = this.props.store.currentWork;
+    this.currentWork = this.author.content.filter(work => work.fileName === this.currentWorkKey)[0];
+    dataService.getHTMLContent(this.authorKey, this.currentWorkKey)
       .then((results) => {
         this.content = results;
         this.pages = [];
@@ -48,7 +48,7 @@ export default class LiteratureDisplay extends React.Component {
           do {
             let page = '';
             while (lastChar < this.content.length) {
-              if (this.content.substring(lastChar - 4, lastChar) === '</p>') {
+              if (this.content.substring(lastChar - 4, lastChar) === '</p>' || this.content.substring(lastChar - 6, lastChar) === '</pre>') {
                 break;
               } else {
                 lastChar++;
@@ -126,7 +126,7 @@ export default class LiteratureDisplay extends React.Component {
   setAuthorMenu (currentMenuPage) {
     return this.menuPages[currentMenuPage - 1].map((item, index) => {
       return (
-        <LinkContainer to={`/literature/${this.author.creatorKey}/${item.fileName}`} key={index}>
+        <LinkContainer to={`/literature/${this.authorKey}/${item.fileName}`} key={index}>
           <MenuItem eventKey={index} key={index}>{decodeURIComponent(item.title)}</MenuItem>
         </LinkContainer>
       );
@@ -146,7 +146,7 @@ export default class LiteratureDisplay extends React.Component {
   }
 
   hideModal () {
-    location.hash = `#/literature/${this.author.creatorKey}`;
+    location.hash = `#/literature/${this.authorKey}`;
   }
 
   setReadingMode () {

@@ -29,6 +29,20 @@ const getAuthorNames = () => {
   return namesData.authors;
 };
 
+const getAllAuthorsData = () => {
+  return axios.get('./data/allAuthors.json')
+    .then((results) => {
+      return results.data;
+    });
+}
+
+const getAllArtistsData = () => {
+  return axios.get('./data/allArtists.json')
+    .then((results) => {
+      return results.data;
+    });
+}
+
 const getHTMLContent = (creatorKey, currentWorkKey) => {
   return axios.get(`./content/literature/${creatorKey}/${currentWorkKey}.html`)
     .then((results) => {
@@ -43,6 +57,8 @@ const dataService = {
   getArtistData,
   getArtistsData,
   getArtistNames,
+  getAllAuthorsData,
+  getAllArtistsData,
   getHTMLContent
 }
 

@@ -5,9 +5,9 @@ import './globalHeader.component.less';
 
 const GlobalHeader = (props) => {
 
-  const smallLogoClass = !props.match.isExact ? 'smallLogo' : '';
+  const smallLogoClass = location.hash !== '#/' ? 'smallLogo' : '';
   const subHeader = props.store.currentSection === 'literature' ? 'library' : props.store.currentSection === 'arts' ? 'gallery' : '';
-  const subSubHeader = props.store.currentCreator ? `${props.store.currentCreator.lname.toLowerCase()}` : '';
+  const subSubHeader = props.store.currentCreator ? `${decodeURIComponent(props.store.currentCreator.lname.toLowerCase())}` : '';
 
   const sectionUrl = `/${props.store.currentSection}`;
   const creatorUrl = props.store.currentCreator ? `${sectionUrl}/${props.store.currentCreator.creatorKey}` : '';

@@ -12,10 +12,16 @@ export default class App extends React.Component {
 
   constructor (props) {
     super(props);
-    this.storeService = new StoreService(dataService);
+    this.data = this.props.data;
+    //this.storeService = new StoreService(dataService);
     this.updateStore = this.updateStore.bind(this);
     this.currentLocation = location.hash.slice(1);
-    this.state = this.storeService.getStore(this.currentLocation);
+    //this.state = this.storeService.getStore(this.currentLocation);
+    this.state = {
+      currentSection: '',
+      currentCreator: '',
+      currentWork: ''
+    };
   }
 
   updateStore (newStore) {
@@ -25,12 +31,12 @@ export default class App extends React.Component {
 
   // this will update when the route changes and set state and store with new params
   componentWillReceiveProps (nextProps) {
-    let updatedLocation = nextProps.location.pathname;
+    /*let updatedLocation = nextProps.location.pathname;
     if (this.currentLocation !== updatedLocation) {
       this.storeService.setStore(updatedLocation);
       this.currentLocation = updatedLocation;
       this.setState(this.storeService.getStore());
-    }
+    }*/
   }
 
   render () {
@@ -58,26 +64,24 @@ export default class App extends React.Component {
     */
 
     return (
-      <Route path="/" render={routeProps => (
-        <div className="app">
-          <GlobalHeader
-            store={this.state}
-            updateStore={this.updateStore}
-            {...routeProps} />
-          <GlobalNav
-            store={this.state}
-            updateStore={this.updateStore}
-            {...routeProps} />
+      <div className="app">
+        <GlobalHeader
+          store={this.state}
+          updateStore={this.updateStore} />
+        <GlobalNav
+          store={this.state}
+          updateStore={this.updateStore} />
+        <Route path="/" render={routeProps => (
           <GlobalView
             store={this.state}
+            store2={this.data}
             updateStore={this.updateStore}
             {...routeProps} />
-          <GlobalFooter
-            store={this.state}
-            updateStore={this.updateStore}
-            {...routeProps} />
-        </div>
-      )}/>
+        )}/>
+        <GlobalFooter
+          store={this.state}
+          updateStore={this.updateStore} />
+      </div>
     );
   }
 }

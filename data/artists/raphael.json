@@ -1,105 +1,110 @@
 {
-  "creatorKey": "raphael",
-  "content": [
-    {
-      "title": "Crucifixion",
-      "date": "1503",
-      "fileName": "raphael-crucifixion-1503"
-    },
-    {
-      "title": "Betrothal of the Virgin",
-      "date": "1504",
-      "fileName": "raphael-betrothal-of-the-virgin-1504"
-    },
-    {
-      "title": "Cowper Madonna",
-      "date": "1505",
-      "fileName": "raphael-cowper-madonna-1505"
-    },
-    {
-      "title": "St. George Fighting a Dragon",
-      "date": "1505",
-      "fileName": "raphael-st-george-fighting-a-dragon-1505"
-    },
-    {
-      "title": "Holy Family",
-      "date": "1506",
-      "fileName": "raphael-holy-family-1506"
-    },
-    {
-      "title": "Woman with Unicorn",
-      "date": "1506",
-      "fileName": "raphael-woman-with-unicorn-1506"
-    },
-    {
-      "title": "School of Athens",
-      "date": "1511",
-      "fileName": "raphael-school-of-athens-1511"
-    },
-    {
-      "title": "School of Athens (detail)",
-      "date": "1511",
-      "fileName": "raphael-school-of-athens-detail-1511"
-    },
-    {
-      "title": "Expulsion of Helidorus from the Temple",
-      "date": "1512",
-      "fileName": "raphael-expulsion-of-helidorus-from-the-temple-1512"
-    },
-    {
-      "title": "Isaiah",
-      "date": "1512",
-      "fileName": "raphael-isaiah-1512"
-    },
-    {
-      "title": "Julius II",
-      "date": "1512",
-      "fileName": "raphael-julius-ii-1512"
-    },
-    {
-      "title": "Madonna di Foligno",
-      "date": "1512",
-      "fileName": "raphael-madonna-di-foligno-1512"
-    },
-    {
-      "title": "Nymph Galeta",
-      "date": "1514",
-      "fileName": "raphael-nymph-galeta-1514"
-    },
-    {
-      "title": "Sistine Madonna",
-      "date": "1514",
-      "fileName": "raphael-sistine-madonna-1514"
-    },
-    {
-      "title": "Two Cherubs",
-      "date": "1514",
-      "fileName": "raphael-two-cherubs-1514"
-    },
-    {
-      "title": "Baldassare Castiglione",
-      "date": "1515",
-      "fileName": "raphael-baldassare-castiglione-1515"
-    },
-    {
-      "title": "Bindo Altoviti",
-      "date": "1515",
-      "fileName": "raphael-bindo-altoviti-1515"
-    },
-    {
-      "title": "Portrait of Artist with Friend",
-      "date": "1518",
-      "fileName": "raphael-portrait-of-artist-with-friend-1518"
-    },
-    {
-      "title": "St. Michael Trampling Satan",
-      "date": "1518",
-      "fileName": "raphael-st-michael-trampling-satan-1518"
-    },
-    {
-      "title": "Joanna of Aragon",
-      "date": "1518",
-      "fileName": "raphael-joanna-of-aragon-1518"
-    }
-  ]
+  "raphael": {
+    "fname": "",
+    "lname": "Raphael Sanzio da Urbino",
+    "bio": "Much has been said of Raphael which cannot be detailed here.",
+    "era": "Renaissance",
+    "content": [
+      {
+        "title": "Crucifixion",
+        "date": "1503",
+        "fileName": "raphael-crucifixion-1503"
+      },
+      {
+        "title": "Betrothal of the Virgin",
+        "date": "1504",
+        "fileName": "raphael-betrothal-of-the-virgin-1504"
+      },
+      {
+        "title": "Cowper Madonna",
+        "date": "1505",
+        "fileName": "raphael-cowper-madonna-1505"
+      },
+      {
+        "title": "St. George Fighting a Dragon",
+        "date": "1505",
+        "fileName": "raphael-st-george-fighting-a-dragon-1505"
+      },
+      {
+        "title": "Holy Family",
+        "date": "1506",
+        "fileName": "raphael-holy-family-1506"
+      },
+      {
+        "title": "Woman with Unicorn",
+        "date": "1506",
+        "fileName": "raphael-woman-with-unicorn-1506"
+      },
+      {
+        "title": "School of Athens",
+        "date": "1511",
+        "fileName": "raphael-school-of-athens-1511"
+      },
+      {
+        "title": "School of Athens (detail)",
+        "date": "1511",
+        "fileName": "raphael-school-of-athens-detail-1511"
+      },
+      {
+        "title": "Expulsion of Helidorus from the Temple",
+        "date": "1512",
+        "fileName": "raphael-expulsion-of-helidorus-from-the-temple-1512"
+      },
+      {
+        "title": "Isaiah",
+        "date": "1512",
+        "fileName": "raphael-isaiah-1512"
+      },
+      {
+        "title": "Julius II",
+        "date": "1512",
+        "fileName": "raphael-julius-ii-1512"
+      },
+      {
+        "title": "Madonna di Foligno",
+        "date": "1512",
+        "fileName": "raphael-madonna-di-foligno-1512"
+      },
+      {
+        "title": "Nymph Galeta",
+        "date": "1514",
+        "fileName": "raphael-nymph-galeta-1514"
+      },
+      {
+        "title": "Sistine Madonna",
+        "date": "1514",
+        "fileName": "raphael-sistine-madonna-1514"
+      },
+      {
+        "title": "Two Cherubs",
+        "date": "1514",
+        "fileName": "raphael-two-cherubs-1514"
+      },
+      {
+        "title": "Baldassare Castiglione",
+        "date": "1515",
+        "fileName": "raphael-baldassare-castiglione-1515"
+      },
+      {
+        "title": "Bindo Altoviti",
+        "date": "1515",
+        "fileName": "raphael-bindo-altoviti-1515"
+      },
+      {
+        "title": "Portrait of Artist with Friend",
+        "date": "1518",
+        "fileName": "raphael-portrait-of-artist-with-friend-1518"
+      },
+      {
+        "title": "St. Michael Trampling Satan",
+        "date": "1518",
+        "fileName": "raphael-st-michael-trampling-satan-1518"
+      },
+      {
+        "title": "Joanna of Aragon",
+        "date": "1518",
+        "fileName": "raphael-joanna-of-aragon-1518"
+      }
+    ]
+  }
 }

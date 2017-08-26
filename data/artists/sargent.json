@@ -1,105 +1,110 @@
 {
-  "creatorKey": "sargent",
-  "content": [
-    {
-      "title": "Seascape",
-      "date": "1875",
-      "fileName": "sargent-seascape-1875"
-    },
-    {
-      "title": "Nice",
-      "date": "1884",
-      "fileName": "sargent-nice-1884"
-    },
-    {
-      "title": "Home Fields",
-      "date": "1885",
-      "fileName": "sargent-home-fields-1885"
-    },
-    {
-      "title": "Poppies",
-      "date": "1886",
-      "fileName": "sargent-poppies-1886"
-    },
-    {
-      "title": "A Morning Walk",
-      "date": "1888",
-      "fileName": "sargent-morning-walk-1888"
-    },
-    {
-      "title": "By the River",
-      "date": "1888",
-      "fileName": "sargent-by-the-river-1888"
-    },
-    {
-      "title": "On the Canal",
-      "date": "1903",
-      "fileName": "sargent-on-the-canal-1903"
-    },
-    {
-      "title": "Black Tent",
-      "date": "1906",
-      "fileName": "sargent-black-tent-1906"
-    },
-    {
-      "title": "Hills of Galilee",
-      "date": "1906",
-      "fileName": "sargent-hills-of-galilee-1906"
-    },
-    {
-      "title": "A Hotel Room",
-      "date": "1907",
-      "fileName": "sargent-hotel-room-1907"
-    },
-    {
-      "title": "A Siesta",
-      "date": "1907",
-      "fileName": "sargent-siesta-1907"
-    },
-    {
-      "title": "Gourds",
-      "date": "1908",
-      "fileName": "sargent-gourds-1909"
-    },
-    {
-      "title": "Boy on a Rock",
-      "date": "1909",
-      "fileName": "sargent-boy-on-a-rock-1909"
-    },
-    {
-      "title": "Glacier Streams",
-      "date": "1909",
-      "fileName": "sargent-glacier-streams-1909"
-    },
-    {
-      "title": "A Waterfall",
-      "date": "1910",
-      "fileName": "sargent-waterfall-1910"
-    },
-    {
-      "title": "In the Alps",
-      "date": "1910",
-      "fileName": "sargent-in-the-alps-1910"
-    },
-    {
-      "title": "Oxen Resting",
-      "date": "1910",
-      "fileName": "sargent-oxen-resting-1910"
-    },
-    {
-      "title": "Magnolias",
-      "date": "1912",
-      "fileName": "sargent-magnolias-1912"
-    },
-    {
-      "title": "Girl Fishing",
-      "date": "1913",
-      "fileName": "sargent-girl-fishing-1913"
-    },
-    {
-      "title": "Palms",
-      "date": "1917",
-      "fileName": "sargent-palms-1917"
-    }
-  ]
+  "sargent": {
+    "fname": "John Singer",
+    "lname": "Sargent",
+    "bio": "Much has been said of Sargent which cannot be detailed here.",
+    "era": "Realism",
+    "content": [
+      {
+        "title": "Seascape",
+        "date": "1875",
+        "fileName": "sargent-seascape-1875"
+      },
+      {
+        "title": "Nice",
+        "date": "1884",
+        "fileName": "sargent-nice-1884"
+      },
+      {
+        "title": "Home Fields",
+        "date": "1885",
+        "fileName": "sargent-home-fields-1885"
+      },
+      {
+        "title": "Poppies",
+        "date": "1886",
+        "fileName": "sargent-poppies-1886"
+      },
+      {
+        "title": "A Morning Walk",
+        "date": "1888",
+        "fileName": "sargent-morning-walk-1888"
+      },
+      {
+        "title": "By the River",
+        "date": "1888",
+        "fileName": "sargent-by-the-river-1888"
+      },
+      {
+        "title": "On the Canal",
+        "date": "1903",
+        "fileName": "sargent-on-the-canal-1903"
+      },
+      {
+        "title": "Black Tent",
+        "date": "1906",
+        "fileName": "sargent-black-tent-1906"
+      },
+      {
+        "title": "Hills of Galilee",
+        "date": "1906",
+        "fileName": "sargent-hills-of-galilee-1906"
+      },
+      {
+        "title": "A Hotel Room",
+        "date": "1907",
+        "fileName": "sargent-hotel-room-1907"
+      },
+      {
+        "title": "A Siesta",
+        "date": "1907",
+        "fileName": "sargent-siesta-1907"
+      },
+      {
+        "title": "Gourds",
+        "date": "1908",
+        "fileName": "sargent-gourds-1909"
+      },
+      {
+        "title": "Boy on a Rock",
+        "date": "1909",
+        "fileName": "sargent-boy-on-a-rock-1909"
+      },
+      {
+        "title": "Glacier Streams",
+        "date": "1909",
+        "fileName": "sargent-glacier-streams-1909"
+      },
+      {
+        "title": "A Waterfall",
+        "date": "1910",
+        "fileName": "sargent-waterfall-1910"
+      },
+      {
+        "title": "In the Alps",
+        "date": "1910",
+        "fileName": "sargent-in-the-alps-1910"
+      },
+      {
+        "title": "Oxen Resting",
+        "date": "1910",
+        "fileName": "sargent-oxen-resting-1910"
+      },
+      {
+        "title": "Magnolias",
+        "date": "1912",
+        "fileName": "sargent-magnolias-1912"
+      },
+      {
+        "title": "Girl Fishing",
+        "date": "1913",
+        "fileName": "sargent-girl-fishing-1913"
+      },
+      {
+        "title": "Palms",
+        "date": "1917",
+        "fileName": "sargent-palms-1917"
+      }
+    ]
+  }
 }

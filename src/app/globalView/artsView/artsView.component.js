@@ -11,16 +11,19 @@ const ArtsView = (props) => {
       <Route exact path='/arts' render={routeProps => (
         <ArtsHome
           store={props.store}
+          store2={props.store2}
           {...routeProps} />
       )} />
       <Route path='/arts/:artist' render={routeProps => (
         <ArtsArtist
           store={props.store}
+          store2={props.store2}
           {...routeProps} />
       )} />
       <Route path='/arts/:artist/:artwork' render={routeProps => (
         <ArtsDisplay
           store={props.store}
+          store2={props.store2}
           {...routeProps} />
       )} />
     </div>

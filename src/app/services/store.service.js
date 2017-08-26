@@ -18,8 +18,8 @@ export default class StoreService {
     let params = updatedLocation.slice(1).split('/');
     const mappedParams = {
       currentSection: params[0] || '',
-      currentCreator: params[1] ? params[1] : '',
-      currentWork: params[2] ? params[2] : ''
+      currentCreator: params[1] && params[1] !== 'genres' ? params[1] : '',
+      currentWork: params[2] && params[1] !== 'genres' ? params[2] : ''
     }
     return mappedParams;
   }

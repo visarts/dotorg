@@ -11,7 +11,7 @@ export default class ArtCarousel extends React.Component {
     this.getCurrentThumbPage = this.getCurrentThumbPage.bind(this);
     this.state = {
       currentThumbPage: this.getCurrentThumbPage(this.props.currentPosition),
-      currentImage: this.props.currentImage
+      currentArtwork: this.props.currentArtwork
     };
     this.getThumbPages = this.getThumbPages.bind(this);
     this.thumbPages = this.getThumbPages();
@@ -23,7 +23,7 @@ export default class ArtCarousel extends React.Component {
   }
 
   getThumbs () {
-    return this.props.currentArtist.content.map((item, index) => {
+    return this.props.artist.content.map((item, index) => {
       return (
         <li className="carouselThumb"
           id={item.fileName}
@@ -34,7 +34,7 @@ export default class ArtCarousel extends React.Component {
             title={item.title}
             key={item.fileName}>
             <img
-              src={`./content/artwork/${this.props.currentArtist.creatorKey}/${item.fileName}_sm.jpg`}
+              src={`./content/artwork/${this.props.artistKey}/${item.fileName}_sm.jpg`}
               alt={item.title} />
           </Link>
         </li>
@@ -70,13 +70,13 @@ export default class ArtCarousel extends React.Component {
   }
 
   componentWillReceiveProps (nextProps) {
-    if (nextProps.match.params.work !== this.props.currentImage.fileName) {
-      if (document.querySelector(`#${this.props.currentImage.fileName}`)) {
-        document.querySelector(`#${this.props.currentImage.fileName}`).classList.remove('selectedThumb');
+    if (nextProps.match.params.work !== this.props.currentArtwork.fileName) {
+      if (document.querySelector(`#${this.props.currentArtwork.fileName}`)) {
+        document.querySelector(`#${this.props.currentArtwork.fileName}`).classList.remove('selectedThumb');
 
       }
-      this.setState({currentThumbPage: this.getCurrentThumbPage(nextProps.currentPosition), currentImage: nextProps.currentImage}, () => {
-        document.querySelector(`#${nextProps.currentImage.fileName}`).classList.add('selectedThumb');
+      this.setState({currentThumbPage: this.getCurrentThumbPage(nextProps.currentPosition), currentArtwork: nextProps.currentArtwork}, () => {
+        document.querySelector(`#${nextProps.currentArtwork.fileName}`).classList.add('selectedThumb');
       });
     }
   }

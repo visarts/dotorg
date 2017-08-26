@@ -1,105 +1,110 @@
 {
-  "creatorKey": "gaugin",
-  "content": [
-    {
-      "title": "A Clearing",
-      "date": "1874",
-      "fileName": "gaugin-clearing-1874"
-    },
-    {
-      "title": "Blue Barge",
-      "date": "1882",
-      "fileName": "gaugin-blue-barge-1882"
-    },
-    {
-      "title": "Basket of Flowers",
-      "date": "1884",
-      "fileName": "gaugin-basket-of-flowers-1884"
-    },
-    {
-      "title": "Bare Trees",
-      "date": "1885",
-      "fileName": "gaugin-bare-trees-1885"
-    },
-    {
-      "title": "Boy by the Water",
-      "date": "1885",
-      "fileName": "gaugin-boy-by-the-water-1885"
-    },
-    {
-      "title": "Lilac Bouquet",
-      "date": "1885",
-      "fileName": "gaugin-lilac-bouquet-1885"
-    },
-    {
-      "title": "Rocky Coast",
-      "date": "1886",
-      "fileName": "gaugin-rocky-coast-1886"
-    },
-    {
-      "title": "By the Seashore",
-      "date": "1887",
-      "fileName": "gaugin-by-the-seashore-1887"
-    },
-    {
-      "title": "Huts Under the Trees",
-      "date": "1887",
-      "fileName": "gaugin-huts-under-the-trees-1887"
-    },
-    {
-      "title": "Apples and Bowl",
-      "date": "1888",
-      "fileName": "gaugin-apples-and-bowl-1888"
-    },
-    {
-      "title": "Blue Trees",
-      "date": "1888",
-      "fileName": "gaugin-blue-trees-1888"
-    },
-    {
-      "title": "Haymaking",
-      "date": "1888",
-      "fileName": "gaugin-haymaking-1888"
-    },
-    {
-      "title": "Madame Roulin",
-      "date": "1888",
-      "fileName": "gaugin-madame-roulin-1888"
-    },
-    {
-      "title": "Night Cafe at Arles",
-      "date": "1888",
-      "fileName": "gaugin-night-cafe-at-arles-1888"
-    },
-    {
-      "title": "Among the Lillies",
-      "date": "1889",
-      "fileName": "gaugin-among-the-lillies-1889"
-    },
-    {
-      "title": "Flutist on the Cliffs",
-      "date": "1889",
-      "fileName": "gaugin-flutist-on-the-cliffs-1889"
-    },
-    {
-      "title": "Still Life with Fan",
-      "date": "1889",
-      "fileName": "gaugin-still-life-with-fan-1889"
-    },
-    {
-      "title": "Tahitian Woman Bathing",
-      "date": "1892",
-      "fileName": "gaugin-tahitian-woman-bathing-1892"
-    },
-    {
-      "title": "Farm in Brittany",
-      "date": "1894",
-      "fileName": "gaugin-farm-in-brittany-1894"
-    },
-    {
-      "title": "Tahitian Landscape",
-      "date": "1897",
-      "fileName": "gaugin-tahitian-landscape-1897"
-    }
-  ]
+  "gaugin": {
+    "fname": "Paul",
+    "lname": "Gaugin",
+    "bio": "Much has been said of Gaugin which cannot be detailed here.",
+    "era": "Post-Impressionism",
+    "content": [
+      {
+        "title": "A Clearing",
+        "date": "1874",
+        "fileName": "gaugin-clearing-1874"
+      },
+      {
+        "title": "Blue Barge",
+        "date": "1882",
+        "fileName": "gaugin-blue-barge-1882"
+      },
+      {
+        "title": "Basket of Flowers",
+        "date": "1884",
+        "fileName": "gaugin-basket-of-flowers-1884"
+      },
+      {
+        "title": "Bare Trees",
+        "date": "1885",
+        "fileName": "gaugin-bare-trees-1885"
+      },
+      {
+        "title": "Boy by the Water",
+        "date": "1885",
+        "fileName": "gaugin-boy-by-the-water-1885"
+      },
+      {
+        "title": "Lilac Bouquet",
+        "date": "1885",
+        "fileName": "gaugin-lilac-bouquet-1885"
+      },
+      {
+        "title": "Rocky Coast",
+        "date": "1886",
+        "fileName": "gaugin-rocky-coast-1886"
+      },
+      {
+        "title": "By the Seashore",
+        "date": "1887",
+        "fileName": "gaugin-by-the-seashore-1887"
+      },
+      {
+        "title": "Huts Under the Trees",
+        "date": "1887",
+        "fileName": "gaugin-huts-under-the-trees-1887"
+      },
+      {
+        "title": "Apples and Bowl",
+        "date": "1888",
+        "fileName": "gaugin-apples-and-bowl-1888"
+      },
+      {
+        "title": "Blue Trees",
+        "date": "1888",
+        "fileName": "gaugin-blue-trees-1888"
+      },
+      {
+        "title": "Haymaking",
+        "date": "1888",
+        "fileName": "gaugin-haymaking-1888"
+      },
+      {
+        "title": "Madame Roulin",
+        "date": "1888",
+        "fileName": "gaugin-madame-roulin-1888"
+      },
+      {
+        "title": "Night Cafe at Arles",
+        "date": "1888",
+        "fileName": "gaugin-night-cafe-at-arles-1888"
+      },
+      {
+        "title": "Among the Lillies",
+        "date": "1889",
+        "fileName": "gaugin-among-the-lillies-1889"
+      },
+      {
+        "title": "Flutist on the Cliffs",
+        "date": "1889",
+        "fileName": "gaugin-flutist-on-the-cliffs-1889"
+      },
+      {
+        "title": "Still Life with Fan",
+        "date": "1889",
+        "fileName": "gaugin-still-life-with-fan-1889"
+      },
+      {
+        "title": "Tahitian Woman Bathing",
+        "date": "1892",
+        "fileName": "gaugin-tahitian-woman-bathing-1892"
+      },
+      {
+        "title": "Farm in Brittany",
+        "date": "1894",
+        "fileName": "gaugin-farm-in-brittany-1894"
+      },
+      {
+        "title": "Tahitian Landscape",
+        "date": "1897",
+        "fileName": "gaugin-tahitian-landscape-1897"
+      }
+    ]
+  }
 }

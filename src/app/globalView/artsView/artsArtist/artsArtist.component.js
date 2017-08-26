@@ -9,9 +9,10 @@ import './artsArtist.component.less';
 const ArtsArtist = (props) => {
 
   document.querySelector('body').scrollTop = 0;
-  const artist = props.store.currentCreator;
+  const artistKey = props.match.params.artist;
+  const artist = props.store2.artistsData[artistKey];
 
-  const getImages = () => {
+  /*const getImages = () => {
     const imageList = [];
     artist.content.map((item, index) => {
       imageList.push({
@@ -23,20 +24,20 @@ const ArtsArtist = (props) => {
       return;
     });
     return imageList;
-  };
+  };*/
 
   const getThumbs = () => {
     return artist.content.map((item, index) => {
-      item.artist = artist;
+      //item.artist = artist;
       //item.index = index;
       return (
         <li className="thumbnail" key={item.fileName}>
           <Link
-            to={`${artist.creatorKey}/${item.fileName}`}
+            to={`${artistKey}/${item.fileName}`}
             title={item.title}
             key={item.fileName}>
             <img
-              src={`./content/artwork/${artist.creatorKey}/${item.fileName}_sm.jpg`}
+              src={`./content/artwork/${artistKey}/${item.fileName}_sm.jpg`}
               alt={item.title} />
             <span>{item.title}</span>
           </Link>

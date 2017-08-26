@@ -1,45 +1,50 @@
 {
-  "creatorKey": "okeeffe",
-  "content": [
-    {
-      "title": "Blue and Green Music",
-      "date": "1919",
-      "fileName": "okeeffe-blue-and-green-music-1919"
-    },
-    {
-      "title": "Black Iris",
-      "date": "1927",
-      "fileName": "okeeffe-black-iris-1927"
-    },
-    {
-      "title": "Tan Clam with Seaweed",
-      "date": "1926",
-      "fileName": "okeeffe-tan-clam-with-seaweed-1926"
-    },
-    {
-      "title": "Oriental Poppies",
-      "date": "1926",
-      "fileName": "okeeffe-oriental-poppies-1926"
-    },
-    {
-      "title": "Mountain in New Mexico",
-      "date": "1931",
-      "fileName": "okeeffe-mountain-in-new-mexico-1931"
-    },
-    {
-      "title": "Broken Shell",
-      "date": "1937",
-      "fileName": "okeeffe-broken-shell-1937"
-    },
-    {
-      "title": "Clam and Mussel",
-      "date": "1938",
-      "fileName": "okeeffe-clam-and-mussel-1938"
-    },
-    {
-      "title": "Red Hill and White Shell",
-      "date": "1938",
-      "fileName": "okeeffe-red-hill-and-white-shell-1938"
-    }
-  ]
+  "okeeffe": {
+    "fname": "Georgia",
+    "lname": "O'Keeffe",
+    "bio": "Much has been said of O'Keeffe which cannot be detailed here.",
+    "era": "Modernism",
+    "content": [
+      {
+        "title": "Blue and Green Music",
+        "date": "1919",
+        "fileName": "okeeffe-blue-and-green-music-1919"
+      },
+      {
+        "title": "Black Iris",
+        "date": "1927",
+        "fileName": "okeeffe-black-iris-1927"
+      },
+      {
+        "title": "Tan Clam with Seaweed",
+        "date": "1926",
+        "fileName": "okeeffe-tan-clam-with-seaweed-1926"
+      },
+      {
+        "title": "Oriental Poppies",
+        "date": "1926",
+        "fileName": "okeeffe-oriental-poppies-1926"
+      },
+      {
+        "title": "Mountain in New Mexico",
+        "date": "1931",
+        "fileName": "okeeffe-mountain-in-new-mexico-1931"
+      },
+      {
+        "title": "Broken Shell",
+        "date": "1937",
+        "fileName": "okeeffe-broken-shell-1937"
+      },
+      {
+        "title": "Clam and Mussel",
+        "date": "1938",
+        "fileName": "okeeffe-clam-and-mussel-1938"
+      },
+      {
+        "title": "Red Hill and White Shell",
+        "date": "1938",
+        "fileName": "okeeffe-red-hill-and-white-shell-1938"
+      }
+    ]
+  }
 }

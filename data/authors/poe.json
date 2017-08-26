@@ -1,347 +1,351 @@
 {
-  "creatorKey": "poe",
-  "content": [
-    {
-      "title": "Alone",
-      "date": "1829",
-      "fileName": "poe-alone-1829",
-      "genre": "poetry"
-    },
-    {
-      "title": "The Angel of the Odd",
-      "date": "1844",
-      "fileName": "poe-angel-of-the-odd-1844",
-      "genre": "shorts"
-    },
-    {
-      "title": "Annabel Lee",
-      "date": "1849",
-      "fileName": "poe-annabel-lee-1849",
-      "genre": "poetry"
-    },
-    {
-      "title": "The Bells",
-      "date": "1849",
-      "fileName": "poe-bells-1849",
-      "genre": "poetry"
-    },
-    {
-      "title": "Berenice",
-      "date": "1835",
-      "fileName": "poe-berenice-1835",
-      "genre": "shorts"
-    },
-    {
-      "title": "The Black Cat",
-      "date": "1843",
-      "fileName": "poe-black-cat-1843",
-      "genre": "shorts"
-    },
-    {
-      "title": "Bon-Bon",
-      "date": "1832",
-      "fileName": "poe-bon-bon-1832",
-      "genre": "shorts"
-    },
-    {
-      "title": "Bridal Ballad",
-      "date": "1837",
-      "fileName": "poe-bridal-ballad-1837",
-      "genre": "poetry"
-    },
-    {
-      "title": "The Cask of Amontillado",
-      "date": "1846",
-      "fileName": "poe-cask-of-amontillado-1846",
-      "genre": "shorts"
-    },
-    {
-      "title": "The City in the Sea",
-      "date": "1831",
-      "fileName": "poe-city-in-the-sea-1831",
-      "genre": "poetry"
-    },
-    {
-      "title": "The Coliseum",
-      "date": "1833",
-      "fileName": "poe-coliseum-1833",
-      "genre": "poetry"
-    },
-    {
-      "title": "A Descent into the Maelström",
-      "date": "1841",
-      "fileName": "poe-descent-into-the-maelstrom-1841",
-      "genre": "shorts"
-    },
-    {
-      "title": "The Devil in the Belfry",
-      "date": "1839",
-      "fileName": "poe-devil-in-the-belfry-1839",
-      "genre": "shorts"
-    },
-    {
-      "title": "Diddling",
-      "date": "1843",
-      "fileName": "poe-diddling-1843",
-      "genre": "shorts"
-    },
-    {
-      "title": "A Dream",
-      "date": "1827",
-      "fileName": "poe-dream-1827",
-      "genre": "poetry"
-    },
-    {
-      "title": "A Dream Within a Dream",
-      "date": "1849",
-      "fileName": "poe-dream-within-a-dream-1849",
-      "genre": "poetry"
-    },
-    {
-      "title": "Eldorado",
-      "date": "1849",
-      "fileName": "poe-eldorado-1849",
-      "genre": "poetry"
-    },
-    {
-      "title": "Eleonora",
-      "date": "1841",
-      "fileName": "poe-eleonora-1841",
-      "genre": "shorts"
-    },
-    {
-      "title": "Evening Star",
-      "date": "1827",
-      "fileName": "poe-evening-star-1827",
-      "genre": "poetry"
-    },
-    {
-      "title": "Fairy-Land",
-      "date": "1829",
-      "fileName": "poe-fairy-land-1829",
-      "genre": "poetry"
-    },
-    {
-      "title": "The Fall of the House of Usher",
-      "date": "1839",
-      "fileName": "poe-fall-of-the-house-of-usher-1839",
-      "genre": "shorts"
-    },
-    {
-      "title": "For Annie",
-      "date": "1849",
-      "fileName": "poe-for-annie-1849",
-      "genre": "poetry"
-    },
-    {
-      "title": "The Haunted Palace",
-      "date": "1839",
-      "fileName": "poe-haunted-palace-1839",
-      "genre": "poetry"
-    },
-    {
-      "title": "Hop-Frog",
-      "date": "1849",
-      "fileName": "poe-hop-frog-1849",
-      "genre": "shorts"
-    },
-    {
-      "title": "Hymn",
-      "date": "1849",
-      "fileName": "poe-hymn-1849",
-      "genre": "poetry"
-    },
-    {
-      "title": "The Island of the Fay",
-      "date": "1841",
-      "fileName": "poe-island-of-the-fay-1841",
-      "genre": "shorts"
-    },
-    {
-      "title": "King Pest",
-      "date": "1835",
-      "fileName": "poe-king-pest-1835",
-      "genre": "shorts"
-    },
-    {
-      "title": "Lenore",
-      "date": "1843",
-      "fileName": "poe-lenore-1843",
-      "genre": "poetry"
-    },
-    {
-      "title": "Ligeria",
-      "date": "1838",
-      "fileName": "poe-ligeria-1838",
-      "genre": "shorts"
-    },
-    {
-      "title": "The Masque of the Red Death",
-      "date": "1842",
-      "fileName": "poe-masque-of-the-red-death-1842",
-      "genre": "shorts"
-    },
-    {
-      "title": "Metzengerstein",
-      "date": "1832",
-      "fileName": "poe-metzengerstein-1832",
-      "genre": "short"
-    },
-    {
-      "title": "The Murders in the Rue Morgue",
-      "date": "1841",
-      "fileName": "poe-murders-in-the-rue-morgue-1841",
-      "genre": "shorts"
-    },
-    {
-      "title": "Never Bet the Devil Your Head",
-      "date": "1841",
-      "fileName": "poe-never-bet-the-devil-your-head-1841",
-      "genre": "shorts"
-    },
-    {
-      "title": "The Oblong Box",
-      "date": "1844",
-      "fileName": "poe-oblong-box-1844",
-      "genre": "shorts"
-    },
-    {
-      "title": "The Pit and the Pendulum",
-      "date": "1844",
-      "fileName": "poe-pit-and-the-pendulum-1844",
-      "genre": "shorts"
-    },
-    {
-      "title": "A Predicament",
-      "date": "1838",
-      "fileName": "poe-predicament-1838",
-      "genre": "shorts"
-    },
-    {
-      "title": "The Premature Burial",
-      "date": "1844",
-      "fileName": "poe-premature-burial-1844",
-      "genre": "shorts"
-    },
-    {
-      "title": "The Purloined Letter",
-      "date": "1844",
-      "fileName": "poe-purloined-letter-1844",
-      "genre": "shorts"
-    },
-    {
-      "title": "The Raven",
-      "date": "1845",
-      "fileName": "poe-raven-1845",
-      "genre": "poetry"
-    },
-    {
-      "title": "Romance",
-      "date": "1829",
-      "fileName": "poe-romance-1829",
-      "genre": "poetry"
-    },
-    {
-      "title": "Serenade",
-      "date": "1833",
-      "fileName": "poe-serenade-1833",
-      "genre": "poetry"
-    },
-    {
-      "title": "Silence -- a Fable",
-      "date": "1838",
-      "fileName": "poe-silence-a-fable-1838",
-      "genre": "shorts"
-    },
-    {
-      "title": "The Sleeper",
-      "date": "1831",
-      "fileName": "poe-sleeper-1831",
-      "genre": "poetry"
-    },
-    {
-      "title": "Song",
-      "date": "1827",
-      "fileName": "poe-song-1827",
-      "genre": "poetry"
-    },
-    {
-      "title": "The Spectacles",
-      "date": "1844",
-      "fileName": "poe-spectacles-1844",
-      "genre": "shorts"
-    },
-    {
-      "title": "The Sphinx",
-      "date": "1846",
-      "fileName": "poe-sphinx-1846",
-      "genre": "shorts"
-    },
-    {
-      "title": "Spirits of the Dead",
-      "date": "1827",
-      "fileName": "poe-spirits-of-the-dead-1827",
-      "genre": "poetry"
-    },
-    {
-      "title": "Tamerlane",
-      "date": "1827",
-      "fileName": "poe-tamerlane-1827",
-      "genre": "poetry"
-    },
-    {
-      "title": "The Tell Tale Heart",
-      "date": "1843",
-      "fileName": "poe-tell-tale-heart-1843",
-      "genre": "shorts"
-    },
-    {
-      "title": "Thou Art the Man",
-      "date": "1844",
-      "fileName": "poe-thou-art-the-man-1844",
-      "genre": "shorts"
-    },
-    {
-      "title": "Three Sundays in a Week",
-      "date": "1841",
-      "fileName": "poe-three-sundays-in-a-week-1841",
-      "genre": "shorts"
-    },
-    {
-      "title": "To Helen",
-      "date": "1831",
-      "fileName": "poe-to-helen-1831",
-      "genre": "poetry"
-    },
-    {
-      "title": "To My Mother",
-      "date": "1849",
-      "fileName": "poe-to-my-mother-1849",
-      "genre": "poetry"
-    },
-    {
-      "title": "A Valentine",
-      "date": "1846",
-      "fileName": "poe-valentine-1846",
-      "genre": "poetry"
-    },
-    {
-      "title": "The Valley of Unrest",
-      "date": "1831",
-      "fileName": "poe-valley-of-unrest-1831",
-      "genre": "poetry"
-    },
-    {
-      "title": "Von Kempelen and his Discovery",
-      "date": "1849",
-      "fileName": "poe-von-kempelen-and-his-discovery-1849",
-      "genre": "shorts"
-    },
-    {
-      "title": "William Wilson",
-      "date": "1839",
-      "fileName": "poe-william-wilson-1839",
-      "genre": "shorts"
-    }
-  ]
+  "poe": {
+    "fname": "Edgar Allan",
+    "lname": "Poe",
+    "bio": "Much has been said of Mr. Poe which cannot be detailed here.",
+    "content": [
+      {
+        "title": "Alone",
+        "date": "1829",
+        "fileName": "poe-alone-1829",
+        "genre": "poetry"
+      },
+      {
+        "title": "The Angel of the Odd",
+        "date": "1844",
+        "fileName": "poe-angel-of-the-odd-1844",
+        "genre": "shorts"
+      },
+      {
+        "title": "Annabel Lee",
+        "date": "1849",
+        "fileName": "poe-annabel-lee-1849",
+        "genre": "poetry"
+      },
+      {
+        "title": "The Bells",
+        "date": "1849",
+        "fileName": "poe-bells-1849",
+        "genre": "poetry"
+      },
+      {
+        "title": "Berenice",
+        "date": "1835",
+        "fileName": "poe-berenice-1835",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Black Cat",
+        "date": "1843",
+        "fileName": "poe-black-cat-1843",
+        "genre": "shorts"
+      },
+      {
+        "title": "Bon-Bon",
+        "date": "1832",
+        "fileName": "poe-bon-bon-1832",
+        "genre": "shorts"
+      },
+      {
+        "title": "Bridal Ballad",
+        "date": "1837",
+        "fileName": "poe-bridal-ballad-1837",
+        "genre": "poetry"
+      },
+      {
+        "title": "The Cask of Amontillado",
+        "date": "1846",
+        "fileName": "poe-cask-of-amontillado-1846",
+        "genre": "shorts"
+      },
+      {
+        "title": "The City in the Sea",
+        "date": "1831",
+        "fileName": "poe-city-in-the-sea-1831",
+        "genre": "poetry"
+      },
+      {
+        "title": "The Coliseum",
+        "date": "1833",
+        "fileName": "poe-coliseum-1833",
+        "genre": "poetry"
+      },
+      {
+        "title": "A Descent into the Maelström",
+        "date": "1841",
+        "fileName": "poe-descent-into-the-maelstrom-1841",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Devil in the Belfry",
+        "date": "1839",
+        "fileName": "poe-devil-in-the-belfry-1839",
+        "genre": "shorts"
+      },
+      {
+        "title": "Diddling",
+        "date": "1843",
+        "fileName": "poe-diddling-1843",
+        "genre": "shorts"
+      },
+      {
+        "title": "A Dream",
+        "date": "1827",
+        "fileName": "poe-dream-1827",
+        "genre": "poetry"
+      },
+      {
+        "title": "A Dream Within a Dream",
+        "date": "1849",
+        "fileName": "poe-dream-within-a-dream-1849",
+        "genre": "poetry"
+      },
+      {
+        "title": "Eldorado",
+        "date": "1849",
+        "fileName": "poe-eldorado-1849",
+        "genre": "poetry"
+      },
+      {
+        "title": "Eleonora",
+        "date": "1841",
+        "fileName": "poe-eleonora-1841",
+        "genre": "shorts"
+      },
+      {
+        "title": "Evening Star",
+        "date": "1827",
+        "fileName": "poe-evening-star-1827",
+        "genre": "poetry"
+      },
+      {
+        "title": "Fairy-Land",
+        "date": "1829",
+        "fileName": "poe-fairy-land-1829",
+        "genre": "poetry"
+      },
+      {
+        "title": "The Fall of the House of Usher",
+        "date": "1839",
+        "fileName": "poe-fall-of-the-house-of-usher-1839",
+        "genre": "shorts"
+      },
+      {
+        "title": "For Annie",
+        "date": "1849",
+        "fileName": "poe-for-annie-1849",
+        "genre": "poetry"
+      },
+      {
+        "title": "The Haunted Palace",
+        "date": "1839",
+        "fileName": "poe-haunted-palace-1839",
+        "genre": "poetry"
+      },
+      {
+        "title": "Hop-Frog",
+        "date": "1849",
+        "fileName": "poe-hop-frog-1849",
+        "genre": "shorts"
+      },
+      {
+        "title": "Hymn",
+        "date": "1849",
+        "fileName": "poe-hymn-1849",
+        "genre": "poetry"
+      },
+      {
+        "title": "The Island of the Fay",
+        "date": "1841",
+        "fileName": "poe-island-of-the-fay-1841",
+        "genre": "shorts"
+      },
+      {
+        "title": "King Pest",
+        "date": "1835",
+        "fileName": "poe-king-pest-1835",
+        "genre": "shorts"
+      },
+      {
+        "title": "Lenore",
+        "date": "1843",
+        "fileName": "poe-lenore-1843",
+        "genre": "poetry"
+      },
+      {
+        "title": "Ligeria",
+        "date": "1838",
+        "fileName": "poe-ligeria-1838",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Masque of the Red Death",
+        "date": "1842",
+        "fileName": "poe-masque-of-the-red-death-1842",
+        "genre": "shorts"
+      },
+      {
+        "title": "Metzengerstein",
+        "date": "1832",
+        "fileName": "poe-metzengerstein-1832",
+        "genre": "short"
+      },
+      {
+        "title": "The Murders in the Rue Morgue",
+        "date": "1841",
+        "fileName": "poe-murders-in-the-rue-morgue-1841",
+        "genre": "shorts"
+      },
+      {
+        "title": "Never Bet the Devil Your Head",
+        "date": "1841",
+        "fileName": "poe-never-bet-the-devil-your-head-1841",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Oblong Box",
+        "date": "1844",
+        "fileName": "poe-oblong-box-1844",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Pit and the Pendulum",
+        "date": "1844",
+        "fileName": "poe-pit-and-the-pendulum-1844",
+        "genre": "shorts"
+      },
+      {
+        "title": "A Predicament",
+        "date": "1838",
+        "fileName": "poe-predicament-1838",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Premature Burial",
+        "date": "1844",
+        "fileName": "poe-premature-burial-1844",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Purloined Letter",
+        "date": "1844",
+        "fileName": "poe-purloined-letter-1844",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Raven",
+        "date": "1845",
+        "fileName": "poe-raven-1845",
+        "genre": "poetry"
+      },
+      {
+        "title": "Romance",
+        "date": "1829",
+        "fileName": "poe-romance-1829",
+        "genre": "poetry"
+      },
+      {
+        "title": "Serenade",
+        "date": "1833",
+        "fileName": "poe-serenade-1833",
+        "genre": "poetry"
+      },
+      {
+        "title": "Silence -- a Fable",
+        "date": "1838",
+        "fileName": "poe-silence-a-fable-1838",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Sleeper",
+        "date": "1831",
+        "fileName": "poe-sleeper-1831",
+        "genre": "poetry"
+      },
+      {
+        "title": "Song",
+        "date": "1827",
+        "fileName": "poe-song-1827",
+        "genre": "poetry"
+      },
+      {
+        "title": "The Spectacles",
+        "date": "1844",
+        "fileName": "poe-spectacles-1844",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Sphinx",
+        "date": "1846",
+        "fileName": "poe-sphinx-1846",
+        "genre": "shorts"
+      },
+      {
+        "title": "Spirits of the Dead",
+        "date": "1827",
+        "fileName": "poe-spirits-of-the-dead-1827",
+        "genre": "poetry"
+      },
+      {
+        "title": "Tamerlane",
+        "date": "1827",
+        "fileName": "poe-tamerlane-1827",
+        "genre": "poetry"
+      },
+      {
+        "title": "The Tell Tale Heart",
+        "date": "1843",
+        "fileName": "poe-tell-tale-heart-1843",
+        "genre": "shorts"
+      },
+      {
+        "title": "Thou Art the Man",
+        "date": "1844",
+        "fileName": "poe-thou-art-the-man-1844",
+        "genre": "shorts"
+      },
+      {
+        "title": "Three Sundays in a Week",
+        "date": "1841",
+        "fileName": "poe-three-sundays-in-a-week-1841",
+        "genre": "shorts"
+      },
+      {
+        "title": "To Helen",
+        "date": "1831",
+        "fileName": "poe-to-helen-1831",
+        "genre": "poetry"
+      },
+      {
+        "title": "To My Mother",
+        "date": "1849",
+        "fileName": "poe-to-my-mother-1849",
+        "genre": "poetry"
+      },
+      {
+        "title": "A Valentine",
+        "date": "1846",
+        "fileName": "poe-valentine-1846",
+        "genre": "poetry"
+      },
+      {
+        "title": "The Valley of Unrest",
+        "date": "1831",
+        "fileName": "poe-valley-of-unrest-1831",
+        "genre": "poetry"
+      },
+      {
+        "title": "Von Kempelen and his Discovery",
+        "date": "1849",
+        "fileName": "poe-von-kempelen-and-his-discovery-1849",
+        "genre": "shorts"
+      },
+      {
+        "title": "William Wilson",
+        "date": "1839",
+        "fileName": "poe-william-wilson-1839",
+        "genre": "shorts"
+      }
+    ]
+  }
 }

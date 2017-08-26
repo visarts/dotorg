@@ -5,9 +5,9 @@ import './globalNav.component.less';
 
 const GlobalNav = (props) => {
 
-  const litSelected = props.location.pathname.includes('/literature') ? 'selected' : 'unselected';
-  const artSelected = props.location.pathname.includes('/arts') ? 'selected' : 'unselected';
-  const hideDesc = props.location.pathname === '/' ? '' : 'hideDesc';
+  const litSelected = location.hash.includes('/literature') ? 'selected' : 'unselected';
+  const artSelected = location.hash.includes('/arts') ? 'selected' : 'unselected';
+  const hideDesc = location.hash === '#/' ? '' : 'hideDesc';
   const bannerImg = litSelected === 'selected' ? './images/litp.jpg' : './images/frontp.jpg';
 
   return (

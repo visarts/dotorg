@@ -9,13 +9,15 @@ import ArtCarousel from 'SharedComponents/artCarousel/artCarousel.component';
 import './artsDisplay.component.less';
 
 const ArtsDisplay = (props) => {
-  const currentImage = props.store.currentWork;
-  const getCurrentImage = () => props.store.currentWork;
-  const currentArtist = props.store.currentCreator;
+  const artistKey = props.match.params.artist;
+  const artist = props.store2.artistsData[artistKey];
+  const currentArtworkKey = props.match.params.artwork;
+  const currentArtwork = artist.content.filter(artwork => artwork.fileName === currentArtworkKey)[0];
+  const getCurrentArtwork = () => artist.content.filter(artwork => artwork.fileName === currentArtworkKey)[0];
   const getPosition = () => {
     let position = 0;
-    for (let i in currentArtist.content) {
-      if (currentArtist.content[i].fileName === currentImage.fileName) {
+    for (let i in artist.content) {
+      if (artist.content[i].fileName === currentArtwork.fileName) {
         position = i;
         break;
       }
@@ -23,10 +25,10 @@ const ArtsDisplay = (props) => {
     return parseInt(position);
   }
   const currentPosition = getPosition();
-  const nextPosition = currentPosition === currentArtist.content.length - 1 ? currentPosition : currentPosition + 1;
+  const nextPosition = currentPosition === artist.content.length - 1 ? currentPosition : currentPosition + 1;
   const prevPosition = currentPosition === 0 ? currentPosition : currentPosition - 1;
   const hideModal = () => {
-    location.hash = `#/arts/${currentArtist.creatorKey}`;
+    location.hash = `#/arts/${artistKey}`;
   }
 
   const leftSwipeHandler = () => {
@@ -45,7 +47,7 @@ const ArtsDisplay = (props) => {
     leftSwipeHandler,
     rightSwipeHandler,
     isFirst: currentPosition > 0 ? false : true,
-    isLast: currentPosition < currentArtist.content.length - 1 ? false : true
+    isLast: currentPosition < artist.content.length - 1 ? false : true
   });
 
   return (
@@ -55,20 +57,21 @@ const ArtsDisplay = (props) => {
         onHide={hideModal.bind(this)}
         dialogClassName="custom-modal arts-modal">
         <Modal.Header closeButton>
-          <h1>Portitude Gallery | {currentArtist.lname}</h1>
+          <h1>Portitude Gallery | {decodeURIComponent(artist.lname)}</h1>
         </Modal.Header>
         <Modal.Body className="darkMode">
-          <h1 className="artsTitle">{currentImage.title} &mdash; {currentImage.date}</h1>
+          <h1 className="artsTitle">{decodeURIComponent(currentArtwork.title)} &mdash; {currentArtwork.date}</h1>
           <div className="artsContent">
-            {currentPosition > 0 && <Link to={currentArtist.content[prevPosition].fileName} className="thumbArrow thumbArrowLeft"><Glyphicon glyph="menu-left" /></Link>}
-            <img src={`./content/artwork/${currentArtist.creatorKey}/${currentImage.fileName}.jpg`} className="artsDisplayImage" />
-            {currentPosition < currentArtist.content.length - 1 && <Link to={currentArtist.content[nextPosition].fileName} className="thumbArrow thumbArrowRight"><Glyphicon glyph="menu-right" /></Link>}
+            {currentPosition > 0 && <Link to={artist.content[prevPosition].fileName} className="thumbArrow thumbArrowLeft"><Glyphicon glyph="menu-left" /></Link>}
+            <img src={`./content/artwork/${artistKey}/${currentArtwork.fileName}.jpg`} className="artsDisplayImage" />
+            {currentPosition < artist.content.length - 1 && <Link to={artist.content[nextPosition].fileName} className="thumbArrow thumbArrowRight"><Glyphicon glyph="menu-right" /></Link>}
           </div>
         </Modal.Body>
         <Modal.Footer>
           <ArtCarousel
-            currentArtist={currentArtist}
-            currentImage={getCurrentImage()}
+            artist={artist}
+            artistKey={artistKey}
+            currentArtwork={getCurrentArtwork()}
             lgThumbPageSize={6}
             smThumbPageSize={4}
             currentPosition={getPosition()}

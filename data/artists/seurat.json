@@ -1,105 +1,110 @@
 {
-  "creatorKey": "seurat",
-  "content": [
-    {
-      "title": "Vase of Flowers",
-      "date": "1879",
-      "fileName": "seurat-vase-of-flowers-1879"
-    },
-    {
-      "title": "Forest at Pontaubert",
-      "date": "1881",
-      "fileName": "seurat-forest-at-pontaubert-1881"
-    },
-    {
-      "title": "River Banks",
-      "date": "1883",
-      "fileName": "seurat-river-banks-1883"
-    },
-    {
-      "title": "Bathing at Asniers",
-      "date": "1884",
-      "fileName": "seurat-bathing-at-asniers-1884"
-    },
-    {
-      "title": "Boats at Lowtide on Grandcamp",
-      "date": "1885",
-      "fileName": "seurat-boats-at-lowtide-on-grandcamp-1885"
-    },
-    {
-      "title": "Fort Samson",
-      "date": "1885",
-      "fileName": "seurat-fort-samson-1885"
-    },
-    {
-      "title": "Sunday Afternoon on the Island of Grande Jatte",
-      "date": "1886",
-      "fileName": "seurat-sunday-afternoon-on-the-island-of-grande-jatte-1886"
-    },
-    {
-      "title": "The Bridge at Courbevoie",
-      "date": "1886",
-      "fileName": "seurat-bridge-at-courbevoie-1886"
-    },
-    {
-      "title": "Gray Weather",
-      "date": "1888",
-      "fileName": "seurat-gray-weather-1888"
-    },
-    {
-      "title": "Circus Sideshow",
-      "date": "1888",
-      "fileName": "seurat-circus-sideshow-1888"
-    },
-    {
-      "title": "The Models",
-      "date": "1888",
-      "fileName": "seurat-models-1888"
-    },
-    {
-      "title": "Sunday at Port en Bessin",
-      "date": "1888",
-      "fileName": "seurat-sunday-at-port-en-bessin-1888"
-    },
-    {
-      "title": "Port en Bessin Entrance to the Harbor",
-      "date": "1888",
-      "fileName": "seurat-port-en-bessin-entrance-to-the-harbor-1888"
-    },
-    {
-      "title": "Port en Bessin",
-      "date": "1888",
-      "fileName": "seurat-port-en-bessin-1888"
-    },
-    {
-      "title": "The Siene at La Grande Jatte",
-      "date": "1888",
-      "fileName": "seurat-siene-at-la-grande-jatte-1888"
-    },
-    {
-      "title": "Eiffel Tower",
-      "date": "1889",
-      "fileName": "seurat-eiffel-tower-1889"
-    },
-    {
-      "title": "View of le Crotoy",
-      "date": "1889",
-      "fileName": "seurat-view-of-le-crotoy-1889"
-    },
-    {
-      "title": "Le Chahut (The Can-can)",
-      "date": "1890",
-      "fileName": "seurat-le-chahut-1890"
-    },
-    {
-      "title": "Young Woman Powdering Herself",
-      "date": "1890",
-      "fileName": "seurat-young-woman-powdering-herself-1890"
-    },
-    {
-      "title": "The Circus",
-      "date": "1891",
-      "fileName": "seurat-circus-1891"
-    }
-  ]
+  "seurat": {
+    "fname": "Georges",
+    "lname": "Seurat",
+    "bio": "Much has been said of Seurat which cannot be detailed here.",
+    "era": "Post-Impressionism",
+    "content": [
+      {
+        "title": "Vase of Flowers",
+        "date": "1879",
+        "fileName": "seurat-vase-of-flowers-1879"
+      },
+      {
+        "title": "Forest at Pontaubert",
+        "date": "1881",
+        "fileName": "seurat-forest-at-pontaubert-1881"
+      },
+      {
+        "title": "River Banks",
+        "date": "1883",
+        "fileName": "seurat-river-banks-1883"
+      },
+      {
+        "title": "Bathing at Asniers",
+        "date": "1884",
+        "fileName": "seurat-bathing-at-asniers-1884"
+      },
+      {
+        "title": "Boats at Lowtide on Grandcamp",
+        "date": "1885",
+        "fileName": "seurat-boats-at-lowtide-on-grandcamp-1885"
+      },
+      {
+        "title": "Fort Samson",
+        "date": "1885",
+        "fileName": "seurat-fort-samson-1885"
+      },
+      {
+        "title": "Sunday Afternoon on the Island of Grande Jatte",
+        "date": "1886",
+        "fileName": "seurat-sunday-afternoon-on-the-island-of-grande-jatte-1886"
+      },
+      {
+        "title": "The Bridge at Courbevoie",
+        "date": "1886",
+        "fileName": "seurat-bridge-at-courbevoie-1886"
+      },
+      {
+        "title": "Gray Weather",
+        "date": "1888",
+        "fileName": "seurat-gray-weather-1888"
+      },
+      {
+        "title": "Circus Sideshow",
+        "date": "1888",
+        "fileName": "seurat-circus-sideshow-1888"
+      },
+      {
+        "title": "The Models",
+        "date": "1888",
+        "fileName": "seurat-models-1888"
+      },
+      {
+        "title": "Sunday at Port en Bessin",
+        "date": "1888",
+        "fileName": "seurat-sunday-at-port-en-bessin-1888"
+      },
+      {
+        "title": "Port en Bessin Entrance to the Harbor",
+        "date": "1888",
+        "fileName": "seurat-port-en-bessin-entrance-to-the-harbor-1888"
+      },
+      {
+        "title": "Port en Bessin",
+        "date": "1888",
+        "fileName": "seurat-port-en-bessin-1888"
+      },
+      {
+        "title": "The Siene at La Grande Jatte",
+        "date": "1888",
+        "fileName": "seurat-siene-at-la-grande-jatte-1888"
+      },
+      {
+        "title": "Eiffel Tower",
+        "date": "1889",
+        "fileName": "seurat-eiffel-tower-1889"
+      },
+      {
+        "title": "View of le Crotoy",
+        "date": "1889",
+        "fileName": "seurat-view-of-le-crotoy-1889"
+      },
+      {
+        "title": "Le Chahut (The Can-can)",
+        "date": "1890",
+        "fileName": "seurat-le-chahut-1890"
+      },
+      {
+        "title": "Young Woman Powdering Herself",
+        "date": "1890",
+        "fileName": "seurat-young-woman-powdering-herself-1890"
+      },
+      {
+        "title": "The Circus",
+        "date": "1891",
+        "fileName": "seurat-circus-1891"
+      }
+    ]
+  }
 }

@@ -4,6 +4,7 @@ const ROOT_PATH = path.resolve(__dirname);
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MergeJsonWebpackPlugin = require('merge-jsons-webpack-plugin');
 
 module.exports = {
   devtool: 'eval',
@@ -34,7 +35,27 @@ module.exports = {
       { from: 'src/images', to: 'images'},
       { from: 'content', to: 'content'}
     ]),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new MergeJsonWebpackPlugin({
+      'output': {
+        'groupBy': [
+          {
+            'pattern':'./data/authors/*.json',
+            'fileName':'./data/allAuthors.json'
+          }
+        ]
+      }
+    }),
+    new MergeJsonWebpackPlugin({
+      'output': {
+        'groupBy': [
+          {
+            'pattern':'./data/artists/*.json',
+            'fileName':'./data/allArtists.json'
+          }
+        ]
+      }
+    })
   ],
   module: {
 		rules: [

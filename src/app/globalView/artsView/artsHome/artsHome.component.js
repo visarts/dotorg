@@ -8,14 +8,18 @@ const ArtsHome = (props) => {
 
   document.querySelector('body').scrollTop = 0;
 
-  const artistsList = props.store.artistsData.map((artist, index) => {
-    return (
+  const artistsList = [];
+
+  for(let index in props.store2.artistsData) {
+    let artist = props.store2.artistsData[index];
+    artistsList.push(
       <ListLink
-        key={artist.creatorKey}
-        url={`/arts/${artist.creatorKey}`}
-        text={`${artist.fname} ${artist.lname}`} />
+        key={index}
+        url={`/arts/${index}`}
+        text={`${artist.fname} ${artist.lname} (${artist.content.length})`} />
     );
-  });
+  }
+
 
   return (
     <div className="artsHome">

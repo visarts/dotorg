@@ -6,7 +6,7 @@ import './homeView.component.less';
 const HomeView = (props) => {
 
   document.querySelector('body').scrollTop = 0;
-  const dailynum = localStorage.getItem('dailynum') ? parseInt(JSON.parse(localStorage.getItem('dailynum'))) : -1;
+  /*const dailynum = localStorage.getItem('dailynum') ? parseInt(JSON.parse(localStorage.getItem('dailynum'))) : -1;
   let num = dailynum && dailynum < props.store.authorsData.length ? dailynum : -1;
   const date = new Date();
   const day = date.getDay();
@@ -20,11 +20,11 @@ const HomeView = (props) => {
 
   if (num < props.store.authorsData.length) {
     num = num + 1;
-  }
+  }*/
 
-  localStorage.setItem('dailynum', JSON.stringify(num))
+  //localStorage.setItem('dailynum', JSON.stringify(num))
 
-  const featuredContent = (() => {
+  /*const featuredContent = (() => {
     return (
       <div className="featured">
         <div className="featuredContent">
@@ -57,7 +57,7 @@ const HomeView = (props) => {
         </div>
       </div>
     )
-  })();
+  })();*/
 
   return (
     <div className="homeView">
@@ -65,7 +65,7 @@ const HomeView = (props) => {
         Immerse yourself in the beauty of artwork and literature from the masters of the genre, and enrich your store of knowledge.
       </div>
       <div className="section">
-        {featuredContent}
+        {/*featuredContent*/}
       </div>
     </div>
   );

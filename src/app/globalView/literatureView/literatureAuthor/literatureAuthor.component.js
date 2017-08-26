@@ -1,5 +1,4 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
 import { Glyphicon } from 'react-bootstrap';
 import historyService from 'Services/history.service';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
@@ -9,12 +8,16 @@ import './literatureAuthor.component.less';
 const LiteratureAuthor = (props) => {
   //document.querySelector('body').scrollTop = 0;
 
-  const author = props.store.currentCreator;
+  //const author = props.store.currentCreator;
+  const authorKey = props.match.params.author;
+  const author = props.store2.authorsData[authorKey];
   //openTitle = openTitle.bind(this);
 
   const openTitle = (title) => {
     //historyService.addToHistory({type: 'litHistory', data: title})
   };
+
+
 
   const getTitles = (author) => {
     let genres = {
@@ -26,11 +29,12 @@ const LiteratureAuthor = (props) => {
     };
     author.content.map((title, index) => {
       title.author = author;
-      let titleLink = (<ListLink
-        key={title.fileName}
-        url={`/literature/${author.creatorKey}/${title.fileName}`}
-        action={openTitle.bind(this, title)}
-        text={title.title} />);
+      let titleLink = (
+        <ListLink
+          key={title.fileName}
+          url={`/literature/${authorKey}/${title.fileName}`}
+          action={openTitle.bind(this, title)}
+          text={title.title} />);
       switch(title.genre) {
         case 'shorts':
           genres.shorts.push(titleLink);
@@ -62,7 +66,7 @@ const LiteratureAuthor = (props) => {
       <h1>{`${author.fname} ${author.lname}`}</h1>
       <div className="about">
         <div className="authorPic">
-          <img src={`./content/portraits/authors/${author.creatorKey}.jpg`} onError={loadDefaultProfileImage} />
+          <img src={`./content/portraits/authors/${authorKey}.jpg`} onError={loadDefaultProfileImage} />
         </div>
         <div className="bio">{author.bio}<div className="readMoreLink"><a href="#" target="_blank">Read More <Glyphicon glyph="new-window" /></a></div></div>
       </div>

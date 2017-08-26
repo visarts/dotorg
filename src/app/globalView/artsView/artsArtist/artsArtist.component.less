@@ -28,11 +28,19 @@
         }
       }
 
-      &:hover, &:focus, &:active {
+      &:hover, &:focus {
         background: @mainLinkHoverColor;
 
         a {
           color: white;
+        }
+      }
+
+      &:active {
+        a {
+          img {
+            width: 95%;
+          }
         }
       }
     }

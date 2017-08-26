@@ -5,6 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MergeJsonWebpackPlugin = require('merge-jsons-webpack-plugin');
 
 module.exports = {
   devtool: 'source-map',
@@ -39,7 +40,27 @@ module.exports = {
       { from: 'index.html', to: 'index.html' },
       { from: 'src/images', to: 'images'},
       { from: 'content', to: 'content'}
-    ])
+    ]),
+    new MergeJsonWebpackPlugin({
+      'output': {
+        'groupBy': [
+          {
+            'pattern':'./data/authors/*.json',
+            'fileName':'./data/allAuthors.json'
+          }
+        ]
+      }
+    }),
+    new MergeJsonWebpackPlugin({
+      'output': {
+        'groupBy': [
+          {
+            'pattern':'./data/artists/*.json',
+            'fileName':'./data/allArtists.json'
+          }
+        ]
+      }
+    })
   ],
   module: {
 		rules: [

@@ -1,105 +1,110 @@
 {
-  "creatorKey": "cezanne",
-  "content": [
-    {
-      "title": "The Artist's Father",
-      "date": "1866",
-      "fileName": "cezanne-artists-father-1866"
-    },
-    {
-      "title": "The Thaw",
-      "date": "1871",
-      "fileName": "cezanne-thaw-1871"
-    },
-    {
-      "title": "Hanged Man's House",
-      "date": "1873",
-      "fileName": "cezanne-hanged-mans-house-1873"
-    },
-    {
-      "title": "Hortense Fiquet in a Striped Skirt",
-      "date": "1878",
-      "fileName": "cezanne-hortense-fiquet-in-a-striped-skirt-1878"
-    },
-    {
-      "title": "Bay From L Estaque",
-      "date": "1886",
-      "fileName": "cezanne-bay-from-l-estaque-1886"
-    },
-    {
-      "title": "Mont Sante Victoire",
-      "date": "1887",
-      "fileName": "cezanne-mont-sante-victoire-1887"
-    },
-    {
-      "title": "Still Life with Apples",
-      "date": "1890",
-      "fileName": "cezanne-still-life-with-apples-1890"
-    },
-    {
-      "title": "Boy in a Red Vest",
-      "date": "1890",
-      "fileName": "cezanne-boy-in-a-red-vest-1890"
-    },
-    {
-      "title": "The Drinker",
-      "date": "1890",
-      "fileName": "cezanne-drinker-1890"
-    },
-    {
-      "title": "Man in a Room",
-      "date": "1890",
-      "fileName": "cezanne-man-in-a-room-1890"
-    },
-    {
-      "title": "Peasant",
-      "date": "1891",
-      "fileName": "cezanne-peasant-1891"
-    },
-    {
-      "title": "The Card Players",
-      "date": "1892",
-      "fileName": "cezanne-card-players-1892"
-    },
-    {
-      "title": "Child with Straw Hat",
-      "date": "1896",
-      "fileName": "cezanne-child-with-straw-hat-1896"
-    },
-    {
-      "title": "Great Pine",
-      "date": "1896",
-      "fileName": "cezanne-great-pine-1896"
-    },
-    {
-      "title": "Joachim Gasquet",
-      "date": "1896",
-      "fileName": "cezanne-joachim-gasquet-1896"
-    },
-    {
-      "title": "Chrysanthemums",
-      "date": "1898",
-      "fileName": "cezanne-chrysanthemums-1898"
-    },
-    {
-      "title": "Apples and Oranges",
-      "date": "1899",
-      "fileName": "cezanne-apples-and-oranges-1899"
-    },
-    {
-      "title": "The Skull",
-      "date": "1900",
-      "fileName": "cezanne-skull-1900"
-    },
-    {
-      "title": "Young Italian Girl Resting",
-      "date": "1900",
-      "fileName": "cezanne-young-italian-girl-resting-1900"
-    },
-    {
-      "title": "Woman Seated in Blue",
-      "date": "1902",
-      "fileName": "cezanne-woman-seated-in-blue-1902"
-    }
-  ]
+  "cezanne": {
+    "fname": "Paul",
+    "lname": "Cezanne",
+    "bio": "Much has been said of Cezanne which cannot be detailed here.",
+    "era": "Post-Impressionism",
+    "content": [
+      {
+        "title": "The Artist's Father",
+        "date": "1866",
+        "fileName": "cezanne-artists-father-1866"
+      },
+      {
+        "title": "The Thaw",
+        "date": "1871",
+        "fileName": "cezanne-thaw-1871"
+      },
+      {
+        "title": "Hanged Man's House",
+        "date": "1873",
+        "fileName": "cezanne-hanged-mans-house-1873"
+      },
+      {
+        "title": "Hortense Fiquet in a Striped Skirt",
+        "date": "1878",
+        "fileName": "cezanne-hortense-fiquet-in-a-striped-skirt-1878"
+      },
+      {
+        "title": "Bay From L Estaque",
+        "date": "1886",
+        "fileName": "cezanne-bay-from-l-estaque-1886"
+      },
+      {
+        "title": "Mont Sante Victoire",
+        "date": "1887",
+        "fileName": "cezanne-mont-sante-victoire-1887"
+      },
+      {
+        "title": "Still Life with Apples",
+        "date": "1890",
+        "fileName": "cezanne-still-life-with-apples-1890"
+      },
+      {
+        "title": "Boy in a Red Vest",
+        "date": "1890",
+        "fileName": "cezanne-boy-in-a-red-vest-1890"
+      },
+      {
+        "title": "The Drinker",
+        "date": "1890",
+        "fileName": "cezanne-drinker-1890"
+      },
+      {
+        "title": "Man in a Room",
+        "date": "1890",
+        "fileName": "cezanne-man-in-a-room-1890"
+      },
+      {
+        "title": "Peasant",
+        "date": "1891",
+        "fileName": "cezanne-peasant-1891"
+      },
+      {
+        "title": "The Card Players",
+        "date": "1892",
+        "fileName": "cezanne-card-players-1892"
+      },
+      {
+        "title": "Child with Straw Hat",
+        "date": "1896",
+        "fileName": "cezanne-child-with-straw-hat-1896"
+      },
+      {
+        "title": "Great Pine",
+        "date": "1896",
+        "fileName": "cezanne-great-pine-1896"
+      },
+      {
+        "title": "Joachim Gasquet",
+        "date": "1896",
+        "fileName": "cezanne-joachim-gasquet-1896"
+      },
+      {
+        "title": "Chrysanthemums",
+        "date": "1898",
+        "fileName": "cezanne-chrysanthemums-1898"
+      },
+      {
+        "title": "Apples and Oranges",
+        "date": "1899",
+        "fileName": "cezanne-apples-and-oranges-1899"
+      },
+      {
+        "title": "The Skull",
+        "date": "1900",
+        "fileName": "cezanne-skull-1900"
+      },
+      {
+        "title": "Young Italian Girl Resting",
+        "date": "1900",
+        "fileName": "cezanne-young-italian-girl-resting-1900"
+      },
+      {
+        "title": "Woman Seated in Blue",
+        "date": "1902",
+        "fileName": "cezanne-woman-seated-in-blue-1902"
+      }
+    ]
+  }
 }
