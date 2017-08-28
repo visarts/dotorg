@@ -65,7 +65,8 @@ const LiteratureAuthor = (props) => {
       <h1>{`${author.fname} ${author.lname}`}</h1>
       <div className="about">
         <div className="authorPic">
-          <img src={`./content/portraits/authors/${authorKey}.jpg`} onError={loadDefaultProfileImage} />
+          <img src="./content/artwork/creatorkey/creatorkey-picture-1-1111_sm.jpg" />
+          {/*<img src={`./content/portraits/authors/${authorKey}.jpg`} onError={loadDefaultProfileImage} />*/}
         </div>
         <div className="bio">{author.bio}<div className="readMoreLink"><a href="#" target="_blank">Read More <Glyphicon glyph="new-window" /></a></div></div>
       </div>
