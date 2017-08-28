@@ -10,12 +10,12 @@ const ArtsHome = (props) => {
 
   const artistsList = [];
 
-  for(let index in props.store2.artistsData) {
-    let artist = props.store2.artistsData[index];
+  for(let index in props.store.artistsData) {
+    let artist = props.store.artistsData[index];
     artistsList.push(
       <ListLink
         key={index}
-        url={`/arts/${index}`}
+        url={`/arts/artists/${index}`}
         text={`${artist.fname} ${artist.lname} (${artist.content.length})`} />
     );
   }

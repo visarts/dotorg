@@ -34,21 +34,32 @@ const getAllAuthorsData = () => {
     .then((results) => {
       return results.data;
     });
-}
+};
 
 const getAllArtistsData = () => {
   return axios.get('./data/allArtists.json')
     .then((results) => {
       return results.data;
     });
-}
+};
 
 const getHTMLContent = (creatorKey, currentWorkKey) => {
   return axios.get(`./content/literature/${creatorKey}/${currentWorkKey}.html`)
     .then((results) => {
       return results.data;
     });
-}
+};
+
+const getCurrentRouting = (currentRoute) => {
+  let params = currentRoute.slice(1).split('/');
+  let mappedParams = {
+    currentSection: params[0] || '',
+    currentSubSection: params[1] ? params[1] : '',
+    currentCreator: params[2] ? params[2] : '',
+    currentWork: params[3] ? params[3] : ''
+  };
+  return mappedParams;
+};
 
 const dataService = {
   getAuthorData,
@@ -59,7 +70,8 @@ const dataService = {
   getArtistNames,
   getAllAuthorsData,
   getAllArtistsData,
-  getHTMLContent
+  getHTMLContent,
+  getCurrentRouting
 }
 
 export default dataService;

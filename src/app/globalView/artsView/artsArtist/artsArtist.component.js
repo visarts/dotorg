@@ -10,7 +10,7 @@ const ArtsArtist = (props) => {
 
   document.querySelector('body').scrollTop = 0;
   const artistKey = props.match.params.artist;
-  const artist = props.store2.artistsData[artistKey];
+  const artist = props.store.artistsData[artistKey];
 
   /*const getImages = () => {
     const imageList = [];

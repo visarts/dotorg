@@ -10,7 +10,7 @@ import './artsDisplay.component.less';
 
 const ArtsDisplay = (props) => {
   const artistKey = props.match.params.artist;
-  const artist = props.store2.artistsData[artistKey];
+  const artist = props.store.artistsData[artistKey];
   const currentArtworkKey = props.match.params.artwork;
   const currentArtwork = artist.content.filter(artwork => artwork.fileName === currentArtworkKey)[0];
   const getCurrentArtwork = () => artist.content.filter(artwork => artwork.fileName === currentArtworkKey)[0];
@@ -28,7 +28,7 @@ const ArtsDisplay = (props) => {
   const nextPosition = currentPosition === artist.content.length - 1 ? currentPosition : currentPosition + 1;
   const prevPosition = currentPosition === 0 ? currentPosition : currentPosition - 1;
   const hideModal = () => {
-    location.hash = `#/arts/${artistKey}`;
+    location.hash = `#/arts/artists/${artistKey}`;
   }
 
   const leftSwipeHandler = () => {

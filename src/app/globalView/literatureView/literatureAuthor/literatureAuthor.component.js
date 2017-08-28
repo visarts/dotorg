@@ -8,9 +8,8 @@ import './literatureAuthor.component.less';
 const LiteratureAuthor = (props) => {
   //document.querySelector('body').scrollTop = 0;
 
-  //const author = props.store.currentCreator;
   const authorKey = props.match.params.author;
-  const author = props.store2.authorsData[authorKey];
+  const author = props.store.authorsData[authorKey];
   //openTitle = openTitle.bind(this);
 
   const openTitle = (title) => {
@@ -32,7 +31,7 @@ const LiteratureAuthor = (props) => {
       let titleLink = (
         <ListLink
           key={title.fileName}
-          url={`/literature/${authorKey}/${title.fileName}`}
+          url={`/literature/authors/${authorKey}/${title.fileName}`}
           action={openTitle.bind(this, title)}
           text={title.title} />);
       switch(title.genre) {

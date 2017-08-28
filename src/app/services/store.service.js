@@ -1,41 +1,57 @@
 
 /* a pseudo Redux lite */
 export default class StoreService {
-  constructor (dataService) {
-    this.dataService = dataService;
-    this.authorsData = this.dataService.getAuthorsData();
-    this.artistsData = this.dataService.getArtistsData();
+  constructor () {
+    //this.dataService = dataService;
+    //this.authorsData = this.dataService.getAuthorsData();
+    //this.artistsData = this.dataService.getArtistsData();
 
-    this.getMappedLocationParams = this.getMappedLocationParams.bind(this);
+    //this.getMappedLocationParams = this.getMappedLocationParams.bind(this);
     this.getStore = this.getStore.bind(this);
     this.setStore = this.setStore.bind(this);
-    this.updateStore = this.updateStore.bind(this);
+    //this.updateStore = this.updateStore.bind(this);
     this.clearStore = this.clearStore.bind(this);
   }
 
-  // peel the location off into parameters to indicate current location state
-  getMappedLocationParams (updatedLocation) {
-    let params = updatedLocation.slice(1).split('/');
-    const mappedParams = {
-      currentSection: params[0] || '',
-      currentCreator: params[1] && params[1] !== 'genres' ? params[1] : '',
-      currentWork: params[2] && params[1] !== 'genres' ? params[2] : ''
-    }
-    return mappedParams;
+
+
+  setStore (newStore) {
+    localStorage.setItem('store', JSON.stringify(newStore));
   }
 
-  getStore (updatedLocation) {
-    if (updatedLocation) {
-      this.setStore(updatedLocation);
-    }
-    let store = localStorage.getItem('pStore');
+  getStore () {
+    let store = localStorage.getItem('store');
     return store ? JSON.parse(store) : {};
   }
 
-  setStore (updatedLocation) {
+  clearStore () {
+    localStorage.removeItem('store');
+  }
+
+  // peel the location off into parameters to indicate current location state
+  /*getMappedLocationParams (updatedLocation) {
+    let params = updatedLocation.slice(1).split('/');
+    const mappedParams = {
+      currentSection: params[0] || '',
+      currentSubSection: params[1] ? params[1] : '',
+      currentCreator: params[2] ? params[2] : '',
+      currentWork: params[3] ? params[3] : ''
+    }
+    return mappedParams;
+  }*/
+
+  /*getStore (updatedLocation) {
+    if (updatedLocation) {
+      this.setStore(updatedLocation);
+    }
+    let store = localStorage.getItem('store');
+    return store ? JSON.parse(store) : {};
+  }*/
+
+  /*setStore (updatedLocation) {
     let params = this.getMappedLocationParams(updatedLocation);
     // set an initial store if the localStorage object doesn't exist
-    let newStore = !localStorage.getItem('pStore') ? {
+    let newStore = !localStorage.getItem('store') ? {
       currentSection: '',
       currentCreator: '',
       currentWork: '',
@@ -70,16 +86,14 @@ export default class StoreService {
     }
 
     this.updateStore(newStore);
-  }
+  }*/
 
-  updateStore (newStore) {
+  /*updateStore (newStore) {
     if (newStore !== null) {
       let store = Object.assign(this.getStore(), newStore);
-      localStorage.setItem('pStore', JSON.stringify(store));
+      localStorage.setItem('store', JSON.stringify(store));
     }
-  }
+  }*/
 
-  clearStore () {
-    localStorage.removeItem('pStore');
-  }
+
 }

@@ -14,29 +14,30 @@ const GlobalView = (props) => {
         <Switch location={props.location} key={props.location.key}>
           <Route exact path='/' render={routeProps => (
             <HomeView
-              store2={props.store2}
               store={props.store}
+              appState={props.appState}
+              updateAppState={props.updateAppState}
               {...routeProps} />
           )} />
           <Route path="/literature" render={routeProps => (
             <LiteratureView
-              updateStore={props.updateStore}
-              store2={props.store2}
               store={props.store}
+              appState={props.appState}
+              updateAppState={props.updateAppState}
               {...routeProps} />
           )} />
           <Route path="/arts" render={routeProps => (
             <ArtsView
-              updateStore={props.updateStore}
               store={props.store}
-              store2={props.store2}
+              appState={props.appState}
+              updateAppState={props.updateAppState}
               {...routeProps} />
           )} />
           <Route path="/search" render={routeProps => (
             <SearchView
-              searchInput={props.searchInput}
-              updateStore={props.updateStore}
               store={props.store}
+              appState={props.appState}
+              updateAppState={props.updateAppState}
               {...routeProps} />
           )} />
           <Route exact path="/test" component={TestView} />

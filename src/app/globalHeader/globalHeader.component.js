@@ -17,19 +17,19 @@ const GlobalHeader = (props) => {
       <div className="globalContainer">
         <h1 className={smallLogoClass}>
           <Link to="/" className="portitudeTitle">Portitude</Link>
-          <Link to={sectionUrl} className={props.store.currentSection ? '' : 'hidden'}>
+          <Link to={sectionUrl} className={props.appState.currentSection ? '' : 'hidden'}>
             <span className="subHead">
               {subHeader}
             </span>
           </Link>
-          <Link to={creatorUrl} className={props.store.currentCreator ? '' : 'hidden'}>
+          <Link to={creatorUrl} className={props.appState.currentCreator ? '' : 'hidden'}>
             <span className="subHead">
               {subSubHeader}
             </span>
           </Link>
         </h1>
         <Search
-          updateStore={props.updateStore}
+          updateAppState={props.updateAppState}
           store={props.store}
          />
       </div>

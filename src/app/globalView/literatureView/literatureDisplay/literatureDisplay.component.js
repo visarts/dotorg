@@ -34,9 +34,8 @@ export default class LiteratureDisplay extends React.Component {
 
   setValues () {
     this.authorKey = this.props.match.params.author;
-    this.author = this.props.store2.authorsData[this.authorKey];
+    this.author = this.props.store.authorsData[this.authorKey];
     this.currentWorkKey = this.props.match.params.work;
-    //this.currentWork = this.props.store.currentWork;
     this.currentWork = this.author.content.filter(work => work.fileName === this.currentWorkKey)[0];
     dataService.getHTMLContent(this.authorKey, this.currentWorkKey)
       .then((results) => {
@@ -126,7 +125,7 @@ export default class LiteratureDisplay extends React.Component {
   setAuthorMenu (currentMenuPage) {
     return this.menuPages[currentMenuPage - 1].map((item, index) => {
       return (
-        <LinkContainer to={`/literature/${this.authorKey}/${item.fileName}`} key={index}>
+        <LinkContainer to={`/literature/authors/${this.authorKey}/${item.fileName}`} key={index}>
           <MenuItem eventKey={index} key={index}>{decodeURIComponent(item.title)}</MenuItem>
         </LinkContainer>
       );
@@ -146,7 +145,7 @@ export default class LiteratureDisplay extends React.Component {
   }
 
   hideModal () {
-    location.hash = `#/literature/${this.authorKey}`;
+    location.hash = `#/literature/authors/${this.authorKey}`;
   }
 
   setReadingMode () {

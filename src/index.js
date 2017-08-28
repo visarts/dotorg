@@ -24,7 +24,9 @@ dataService.getAllAuthorsData().then((authorsData) => {
     //ReactDOM.render(<App data={data} />,  document.querySelector('app'));
     ReactDOM.render((
       <Router>
-        <App data={data} />
+        <Route path="/" render={routeProps => (
+          <App data={data} {...routeProps} />
+        )} />
       </Router>
     ), document.querySelector('app'));
   });

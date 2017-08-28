@@ -8,11 +8,11 @@ const SearchView = (props) => {
   // will need grab all content json files and walk through every item to look for a match of item title
 
   document.querySelector('body').scrollTop = 0;
-  const searchInput = props.store.searchInput ? props.store.searchInput : '';
+  const searchInput = props.appState.searchInput ? props.appState.searchInput : '';
   const artistNames = dataService.getArtistNames();
   const authorNames = dataService.getAuthorNames();
-  const isArtist = false;
-  const isAuthor = false;
+  //const isArtist = false;
+  //const isAuthor = false;
   const artistList = [];
   const authorList = [];
   for (let i in artistNames) {
@@ -43,7 +43,7 @@ const SearchView = (props) => {
   const getAuthorsList = authorList.length ? authorList.map((nameKey, index) => {
     return (
       <li key={index}>
-        <Link to={`literature/${nameKey}`} onClick={() => {props.updateStore({searchInput: nameKey})}} key={index}>{nameKey}</Link>
+        <Link to={`literature/authors/${nameKey}`} onClick={() => {props.updateAppState({searchInput: nameKey})}} key={index}>{nameKey}</Link>
       </li>
     );
   }) : null;
@@ -51,7 +51,7 @@ const SearchView = (props) => {
   const getArtistsList = artistList.length ? artistList.map((nameKey, index) => {
     return (
       <li key={index}>
-        <Link to={`arts/${nameKey}`} onClick={() => {props.updateStore({searchInput: nameKey})}} key={index}>{nameKey}</Link>
+        <Link to={`arts/artists/${nameKey}`} onClick={() => {props.updateAppState({searchInput: nameKey})}} key={index}>{nameKey}</Link>
       </li>
     );
   }) : null;

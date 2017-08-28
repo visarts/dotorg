@@ -12,12 +12,12 @@ const LiteratureHome = (props) => {
 
   const authorsList = [];
 
-  for(let index in props.store2.authorsData) {
-    let author = props.store2.authorsData[index];
+  for(let index in props.store.authorsData) {
+    let author = props.store.authorsData[index];
     authorsList.push(
       <ListLink
         key={index}
-        url={`/literature/${index}`}
+        url={`/literature/authors/${index}`}
         text={`${author.fname} ${author.lname} (${author.content.length})`} />
     );
   }

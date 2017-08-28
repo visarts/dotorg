@@ -67,7 +67,7 @@ export default class Search extends React.Component {
 
   onChange (event) {
     const clean = DOMPurify.sanitize(event.target.value);
-    this.props.updateStore({searchInput: clean.toLowerCase()});
+    this.props.updateAppState({searchInput: clean.toLowerCase()});
   }
 
   onKeyDown (event) {
