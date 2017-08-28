@@ -1,43 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import dataService from 'Services/data.service';
 import './homeView.component.less';
 
 const HomeView = (props) => {
 
   document.querySelector('body').scrollTop = 0;
-  /*const dailynum = localStorage.getItem('dailynum') ? parseInt(JSON.parse(localStorage.getItem('dailynum'))) : -1;
-  let num = dailynum && dailynum < props.store.authorsData.length ? dailynum : -1;
+  const authorKeys = Object.keys(props.store.authorsData);
+  const artistKeys = Object.keys(props.store.artistsData);
   const date = new Date();
-  const day = date.getDay();
-  const month = date.getMonth();
-  const author = props.store.authorsData[month];
-  const artist = props.store.artistsData[month];
-  const authorData = dataService.getAuthorData(author.creatorKey);
-  const artistData = dataService.getArtistData(artist.creatorKey);
-  const lit = authorData.content[num] ? authorData.content[num] : authorData.content[0];
-  const art = artistData.content[num] ? artistData.content[num] : artistData.content[0];
+  const creatorFrequency = date.getDay();
+  const contentFrequency = date.getMonth();
+  const author = props.store.authorsData[authorKeys[creatorFrequency]];
+  const artist = props.store.artistsData[artistKeys[creatorFrequency]];
+  const lit = author.content[contentFrequency] ? author.content[contentFrequency] : author.content[0];
+  const art = artist.content[contentFrequency] ? artist.content[contentFrequency] : artist.content[0];
 
-  if (num < props.store.authorsData.length) {
-    num = num + 1;
-  }*/
-
-  //localStorage.setItem('dailynum', JSON.stringify(num))
-
-  /*const featuredContent = (() => {
+  const featuredContent = (() => {
     return (
       <div className="featured">
         <div className="featuredContent">
           <div className="featuredBlock">
             <h4>Featured Author: </h4>
             <h2>
-              <Link to={`literature/${author.creatorKey}`}>{author.fname} {author.lname}</Link>
+              <Link to={`literature/authors/${authorKeys[creatorFrequency]}`}>{author.fname} {author.lname}</Link>
             </h2>
           </div>
           <div className="featuredBlock">
-            <h4>Today's lit pick: </h4>
+            <h4>TocreatorFrequency's lit pick: </h4>
             <h2>
-              <Link to={`/literature/${author.creatorKey}/${lit.fileName}`}>{lit.title}</Link>
+              <Link to={`/literature/authors/${authorKeys[creatorFrequency]}/${lit.fileName}`}>{lit.title}</Link>
             </h2>
           </div>
         </div>
@@ -45,19 +36,19 @@ const HomeView = (props) => {
           <div className="featuredBlock">
             <h4>Featured Artist: </h4>
             <h2>
-              <Link to={`arts/${artist.creatorKey}`}>{artist.fname} {artist.lname}</Link>
+              <Link to={`arts/artists/${artistKeys[creatorFrequency]}`}>{artist.fname} {artist.lname}</Link>
             </h2>
           </div>
           <div className="featuredBlock">
-            <h4>Today's art pick: </h4>
+            <h4>TocreatorFrequency's art pick: </h4>
             <h2>
-              <Link to={`/arts/${artist.creatorKey}/${art.fileName}`}>{art.title}</Link>
+              <Link to={`/arts/artists/${artistKeys[creatorFrequency]}/${art.fileName}`}>{art.title}</Link>
             </h2>
           </div>
         </div>
       </div>
     )
-  })();*/
+  })();
 
   return (
     <div className="homeView">
@@ -65,7 +56,7 @@ const HomeView = (props) => {
         Immerse yourself in the beauty of artwork and literature from the masters of the genre, and enrich your store of knowledge.
       </div>
       <div className="section">
-        {/*featuredContent*/}
+        {featuredContent}
       </div>
     </div>
   );

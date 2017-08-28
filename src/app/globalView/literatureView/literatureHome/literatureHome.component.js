@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import dataService from 'Services/data.service';
 
 import LiteratureHistory from 'SharedComponents/literatureHistory/literatureHistory.component';
 import ListLink from 'SharedComponents/listLink/listLink.component';
