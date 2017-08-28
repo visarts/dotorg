@@ -17,7 +17,7 @@ const LiteratureHome = (props) => {
     authorsList.push(
       <ListLink
         key={index}
-        url={`/literature/authors/${index}`}
+        url={`literature/authors/${index}`}
         text={`${author.fname} ${author.lname} (${author.content.length})`} />
     );
   }

@@ -11,28 +11,27 @@ const LiteratureView = (props) => {
       <Route exact path='/literature' render={routeProps => (
         <LiteratureHome
           store={props.store}
-          store={props.store}
+          appState={props.appState}
           {...routeProps} />
       )} />
       <Route exact path='/literature/genres/:genre' render={routeProps => (
         <LiteratureGenre
           store={props.store}
+          appState={props.appState}
           {...routeProps} />
       )} />
-      <Route path='/literature/authors/:author' render={routeProps => {
-        return routeProps.match.params.author !== 'genres' && (
+      <Route path='/literature/authors/:author' render={routeProps => (
           <LiteratureAuthor
             store={props.store}
-            store={props.store}
-            {...routeProps} />);
-      }} />
-      <Route path='/literature/authors/:author/:work' render={routeProps => {
-        return routeProps.match.params.author !== 'genres' && (
+            appState={props.appState}
+            {...routeProps} />
+      )} />
+      <Route path='/literature/authors/:author/:work' render={routeProps => (
           <LiteratureDisplay
             store={props.store}
-            store={props.store}
-            {...routeProps} />);
-      }} />
+            appState={props.appState}
+            {...routeProps} />
+      )} />
     </div>
   );
 };

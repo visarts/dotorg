@@ -56,7 +56,8 @@ const getCurrentRouting = (currentRoute) => {
     currentSection: params[0] || '',
     currentSubSection: params[1] ? params[1] : '',
     currentCreator: params[2] ? params[2] : '',
-    currentWork: params[3] ? params[3] : ''
+    currentWork: params[3] ? params[3] : '',
+    isSpecial: params[1] && params[1] === 'genres' ? true : false
   };
   return mappedParams;
 };

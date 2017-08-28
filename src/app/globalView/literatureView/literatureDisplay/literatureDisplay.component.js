@@ -201,9 +201,17 @@ export default class LiteratureDisplay extends React.Component {
             <span className="readingMenu">
               {this.author.content.length > 1 &&
                 <DropdownButton noCaret title={this.authorMenuButtonLabel} id="bg-vertical-dropdown-1" className="readerDropdown" onClick={this.onMenuClick.bind(this)} onBlur={this.onMenuBlur.bind(this)}>
-                  <Glyphicon glyph="menu-up" disabled={this.state.currentMenuPage === 1} className={`showMoreButton ${this.state.currentMenuPage === 1 ? 'buttonDisabled' : ''}`} onClick={this.setPreviousMenuPage.bind(this)} />
+                  <Glyphicon
+                    glyph="menu-up"
+                    disabled={this.state.currentMenuPage === 1} 
+                    className={`showMoreButton ${this.state.currentMenuPage === 1 ? 'buttonDisabled' : ''}`}
+                    onClick={this.setPreviousMenuPage.bind(this)} />
                     {this.state.authorMenu}
-                  <Glyphicon glyph="menu-down" disabled={this.state.currentMenuPage === this.menuPages.length} className={`showMoreButton ${this.state.currentMenuPage === this.menuPages.length ? 'buttonDisabled' : ''}`} onClick={this.setNextMenuPage.bind(this)} />
+                  <Glyphicon
+                    glyph="menu-down"
+                    disabled={this.state.currentMenuPage === this.menuPages.length}
+                    className={`showMoreButton ${this.state.currentMenuPage === this.menuPages.length ? 'buttonDisabled' : ''}`}
+                    onClick={this.setNextMenuPage.bind(this)} />
                 </DropdownButton>}
             </span>
             <span className="readingControls">

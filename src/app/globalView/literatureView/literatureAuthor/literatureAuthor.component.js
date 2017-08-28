@@ -18,7 +18,7 @@ const LiteratureAuthor = (props) => {
 
 
 
-  const getTitles = (author) => {
+  const getTitles = () => {
     let genres = {
       shorts: [],
       poetry: [],
@@ -55,7 +55,7 @@ const LiteratureAuthor = (props) => {
     return genres;
   };
 
-  const titles = getTitles(author);
+  const titles = getTitles();
   const loadDefaultProfileImage = (event) => {
     event.target.src='./content/portraits/profile.jpg';
   };

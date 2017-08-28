@@ -11,6 +11,7 @@ export default class StoreService {
     this.setStore = this.setStore.bind(this);
     //this.updateStore = this.updateStore.bind(this);
     this.clearStore = this.clearStore.bind(this);
+    localStorage.removeItem('pStore');
   }
 
 

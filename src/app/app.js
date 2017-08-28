@@ -17,21 +17,12 @@ export default class App extends React.Component {
     this.store = this.storeService.getStore();
     this.updateAppState = this.updateAppState.bind(this);
     this.currentLocation = location.hash.slice(1);
-    this.getCurrentRouting = this.getCurrentRouting.bind(this);
 
     this.state = {
       routing: dataService.getCurrentRouting(this.currentLocation)
     }
   }
 
-  getCurrentRouting () {
-    return {
-      currentSection: '',
-      currentSubSection: '',
-      currentCreator: '',
-      currentWork: ''
-    };
-  }
 
   updateAppState (newState) {
     this.setState(Object.assign(this.state, newState));
@@ -63,10 +54,6 @@ export default class App extends React.Component {
 
       add routing for art eras and lit genres
           -- this creates complications with the store service setup. Will need to refactor
-
-      Refactor set store to be more agnostic to allow for non-current creator/work related data
-
-      Rethink localstorage approach -- when new creator/work is added, it doesn't show up
 
       Add middle tier sizing layout for tablets, etc
     */
