@@ -17,9 +17,27 @@
         "genre": "nonfiction"
       },
       {
+        "title": "Bill-Sticking",
+        "date": "1851",
+        "fileName": "dickens-bill-sticking-1851",
+        "genre": "shorts"
+      },
+      {
+        "title": "Christmas at Fezziwig's Warehouse",
+        "date": "1843",
+        "fileName": "dickens-christmas-at-fezziwigs-warehouse-1843",
+        "genre": "shorts"
+      },
+      {
         "title": "Down with the Tide",
         "date": "1853",
         "fileName": "dickens-down-with-the-tide-1853",
+        "genre": "shorts"
+      },
+      {
+        "title": "Familiar Epistle from a Parent to a Child Aged Two Years and Two Months",
+        "date": "1839",
+        "fileName": "dickens-familiar-epistle-from-a-parent-to-a-child-1839",
         "genre": "shorts"
       },
       {
@@ -59,6 +77,18 @@
         "genre": "shorts"
       },
       {
+        "title": "On Duty with Inspector Field",
+        "date": "1851",
+        "fileName": "dickens-on-duty-with-inspector-field-1851",
+        "genre": "nonfiction"
+      },
+      {
+        "title": "On Grief, and How to Heal a Mourning Heart",
+        "date": "1862",
+        "fileName": "dickens-on-grief-and-how-to-heal-a-mourning-heart-1862",
+        "genre": "nonfiction"
+      },
+      {
         "title": "Our School",
         "date": "1851",
         "fileName": "dickens-our-school-1851",
@@ -92,6 +122,12 @@
         "title": "What Christmas is as We Grow Older",
         "date": "1851",
         "fileName": "dickens-what-christmas-is-as-we-grow-older-1851",
+        "genre": "nonfiction"
+      },
+      {
+        "title": "What is Sensational?",
+        "date": "1867",
+        "fileName": "dickens-what-is-sensational-1867",
         "genre": "nonfiction"
       },
       {
