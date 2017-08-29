@@ -20,9 +20,8 @@ export default class App extends React.Component {
 
     this.state = {
       routing: dataService.getCurrentRouting(this.currentLocation)
-    }
+    };
   }
-
 
   updateAppState (newState) {
     this.setState(Object.assign(this.state, newState));
@@ -41,8 +40,6 @@ export default class App extends React.Component {
   render () {
 
     /* TODO
-      make a webpack plugin that will create a master json file from subs
-
       courtship of miles standish, Evangeline, song of hiawatha needs special, multi part section
         might need some special indicator to route separately
 
