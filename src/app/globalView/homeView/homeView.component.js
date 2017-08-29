@@ -22,13 +22,13 @@ const HomeView = (props) => {
           <div className="featuredBlock">
             <h4>Featured Author: </h4>
             <h2>
-              <Link to={`/literature/authors/${authorKeys[creatorFrequency]}`}>{author.fname} {author.lname}</Link>
+              <Link to={`/literature/a/${authorKeys[creatorFrequency]}`}>{author.fname} {author.lname}</Link>
             </h2>
           </div>
           <div className="featuredBlock">
             <h4>Today's lit pick: </h4>
             <h2>
-              <Link to={`/literature/authors/${authorKeys[creatorFrequency]}/${lit.fileName}`}>{lit.title}</Link>
+              <Link to={`/literature/a/${authorKeys[creatorFrequency]}/${lit.genre}/${lit.fileName}`}>{lit.title}</Link>
             </h2>
           </div>
         </div>
@@ -36,13 +36,13 @@ const HomeView = (props) => {
           <div className="featuredBlock">
             <h4>Featured Artist: </h4>
             <h2>
-              <Link to={`/arts/artists/${artistKeys[creatorFrequency]}`}>{artist.fname} {artist.lname}</Link>
+              <Link to={`/arts/a/${artistKeys[creatorFrequency]}`}>{artist.fname} {artist.lname}</Link>
             </h2>
           </div>
           <div className="featuredBlock">
             <h4>Today's art pick: </h4>
             <h2>
-              <Link to={`/arts/artists/${artistKeys[creatorFrequency]}/${art.fileName}`}>{art.title}</Link>
+              <Link to={`/arts/a/${artistKeys[creatorFrequency]}/${artist.era}/${art.fileName}`}>{art.title}</Link>
             </h2>
           </div>
         </div>

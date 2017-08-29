@@ -30,9 +30,7 @@ const LiteratureHome = (props) => {
       <LiteratureHistory />
       <div className="titlesContainer">
         <h3>The Authors</h3>
-        <ul className="authorsList">
-          {authorsList}
-        </ul>
+        <ul className="authorsList">{authorsList}</ul>
       </div>
       <div className="titlesContainer">
         <h3>The Genres</h3>

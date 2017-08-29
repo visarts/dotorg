@@ -101,7 +101,8 @@ const getCurrentRouting = (currentRoute) => {
     currentSection: params[0] || '',
     currentSubSection: params[1] && params[1] === 'a' && params[3] ? params[3] : params[1] && params[1] === 'g' && params[2] ? params[2] : '',
     currentCreator: params[1] && params[1] === 'a' && params[2] ? params[2] : params[1] && params[1] === 'g' && params[3] ? params[3] : '',
-    currentWork: params[4] ? params[4] : ''
+    currentWork: params[4] ? params[4] : '',
+    routeKey: params[1] ? params[1] : ''
   };
   return mappedParams;
 }
