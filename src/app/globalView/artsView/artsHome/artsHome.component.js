@@ -33,14 +33,14 @@ const ArtsHome = (props) => {
       <div className="titlesContainer">
         <h3>The Eras</h3>
         <ul className="erasList">
-          <ListLink url="arts/g/Renaissance" text="Renaissance" />
-          <ListLink url="arts/g/Baroque" text="Baroque" />
-          <ListLink url="arts/g/Pre-Raphaelite" text="Pre-Raphaelite" />
-          <ListLink url="arts/g/Academic" text="Academic" />
-          <ListLink url="arts/g/Impressionism" text="Impressionism" />
-          <ListLink url="arts/g/Post-Impressionism" text="Post-Impressionism" />
-          <ListLink url="arts/g/Realism" text="Realism" />
-          <ListLink url="arts/g/Modernism" text="Modernism" />
+          <ListLink url="arts/g/renaissance" text="Renaissance" />
+          <ListLink url="arts/g/baroque" text="Baroque" />
+          <ListLink url="arts/g/pre-raphaelite" text="Pre-Raphaelite" />
+          <ListLink url="arts/g/academic" text="Academic" />
+          <ListLink url="arts/g/impressionism" text="Impressionism" />
+          <ListLink url="arts/g/post-impressionism" text="Post-Impressionism" />
+          <ListLink url="arts/g/realism" text="Realism" />
+          <ListLink url="arts/g/modernism" text="Modernism" />
         </ul>
       </div>
     </div>

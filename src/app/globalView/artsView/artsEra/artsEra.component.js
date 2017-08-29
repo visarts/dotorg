@@ -16,11 +16,11 @@ const ArtsEra = (props) => {
       let artist = props.store.artistsData[artistKey];
       for (let i in artist.content) {
         let title = artist.content[i];
-        if (artist.era === props.appState.routing.currentSubSection) {
+        if (artist.era.toLowerCase() === props.appState.routing.currentSubSection) {
           titlesList.push(
             <ListLink
               key={title.fileName}
-              url={`/arts/g/${artist.era}/${artistKey}/${title.fileName}`}
+              url={`/arts/g/${artist.era.toLowerCase()}/${artistKey}/${title.fileName}`}
               text={title.title} />
           );
         }
