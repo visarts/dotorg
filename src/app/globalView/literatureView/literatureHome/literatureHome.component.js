@@ -16,7 +16,7 @@ const LiteratureHome = (props) => {
     authorsList.push(
       <ListLink
         key={index}
-        url={`literature/authors/${index}`}
+        url={`literature/a/${index}`}
         text={`${author.fname} ${author.lname} (${author.content.length})`} />
     );
   }
@@ -28,14 +28,22 @@ const LiteratureHome = (props) => {
       <h1>Welcome to the Portitude Library</h1>
       <h3>Classic literature lines the dusty shelves. Make yourself right at home.</h3>
       <LiteratureHistory />
-      <ul className="authorsList">{authorsList}</ul>
-      <ul className="genresList">
-        <ListLink url={`literature/genres/shorts`} text="Short Stories" />
-        <ListLink url={`literature/genres/poetry`} text="Poetry" />
-        <ListLink url={`literature/genres/nonfiction`} text="Nonfiction" />
-        <ListLink url={`literature/genres/fables`} text="Fables" />
-        <ListLink url={`literature/genres/tales`} text="Tales" />
-      </ul>
+      <div className="titlesContainer">
+        <h3>The Authors</h3>
+        <ul className="authorsList">
+          {authorsList}
+        </ul>
+      </div>
+      <div className="titlesContainer">
+        <h3>The Genres</h3>
+        <ul className="genresList">
+          <ListLink url={`literature/g/shorts`} text="Short Stories" />
+          <ListLink url={`literature/g/poetry`} text="Poetry" />
+          <ListLink url={`literature/g/nonfiction`} text="Nonfiction" />
+          <ListLink url={`literature/g/fables`} text="Fables" />
+          <ListLink url={`literature/g/tales`} text="Tales" />
+        </ul>
+      </div>
     </div>
   )
 }

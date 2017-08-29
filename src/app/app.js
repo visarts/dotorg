@@ -19,12 +19,26 @@ export default class App extends React.Component {
     this.currentLocation = location.hash.slice(1);
 
     this.state = {
-      routing: dataService.getCurrentRouting(this.currentLocation)
+      routing: dataService.getCurrentRouting(this.currentLocation),
+      getTrimmedURI: this.getTrimmedURI.bind(this)
     };
   }
 
   updateAppState (newState) {
     this.setState(Object.assign(this.state, newState));
+  }
+
+  // allows for routing changes in modals and the like when origin is unknown
+  getTrimmedURI (num) {
+    if (num) {
+      let numb = parseInt(num);
+      let params = location.hash.slice(2).split('/');
+      for (let i = 0; i < num; i++) {
+        params.pop();
+      }
+      let newParams = params.join('/');
+      return newParams;
+    }
   }
 
   // this will update when the route changes and set state with new params

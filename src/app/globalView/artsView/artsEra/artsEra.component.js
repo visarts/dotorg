@@ -4,31 +4,31 @@ import { Glyphicon } from 'react-bootstrap';
 //import historyService from 'Services/history.service';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
 import ListLink from 'SharedComponents/listLink/listLink.component';
-import './literatureGenre.component.less';
+import './artsEra.component.less';
 
 
-const LiteratureGenre = (props) => {
+const ArtsEra = (props) => {
 
   const getTitles = () => {
-    let authorsList = [];
-    for(let authorKey in props.store.authorsData) {
+    let artistsList = [];
+    for(let artistKey in props.store.artistsData) {
       let titlesList = [];
-      let author = props.store.authorsData[authorKey];
-      for (let i in author.content) {
-        let title = author.content[i];
-        if (title.genre === props.appState.routing.currentSubSection) {
+      let artist = props.store.artistsData[artistKey];
+      for (let i in artist.content) {
+        let title = artist.content[i];
+        if (artist.era === props.appState.routing.currentSubSection) {
           titlesList.push(
             <ListLink
               key={title.fileName}
-              url={`/literature/g/${title.genre}/${authorKey}/${title.fileName}`}
+              url={`/arts/g/${artist.era}/${artistKey}/${title.fileName}`}
               text={title.title} />
           );
         }
       }
       if (titlesList.length) {
-        authorsList.push(
-          <div className="authorBlock" key={authorKey}>
-            <h3>{author.fname} {author.lname}</h3>
+        artistsList.push(
+          <div className="artistBlock" key={artistKey}>
+            <h3>{artist.fname} {artist.lname}</h3>
             <ul className="contentBlock">
               {titlesList}
             </ul>
@@ -36,20 +36,20 @@ const LiteratureGenre = (props) => {
         );
       }
     }
-    return authorsList;
+    return artistsList;
   }
 
   const titles = getTitles();
 
   return (
-    <div className="literatureGenre">
+    <div className="artsEra">
       <h1>{props.appState.routing.currentSubSection}</h1>
       <h2>The best parts of waking up is {props.appState.routing.currentSubSection} in your browser</h2>
-      <div className="genreContainer">
+      <div className="eraContainer">
         {titles}
       </div>
     </div>
   )
 };
 
-export default LiteratureGenre;
+export default ArtsEra;

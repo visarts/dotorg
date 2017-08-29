@@ -31,7 +31,7 @@ const LiteratureAuthor = (props) => {
       let titleLink = (
         <ListLink
           key={title.fileName}
-          url={`/literature/authors/${authorKey}/${title.fileName}`}
+          url={`/literature/a/${authorKey}/${title.genre}/${title.fileName}`}
           action={openTitle.bind(this, title)}
           text={title.title} />);
       switch(title.genre) {

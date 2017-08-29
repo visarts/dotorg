@@ -14,19 +14,25 @@ const LiteratureView = (props) => {
           appState={props.appState}
           {...routeProps} />
       )} />
-      <Route exact path='/literature/genres/:genre' render={routeProps => (
+      <Route path='/literature/g/:genre' render={routeProps => (
         <LiteratureGenre
           store={props.store}
           appState={props.appState}
           {...routeProps} />
       )} />
-      <Route path='/literature/authors/:author' render={routeProps => (
+      <Route path='/literature/a/:author' render={routeProps => (
           <LiteratureAuthor
             store={props.store}
             appState={props.appState}
             {...routeProps} />
       )} />
-      <Route path='/literature/authors/:author/:work' render={routeProps => (
+      <Route path='/literature/a/:author/:genre/:work' render={routeProps => (
+          <LiteratureDisplay
+            store={props.store}
+            appState={props.appState}
+            {...routeProps} />
+      )} />
+      <Route path='/literature/g/:genre/:author/:work' render={routeProps => (
           <LiteratureDisplay
             store={props.store}
             appState={props.appState}

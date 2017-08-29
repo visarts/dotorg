@@ -15,7 +15,7 @@ const ArtsHome = (props) => {
     artistsList.push(
       <ListLink
         key={index}
-        url={`/arts/artists/${index}`}
+        url={`/arts/a/${index}`}
         text={`${artist.fname} ${artist.lname} (${artist.content.length})`} />
     );
   }
@@ -27,6 +27,18 @@ const ArtsHome = (props) => {
       <h3>The greatest art in history by some of history's greatest artists</h3>
       <ArtHistory />
       <ul className="artistsList">{artistsList}</ul>
+      <div className="titlesContainer">
+        <ul className="erasList">
+          <ListLink url="arts/g/Renaissance" text="Renaissance" />
+          <ListLink url="arts/g/Baroque" text="Baroque" />
+          <ListLink url="arts/g/Pre-Raphaelite" text="Pre-Raphaelite" />
+          <ListLink url="arts/g/Academic" text="Academic" />
+          <ListLink url="arts/g/Impressionism" text="Impressionism" />
+          <ListLink url="arts/g/Post-Impressionism" text="Post-Impressionism" />
+          <ListLink url="arts/g/Realism" text="Realism" />
+          <ListLink url="arts/g/Modernism" text="Modernism" />
+        </ul>
+      </div>
     </div>
   );
 }

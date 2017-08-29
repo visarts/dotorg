@@ -33,7 +33,7 @@ const ArtsArtist = (props) => {
       return (
         <li className="thumbnail" key={item.fileName}>
           <Link
-            to={`${artistKey}/${item.fileName}`}
+            to={`/arts/a/${artistKey}/${artist.era}/${item.fileName}`}
             title={item.title}
             key={item.fileName}>
             <img
@@ -45,7 +45,6 @@ const ArtsArtist = (props) => {
       );
     });
   };
-
 
   /*openImage (item) {
     //historyService.addToHistory({type: 'artHistory', data: item});

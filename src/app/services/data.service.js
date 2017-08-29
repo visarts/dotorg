@@ -50,7 +50,7 @@ const getHTMLContent = (creatorKey, currentWorkKey) => {
     });
 };
 
-const getCurrentRouting = (currentRoute) => {
+/*const getCurrentRouting = (currentRoute) => {
   let params = currentRoute.slice(1).split('/');
   let mappedParams = {
     currentSection: params[0] || '',
@@ -60,7 +60,51 @@ const getCurrentRouting = (currentRoute) => {
     isSpecial: params[1] && params[1] === 'genres' ? true : false
   };
   return mappedParams;
-};
+};*/
+
+/*
+DOTORG routing
+
+Section:		  Key:		Label1:		Label2:			       Label3:
+                                (requires label3)
+[0			       1		  2			    3				           4		    ]
+/literature		/a		  /:author	/:genre			       /:workTitle
+			        /g		  /:genre		/:author		       /:workTitle
+
+/arts			    /a		  /:artist	/:style			       /:workTitle
+			        /g		  /:style		/:artist           /:workTitle
+
+/search
+
+
+Section:
+/literature
+
+Author:
+/literature/a/kipling
+
+Genre:
+/literature/g/shorts
+
+Work from author:
+
+/literature/a/kipling/shorts/kipling-short-name-1899
+
+Work from genre:
+
+/literature/g/shorts/kipling/kipling-short-name-1899
+
+*/
+const getCurrentRouting = (currentRoute) => {
+  let params = currentRoute.slice(1).split('/');
+  let mappedParams = {
+    currentSection: params[0] || '',
+    currentSubSection: params[1] && params[1] === 'a' && params[3] ? params[3] : params[1] && params[1] === 'g' && params[2] ? params[2] : '',
+    currentCreator: params[1] && params[1] === 'a' && params[2] ? params[2] : params[1] && params[1] === 'g' && params[3] ? params[3] : '',
+    currentWork: params[4] ? params[4] : ''
+  };
+  return mappedParams;
+}
 
 const dataService = {
   getAuthorData,

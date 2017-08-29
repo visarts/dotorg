@@ -124,8 +124,9 @@ export default class LiteratureDisplay extends React.Component {
 
   setAuthorMenu (currentMenuPage) {
     return this.menuPages[currentMenuPage - 1].map((item, index) => {
+      let params = this.props.appState.getTrimmedURI(1);
       return (
-        <LinkContainer to={`/literature/authors/${this.authorKey}/${item.fileName}`} key={index}>
+        <LinkContainer to={`/${params}/${item.fileName}`} key={index}>
           <MenuItem eventKey={index} key={index}>{decodeURIComponent(item.title)}</MenuItem>
         </LinkContainer>
       );
@@ -145,7 +146,9 @@ export default class LiteratureDisplay extends React.Component {
   }
 
   hideModal () {
-    location.hash = `#/literature/authors/${this.authorKey}`;
+    //reconstruct the uri from the original, take two params off the top to return to origin
+    let params = this.props.appState.getTrimmedURI(2);
+    location.hash = `#/${params}`
   }
 
   setReadingMode () {
@@ -203,7 +206,7 @@ export default class LiteratureDisplay extends React.Component {
                 <DropdownButton noCaret title={this.authorMenuButtonLabel} id="bg-vertical-dropdown-1" className="readerDropdown" onClick={this.onMenuClick.bind(this)} onBlur={this.onMenuBlur.bind(this)}>
                   <Glyphicon
                     glyph="menu-up"
-                    disabled={this.state.currentMenuPage === 1} 
+                    disabled={this.state.currentMenuPage === 1}
                     className={`showMoreButton ${this.state.currentMenuPage === 1 ? 'buttonDisabled' : ''}`}
                     onClick={this.setPreviousMenuPage.bind(this)} />
                     {this.state.authorMenu}

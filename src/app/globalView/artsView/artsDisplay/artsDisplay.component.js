@@ -27,7 +27,9 @@ const ArtsDisplay = (props) => {
   const nextPosition = currentPosition === artist.content.length - 1 ? currentPosition : currentPosition + 1;
   const prevPosition = currentPosition === 0 ? currentPosition : currentPosition - 1;
   const hideModal = () => {
-    location.hash = `#/arts/artists/${artistKey}`;
+    let params = props.appState.getTrimmedURI(2);
+    location.hash = `#/${params}`
+    //location.hash = `#/arts/artists/${artistKey}`;
   }
 
   const leftSwipeHandler = () => {
