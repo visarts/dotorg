@@ -48,6 +48,7 @@ const LiteratureGenre = (props) => {
       <div className="genreContainer">
         {titles}
       </div>
+      <BackToTop />
     </div>
   )
 };

@@ -29,7 +29,7 @@ const GlobalHeader = (props) => {
             </span>
           </Link>
           <Link to={creatorUrl} className={currentCreator ? '' : 'hidden'}>
-            <span className="subHead">
+            <span className="subHead subSubHead">
               {subSubHeader}
             </span>
           </Link>

@@ -2,12 +2,30 @@
 
 
 .listLink {
-    margin: 0;
+    &.listLinkThumbView {
+      margin: 0 4px 4px 0;
+      background-color: @tertiaryThemeColor;
+    }
     a {
       padding: @hPadding @vPadding;
       transition: all .2s;
       display: inline-block;
       width: 100%;
+      line-height: 1.2em;
+
+      .listLinkThumb {
+        display: inline-block;
+        float: left;
+        margin-right: 5px;
+        width: 50px;
+      }
+
+      .listLinkSubtext {
+        color: darken(@mainLinkColor, 25%);
+        font-style: italic;
+        font-size: 1.2em;
+        line-height: 1.5em;
+      }
 
       &:focus {
         background: @tertiaryThemeColor;

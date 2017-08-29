@@ -44,6 +44,7 @@
           border-left: 2px solid darken(@darkLinkColor, 30%);
           padding: 0px @vLinkPadding;
 
+
           &.hidden {
             display: none;
           }
@@ -72,6 +73,12 @@
         a {
           padding-left: 0;
           padding-right: 0;
+          //hide the creator/genre link on mobile as it might get bumped down to line 2
+          .subHead {
+            &.subSubHead {
+              display: none;
+            }
+          }
         }
       }
     }

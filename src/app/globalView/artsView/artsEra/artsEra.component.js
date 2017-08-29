@@ -20,15 +20,17 @@ const ArtsEra = (props) => {
           titlesList.push(
             <ListLink
               key={title.fileName}
+              thumb={`./content/artwork/${artistKey}/${title.fileName}_sm.jpg`}
               url={`/arts/g/${artist.era.toLowerCase()}/${artistKey}/${title.fileName}`}
-              text={title.title} />
+              text={title.title}
+              subtext={title.date} />
           );
         }
       }
       if (titlesList.length) {
         artistsList.push(
           <div className="artistBlock" key={artistKey}>
-            <h3>{artist.fname} {artist.lname}</h3>
+            <h3>{decodeURIComponent(artist.fname)} {decodeURIComponent(artist.lname)}</h3>
             <ul className="contentBlock">
               {titlesList}
             </ul>
@@ -48,6 +50,7 @@ const ArtsEra = (props) => {
       <div className="eraContainer">
         {titles}
       </div>
+      <BackToTop />
     </div>
   )
 };
