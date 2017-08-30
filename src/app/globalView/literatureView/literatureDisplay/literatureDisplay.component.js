@@ -37,6 +37,8 @@ export default class LiteratureDisplay extends React.Component {
     this.author = this.props.store.authorsData[this.authorKey];
     this.currentWorkKey = this.props.match.params.work;
     this.currentWork = this.author.content.filter(work => work.fileName === this.currentWorkKey)[0];
+    document.title = `Portitude Library: ${this.author.fname} ${this.author.lname} - ${this.currentWork.title}`;
+
     dataService.getHTMLContent(this.authorKey, this.currentWorkKey)
       .then((results) => {
         this.content = results;

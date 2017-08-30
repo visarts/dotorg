@@ -12,6 +12,8 @@ const ArtsArtist = (props) => {
   const artistKey = props.match.params.artist;
   const artist = props.store.artistsData[artistKey];
 
+  document.title = `Portitude Gallery: ${artist.fname} ${artist.lname}`;
+
   /*const getImages = () => {
     const imageList = [];
     artist.content.map((item, index) => {

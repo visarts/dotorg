@@ -9,6 +9,8 @@ import './literatureGenre.component.less';
 
 const LiteratureGenre = (props) => {
 
+  document.title = `Portitude Library: ${props.appState.routing.currentSubSection}`;
+
   const getTitles = () => {
     let authorsList = [];
     for(let authorKey in props.store.authorsData) {

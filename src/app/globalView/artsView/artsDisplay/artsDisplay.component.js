@@ -12,6 +12,9 @@ const ArtsDisplay = (props) => {
   const artist = props.store.artistsData[artistKey];
   const currentArtworkKey = props.match.params.artwork;
   const currentArtwork = artist.content.filter(artwork => artwork.fileName === currentArtworkKey)[0];
+
+  document.title = `Portitude Gallery: ${artist.fname} ${artist.lname} - ${currentArtwork.title}`;
+
   const getCurrentArtwork = () => artist.content.filter(artwork => artwork.fileName === currentArtworkKey)[0];
   const getPosition = () => {
     let position = 0;

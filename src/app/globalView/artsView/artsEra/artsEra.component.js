@@ -9,6 +9,8 @@ import './artsEra.component.less';
 
 const ArtsEra = (props) => {
 
+  document.title = `Portitude Gallery: artwork from the ${props.appState.routing.currentSubSection} era`;
+
   const getTitles = () => {
     let artistsList = [];
     for(let artistKey in props.store.artistsData) {

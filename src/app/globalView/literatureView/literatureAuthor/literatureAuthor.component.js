@@ -4,6 +4,7 @@ import historyService from 'Services/history.service';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
 import ListLink from 'SharedComponents/listLink/listLink.component';
 import './literatureAuthor.component.less';
+import { CSSTransitionGroup } from 'react-transition-group';
 
 const LiteratureAuthor = (props) => {
   //document.querySelector('body').scrollTop = 0;
@@ -11,6 +12,8 @@ const LiteratureAuthor = (props) => {
   const authorKey = props.match.params.author;
   const author = props.store.authorsData[authorKey];
   //openTitle = openTitle.bind(this);
+  document.title = `Portitude Library: ${author.fname} ${author.lname}`;
+
 
   const openTitle = (title) => {
     //historyService.addToHistory({type: 'litHistory', data: title})
@@ -61,6 +64,12 @@ const LiteratureAuthor = (props) => {
   };
 
   return (
+    <CSSTransitionGroup
+      transitionName="example"
+      transitionAppear={true}
+      transitionAppearTimeout={200}
+      transitionEnter={false}
+      transitionLeave={false}>
     <div className="literatureAuthor">
       <h1>{`${author.fname} ${author.lname}`}</h1>
       <div className="about">
@@ -99,6 +108,7 @@ const LiteratureAuthor = (props) => {
         <BackToTop />
       </div>
     </div>
+    </CSSTransitionGroup>
   );
 }
 

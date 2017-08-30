@@ -6,7 +6,6 @@ import GlobalHeader from './globalHeader/globalHeader.component';
 import GlobalNav from './globalNav/globalNav.component';
 import GlobalFooter from './globalFooter/globalFooter.component';
 import GlobalView from './globalView/globalView.component';
-//import { CSSTransitionGroup } from 'react-transition-group'
 
 export default class App extends React.Component {
 
@@ -62,9 +61,6 @@ export default class App extends React.Component {
       possibility -- adding illustrations from books to literature pages
 
       add nationality to artists and authors, medium type to art, possible sub-genre's to lit
-
-      add routing for art eras and lit genres
-          -- this creates complications with the store service setup. Will need to refactor
 
       Add middle tier sizing layout for tablets, etc
     */
