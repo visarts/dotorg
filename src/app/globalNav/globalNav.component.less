@@ -1,82 +1,136 @@
 @import '../../styles/globals';
 
 .globalNav {
-  position: relative;
-  margin: 0em auto 1em auto;
-  color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1100px;
   background-color: @tertiaryThemeColor;
+  .globalContainer {
+    margin: 0em auto @hMargin auto;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
 
-  .frontp {
-    img {
-      width: 100%;
+    .frontp {
+      img {
+        width: 100%;
+      }
     }
+
+    a {
+      width: 50%;
+      min-width: 250px;
+      //display: inline-flex;
+      vertical-align: top;
+      text-decoration: none;
+      //background-color: @tertiaryThemeColor;
+      transition: all .2s;
+
+      &.selected {
+        //background: linear-gradient(to left, @mainLinkHoverColor, @tertiaryThemeColor);
+        //color: @mainTextColor;
+
+        &:nth-child(2) {
+          //background: linear-gradient(to right, @mainLinkHoverColor, @tertiaryThemeColor);
+        }
+      }
+
+      &.unselected {
+        color: @darkLinkColor;
+      }
+
+      .navDescription {
+        padding: @hPadding 0%;
+
+        .navImage {
+          margin: @hPadding 0%;
+          width: 100%;
+          height: 200px;
+          max-width: 400px;
+          background: @mainThemeColor;
+          transition: height .2s;
+
+          &.subPage {
+            height: 75px;
+          }
+        }
+
+        .title {
+          font-size: 1.1em;
+          margin: 0;
+        }
+
+        /*.icon {
+          margin-right: 5px;
+          font-size: .8em;
+          float: left;
+          opacity: .5;
+        }*/
+
+        .desc {
+          display: block;
+          margin-top: 4px;
+
+          &.subPage {
+            display: none;
+          }
+        }
+      }
+
+      &:hover {
+        color: @secondaryLinkHoverColor;
+      }
+    }
+
+
   }
 
-  a {
-    width: 50%;
-    min-width: 250px;
-    //display: inline-flex;
-    vertical-align: top;
-    text-decoration: none;
-    background-color: @tertiaryThemeColor;
-    transition: all .2s;
+  &.litSelected {
+    background: linear-gradient(to right, @mainLinkHoverColor, @tertiaryThemeColor);
+    color: @mainTextColor;
+  }
+  &.artSelected {
+    color: @mainTextColor;
+    background: linear-gradient(to left, @mainLinkHoverColor, @tertiaryThemeColor);
 
-    &.selected {
-      background: linear-gradient(to left, @mainLinkHoverColor, @tertiaryThemeColor);
-      color: @mainTextColor;
+  }
+  @media(max-width: @smallScreen) {
+    margin: 0;
+    .globalContainer {
+      a {
+        width: 100%;
 
-      &:nth-child(2) {
-        background: linear-gradient(to right, @mainLinkHoverColor, @tertiaryThemeColor);
-      }
-    }
+        /*&.selected {
+          background: linear-gradient(to right, @mainLinkHoverColor, @tertiaryThemeColor);
+        }*/
 
-    &.unselected {
-      color: @darkLinkColor;
-    }
+        .navDescription {
+          //padding: @hPadding 5%;
 
-    .navDescription {
-      padding: @hPadding 10%;
-
-      .title {
-        font-size: 1.1em;
-        margin: 0;
-      }
-
-      /*.icon {
-        margin-right: 5px;
-        font-size: .8em;
-        float: left;
-        opacity: .5;
-      }*/
-
-      .desc {
-        display: block;
-        margin-top: 4px;
-
-        &.hideDesc {
-          display: none;
+          .navImage {
+            height: 75px;
+          }
         }
       }
     }
 
-    &:hover {
-      color: @secondaryLinkHoverColor;
-    }
-  }
+    &.litSelected {
+      background: linear-gradient(to bottom, @mainLinkHoverColor, @tertiaryThemeColor);
 
-  @media(max-width: @smallScreen) {
-    a {
-      width: 100%;
-
-      &.selected {
-        background: linear-gradient(to right, @mainLinkHoverColor, @tertiaryThemeColor);
+      .globalContainer {
+        .navDescription {
+          .navImage.subPage {
+            height: 0px;
+          }
+        }
       }
+    }
+    &.artSelected {
+      background: linear-gradient(to top, @mainLinkHoverColor, @tertiaryThemeColor);
 
-      .navDescription {
-        padding: @hPadding 5%;
+      .globalContainer {
+        .navDescription {
+          .navImage.subPage {
+            height: 0px;
+          }
+        }
       }
     }
 

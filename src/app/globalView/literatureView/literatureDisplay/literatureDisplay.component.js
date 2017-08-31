@@ -59,7 +59,7 @@ export default class LiteratureDisplay extends React.Component {
             page = this.content.slice(0, lastChar);
             this.content = this.content.slice(lastChar);
             this.pages.push(page);
-            if (this.content.length && this.content.length < (lastChar + buffer)) {
+            if (this.content.length > 1 && this.content.length < (lastChar + buffer)) {
               page = this.content.slice(0);
               this.content = this.content.slice(lastChar + buffer);
               this.pages.push(page);

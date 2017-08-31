@@ -1,86 +1,97 @@
 @import '../../styles/globals';
 @vLinkPadding: 6px;
 
-.globalHeader {
-  background: @secondaryThemeColor;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
+header {
+  .globalHeader {
+    background: @secondaryThemeColor;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 
-  .globalContainer {vertical-align: middle;
-    h1 {
-      display: inline-block;
-      left: 0;
-      top: 0;
-      //margin: 0 @vMargin;
-      transition: font-size, .2s;
-      vertical-align: middle;
-
-      .portitudeTitle {
-        font-size: 45px;
-      }
-
-      &.smallLogo {
-        font-size: 150%;
+    .globalContainer {
+      h1 {
+        display: inline-block;
+        left: 0;
+        top: 0;
+        //margin: 0 @vMargin;
+        transition: font-size, .2s;
+        vertical-align: middle;
 
         .portitudeTitle {
-          font-size: 30px;
+          font-size: 45px;
         }
-      }
 
-      a {
-        display: inline-block;
-        color: @mainTextColor;
-        padding: @hPadding 0px;
-        transition: all .2s;
+        &.smallLogo {
+          font-size: 150%;
 
-        .subHead {
-          vertical-align: middle;
-          font-size: 18px;
-          color: @darkLinkColor;
+          .portitudeTitle {
+            font-size: 30px;
+          }
+        }
+
+        a {
+          display: inline-block;
+          color: @mainTextColor;
+          padding: @hPadding 0px;
           transition: all .2s;
-          border-left: 2px solid darken(@darkLinkColor, 30%);
-          padding: 0px @vLinkPadding;
 
+          .subHead {
+            vertical-align: middle;
+            font-size: 18px;
+            color: @darkLinkColor;
+            transition: all .2s;
+            border-left: 2px solid darken(@darkLinkColor, 30%);
+            padding: 0px @vLinkPadding;
 
-          &.hidden {
-            display: none;
+            &:hover {
+              text-decoration: none;
+              color: @secondaryLinkHoverColor;
+            }
+          }
+
+          &.portitudeTitle {
+            padding-right: @vLinkPadding;
           }
 
           &:hover {
             text-decoration: none;
             color: @secondaryLinkHoverColor;
           }
-        }
 
-        &.portitudeTitle {
-          padding-right: @vLinkPadding;
-        }
-
-        &:hover {
-          text-decoration: none;
-          color: @secondaryLinkHoverColor;
-        }
-
-        &:focus {
-          text-decoration: none;
-        }
-      }
-
-      @media(max-width: @smallScreen) {
-        a {
-          padding-left: 0;
-          padding-right: 0;
-          //hide the creator/genre link on mobile as it might get bumped down to line 2
-          .subHead {
-            &.subSubHead {
-              display: none;
-            }
+          &:focus {
+            text-decoration: none;
           }
+        }
+
+
+      }
+    }
+  }
+  .globalHeaderFoot {
+    height: 30px;
+    background: linear-gradient(to bottom, @secondaryThemeColor, @tertiaryThemeColor);
+    transition: all .2s;
+
+    &.hidden {
+      display: block !important;
+      opacity: 0;
+      height: 0px;
+    }
+  }
+
+  @media(max-width: @smallScreen) {
+    a {
+      padding-left: 0;
+      padding-right: 0;
+      //hide the creator/genre link on mobile as it might get bumped down to line 2
+      .subHead {
+        &.subSubHead {
+          display: none;
         }
       }
     }
   }
+
 }

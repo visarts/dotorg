@@ -19,27 +19,30 @@ const GlobalHeader = (props) => {
   const creatorUrl = currentCreator ? `${sectionUrl}/${routing.routeKey}/${subsection}` : '';
 
   return (
-    <div className="globalHeader">
-      <div className="globalContainer">
-        <h1 className={smallLogoClass}>
-          <Link to="/" className="portitudeTitle">Portitude</Link>
-          <Link to={sectionUrl} className={routing.currentSection ? '' : 'hidden'}>
-            <span className="subHead">
-              {subHeader}
-            </span>
-          </Link>
-          <Link to={creatorUrl} className={currentCreator ? '' : 'hidden'}>
-            <span className="subHead subSubHead">
-              {subSubHeader}
-            </span>
-          </Link>
-        </h1>
-        <Search
-          updateAppState={props.updateAppState}
-          store={props.store}
-         />
+    <header>
+      <div className="globalHeader">
+        <div className="globalContainer">
+          <h1 className={smallLogoClass}>
+            <Link to="/" className="portitudeTitle">Portitude</Link>
+            <Link to={sectionUrl} className={routing.currentSection ? '' : 'hidden'}>
+              <span className="subHead">
+                {subHeader}
+              </span>
+            </Link>
+            <Link to={creatorUrl} className={currentCreator ? '' : 'hidden'}>
+              <span className="subHead subSubHead">
+                {subSubHeader}
+              </span>
+            </Link>
+          </h1>
+          <Search
+            updateAppState={props.updateAppState}
+            store={props.store}
+           />
+        </div>
       </div>
-    </div>
+      <div className={`globalHeaderFoot ${smallLogoClass ? 'hidden' : ''}`}></div>
+    </header>
   );
 }
 
