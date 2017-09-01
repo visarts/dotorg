@@ -63,6 +63,8 @@ export default class App extends React.Component {
       add nationality to artists and authors, medium type to art, possible sub-genre's to lit
 
       Add middle tier sizing layout for tablets, etc
+
+      change global nav so titles are over images with transparent bg
     */
 
     return (

@@ -44,12 +44,24 @@
           width: 100%;
           height: 200px;
           max-width: 400px;
-          background: @mainThemeColor;
+          background-size: cover;
+          background-position: 50% 30%;
           transition: height .2s;
 
           &.subPage {
             height: 75px;
           }
+        }
+        .navImage.navLit {
+          background-image: url('http://portitude.org/arts/harnett/1878-job_lot_cheap.jpg');
+          transition: all .2s;
+          
+        }
+
+        .navImage.navArt {
+          background-image: url('http://portitude.org/arts/waterhouse/1916-tale_from_the_decameron.jpg');
+          transition: all .2s;
+
         }
 
         .title {
@@ -85,11 +97,16 @@
   &.litSelected {
     background: linear-gradient(to right, @mainLinkHoverColor, @tertiaryThemeColor);
     color: @mainTextColor;
+    .navArt {
+      opacity: .3;
+    }
   }
   &.artSelected {
     color: @mainTextColor;
     background: linear-gradient(to left, @mainLinkHoverColor, @tertiaryThemeColor);
-
+    .navLit {
+      opacity: .3;
+    }
   }
   @media(max-width: @smallScreen) {
     margin: 0;
