@@ -2,8 +2,12 @@
 
 .globalNav {
   background-color: @tertiaryThemeColor;
+  margin-bottom: @hMargin;
+  box-shadow: 0px 0px 25px @secondaryThemeColor;
+  //border-bottom: 2px solid lighten(@tertiaryThemeColor, 10%);
+
   .globalContainer {
-    margin: 0em auto @hMargin auto;
+    margin: 0em auto 0em auto;
     color: #fff;
     display: flex;
     flex-wrap: wrap;
@@ -22,6 +26,7 @@
       text-decoration: none;
       //background-color: @tertiaryThemeColor;
       transition: all .2s;
+      color: #fff;
 
       &.selected {
         //background: linear-gradient(to left, @mainLinkHoverColor, @tertiaryThemeColor);
@@ -40,10 +45,11 @@
         padding: @hPadding 0%;
 
         .navImage {
+          position: relative;
           margin: @hPadding 0%;
           width: 100%;
           height: 200px;
-          max-width: 400px;
+          //max-width: 400px;
           background-size: cover;
           background-position: 50% 30%;
           transition: height .2s;
@@ -55,7 +61,7 @@
         .navImage.navLit {
           background-image: url('http://portitude.org/arts/harnett/1878-job_lot_cheap.jpg');
           transition: all .2s;
-          
+
         }
 
         .navImage.navArt {
@@ -64,24 +70,33 @@
 
         }
 
-        .title {
-          font-size: 1.1em;
-          margin: 0;
-        }
+        .navTitle {
+          background: linear-gradient(to top, rgba(0, 0, 0, .85), rgba(0, 0, 0, 0));
+          padding: @vPadding;
+          padding-top: @vPadding + @vMargin;
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+          .title {
+            font-size: 1.8em;
+            margin: 0;
+          }
 
-        /*.icon {
-          margin-right: 5px;
-          font-size: .8em;
-          float: left;
-          opacity: .5;
-        }*/
+          /*.icon {
+            margin-right: 5px;
+            font-size: .8em;
+            float: left;
+            opacity: .5;
+          }*/
 
-        .desc {
-          display: block;
-          margin-top: 4px;
+          .desc {
+            display: block;
+            margin-top: 4px;
 
-          &.subPage {
-            display: none;
+            &.subPage {
+              display: none;
+            }
           }
         }
       }
@@ -109,7 +124,7 @@
     }
   }
   @media(max-width: @smallScreen) {
-    margin: 0;
+    box-shadow: none;
     .globalContainer {
       a {
         width: 100%;
@@ -119,10 +134,18 @@
         }*/
 
         .navDescription {
-          //padding: @hPadding 5%;
+          padding: 0px;
 
           .navImage {
-            height: 75px;
+            height: 100px;
+
+            .navTitle {
+              padding-top: @vPadding;
+
+              .title {
+                font-size: 1.3em;
+              }
+            }
           }
         }
       }
@@ -133,8 +156,19 @@
 
       .globalContainer {
         .navDescription {
+          padding: @hPadding;
           .navImage.subPage {
-            height: 0px;
+            background: transparent;
+            height: 20px;
+
+            .navTitle {
+              background: transparent;
+              padding: 0;
+
+              .title {
+                font-size: 1.1em;
+              }
+            }
           }
         }
       }
@@ -144,8 +178,20 @@
 
       .globalContainer {
         .navDescription {
+          padding: @hPadding;
+
           .navImage.subPage {
-            height: 0px;
+            background: transparent;
+            height: 20px;
+
+            .navTitle {
+              background: transparent;
+              padding: 0;
+
+              .title {
+                font-size: 1.1em;
+              }
+            }
           }
         }
       }

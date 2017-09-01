@@ -20,16 +20,23 @@ const GlobalNav = (props) => {
       </div>
       <Link to='/literature'>
         <div className="navDescription">
-          <div className={`navImage navLit ${subPage}`}></div>
-          <h3 className="title">{/*<Glyphicon glyph="book" className="icon" />*/}The Library</h3>
-          <span className={`desc ${subPage}`}>Literature by classic authors line the walls of this section.</span>
+          <div className={`navImage navLit ${subPage}`}>
+            <div className="navTitle">
+              <h3 className="title">{/*<Glyphicon glyph="book" className="icon" />*/}The Library</h3>
+              <span className={`desc ${subPage}`}>Literature by classic authors line the walls of this section.</span>
+            </div>
+          </div>
+
         </div>
       </Link>
       <Link to='/arts'>
         <div className="navDescription">
-          <div className={`navImage navArt ${subPage}`}></div>
-          <h3 className="title">{/*<Glyphicon glyph="tint" className="icon" />*/}The Gallery</h3>
-          <span className={`desc ${subPage}`}>A fantastic collection of artwork by history's greatest artists.</span>
+          <div className={`navImage navArt ${subPage}`}>
+            <div className="navTitle">
+              <h3 className="title">{/*<Glyphicon glyph="tint" className="icon" />*/}The Gallery</h3>
+              <span className={`desc ${subPage}`}>A fantastic collection of artwork by history's greatest artists.</span>
+            </div>
+          </div>
         </div>
       </Link>
       </div>
