@@ -22,7 +22,7 @@ const HomeView = (props) => {
           <div className="featuredBlock">
             <h4>Featured Author: </h4>
             <h2>
-              <Link to={`/literature/a/${authorKeys[creatorFrequency]}`}>{author.fname} {author.lname}</Link>
+              <Link to={`/literature/a/${authorKeys[creatorFrequency]}`}>{decodeURIComponent(`${author.fname} ${author.lname}`)}</Link>
             </h2>
           </div>
           <div className="featuredBlock">
@@ -36,7 +36,7 @@ const HomeView = (props) => {
           <div className="featuredBlock">
             <h4>Featured Artist: </h4>
             <h2>
-              <Link to={`/arts/a/${artistKeys[creatorFrequency]}`}>{artist.fname} {artist.lname}</Link>
+              <Link to={`/arts/a/${artistKeys[creatorFrequency]}`}>{decodeURIComponent(`${artist.fname} ${artist.lname}`)}</Link>
             </h2>
           </div>
           <div className="featuredBlock">
