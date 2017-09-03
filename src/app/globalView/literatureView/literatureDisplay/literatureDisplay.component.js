@@ -82,6 +82,7 @@ export default class LiteratureDisplay extends React.Component {
 
 
         this.authorMenuButtonLabel = window.innerWidth <= this.smallViewSize ? <Glyphicon glyph="th" /> : <span>Read More by {this.author.lname} <Glyphicon glyph="chevron-down" /></span>;
+        this.settingsMenuButtonLabel = <Glyphicon glyph="cog" />;
         this.originalHash = document.location.hash;
         this.setState({authorMenu: this.setAuthorMenu(this.state.currentMenuPage)})
       });
@@ -135,7 +136,8 @@ export default class LiteratureDisplay extends React.Component {
     });
   }
 
-  increaseFont () {
+  increaseFont (e) {console.log(e);
+    e.stopPropagation();
     const newFontSizeClass = this.state.currentFontSizeClass === 'smFont' ? 'mdFont' : 'lgFont';
     this.setState({ currentFontSizeClass: newFontSizeClass });
     localStorage.setItem('readingFontSize', newFontSizeClass);
@@ -205,13 +207,18 @@ export default class LiteratureDisplay extends React.Component {
           <div className="modal-nav">
             <span className="readingMenu">
               {this.author.content.length > 1 &&
-                <DropdownButton noCaret title={this.authorMenuButtonLabel} id="bg-vertical-dropdown-1" className="readerDropdown" onClick={this.onMenuClick.bind(this)} onBlur={this.onMenuBlur.bind(this)}>
+                <DropdownButton noCaret
+                  title={this.authorMenuButtonLabel}
+                  id="bg-vertical-dropdown-1"
+                  className="readerDropdown"
+                  onClick={this.onMenuClick.bind(this)}
+                  onBlur={this.onMenuBlur.bind(this)}>
                   <Glyphicon
                     glyph="menu-up"
                     disabled={this.state.currentMenuPage === 1}
                     className={`showMoreButton ${this.state.currentMenuPage === 1 ? 'buttonDisabled' : ''}`}
                     onClick={this.setPreviousMenuPage.bind(this)} />
-                    {this.state.authorMenu}
+                  {this.state.authorMenu}
                   <Glyphicon
                     glyph="menu-down"
                     disabled={this.state.currentMenuPage === this.menuPages.length}
@@ -220,12 +227,16 @@ export default class LiteratureDisplay extends React.Component {
                 </DropdownButton>}
             </span>
             <span className="readingControls">
-              <span className="textSizing">
-                <button onClick={this.decreaseFont.bind(this)} className="decreaseFont" disabled={this.state.currentFontSizeClass === 'smFont'}><Glyphicon glyph="minus" /></button>
-                {false && <Glyphicon className="textSizingGlyph" glyph="text-size" />}
-                <button onClick={this.increaseFont.bind(this)} className="increaseFont" disabled={this.state.currentFontSizeClass === 'lgFont'}><Glyphicon glyph="plus" /></button>
-              </span>
-              <button onClick={this.setReadingMode.bind(this)} className="readingModeButton"><Glyphicon glyph="lamp" className={this.state.readingModeClass} /></button>
+              <DropdownButton noCaret
+                title={this.settingsMenuButtonLabel}
+                id="settingsMenuButtonLabel">
+
+                  <Glyphicon onClick={this.setReadingMode.bind(this)}
+                  className="readingModeButton"  glyph="lamp" className={this.state.readingModeClass} />
+                  <Glyphicon glyph="minus" className="decreaseFont" onClick={this.decreaseFont.bind(this)} disabled={this.state.currentFontSizeClass === 'smFont'} />
+
+                  <Glyphicon glyph="plus" className="increaseFont" disabled={this.state.currentFontSizeClass === 'lgFont'} onClick={this.decreaseFont.bind(this)}   />
+              </DropdownButton>
             </span>
           </div>
           <Modal.Body className={this.state.readingModeClass}>
