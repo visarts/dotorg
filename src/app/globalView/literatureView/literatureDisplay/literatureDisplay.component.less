@@ -42,9 +42,11 @@
         color: darken(@mainTextColor, 20%);
         //background: lighten(@tertiaryThemeColor, 10%);
         background: transparent;
-        border: 1px solid @activeBackgroundColor;
+        //border: 1px solid @activeBackgroundColor;
         border-radius: 4px;
         transition: background-color .2s;
+        min-width: 25px;
+        font-size: 1.2em;
 
         &:hover {
           background-color: @activeBackgroundColor;
@@ -111,11 +113,6 @@
         .readerDropdown {
           min-width: 30px;
           padding: 4px;
-
-          &:focus, &:active {
-            background: @tertiaryThemeColor;
-            color: @mainTextColor;
-          }
         }
 
         .readingMenu {
@@ -123,7 +120,7 @@
         }
 
         .readingControls {
-
+          margin-top: -3px;
           float: right;
           display: inline-block;
 
@@ -173,11 +170,9 @@
       }
 
       .readMoreMenu {
-        position: fixed;
-        top: 0;
         bottom: @footerHeight;
         top: calc(@headerHeight + @navHeight);
-        background-color: @tertiaryThemeColor;
+        background-color: @transparentTertiaryThemeColor;
         z-index: 1700;
         transition: 0.5s;
 
@@ -247,36 +242,6 @@
           }
         }
 
-        .htmlContent {
-          &.smFont {
-            font-size: inherit;
-          }
-          &.mdFont {
-            font-size: 1.2em;
-            line-height: normal;
-          }
-          &.lgFont {
-            font-size: 1.3em;
-            line-height: normal;
-          }
-        }
-
-      }
-
-      .modal-buffer-top {
-        position: fixed;
-        top: 150px;
-        width: 100%;
-        height: 10px;
-        background: linear-gradient(to bottom, rgba(202, 202, 202, 1), rgba(202, 202, 202, 0));
-      }
-
-      .modal-buffer-bottom {
-        position: fixed;
-        bottom: 50px;
-        width: 100%;
-        height: 10px;
-        background: linear-gradient(to top, rgba(202, 202, 202, 1), rgba(202, 202, 202, 0));
       }
 
       .modal-footer {
@@ -314,13 +279,7 @@
     }
     @media (max-width: @smallScreen) {
       .modal-content {
-        button {
-          font-size: 1.2em;
 
-          &.readerDropdown {
-            font-size: 1em;
-          }
-        }
 
         .dropdown-menu li a {
           font-size: 1.2em;
@@ -328,17 +287,6 @@
           //padding: 6px;
         }
       }
-    }
-  }
-
-  @media (min-width: @smallScreen) {
-    .modal-dialog {
-      margin: 15px auto;
-    }
-  }
-  @media (max-width: 767px) {
-    .modal-dialog {
-      margin: 5px;
     }
   }
 }

@@ -23,12 +23,9 @@ export default class LiteratureDisplay extends React.Component {
       readingModeClass: readingMode ? readingMode : 'lightMode',
       currentFontSizeClass: readingFontSize,
       currentPage: document.location.hash.indexOf('?page=') > -1 ? parseInt(document.location.hash.slice(document.location.hash.indexOf('=') + 1)) : 1,
-      currentMenuPage: 1,
-      menuIsOpen: false,
-      authorMenu: []
+      menuIsOpen: false
     };
     this.setValues = this.setValues.bind(this);
-    //this.setAuthorMenu = this.setAuthorMenu.bind(this);
     this.setValues();
   }
 
@@ -69,22 +66,11 @@ export default class LiteratureDisplay extends React.Component {
         } else {
           this.pages.push(this.content);
         }
-        this.smallViewSize = 768;
-        this.menuPageMaxLength = window.innerWidth <= this.smallViewSize ? 9 : 12;
-        this.menuPages = [];
-        this.menuItems = this.author.content.slice();
-        /*do {
-          this.menuPages.push(this.menuItems.splice(0, this.menuPageMaxLength));
-          if (this.menuItems.length && this.menuItems.length < this.menuPageMaxLength) {
-            this.menuPages.push(this.menuItems);
-          }
-        } while (this.menuItems.length > this.menuPageMaxLength);*/
 
-
-        this.authorMenuButtonLabel = window.innerWidth <= this.smallViewSize ? <Glyphicon glyph="list" /> : <span><Glyphicon glyph="list" /> Read More by {this.author.lname} <Glyphicon glyph="chevron-down" /></span>;
+        //this.authorMenuButtonLabel = window.innerWidth <= 768 ? <Glyphicon glyph="list" /> : <span><Glyphicon glyph="list" /> Read More by {this.author.lname} <Glyphicon glyph="chevron-down" /></span>;
         this.settingsMenuButtonLabel = <Glyphicon glyph="cog" />;
         this.originalHash = document.location.hash;
-        this.setState({authorMenu: []});
+        this.setState(this.state);
       });
   }
 
@@ -110,31 +96,6 @@ export default class LiteratureDisplay extends React.Component {
       this.setPageNum(this.state.currentPage);
     }
   }
-
-  /*setNextMenuPage () {
-    let currentMenuPage = this.state.currentMenuPage;
-    if (this.state.currentMenuPage < this.menuPages.length) {
-      this.setState({ currentMenuPage: currentMenuPage + 1, authorMenu: this.setAuthorMenu(currentMenuPage + 1) });
-    }
-  }
-
-  setPreviousMenuPage () {
-    let currentMenuPage = this.state.currentMenuPage;
-    if (this.state.currentMenuPage > 1) {
-      this.setState({ currentMenuPage: currentMenuPage - 1, authorMenu: this.setAuthorMenu(currentMenuPage - 1) });
-    }
-  }*/
-
-  /*setAuthorMenu (currentMenuPage) {
-    return this.menuPages[currentMenuPage - 1].map((item, index) => {
-      let params = this.props.appState.getTrimmedURI(1);
-      return (
-        <LinkContainer to={`/${params}/${item.fileName}`} key={index} onClick={this.toggleReadMoreMenu}>
-          <MenuItem eventKey={index} key={index}>{decodeURIComponent(item.title)}</MenuItem>
-        </LinkContainer>
-      );
-    });
-  }*/
 
   increaseFont (e) {
     const newFontSizeClass = this.state.currentFontSizeClass === 'smFont' ? 'mdFont' : 'lgFont';
@@ -165,24 +126,6 @@ export default class LiteratureDisplay extends React.Component {
     return {__html: this.pages[this.state.currentPage - 1]};
   }
 
-  onMenuClick (event) {
-    /*const menuIsOpen = document.querySelector('.open');
-    this.setState({ menuIsOpen: !this.state.menuIsOpen }, () => {
-      if (this.state.menuIsOpen) {
-        document.querySelector('.readerOverlay').style.display = 'block';
-      } else {
-        if (menuIsOpen && menuIsOpen.className !== 'dropdown open btn-group') {
-          document.querySelector('.readerOverlay').style.display = 'none';
-        }
-
-      }
-    });*/
-  }
-
-  onMenuBlur (event) {
-
-  }
-
   toggleReadMoreMenu (toggle, e) {
     if (toggle === 'close') {
       document.querySelector('.readMoreMenu').classList.add('readMoreMenuClosed');
@@ -204,7 +147,7 @@ export default class LiteratureDisplay extends React.Component {
 
     return (
       <div className="literatureDisplay">
-        {this.menuPages && <Modal
+        {this.settingsMenuButtonLabel && <Modal
           show={true}
           onHide={this.hideModal.bind(this)}
           dialogClassName="custom-modal literature-modal">
@@ -214,29 +157,12 @@ export default class LiteratureDisplay extends React.Component {
           <div className="modal-nav">
             <span className="readingMenu">
               <button onClick={this.toggleReadMoreMenu.bind(this)}><Glyphicon glyph="list" /></button>
-              {/*!this.author.content.length > 1 &&
-                <DropdownButton noCaret
-                  title={this.authorMenuButtonLabel}
-                  id="bg-vertical-dropdown-1"
-                  className="readerDropdown"
-                  onClick={this.onMenuClick.bind(this)}
-                  onBlur={this.onMenuBlur.bind(this)}>
-                  <Glyphicon
-                    glyph="menu-up"
-                    disabled={this.state.currentMenuPage === 1}
-                    className={`showMoreButton ${this.state.currentMenuPage === 1 ? 'buttonDisabled' : ''}`}
-                    onClick={this.setPreviousMenuPage.bind(this)} />
-                  <Glyphicon
-                    glyph="menu-down"
-                    disabled={this.state.currentMenuPage === this.menuPages.length}
-                    className={`showMoreButton ${this.state.currentMenuPage === this.menuPages.length ? 'buttonDisabled' : ''}`}
-                    onClick={this.setNextMenuPage.bind(this)} />
-                </DropdownButton>*/}
             </span>
             <span className="readingControls">
               <DropdownButton noCaret
                 title={this.settingsMenuButtonLabel}
                 className="readerDropdown"
+                onClick={this.toggleReadMoreMenu.bind(this, 'close')}
                 id="settingsMenuButtonLabel">
                   <button onClick={this.setReadingMode.bind(this)} className={`readingModeButton ${this.state.readingModeClass}`}><Glyphicon glyph="lamp" /></button>
                   <button className="increaseFont" onClick={this.increaseFont.bind(this)} disabled={this.state.currentFontSizeClass === 'lgFont'}><Glyphicon glyph="plus" /></button>
@@ -245,7 +171,7 @@ export default class LiteratureDisplay extends React.Component {
             </span>
           </div>
           <div className="readMoreMenu dropdown-menu readMoreMenuClosed">
-            {this.menuItems.map((item, index) => {
+            {this.author.content.map((item, index) => {
               let params = this.props.appState.getTrimmedURI(1);
               return (
                 <LinkContainer to={`/${params}/${item.fileName}`} key={index} onClick={this.toggleReadMoreMenu}>
