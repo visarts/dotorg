@@ -136,7 +136,7 @@ export default class LiteratureDisplay extends React.Component {
     });
   }
 
-  increaseFont (e) {console.log(e);
+  increaseFont (e) {
     e.stopPropagation();
     const newFontSizeClass = this.state.currentFontSizeClass === 'smFont' ? 'mdFont' : 'lgFont';
     this.setState({ currentFontSizeClass: newFontSizeClass });
@@ -229,13 +229,11 @@ export default class LiteratureDisplay extends React.Component {
             <span className="readingControls">
               <DropdownButton noCaret
                 title={this.settingsMenuButtonLabel}
+                className="readerDropdown"
                 id="settingsMenuButtonLabel">
-
-                  <Glyphicon onClick={this.setReadingMode.bind(this)}
-                  className="readingModeButton"  glyph="lamp" className={this.state.readingModeClass} />
-                  <Glyphicon glyph="minus" className="decreaseFont" onClick={this.decreaseFont.bind(this)} disabled={this.state.currentFontSizeClass === 'smFont'} />
-
-                  <Glyphicon glyph="plus" className="increaseFont" disabled={this.state.currentFontSizeClass === 'lgFont'} onClick={this.decreaseFont.bind(this)}   />
+                  <button onClick={this.setReadingMode.bind(this)} className={`readingModeButton ${this.state.readingModeClass}`}><Glyphicon glyph="lamp" /></button>
+                  <button className="increaseFont" onClick={this.increaseFont.bind(this)} disabled={this.state.currentFontSizeClass === 'lgFont'}><Glyphicon glyph="plus" /></button>
+                  <button className="decreaseFont" onClick={this.decreaseFont.bind(this)} disabled={this.state.currentFontSizeClass === 'smFont'}><Glyphicon glyph="minus" /></button>
               </DropdownButton>
             </span>
           </div>

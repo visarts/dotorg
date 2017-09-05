@@ -38,7 +38,7 @@
 
       button {
         display: inline-block;
-        margin-right: 4px;
+        //margin-right: 4px;
         color: darken(@mainTextColor, 20%);
         //background: lighten(@tertiaryThemeColor, 10%);
         background: transparent;
@@ -108,62 +108,65 @@
         padding: 4px @vPadding;
         border-radius: 0;
 
-        .readingMenu {
-          .readerDropdown {
-            min-width: 30px;
-            padding: 4px;
+        .readerDropdown {
+          min-width: 30px;
+          padding: 4px;
 
-            &:focus {
-              background: @tertiaryThemeColor;
-              color: @mainTextColor;
-            }
+          &:focus, &:active {
+            background: @tertiaryThemeColor;
+            color: @mainTextColor;
           }
         }
 
-        .readingControls {
-          .dropdown-menu {
-            width: auto;
-            min-width: auto;
+        .readingMenu {
 
-          }
+        }
+
+        .readingControls {
+
           float: right;
           display: inline-block;
 
-          .textSizing {
-            border: 1px solid @activeBackgroundColor;
-            display: inline-block;
-            margin-right: 4px;
-            //background: lighten(@tertiaryThemeColor, 10%);
-            background: transparent;
-            border-radius: 4px;
-
-            .textSizingGlyph {
-              color: darken(@mainTextColor, 40%);
+          .dropdown-menu {
+            width: auto;
+            min-width: auto;
+            .textSizing {
+              border: 1px solid @activeBackgroundColor;
               display: inline-block;
-              margin: 0 4px;
+              margin-right: 4px;
+              //background: lighten(@tertiaryThemeColor, 10%);
+              background: transparent;
+              border-radius: 4px;
+
+              .textSizingGlyph {
+                color: darken(@mainTextColor, 40%);
+                display: inline-block;
+                margin: 0 4px;
+              }
+
+              button {
+                margin: 0;
+                border: none;
+              }
+            }
+
+            .readingModeButton {
+
             }
 
             button {
-              margin: 0;
-              border: none;
-            }
-          }
+              text-align: center;
+              margin-bottom: 4px;
 
-          .readingModeButton {
+              &.lightMode {
+                background: transparent;
+                color: palegoldenrod;
+              }
 
-          }
-
-          button {
-            text-align: center;
-
-            .lightMode {
-              background: transparent;
-              color: palegoldenrod;
-            }
-
-            .darkMode {
-              background: transparent;
-              color: @disabledTextColor;
+              &.darkMode {
+                background: transparent;
+                color: @secondaryThemeColor;
+              }
             }
           }
         }
@@ -279,7 +282,7 @@
         }
       }
     }
-    @media (max-width: 767px) {
+    @media (max-width: @smallScreen) {
       .modal-content {
         button {
           font-size: 1.2em;
