@@ -132,6 +132,11 @@ export default class LiteratureDisplay extends React.Component {
     } else {
       document.querySelector('.readMoreMenu').classList.toggle('readMoreMenuClosed');
     }
+    if (!document.querySelector('.readMoreMenuClosed')) {
+      document.querySelector('.readingBody').style.filter = 'blur(2px)';
+    } else {
+      document.querySelector('.readingBody').style.filter = 'none';
+    }
   }
 
   componentWillReceiveProps (nextProps) {
@@ -181,11 +186,13 @@ export default class LiteratureDisplay extends React.Component {
             })}
           </div>
           <Modal.Body className={this.state.readingModeClass} onClick={this.toggleReadMoreMenu.bind(this, 'close')}>
-            <div className={this.state.currentPage > 1 ? 'literatureTitle smallTitles' : 'literatureTitle'}>
-              <h1>{decodeURIComponent(this.currentWork.title)}</h1>
-              <h2>{this.author.fname} {this.author.lname}</h2>
+            <div className="readingBody">
+              <div className={this.state.currentPage > 1 ? 'literatureTitle smallTitles' : 'literatureTitle'}>
+                <h1>{decodeURIComponent(this.currentWork.title)}</h1>
+                <h2>{this.author.fname} {this.author.lname}</h2>
+              </div>
+              <div className={`htmlContent ${this.state.currentFontSizeClass}`} dangerouslySetInnerHTML={this.setHTMLContent()}></div>
             </div>
-            <div className={`htmlContent ${this.state.currentFontSizeClass}`} dangerouslySetInnerHTML={this.setHTMLContent()}></div><br />
           </Modal.Body>
           <Modal.Body className="readerOverlay"></Modal.Body>
           <Modal.Footer>
