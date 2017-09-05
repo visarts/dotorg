@@ -172,6 +172,35 @@
         }
       }
 
+      .readMoreMenu {
+        position: fixed;
+        top: 0;
+        bottom: @footerHeight;
+        top: calc(@headerHeight + @navHeight);
+        background-color: @tertiaryThemeColor;
+        z-index: 1700;
+        transition: 0.5s;
+
+        &.dropdown-menu {
+          margin: 0;
+          min-width: 0px;
+          display: block;
+          border-radius: 0;
+          overflow-x: scroll;
+          //overflow-y: hidden;
+
+          li a {
+            @media(min-width: @smallScreen) {
+              padding-left: 40px;
+            }
+          }
+        }
+
+        &.readMoreMenuClosed {
+          width: 0px;
+        }
+      }
+
       .modal-body {
         position: absolute;
         top: calc(@headerHeight + @navHeight);
@@ -231,6 +260,7 @@
             line-height: normal;
           }
         }
+
       }
 
       .modal-buffer-top {

@@ -28,7 +28,7 @@ export default class LiteratureDisplay extends React.Component {
       authorMenu: []
     };
     this.setValues = this.setValues.bind(this);
-    this.setAuthorMenu = this.setAuthorMenu.bind(this);
+    //this.setAuthorMenu = this.setAuthorMenu.bind(this);
     this.setValues();
   }
 
@@ -73,18 +73,18 @@ export default class LiteratureDisplay extends React.Component {
         this.menuPageMaxLength = window.innerWidth <= this.smallViewSize ? 9 : 12;
         this.menuPages = [];
         this.menuItems = this.author.content.slice();
-        do {
+        /*do {
           this.menuPages.push(this.menuItems.splice(0, this.menuPageMaxLength));
           if (this.menuItems.length && this.menuItems.length < this.menuPageMaxLength) {
             this.menuPages.push(this.menuItems);
           }
-        } while (this.menuItems.length > this.menuPageMaxLength);
+        } while (this.menuItems.length > this.menuPageMaxLength);*/
 
 
-        this.authorMenuButtonLabel = window.innerWidth <= this.smallViewSize ? <Glyphicon glyph="th" /> : <span>Read More by {this.author.lname} <Glyphicon glyph="chevron-down" /></span>;
+        this.authorMenuButtonLabel = window.innerWidth <= this.smallViewSize ? <Glyphicon glyph="list" /> : <span><Glyphicon glyph="list" /> Read More by {this.author.lname} <Glyphicon glyph="chevron-down" /></span>;
         this.settingsMenuButtonLabel = <Glyphicon glyph="cog" />;
         this.originalHash = document.location.hash;
-        this.setState({authorMenu: this.setAuthorMenu(this.state.currentMenuPage)})
+        this.setState({authorMenu: []});
       });
   }
 
@@ -111,7 +111,7 @@ export default class LiteratureDisplay extends React.Component {
     }
   }
 
-  setNextMenuPage () {
+  /*setNextMenuPage () {
     let currentMenuPage = this.state.currentMenuPage;
     if (this.state.currentMenuPage < this.menuPages.length) {
       this.setState({ currentMenuPage: currentMenuPage + 1, authorMenu: this.setAuthorMenu(currentMenuPage + 1) });
@@ -123,21 +123,20 @@ export default class LiteratureDisplay extends React.Component {
     if (this.state.currentMenuPage > 1) {
       this.setState({ currentMenuPage: currentMenuPage - 1, authorMenu: this.setAuthorMenu(currentMenuPage - 1) });
     }
-  }
+  }*/
 
-  setAuthorMenu (currentMenuPage) {
+  /*setAuthorMenu (currentMenuPage) {
     return this.menuPages[currentMenuPage - 1].map((item, index) => {
       let params = this.props.appState.getTrimmedURI(1);
       return (
-        <LinkContainer to={`/${params}/${item.fileName}`} key={index}>
+        <LinkContainer to={`/${params}/${item.fileName}`} key={index} onClick={this.toggleReadMoreMenu}>
           <MenuItem eventKey={index} key={index}>{decodeURIComponent(item.title)}</MenuItem>
         </LinkContainer>
       );
     });
-  }
+  }*/
 
   increaseFont (e) {
-    e.stopPropagation();
     const newFontSizeClass = this.state.currentFontSizeClass === 'smFont' ? 'mdFont' : 'lgFont';
     this.setState({ currentFontSizeClass: newFontSizeClass });
     localStorage.setItem('readingFontSize', newFontSizeClass);
@@ -184,6 +183,14 @@ export default class LiteratureDisplay extends React.Component {
 
   }
 
+  toggleReadMoreMenu (toggle, e) {
+    if (toggle === 'close') {
+      document.querySelector('.readMoreMenu').classList.add('readMoreMenuClosed');
+    } else {
+      document.querySelector('.readMoreMenu').classList.toggle('readMoreMenuClosed');
+    }
+  }
+
   componentWillReceiveProps (nextProps) {
     if (this.props.match.params.work !== nextProps.match.params.work) {
       this.setState({currentPage: 1}, () => {
@@ -206,7 +213,8 @@ export default class LiteratureDisplay extends React.Component {
           </Modal.Header>
           <div className="modal-nav">
             <span className="readingMenu">
-              {this.author.content.length > 1 &&
+              <button onClick={this.toggleReadMoreMenu.bind(this)}><Glyphicon glyph="list" /></button>
+              {/*!this.author.content.length > 1 &&
                 <DropdownButton noCaret
                   title={this.authorMenuButtonLabel}
                   id="bg-vertical-dropdown-1"
@@ -218,13 +226,12 @@ export default class LiteratureDisplay extends React.Component {
                     disabled={this.state.currentMenuPage === 1}
                     className={`showMoreButton ${this.state.currentMenuPage === 1 ? 'buttonDisabled' : ''}`}
                     onClick={this.setPreviousMenuPage.bind(this)} />
-                  {this.state.authorMenu}
                   <Glyphicon
                     glyph="menu-down"
                     disabled={this.state.currentMenuPage === this.menuPages.length}
                     className={`showMoreButton ${this.state.currentMenuPage === this.menuPages.length ? 'buttonDisabled' : ''}`}
                     onClick={this.setNextMenuPage.bind(this)} />
-                </DropdownButton>}
+                </DropdownButton>*/}
             </span>
             <span className="readingControls">
               <DropdownButton noCaret
@@ -237,7 +244,17 @@ export default class LiteratureDisplay extends React.Component {
               </DropdownButton>
             </span>
           </div>
-          <Modal.Body className={this.state.readingModeClass}>
+          <div className="readMoreMenu dropdown-menu readMoreMenuClosed">
+            {this.menuItems.map((item, index) => {
+              let params = this.props.appState.getTrimmedURI(1);
+              return (
+                <LinkContainer to={`/${params}/${item.fileName}`} key={index} onClick={this.toggleReadMoreMenu}>
+                  <MenuItem eventKey={index} key={index}>{decodeURIComponent(item.title)}</MenuItem>
+                </LinkContainer>
+              )
+            })}
+          </div>
+          <Modal.Body className={this.state.readingModeClass} onClick={this.toggleReadMoreMenu.bind(this, 'close')}>
             <div className={this.state.currentPage > 1 ? 'literatureTitle smallTitles' : 'literatureTitle'}>
               <h1>{decodeURIComponent(this.currentWork.title)}</h1>
               <h2>{this.author.fname} {this.author.lname}</h2>
