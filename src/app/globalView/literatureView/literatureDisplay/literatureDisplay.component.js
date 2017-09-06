@@ -1,6 +1,7 @@
 import React from 'react';
 import { Modal, Glyphicon, DropdownButton, MenuItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import DOMPurify from '../../../../lib/purify.js';
 import dataService from 'Services/data.service';
 import './literatureDisplay.component.less';
 
@@ -15,7 +16,8 @@ export default class LiteratureDisplay extends React.Component {
     this.state = {
       readingModeClass: readingMode ? readingMode : 'lightMode',
       currentFontSizeClass: readingFontSize,
-      currentPage: document.location.hash.indexOf('?page=') > -1 ? parseInt(document.location.hash.slice(document.location.hash.indexOf('=') + 1)) : 1
+      currentPage: document.location.hash.indexOf('?page=') > -1 ? parseInt(document.location.hash.slice(document.location.hash.indexOf('=') + 1)) : 1,
+      searchInput: ''
     };
     this.setValues = this.setValues.bind(this);
     this.setValues();
@@ -127,6 +129,11 @@ export default class LiteratureDisplay extends React.Component {
       if (!document.querySelector('.readingControlsMenuClosed')) {
         document.querySelector('.readingControlsMenu').classList.add('readingControlsMenuClosed');
       }
+      if (!document.querySelector('.readMoreMenuClosed')) {
+        document.querySelector('.literatureTitleSearchInput').focus();
+      } else {
+        document.querySelector('.literatureTitleSearchInput').blur();
+      }
     }
     if (!document.querySelector('.readMoreMenuClosed')) {
       //document.querySelector('.readingBody').style.filter = 'blur(2px)';
@@ -142,6 +149,14 @@ export default class LiteratureDisplay extends React.Component {
       document.querySelector('.readMoreMenu').classList.add('readMoreMenuClosed');
     }
     document.querySelector('.readingControlsMenu').classList.toggle('readingControlsMenuClosed');
+  }
+
+  updateSearchInput (e) {
+    this.setState({searchInput: DOMPurify.sanitize(e.target.value)});
+  }
+
+  clearSearch (e) {
+    this.setState({searchInput: ''});
   }
 
   componentWillReceiveProps (nextProps) {
@@ -173,14 +188,18 @@ export default class LiteratureDisplay extends React.Component {
             </span>
           </div>
           <div className="readMoreMenu dropdown-menu readMoreMenuClosed">
+            <div className="literatureTitleSearch">
+              <input type="text" className="literatureTitleSearchInput" value={this.state.searchInput} onChange={this.updateSearchInput.bind(this)} />
+              <span className={`literatureTitleSearchClear ${this.state.searchInput ? 'show' : ''}`} onClick={this.clearSearch.bind(this)} ></span>
+            </div>
             {this.author.content.map((item, index) => {
               let params = this.props.appState.getTrimmedURI(1);
               return (
-                <LinkContainer to={`/${params}/${item.fileName}`} key={index} onClick={this.toggleReadMoreMenu}>
-                  <MenuItem eventKey={index} key={index}>{decodeURIComponent(item.title)}</MenuItem>
+                <LinkContainer to={`/${params}/${item.fileName}`} key={item.title.toLowerCase()} onClick={this.toggleReadMoreMenu}>
+                  <MenuItem eventKey={index} key={item.fileName}>{decodeURIComponent(item.title)}</MenuItem>
                 </LinkContainer>
               )
-            })}
+            }).filter((item) => {return item.key.indexOf(this.state.searchInput.toLowerCase()) > -1})}
           </div>
           <div className="readingControlsMenu readingControlsMenuClosed">
             <button onClick={this.setReadingMode.bind(this)} className={`readingModeButton ${this.state.readingModeClass}`}><Glyphicon glyph="lamp" /></button>

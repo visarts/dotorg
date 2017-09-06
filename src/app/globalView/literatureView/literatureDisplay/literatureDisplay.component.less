@@ -161,6 +161,43 @@
         }
       }
 
+      .literatureTitleSearch {
+        position: relative;
+      }
+
+      .literatureTitleSearchInput {
+        //margin: 5px 15px 5px 40px;
+        background: @transparentTertiaryThemeColor;
+        display: inline-block;
+        padding: 5px 5px 5px 40px;
+        border: 0;
+        width: 100%;
+        position: sticky;
+      }
+
+      .literatureTitleSearchClear {
+        display: none;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        padding: 0px 0px 5px 4px;
+        cursor: pointer;
+        top: 5px;
+        right: 7px;
+        font-size: 1.2em;
+        line-height: .85em;
+        border-radius: 15px;
+        background: lighten(@transparentTertiaryThemeColor, 20%);
+        color: @tertiaryThemeColor;
+        &::before {
+          content: "x";
+        }
+
+        &.show {
+          display: inline-block;
+        }
+      }
+
       .readMoreMenu {
         position: absolute;
         bottom: @footerHeight;
@@ -321,6 +358,10 @@
           .readingControls {
             right: @litDisplayVPadding_sm;
           }
+        }
+
+        .literatureTitleSearchInput {
+          padding: 10px @litDisplayVPadding_sm;
         }
 
         .readingControlsMenu {
