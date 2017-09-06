@@ -6,13 +6,6 @@ import './literatureDisplay.component.less';
 
 export default class LiteratureDisplay extends React.Component {
 
-  /*
-    To have scrolling on the menu:
-      * Use full list with overflow hidden, scroll auto
-      * Use http://jscrollpane.kelvinluck.com/ jQuery plugin to hide scroll background
-      * The up/down buttons will change scroll position
-  */
-
   constructor (props) {
     super(props);
     const readingMode = localStorage.getItem('readingMode') ? localStorage.getItem('readingMode') : 'lightMode';
@@ -22,8 +15,7 @@ export default class LiteratureDisplay extends React.Component {
     this.state = {
       readingModeClass: readingMode ? readingMode : 'lightMode',
       currentFontSizeClass: readingFontSize,
-      currentPage: document.location.hash.indexOf('?page=') > -1 ? parseInt(document.location.hash.slice(document.location.hash.indexOf('=') + 1)) : 1,
-      menuIsOpen: false
+      currentPage: document.location.hash.indexOf('?page=') > -1 ? parseInt(document.location.hash.slice(document.location.hash.indexOf('=') + 1)) : 1
     };
     this.setValues = this.setValues.bind(this);
     this.setValues();
@@ -38,36 +30,35 @@ export default class LiteratureDisplay extends React.Component {
 
     dataService.getHTMLContent(this.authorKey, this.currentWorkKey)
       .then((results) => {
-        this.content = results;
+        this.htmlContent = results;
         this.pages = [];
         if (this.currentWork.genre !== 'poetry') {
           let lastChar = 2000;
           let buffer = 500;
           do {
             let page = '';
-            while (lastChar < this.content.length) {
-              if (this.content.substring(lastChar - 4, lastChar) === '</p>' || this.content.substring(lastChar - 6, lastChar) === '</pre>') {
+            while (lastChar < this.htmlContent.length) {
+              if (this.htmlContent.substring(lastChar - 4, lastChar) === '</p>' || this.htmlContent.substring(lastChar - 6, lastChar) === '</pre>') {
                 break;
               } else {
                 lastChar++;
               }
             }
 
-            page = this.content.slice(0, lastChar);
-            this.content = this.content.slice(lastChar);
+            page = this.htmlContent.slice(0, lastChar);
+            this.htmlContent = this.htmlContent.slice(lastChar);
             this.pages.push(page);
-            if (this.content.length > 1 && this.content.length < (lastChar + buffer)) {
-              page = this.content.slice(0);
-              this.content = this.content.slice(lastChar + buffer);
+            if (this.htmlContent.length > 1 && this.htmlContent.length < (lastChar + buffer)) {
+              page = this.htmlContent.slice(0);
+              this.htmlContent = this.htmlContent.slice(lastChar + buffer);
               this.pages.push(page);
               break;
             }
-          } while(this.content.length > lastChar);
+          } while(this.htmlContent.length > lastChar);
         } else {
-          this.pages.push(this.content);
+          this.pages.push(this.htmlContent);
         }
 
-        //this.authorMenuButtonLabel = window.innerWidth <= 768 ? <Glyphicon glyph="list" /> : <span><Glyphicon glyph="list" /> Read More by {this.author.lname} <Glyphicon glyph="chevron-down" /></span>;
         this.settingsMenuButtonLabel = <Glyphicon glyph="cog" />;
         this.originalHash = document.location.hash;
         this.setState(this.state);
@@ -120,6 +111,7 @@ export default class LiteratureDisplay extends React.Component {
     const flipMode = currentMode && currentMode === 'darkMode' ? 'lightMode' : currentMode && currentMode === 'lightMode' ? 'darkMode' : 'lightMode';
     this.setState({readingModeClass: flipMode });
     localStorage.setItem('readingMode', flipMode);
+    this.toggleReadingControls();
   }
 
   setHTMLContent () {
@@ -129,14 +121,27 @@ export default class LiteratureDisplay extends React.Component {
   toggleReadMoreMenu (toggle, e) {
     if (toggle === 'close') {
       document.querySelector('.readMoreMenu').classList.add('readMoreMenuClosed');
+      document.querySelector('.readingControlsMenu').classList.add('readingControlsMenuClosed');
     } else {
       document.querySelector('.readMoreMenu').classList.toggle('readMoreMenuClosed');
+      if (!document.querySelector('.readingControlsMenuClosed')) {
+        document.querySelector('.readingControlsMenu').classList.add('readingControlsMenuClosed');
+      }
     }
     if (!document.querySelector('.readMoreMenuClosed')) {
-      document.querySelector('.readingBody').style.filter = 'blur(2px)';
+      //document.querySelector('.readingBody').style.filter = 'blur(2px)';
+      document.querySelector('.modal-body').style.overflow = 'hidden';
     } else {
-      document.querySelector('.readingBody').style.filter = 'none';
+      //document.querySelector('.readingBody').style.filter = 'none';
+      document.querySelector('.modal-body').style.overflow = 'auto';
     }
+  }
+
+  toggleReadingControls (e) {
+    if (!document.querySelector('.readMoreMenuClosed')) {
+      document.querySelector('.readMoreMenu').classList.add('readMoreMenuClosed');
+    }
+    document.querySelector('.readingControlsMenu').classList.toggle('readingControlsMenuClosed');
   }
 
   componentWillReceiveProps (nextProps) {
@@ -157,22 +162,14 @@ export default class LiteratureDisplay extends React.Component {
           onHide={this.hideModal.bind(this)}
           dialogClassName="custom-modal literature-modal">
           <Modal.Header closeButton>
-            <h1>Portitude Reader | {this.author.lname}</h1>
+            <h1>{this.author.lname} | {this.currentWork.genre}</h1>
           </Modal.Header>
           <div className="modal-nav">
             <span className="readingMenu">
               <button onClick={this.toggleReadMoreMenu.bind(this)}><Glyphicon glyph="list" /></button>
             </span>
             <span className="readingControls">
-              <DropdownButton noCaret
-                title={this.settingsMenuButtonLabel}
-                className="readerDropdown"
-                onClick={this.toggleReadMoreMenu.bind(this, 'close')}
-                id="settingsMenuButtonLabel">
-                  <button onClick={this.setReadingMode.bind(this)} className={`readingModeButton ${this.state.readingModeClass}`}><Glyphicon glyph="lamp" /></button>
-                  <button className="increaseFont" onClick={this.increaseFont.bind(this)} disabled={this.state.currentFontSizeClass === 'lgFont'}><Glyphicon glyph="plus" /></button>
-                  <button className="decreaseFont" onClick={this.decreaseFont.bind(this)} disabled={this.state.currentFontSizeClass === 'smFont'}><Glyphicon glyph="minus" /></button>
-              </DropdownButton>
+              <button onClick={this.toggleReadingControls.bind(this)}><Glyphicon glyph="cog" /></button>
             </span>
           </div>
           <div className="readMoreMenu dropdown-menu readMoreMenuClosed">
@@ -185,6 +182,11 @@ export default class LiteratureDisplay extends React.Component {
               )
             })}
           </div>
+          <div className="readingControlsMenu readingControlsMenuClosed">
+            <button onClick={this.setReadingMode.bind(this)} className={`readingModeButton ${this.state.readingModeClass}`}><Glyphicon glyph="lamp" /></button>
+            <button className="increaseFont" onClick={this.increaseFont.bind(this)} disabled={this.state.currentFontSizeClass === 'lgFont'}><Glyphicon glyph="plus" /></button>
+            <button className="decreaseFont" onClick={this.decreaseFont.bind(this)} disabled={this.state.currentFontSizeClass === 'smFont'}><Glyphicon glyph="minus" /></button>
+          </div>
           <Modal.Body className={this.state.readingModeClass} onClick={this.toggleReadMoreMenu.bind(this, 'close')}>
             <div className="readingBody">
               <div className={this.state.currentPage > 1 ? 'literatureTitle smallTitles' : 'literatureTitle'}>
@@ -194,7 +196,6 @@ export default class LiteratureDisplay extends React.Component {
               <div className={`htmlContent ${this.state.currentFontSizeClass}`} dangerouslySetInnerHTML={this.setHTMLContent()}></div>
             </div>
           </Modal.Body>
-          <Modal.Body className="readerOverlay"></Modal.Body>
           <Modal.Footer>
             {this.currentWork.genre !== 'poetry' && <div className="modal-pagination">
               <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, 1)} disabled={this.state.currentPage === 1}><Glyphicon glyph="step-backward" /></button></span>

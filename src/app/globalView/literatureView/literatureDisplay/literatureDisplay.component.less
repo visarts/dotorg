@@ -1,6 +1,11 @@
 @import '../../../../styles/globals';
 @import '../../../../styles/modal';
 @import '../../../../styles/menus';
+
+@litDisplayVPadding: 40px;
+@litDisplayVPadding_sm: @vPadding;
+@litDisplayHPadding: 20px;
+@litDisplayHPadding_sm: 4px;
 /*.globalView, .globalHeader, .globalFooter {
   filter: blur(4px);
 }*/
@@ -45,15 +50,21 @@
         //border: 1px solid @activeBackgroundColor;
         border-radius: 4px;
         transition: background-color .2s;
-        min-width: 25px;
+        //min-width: 25px;
+        width: 30px;
+        height: 30px;
         font-size: 1.2em;
+        text-align: center;
 
         &:hover {
           background-color: @activeBackgroundColor;
         }
 
-        &:active {
-          background-color: @mainLinkHoverColor;
+        &:active{
+          //background-color: @mainLinkHoverColor;
+          .glyphicon {
+            font-size: .9em;
+          }
         }
 
         &:disabled {
@@ -70,7 +81,7 @@
 
       .modal-header {
         background: linear-gradient(to top, @secondaryThemeColor, lighten(@secondaryThemeColor, 7%));
-        position: sticky;
+        position: relative;
         top: 0;
         left: 0;
         right: 0;
@@ -93,21 +104,24 @@
           font-weight: 400;
 
           &.close {
+            position: absolute;
+            top: 0;
+            right: 0;
             border: none;
             background-color: transparent;
-            font-size: 1.5em;
+            font-size: 2em;
           }
         }
       }
 
       .modal-nav {
-        position: sticky;
+        position: relative;
         height: @navHeight;
         z-index: 1700;
         color: white;
         background: @tertiaryThemeColor;
         color: darken(@mainTextColor, 10%);
-        padding: 4px @vPadding;
+        padding: @litDisplayHPadding_sm @litDisplayVPadding_sm;
         border-radius: 0;
 
         .readerDropdown {
@@ -116,40 +130,18 @@
         }
 
         .readingMenu {
-
+          position: relative;
         }
 
         .readingControls {
-          margin-top: -3px;
-          float: right;
+          position: absolute;
+          top: @litDisplayHPadding_sm;
+          right: @litDisplayVPadding;
           display: inline-block;
 
           .dropdown-menu {
             width: auto;
             min-width: auto;
-            .textSizing {
-              border: 1px solid @activeBackgroundColor;
-              display: inline-block;
-              margin-right: 4px;
-              //background: lighten(@tertiaryThemeColor, 10%);
-              background: transparent;
-              border-radius: 4px;
-
-              .textSizingGlyph {
-                color: darken(@mainTextColor, 40%);
-                display: inline-block;
-                margin: 0 4px;
-              }
-
-              button {
-                margin: 0;
-                border: none;
-              }
-            }
-
-            .readingModeButton {
-
-            }
 
             button {
               text-align: center;
@@ -170,11 +162,12 @@
       }
 
       .readMoreMenu {
+        position: absolute;
         bottom: @footerHeight;
         top: calc(@headerHeight + @navHeight);
         background-color: @transparentTertiaryThemeColor;
         z-index: 1700;
-        transition: 0.5s;
+        transition: ease 0.4s;
 
         &.dropdown-menu {
           margin: 0;
@@ -182,11 +175,19 @@
           display: block;
           border-radius: 0;
           overflow-x: scroll;
+
+          .active a {
+            font-weight: bold;
+            background-color: @mainLinkHoverColor;
+          }
           //overflow-y: hidden;
 
           li a {
+            &:hover {
+              color: white;
+            }
             @media(min-width: @smallScreen) {
-              padding-left: 40px;
+              padding-left: @litDisplayVPadding;
             }
           }
         }
@@ -194,6 +195,41 @@
         &.readMoreMenuClosed {
           width: 0px;
         }
+      }
+
+      .readingControlsMenu {
+        position: absolute;
+        right: @litDisplayVPadding;
+        top: calc(@headerHeight + @navHeight);
+        z-index: 1700;
+        text-align: center;
+        width: 30px;
+        height: 95px;
+        background: @transparentTertiaryThemeColor;
+        border-bottom-left-radius: @roundedEdge;
+        border-bottom-right-radius: @roundedEdge;
+        transition: ease height .2s;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, .3);
+
+        .readingModeButton {
+          &.lightMode {
+            color: palegoldenrod;
+          }
+        }
+
+        &.readingControlsMenuClosed {
+          height: 0px;
+          min-height: 0px;
+
+          button {
+            display: none;
+          }
+
+          .glyphicon {
+            font-size: 0px;
+          }
+        }
+
       }
 
       .modal-body {
@@ -204,14 +240,6 @@
         right: 0;
         transition: background-color .2s;
         overflow: auto;
-
-        &.readerOverlay {
-          display: none;
-          opacity: .75;
-          background: @mainThemeColor;
-          margin-bottom: calc(0 - @footerHeight);
-          z-index: 1600;
-        }
 
         .readingBody {
           transition: filter .5s;
@@ -273,22 +301,30 @@
     @media (min-width: @smallScreen) {
       .modal-content {
         .modal-body {
-          padding: 20px 40px;
+          padding: @litDisplayHPadding @litDisplayVPadding;
         }
         .modal-nav, .modal-footer {
-          padding-left: 40px;
-          padding-right: 40px;
+          padding-left: @litDisplayVPadding;
+          padding-right: @litDisplayVPadding;
         }
       }
     }
     @media (max-width: @smallScreen) {
       .modal-content {
-
-
         .dropdown-menu li a {
           font-size: 1.2em;
-          padding: 10px @vPadding;
+          padding: 10px @litDisplayVPadding_sm;
           //padding: 6px;
+        }
+
+        .modal-nav {
+          .readingControls {
+            right: @litDisplayVPadding_sm;
+          }
+        }
+
+        .readingControlsMenu {
+          right: @litDisplayVPadding_sm;
         }
       }
     }
