@@ -64,7 +64,7 @@ export default class App extends React.Component {
 
       Add middle tier sizing layout for tablets, etc
 
-      change global nav so titles are over images with transparent bg
+      Add historical memory for read completion in literature
     */
 
     return (

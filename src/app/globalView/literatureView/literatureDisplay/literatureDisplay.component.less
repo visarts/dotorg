@@ -6,7 +6,9 @@
 @litDisplayVPadding_sm: @vPadding;
 @litDisplayHPadding: 20px;
 @litDisplayHPadding_sm: 4px;
-@lightModeBG: #cacaca;
+//@lightModeBG: #cacaca;
+//@lightModeBG: #cacabb;
+@lightModeBG: #dbdad1;
 /*.globalView, .globalHeader, .globalFooter {
   filter: blur(4px);
 }*/
@@ -57,11 +59,11 @@
         font-size: 1.2em;
         text-align: center;
 
-        &:hover {
+        &:hover, &.active {
           background-color: @activeBackgroundColor;
         }
 
-        &:active{
+        &:active {
           //background-color: @mainLinkHoverColor;
           .glyphicon {
             font-size: .9em;
@@ -131,6 +133,7 @@
         }
 
         .readingMenu {
+          display: inline-block;
           position: relative;
         }
 
@@ -168,12 +171,12 @@
 
       .literatureTitleSearchInput {
         //margin: 5px 15px 5px 40px;
-        background: @transparentTertiaryThemeColor;
+        background: linear-gradient(to bottom, @secondaryThemeColor, lighten(@secondaryThemeColor, 10%));
         display: inline-block;
         padding: 5px 5px 5px 40px;
         border: 0;
         width: 100%;
-        position: sticky;
+        height: @searchHeight;
       }
 
       .literatureTitleSearchClear {
@@ -183,7 +186,7 @@
         position: absolute;
         padding: 0px 0px 5px 4px;
         cursor: pointer;
-        top: 3px;
+        top: 10px;
         right: 15px;
         font-size: 1.7em;
         line-height: .85em;
@@ -205,9 +208,18 @@
         }
 
         @media(max-width: @smallScreen) {
-          top: 7px;
+          top: 9px;
         }
       }
+
+      .literatureTitleList {
+        overflow-x: scroll;
+        position: absolute;
+        top: @searchHeight;
+        bottom: 0px;
+        width: 278px;
+      }
+
 
       .readMoreMenu {
         position: absolute;
@@ -222,16 +234,31 @@
           min-width: 0px;
           display: block;
           border-radius: 0;
-          overflow-x: scroll;
+          overflow: hidden;
 
-          .active a {
-            font-weight: bold;
-            background-color: @mainLinkHoverColor;
+          .active {
+
+            a {
+              font-weight: bold;
+              background-color: @tertiaryThemeColor;
+
+              &:hover {
+                background-color: @tertiaryThemeColor;
+              }
+            }
           }
           //overflow-y: hidden;
 
+          li:nth-child(odd) {
+            //background: rgba(92, 94, 98, .5);
+            //box-shadow: 0px 0px 10px @secondaryThemeColor;
+          }
+
+
           li a {
+            display: block;
             &:hover {
+              background: @mainLinkHoverColor;
               color: white;
             }
             @media(min-width: @smallScreen) {
@@ -242,6 +269,10 @@
 
         &.readMoreMenuClosed {
           width: 0px;
+
+          .literatureTitleList {
+            //display: none;
+          }
         }
       }
 

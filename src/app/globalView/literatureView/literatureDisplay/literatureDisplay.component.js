@@ -175,25 +175,27 @@ export default class LiteratureDisplay extends React.Component {
           </Modal.Header>
           <div className="modal-nav">
             <span className="readingMenu">
-              <button onClick={this.toggleReadMoreMenu.bind(this)}><Glyphicon glyph="list" /></button>
+              <button className={this.state.readMoreMenuIsOpen ? 'active': ''} onClick={this.toggleReadMoreMenu.bind(this)}><Glyphicon glyph="list" /></button>
             </span>
             <span className="readingControls">
-              <button onClick={this.toggleReadingControls.bind(this)}><Glyphicon glyph="cog" /></button>
+              <button className={this.state.readingControlsAreOpen ? 'active': ''} onClick={this.toggleReadingControls.bind(this)}><Glyphicon glyph="cog" /></button>
             </span>
           </div>
           <div className={`readMoreMenu dropdown-menu ${this.state.readMoreMenuIsOpen ? '' : 'readMoreMenuClosed'}`}>
             <div className="literatureTitleSearch">
-              <input type="text" className="literatureTitleSearchInput" value={this.state.searchInput} placeholder="Search..." onChange={this.updateSearchInput.bind(this)} />
+              <input type="text" className="literatureTitleSearchInput" value={this.state.searchInput} placeholder="Search titles..." onChange={this.updateSearchInput.bind(this)} />
               <span className={`literatureTitleSearchClear ${this.state.searchInput ? 'show' : ''}`} onClick={this.clearSearch.bind(this)} ></span>
             </div>
-            {this.author.content.map((item, index) => {
-              let params = this.props.appState.getTrimmedURI(1);
-              return (
-                <LinkContainer to={`/${params}/${item.fileName}`} key={item.title.toLowerCase()}>
-                  <MenuItem eventKey={index} key={item.fileName}>{decodeURIComponent(item.title)}</MenuItem>
-                </LinkContainer>
-              )
-            }).filter((item) => {return item.key.indexOf(this.state.searchInput.toLowerCase()) > -1})}
+            <ul className="literatureTitleList">
+              {this.author.content.map((item, index) => {
+                let params = this.props.appState.getTrimmedURI(1);
+                return (
+                  <LinkContainer to={`/${params}/${item.fileName}`} key={item.title.toLowerCase()}>
+                    <MenuItem eventKey={index} key={item.fileName}>{decodeURIComponent(item.title)}</MenuItem>
+                  </LinkContainer>
+                )
+              }).filter((item) => {return item.key.indexOf(this.state.searchInput.toLowerCase()) > -1})}
+            </ul>
           </div>
           <div className={`readingControlsMenu ${this.state.readingControlsAreOpen ? '' : 'readingControlsMenuClosed'}`}>
             <button onClick={this.setReadingMode.bind(this)} className={`readingModeButton ${this.state.readingModeClass}`}><Glyphicon glyph="lamp" /></button>
