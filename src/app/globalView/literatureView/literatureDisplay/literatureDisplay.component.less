@@ -6,6 +6,7 @@
 @litDisplayVPadding_sm: @vPadding;
 @litDisplayHPadding: 20px;
 @litDisplayHPadding_sm: 4px;
+@lightModeBG: #cacaca;
 /*.globalView, .globalHeader, .globalFooter {
   filter: blur(4px);
 }*/
@@ -26,7 +27,7 @@
   .custom-modal.literature-modal {
 
     .lightMode {
-      background: #cacaca;
+      background: @lightModeBG;
       color: #333333;
     }
 
@@ -182,19 +183,29 @@
         position: absolute;
         padding: 0px 0px 5px 4px;
         cursor: pointer;
-        top: 5px;
-        right: 7px;
-        font-size: 1.2em;
+        top: 3px;
+        right: 15px;
+        font-size: 1.7em;
         line-height: .85em;
-        border-radius: 15px;
-        background: lighten(@transparentTertiaryThemeColor, 20%);
-        color: @tertiaryThemeColor;
+        text-shadow: 0px 0px 4px lighten(@tertiaryThemeColor, 10%);
+        //border-radius: 15px;
+        //background: lighten(@transparentTertiaryThemeColor, 20%);
+        color: lighten(@tertiaryThemeColor, 20%);
+        transition: color .2s;
         &::before {
           content: "x";
         }
 
+        &:hover {
+          color: @lightModeBG;
+        }
+
         &.show {
           display: inline-block;
+        }
+
+        @media(max-width: @smallScreen) {
+          top: 7px;
         }
       }
 

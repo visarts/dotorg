@@ -17,7 +17,9 @@ export default class LiteratureDisplay extends React.Component {
       readingModeClass: readingMode ? readingMode : 'lightMode',
       currentFontSizeClass: readingFontSize,
       currentPage: document.location.hash.indexOf('?page=') > -1 ? parseInt(document.location.hash.slice(document.location.hash.indexOf('=') + 1)) : 1,
-      searchInput: ''
+      searchInput: '',
+      readMoreMenuIsOpen: false,
+      readingControlsAreOpen: false
     };
     this.setValues = this.setValues.bind(this);
     this.setValues();
@@ -113,42 +115,34 @@ export default class LiteratureDisplay extends React.Component {
     const flipMode = currentMode && currentMode === 'darkMode' ? 'lightMode' : currentMode && currentMode === 'lightMode' ? 'darkMode' : 'lightMode';
     this.setState({readingModeClass: flipMode });
     localStorage.setItem('readingMode', flipMode);
-    this.toggleReadingControls();
   }
 
   setHTMLContent () {
     return {__html: this.pages[this.state.currentPage - 1]};
   }
 
-  toggleReadMoreMenu (toggle, e) {
-    if (toggle === 'close') {
-      document.querySelector('.readMoreMenu').classList.add('readMoreMenuClosed');
-      document.querySelector('.readingControlsMenu').classList.add('readingControlsMenuClosed');
-    } else {
-      document.querySelector('.readMoreMenu').classList.toggle('readMoreMenuClosed');
-      if (!document.querySelector('.readingControlsMenuClosed')) {
-        document.querySelector('.readingControlsMenu').classList.add('readingControlsMenuClosed');
-      }
-      if (!document.querySelector('.readMoreMenuClosed')) {
-        document.querySelector('.literatureTitleSearchInput').focus();
-      } else {
-        document.querySelector('.literatureTitleSearchInput').blur();
-      }
+  toggleReadMoreMenu (e) {
+    let newState = {
+      readMoreMenuIsOpen: this.state.readMoreMenuIsOpen ? false : true,
+      readingControlsAreOpen: false
     }
-    if (!document.querySelector('.readMoreMenuClosed')) {
-      //document.querySelector('.readingBody').style.filter = 'blur(2px)';
-      document.querySelector('.modal-body').style.overflow = 'hidden';
-    } else {
-      //document.querySelector('.readingBody').style.filter = 'none';
-      document.querySelector('.modal-body').style.overflow = 'auto';
-    }
+    this.setState(newState);
   }
 
   toggleReadingControls (e) {
-    if (!document.querySelector('.readMoreMenuClosed')) {
-      document.querySelector('.readMoreMenu').classList.add('readMoreMenuClosed');
-    }
-    document.querySelector('.readingControlsMenu').classList.toggle('readingControlsMenuClosed');
+    let newState = {
+      readMoreMenuIsOpen: false,
+      readingControlsAreOpen: this.state.readingControlsAreOpen ? false : true
+    };
+    this.setState(newState);
+  }
+
+  closeAllMenus (e) {
+    let newState = {
+      readMoreMenuIsOpen: false,
+      readingControlsAreOpen: false
+    };
+    this.setState(newState);
   }
 
   updateSearchInput (e) {
@@ -161,7 +155,7 @@ export default class LiteratureDisplay extends React.Component {
 
   componentWillReceiveProps (nextProps) {
     if (this.props.match.params.work !== nextProps.match.params.work) {
-      this.setState({currentPage: 1}, () => {
+      this.setState({currentPage: 1, searchInput: '', readMoreMenuIsOpen: false, readingControlsAreOpen: false}, () => {
         document.querySelector('.modal-body').scrollTop = 0;
         this.setValues();
       });
@@ -169,7 +163,7 @@ export default class LiteratureDisplay extends React.Component {
   }
 
   render () {
-
+// onClick={this.toggleReadMoreMenu.bind(this, 'close')}
     return (
       <div className="literatureDisplay">
         {this.settingsMenuButtonLabel && <Modal
@@ -187,26 +181,26 @@ export default class LiteratureDisplay extends React.Component {
               <button onClick={this.toggleReadingControls.bind(this)}><Glyphicon glyph="cog" /></button>
             </span>
           </div>
-          <div className="readMoreMenu dropdown-menu readMoreMenuClosed">
+          <div className={`readMoreMenu dropdown-menu ${this.state.readMoreMenuIsOpen ? '' : 'readMoreMenuClosed'}`}>
             <div className="literatureTitleSearch">
-              <input type="text" className="literatureTitleSearchInput" value={this.state.searchInput} onChange={this.updateSearchInput.bind(this)} />
+              <input type="text" className="literatureTitleSearchInput" value={this.state.searchInput} placeholder="Search..." onChange={this.updateSearchInput.bind(this)} />
               <span className={`literatureTitleSearchClear ${this.state.searchInput ? 'show' : ''}`} onClick={this.clearSearch.bind(this)} ></span>
             </div>
             {this.author.content.map((item, index) => {
               let params = this.props.appState.getTrimmedURI(1);
               return (
-                <LinkContainer to={`/${params}/${item.fileName}`} key={item.title.toLowerCase()} onClick={this.toggleReadMoreMenu}>
+                <LinkContainer to={`/${params}/${item.fileName}`} key={item.title.toLowerCase()}>
                   <MenuItem eventKey={index} key={item.fileName}>{decodeURIComponent(item.title)}</MenuItem>
                 </LinkContainer>
               )
             }).filter((item) => {return item.key.indexOf(this.state.searchInput.toLowerCase()) > -1})}
           </div>
-          <div className="readingControlsMenu readingControlsMenuClosed">
+          <div className={`readingControlsMenu ${this.state.readingControlsAreOpen ? '' : 'readingControlsMenuClosed'}`}>
             <button onClick={this.setReadingMode.bind(this)} className={`readingModeButton ${this.state.readingModeClass}`}><Glyphicon glyph="lamp" /></button>
             <button className="increaseFont" onClick={this.increaseFont.bind(this)} disabled={this.state.currentFontSizeClass === 'lgFont'}><Glyphicon glyph="plus" /></button>
             <button className="decreaseFont" onClick={this.decreaseFont.bind(this)} disabled={this.state.currentFontSizeClass === 'smFont'}><Glyphicon glyph="minus" /></button>
           </div>
-          <Modal.Body className={this.state.readingModeClass} onClick={this.toggleReadMoreMenu.bind(this, 'close')}>
+          <Modal.Body className={this.state.readingModeClass} onClick={this.closeAllMenus.bind(this)}>
             <div className="readingBody">
               <div className={this.state.currentPage > 1 ? 'literatureTitle smallTitles' : 'literatureTitle'}>
                 <h1>{decodeURIComponent(this.currentWork.title)}</h1>
