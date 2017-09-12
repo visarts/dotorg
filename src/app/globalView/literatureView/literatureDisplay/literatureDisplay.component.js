@@ -171,16 +171,11 @@ export default class LiteratureDisplay extends React.Component {
           onHide={this.hideModal.bind(this)}
           dialogClassName="custom-modal literature-modal">
           <Modal.Header closeButton>
-            <h1>{this.author.lname} | {this.currentWork.genre}</h1>
-          </Modal.Header>
-          <div className="modal-nav">
-            <span className="readingMenu">
-              <button className={this.state.readMoreMenuIsOpen ? 'active': ''} onClick={this.toggleReadMoreMenu.bind(this)}><Glyphicon glyph="list" /></button>
-            </span>
-            <span className="readingControls">
+            <span className="readingControlsToggle">
               <button className={this.state.readingControlsAreOpen ? 'active': ''} onClick={this.toggleReadingControls.bind(this)}><Glyphicon glyph="cog" /></button>
             </span>
-          </div>
+            <h1>{this.author.lname} | {this.currentWork.genre}</h1>
+          </Modal.Header>
           <div className={`readMoreMenu dropdown-menu ${this.state.readMoreMenuIsOpen ? '' : 'readMoreMenuClosed'}`}>
             <div className="literatureTitleSearch">
               <input type="text" className="literatureTitleSearchInput" value={this.state.searchInput} placeholder="Search titles..." onChange={this.updateSearchInput.bind(this)} />
@@ -212,6 +207,9 @@ export default class LiteratureDisplay extends React.Component {
             </div>
           </Modal.Body>
           <Modal.Footer>
+          <span className="readingMenuToggle">
+            <button className={this.state.readMoreMenuIsOpen ? 'active': ''} onClick={this.toggleReadMoreMenu.bind(this)}><Glyphicon glyph="list" /></button>
+          </span>
             {this.currentWork.genre !== 'poetry' && <div className="modal-pagination">
               <span className="paginationDirector"><button onClick={this.setPageNum.bind(this, 1)} disabled={this.state.currentPage === 1}><Glyphicon glyph="step-backward" /></button></span>
               <span className="paginationDirector"><button onClick={this.setPreviousPage.bind(this)} disabled={this.state.currentPage === 1}><Glyphicon glyph="chevron-left" /></button></span>

@@ -2,16 +2,9 @@
 @import '../../../../styles/modal';
 @import '../../../../styles/menus';
 
-@litDisplayVPadding: 40px;
-@litDisplayVPadding_sm: @vPadding;
-@litDisplayHPadding: 20px;
-@litDisplayHPadding_sm: 4px;
-//@lightModeBG: #cacaca;
-//@lightModeBG: #cacabb;
+
 @lightModeBG: #dbdad1;
-/*.globalView, .globalHeader, .globalFooter {
-  filter: blur(4px);
-}*/
+
 .modal {
   /*::-webkit-scrollbar {
     width: 20px;
@@ -39,25 +32,12 @@
     }
 
     .modal-content {
-      height: 91vh;
       overflow: hidden;
       background: transparent;
       border: none;
 
       button {
-        display: inline-block;
-        //margin-right: 4px;
-        color: darken(@mainTextColor, 20%);
-        //background: lighten(@tertiaryThemeColor, 10%);
-        background: transparent;
-        //border: 1px solid @activeBackgroundColor;
-        border-radius: 4px;
-        transition: background-color .2s;
-        //min-width: 25px;
-        width: 30px;
-        height: 30px;
-        font-size: 1.2em;
-        text-align: center;
+
 
         &:hover, &.active {
           background-color: @activeBackgroundColor;
@@ -94,6 +74,13 @@
         border-radius: 4px 4px 0 0;
         padding: 4px;
 
+        .readingControlsToggle {
+          position: absolute;
+          top: @modalHPadding_sm;
+          left: @modalVPadding_sm;
+          display: inline-block;
+        }
+
         h1 {
           display: inline-block;
           font-size: @smallHeadline;
@@ -109,7 +96,7 @@
           &.close {
             position: absolute;
             top: 0;
-            right: 0;
+            right: @modalVPadding_sm;
             border: none;
             background-color: transparent;
             font-size: 2em;
@@ -117,53 +104,6 @@
         }
       }
 
-      .modal-nav {
-        position: relative;
-        height: @navHeight;
-        z-index: 1700;
-        color: white;
-        background: @tertiaryThemeColor;
-        color: darken(@mainTextColor, 10%);
-        padding: @litDisplayHPadding_sm @litDisplayVPadding_sm;
-        border-radius: 0;
-
-        .readerDropdown {
-          min-width: 30px;
-          padding: 4px;
-        }
-
-        .readingMenu {
-          display: inline-block;
-          position: relative;
-        }
-
-        .readingControls {
-          position: absolute;
-          top: @litDisplayHPadding_sm;
-          right: @litDisplayVPadding;
-          display: inline-block;
-
-          .dropdown-menu {
-            width: auto;
-            min-width: auto;
-
-            button {
-              text-align: center;
-              margin-bottom: 4px;
-
-              &.lightMode {
-                background: transparent;
-                color: palegoldenrod;
-              }
-
-              &.darkMode {
-                background: transparent;
-                color: @secondaryThemeColor;
-              }
-            }
-          }
-        }
-      }
 
       .literatureTitleSearch {
         position: relative;
@@ -224,7 +164,7 @@
       .readMoreMenu {
         position: absolute;
         bottom: @footerHeight;
-        top: calc(@headerHeight + @navHeight);
+        top: @headerHeight;
         background-color: @transparentTertiaryThemeColor;
         z-index: 1700;
         transition: ease 0.4s;
@@ -262,7 +202,7 @@
               color: white;
             }
             @media(min-width: @smallScreen) {
-              padding-left: @litDisplayVPadding;
+              padding-left: @modalVPadding;
             }
           }
         }
@@ -278,8 +218,8 @@
 
       .readingControlsMenu {
         position: absolute;
-        right: @litDisplayVPadding;
-        top: calc(@headerHeight + @navHeight);
+        left: @modalVPadding_sm;
+        top: @headerHeight;
         z-index: 1700;
         text-align: center;
         width: 30px;
@@ -292,6 +232,7 @@
 
         .readingModeButton {
           &.lightMode {
+            background: transparent;
             color: palegoldenrod;
           }
         }
@@ -312,11 +253,10 @@
       }
 
       .modal-body {
-        position: absolute;
-        top: calc(@headerHeight + @navHeight);
-        bottom: @footerHeight;
-        left: 0;
-        right: 0;
+        //top: calc(@headerHeight + @navHeight);
+        //bottom: @footerHeight;
+        //left: 0;
+        //right: 0;
         transition: background-color .2s;
         overflow: auto;
 
@@ -359,32 +299,22 @@
         text-align: center;
         height: @footerHeight;
 
-        .modal-pagination {
+        .readingMenuToggle {
           display: inline-block;
-
-          .paginationDirector {
-            button {
-              margin-right: 4px;
-
-            }
-          }
-
-          .paginationLocator {
-            color: darken(@mainTextColor, 20%);
-            display: inline-block;
-            width: 70px;
-          }
+          position: absolute;
+          top: @smallPadding;
+          left: @modalVPadding_sm;;
         }
       }
     }
     @media (min-width: @smallScreen) {
       .modal-content {
         .modal-body {
-          padding: @litDisplayHPadding @litDisplayVPadding;
+          padding: @modalHPadding @modalVPadding;
         }
         .modal-nav, .modal-footer {
-          padding-left: @litDisplayVPadding;
-          padding-right: @litDisplayVPadding;
+          padding-left: @modalVPadding;
+          padding-right: @modalVPadding;
         }
       }
     }
@@ -392,22 +322,17 @@
       .modal-content {
         .dropdown-menu li a {
           font-size: 1.2em;
-          padding: 10px @litDisplayVPadding_sm;
+          padding: 10px @modalVPadding_sm;
           //padding: 6px;
         }
 
-        .modal-nav {
-          .readingControls {
-            right: @litDisplayVPadding_sm;
-          }
-        }
-
         .literatureTitleSearchInput {
-          padding: 10px @litDisplayVPadding_sm;
+          padding: 10px @modalVPadding_sm;
         }
 
         .readingControlsMenu {
-          right: @litDisplayVPadding_sm;
+          width: 33px;
+          right: @modalVPadding_sm;
         }
       }
     }

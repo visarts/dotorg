@@ -1,9 +1,16 @@
 @import 'globals';
 
-@headerHeight: 33px;
-@navHeight: 38px;
-@footerHeight: 38px;
+@modalHeight: 91vh;
+@headerHeight: 38px;
+@footerHeight: 42px;
+@calcHeight: @headerHeight + @footerHeight;
 @disabledTextColor: lighten(@secondaryThemeColor, 25%);
+
+@modalVPadding: 40px;
+@modalVPadding_sm: @vPadding;
+@modalHPadding: 20px;
+@modalHPadding_sm: 4px;
+
 
 .modal-container {
   position: relative;
@@ -23,18 +30,57 @@
 .modal {
   .custom-modal {
     position: relative;
-    height: 91vh;
+    height: @modalHeight;
     border-radius: 0px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, .5);
 
-    .lightMode {
-      background: #cacaca;
-      color: #333333;
+    button {
+      display: inline-block;
+      color: darken(@mainTextColor, 20%);
+      //background: lighten(@tertiaryThemeColor, 10%);
+      background: transparent;
+      width: 30px;
+      height: 30px;
+      font-size: 1.2em;
+      font-weight: 400;
+      text-align: center;
+      border: 0px;
+      border-radius: @smallPadding;
+      transition: background-color .2s;
+
+
+      &.close {
+        position: absolute;
+        top: 0;
+        right: @modalVPadding_sm;
+        border: none;
+        background-color: transparent;
+        font-size: 2em;
+      }
+
+      @media (max-width: @smallScreen) {
+        width: 33px;
+        height: 33px;
+      }
     }
 
-    .darkMode {
-      background: @mainThemeColor;
-      color: darken(@mainTextColor, 10%);
+      &:hover {
+        background-color: lighten(@tertiaryThemeColor, 20%);
+      }
+
+      &:active {
+        background-color: @mainLinkHoverColor;
+      }
+
+      &:disabled {
+        cursor: default;
+        //color: lighten(@secondaryThemeColor, 15%);
+        color: @disabledTextColor;
+        border-color: lighten(@secondaryThemeColor, 15%);
+        &:hover {
+          background-color: transparent;
+        }
+      }
     }
 
     .modal-content {
@@ -43,48 +89,17 @@
       background: transparent;
       border: none;
 
-      button {
-        display: inline-block;
-        color: darken(@mainTextColor, 20%);
-        //background: lighten(@tertiaryThemeColor, 10%);
-        background: transparent;
-        //border: 1px solid lighten(@tertiaryThemeColor, 10%);
-        //border-radius: 4px;
-        border: 0px;
-        transition: background-color .2s;
-
-        &:hover {
-          background-color: lighten(@tertiaryThemeColor, 20%);
-        }
-
-        &:active {
-          background-color: @mainLinkHoverColor;
-        }
-
-        &:disabled {
-          cursor: default;
-          //color: lighten(@secondaryThemeColor, 15%);
-          color: @disabledTextColor;
-          border-color: lighten(@secondaryThemeColor, 15%);
-          &:hover {
-            background-color: transparent;
-          }
-        }
-      }
-
-
       .modal-header {
         background: linear-gradient(to top, @secondaryThemeColor, lighten(@secondaryThemeColor, 7%));
-        position: sticky;
         top: 0;
         left: 0;
         right: 0;
         height: @headerHeight;
         text-align: center;
         border: none;
-        z-index: 1800;
-        border-radius: 4px 4px 0 0;
-        padding: 4px;
+        //z-index: 1800;
+        border-radius: @smallPadding @smallPadding 0 0;
+        padding: @smallPadding;
 
         h1 {
           display: inline-block;
@@ -101,28 +116,18 @@
           &.close {
             border: none;
             background-color: transparent;
-            font-size: 1.5em;
+            font-size: 1.7em;
           }
         }
       }
 
-      .modal-nav {
-        position: sticky;
-        height: @navHeight;
-        z-index: 1700;
-        color: white;
-        background: @tertiaryThemeColor;
-        color: darken(@mainTextColor, 10%);
-        padding: 4px @vPadding;
-        border-radius: 0;
-      }
-
       .modal-body {
-        position: absolute;
-        top: calc(@headerHeight + @navHeight);
-        bottom: @footerHeight;
-        left: 0;
-        right: 0;
+        position: relative;
+        //top: calc(@headerHeight + @navHeight);
+        //bottom: @footerHeight;
+        //left: 0;
+        //right: 0;
+        height: calc(~'@{modalHeight} - @{calcHeight}');
         transition: background-color .2s;
         overflow-y: auto;
         overflow-x: hidden;
@@ -189,14 +194,14 @@
       .modal-footer {
         //opacity: .75;
         border-radius: 0 0 6px 6px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        position: relative;
+        //bottom: 0;
+        //left: 0;
+        //right: 0;
         background: @tertiaryThemeColor;
         color: darken(@mainTextColor, 10%);
         border: none;
-        padding: 4px @vPadding;
+        padding: @smallPadding @vPadding;
 
         button {
           //font-size: 11px;
@@ -211,7 +216,7 @@
 
           .paginationDirector {
             button {
-              margin-right: 4px;
+              margin-right: @smallPadding;
 
             }
           }
@@ -245,5 +250,4 @@
     .modal-dialog {
       margin: 5px;
     }
-  }
 }
