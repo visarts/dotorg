@@ -48,22 +48,6 @@
       border-radius: @smallPadding;
       transition: background-color .2s;
 
-
-      &.close {
-        position: absolute;
-        top: 0;
-        right: @modalVPadding_sm;
-        border: none;
-        background-color: transparent;
-        font-size: 2em;
-      }
-
-      @media (max-width: @smallScreen) {
-        width: 33px;
-        height: 33px;
-      }
-    }
-
       &:hover {
         background-color: lighten(@tertiaryThemeColor, 20%);
       }
@@ -81,6 +65,22 @@
           background-color: transparent;
         }
       }
+
+
+      &.close {
+        position: absolute;
+        top: 0;
+        right: @modalVPadding_sm;
+        border: none;
+        background-color: transparent;
+        font-size: 2em;
+      }
+
+      @media (max-width: @smallScreen) {
+        width: 33px;
+        height: 33px;
+      }
+    }
     }
 
     .modal-content {

@@ -2,8 +2,8 @@
 @import '../../../../styles/modal';
 @import '../../../../styles/menus';
 
-@headerHeight: 33px;
 @footerHeight: 100px;
+@calcHeight: @headerHeight + @footerHeight;
 
 .modal {
   .custom-modal.arts-modal {
@@ -18,8 +18,7 @@
       }
 
       .modal-body {
-        top: @headerHeight;
-        bottom: @footerHeight;
+        height: calc(~'@{modalHeight} - @{calcHeight}');
 
         &.darkMode {
           background: @transparentThemeColor;
