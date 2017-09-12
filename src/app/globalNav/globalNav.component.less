@@ -25,7 +25,7 @@
       vertical-align: top;
       text-decoration: none;
       //background-color: @tertiaryThemeColor;
-      transition: all .2s;
+      transition: all @defaultTransitionTimeout;
       color: #fff;
 
       &.selected {
@@ -52,7 +52,7 @@
           //max-width: 400px;
           background-size: cover;
           background-position: 50% 30%;
-          transition: height .2s;
+          transition: height @defaultTransitionTimeout;
 
           &.subPage {
             height: 75px;
@@ -60,13 +60,13 @@
         }
         .navImage.navLit {
           background-image: url('http://portitude.org/arts/harnett/1878-job_lot_cheap.jpg');
-          transition: all .2s;
+          transition: all @defaultTransitionTimeout;
 
         }
 
         .navImage.navArt {
           background-image: url('http://portitude.org/arts/waterhouse/1916-tale_from_the_decameron.jpg');
-          transition: all .2s;
+          transition: all @defaultTransitionTimeout;
 
         }
 

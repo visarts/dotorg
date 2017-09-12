@@ -40,7 +40,7 @@
 
 
         &:hover, &.active {
-          //background-color: @activeBackgroundColor;
+          background-color: @activeBackgroundColor;
         }
 
         &:active {
@@ -84,7 +84,7 @@
         h1 {
           display: inline-block;
           font-size: @smallHeadline;
-          transition: font-size, .2s;
+          transition: font-size, @defaultTransitionTimeout;
           color: darken(@mainTextColor, 20%);
         }
 
@@ -134,7 +134,7 @@
         //border-radius: 15px;
         //background: lighten(@transparentTertiaryThemeColor, 20%);
         color: lighten(@tertiaryThemeColor, 20%);
-        transition: color .2s;
+        transition: color @defaultTransitionTimeout;
         &::before {
           content: "x";
         }
@@ -179,8 +179,8 @@
           .active {
 
             a {
-              font-weight: bold;
               background-color: @tertiaryThemeColor;
+              color: @secondaryLinkHoverColor;
 
               &:hover {
                 background-color: @tertiaryThemeColor;
@@ -227,7 +227,7 @@
         background: @transparentTertiaryThemeColor;
         border-bottom-left-radius: @roundedEdge;
         border-bottom-right-radius: @roundedEdge;
-        transition: ease height .2s;
+        transition: ease height @defaultTransitionTimeout;
         box-shadow: 0px 0px 12px rgba(0, 0, 0, .3);
 
         .readingModeButton {
@@ -257,7 +257,7 @@
         //bottom: @footerHeight;
         //left: 0;
         //right: 0;
-        transition: background-color .2s;
+        transition: background-color @defaultTransitionTimeout;
         overflow: auto;
 
         .readingBody {
@@ -270,13 +270,13 @@
           margin-bottom: 15px;
 
           h1 {
-            transition: all .2s;
+            transition: all @defaultTransitionTimeout;
             font-size: 1.7em;
             font-weight: bold;
           }
 
           h2 {
-            transition: all .2s;
+            transition: all @defaultTransitionTimeout;
             font-size: 1.4em;
           }
 

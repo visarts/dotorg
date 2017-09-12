@@ -16,7 +16,7 @@ header {
         left: 0;
         top: 0;
         //margin: 0 @vMargin;
-        transition: font-size, .2s;
+        transition: font-size, @defaultTransitionTimeout;
         vertical-align: middle;
 
         .portitudeTitle {
@@ -35,13 +35,13 @@ header {
           display: inline-block;
           color: @mainTextColor;
           padding: @hPadding 0px;
-          transition: all .2s;
+          transition: all @defaultTransitionTimeout;
 
           .subHead {
             vertical-align: middle;
             font-size: 18px;
             color: @darkLinkColor;
-            transition: all .2s;
+            transition: all @defaultTransitionTimeout;
             border-left: 2px solid darken(@darkLinkColor, 30%);
             padding: 0px @vLinkPadding;
 
@@ -72,7 +72,7 @@ header {
   .globalHeaderFoot {
     height: 30px;
     background: linear-gradient(to bottom, @secondaryThemeColor, @tertiaryThemeColor);
-    transition: all .2s;
+    transition: all @defaultTransitionTimeout;
 
     &.hidden {
       display: block !important;

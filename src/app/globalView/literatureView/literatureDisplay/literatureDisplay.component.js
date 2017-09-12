@@ -49,8 +49,14 @@ export default class LiteratureDisplay extends React.Component {
               }
             }
 
-            page = this.htmlContent.slice(0, lastChar);
-            this.htmlContent = this.htmlContent.slice(lastChar);
+            if (this.htmlContent.length > (lastChar + buffer)) {
+              page = this.htmlContent.slice(0, lastChar);
+              this.htmlContent = this.htmlContent.slice(lastChar);
+            } else {
+              page = this.htmlContent.slice(0);
+              this.htmlContent = '';
+            }
+
             this.pages.push(page);
             if (this.htmlContent.length > 1 && this.htmlContent.length < (lastChar + buffer)) {
               page = this.htmlContent.slice(0);
@@ -70,7 +76,7 @@ export default class LiteratureDisplay extends React.Component {
   }
 
   setPageNum (pageNum) {
-    this.setState({currentPage: pageNum}, () => {
+    this.setState({currentPage: pageNum, readMoreMenuIsOpen: false, readingControlsAreOpen: false}, () => {
       const currentHash = this.originalHash.indexOf('?page=') > -1 ? this.originalHash.slice(0, this.originalHash.indexOf('?')) : this.originalHash;
       document.location.hash = currentHash + `?page=${pageNum}`;
       document.querySelector('.modal-body').scrollTop = 0;
@@ -142,7 +148,9 @@ export default class LiteratureDisplay extends React.Component {
       readMoreMenuIsOpen: false,
       readingControlsAreOpen: false
     };
-    this.setState(newState);
+    if (this.state.readMoreMenuIsOpen || this.state.readingControlsAreOpen) {
+      this.setState(newState);
+    }
   }
 
   updateSearchInput (e) {

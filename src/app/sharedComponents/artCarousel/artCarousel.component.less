@@ -18,7 +18,7 @@
     height: 85px;
     width: 30px;
     z-index: 1000;
-    transition: all .2s;
+    transition: all @defaultTransitionTimeout;
 
     .glyphicon {
       text-shadow: 2px 2px 2px #000;
@@ -64,7 +64,7 @@
       margin: 0 4px 4px 0;
       background-color: @tertiaryThemeColor;
       border-color: lighten(@mainThemeColor, 5%);
-      transition: all .2s;
+      transition: all @defaultTransitionTimeout;
       word-wrap: break-word;
 
       a {
@@ -75,7 +75,7 @@
           width: 75px;
           max-width: 75px;
           opacity: .5;
-          transition: all .2s;
+          transition: all @defaultTransitionTimeout;
 
           &:active {
             width: 71px;

@@ -1,6 +1,6 @@
 @import '../../../../styles/globals';
 
-@titlesBackground: darken(@mainThemeColor, 3%);
+@titlesBackground: @tertiaryThemeColor;
 
 .literatureAuthor {
 
@@ -48,7 +48,7 @@
     .genreContainer {
       margin-bottom: @hMargin;
       .titlesTitle {
-        background: @secondaryThemeColor;
+        background: linear-gradient(to bottom, @secondaryThemeColor, lighten(@secondaryThemeColor, 7%));
         padding: @hPadding;
         text-align: center;
         border-top-right-radius: @roundedEdge;
@@ -56,6 +56,7 @@
 
         h3 {
           font-size: @smallHeadline;
+          color: @darkLinkColor;
         }
       }
       .titles {
@@ -75,7 +76,7 @@
           }
           a {
             padding: @hPadding @vPadding;
-            transition: all .2s;
+            transition: all @defaultTransitionTimeout;
             display: inline-block;
             width: 100%;
 
