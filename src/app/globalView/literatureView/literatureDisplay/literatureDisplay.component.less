@@ -61,7 +61,6 @@
         }
       }
 
-
       .modal-header {
         background: linear-gradient(to top, @secondaryThemeColor, lighten(@secondaryThemeColor, 7%));
         position: relative;
@@ -110,7 +109,6 @@
       }
 
       .literatureTitleSearchInput {
-        //margin: 5px 15px 5px 40px;
         background: linear-gradient(to bottom, @secondaryThemeColor, lighten(@secondaryThemeColor, 10%));
         display: inline-block;
         padding: 5px 5px 5px 40px;
@@ -153,7 +151,8 @@
       }
 
       .literatureTitleList {
-        overflow-x: scroll;
+        overflow-x: hidden;
+        overflow-y: scroll;
         position: absolute;
         top: @searchHeight;
         bottom: 0px;
@@ -187,7 +186,6 @@
               }
             }
           }
-          //overflow-y: hidden;
 
           li:nth-child(odd) {
             //background: rgba(92, 94, 98, .5);
@@ -257,7 +255,8 @@
         //bottom: @footerHeight;
         //left: 0;
         //right: 0;
-        transition: background-color @defaultTransitionTimeout;
+        opacity: 1;
+        transition: all @defaultTransitionTimeout;
         overflow: auto;
 
         .readingBody {
@@ -292,7 +291,9 @@
             }
           }
         }
-
+        &.entered .htmlContent {
+          opacity: .2;
+        }
       }
 
       .modal-footer {

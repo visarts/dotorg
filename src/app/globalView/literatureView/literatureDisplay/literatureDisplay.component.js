@@ -69,7 +69,6 @@ export default class LiteratureDisplay extends React.Component {
           this.pages.push(this.htmlContent);
         }
 
-        this.settingsMenuButtonLabel = <Glyphicon glyph="cog" />;
         this.originalHash = document.location.hash;
         this.setState(this.state);
       });
@@ -111,6 +110,9 @@ export default class LiteratureDisplay extends React.Component {
   }
 
   hideModal () {
+    //record last place
+    let percentage = Math.round((parseInt(this.state.currentPage) / parseInt(this.pages.length)) * 100);
+    localStorage.setItem('readtest', JSON.stringify({authorKey: this.authorKey, workKey: this.currentWorkKey, percentage}));
     //reconstruct the uri from the original, take two params off the top to return to origin
     let params = this.props.appState.getTrimmedURI(2);
     location.hash = `#/${params}`
@@ -144,11 +146,11 @@ export default class LiteratureDisplay extends React.Component {
   }
 
   closeAllMenus (e) {
-    let newState = {
-      readMoreMenuIsOpen: false,
-      readingControlsAreOpen: false
-    };
     if (this.state.readMoreMenuIsOpen || this.state.readingControlsAreOpen) {
+      let newState = {
+        readMoreMenuIsOpen: false,
+        readingControlsAreOpen: false
+      };
       this.setState(newState);
     }
   }
@@ -162,19 +164,23 @@ export default class LiteratureDisplay extends React.Component {
   }
 
   componentWillReceiveProps (nextProps) {
+    document.querySelector('.modal-body').classList.add('entered');
     if (this.props.match.params.work !== nextProps.match.params.work) {
       this.setState({currentPage: 1, searchInput: '', readMoreMenuIsOpen: false, readingControlsAreOpen: false}, () => {
         document.querySelector('.modal-body').scrollTop = 0;
         this.setValues();
       });
     }
+    setTimeout(() => {
+      document.querySelector('.modal-body').classList.remove('entered');
+    }, 200);
+
   }
 
   render () {
-// onClick={this.toggleReadMoreMenu.bind(this, 'close')}
     return (
       <div className="literatureDisplay">
-        {this.settingsMenuButtonLabel && <Modal
+        {this.pages && <Modal
           show={true}
           onHide={this.hideModal.bind(this)}
           dialogClassName="custom-modal literature-modal">
@@ -205,7 +211,7 @@ export default class LiteratureDisplay extends React.Component {
             <button className="increaseFont" onClick={this.increaseFont.bind(this)} disabled={this.state.currentFontSizeClass === 'lgFont'}><Glyphicon glyph="plus" /></button>
             <button className="decreaseFont" onClick={this.decreaseFont.bind(this)} disabled={this.state.currentFontSizeClass === 'smFont'}><Glyphicon glyph="minus" /></button>
           </div>
-          <Modal.Body className={this.state.readingModeClass} onClick={this.closeAllMenus.bind(this)}>
+          <Modal.Body className={`${this.state.readingModeClass}`} onClick={this.closeAllMenus.bind(this)}>
             <div className="readingBody">
               <div className={this.state.currentPage > 1 ? 'literatureTitle smallTitles' : 'literatureTitle'}>
                 <h1>{decodeURIComponent(this.currentWork.title)}</h1>
