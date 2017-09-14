@@ -4,6 +4,8 @@
 
 
 @lightModeBG: #dbdad1;
+//@lightModeBG: #d0cbc0;
+
 
 .modal {
   /*::-webkit-scrollbar {
@@ -22,7 +24,7 @@
   .custom-modal.literature-modal {
 
     .lightMode {
-      background: @lightModeBG;
+      background: linear-gradient(to top, #d0cbc0 0%, @lightModeBG 20%);
       color: #333333;
     }
 
@@ -258,10 +260,6 @@
         opacity: 1;
         transition: all @defaultTransitionTimeout;
         overflow: auto;
-
-        .readingBody {
-          transition: filter .5s;
-        }
 
         .literatureTitle {
           border-bottom: 1px solid @tertiaryThemeColor;

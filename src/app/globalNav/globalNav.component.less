@@ -26,7 +26,16 @@
       text-decoration: none;
       //background-color: @tertiaryThemeColor;
       transition: all @defaultTransitionTimeout;
-      color: #fff;
+      color: @secondaryLinkHoverColor;
+
+      .subPage {
+        color: @darkLinkColor;
+
+        &:hover {
+          opacity: 1;
+          color: #fff;
+        }
+      }
 
       &.selected {
         //background: linear-gradient(to left, @mainLinkHoverColor, @tertiaryThemeColor);
@@ -78,6 +87,7 @@
           bottom: 0px;
           left: 0px;
           right: 0px;
+
           .title {
             font-size: 1.8em;
             margin: 0;

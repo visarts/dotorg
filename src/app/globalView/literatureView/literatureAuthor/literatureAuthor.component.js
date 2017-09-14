@@ -63,8 +63,8 @@ const LiteratureAuthor = (props) => {
     event.target.src='./content/portraits/profile.jpg';
   };
 
-  const percentage = JSON.parse(localStorage.getItem('readtest')).percentage;
-  console.log(percentage);
+  //const percentage = JSON.parse(localStorage.getItem('readtest')).percentage;
+  //console.log(percentage);
   return (
     <CSSTransitionGroup
       transitionName="example"
@@ -73,8 +73,8 @@ const LiteratureAuthor = (props) => {
       transitionEnter={false}
       transitionLeave={false}>
     <div className="literatureAuthor">
-      <h1>{`${author.fname} ${author.lname}`}</h1>
-      <div style={{height: '7px', width: '25px', background: `linear-gradient(to right, #38e02c 0%, #38e02c ${percentage}%, black ${percentage}%)`}}></div>
+      <h1><span className="fname">{author.fname}</span> <span className="lname">{author.lname}</span></h1>
+      <div style={{height: '7px', width: '25px', background: `linear-gradient(to right, #38e02c 0%, #38e02c 50%, black 50%)`}}></div>
       <div className="about">
         <div className="authorPic">
           <img src="./content/artwork/creatorkey/creatorkey-picture-1-1111_sm.jpg" />
