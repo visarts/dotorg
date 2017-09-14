@@ -2,6 +2,10 @@
 
 .artsArtist {
 
+  .artsArtistTitle, .artsArtistBio {
+    margin-bottom: @hMargin;
+  }
+
   .imageGrid {
     display: flex;
     flex-flow: row wrap;
@@ -29,7 +33,7 @@
       }
 
       &:hover, &:focus {
-        background: @mainLinkHoverColor;
+        background: @artLinkHoverColor;
 
         a {
           color: white;

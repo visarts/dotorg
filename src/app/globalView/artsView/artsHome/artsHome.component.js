@@ -17,7 +17,8 @@ const ArtsHome = (props) => {
       <ListLink
         key={index}
         url={`/arts/a/${index}`}
-        text={`${artist.fname} ${artist.lname} (${artist.content.length})`} />
+        text={`${artist.fname} ${artist.lname}`}
+        other={artist.bio} />
     );
   }
 
@@ -28,21 +29,21 @@ const ArtsHome = (props) => {
       <h3>The greatest art in history by some of history's greatest artists</h3>
       <ArtHistory />
       <div className="titlesContainer">
-        <h3>The Artists</h3>
-        <ul className="artistsList">{artistsList}</ul>
-      </div>
-      <div className="titlesContainer">
         <h3>The Eras</h3>
         <ul className="erasList">
-          <ListLink url="arts/g/renaissance" text="Renaissance" />
-          <ListLink url="arts/g/baroque" text="Baroque" />
-          <ListLink url="arts/g/pre-raphaelite" text="Pre-Raphaelite" />
-          <ListLink url="arts/g/academic" text="Academic" />
-          <ListLink url="arts/g/impressionism" text="Impressionism" />
-          <ListLink url="arts/g/post-impressionism" text="Post-Impressionism" />
-          <ListLink url="arts/g/realism" text="Realism" />
-          <ListLink url="arts/g/modernism" text="Modernism" />
+          <ListLink url="arts/g/renaissance" text="Renaissance" inlined={true} />
+          <ListLink url="arts/g/baroque" text="Baroque" inlined={true} />
+          <ListLink url="arts/g/pre-raphaelite" text="Pre-Raphaelite" inlined={true} />
+          <ListLink url="arts/g/academic" text="Academic" inlined={true} />
+          <ListLink url="arts/g/impressionism" text="Impressionism" inlined={true} />
+          <ListLink url="arts/g/post-impressionism" text="Post-Impressionism" inlined={true} />
+          <ListLink url="arts/g/realism" text="Realism" inlined={true} />
+          <ListLink url="arts/g/modernism" text="Modernism" inlined={true} />
         </ul>
+      </div>
+      <div className="titlesContainer">
+        <h3>The Artists</h3>
+        <ul className="artistsList">{artistsList}</ul>
       </div>
     </div>
   );

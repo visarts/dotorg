@@ -73,8 +73,8 @@
         line-height: 1.4em;
         -moz-column-count: 3;
         column-count: 3;
-        -moz-column-rule: 4px solid @mainThemeColor;
-        column-rule: 4px solid @mainThemeColor;
+        -moz-column-gap: 7px;
+        column-gap: 7px;
 
         li {
           margin-bottom: 7px;
@@ -99,7 +99,8 @@
 
             &:hover {
               color: inherit;
-              background: @mainLinkHoverColor;
+              background: @litLinkHoverColor;
+              box-shadow: 3px 3px 10px @secondaryThemeColor;
             }
           }
         }

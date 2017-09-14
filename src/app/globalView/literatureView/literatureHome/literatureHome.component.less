@@ -18,6 +18,8 @@
   .authorsList {
     column-count: 2;
     -moz-column-count: 2;
+    column-gap: 7px;
+    -moz-column-gap: 7px;
 
   }
 
@@ -25,15 +27,17 @@
 
   }
 
+  .listLink a {
+
+    &:hover {
+      background: @litLinkHoverColor;
+    }
+  }
+
   @media(max-width: @smallScreen) {
     .authorsList {
       column-count: 1;
       -moz-column-count: 1;
-    }
-
-    .listLink a {
-      padding-left: 0;
-      padding-right: 0;
     }
   }
 }

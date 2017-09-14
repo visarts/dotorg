@@ -34,7 +34,7 @@ const ListLink = (props) => {
     );
   }
   return (
-    <li className="listLink">
+    <li className={`listLink ${props.inlined ? 'listLinkInlined' : ''}`}>
       <Link
         to={props.url}
         onClick={props.action}>

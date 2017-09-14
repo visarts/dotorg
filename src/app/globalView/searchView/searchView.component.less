@@ -7,5 +7,16 @@
     margin-top: 1.5em;
     display: inline-block;
     vertical-align: top;
+
+
+    li a {
+      display: block;
+      width: 200px;
+      padding: @hPadding @vPadding;
+      transition: all .2s ease;
+      &:hover {
+        background: @mainLinkHoverColor;
+      }
+    }
   }
 }

@@ -31,18 +31,18 @@ const LiteratureHome = (props) => {
       <h3>Classic literature lines the dusty shelves. Make yourself right at home.</h3>
       <LiteratureHistory />
       <div className="titlesContainer">
-        <h3>The Authors</h3>
-        <ul className="authorsList">{authorsList}</ul>
-      </div>
-      <div className="titlesContainer">
         <h3>The Genres</h3>
         <ul className="genresList">
-          <ListLink url={`literature/g/shorts`} text="Short Stories" />
-          <ListLink url={`literature/g/poetry`} text="Poetry" />
-          <ListLink url={`literature/g/nonfiction`} text="Nonfiction" />
-          <ListLink url={`literature/g/fables`} text="Fables" />
-          <ListLink url={`literature/g/tales`} text="Tales" />
+          <ListLink url={`literature/g/shorts`} text="Short Stories" inlined={true} />
+          <ListLink url={`literature/g/poetry`} text="Poetry" inlined={true} />
+          <ListLink url={`literature/g/nonfiction`} text="Nonfiction" inlined={true} />
+          <ListLink url={`literature/g/fables`} text="Fables" inlined={true} />
+          <ListLink url={`literature/g/tales`} text="Tales" inlined={true} />
         </ul>
+      </div>
+      <div className="titlesContainer">
+        <h3>The Authors</h3>
+        <ul className="authorsList">{authorsList}</ul>
       </div>
     </div>
   )

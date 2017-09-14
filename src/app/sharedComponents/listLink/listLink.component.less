@@ -7,12 +7,19 @@
     width: 250px;
     background-color: @tertiaryThemeColor;
   }
+
+  &.listLinkInlined {
+    display: inline-block;
+    margin-right: 7px;
+  }
   a {
     padding: @hPadding @vPadding;
     transition: all @defaultTransitionTimeout;
     display: inline-block;
     width: 100%;
     line-height: 1.2em;
+    background: @tertiaryThemeColor;
+    margin-bottom: 7px;
 
     .listLinkThumb {
       display: inline-block;
@@ -42,15 +49,12 @@
     &:hover {
       color: inherit;
       background: @mainLinkHoverColor;
+      box-shadow: 3px 3px 10px @secondaryThemeColor;
 
       .listLinkSubtext {
         color: @mainLinkColor;
       }
     }
 
-    @media(max-width: @smallScreen) {
-      padding-left: 0;
-      padding-right: 0;
-    }
   }
 }

@@ -9,13 +9,24 @@
 
   }
 
-  .authorsList, .erasList {
-
+  .artistsList, .erasList {
+    .listLink a {
+      &:hover {
+        background: @artLinkHoverColor;
+      }
+    }
 
   }
 
   .artistsList {
     column-count: 2;
+    -moz-column-count: 2;
+    column-gap: 7px;
+    -moz-column-gap: 7px;
+    @media(max-width: @smallScreen) {
+      column-count: 1;
+      -moz-column-count: 1;
+    }
   }
 
   .erasList {
