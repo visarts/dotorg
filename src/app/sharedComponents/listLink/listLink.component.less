@@ -4,6 +4,7 @@
 .listLink {
     &.listLinkThumbView {
       margin: 0 4px 4px 0;
+      width: 250px;
       background-color: @tertiaryThemeColor;
     }
     a {
@@ -21,10 +22,14 @@
       }
 
       .listLinkSubtext {
-        color: darken(@mainLinkColor, 25%);
-        font-style: italic;
-        font-size: 1.2em;
+        color: darken(@mainLinkColor, 15%);
+        font-size: .9em;
         line-height: 1.5em;
+      }
+
+      .subtext {
+        display: block;
+
       }
 
       &:focus {
