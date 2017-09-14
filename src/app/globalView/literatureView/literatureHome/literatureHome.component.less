@@ -17,9 +17,23 @@
 
   .authorsList {
     column-count: 2;
+    -moz-column-count: 2;
+
   }
 
   .genresList {
 
+  }
+
+  @media(max-width: @smallScreen) {
+    .authorsList {
+      column-count: 1;
+      -moz-column-count: 1;
+    }
+
+    .listLink a {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }

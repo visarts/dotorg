@@ -18,7 +18,8 @@ const LiteratureHome = (props) => {
       <ListLink
         key={index}
         url={`literature/a/${index}`}
-        text={`${author.fname} ${author.lname} (${author.content.length})`} />
+        text={`${author.fname} ${author.lname}`}
+        other={`${author.bio}`} />
     );
   }
 

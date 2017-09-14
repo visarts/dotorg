@@ -69,7 +69,7 @@
         }
       }
       .titles {
-        background: @titlesBackground;
+        //background: @titlesBackground;
         line-height: 1.4em;
         -moz-column-count: 3;
         column-count: 3;
@@ -77,13 +77,14 @@
         column-rule: 4px solid @mainThemeColor;
 
         li {
-          margin: 0;
+          margin-bottom: 7px;
           &:nth-child(odd) {
             //border: 1px solid @tertiaryThemeColor;
             //box-shadow: 2px 2px 2px black;
             //background: @secondaryThemeColor;
           }
           a {
+            background: @titlesBackground;
             padding: @hPadding @vPadding;
             transition: all @defaultTransitionTimeout;
             display: inline-block;
@@ -127,14 +128,6 @@
         .titles {
           column-count: 1;
           -moz-column-count: 1;
-          background: transparent;
-
-          li {
-            margin-bottom: 7px;
-            a {
-              background: @titlesBackground;
-            }
-          }
         }
         .titlesFadeOut {
           display: none;

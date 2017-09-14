@@ -2,46 +2,55 @@
 
 
 .listLink {
-    &.listLinkThumbView {
-      margin: 0 4px 4px 0;
-      width: 250px;
-      background-color: @tertiaryThemeColor;
-    }
-    a {
-      padding: @hPadding @vPadding;
-      transition: all @defaultTransitionTimeout;
-      display: inline-block;
-      width: 100%;
-      line-height: 1.2em;
+  &.listLinkThumbView {
+    margin: 0 4px 4px 0;
+    width: 250px;
+    background-color: @tertiaryThemeColor;
+  }
+  a {
+    padding: @hPadding @vPadding;
+    transition: all @defaultTransitionTimeout;
+    display: inline-block;
+    width: 100%;
+    line-height: 1.2em;
 
-      .listLinkThumb {
-        display: inline-block;
-        float: left;
-        margin-right: 5px;
-        width: 50px;
-      }
+    .listLinkThumb {
+      display: inline-block;
+      float: left;
+      margin-right: 5px;
+      width: 50px;
+    }
+
+    .listLinkSubtext {
+      color: darken(@mainLinkColor, 15%);
+      font-size: .9em;
+      line-height: 1.5em;
+    }
+
+    .subtext {
+      display: block;
+
+    }
+
+    &:focus {
+      background: @tertiaryThemeColor;
+      color: inherit;
+      text-decoration: none;
+      outline: none;
+    }
+
+    &:hover {
+      color: inherit;
+      background: @mainLinkHoverColor;
 
       .listLinkSubtext {
-        color: darken(@mainLinkColor, 15%);
-        font-size: .9em;
-        line-height: 1.5em;
-      }
-
-      .subtext {
-        display: block;
-
-      }
-
-      &:focus {
-        background: @tertiaryThemeColor;
-        color: inherit;
-        text-decoration: none;
-        outline: none;
-      }
-
-      &:hover {
-        color: inherit;
-        background: @mainLinkHoverColor;
+        color: @mainLinkColor;
       }
     }
+
+    @media(max-width: @smallScreen) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }

@@ -3,6 +3,20 @@ import { Link } from 'react-router-dom';
 import './listLink.component.less';
 
 const ListLink = (props) => {
+
+  let otherText = '';
+  let smallScreen = 768;
+  let otherTextLimit = window.innerWidth >= smallScreen ? 200 : 80;
+
+  if (props.other) {
+    if (props.other.length > otherTextLimit) {
+      otherText = props.other.substring(0, otherTextLimit);
+      otherText = otherText.substring(0, otherText.lastIndexOf(' ')).concat('...');
+    } else {
+      otherText = props.other;
+    }
+  }
+
   if (props.thumb) {
     return (
       <li className="listLink listLinkThumbView">
@@ -25,7 +39,7 @@ const ListLink = (props) => {
         to={props.url}
         onClick={props.action}>
           <span>{decodeURIComponent(props.text)}</span>
-          {props.other && <div className="listLinkSubtext">{props.other}</div>}
+          {props.other && <div className="listLinkSubtext">{otherText}</div>}
         </Link>
     </li>
   );
