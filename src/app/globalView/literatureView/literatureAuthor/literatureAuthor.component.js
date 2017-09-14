@@ -4,7 +4,6 @@ import historyService from 'Services/history.service';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
 import ListLink from 'SharedComponents/listLink/listLink.component';
 import './literatureAuthor.component.less';
-import { CSSTransitionGroup } from 'react-transition-group';
 
 const LiteratureAuthor = (props) => {
   //document.querySelector('body').scrollTop = 0;
@@ -66,12 +65,6 @@ const LiteratureAuthor = (props) => {
   //const percentage = JSON.parse(localStorage.getItem('readtest')).percentage;
   //console.log(percentage);
   return (
-    <CSSTransitionGroup
-      transitionName="example"
-      transitionAppear={true}
-      transitionAppearTimeout={200}
-      transitionEnter={false}
-      transitionLeave={false}>
     <div className="literatureAuthor">
       <h1><span className="fname">{author.fname}</span> <span className="lname">{author.lname}</span></h1>
       <div style={{height: '7px', width: '25px', background: `linear-gradient(to right, #38e02c 0%, #38e02c 50%, black 50%)`}}></div>
@@ -111,7 +104,6 @@ const LiteratureAuthor = (props) => {
         <BackToTop />
       </div>
     </div>
-    </CSSTransitionGroup>
   );
 }
 

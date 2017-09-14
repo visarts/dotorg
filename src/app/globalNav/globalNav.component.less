@@ -2,8 +2,11 @@
 
 .globalNav {
   background-color: @tertiaryThemeColor;
-  margin-bottom: @hMargin;
+  //margin-bottom: @hMargin;
   box-shadow: 0px 0px 25px @secondaryThemeColor;
+  position: fixed;
+  bottom: @footerHeight_sm;
+  width: 100%;
   //border-bottom: 2px solid lighten(@tertiaryThemeColor, 10%);
 
   .globalContainer {
@@ -137,11 +140,8 @@
     box-shadow: none;
     .globalContainer {
       a {
-        width: 100%;
-
-        /*&.selected {
-          background: linear-gradient(to right, @mainLinkHoverColor, @tertiaryThemeColor);
-        }*/
+        //width: 100%;
+        min-width: auto;
 
         .navDescription {
           padding: 0px;
@@ -155,6 +155,10 @@
               .title {
                 font-size: 1.3em;
               }
+
+              .desc {
+                display: none;
+              }
             }
           }
         }
@@ -162,8 +166,8 @@
     }
 
     &.litSelected {
-      background: linear-gradient(to bottom, @secondaryThemeColor, @tertiaryThemeColor);
-
+      //background: linear-gradient(to bottom, @secondaryThemeColor, @tertiaryThemeColor);
+      //background-color: @tertiaryThemeColor;
       .globalContainer {
         .navDescription {
           padding: @hPadding;
@@ -184,8 +188,8 @@
       }
     }
     &.artSelected {
-      background: linear-gradient(to top, @secondaryThemeColor, @tertiaryThemeColor);
-
+      //background: linear-gradient(to bottom, @secondaryThemeColor, @tertiaryThemeColor);
+      //background-color: @tertiaryThemeColor;
       .globalContainer {
         .navDescription {
           padding: @hPadding;

@@ -73,10 +73,6 @@ export default class App extends React.Component {
           store={this.store}
           appState={this.state}
           updateAppState={this.updateAppState} />
-        <GlobalNav
-          store={this.store}
-          appState={this.state}
-          updateAppState={this.updateAppState} />
         <Route path="/" render={routeProps => (
           <GlobalView
             store={this.store}
@@ -84,6 +80,10 @@ export default class App extends React.Component {
             updateAppState={this.updateAppState}
             {...routeProps} />
         )}/>
+        <GlobalNav
+          store={this.store}
+          appState={this.state}
+          updateAppState={this.updateAppState} />
         <GlobalFooter
           store={this.state}
           appState={this.state}
