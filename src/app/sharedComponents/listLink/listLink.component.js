@@ -40,6 +40,7 @@ const ListLink = (props) => {
         onClick={props.action}>
           <span>{decodeURIComponent(props.text)}</span>
           {props.other && <div className="listLinkSubtext">{otherText}</div>}
+          <div>{props.children}</div>
         </Link>
     </li>
   );

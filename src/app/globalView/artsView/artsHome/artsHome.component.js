@@ -11,14 +11,28 @@ const ArtsHome = (props) => {
 
   const artistsList = [];
 
-  for(let index in props.store.artistsData) {
-    let artist = props.store.artistsData[index];
+  for(let artistKey in props.store.artistsData) {
+    let artist = props.store.artistsData[artistKey];
     artistsList.push(
       <ListLink
-        key={index}
-        url={`/arts/a/${index}`}
+        key={artistKey}
+        url={`/arts/a/${artistKey}`}
         text={`${artist.fname} ${artist.lname}`}
-        other={artist.bio} />
+        other={artist.bio}>
+        {/*<div style={{display: 'flex', flexWrap: 'nowrap', overflow: 'hidden'}}>
+          {
+            artist.content.map((item, index) => {
+              return (
+                <img
+                  style={{width: '40px', height: '40px', padding: '5px 5px 5px 0px'}}
+                  key={item.fileName}
+                  src={`./content/artwork/${artistKey}/${item.fileName}_sm.jpg`}
+                  alt={item.title} />
+              )
+            })
+          }
+        </div>*/}
+      </ListLink>
     );
   }
 
