@@ -25,7 +25,7 @@ const ArtsEra = (props) => {
               thumb={`./content/artwork/${artistKey}/${title.fileName}_sm.jpg`}
               url={`/arts/g/${artist.era.toLowerCase()}/${artistKey}/${title.fileName}`}
               text={title.title}
-              subtext={title.date} />
+              subtext={`${title.date}, ${artist.fname} ${artist.lname}`} />
           );
         }
       }

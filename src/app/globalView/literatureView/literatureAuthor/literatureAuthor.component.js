@@ -36,7 +36,7 @@ const LiteratureAuthor = (props) => {
           url={`/literature/a/${authorKey}/${title.genre}/${title.fileName}`}
           action={openTitle.bind(this, title)}
           text={title.title}
-          other={`${title.genre}, ${title.date}`} />);
+          other={`${title.date}, ${title.genre}`} />);
       switch(title.genre) {
         case 'shorts':
           genres.shorts.push(titleLink);

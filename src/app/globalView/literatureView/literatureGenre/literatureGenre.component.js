@@ -23,7 +23,8 @@ const LiteratureGenre = (props) => {
             <ListLink
               key={title.fileName}
               url={`/literature/g/${title.genre}/${authorKey}/${title.fileName}`}
-              text={title.title} />
+              text={title.title}
+              other={`${title.date}, ${author.fname} ${author.lname}`} />
           );
         }
       }
