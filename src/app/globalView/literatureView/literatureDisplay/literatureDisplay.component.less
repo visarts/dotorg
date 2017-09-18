@@ -30,7 +30,7 @@
 
     .darkMode {
       background: @mainThemeColor;
-      color: darken(@mainTextColor, 15%);
+      color: darken(@mainTextColor, 10%);
     }
 
     .modal-content {
@@ -71,7 +71,6 @@
         right: 0;
         height: @headerHeight;
         border: none;
-        z-index: 1800;
         border-radius: 4px 4px 0 0;
         padding: 4px;
 
@@ -167,7 +166,6 @@
         bottom: @footerHeight;
         top: @headerHeight;
         background-color: @transparentTertiaryThemeColor;
-        z-index: 1700;
         transition: ease 0.4s;
 
         &.dropdown-menu {
@@ -220,7 +218,7 @@
         position: absolute;
         left: @modalVPadding_sm;
         top: @headerHeight;
-        z-index: 1700;
+        z-index: @modalBase;
         text-align: center;
         width: 30px;
         height: 95px;
