@@ -25,7 +25,7 @@ const ArtsEra = (props) => {
               thumb={`./content/artwork/${artistKey}/${title.fileName}_sm.jpg`}
               url={`/arts/g/${artist.era.toLowerCase()}/${artistKey}/${title.fileName}`}
               text={title.title}
-              subtext={`${title.date}, ${decodeURIComponent(artist.fname)} ${decodeURIComponent(artist.lname)}`} />
+              other={`${title.date}, ${decodeURIComponent(artist.fname)} ${decodeURIComponent(artist.lname)}`} />
           );
         }
       }
@@ -48,7 +48,7 @@ const ArtsEra = (props) => {
   return (
     <div className="artsEra">
       <h1>{props.appState.routing.currentSubSection}</h1>
-      <h2>The best parts of waking up is {props.appState.routing.currentSubSection} in your browser</h2>
+      <div className="homeDescription">The best parts of waking up is {props.appState.routing.currentSubSection} in your browser</div>
       <div className="eraContainer">
         {titles}
       </div>

@@ -41,7 +41,7 @@ const ArtsArtist = (props) => {
             <img
               src={`./content/artwork/${artistKey}/${item.fileName}_sm.jpg`}
               alt={item.title} />
-            <span>{item.title}</span>
+            <h3>{item.title}</h3>
           </Link>
         </li>
       );

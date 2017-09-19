@@ -6,7 +6,7 @@ const ListLink = (props) => {
 
   let otherText = '';
   let smallScreen = 768;
-  let otherTextLimit = window.innerWidth >= smallScreen ? 200 : 80;
+  let otherTextLimit = window.innerWidth >= smallScreen ? 200 : 100;
 
   if (props.other) {
     if (props.other.length > otherTextLimit) {
@@ -23,13 +23,13 @@ const ListLink = (props) => {
         <Link
           to={props.url}
           onClick={props.action}>
-            <img
-              className="listLinkThumb"
-              src={props.thumb}
-              alt={props.text} />
-            <div>{decodeURIComponent(props.text)}</div>
-            <div className="listLinkSubtext">{props.subtext}</div>
-          </Link>
+          <img
+            className="listLinkThumb"
+            src={props.thumb}
+            alt={props.text} />
+          <h3 className="linkListTitle">{decodeURIComponent(props.text)}</h3>
+          {props.other && <div className="listLinkSubtext">{otherText}</div>}
+        </Link>
       </li>
     );
   }
@@ -38,10 +38,10 @@ const ListLink = (props) => {
       <Link
         to={props.url}
         onClick={props.action}>
-          <span>{decodeURIComponent(props.text)}</span>
-          {props.other && <div className="listLinkSubtext">{otherText}</div>}
-          <div>{props.children}</div>
-        </Link>
+        <h3 className="linkListTitle">{decodeURIComponent(props.text)}</h3>
+        {props.other && <div className="listLinkSubtext">{otherText}</div>}
+        <div>{props.children}</div>
+      </Link>
     </li>
   );
 };

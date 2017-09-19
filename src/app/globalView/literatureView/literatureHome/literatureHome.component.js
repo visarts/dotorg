@@ -28,10 +28,10 @@ const LiteratureHome = (props) => {
   return (
     <div className="literatureHome">
       <h1>Welcome to the Portitude Library</h1>
-      <h3>Classic literature lines the dusty shelves. Make yourself right at home.</h3>
+      <div className="homeDescription">Classic literature lines the dusty shelves. Make yourself right at home.</div>
       <LiteratureHistory />
       <div className="titlesContainer">
-        <h3>The Genres</h3>
+        <h2>The Genres</h2>
         <ul className="genresList">
           <ListLink url={`literature/g/shorts`} text="Short Stories" inlined={true} />
           <ListLink url={`literature/g/poetry`} text="Poetry" inlined={true} />
@@ -41,7 +41,7 @@ const LiteratureHome = (props) => {
         </ul>
       </div>
       <div className="titlesContainer">
-        <h3>The Authors</h3>
+        <h2>The Authors</h2>
         <ul className="authorsList">{authorsList}</ul>
       </div>
     </div>

@@ -2,9 +2,12 @@
 
 
 .listLink {
+  margin-bottom: @hMargin;
+
   &.listLinkThumbView {
-    margin: 0 4px 4px 0;
-    width: 250px;
+    margin-right: @hPadding;
+    min-width: 250px;
+    max-width: 350px;
     background-color: @tertiaryThemeColor;
   }
 
@@ -14,22 +17,27 @@
   }
   a {
     padding: @hPadding @vPadding;
+    //padding-bottom: @hPadding + @hPadding;
     transition: all @defaultTransitionTimeout;
     display: inline-block;
     width: 100%;
     line-height: 1.2em;
     background: @tertiaryThemeColor;
-    margin-bottom: 7px;
+
+    .linkListTitle {
+
+    }
 
     .listLinkThumb {
       display: inline-block;
       float: left;
-      margin-right: 5px;
-      width: 50px;
+      padding-right: @vPadding;
+      margin-bottom: @hPadding;
+      width: 100px;
     }
 
     .listLinkSubtext {
-      color: darken(@mainLinkColor, 15%);
+      color: darken(@mainLinkColor, 12%);
       font-size: .9em;
       line-height: 1.5em;
     }
@@ -56,5 +64,9 @@
       }
     }
 
+  }
+
+  h3 {
+    margin-bottom: @smallPadding;
   }
 }

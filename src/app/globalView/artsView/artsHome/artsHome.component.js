@@ -40,10 +40,10 @@ const ArtsHome = (props) => {
   return (
     <div className="artsHome">
       <h1>Welcome to the Portitude Gallery</h1>
-      <h3>The greatest art in history by some of history's greatest artists</h3>
+      <div className="homeDescription">The greatest art in history by some of history's greatest artists</div>
       <ArtHistory />
       <div className="titlesContainer">
-        <h3>The Eras</h3>
+        <h2>The Eras</h2>
         <ul className="erasList">
           <ListLink url="arts/g/renaissance" text="Renaissance" inlined={true} />
           <ListLink url="arts/g/baroque" text="Baroque" inlined={true} />
@@ -56,7 +56,7 @@ const ArtsHome = (props) => {
         </ul>
       </div>
       <div className="titlesContainer">
-        <h3>The Artists</h3>
+        <h2>The Artists</h2>
         <ul className="artistsList">{artistsList}</ul>
       </div>
     </div>

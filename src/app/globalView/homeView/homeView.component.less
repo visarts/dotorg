@@ -3,10 +3,38 @@
 .homeView {
   .featured {
     .featuredContent {
-      margin-bottom: @hMargin;
+
       .featuredBlock {
+        vertical-align: top;
+        border-radius: @roundedEdge;
         display: inline-block;
-        margin-right: 20px;
+        margin-right: @vMargin;
+        margin-bottom: @hMargin;
+        padding: 1em;
+        background: @secondaryThemeColor;
+        min-width: 300px;
+        transition: all .2s;
+
+        .artPickThumb {
+          width: 100px;
+          float: right;
+          display: inline-block;
+          padding-right: @vPadding;
+          padding-bottom: @hMargin;
+        }
+
+        .featureDescription {
+          margin-top: 0px;
+          color: @mainLinkColor !important;
+          &:hover {
+            color: @mainLinkColor;
+          }
+        }
+
+        &:hover {
+          background: @mainLinkHoverColor;
+          box-shadow: 3px 3px 10px @secondaryThemeColor;
+        }
       }
     }
   }

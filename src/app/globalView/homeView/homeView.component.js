@@ -19,32 +19,32 @@ const HomeView = (props) => {
     return (
       <div className="featured">
         <div className="featuredContent">
-          <div className="featuredBlock">
-            <h4>Featured Author: </h4>
-            <h2>
-              <Link to={`/literature/a/${authorKeys[creatorFrequency]}`}>{decodeURIComponent(`${author.fname} ${author.lname}`)}</Link>
-            </h2>
-          </div>
-          <div className="featuredBlock">
-            <h4>Today's lit pick: </h4>
-            <h2>
-              <Link to={`/literature/a/${authorKeys[creatorFrequency]}/${lit.genre}/${lit.fileName}`}>{lit.title}</Link>
-            </h2>
-          </div>
+          <Link to={`/literature/a/${authorKeys[creatorFrequency]}`} className="featuredBlock">
+            <h4 className="featureDescription">Featured Author: </h4>
+            <h2>{decodeURIComponent(`${author.fname} ${author.lname}`)}</h2>
+          </Link>
+          <Link to={`/literature/a/${authorKeys[creatorFrequency]}/${lit.genre}/${lit.fileName}`} className="featuredBlock">
+            <img
+              className="artPickThumb"
+              src={`./content/images/book.gif`}
+              alt="lit pick" />
+            <h4 className="featureDescription">Today's lit pick: </h4>
+            <h2>{lit.title}</h2>
+          </Link>
         </div>
         <div className="featuredContent">
-          <div className="featuredBlock">
-            <h4>Featured Artist: </h4>
-            <h2>
-              <Link to={`/arts/a/${artistKeys[creatorFrequency]}`}>{decodeURIComponent(`${artist.fname} ${artist.lname}`)}</Link>
-            </h2>
-          </div>
-          <div className="featuredBlock">
-            <h4>Today's art pick: </h4>
-            <h2>
-              <Link to={`/arts/a/${artistKeys[creatorFrequency]}/${artist.era}/${art.fileName}`}>{art.title}</Link>
-            </h2>
-          </div>
+          <Link to={`/arts/a/${artistKeys[creatorFrequency]}`} className="featuredBlock">
+            <h4 className="featureDescription">Featured Artist: </h4>
+            <h2>{decodeURIComponent(`${artist.fname} ${artist.lname}`)}</h2>
+          </Link>
+          <Link to={`/arts/a/${artistKeys[creatorFrequency]}/${artist.era}/${art.fileName}`} className="featuredBlock">
+            <img
+              className="artPickThumb"
+              src={`./content/artwork/${artistKeys[creatorFrequency]}/${art.fileName}_sm.jpg`}
+              alt={art.title} />
+            <h4 className="featureDescription">Today's art pick: </h4>
+            <h2>{art.title}</h2>
+          </Link>
         </div>
       </div>
     )
@@ -53,7 +53,7 @@ const HomeView = (props) => {
   return (
     <div className="homeView">
       <div className="section">
-        Immerse yourself in the beauty of artwork and literature from the masters of the genre, and enrich your store of knowledge.
+        <div className="homeDescription">Immerse yourself in the beauty of artwork and literature from the masters of the genre, and enrich your store of knowledge.</div>
       </div>
       <div className="section">
         {featuredContent}
