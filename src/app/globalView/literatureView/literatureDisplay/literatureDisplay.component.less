@@ -158,6 +158,10 @@
         top: @searchHeight;
         bottom: 0px;
         width: 278px;
+
+        li a {
+
+        }
       }
 
 
@@ -219,8 +223,7 @@
         left: @modalVPadding_sm;
         top: @headerHeight;
         z-index: @modalBase;
-        text-align: center;
-        width: 30px;
+        width: 33px;
         height: 95px;
         background: @transparentTertiaryThemeColor;
         border-bottom-left-radius: @roundedEdge;
@@ -317,11 +320,7 @@
     }
     @media (max-width: @smallScreen) {
       .modal-content {
-        .dropdown-menu li a {
-          font-size: 1.2em;
-          padding: 10px @modalVPadding_sm;
-          //padding: 6px;
-        }
+
 
         .literatureTitleSearchInput {
           padding: 10px @modalVPadding_sm;
@@ -329,7 +328,6 @@
 
         .readingControlsMenu {
           width: 33px;
-          right: @modalVPadding_sm;
         }
       }
     }
