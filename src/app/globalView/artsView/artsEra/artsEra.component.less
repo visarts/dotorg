@@ -11,6 +11,25 @@
 
       .contentBlock {
         //max-width: 300px;
+        //display: block;
+
+        .listLink {
+          display: inline-block;
+          vertical-align: top;
+        }
+      }
+
+      @media (max-width: @smallScreen) {
+        //display: block;
+
+        .listLink.listLinkThumbView {
+
+          margin-right: 0px;
+
+          .listLinkThumb {
+            width: 80px;
+          }
+        }
       }
     }
   }

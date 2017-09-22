@@ -30,47 +30,17 @@ export default class LiteratureDisplay extends React.Component {
     this.author = this.props.store.authorsData[this.authorKey];
     this.currentWorkKey = this.props.match.params.work;
     this.currentWork = this.author.content.filter(work => work.fileName === this.currentWorkKey)[0];
-    console.log(this.currentWork.pages);
+
     document.title = `Portitude Library: ${this.author.fname} ${this.author.lname} - ${this.currentWork.title}`;
 
     dataService.getHTMLContent(this.authorKey, this.currentWorkKey)
       .then((results) => {
         this.htmlContent = results;
-        console.log(this.htmlContent.slice(this.currentWork.pages[8], this.currentWork.pages[9]))
         this.pages = [];
-        if (this.currentWork.genre !== 'poetry') {
-
-          const buffer = 500;
-          do {
-            let lastChar = 2000;
-            let page = '';
-            while (lastChar < this.htmlContent.length) {
-              if (this.htmlContent.substring(lastChar - 4, lastChar) === '</p>' || this.htmlContent.substring(lastChar - 6, lastChar) === '</pre>') {
-                break;
-              } else {
-                lastChar++;
-              }
-            }
-
-            if (this.htmlContent.length > (lastChar + buffer)) {
-              page = this.htmlContent.slice(0, lastChar);
-              this.htmlContent = this.htmlContent.slice(lastChar);
-            } else {
-              page = this.htmlContent.slice(0);
-              this.htmlContent = '';
-            }
-
-            this.pages.push(page);
-
-            if (this.htmlContent.length > 1 && this.htmlContent.length < (lastChar + buffer)) {
-              page = this.htmlContent.slice(0);
-              this.htmlContent = this.htmlContent.slice(lastChar + buffer);
-              this.pages.push(page);
-              break;
-            }
-          } while(this.htmlContent.length > 2000);
-        } else {
-          this.pages.push(this.htmlContent);
+        for (let i in this.currentWork.pageSizes) {
+          let page = this.htmlContent.slice(0, this.currentWork.pageSizes[i]);
+          this.htmlContent = this.htmlContent.slice(this.currentWork.pageSizes[i]);
+          this.pages.push(page);
         }
 
         this.originalHash = document.location.hash;

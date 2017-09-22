@@ -12,6 +12,7 @@
 
       .contentBlock {
         max-width: 300px;
+
       }
     }
   }
@@ -19,6 +20,19 @@
   .listLink a {
     &:hover {
       background: @litLinkHoverColor;
+    }
+  }
+
+  @media(max-width: @smallScreen) {
+    .genreContainer {
+      .authorBlock {
+        margin-right: 0px;
+        display: block;
+
+        .contentBlock {
+          max-width: 100%;
+        }
+      }
     }
   }
 }

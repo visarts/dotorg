@@ -1,4 +1,153 @@
 {
+  "bouguereau": {
+    "fname": "William",
+    "lname": "Bougeureau",
+    "bio": "William-Adolphe Bouguereau (November 30, 1825 – August 19, 1905) was a French academic painter and traditionalist. In his realistic genre paintings he used mythological themes, making modern interpretations of classical subjects, with an emphasis on the female human body. During his life he enjoyed significant popularity in France and the United States, was given numerous official honors, and received top prices for his work",
+    "era": "Academic",
+    "content": [
+      {
+        "title": "Dante and Virgil in Hell",
+        "date": "1850",
+        "fileName": "bougeureau-dante-and-virgil-in-hell-1850"
+      },
+      {
+        "title": "Fraternal Love",
+        "date": "1851",
+        "fileName": "bougeureau-fraternal-love-1851"
+      },
+      {
+        "title": "The Bather",
+        "date": "1870",
+        "fileName": "bougeureau-bather-1870"
+      },
+      {
+        "title": "Italian Girl Drawing Water",
+        "date": "1871",
+        "fileName": "bougeureau-italian-girl-drawing-water-1871"
+      },
+      {
+        "title": "Nymphs and Satyr",
+        "date": "1873",
+        "fileName": "bougeureau-nymphs-and-satyr-1873"
+      },
+      {
+        "title": "At the Edge of the Brook (1)",
+        "date": "1875",
+        "fileName": "bougeureau-at-the-edge-of-the-brook-1875"
+      },
+      {
+        "title": "At the Edge of the Brook (2)",
+        "date": "1879",
+        "fileName": "bougeureau-at-the-edge-of-the-brook-1879"
+      },
+      {
+        "title": "Nymphaeum",
+        "date": "1878",
+        "fileName": "bougeureau-nymphaeum-1878"
+      },
+      {
+        "title": "A Young Girl Defending Herself Against Eros",
+        "date": "1880",
+        "fileName": "bougeureau-young-girl-defending-herself-against-eros-1880"
+      },
+      {
+        "title": "Flagellation of Our Lord Jesus Christ",
+        "date": "1880",
+        "fileName": "bougeureau-flagellation-of-our-lord-jesus-christ-1880"
+      },
+      {
+        "title": "Nut Gatherers",
+        "date": "1882",
+        "fileName": "bougeureau-nut-gatherers-1882"
+      },
+      {
+        "title": "Bouguereau Biblis",
+        "date": "1884",
+        "fileName": "bougeureau-bouguereau-biblis-1884"
+      },
+      {
+        "title": "Lost Pleiad",
+        "date": "1884",
+        "fileName": "bougeureau-lost-pleiad-1884"
+      },
+      {
+        "title": "Woman with Shell",
+        "date": "1885",
+        "fileName": "bougeureau-woman-with-shell-1885"
+      },
+      {
+        "title": "Young Girl Going to Fountain",
+        "date": "1885",
+        "fileName": "bougeureau-young-girl-going-to-fountain-1885"
+      },
+      {
+        "title": "Thirst",
+        "date": "1886",
+        "fileName": "bougeureau-thirst-1886"
+      },
+      {
+        "title": "Bohemian",
+        "date": "1890",
+        "fileName": "bougeureau-bohemian-1890"
+      },
+      {
+        "title": "A Private Vocation",
+        "date": "1890",
+        "fileName": "bougeureau-private-vacation-1890"
+      },
+      {
+        "title": "Penelope",
+        "date": "1891",
+        "fileName": "bougeureau-penelope-1891"
+      },
+      {
+        "title": "Youth",
+        "date": "1893",
+        "fileName": "bougeureau-youth-1893"
+      },
+      {
+        "title": "Not too Much to Carry",
+        "date": "1895",
+        "fileName": "bougeureau-not-too-much-to-carry-1895"
+      },
+      {
+        "title": "Spring Breeze",
+        "date": "1895",
+        "fileName": "bougeureau-spring-breeze-1895"
+      },
+      {
+        "title": "A Calling",
+        "date": "1896",
+        "fileName": "bougeureau-calling-1896"
+      },
+      {
+        "title": "Wave",
+        "date": "1896",
+        "fileName": "bougeureau-wave-1896"
+      },
+      {
+        "title": "Admiration",
+        "date": "1897",
+        "fileName": "bougeureau-admiration-1897"
+      },
+      {
+        "title": "Tricoeause",
+        "date": "1897",
+        "fileName": "bougeureau-tricoeause-1897"
+      },
+      {
+        "title": "Head of a Young Girl",
+        "date": "1898",
+        "fileName": "bougeureau-head-of-a-young-girl-1898"
+      },
+      {
+        "title": "A Childhood Idyll",
+        "date": "1900",
+        "fileName": "bougeureau-childhood-idyll-1900"
+      }
+    ]
+  }
+,
   "cassatt": {
     "fname": "Mary",
     "lname": "Cassatt",
@@ -213,155 +362,6 @@
         "title": "Woman Seated in Blue",
         "date": "1902",
         "fileName": "cezanne-woman-seated-in-blue-1902"
-      }
-    ]
-  }
-,
-  "bouguereau": {
-    "fname": "William",
-    "lname": "Bougeureau",
-    "bio": "William-Adolphe Bouguereau (November 30, 1825 – August 19, 1905) was a French academic painter and traditionalist. In his realistic genre paintings he used mythological themes, making modern interpretations of classical subjects, with an emphasis on the female human body. During his life he enjoyed significant popularity in France and the United States, was given numerous official honors, and received top prices for his work",
-    "era": "Academic",
-    "content": [
-      {
-        "title": "Dante and Virgil in Hell",
-        "date": "1850",
-        "fileName": "bougeureau-dante-and-virgil-in-hell-1850"
-      },
-      {
-        "title": "Fraternal Love",
-        "date": "1851",
-        "fileName": "bougeureau-fraternal-love-1851"
-      },
-      {
-        "title": "The Bather",
-        "date": "1870",
-        "fileName": "bougeureau-bather-1870"
-      },
-      {
-        "title": "Italian Girl Drawing Water",
-        "date": "1871",
-        "fileName": "bougeureau-italian-girl-drawing-water-1871"
-      },
-      {
-        "title": "Nymphs and Satyr",
-        "date": "1873",
-        "fileName": "bougeureau-nymphs-and-satyr-1873"
-      },
-      {
-        "title": "At the Edge of the Brook (1)",
-        "date": "1875",
-        "fileName": "bougeureau-at-the-edge-of-the-brook-1875"
-      },
-      {
-        "title": "At the Edge of the Brook (2)",
-        "date": "1879",
-        "fileName": "bougeureau-at-the-edge-of-the-brook-1879"
-      },
-      {
-        "title": "Nymphaeum",
-        "date": "1878",
-        "fileName": "bougeureau-nymphaeum-1878"
-      },
-      {
-        "title": "A Young Girl Defending Herself Against Eros",
-        "date": "1880",
-        "fileName": "bougeureau-young-girl-defending-herself-against-eros-1880"
-      },
-      {
-        "title": "Flagellation of Our Lord Jesus Christ",
-        "date": "1880",
-        "fileName": "bougeureau-flagellation-of-our-lord-jesus-christ-1880"
-      },
-      {
-        "title": "Nut Gatherers",
-        "date": "1882",
-        "fileName": "bougeureau-nut-gatherers-1882"
-      },
-      {
-        "title": "Bouguereau Biblis",
-        "date": "1884",
-        "fileName": "bougeureau-bouguereau-biblis-1884"
-      },
-      {
-        "title": "Lost Pleiad",
-        "date": "1884",
-        "fileName": "bougeureau-lost-pleiad-1884"
-      },
-      {
-        "title": "Woman with Shell",
-        "date": "1885",
-        "fileName": "bougeureau-woman-with-shell-1885"
-      },
-      {
-        "title": "Young Girl Going to Fountain",
-        "date": "1885",
-        "fileName": "bougeureau-young-girl-going-to-fountain-1885"
-      },
-      {
-        "title": "Thirst",
-        "date": "1886",
-        "fileName": "bougeureau-thirst-1886"
-      },
-      {
-        "title": "Bohemian",
-        "date": "1890",
-        "fileName": "bougeureau-bohemian-1890"
-      },
-      {
-        "title": "A Private Vocation",
-        "date": "1890",
-        "fileName": "bougeureau-private-vacation-1890"
-      },
-      {
-        "title": "Penelope",
-        "date": "1891",
-        "fileName": "bougeureau-penelope-1891"
-      },
-      {
-        "title": "Youth",
-        "date": "1893",
-        "fileName": "bougeureau-youth-1893"
-      },
-      {
-        "title": "Not too Much to Carry",
-        "date": "1895",
-        "fileName": "bougeureau-not-too-much-to-carry-1895"
-      },
-      {
-        "title": "Spring Breeze",
-        "date": "1895",
-        "fileName": "bougeureau-spring-breeze-1895"
-      },
-      {
-        "title": "A Calling",
-        "date": "1896",
-        "fileName": "bougeureau-calling-1896"
-      },
-      {
-        "title": "Wave",
-        "date": "1896",
-        "fileName": "bougeureau-wave-1896"
-      },
-      {
-        "title": "Admiration",
-        "date": "1897",
-        "fileName": "bougeureau-admiration-1897"
-      },
-      {
-        "title": "Tricoeause",
-        "date": "1897",
-        "fileName": "bougeureau-tricoeause-1897"
-      },
-      {
-        "title": "Head of a Young Girl",
-        "date": "1898",
-        "fileName": "bougeureau-head-of-a-young-girl-1898"
-      },
-      {
-        "title": "A Childhood Idyll",
-        "date": "1900",
-        "fileName": "bougeureau-childhood-idyll-1900"
       }
     ]
   }
@@ -584,115 +584,6 @@
     ]
   }
 ,
-  "gerome": {
-    "fname": "Jean-L%C3%A9on",
-    "lname": "G%C3%A9r%C3%B4me",
-    "bio": "Jean-Léon Gérôme (11 May 1824 – 10 January 1904) was a French painter and sculptor in the style now known as academicism. The range of his oeuvre included historical painting, Greek mythology, Orientalism, portraits, and other subjects, bringing the academic painting tradition to an artistic climax. He is considered one of the most important painters from this academic period.",
-    "era": "Academic",
-    "content": [
-      {
-        "title": "The Cock Fight",
-        "date": "1846",
-        "fileName": "gerome-cock-fight-1846"
-      },
-      {
-        "title": "The Prisoner",
-        "date": "1861",
-        "fileName": "gerome-prisoner-1861"
-      },
-      {
-        "title": "Jean Bart",
-        "date": "1862",
-        "fileName": "gerome-jean-bart-1862"
-      },
-      {
-        "title": "Prayer in the Desert",
-        "date": "1864",
-        "fileName": "gerome-prayer-in-the-desert-1864"
-      },
-      {
-        "title": "Arnaut Smoking",
-        "date": "1865",
-        "fileName": "gerome-arnaut-smoking-1865"
-      },
-      {
-        "title": "Carpet Merchant in Cairo",
-        "date": "1867",
-        "fileName": "gerome-carpet-merchant-in-cairo-1867"
-      },
-      {
-        "title": "Napoleon and His General Staff",
-        "date": "1867",
-        "fileName": "gerome-napoleon-and-his-general-staff-1867"
-      },
-      {
-        "title": "Pho Xai",
-        "date": "1867",
-        "fileName": "gerome-pho-xai-1867"
-      },
-      {
-        "title": "Moorish Bath",
-        "date": "1870",
-        "fileName": "gerome-moorish-bath-1870"
-      },
-      {
-        "title": "Home From the Hunt",
-        "date": "1876",
-        "fileName": "gerome-home-from-the-hunt-1876"
-      },
-      {
-        "title": "Sabre Dance in a Cafe",
-        "date": "1876",
-        "fileName": "gerome-sabre-dance-in-a-cafe-1876"
-      },
-      {
-        "title": "Arab Purchasing a Bride",
-        "date": "1881",
-        "fileName": "gerome-arab-purchasing-a-bride-1881"
-      },
-      {
-        "title": "Bathing Scene",
-        "date": "1881",
-        "fileName": "gerome-bathing-scene-1881"
-      },
-      {
-        "title": "Oriental Woman",
-        "date": "1882",
-        "fileName": "gerome-oriental-woman-1882"
-      },
-      {
-        "title": "Selling Slaves in Rome",
-        "date": "1886",
-        "fileName": "gerome-selling-slaves-in-rome-1886"
-      },
-      {
-        "title": "Bathsheba",
-        "date": "1889",
-        "fileName": "gerome-bathsheba-1889"
-      },
-      {
-        "title": "Love Conquers All",
-        "date": "1889",
-        "fileName": "gerome-love-conquers-all-1889"
-      },
-      {
-        "title": "Snake Charmer",
-        "date": "1889",
-        "fileName": "gerome-snake-charmer-1889"
-      },
-      {
-        "title": "Prayer in a Mosque",
-        "date": "1892",
-        "fileName": "gerome-prayer-in-a-mosque-1892"
-      },
-      {
-        "title": "The Harem Bathing",
-        "date": "1901",
-        "fileName": "gerome-harem-bathing-1901"
-      }
-    ]
-  }
-,
   "gauguin": {
     "fname": "Paul",
     "lname": "Gauguin",
@@ -798,6 +689,115 @@
         "title": "Tahitian Landscape",
         "date": "1897",
         "fileName": "gauguin-tahitian-landscape-1897"
+      }
+    ]
+  }
+,
+  "gerome": {
+    "fname": "Jean-L%C3%A9on",
+    "lname": "G%C3%A9r%C3%B4me",
+    "bio": "Jean-Léon Gérôme (11 May 1824 – 10 January 1904) was a French painter and sculptor in the style now known as academicism. The range of his oeuvre included historical painting, Greek mythology, Orientalism, portraits, and other subjects, bringing the academic painting tradition to an artistic climax. He is considered one of the most important painters from this academic period.",
+    "era": "Academic",
+    "content": [
+      {
+        "title": "The Cock Fight",
+        "date": "1846",
+        "fileName": "gerome-cock-fight-1846"
+      },
+      {
+        "title": "The Prisoner",
+        "date": "1861",
+        "fileName": "gerome-prisoner-1861"
+      },
+      {
+        "title": "Jean Bart",
+        "date": "1862",
+        "fileName": "gerome-jean-bart-1862"
+      },
+      {
+        "title": "Prayer in the Desert",
+        "date": "1864",
+        "fileName": "gerome-prayer-in-the-desert-1864"
+      },
+      {
+        "title": "Arnaut Smoking",
+        "date": "1865",
+        "fileName": "gerome-arnaut-smoking-1865"
+      },
+      {
+        "title": "Carpet Merchant in Cairo",
+        "date": "1867",
+        "fileName": "gerome-carpet-merchant-in-cairo-1867"
+      },
+      {
+        "title": "Napoleon and His General Staff",
+        "date": "1867",
+        "fileName": "gerome-napoleon-and-his-general-staff-1867"
+      },
+      {
+        "title": "Pho Xai",
+        "date": "1867",
+        "fileName": "gerome-pho-xai-1867"
+      },
+      {
+        "title": "Moorish Bath",
+        "date": "1870",
+        "fileName": "gerome-moorish-bath-1870"
+      },
+      {
+        "title": "Home From the Hunt",
+        "date": "1876",
+        "fileName": "gerome-home-from-the-hunt-1876"
+      },
+      {
+        "title": "Sabre Dance in a Cafe",
+        "date": "1876",
+        "fileName": "gerome-sabre-dance-in-a-cafe-1876"
+      },
+      {
+        "title": "Arab Purchasing a Bride",
+        "date": "1881",
+        "fileName": "gerome-arab-purchasing-a-bride-1881"
+      },
+      {
+        "title": "Bathing Scene",
+        "date": "1881",
+        "fileName": "gerome-bathing-scene-1881"
+      },
+      {
+        "title": "Oriental Woman",
+        "date": "1882",
+        "fileName": "gerome-oriental-woman-1882"
+      },
+      {
+        "title": "Selling Slaves in Rome",
+        "date": "1886",
+        "fileName": "gerome-selling-slaves-in-rome-1886"
+      },
+      {
+        "title": "Bathsheba",
+        "date": "1889",
+        "fileName": "gerome-bathsheba-1889"
+      },
+      {
+        "title": "Love Conquers All",
+        "date": "1889",
+        "fileName": "gerome-love-conquers-all-1889"
+      },
+      {
+        "title": "Snake Charmer",
+        "date": "1889",
+        "fileName": "gerome-snake-charmer-1889"
+      },
+      {
+        "title": "Prayer in a Mosque",
+        "date": "1892",
+        "fileName": "gerome-prayer-in-a-mosque-1892"
+      },
+      {
+        "title": "The Harem Bathing",
+        "date": "1901",
+        "fileName": "gerome-harem-bathing-1901"
       }
     ]
   }
@@ -1020,6 +1020,163 @@
     ]
   }
 ,
+  "monet": {
+    "fname": "Claude",
+    "lname": "Monet",
+    "bio": "Oscar-Claude Monet (14 November 1840 – 5 December 1926) was a founder of French Impressionist painting, and the most consistent and prolific practitioner of the movement's philosophy of expressing one's perceptions before nature, especially as applied to plein-air landscape painting.",
+    "era": "Impressionism",
+    "content": [
+      {
+        "title": "Garden at Sante Adresse",
+        "date": "1867",
+        "fileName": "monet-garden-at-sante-adresse-1867"
+      },
+      {
+        "title": "Lady in the Garden",
+        "date": "1867",
+        "fileName": "monet-lady-in-the-garden-1867"
+      },
+      {
+        "title": "Bathing at la Grenouillere",
+        "date": "1869",
+        "fileName": "monet-bathing-at-la-grenouillere-1869"
+      },
+      {
+        "title": "Thames at Westminster",
+        "date": "1871",
+        "fileName": "monet-thames-at-westminster-1871"
+      },
+      {
+        "title": "Impression Sunrise",
+        "date": "1872",
+        "fileName": "monet-impression-sunrise-1872"
+      },{
+        "title": "Promenade",
+        "date": "1872",
+        "fileName": "monet-promenade-1872"
+      },
+      {
+        "title": "Monet in his Garden at Argenteuil",
+        "date": "1875",
+        "fileName": "monet-monet-in-his-garden-1875"
+      },
+      {
+        "title": "Madame Monet in Japanese Costume",
+        "date": "1876",
+        "fileName": "monet-madame-monet-in-japanese-costume-1876"
+      },
+      {
+        "title": "Boat Studio",
+        "date": "1876",
+        "fileName": "monet-boat-studio-1876"
+      },
+      {
+        "title": "Station St. Lazare",
+        "date": "1877",
+        "fileName": "monet-station-st-lazare-1877"
+      },
+      {
+        "title": "Rock Arch West of Etretat",
+        "date": "1883",
+        "fileName": "monet-rock-arch-west-of-etretat-1883"
+      },
+      {
+        "title": "Bordighera",
+        "date": "1884",
+        "fileName": "monet-bordighera-1884"
+      },
+      {
+        "title": "Corniche of Monaco",
+        "date": "1884",
+        "fileName": "monet-corniche-of-monaco-1884"
+      },
+      {
+        "title": "Woman with Umbrella",
+        "date": "1886",
+        "fileName": "monet-woman-with-umbrella-1886"
+      },
+      {
+        "title": "Haystacks",
+        "date": "1890",
+        "fileName": "monet-haystacks-1890"
+      },
+      {
+        "title": "Poplars Along the River",
+        "date": "1891",
+        "fileName": "monet-poplars-along-the-river-1891"
+      },
+      {
+        "title": "Waterloo Bridge",
+        "date": "1901",
+        "fileName": "monet-waterloo-bridge-1901"
+      },
+      {
+        "title": "Waterlillies",
+        "date": "1903",
+        "fileName": "monet-waterlillies-1903"
+      },
+      {
+        "title": "Sun Breaking Through Fog",
+        "date": "1904",
+        "fileName": "monet-sun-breaking-through-fog-1904"
+      },
+      {
+        "title": "Venice",
+        "date": "1908",
+        "fileName": "monet-venice-1908"
+      }
+    ]
+  }
+,
+  "okeeffe": {
+    "fname": "Georgia",
+    "lname": "O'Keeffe",
+    "bio": "Georgia Totto O'Keeffe (November 15, 1887 – March 6, 1986) was an American artist. She was best known for her paintings of enlarged flowers, New York skyscrapers, and New Mexico landscapes. O'Keeffe has been recognized as the 'Mother of American modernism'",
+    "era": "Modernism",
+    "content": [
+      {
+        "title": "Blue and Green Music",
+        "date": "1919",
+        "fileName": "okeeffe-blue-and-green-music-1919"
+      },
+      {
+        "title": "Black Iris",
+        "date": "1927",
+        "fileName": "okeeffe-black-iris-1927"
+      },
+      {
+        "title": "Tan Clam with Seaweed",
+        "date": "1926",
+        "fileName": "okeeffe-tan-clam-with-seaweed-1926"
+      },
+      {
+        "title": "Oriental Poppies",
+        "date": "1926",
+        "fileName": "okeeffe-oriental-poppies-1926"
+      },
+      {
+        "title": "Mountain in New Mexico",
+        "date": "1931",
+        "fileName": "okeeffe-mountain-in-new-mexico-1931"
+      },
+      {
+        "title": "Broken Shell",
+        "date": "1937",
+        "fileName": "okeeffe-broken-shell-1937"
+      },
+      {
+        "title": "Clam and Mussel",
+        "date": "1938",
+        "fileName": "okeeffe-clam-and-mussel-1938"
+      },
+      {
+        "title": "Red Hill and White Shell",
+        "date": "1938",
+        "fileName": "okeeffe-red-hill-and-white-shell-1938"
+      }
+    ]
+  }
+,
   "raphael": {
     "fname": "",
     "lname": "Raphael Sanzio da Urbino",
@@ -1125,163 +1282,6 @@
         "title": "Joanna of Aragon",
         "date": "1518",
         "fileName": "raphael-joanna-of-aragon-1518"
-      }
-    ]
-  }
-,
-  "okeeffe": {
-    "fname": "Georgia",
-    "lname": "O'Keeffe",
-    "bio": "Georgia Totto O'Keeffe (November 15, 1887 – March 6, 1986) was an American artist. She was best known for her paintings of enlarged flowers, New York skyscrapers, and New Mexico landscapes. O'Keeffe has been recognized as the 'Mother of American modernism'",
-    "era": "Modernism",
-    "content": [
-      {
-        "title": "Blue and Green Music",
-        "date": "1919",
-        "fileName": "okeeffe-blue-and-green-music-1919"
-      },
-      {
-        "title": "Black Iris",
-        "date": "1927",
-        "fileName": "okeeffe-black-iris-1927"
-      },
-      {
-        "title": "Tan Clam with Seaweed",
-        "date": "1926",
-        "fileName": "okeeffe-tan-clam-with-seaweed-1926"
-      },
-      {
-        "title": "Oriental Poppies",
-        "date": "1926",
-        "fileName": "okeeffe-oriental-poppies-1926"
-      },
-      {
-        "title": "Mountain in New Mexico",
-        "date": "1931",
-        "fileName": "okeeffe-mountain-in-new-mexico-1931"
-      },
-      {
-        "title": "Broken Shell",
-        "date": "1937",
-        "fileName": "okeeffe-broken-shell-1937"
-      },
-      {
-        "title": "Clam and Mussel",
-        "date": "1938",
-        "fileName": "okeeffe-clam-and-mussel-1938"
-      },
-      {
-        "title": "Red Hill and White Shell",
-        "date": "1938",
-        "fileName": "okeeffe-red-hill-and-white-shell-1938"
-      }
-    ]
-  }
-,
-  "monet": {
-    "fname": "Claude",
-    "lname": "Monet",
-    "bio": "Oscar-Claude Monet (14 November 1840 – 5 December 1926) was a founder of French Impressionist painting, and the most consistent and prolific practitioner of the movement's philosophy of expressing one's perceptions before nature, especially as applied to plein-air landscape painting.",
-    "era": "Impressionism",
-    "content": [
-      {
-        "title": "Garden at Sante Adresse",
-        "date": "1867",
-        "fileName": "monet-garden-at-sante-adresse-1867"
-      },
-      {
-        "title": "Lady in the Garden",
-        "date": "1867",
-        "fileName": "monet-lady-in-the-garden-1867"
-      },
-      {
-        "title": "Bathing at la Grenouillere",
-        "date": "1869",
-        "fileName": "monet-bathing-at-la-grenouillere-1869"
-      },
-      {
-        "title": "Thames at Westminster",
-        "date": "1871",
-        "fileName": "monet-thames-at-westminster-1871"
-      },
-      {
-        "title": "Impression Sunrise",
-        "date": "1872",
-        "fileName": "monet-impression-sunrise-1872"
-      },{
-        "title": "Promenade",
-        "date": "1872",
-        "fileName": "monet-promenade-1872"
-      },
-      {
-        "title": "Monet in his Garden at Argenteuil",
-        "date": "1875",
-        "fileName": "monet-monet-in-his-garden-1875"
-      },
-      {
-        "title": "Madame Monet in Japanese Costume",
-        "date": "1876",
-        "fileName": "monet-madame-monet-in-japanese-costume-1876"
-      },
-      {
-        "title": "Boat Studio",
-        "date": "1876",
-        "fileName": "monet-boat-studio-1876"
-      },
-      {
-        "title": "Station St. Lazare",
-        "date": "1877",
-        "fileName": "monet-station-st-lazare-1877"
-      },
-      {
-        "title": "Rock Arch West of Etretat",
-        "date": "1883",
-        "fileName": "monet-rock-arch-west-of-etretat-1883"
-      },
-      {
-        "title": "Bordighera",
-        "date": "1884",
-        "fileName": "monet-bordighera-1884"
-      },
-      {
-        "title": "Corniche of Monaco",
-        "date": "1884",
-        "fileName": "monet-corniche-of-monaco-1884"
-      },
-      {
-        "title": "Woman with Umbrella",
-        "date": "1886",
-        "fileName": "monet-woman-with-umbrella-1886"
-      },
-      {
-        "title": "Haystacks",
-        "date": "1890",
-        "fileName": "monet-haystacks-1890"
-      },
-      {
-        "title": "Poplars Along the River",
-        "date": "1891",
-        "fileName": "monet-poplars-along-the-river-1891"
-      },
-      {
-        "title": "Waterloo Bridge",
-        "date": "1901",
-        "fileName": "monet-waterloo-bridge-1901"
-      },
-      {
-        "title": "Waterlillies",
-        "date": "1903",
-        "fileName": "monet-waterlillies-1903"
-      },
-      {
-        "title": "Sun Breaking Through Fog",
-        "date": "1904",
-        "fileName": "monet-sun-breaking-through-fog-1904"
-      },
-      {
-        "title": "Venice",
-        "date": "1908",
-        "fileName": "monet-venice-1908"
       }
     ]
   }
@@ -1395,115 +1395,6 @@
     ]
   }
 ,
-  "rossetti": {
-    "fname": "Dante",
-    "lname": "Rossetti",
-    "bio": "Dante Gabriel Rossetti (12 May 1828 – 9 April 1882) was a British poet, illustrator, painter and translator. He founded the Pre-Raphaelite Brotherhood in 1848 with William Holman Hunt and John Everett Millais. Rossetti was later to be the main inspiration for a second generation of artists and writers influenced by the movement, most notably William Morris and Edward Burne-Jones. His work also influenced the European Symbolists and was a major precursor of the Aesthetic movement.",
-    "era": "Pre-Raphaelite",
-    "content": [
-      {
-        "title": "Found",
-        "date": "1854",
-        "fileName": "rossetti-found-1854"
-      },
-      {
-        "title": "Before the Battle",
-        "date": "1858",
-        "fileName": "rossetti-before-the-battle-1858"
-      },
-      {
-        "title": "Bocca Baciata",
-        "date": "1859",
-        "fileName": "rossetti-bocca-baciata-1859"
-      },
-      {
-        "title": "Sir Galahad at the Ruined Chapel",
-        "date": "1859",
-        "fileName": "rossetti-sir-galahad-at-the-ruined-chapel-1859"
-      },
-      {
-        "title": "Jane Morris",
-        "date": "1860",
-        "fileName": "rossetti-jane-morris-1860"
-      },
-      {
-        "title": "Fair Rosamund",
-        "date": "1861",
-        "fileName": "rossetti-fair-rosamund-1861"
-      },
-      {
-        "title": "The Annunciation",
-        "date": "1861",
-        "fileName": "rossetti-annunciation-1861"
-      },
-      {
-        "title": "Joan of Arc",
-        "date": "1864",
-        "fileName": "rossetti-joan-of-arc-1864"
-      },
-      {
-        "title": "Morning Music",
-        "date": "1864",
-        "fileName": "rossetti-morning-music-1864"
-      },
-      {
-        "title": "The Beloved",
-        "date": "1866",
-        "fileName": "rossetti-beloved-1866"
-      },
-      {
-        "title": "The Loving Cup",
-        "date": "1867",
-        "fileName": "rossetti-loving-cup-1867"
-      },
-      {
-        "title": "The Tune of Seven Towers",
-        "date": "1867",
-        "fileName": "rossetti-tune-of-seven-towers-1867"
-      },
-      {
-        "title": "Lady Lilith",
-        "date": "1868",
-        "fileName": "rossetti-lady-lilith-1868"
-      },
-      {
-        "title": "Mariana",
-        "date": "1870",
-        "fileName": "rossetti-mariana-1870"
-      },
-      {
-        "title": "The Bower Meadow",
-        "date": "1872",
-        "fileName": "rossetti-bower-meadow-1872"
-      },
-      {
-        "title": "A Sea Spell",
-        "date": "1877",
-        "fileName": "rossetti-sea-spell-1877"
-      },
-      {
-        "title": "Prosperpine",
-        "date": "1877",
-        "fileName": "rossetti-prosperpine-1877"
-      },
-      {
-        "title": "Pandora",
-        "date": "1879",
-        "fileName": "rossetti-pandora-1879"
-      },
-      {
-        "title": "The Day Dream",
-        "date": "1880",
-        "fileName": "rossetti-day-dream-1880"
-      },
-      {
-        "title": "Joan of Arc",
-        "date": "1882",
-        "fileName": "rossetti-joan-of-arc-1882"
-      }
-    ]
-  }
-,
   "renoir": {
     "fname": "Auguste",
     "lname": "Renoir",
@@ -1609,6 +1500,115 @@
         "title": "Fish",
         "date": "1919",
         "fileName": "renoir-fish-1919"
+      }
+    ]
+  }
+,
+  "rossetti": {
+    "fname": "Dante",
+    "lname": "Rossetti",
+    "bio": "Dante Gabriel Rossetti (12 May 1828 – 9 April 1882) was a British poet, illustrator, painter and translator. He founded the Pre-Raphaelite Brotherhood in 1848 with William Holman Hunt and John Everett Millais. Rossetti was later to be the main inspiration for a second generation of artists and writers influenced by the movement, most notably William Morris and Edward Burne-Jones. His work also influenced the European Symbolists and was a major precursor of the Aesthetic movement.",
+    "era": "Pre-Raphaelite",
+    "content": [
+      {
+        "title": "Found",
+        "date": "1854",
+        "fileName": "rossetti-found-1854"
+      },
+      {
+        "title": "Before the Battle",
+        "date": "1858",
+        "fileName": "rossetti-before-the-battle-1858"
+      },
+      {
+        "title": "Bocca Baciata",
+        "date": "1859",
+        "fileName": "rossetti-bocca-baciata-1859"
+      },
+      {
+        "title": "Sir Galahad at the Ruined Chapel",
+        "date": "1859",
+        "fileName": "rossetti-sir-galahad-at-the-ruined-chapel-1859"
+      },
+      {
+        "title": "Jane Morris",
+        "date": "1860",
+        "fileName": "rossetti-jane-morris-1860"
+      },
+      {
+        "title": "Fair Rosamund",
+        "date": "1861",
+        "fileName": "rossetti-fair-rosamund-1861"
+      },
+      {
+        "title": "The Annunciation",
+        "date": "1861",
+        "fileName": "rossetti-annunciation-1861"
+      },
+      {
+        "title": "Joan of Arc",
+        "date": "1864",
+        "fileName": "rossetti-joan-of-arc-1864"
+      },
+      {
+        "title": "Morning Music",
+        "date": "1864",
+        "fileName": "rossetti-morning-music-1864"
+      },
+      {
+        "title": "The Beloved",
+        "date": "1866",
+        "fileName": "rossetti-beloved-1866"
+      },
+      {
+        "title": "The Loving Cup",
+        "date": "1867",
+        "fileName": "rossetti-loving-cup-1867"
+      },
+      {
+        "title": "The Tune of Seven Towers",
+        "date": "1867",
+        "fileName": "rossetti-tune-of-seven-towers-1867"
+      },
+      {
+        "title": "Lady Lilith",
+        "date": "1868",
+        "fileName": "rossetti-lady-lilith-1868"
+      },
+      {
+        "title": "Mariana",
+        "date": "1870",
+        "fileName": "rossetti-mariana-1870"
+      },
+      {
+        "title": "The Bower Meadow",
+        "date": "1872",
+        "fileName": "rossetti-bower-meadow-1872"
+      },
+      {
+        "title": "A Sea Spell",
+        "date": "1877",
+        "fileName": "rossetti-sea-spell-1877"
+      },
+      {
+        "title": "Prosperpine",
+        "date": "1877",
+        "fileName": "rossetti-prosperpine-1877"
+      },
+      {
+        "title": "Pandora",
+        "date": "1879",
+        "fileName": "rossetti-pandora-1879"
+      },
+      {
+        "title": "The Day Dream",
+        "date": "1880",
+        "fileName": "rossetti-day-dream-1880"
+      },
+      {
+        "title": "Joan of Arc",
+        "date": "1882",
+        "fileName": "rossetti-joan-of-arc-1882"
       }
     ]
   }
@@ -1940,75 +1940,6 @@
     ]
   }
 ,
-  "vonamerling": {
-    "fname": "Friedrich",
-    "lname": "Von Amerling",
-    "bio": "Friedrich von Amerling (14 April 1803 – 14 January 1887) was an Austro-Hungarian portrait painter in the court of Franz Josef. He was born in Vienna and was court painter between 1835 and 1880. With Ferdinand Georg Waldmüller he is one of the outstanding Austrian portrait painters of the 19th century.",
-    "era": "Academic",
-    "content": [
-      {
-        "title": "Rudolph von Arthaber with His Children",
-        "date": "1830",
-        "fileName": "vonamerling-rudolph-von-arthaber-with-his-children-1830"
-      },
-      {
-        "title": "Emporer Franz I",
-        "date": "1832",
-        "fileName": "vonamerling-emporer-franz-i-1832"
-      },
-      {
-        "title": "Self Portrait",
-        "date": "1834",
-        "fileName": "vonamerling-self-portrait-1834"
-      },
-      {
-        "title": "Lost in Dreams",
-        "date": "1835",
-        "fileName": "vonamerling-lost-in-dreams-1835"
-      },
-      {
-        "title": "Count Istvan Szechenyi",
-        "date": "1836",
-        "fileName": "vonamerling-count-istvan-szechenyi-1836"
-      },
-      {
-        "title": "Prinzessin Marie Franziska",
-        "date": "1836",
-        "fileName": "vonamerling-prinzessin-marie-franziska-1836"
-      },
-      {
-        "title": "Portrait of a Girl",
-        "date": "1837",
-        "fileName": "vonamerling-portrait-of-a-girl-1837"
-      },
-      {
-        "title": "Oriental Woman",
-        "date": "1838",
-        "fileName": "vonamerling-oriental-woman-1838"
-      },
-      {
-        "title": "Countess Nako",
-        "date": "1855",
-        "fileName": "vonamerling-countess-nako-1855"
-      },
-      {
-        "title": "Charity",
-        "date": "1856",
-        "fileName": "vonamerling-charity-1856"
-      },
-      {
-        "title": "Kaiser Franz I",
-        "date": "1884",
-        "fileName": "vonamerling-kaiser-franz-i-1884"
-      },
-      {
-        "title": "Study of a Lunatist",
-        "date": "",
-        "fileName": "vonamerling-study-of-a-lunatist"
-      }
-    ]
-  }
-,
   "vangogh": {
     "fname": "Vincent",
     "lname": "Van Gogh",
@@ -2154,6 +2085,75 @@
         "title": "Wheatfield with Crows",
         "date": "1890",
         "fileName": "vangogh-wheatfield-with-crows-1890"
+      }
+    ]
+  }
+,
+  "vonamerling": {
+    "fname": "Friedrich",
+    "lname": "Von Amerling",
+    "bio": "Friedrich von Amerling (14 April 1803 – 14 January 1887) was an Austro-Hungarian portrait painter in the court of Franz Josef. He was born in Vienna and was court painter between 1835 and 1880. With Ferdinand Georg Waldmüller he is one of the outstanding Austrian portrait painters of the 19th century.",
+    "era": "Academic",
+    "content": [
+      {
+        "title": "Rudolph von Arthaber with His Children",
+        "date": "1830",
+        "fileName": "vonamerling-rudolph-von-arthaber-with-his-children-1830"
+      },
+      {
+        "title": "Emporer Franz I",
+        "date": "1832",
+        "fileName": "vonamerling-emporer-franz-i-1832"
+      },
+      {
+        "title": "Self Portrait",
+        "date": "1834",
+        "fileName": "vonamerling-self-portrait-1834"
+      },
+      {
+        "title": "Lost in Dreams",
+        "date": "1835",
+        "fileName": "vonamerling-lost-in-dreams-1835"
+      },
+      {
+        "title": "Count Istvan Szechenyi",
+        "date": "1836",
+        "fileName": "vonamerling-count-istvan-szechenyi-1836"
+      },
+      {
+        "title": "Prinzessin Marie Franziska",
+        "date": "1836",
+        "fileName": "vonamerling-prinzessin-marie-franziska-1836"
+      },
+      {
+        "title": "Portrait of a Girl",
+        "date": "1837",
+        "fileName": "vonamerling-portrait-of-a-girl-1837"
+      },
+      {
+        "title": "Oriental Woman",
+        "date": "1838",
+        "fileName": "vonamerling-oriental-woman-1838"
+      },
+      {
+        "title": "Countess Nako",
+        "date": "1855",
+        "fileName": "vonamerling-countess-nako-1855"
+      },
+      {
+        "title": "Charity",
+        "date": "1856",
+        "fileName": "vonamerling-charity-1856"
+      },
+      {
+        "title": "Kaiser Franz I",
+        "date": "1884",
+        "fileName": "vonamerling-kaiser-franz-i-1884"
+      },
+      {
+        "title": "Study of a Lunatist",
+        "date": "",
+        "fileName": "vonamerling-study-of-a-lunatist"
       }
     ]
   }

@@ -29,14 +29,15 @@ const LiteratureAuthor = (props) => {
       tales: []
     };
     author.content.map((title, index) => {
-      title.author = author;
+      //title.author = author;
+      let pageIndicator = title.genre === 'poetry' ? '' : title.pageSizes.length === 1 ? '1 page, ' : title.pageSizes.length + ' pages, '
       let titleLink = (
         <ListLink
           key={title.fileName}
           url={`/literature/a/${authorKey}/${title.genre}/${title.fileName}`}
           action={openTitle.bind(this, title)}
           text={title.title}
-          other={`${title.date}, ${title.genre}`} />);
+          other={`${pageIndicator}${title.date}`} />);
       switch(title.genre) {
         case 'shorts':
           genres.shorts.push(titleLink);

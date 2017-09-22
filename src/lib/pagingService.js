@@ -13,18 +13,16 @@ const pagingService = () => {
       for (let contentIndex in author.content) {
         const item = author.content[contentIndex];
 
-        if (!item.pages) {
-          const htmlContent = fs.readFileSync(`content/literature/${authorIndex}/${item.fileName}.html`).toString();
+        if (!item.pageSizes) {
+          let htmlContent = fs.readFileSync(`content/literature/${authorIndex}/${item.fileName}.html`).toString();
           const pageSize = 2000;
           const buffer = 500;
-          const pages = [];
+          const pageSizes = [];
 
-          let lastChar = 2000;
-
-          if (item.genre === 'poetry' || htmlContent.length < pageSize) {
-            pages.push(htmlContent.length);
-          } else {
+          if (item.genre !== 'poetry') {
             do {
+              let lastChar = 2000;
+              let page = 0;
               while (lastChar < htmlContent.length) {
                 if (htmlContent.substring(lastChar - 4, lastChar) === '</p>' || htmlContent.substring(lastChar - 6, lastChar) === '</pre>') {
                   break;
@@ -32,30 +30,29 @@ const pagingService = () => {
                   lastChar++;
                 }
               }
-              // check if the remainder of the content is below the buffer threshold
-              if (htmlContent.slice(lastChar).length > (lastChar + buffer)) {
+
+              if (htmlContent.length > (lastChar + buffer)) {
                 page = lastChar;
-                //htmlContent = htmlContent.slice(lastChar);
+                htmlContent = htmlContent.slice(lastChar);
               } else {
-                page = lastChar + buffer;
-                //htmlContent = '';
+                page = htmlContent.length;
+                htmlContent = '';
               }
 
-              pages.push(page);
+              pageSizes.push(page);
 
-              if (htmlContent.slice(lastChar).length > 1 && htmlContent.slice(lastChar).length < (lastChar + buffer)) {
-                page = lastChar + buffer;
-                //htmlContent = htmlContent.slice(lastChar + buffer);
-                lastChar = lastChar + buffer;
-                pages.push(page);
+              if (htmlContent.length > 1 && htmlContent.length < (lastChar + buffer)) {
+                page = htmlContent.length;
+                htmlContent = htmlContent.slice(lastChar + buffer);
+                pageSizes.push(page);
                 break;
               }
-              lastChar = lastChar + pageSize;
-
-            } while (htmlContent.slice(lastChar).length > pageSize);
+            } while(htmlContent.length > pageSize);
+          } else {
+            pageSizes.push(htmlContent.length);
           }
 
-          item.pages = pages;
+          item.pageSizes = pageSizes;
         }
       }
     }

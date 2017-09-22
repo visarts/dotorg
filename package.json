@@ -12,8 +12,8 @@
     "url": "https://github.com/visarts/dotorg.git"
   },
   "scripts": {
-    "start": "npm run merge && npm run paging && webpack && webpack-dev-server --content-base dist/",
-    "build": "webpack --config webpack.config.prod.js",
+    "start": "webpack && webpack-dev-server --content-base dist/",
+    "build": "npm run merge && npm run paging && webpack --config webpack.config.prod.js",
     "watch": "webpack -d --watch --hot",
     "merge": "node src/lib/mergingService.js",
     "paging": "node src/lib/pagingService.js"
