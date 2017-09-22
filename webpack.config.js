@@ -35,8 +35,8 @@ module.exports = {
       { from: 'src/images', to: 'images'},
       { from: 'content', to: 'content'}
     ]),
-    new webpack.HotModuleReplacementPlugin(),
-    new MergeJsonWebpackPlugin({
+    new webpack.HotModuleReplacementPlugin()
+    /*new MergeJsonWebpackPlugin({
       'output': {
         'groupBy': [
           {
@@ -55,7 +55,7 @@ module.exports = {
           }
         ]
       }
-    })
+    })*/
   ],
   module: {
 		rules: [

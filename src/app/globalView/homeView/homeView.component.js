@@ -8,12 +8,12 @@ const HomeView = (props) => {
   const authorKeys = Object.keys(props.store.authorsData);
   const artistKeys = Object.keys(props.store.artistsData);
   const date = new Date();
-  const creatorFrequency = date.getDay();
-  const contentFrequency = date.getMonth();
+  const creatorFrequency = date.getMonth();
+  const contentFrequency = date.getDay();
   const author = props.store.authorsData[authorKeys[creatorFrequency]];
   const artist = props.store.artistsData[artistKeys[creatorFrequency]];
-  const lit = author.content[contentFrequency] ? author.content[contentFrequency] : author.content[0];
-  const art = artist.content[contentFrequency] ? artist.content[contentFrequency] : artist.content[0];
+  const lit = author.content[contentFrequency] ? author.content[contentFrequency] : author.content[author.content.length - 1];
+  const art = artist.content[contentFrequency] ? artist.content[contentFrequency] : artist.content[author.content.length - 1];
 
   const featuredContent = (() => {
     return (

@@ -30,17 +30,13 @@ const getAuthorNames = () => {
 };
 
 const getAllAuthorsData = () => {
-  return axios.get('./data/allAuthors.json')
-    .then((results) => {
-      return results.data;
-    });
+  const allAuthors = require('allAuthors.json');
+  return allAuthors;
 };
 
 const getAllArtistsData = () => {
-  return axios.get('./data/allArtists.json')
-    .then((results) => {
-      return results.data;
-    });
+  const allArtists = require('allArtists.json');
+  return allArtists;
 };
 
 const getHTMLContent = (creatorKey, currentWorkKey) => {

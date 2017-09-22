@@ -40,8 +40,8 @@ module.exports = {
       { from: 'index.html', to: 'index.html' },
       { from: 'src/images', to: 'images'},
       { from: 'content', to: 'content'}
-    ]),
-    new MergeJsonWebpackPlugin({
+    ])
+    /*new MergeJsonWebpackPlugin({
       'output': {
         'groupBy': [
           {
@@ -60,7 +60,7 @@ module.exports = {
           }
         ]
       }
-    })
+    })*/
   ],
   module: {
 		rules: [

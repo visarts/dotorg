@@ -1,0 +1,2269 @@
+{
+  "cassatt": {
+    "fname": "Mary",
+    "lname": "Cassatt",
+    "bio": "Mary Stevenson Cassatt (May 22, 1844 – June 14, 1926) was an American painter and printmaker. She was born in Pennsylvania, but lived much of her adult life in France, where she first befriended Edgar Degas and later exhibited among the Impressionists. Cassatt often created images of the social and private lives of women, with particular emphasis on the intimate bonds between mothers and children.",
+    "era": "Impressionism",
+    "content": [
+      {
+        "title": "Child Drinking Milk",
+        "date": "1868",
+        "fileName": "cassatt-child-drinking-milk-1868"
+      },
+      {
+        "title": "Bacchante",
+        "date": "1872",
+        "fileName": "cassatt-bacchante-1872"
+      },
+      {
+        "title": "During a Carnival",
+        "date": "1872",
+        "fileName": "cassatt-during-a-carnival-1872"
+      },
+      {
+        "title": "A Musical Party",
+        "date": "1874",
+        "fileName": "cassatt-musical-party-1874"
+      },
+      {
+        "title": "Portrait of a Little Girl",
+        "date": "1874",
+        "fileName": "cassatt-portrait-of-a-little-girl-1874"
+      },
+      {
+        "title": "Poppies in a Field",
+        "date": "1880",
+        "fileName": "cassatt-poppies-in-a-field-1880"
+      },
+      {
+        "title": "Lady at the Tea Table",
+        "date": "1883",
+        "fileName": "cassatt-lady-at-the-tea-table-1883"
+      },
+      {
+        "title": "Girl Arranging Her Hair",
+        "date": "1886",
+        "fileName": "cassatt-girl-arranging-her-hair-1886"
+      },
+      {
+        "title": "At the Window",
+        "date": "1889",
+        "fileName": "cassatt-at-the-window-1889"
+      },
+      {
+        "title": "Lilacs in a Window",
+        "date": "1889",
+        "fileName": "cassatt-lilacs-in-a-window-1889"
+      },
+      {
+        "title": "Contemplation",
+        "date": "1889",
+        "fileName": "cassatt-contemplation-1889"
+      },
+      {
+        "title": "Gathering Fruit",
+        "date": "1893",
+        "fileName": "cassatt-gathering-fruit-1893"
+      },
+      {
+        "title": "Girl With Banjo",
+        "date": "1894",
+        "fileName": "cassatt-girl-with-banjo-1894"
+      },
+      {
+        "title": "In the Park",
+        "date": "1894",
+        "fileName": "cassatt-in-the-park-1894"
+      },
+      {
+        "title": "On the Water",
+        "date": "1895",
+        "fileName": "cassatt-on-the-water-1895"
+      },
+      {
+        "title": "Maternal Kiss",
+        "date": "1896",
+        "fileName": "cassatt-maternal-kiss-1896"
+      },
+      {
+        "title": "Breakfast in Bed",
+        "date": "1897",
+        "fileName": "cassatt-breakfast-in-bed-1897"
+      },
+      {
+        "title": "Pattycake",
+        "date": "1897",
+        "fileName": "cassatt-pattycake-1897"
+      },
+      {
+        "title": "Mother and Child",
+        "date": "1900",
+        "fileName": "cassatt-mother-and-child-1900"
+      },
+      {
+        "title": "Margot in Blue",
+        "date": "1902",
+        "fileName": "cassatt-margot-in-blue-1902"
+      }
+    ]
+  }
+,
+  "cezanne": {
+    "fname": "Paul",
+    "lname": "Cezanne",
+    "bio": "Paul Cézanne (19 January 1839 – 22 October 1906) was a French artist and Post-Impressionist painter whose work laid the foundations of the transition from the 19th-century conception of artistic endeavor to a new and radically different world of art in the 20th century. Cézanne's often repetitive, exploratory brushstrokes are highly characteristic and clearly recognizable. He used planes of colour and small brushstrokes that build up to form complex fields. The paintings convey Cézanne's intense study of his subjects.",
+    "era": "Post-Impressionism",
+    "content": [
+      {
+        "title": "The Artist's Father",
+        "date": "1866",
+        "fileName": "cezanne-artists-father-1866"
+      },
+      {
+        "title": "The Thaw",
+        "date": "1871",
+        "fileName": "cezanne-thaw-1871"
+      },
+      {
+        "title": "Hanged Man's House",
+        "date": "1873",
+        "fileName": "cezanne-hanged-mans-house-1873"
+      },
+      {
+        "title": "Hortense Fiquet in a Striped Skirt",
+        "date": "1878",
+        "fileName": "cezanne-hortense-fiquet-in-a-striped-skirt-1878"
+      },
+      {
+        "title": "Bay From L Estaque",
+        "date": "1886",
+        "fileName": "cezanne-bay-from-l-estaque-1886"
+      },
+      {
+        "title": "Mont Sante Victoire",
+        "date": "1887",
+        "fileName": "cezanne-mont-sante-victoire-1887"
+      },
+      {
+        "title": "Still Life with Apples",
+        "date": "1890",
+        "fileName": "cezanne-still-life-with-apples-1890"
+      },
+      {
+        "title": "Boy in a Red Vest",
+        "date": "1890",
+        "fileName": "cezanne-boy-in-a-red-vest-1890"
+      },
+      {
+        "title": "The Drinker",
+        "date": "1890",
+        "fileName": "cezanne-drinker-1890"
+      },
+      {
+        "title": "Man in a Room",
+        "date": "1890",
+        "fileName": "cezanne-man-in-a-room-1890"
+      },
+      {
+        "title": "Peasant",
+        "date": "1891",
+        "fileName": "cezanne-peasant-1891"
+      },
+      {
+        "title": "The Card Players",
+        "date": "1892",
+        "fileName": "cezanne-card-players-1892"
+      },
+      {
+        "title": "Child with Straw Hat",
+        "date": "1896",
+        "fileName": "cezanne-child-with-straw-hat-1896"
+      },
+      {
+        "title": "Great Pine",
+        "date": "1896",
+        "fileName": "cezanne-great-pine-1896"
+      },
+      {
+        "title": "Joachim Gasquet",
+        "date": "1896",
+        "fileName": "cezanne-joachim-gasquet-1896"
+      },
+      {
+        "title": "Chrysanthemums",
+        "date": "1898",
+        "fileName": "cezanne-chrysanthemums-1898"
+      },
+      {
+        "title": "Apples and Oranges",
+        "date": "1899",
+        "fileName": "cezanne-apples-and-oranges-1899"
+      },
+      {
+        "title": "The Skull",
+        "date": "1900",
+        "fileName": "cezanne-skull-1900"
+      },
+      {
+        "title": "Young Italian Girl Resting",
+        "date": "1900",
+        "fileName": "cezanne-young-italian-girl-resting-1900"
+      },
+      {
+        "title": "Woman Seated in Blue",
+        "date": "1902",
+        "fileName": "cezanne-woman-seated-in-blue-1902"
+      }
+    ]
+  }
+,
+  "bouguereau": {
+    "fname": "William",
+    "lname": "Bougeureau",
+    "bio": "William-Adolphe Bouguereau (November 30, 1825 – August 19, 1905) was a French academic painter and traditionalist. In his realistic genre paintings he used mythological themes, making modern interpretations of classical subjects, with an emphasis on the female human body. During his life he enjoyed significant popularity in France and the United States, was given numerous official honors, and received top prices for his work",
+    "era": "Academic",
+    "content": [
+      {
+        "title": "Dante and Virgil in Hell",
+        "date": "1850",
+        "fileName": "bougeureau-dante-and-virgil-in-hell-1850"
+      },
+      {
+        "title": "Fraternal Love",
+        "date": "1851",
+        "fileName": "bougeureau-fraternal-love-1851"
+      },
+      {
+        "title": "The Bather",
+        "date": "1870",
+        "fileName": "bougeureau-bather-1870"
+      },
+      {
+        "title": "Italian Girl Drawing Water",
+        "date": "1871",
+        "fileName": "bougeureau-italian-girl-drawing-water-1871"
+      },
+      {
+        "title": "Nymphs and Satyr",
+        "date": "1873",
+        "fileName": "bougeureau-nymphs-and-satyr-1873"
+      },
+      {
+        "title": "At the Edge of the Brook (1)",
+        "date": "1875",
+        "fileName": "bougeureau-at-the-edge-of-the-brook-1875"
+      },
+      {
+        "title": "At the Edge of the Brook (2)",
+        "date": "1879",
+        "fileName": "bougeureau-at-the-edge-of-the-brook-1879"
+      },
+      {
+        "title": "Nymphaeum",
+        "date": "1878",
+        "fileName": "bougeureau-nymphaeum-1878"
+      },
+      {
+        "title": "A Young Girl Defending Herself Against Eros",
+        "date": "1880",
+        "fileName": "bougeureau-young-girl-defending-herself-against-eros-1880"
+      },
+      {
+        "title": "Flagellation of Our Lord Jesus Christ",
+        "date": "1880",
+        "fileName": "bougeureau-flagellation-of-our-lord-jesus-christ-1880"
+      },
+      {
+        "title": "Nut Gatherers",
+        "date": "1882",
+        "fileName": "bougeureau-nut-gatherers-1882"
+      },
+      {
+        "title": "Bouguereau Biblis",
+        "date": "1884",
+        "fileName": "bougeureau-bouguereau-biblis-1884"
+      },
+      {
+        "title": "Lost Pleiad",
+        "date": "1884",
+        "fileName": "bougeureau-lost-pleiad-1884"
+      },
+      {
+        "title": "Woman with Shell",
+        "date": "1885",
+        "fileName": "bougeureau-woman-with-shell-1885"
+      },
+      {
+        "title": "Young Girl Going to Fountain",
+        "date": "1885",
+        "fileName": "bougeureau-young-girl-going-to-fountain-1885"
+      },
+      {
+        "title": "Thirst",
+        "date": "1886",
+        "fileName": "bougeureau-thirst-1886"
+      },
+      {
+        "title": "Bohemian",
+        "date": "1890",
+        "fileName": "bougeureau-bohemian-1890"
+      },
+      {
+        "title": "A Private Vocation",
+        "date": "1890",
+        "fileName": "bougeureau-private-vacation-1890"
+      },
+      {
+        "title": "Penelope",
+        "date": "1891",
+        "fileName": "bougeureau-penelope-1891"
+      },
+      {
+        "title": "Youth",
+        "date": "1893",
+        "fileName": "bougeureau-youth-1893"
+      },
+      {
+        "title": "Not too Much to Carry",
+        "date": "1895",
+        "fileName": "bougeureau-not-too-much-to-carry-1895"
+      },
+      {
+        "title": "Spring Breeze",
+        "date": "1895",
+        "fileName": "bougeureau-spring-breeze-1895"
+      },
+      {
+        "title": "A Calling",
+        "date": "1896",
+        "fileName": "bougeureau-calling-1896"
+      },
+      {
+        "title": "Wave",
+        "date": "1896",
+        "fileName": "bougeureau-wave-1896"
+      },
+      {
+        "title": "Admiration",
+        "date": "1897",
+        "fileName": "bougeureau-admiration-1897"
+      },
+      {
+        "title": "Tricoeause",
+        "date": "1897",
+        "fileName": "bougeureau-tricoeause-1897"
+      },
+      {
+        "title": "Head of a Young Girl",
+        "date": "1898",
+        "fileName": "bougeureau-head-of-a-young-girl-1898"
+      },
+      {
+        "title": "A Childhood Idyll",
+        "date": "1900",
+        "fileName": "bougeureau-childhood-idyll-1900"
+      }
+    ]
+  }
+,
+  "creatorkey": {
+    "fname": "Fname",
+    "lname": "Lname",
+    "bio": "This is an artist for testing. For testing indeed, there is plenty to write but not much to say, as this artist never existed and likely never will. ",
+    "era": "Impressionism",
+    "content": [
+      {
+        "title": "Picture 1",
+        "date": "1111",
+        "fileName": "creatorkey-picture-1-1111"
+      },
+      {
+        "title": "Picture 2",
+        "date": "1112",
+        "fileName": "creatorkey-picture-2-1112"
+      },
+      {
+        "title": "Picture 3",
+        "date": "1113",
+        "fileName": "creatorkey-picture-3-1113"
+      },
+      {
+        "title": "Picture 4",
+        "date": "1114",
+        "fileName": "creatorkey-picture-4-1114"
+      },
+      {
+        "title": "Picture 5",
+        "date": "1115",
+        "fileName": "creatorkey-picture-5-1115"
+      },
+      {
+        "title": "Picture 6",
+        "date": "1116",
+        "fileName": "creatorkey-picture-6-1116"
+      },
+      {
+        "title": "Picture 7",
+        "date": "1117",
+        "fileName": "creatorkey-picture-7-1117"
+      },
+      {
+        "title": "Picture 8",
+        "date": "1118",
+        "fileName": "creatorkey-picture-8-1118"
+      },
+      {
+        "title": "Picture 9",
+        "date": "1119",
+        "fileName": "creatorkey-picture-9-1119"
+      },
+      {
+        "title": "Picture 10",
+        "date": "1121",
+        "fileName": "creatorkey-picture-10-1121"
+      },
+      {
+        "title": "Picture 11",
+        "date": "1122",
+        "fileName": "creatorkey-picture-11-1122"
+      },
+      {
+        "title": "Picture 12",
+        "date": "1123",
+        "fileName": "creatorkey-picture-12-1123"
+      },
+      {
+        "title": "Picture 13",
+        "date": "1124",
+        "fileName": "creatorkey-picture-13-1124"
+      },
+      {
+        "title": "Picture 14",
+        "date": "1125",
+        "fileName": "creatorkey-picture-14-1125"
+      },
+      {
+        "title": "Picture 15",
+        "date": "1126",
+        "fileName": "creatorkey-picture-15-1126"
+      },
+      {
+        "title": "Picture 16",
+        "date": "1127",
+        "fileName": "creatorkey-picture-16-1127"
+      },
+      {
+        "title": "Picture 17",
+        "date": "1128",
+        "fileName": "creatorkey-picture-17-1128"
+      },
+      {
+        "title": "Picture 18",
+        "date": "1129",
+        "fileName": "creatorkey-picture-18-1129"
+      },
+      {
+        "title": "Picture 19",
+        "date": "1131",
+        "fileName": "creatorkey-picture-19-1131"
+      },
+      {
+        "title": "Picture 20",
+        "date": "1132",
+        "fileName": "creatorkey-picture-20-1132"
+      }
+    ]
+  }
+,
+  "degas": {
+    "fname": "Edgar",
+    "lname": "Degas",
+    "bio": "Edgar Degas (19 July 1834 – 27 September 1917) was a French artist famous for his paintings, sculptures, prints, and drawings. He is especially identified with the subject of dance; more than half of his works depict dancers. He is regarded as one of the founders of Impressionism, although he rejected the term, preferring to be called a realist.",
+    "era": "Impressionism",
+    "content": [
+      {
+        "title": "Absinthe Drinkers",
+        "date": "1876",
+        "fileName": "degas-absinthe-drinkers-1876"
+      },
+      {
+        "title": "Woman with Opera Glasses",
+        "date": "1876",
+        "fileName": "degas-woman-with-opera-glasses-1876"
+      },
+      {
+        "title": "Café-Concert at Les Ambassadeurs",
+        "date": "1877",
+        "fileName": "degas-cafe-concert-at-les-ambassadeurs-1877"
+      },
+      {
+        "title": "Dancer with Bouquet",
+        "date": "1877",
+        "fileName": "degas-dancer-with-bouquet-1877"
+      },
+      {
+        "title": "The Star",
+        "date": "1877",
+        "fileName": "degas-star-1877"
+      },
+      {
+        "title": "Song of the Dog",
+        "date": "1877",
+        "fileName": "degas-song-of-the-dog-1877"
+      },
+      {
+        "title": "Singer with a Glove",
+        "date": "1878",
+        "fileName": "degas-singer-with-a-glove-1878"
+      },
+      {
+        "title": "Dancer with a Fan",
+        "date": "1879",
+        "fileName": "degas-dancer-with-a-fan-1879"
+      },
+      {
+        "title": "Before the Entrance",
+        "date": "1880",
+        "fileName": "degas-before-the-entrance-1880"
+      },
+      {
+        "title": "Morning Bath",
+        "date": "1883",
+        "fileName": "degas-morning-bath-1883"
+      },
+      {
+        "title": "Dancer in Green Tutu",
+        "date": "1885",
+        "fileName": "degas-dancer-in-green-tutu-1885"
+      },
+      {
+        "title": "The Tub",
+        "date": "1886",
+        "fileName": "degas-tub-1886"
+      },
+      {
+        "title": "Woman Drying Herself",
+        "date": "1886",
+        "fileName": "degas-woman-drying-herself-1886"
+      },
+      {
+        "title": "Race Horses",
+        "date": "1888",
+        "fileName": "degas-race-horses-1888"
+      },
+      {
+        "title": "Woman Having Her Hair Combed",
+        "date": "1888",
+        "fileName": "degas-woman-having-her-hair-combed-1888"
+      },
+      {
+        "title": "Seated Woman Combing Her Hair",
+        "date": "1890",
+        "fileName": "degas-seated-woman-combing-her-hair-1890"
+      },
+      {
+        "title": "The Morning Bath",
+        "date": "1890",
+        "fileName": "degas-morning-bath-1890"
+      },
+      {
+        "title": "After the Bath",
+        "date": "1894",
+        "fileName": "degas-after-the-bath-1894"
+      },
+      {
+        "title": "Ballet Dancers in the Wings",
+        "date": "1895",
+        "fileName": "degas-ballet-dancers-in-the-wings-1895"
+      },
+      {
+        "title": "Two Bathers on the Grass",
+        "date": "1895",
+        "fileName": "degas-bathers-on-the-grass-1895"
+      }
+    ]
+  }
+,
+  "gerome": {
+    "fname": "Jean-L%C3%A9on",
+    "lname": "G%C3%A9r%C3%B4me",
+    "bio": "Jean-Léon Gérôme (11 May 1824 – 10 January 1904) was a French painter and sculptor in the style now known as academicism. The range of his oeuvre included historical painting, Greek mythology, Orientalism, portraits, and other subjects, bringing the academic painting tradition to an artistic climax. He is considered one of the most important painters from this academic period.",
+    "era": "Academic",
+    "content": [
+      {
+        "title": "The Cock Fight",
+        "date": "1846",
+        "fileName": "gerome-cock-fight-1846"
+      },
+      {
+        "title": "The Prisoner",
+        "date": "1861",
+        "fileName": "gerome-prisoner-1861"
+      },
+      {
+        "title": "Jean Bart",
+        "date": "1862",
+        "fileName": "gerome-jean-bart-1862"
+      },
+      {
+        "title": "Prayer in the Desert",
+        "date": "1864",
+        "fileName": "gerome-prayer-in-the-desert-1864"
+      },
+      {
+        "title": "Arnaut Smoking",
+        "date": "1865",
+        "fileName": "gerome-arnaut-smoking-1865"
+      },
+      {
+        "title": "Carpet Merchant in Cairo",
+        "date": "1867",
+        "fileName": "gerome-carpet-merchant-in-cairo-1867"
+      },
+      {
+        "title": "Napoleon and His General Staff",
+        "date": "1867",
+        "fileName": "gerome-napoleon-and-his-general-staff-1867"
+      },
+      {
+        "title": "Pho Xai",
+        "date": "1867",
+        "fileName": "gerome-pho-xai-1867"
+      },
+      {
+        "title": "Moorish Bath",
+        "date": "1870",
+        "fileName": "gerome-moorish-bath-1870"
+      },
+      {
+        "title": "Home From the Hunt",
+        "date": "1876",
+        "fileName": "gerome-home-from-the-hunt-1876"
+      },
+      {
+        "title": "Sabre Dance in a Cafe",
+        "date": "1876",
+        "fileName": "gerome-sabre-dance-in-a-cafe-1876"
+      },
+      {
+        "title": "Arab Purchasing a Bride",
+        "date": "1881",
+        "fileName": "gerome-arab-purchasing-a-bride-1881"
+      },
+      {
+        "title": "Bathing Scene",
+        "date": "1881",
+        "fileName": "gerome-bathing-scene-1881"
+      },
+      {
+        "title": "Oriental Woman",
+        "date": "1882",
+        "fileName": "gerome-oriental-woman-1882"
+      },
+      {
+        "title": "Selling Slaves in Rome",
+        "date": "1886",
+        "fileName": "gerome-selling-slaves-in-rome-1886"
+      },
+      {
+        "title": "Bathsheba",
+        "date": "1889",
+        "fileName": "gerome-bathsheba-1889"
+      },
+      {
+        "title": "Love Conquers All",
+        "date": "1889",
+        "fileName": "gerome-love-conquers-all-1889"
+      },
+      {
+        "title": "Snake Charmer",
+        "date": "1889",
+        "fileName": "gerome-snake-charmer-1889"
+      },
+      {
+        "title": "Prayer in a Mosque",
+        "date": "1892",
+        "fileName": "gerome-prayer-in-a-mosque-1892"
+      },
+      {
+        "title": "The Harem Bathing",
+        "date": "1901",
+        "fileName": "gerome-harem-bathing-1901"
+      }
+    ]
+  }
+,
+  "gauguin": {
+    "fname": "Paul",
+    "lname": "Gauguin",
+    "bio": "Eugène Henri Paul Gauguin (7 June 1848 – 8 May 1903) was a French post-Impressionist artist. Underappreciated until after his death, Gauguin is now recognized for his experimental use of color and Synthetist style that were distinctly different from Impressionism. His work was influential to the French avant-garde and many modern artists, such as Pablo Picasso and Henri Matisse.",
+    "era": "Post-Impressionism",
+    "content": [
+      {
+        "title": "A Clearing",
+        "date": "1874",
+        "fileName": "gauguin-clearing-1874"
+      },
+      {
+        "title": "Blue Barge",
+        "date": "1882",
+        "fileName": "gauguin-blue-barge-1882"
+      },
+      {
+        "title": "Basket of Flowers",
+        "date": "1884",
+        "fileName": "gauguin-basket-of-flowers-1884"
+      },
+      {
+        "title": "Bare Trees",
+        "date": "1885",
+        "fileName": "gauguin-bare-trees-1885"
+      },
+      {
+        "title": "Boy by the Water",
+        "date": "1885",
+        "fileName": "gauguin-boy-by-the-water-1885"
+      },
+      {
+        "title": "Lilac Bouquet",
+        "date": "1885",
+        "fileName": "gauguin-lilac-bouquet-1885"
+      },
+      {
+        "title": "Rocky Coast",
+        "date": "1886",
+        "fileName": "gauguin-rocky-coast-1886"
+      },
+      {
+        "title": "By the Seashore",
+        "date": "1887",
+        "fileName": "gauguin-by-the-seashore-1887"
+      },
+      {
+        "title": "Huts Under the Trees",
+        "date": "1887",
+        "fileName": "gauguin-huts-under-the-trees-1887"
+      },
+      {
+        "title": "Apples and Bowl",
+        "date": "1888",
+        "fileName": "gauguin-apples-and-bowl-1888"
+      },
+      {
+        "title": "Blue Trees",
+        "date": "1888",
+        "fileName": "gauguin-blue-trees-1888"
+      },
+      {
+        "title": "Haymaking",
+        "date": "1888",
+        "fileName": "gauguin-haymaking-1888"
+      },
+      {
+        "title": "Madame Roulin",
+        "date": "1888",
+        "fileName": "gauguin-madame-roulin-1888"
+      },
+      {
+        "title": "Night Cafe at Arles",
+        "date": "1888",
+        "fileName": "gauguin-night-cafe-at-arles-1888"
+      },
+      {
+        "title": "Among the Lillies",
+        "date": "1889",
+        "fileName": "gauguin-among-the-lillies-1889"
+      },
+      {
+        "title": "Flutist on the Cliffs",
+        "date": "1889",
+        "fileName": "gauguin-flutist-on-the-cliffs-1889"
+      },
+      {
+        "title": "Still Life with Fan",
+        "date": "1889",
+        "fileName": "gauguin-still-life-with-fan-1889"
+      },
+      {
+        "title": "Tahitian Woman Bathing",
+        "date": "1892",
+        "fileName": "gauguin-tahitian-woman-bathing-1892"
+      },
+      {
+        "title": "Farm in Brittany",
+        "date": "1894",
+        "fileName": "gauguin-farm-in-brittany-1894"
+      },
+      {
+        "title": "Tahitian Landscape",
+        "date": "1897",
+        "fileName": "gauguin-tahitian-landscape-1897"
+      }
+    ]
+  }
+,
+  "harnett": {
+    "fname": "William",
+    "lname": "Harnett",
+    "bio": "William Michael Harnett (August 10, 1848 – October 29, 1892) was an Irish-American painter known for his trompe-l'œil still lifes of ordinary objects.",
+    "era": "Realism",
+    "content": [
+      {
+        "title": "Mortality and Immortality",
+        "date": "1876",
+        "fileName": "harnett-mortality-and-immortality-1876"
+      },
+      {
+        "title": "Raisin Cake with Fruit and Wine",
+        "date": "1876",
+        "fileName": "harnett-raisin-cake-with-fruit-and-wine-1876"
+      },
+      {
+        "title": "Still Life with Ginger Jar",
+        "date": "1876",
+        "fileName": "harnett-still-life-with-ginger-jar-1876"
+      },
+      {
+        "title": "Writing Table",
+        "date": "1877",
+        "fileName": "harnett-writing-table-1877"
+      },
+      {
+        "title": "Job Lot Cheap",
+        "date": "1878",
+        "fileName": "harnett-job-lot-cheap-1878"
+      },
+      {
+        "title": "Music and Literature",
+        "date": "1878",
+        "fileName": "harnett-music-and-literature-1878"
+      },
+      {
+        "title": "Pipe and Mug",
+        "date": "1878",
+        "fileName": "harnett-pipe-and-mug-1878"
+      },
+      {
+        "title": "Solace",
+        "date": "1878",
+        "fileName": "harnett-solace-1878"
+      },
+      {
+        "title": "The Social Club",
+        "date": "1879",
+        "fileName": "harnett-social-club-1879"
+      },
+      {
+        "title": "Fruit and Vase",
+        "date": "1881",
+        "fileName": "harnett-fruit-and-vase-1881"
+      },
+      {
+        "title": "Fruit with Champagne Bottle and Newspaper",
+        "date": "1881",
+        "fileName": "harnett-fruit-with-champagne-bottle-and-newspaper-1881"
+      },
+      {
+        "title": "A Study Table",
+        "date": "1882",
+        "fileName": "harnett-study-table-1882"
+      },
+      {
+        "title": "After the Hunt",
+        "date": "1884",
+        "fileName": "harnett-after-the-hunt-1884"
+      },
+      {
+        "title": "Munich Still Life",
+        "date": "1884",
+        "fileName": "harnett-munich-still-life-1884"
+      },
+      {
+        "title": "Music",
+        "date": "1886",
+        "fileName": "harnett-music-1886"
+      },
+      {
+        "title": "The Old Violin",
+        "date": "1886",
+        "fileName": "harnett-old-violin-1886"
+      },
+      {
+        "title": "Ease",
+        "date": "1887",
+        "fileName": "harnett-ease-1887"
+      },
+      {
+        "title": "Violin and Music",
+        "date": "1888",
+        "fileName": "harnett-violin-and-music-1888"
+      },
+      {
+        "title": "The Old Cupboard Door",
+        "date": "1889",
+        "fileName": "harnett-old-cupboard-door-1889"
+      },
+      {
+        "title": "Old Models",
+        "date": "1892",
+        "fileName": "harnett-old-models-1892"
+      }
+    ]
+  }
+,
+  "michelangelo": {
+    "fname": "Buonarroti",
+    "lname": "Michelangelo",
+    "bio": "Michelangelo di Lodovico Buonarroti Simoni (6 March 1475 – 18 February 1564) was an Italian sculptor, painter, architect, and poet of the High Renaissance born in the Republic of Florence, who exerted an unparalleled influence on the development of Western art. Considered to be the greatest living artist during his lifetime, he has since been described as one of the greatest artists of all time.",
+    "era": "Renaissance",
+    "content": [
+      {
+        "title": "Bacchus",
+        "date": "1497",
+        "fileName": "michelangelo-bacchus-1497"
+      },
+      {
+        "title": "David and Goliath",
+        "date": "1500",
+        "fileName": "michelangelo-david-and-goliath-1500"
+      },
+      {
+        "title": "Pieta",
+        "date": "1500",
+        "fileName": "michelangelo-pieta-1500"
+      },
+      {
+        "title": "David",
+        "date": "1501",
+        "fileName": "michelangelo-david-1501"
+      },
+      {
+        "title": "Holy Family",
+        "date": "1505",
+        "fileName": "michelangelo-holy-family-1505"
+      },
+      {
+        "title": "Creation of Eve",
+        "date": "1509",
+        "fileName": "michelangelo-creation-of-eve-1509"
+      },
+      {
+        "title": "Isaiah",
+        "date": "1509",
+        "fileName": "michelangelo-isaiah-1509"
+      },
+      {
+        "title": "Zechariah",
+        "date": "1509",
+        "fileName": "michelangelo-zechariah-1509"
+      },
+      {
+        "title": "Ezekiel",
+        "date": "1510",
+        "fileName": "michelangelo-ezekiel-1510"
+      },
+      {
+        "title": "Daniel",
+        "date": "1511",
+        "fileName": "michelangelo-daniel-1511"
+      },
+      {
+        "title": "Geremia",
+        "date": "1511",
+        "fileName": "michelangelo-geremia-1511"
+      },
+      {
+        "title": "Jonah",
+        "date": "1512",
+        "fileName": "michelangelo-jonah-1512"
+      },
+      {
+        "title": "The Creation",
+        "date": "1512",
+        "fileName": "michelangelo-creation-1512"
+      },
+      {
+        "title": "Sybille de Cummes",
+        "date": "1516",
+        "fileName": "michelangelo-sybille-de-cummes-1516"
+      },
+      {
+        "title": "Moses",
+        "date": "1526",
+        "fileName": "michelangelo-moses-1526"
+      },
+      {
+        "title": "Night",
+        "date": "1530",
+        "fileName": "michelangelo-night-1530"
+      },
+      {
+        "title": "Leda and the Swan",
+        "date": "1531",
+        "fileName": "michelangelo-lady-and-the-swan-1531"
+      },
+      {
+        "title": "Dawn",
+        "date": "1531",
+        "fileName": "michelangelo-dawn-1531"
+      },
+      {
+        "title": "Twilight",
+        "date": "1542",
+        "fileName": "michelangelo-twilight-1542"
+      },
+      {
+        "title": "Conversion of Saul",
+        "date": "1511",
+        "fileName": "michelangelo-conversion-of-saul-1511"
+      }
+    ]
+  }
+,
+  "raphael": {
+    "fname": "",
+    "lname": "Raphael Sanzio da Urbino",
+    "bio": "Raffaello Sanzio da Urbino (March 28 or April 6, 1483 – April 6, 1520), was an Italian painter and architect of the High Renaissance. His work is admired for its clarity of form, ease of composition, and visual achievement of the Neoplatonic ideal of human grandeur. Together with Michelangelo and Leonardo da Vinci, he forms the traditional trinity of great masters of that period.",
+    "era": "Renaissance",
+    "content": [
+      {
+        "title": "Crucifixion",
+        "date": "1503",
+        "fileName": "raphael-crucifixion-1503"
+      },
+      {
+        "title": "Betrothal of the Virgin",
+        "date": "1504",
+        "fileName": "raphael-betrothal-of-the-virgin-1504"
+      },
+      {
+        "title": "Cowper Madonna",
+        "date": "1505",
+        "fileName": "raphael-cowper-madonna-1505"
+      },
+      {
+        "title": "St. George Fighting a Dragon",
+        "date": "1505",
+        "fileName": "raphael-st-george-fighting-a-dragon-1505"
+      },
+      {
+        "title": "Holy Family",
+        "date": "1506",
+        "fileName": "raphael-holy-family-1506"
+      },
+      {
+        "title": "Woman with Unicorn",
+        "date": "1506",
+        "fileName": "raphael-woman-with-unicorn-1506"
+      },
+      {
+        "title": "School of Athens",
+        "date": "1511",
+        "fileName": "raphael-school-of-athens-1511"
+      },
+      {
+        "title": "School of Athens (detail)",
+        "date": "1511",
+        "fileName": "raphael-school-of-athens-detail-1511"
+      },
+      {
+        "title": "Expulsion of Helidorus from the Temple",
+        "date": "1512",
+        "fileName": "raphael-expulsion-of-helidorus-from-the-temple-1512"
+      },
+      {
+        "title": "Isaiah",
+        "date": "1512",
+        "fileName": "raphael-isaiah-1512"
+      },
+      {
+        "title": "Julius II",
+        "date": "1512",
+        "fileName": "raphael-julius-ii-1512"
+      },
+      {
+        "title": "Madonna di Foligno",
+        "date": "1512",
+        "fileName": "raphael-madonna-di-foligno-1512"
+      },
+      {
+        "title": "Nymph Galeta",
+        "date": "1514",
+        "fileName": "raphael-nymph-galeta-1514"
+      },
+      {
+        "title": "Sistine Madonna",
+        "date": "1514",
+        "fileName": "raphael-sistine-madonna-1514"
+      },
+      {
+        "title": "Two Cherubs",
+        "date": "1514",
+        "fileName": "raphael-two-cherubs-1514"
+      },
+      {
+        "title": "Baldassare Castiglione",
+        "date": "1515",
+        "fileName": "raphael-baldassare-castiglione-1515"
+      },
+      {
+        "title": "Bindo Altoviti",
+        "date": "1515",
+        "fileName": "raphael-bindo-altoviti-1515"
+      },
+      {
+        "title": "Portrait of Artist with Friend",
+        "date": "1518",
+        "fileName": "raphael-portrait-of-artist-with-friend-1518"
+      },
+      {
+        "title": "St. Michael Trampling Satan",
+        "date": "1518",
+        "fileName": "raphael-st-michael-trampling-satan-1518"
+      },
+      {
+        "title": "Joanna of Aragon",
+        "date": "1518",
+        "fileName": "raphael-joanna-of-aragon-1518"
+      }
+    ]
+  }
+,
+  "okeeffe": {
+    "fname": "Georgia",
+    "lname": "O'Keeffe",
+    "bio": "Georgia Totto O'Keeffe (November 15, 1887 – March 6, 1986) was an American artist. She was best known for her paintings of enlarged flowers, New York skyscrapers, and New Mexico landscapes. O'Keeffe has been recognized as the 'Mother of American modernism'",
+    "era": "Modernism",
+    "content": [
+      {
+        "title": "Blue and Green Music",
+        "date": "1919",
+        "fileName": "okeeffe-blue-and-green-music-1919"
+      },
+      {
+        "title": "Black Iris",
+        "date": "1927",
+        "fileName": "okeeffe-black-iris-1927"
+      },
+      {
+        "title": "Tan Clam with Seaweed",
+        "date": "1926",
+        "fileName": "okeeffe-tan-clam-with-seaweed-1926"
+      },
+      {
+        "title": "Oriental Poppies",
+        "date": "1926",
+        "fileName": "okeeffe-oriental-poppies-1926"
+      },
+      {
+        "title": "Mountain in New Mexico",
+        "date": "1931",
+        "fileName": "okeeffe-mountain-in-new-mexico-1931"
+      },
+      {
+        "title": "Broken Shell",
+        "date": "1937",
+        "fileName": "okeeffe-broken-shell-1937"
+      },
+      {
+        "title": "Clam and Mussel",
+        "date": "1938",
+        "fileName": "okeeffe-clam-and-mussel-1938"
+      },
+      {
+        "title": "Red Hill and White Shell",
+        "date": "1938",
+        "fileName": "okeeffe-red-hill-and-white-shell-1938"
+      }
+    ]
+  }
+,
+  "monet": {
+    "fname": "Claude",
+    "lname": "Monet",
+    "bio": "Oscar-Claude Monet (14 November 1840 – 5 December 1926) was a founder of French Impressionist painting, and the most consistent and prolific practitioner of the movement's philosophy of expressing one's perceptions before nature, especially as applied to plein-air landscape painting.",
+    "era": "Impressionism",
+    "content": [
+      {
+        "title": "Garden at Sante Adresse",
+        "date": "1867",
+        "fileName": "monet-garden-at-sante-adresse-1867"
+      },
+      {
+        "title": "Lady in the Garden",
+        "date": "1867",
+        "fileName": "monet-lady-in-the-garden-1867"
+      },
+      {
+        "title": "Bathing at la Grenouillere",
+        "date": "1869",
+        "fileName": "monet-bathing-at-la-grenouillere-1869"
+      },
+      {
+        "title": "Thames at Westminster",
+        "date": "1871",
+        "fileName": "monet-thames-at-westminster-1871"
+      },
+      {
+        "title": "Impression Sunrise",
+        "date": "1872",
+        "fileName": "monet-impression-sunrise-1872"
+      },{
+        "title": "Promenade",
+        "date": "1872",
+        "fileName": "monet-promenade-1872"
+      },
+      {
+        "title": "Monet in his Garden at Argenteuil",
+        "date": "1875",
+        "fileName": "monet-monet-in-his-garden-1875"
+      },
+      {
+        "title": "Madame Monet in Japanese Costume",
+        "date": "1876",
+        "fileName": "monet-madame-monet-in-japanese-costume-1876"
+      },
+      {
+        "title": "Boat Studio",
+        "date": "1876",
+        "fileName": "monet-boat-studio-1876"
+      },
+      {
+        "title": "Station St. Lazare",
+        "date": "1877",
+        "fileName": "monet-station-st-lazare-1877"
+      },
+      {
+        "title": "Rock Arch West of Etretat",
+        "date": "1883",
+        "fileName": "monet-rock-arch-west-of-etretat-1883"
+      },
+      {
+        "title": "Bordighera",
+        "date": "1884",
+        "fileName": "monet-bordighera-1884"
+      },
+      {
+        "title": "Corniche of Monaco",
+        "date": "1884",
+        "fileName": "monet-corniche-of-monaco-1884"
+      },
+      {
+        "title": "Woman with Umbrella",
+        "date": "1886",
+        "fileName": "monet-woman-with-umbrella-1886"
+      },
+      {
+        "title": "Haystacks",
+        "date": "1890",
+        "fileName": "monet-haystacks-1890"
+      },
+      {
+        "title": "Poplars Along the River",
+        "date": "1891",
+        "fileName": "monet-poplars-along-the-river-1891"
+      },
+      {
+        "title": "Waterloo Bridge",
+        "date": "1901",
+        "fileName": "monet-waterloo-bridge-1901"
+      },
+      {
+        "title": "Waterlillies",
+        "date": "1903",
+        "fileName": "monet-waterlillies-1903"
+      },
+      {
+        "title": "Sun Breaking Through Fog",
+        "date": "1904",
+        "fileName": "monet-sun-breaking-through-fog-1904"
+      },
+      {
+        "title": "Venice",
+        "date": "1908",
+        "fileName": "monet-venice-1908"
+      }
+    ]
+  }
+,
+  "rembrandt": {
+    "fname": "",
+    "lname": "Rembrandt",
+    "bio": "Rembrandt Harmenszoon van Rijn (15 July 1606 – 4 October 1669) was a Dutch draughtsman, painter, and printmaker. An innovative and prolific master in three media, he is generally considered one of the greatest visual artists in the history of art and the most important in Dutch art history. Unlike most Dutch masters of the 17th century, Rembrandt's works depict a wide range of style and subject matter, from portraits and self-portraits to landscapes, genre scenes, allegorical and historical scenes, biblical and mythological themes as well as animal studies.",
+    "era": "Baroque",
+    "content": [
+      {
+        "title": "Self Portrait (as a young man)",
+        "date": "1628",
+        "fileName": "rembrandt-self-portrait-as-a-young-man-1628"
+      },
+      {
+        "title": "Head of an Old Man",
+        "date": "1630",
+        "fileName": "rembrandt-head-of-an-old-man-1630"
+      },
+      {
+        "title": "Resurrection of Lazarus",
+        "date": "1630",
+        "fileName": "rembrandt-resurrection-of-lazarus-1630"
+      },
+      {
+        "title": "Anatomy",
+        "date": "1632",
+        "fileName": "rembrandt-anatomy-1632"
+      },
+      {
+        "title": "Archangel Leaving Family of Tobias",
+        "date": "1632",
+        "fileName": "rembrandt-archangel-leaving-family-of-tobias-1632"
+      },
+      {
+        "title": "Philosopher in Meditation",
+        "date": "1632",
+        "fileName": "rembrandt-philosopher-in-meditation-1632"
+      },
+      {
+        "title": "Christ in the Storm on the Sea of Galilee",
+        "date": "1633",
+        "fileName": "rembrandt-christ-in-the-storm-1633"
+      },
+      {
+        "title": "The Feast of Belshazzar",
+        "date": "1635",
+        "fileName": "rembrandt-feast-of-belshazzar-1635"
+      },
+      {
+        "title": "Night Watch",
+        "date": "1642",
+        "fileName": "rembrandt-night-watch-1642"
+      },
+      {
+        "title": "Supper at Emmaus",
+        "date": "1648",
+        "fileName": "rembrandt-supper-at-emmaus-1648"
+      },
+      {
+        "title": "The Mill",
+        "date": "1650",
+        "fileName": "rembrandt-mill-1650"
+      },
+      {
+        "title": "Aristotle Contemplating Bust of Homer",
+        "date": "1653",
+        "fileName": "rembrandt-aristotle-contemplating-bust-of-homer-1653"
+      },
+      {
+        "title": "Bathsheba",
+        "date": "1654",
+        "fileName": "rembrandt-bathsheba-1654"
+      },
+      {
+        "title": "Jacob Blessing Sons of Joseph",
+        "date": "1656",
+        "fileName": "rembrandt-jacob-blessing-sons-of-joseph-1656"
+      },
+      {
+        "title": "Young Jew as Christ",
+        "date": "1656",
+        "fileName": "rembrandt-young-jew-as-christ-1656"
+      },
+      {
+        "title": "Lady with an Ostrich Fan",
+        "date": "1660",
+        "fileName": "rembrandt-lady-with-an-ostrich-fan-1660"
+      },
+      {
+        "title": "Return of the Prodigal Son",
+        "date": "1660",
+        "fileName": "rembrandt-return-of-the-prodigal-son-1660"
+      },
+      {
+        "title": "Saul and David",
+        "date": "1660",
+        "fileName": "rembrandt-saul-and-david-1660"
+      },
+      {
+        "title": "Matthew",
+        "date": "1661",
+        "fileName": "rembrandt-matthew-1661"
+      },
+      {
+        "title": "Self Portrait as St. Paul",
+        "date": "1661",
+        "fileName": "rembrandt-self-portrait-as-st-paul-1661"
+      }
+    ]
+  }
+,
+  "rossetti": {
+    "fname": "Dante",
+    "lname": "Rossetti",
+    "bio": "Dante Gabriel Rossetti (12 May 1828 – 9 April 1882) was a British poet, illustrator, painter and translator. He founded the Pre-Raphaelite Brotherhood in 1848 with William Holman Hunt and John Everett Millais. Rossetti was later to be the main inspiration for a second generation of artists and writers influenced by the movement, most notably William Morris and Edward Burne-Jones. His work also influenced the European Symbolists and was a major precursor of the Aesthetic movement.",
+    "era": "Pre-Raphaelite",
+    "content": [
+      {
+        "title": "Found",
+        "date": "1854",
+        "fileName": "rossetti-found-1854"
+      },
+      {
+        "title": "Before the Battle",
+        "date": "1858",
+        "fileName": "rossetti-before-the-battle-1858"
+      },
+      {
+        "title": "Bocca Baciata",
+        "date": "1859",
+        "fileName": "rossetti-bocca-baciata-1859"
+      },
+      {
+        "title": "Sir Galahad at the Ruined Chapel",
+        "date": "1859",
+        "fileName": "rossetti-sir-galahad-at-the-ruined-chapel-1859"
+      },
+      {
+        "title": "Jane Morris",
+        "date": "1860",
+        "fileName": "rossetti-jane-morris-1860"
+      },
+      {
+        "title": "Fair Rosamund",
+        "date": "1861",
+        "fileName": "rossetti-fair-rosamund-1861"
+      },
+      {
+        "title": "The Annunciation",
+        "date": "1861",
+        "fileName": "rossetti-annunciation-1861"
+      },
+      {
+        "title": "Joan of Arc",
+        "date": "1864",
+        "fileName": "rossetti-joan-of-arc-1864"
+      },
+      {
+        "title": "Morning Music",
+        "date": "1864",
+        "fileName": "rossetti-morning-music-1864"
+      },
+      {
+        "title": "The Beloved",
+        "date": "1866",
+        "fileName": "rossetti-beloved-1866"
+      },
+      {
+        "title": "The Loving Cup",
+        "date": "1867",
+        "fileName": "rossetti-loving-cup-1867"
+      },
+      {
+        "title": "The Tune of Seven Towers",
+        "date": "1867",
+        "fileName": "rossetti-tune-of-seven-towers-1867"
+      },
+      {
+        "title": "Lady Lilith",
+        "date": "1868",
+        "fileName": "rossetti-lady-lilith-1868"
+      },
+      {
+        "title": "Mariana",
+        "date": "1870",
+        "fileName": "rossetti-mariana-1870"
+      },
+      {
+        "title": "The Bower Meadow",
+        "date": "1872",
+        "fileName": "rossetti-bower-meadow-1872"
+      },
+      {
+        "title": "A Sea Spell",
+        "date": "1877",
+        "fileName": "rossetti-sea-spell-1877"
+      },
+      {
+        "title": "Prosperpine",
+        "date": "1877",
+        "fileName": "rossetti-prosperpine-1877"
+      },
+      {
+        "title": "Pandora",
+        "date": "1879",
+        "fileName": "rossetti-pandora-1879"
+      },
+      {
+        "title": "The Day Dream",
+        "date": "1880",
+        "fileName": "rossetti-day-dream-1880"
+      },
+      {
+        "title": "Joan of Arc",
+        "date": "1882",
+        "fileName": "rossetti-joan-of-arc-1882"
+      }
+    ]
+  }
+,
+  "renoir": {
+    "fname": "Auguste",
+    "lname": "Renoir",
+    "bio": "Pierre-Auguste Renoir, commonly known as Auguste Renoir (25 February 1841 – 3 December 1919), was a French artist who was a leading painter in the development of the Impressionist style. As a celebrator of beauty and especially feminine sensuality, it has been said that 'Renoir is the final representative of a tradition which runs directly from Rubens to Watteau.'",
+    "era": "Impressionism",
+    "content": [
+      {
+        "title": "Crown of Roses",
+        "date": "1858",
+        "fileName": "renoir-crown-of-roses-1858"
+      },
+      {
+        "title": "Girl Gathering Flowers",
+        "date": "1872",
+        "fileName": "renoir-girl-gathering-flowers-1872"
+      },
+      {
+        "title": "On the Path",
+        "date": "1872",
+        "fileName": "renoir-on-the-path-1872"
+      },
+      {
+        "title": "The Parisian",
+        "date": "1874",
+        "fileName": "renoir-parisian-1874"
+      },
+      {
+        "title": "By the Fireside",
+        "date": "1875",
+        "fileName": "renoir-by-the-fireside-1875"
+      },
+      {
+        "title": "Self Portrait",
+        "date": "1875",
+        "fileName": "renoir-self-portrait-1875"
+      },
+      {
+        "title": "First Outing",
+        "date": "1876",
+        "fileName": "renoir-first-outing-1876"
+      },
+      {
+        "title": "Nini in the Garden",
+        "date": "1876",
+        "fileName": "renoir-nini-in-the-garden-1876"
+      },
+      {
+        "title": "Oarsmen at Chatou",
+        "date": "1879",
+        "fileName": "renoir-oarsmen-at-chatou-1879"
+      },
+      {
+        "title": "Girl with Fan",
+        "date": "1881",
+        "fileName": "renoir-girl-with-fan-1881"
+      },
+      {
+        "title": "Field and Haystacks",
+        "date": "1885",
+        "fileName": "renoir-field-and-haystacks-1885"
+      },
+      {
+        "title": "Fields of Wheat",
+        "date": "1885",
+        "fileName": "renoir-fields-of-wheat-1885"
+      },
+      {
+        "title": "Girl with Hoop",
+        "date": "1885",
+        "fileName": "renoir-girl-with-hoop-1885"
+      },
+      {
+        "title": "Girls at the Piano",
+        "date": "1892",
+        "fileName": "renoir-girls-at-the-piano-1892"
+      },
+      {
+        "title": "Beaulieu Landscape",
+        "date": "1893",
+        "fileName": "renoir-beaulieu-landscape-1893"
+      },
+      {
+        "title": "Bust of a Young Girl",
+        "date": "1895",
+        "fileName": "renoir-bust-of-a-young-girl-1895"
+      },
+      {
+        "title": "Landscape in Normandy",
+        "date": "1895",
+        "fileName": "renoir-landscape-in-normandy-1895"
+      },
+      {
+        "title": "Coco Holding an Orange",
+        "date": "1904",
+        "fileName": "renoir-coco-holding-an-orange-1904"
+      },
+      {
+        "title": "Flower Study",
+        "date": "1913",
+        "fileName": "renoir-flower-study-1913"
+      },
+      {
+        "title": "Fish",
+        "date": "1919",
+        "fileName": "renoir-fish-1919"
+      }
+    ]
+  }
+,
+  "sargent": {
+    "fname": "John Singer",
+    "lname": "Sargent",
+    "bio": "John Singer Sargent (January 12, 1856 – April 14, 1925) was an American artist, considered the 'leading portrait painter of his generation' for his evocations of Edwardian era luxury. During his career, he created roughly 900 oil paintings and more than 2,000 watercolors, as well as countless sketches and charcoal drawings.",
+    "era": "Realism",
+    "content": [
+      {
+        "title": "Seascape",
+        "date": "1875",
+        "fileName": "sargent-seascape-1875"
+      },
+      {
+        "title": "Nice",
+        "date": "1884",
+        "fileName": "sargent-nice-1884"
+      },
+      {
+        "title": "Home Fields",
+        "date": "1885",
+        "fileName": "sargent-home-fields-1885"
+      },
+      {
+        "title": "Poppies",
+        "date": "1886",
+        "fileName": "sargent-poppies-1886"
+      },
+      {
+        "title": "A Morning Walk",
+        "date": "1888",
+        "fileName": "sargent-morning-walk-1888"
+      },
+      {
+        "title": "By the River",
+        "date": "1888",
+        "fileName": "sargent-by-the-river-1888"
+      },
+      {
+        "title": "On the Canal",
+        "date": "1903",
+        "fileName": "sargent-on-the-canal-1903"
+      },
+      {
+        "title": "Black Tent",
+        "date": "1906",
+        "fileName": "sargent-black-tent-1906"
+      },
+      {
+        "title": "Hills of Galilee",
+        "date": "1906",
+        "fileName": "sargent-hills-of-galilee-1906"
+      },
+      {
+        "title": "A Hotel Room",
+        "date": "1907",
+        "fileName": "sargent-hotel-room-1907"
+      },
+      {
+        "title": "A Siesta",
+        "date": "1907",
+        "fileName": "sargent-siesta-1907"
+      },
+      {
+        "title": "Gourds",
+        "date": "1908",
+        "fileName": "sargent-gourds-1909"
+      },
+      {
+        "title": "Boy on a Rock",
+        "date": "1909",
+        "fileName": "sargent-boy-on-a-rock-1909"
+      },
+      {
+        "title": "Glacier Streams",
+        "date": "1909",
+        "fileName": "sargent-glacier-streams-1909"
+      },
+      {
+        "title": "A Waterfall",
+        "date": "1910",
+        "fileName": "sargent-waterfall-1910"
+      },
+      {
+        "title": "In the Alps",
+        "date": "1910",
+        "fileName": "sargent-in-the-alps-1910"
+      },
+      {
+        "title": "Oxen Resting",
+        "date": "1910",
+        "fileName": "sargent-oxen-resting-1910"
+      },
+      {
+        "title": "Magnolias",
+        "date": "1912",
+        "fileName": "sargent-magnolias-1912"
+      },
+      {
+        "title": "Girl Fishing",
+        "date": "1913",
+        "fileName": "sargent-girl-fishing-1913"
+      },
+      {
+        "title": "Palms",
+        "date": "1917",
+        "fileName": "sargent-palms-1917"
+      }
+    ]
+  }
+,
+  "rousseau": {
+    "fname": "Henri",
+    "lname": "Rousseau",
+    "bio": "Henri Julien Félix Rousseau (May 21, 1844 – September 2, 1910) was a French post-impressionist painter in the Naïve or Primitive manner. He was also known as Le Douanier (the customs officer), a humorous description of his occupation as a toll and tax collector.",
+    "era": "Post-Impressionism",
+    "content": [
+      {
+        "title": "Landscape with Bridge",
+        "date": "1877",
+        "fileName": "rousseau-landscape-with-bridge-1877"
+      },
+      {
+        "title": "The Mill",
+        "date": "1879",
+        "fileName": "rousseau-mill-1879"
+      },
+      {
+        "title": "Landscape",
+        "date": "1886",
+        "fileName": "rousseau-landscape-1886"
+      },
+      {
+        "title": "Riverbank",
+        "date": "1890",
+        "fileName": "rousseau-riverbank-1890"
+      },
+      {
+        "title": "Suprise",
+        "date": "1891",
+        "fileName": "rousseau-suprise-1891"
+      },
+      {
+        "title": "The Artilleryman",
+        "date": "1893",
+        "fileName": "rousseau-artilleryman-1893"
+      },
+      {
+        "title": "Family Fishing",
+        "date": "1895",
+        "fileName": "rousseau-family-fishing-1895"
+      },
+      {
+        "title": "Suburban Scene",
+        "date": "1896",
+        "fileName": "rousseau-suburban-scene-1896"
+      },
+      {
+        "title": "The Chair Factory",
+        "date": "1897",
+        "fileName": "rousseau-chair-factory-1897"
+      },
+      {
+        "title": "The Quarry",
+        "date": "1897",
+        "fileName": "rousseau-quarry-1897"
+      },
+      {
+        "title": "Boat in a Storm",
+        "date": "1898",
+        "fileName": "rousseau-boat-in-a-storm-1898"
+      },
+      {
+        "title": "Happy Quartet",
+        "date": "1902",
+        "fileName": "rousseau-happy-quartet-1902"
+      },
+      {
+        "title": "Child with Puppet",
+        "date": "1903",
+        "fileName": "rousseau-child-with-puppet-1903"
+      },
+      {
+        "title": "Scout Attacked by a Tiger",
+        "date": "1904",
+        "fileName": "rousseau-scout-attacked-by-a-tiger-1904"
+      },
+      {
+        "title": "Girl with Doll",
+        "date": "1905",
+        "fileName": "rousseau-girl-with-doll-1905"
+      },
+      {
+        "title": "Old Juniors Cart",
+        "date": "1908",
+        "fileName": "rousseau-old-juniors-cart-1908"
+      },
+      {
+        "title": "Bouquet of Flowers",
+        "date": "1910",
+        "fileName": "rousseau-bouquet-of-flowers-1910"
+      },
+      {
+        "title": "Jungle with Lion",
+        "date": "1910",
+        "fileName": "rousseau-jungle-with-lion-1910"
+      },
+      {
+        "title": "Meadowland",
+        "date": "1910",
+        "fileName": "rousseau-meadowland-1910"
+      },
+      {
+        "title": "The Dream",
+        "date": "1910",
+        "fileName": "rousseau-dream-1910"
+      }
+    ]
+  }
+,
+  "seurat": {
+    "fname": "Georges",
+    "lname": "Seurat",
+    "bio": "Georges-Pierre Seurat (2 December 1859 – 29 March 1891) was a French post-Impressionist painter and draftsman. He is noted for his innovative use of drawing media and for devising the painting techniques known as chromoluminarism and pointillism. Seurat's artistic personality was compounded of qualities which are usually supposed to be opposed and incompatible: on the one hand, his extreme and delicate sensibility; on the other, a passion for logical abstraction and an almost mathematical precision of mind.",
+    "era": "Post-Impressionism",
+    "content": [
+      {
+        "title": "Vase of Flowers",
+        "date": "1879",
+        "fileName": "seurat-vase-of-flowers-1879"
+      },
+      {
+        "title": "Forest at Pontaubert",
+        "date": "1881",
+        "fileName": "seurat-forest-at-pontaubert-1881"
+      },
+      {
+        "title": "River Banks",
+        "date": "1883",
+        "fileName": "seurat-river-banks-1883"
+      },
+      {
+        "title": "Bathing at Asniers",
+        "date": "1884",
+        "fileName": "seurat-bathing-at-asniers-1884"
+      },
+      {
+        "title": "Boats at Lowtide on Grandcamp",
+        "date": "1885",
+        "fileName": "seurat-boats-at-lowtide-on-grandcamp-1885"
+      },
+      {
+        "title": "Fort Samson",
+        "date": "1885",
+        "fileName": "seurat-fort-samson-1885"
+      },
+      {
+        "title": "Sunday Afternoon on the Island of Grande Jatte",
+        "date": "1886",
+        "fileName": "seurat-sunday-afternoon-on-the-island-of-grande-jatte-1886"
+      },
+      {
+        "title": "The Bridge at Courbevoie",
+        "date": "1886",
+        "fileName": "seurat-bridge-at-courbevoie-1886"
+      },
+      {
+        "title": "Gray Weather",
+        "date": "1888",
+        "fileName": "seurat-gray-weather-1888"
+      },
+      {
+        "title": "Circus Sideshow",
+        "date": "1888",
+        "fileName": "seurat-circus-sideshow-1888"
+      },
+      {
+        "title": "The Models",
+        "date": "1888",
+        "fileName": "seurat-models-1888"
+      },
+      {
+        "title": "Sunday at Port en Bessin",
+        "date": "1888",
+        "fileName": "seurat-sunday-at-port-en-bessin-1888"
+      },
+      {
+        "title": "Port en Bessin Entrance to the Harbor",
+        "date": "1888",
+        "fileName": "seurat-port-en-bessin-entrance-to-the-harbor-1888"
+      },
+      {
+        "title": "Port en Bessin",
+        "date": "1888",
+        "fileName": "seurat-port-en-bessin-1888"
+      },
+      {
+        "title": "The Siene at La Grande Jatte",
+        "date": "1888",
+        "fileName": "seurat-siene-at-la-grande-jatte-1888"
+      },
+      {
+        "title": "Eiffel Tower",
+        "date": "1889",
+        "fileName": "seurat-eiffel-tower-1889"
+      },
+      {
+        "title": "View of le Crotoy",
+        "date": "1889",
+        "fileName": "seurat-view-of-le-crotoy-1889"
+      },
+      {
+        "title": "Le Chahut (The Can-can)",
+        "date": "1890",
+        "fileName": "seurat-le-chahut-1890"
+      },
+      {
+        "title": "Young Woman Powdering Herself",
+        "date": "1890",
+        "fileName": "seurat-young-woman-powdering-herself-1890"
+      },
+      {
+        "title": "The Circus",
+        "date": "1891",
+        "fileName": "seurat-circus-1891"
+      }
+    ]
+  }
+,
+  "vonamerling": {
+    "fname": "Friedrich",
+    "lname": "Von Amerling",
+    "bio": "Friedrich von Amerling (14 April 1803 – 14 January 1887) was an Austro-Hungarian portrait painter in the court of Franz Josef. He was born in Vienna and was court painter between 1835 and 1880. With Ferdinand Georg Waldmüller he is one of the outstanding Austrian portrait painters of the 19th century.",
+    "era": "Academic",
+    "content": [
+      {
+        "title": "Rudolph von Arthaber with His Children",
+        "date": "1830",
+        "fileName": "vonamerling-rudolph-von-arthaber-with-his-children-1830"
+      },
+      {
+        "title": "Emporer Franz I",
+        "date": "1832",
+        "fileName": "vonamerling-emporer-franz-i-1832"
+      },
+      {
+        "title": "Self Portrait",
+        "date": "1834",
+        "fileName": "vonamerling-self-portrait-1834"
+      },
+      {
+        "title": "Lost in Dreams",
+        "date": "1835",
+        "fileName": "vonamerling-lost-in-dreams-1835"
+      },
+      {
+        "title": "Count Istvan Szechenyi",
+        "date": "1836",
+        "fileName": "vonamerling-count-istvan-szechenyi-1836"
+      },
+      {
+        "title": "Prinzessin Marie Franziska",
+        "date": "1836",
+        "fileName": "vonamerling-prinzessin-marie-franziska-1836"
+      },
+      {
+        "title": "Portrait of a Girl",
+        "date": "1837",
+        "fileName": "vonamerling-portrait-of-a-girl-1837"
+      },
+      {
+        "title": "Oriental Woman",
+        "date": "1838",
+        "fileName": "vonamerling-oriental-woman-1838"
+      },
+      {
+        "title": "Countess Nako",
+        "date": "1855",
+        "fileName": "vonamerling-countess-nako-1855"
+      },
+      {
+        "title": "Charity",
+        "date": "1856",
+        "fileName": "vonamerling-charity-1856"
+      },
+      {
+        "title": "Kaiser Franz I",
+        "date": "1884",
+        "fileName": "vonamerling-kaiser-franz-i-1884"
+      },
+      {
+        "title": "Study of a Lunatist",
+        "date": "",
+        "fileName": "vonamerling-study-of-a-lunatist"
+      }
+    ]
+  }
+,
+  "vangogh": {
+    "fname": "Vincent",
+    "lname": "Van Gogh",
+    "bio": "Vincent Willem van Gogh (30 March 1853 – 29 July 1890) was a Dutch Post-Impressionist painter who is among the most famous and influential figures in the history of Western art. In just over a decade he created about 2,100 artworks, including around 860 oil paintings, most of them in the last two years of his life in France, where he died. They include landscapes, still lifes, portraits and self-portraits, and are characterised by bold colours and dramatic, impulsive and expressive brushwork that contributed to the foundations of modern art.",
+    "era": "Post-Impressionism",
+    "content": [
+      {
+        "title": "View of the Sea at Scheveningen",
+        "date": "1882",
+        "fileName": "vangogh-view-of-the-sea-at-scheveningen-1882"
+      },
+      {
+        "title": "Bulb Field",
+        "date": "1883",
+        "fileName": "vangogh-bulb-field-1883"
+      },
+      {
+        "title": "Basket of Potatoes",
+        "date": "1885",
+        "fileName": "vangogh-basket-of-potatoes-1885"
+      },
+      {
+        "title": "The Cottage",
+        "date": "1885",
+        "fileName": "vangogh-cottage-1885"
+      },
+      {
+        "title": "Still Life with Bible",
+        "date": "1885",
+        "fileName": "vangogh-still-life-with-bible-1885"
+      },
+      {
+        "title": "Still Life of Shoes",
+        "date": "1886",
+        "fileName": "vangogh-still-life-of-shoes-1886"
+      },
+      {
+        "title": "Night Cafe",
+        "date": "1888",
+        "fileName": "vangogh-night-cafe-1888"
+      },
+      {
+        "title": "The Old Mill",
+        "date": "1888",
+        "fileName": "vangogh-old-mill-1888"
+      },
+      {
+        "title": "Poets Garden",
+        "date": "1888",
+        "fileName": "vangogh-poets-garden-1888"
+      },
+      {
+        "title": "Self Portrait (with straw hat)",
+        "date": "1888",
+        "fileName": "vangogh-self-portrait-with-straw-hat-1888"
+      },
+      {
+        "title": "Shoes",
+        "date": "1888",
+        "fileName": "vangogh-shoes-1888"
+      },
+      {
+        "title": "Starry Night Over the Rhone",
+        "date": "1888",
+        "fileName": "vangogh-starry-night-over-the-rhone-1888"
+      },
+      {
+        "title": "Vincent's Bedroom in Arles",
+        "date": "1888",
+        "fileName": "vangogh-vincents-bedroom-in-arles-1888"
+      },
+      {
+        "title": "Angel",
+        "date": "1889",
+        "fileName": "vangogh-angel-1888"
+      },
+      {
+        "title": "Corridor in the Asylum",
+        "date": "1889",
+        "fileName": "vangogh-corridor-in-the-asylum-1889"
+      },
+      {
+        "title": "Cypresses",
+        "date": "1889",
+        "fileName": "vangogh-cypresses-1889"
+      },
+      {
+        "title": "Irises",
+        "date": "1889",
+        "fileName": "vangogh-irises-1889"
+      },
+      {
+        "title": "Pieta",
+        "date": "1889",
+        "fileName": "vangogh-pieta-1889"
+      },
+      {
+        "title": "Potato Eaters",
+        "date": "1889",
+        "fileName": "vangogh-potato-eaters-1889"
+      },
+      {
+        "title": "Siesta",
+        "date": "1889",
+        "fileName": "vangogh-siesta-1889"
+      },
+      {
+        "title": "Starry Night",
+        "date": "1889",
+        "fileName": "vangogh-starry-night-1889"
+      },
+      {
+        "title": "Sunflowers",
+        "date": "1889",
+        "fileName": "vangogh-sunflowers-1889"
+      },
+      {
+        "title": "Trees in the Asylum Garden",
+        "date": "1889",
+        "fileName": "vangogh-trees-in-the-asylum-garden-1889"
+      },
+      {
+        "title": "Church at Auvers",
+        "date": "1889",
+        "fileName": "vangogh-church-at-auvers-1889"
+      },
+      {
+        "title": "Thatched Houses in Cordeville",
+        "date": "1890",
+        "fileName": "vangogh-thatched-houses-in-cordeville-1890"
+      },
+      {
+        "title": "Village Street in Auvers",
+        "date": "1890",
+        "fileName": "vangogh-village-street-in-auvers-1890"
+      },
+      {
+        "title": "Vineyards at Auvers",
+        "date": "1890",
+        "fileName": "vangogh-vineyards-at-auvers-1890"
+      },
+      {
+        "title": "Wheatfield with Crows",
+        "date": "1890",
+        "fileName": "vangogh-wheatfield-with-crows-1890"
+      }
+    ]
+  }
+,
+  "waterhouse": {
+    "fname": "John William",
+    "lname": "Waterhouse",
+    "bio": "John William Waterhouse (6 April 1849 – 10 February 1917) was an English painter known for working in the Pre-Raphaelite style. He worked several decades after the breakup of the Pre-Raphaelite Brotherhood, which had seen its heyday in the mid-nineteenth century, leading to his sobriquet 'the modern Pre-Raphaelite'. Borrowing stylistic influences not only from the earlier Pre-Raphaelites but also from his contemporaries, the Impressionists, his artworks were known for their depictions of women from both ancient Greek mythology and Arthurian legend.",
+    "era": "Pre-Raphaelite",
+    "content": [
+      {
+        "title": "Cleopatra",
+        "date": "1888",
+        "fileName": "waterhouse-cleopatra-1888"
+      },
+      {
+        "title": "Lady of Shalott",
+        "date": "1888",
+        "fileName": "waterhouse-lady-of-shalott-1888"
+      },
+      {
+        "title": "La Belle Dame Sans Merci",
+        "date": "1893",
+        "fileName": "waterhouse-la-belle-dame-sans-merci-1893"
+      },
+      {
+        "title": "Ophelia",
+        "date": "1894",
+        "fileName": "waterhouse-ophelia-1894"
+      },
+      {
+        "title": "Hylas and the Nymphs",
+        "date": "1896",
+        "fileName": "waterhouse-hylas-and-the-nymphs-1896"
+      },
+      {
+        "title": "Ariadne",
+        "date": "1898",
+        "fileName": "waterhouse-ariadne-1898"
+      },
+      {
+        "title": "Flower Picker",
+        "date": "1900",
+        "fileName": "waterhouse-flower-picker-1900"
+      },
+      {
+        "title": "Boreas",
+        "date": "1902",
+        "fileName": "waterhouse-boreas-1902"
+      },
+      {
+        "title": "Psyche Entering Cupid's Garden",
+        "date": "1904",
+        "fileName": "waterhouse-psyche-entering-cupids-garden-1904"
+      },
+      {
+        "title": "Danaides",
+        "date": "1906",
+        "fileName": "waterhouse-danaides-1906"
+      },
+      {
+        "title": "Windflowers",
+        "date": "1906",
+        "fileName": "waterhouse-windflowers-1906"
+      },
+      {
+        "title": "Gather ye Rosebuds While ye May",
+        "date": "1909",
+        "fileName": "waterhouse-gather-ye-rosebuds-while-ye-may-1909"
+      },
+      {
+        "title": "Thisbe",
+        "date": "1909",
+        "fileName": "waterhouse-thisbe-1909"
+      },
+      {
+        "title": "Ophelia",
+        "date": "1910",
+        "fileName": "waterhouse-ophelia-1910"
+      },
+      {
+        "title": "Narcissus",
+        "date": "1912",
+        "fileName": "waterhouse-narcissus-1912"
+      },
+      {
+        "title": "Penelope and the Suitors",
+        "date": "1912",
+        "fileName": "waterhouse-penelope-and-the-suitors-1912"
+      },
+      {
+        "title": "I am Half Sick of Shadows",
+        "date": "1916",
+        "fileName": "waterhouse-i-am-half-sick-of-shadows-1916"
+      },
+      {
+        "title": "Miranda and the Tempest",
+        "date": "1916",
+        "fileName": "waterhouse-miranda-and-the-tempest-1916"
+      },
+      {
+        "title": "Tale From the Decameron",
+        "date": "1916",
+        "fileName": "waterhouse-tale-from-the-decameron-1916"
+      },
+      {
+        "title": "Tristan and Isolde Sharing the Potion",
+        "date": "1916",
+        "fileName": "waterhouse-tristan-and-isolde-sharing-the-potion-1916"
+      }
+    ]
+  }
+}
