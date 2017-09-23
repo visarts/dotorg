@@ -65,7 +65,7 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            'css-loader',
+            'css-loader?url=false',
             'less-loader'
           ]
         })
@@ -117,7 +117,8 @@ module.exports = {
       Styles: path.resolve(ROOT_PATH, 'src/app/styles'),
       Literature: path.resolve(ROOT_PATH, 'content/literature'),
       Artwork: path.resolve(ROOT_PATH, 'content/artwork'),
-      SharedComponents: path.resolve(ROOT_PATH, 'src/app/sharedComponents')
+      SharedComponents: path.resolve(ROOT_PATH, 'src/app/sharedComponents'),
+      Images: path.resolve(ROOT_PATH, 'src/images')
     },
     modules: [
       path.resolve('./src'),

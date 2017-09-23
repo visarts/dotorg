@@ -1,10 +1,14 @@
 @import '../../styles/globals';
 
 @litImage: 'http://portitude.org/arts/harnett/1878-job_lot_cheap.jpg';
-@artImage: 'http://portitude.org/arts/waterhouse/1916-tale_from_the_decameron.jpg';
+//@artImage: 'http://portitude.org/arts/waterhouse/1916-tale_from_the_decameron.jpg';
+//@artImage: '../../../content/artwork/vangogh/vangogh-wheatfield-with-crows-1890.jpg';
+//@artImage: 'http://portitude.org/arts/van_gogh/1889-starry_night.jpg';
+
+@artImage: '../images/lushpin-eugene-paris-evening-2013.jpg';
 
 .globalNav {
-  background-color: @tertiaryThemeColor;
+  background-color: @secondaryThemeColor;
   //margin-bottom: @hMargin;
   box-shadow: 0px -5px 25px 15px @mainThemeColor;
   position: fixed;
@@ -64,7 +68,7 @@
           height: 200px;
           //max-width: 400px;
           background-size: cover;
-          background-position: 50% 35%;
+          background-position: 50% 55%;
           transition: height @defaultTransitionTimeout;
 
           @media(max-width: @smallScreen) {
@@ -75,6 +79,8 @@
 
           &.subPage {
             height: 58px;
+            background-size: 180%;
+            background-position: 60% 35%;
           }
 
 
@@ -100,7 +106,9 @@
         }
 
         .navTitle {
-          background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+          //background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+          background: linear-gradient(to right, rgba(24, 22, 21, 1), rgba(24, 22, 21, 0));
+          background-position: 39% 35%;
           padding: @vPadding;
           //padding-top: @vPadding + @vMargin;
           position: absolute;
@@ -141,13 +149,13 @@
   }
 
   &.litSelected {
-    background: linear-gradient(to left, @secondaryThemeColor, @tertiaryThemeColor);
+    //background: linear-gradient(to left, @secondaryThemeColor, @tertiaryThemeColor);
     .navArt {
       opacity: .3;
     }
   }
   &.artSelected {
-    background: linear-gradient(to right, @secondaryThemeColor, @tertiaryThemeColor);
+    //background: linear-gradient(to right, @secondaryThemeColor, @tertiaryThemeColor);
     .navLit {
       opacity: .3;
     }

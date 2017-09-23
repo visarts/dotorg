@@ -18,13 +18,14 @@ const LiteratureGenre = (props) => {
       let author = props.store.authorsData[authorKey];
       for (let i in author.content) {
         let title = author.content[i];
+        let pageIndicator = title.genre === 'poetry' ? `${author.lname}, ` : title.pageSizes.length === 1 ? '1 page, ' : title.pageSizes.length + ' pages, '
         if (title.genre === props.appState.routing.currentSubSection) {
           titlesList.push(
             <ListLink
               key={title.fileName}
               url={`/literature/g/${title.genre}/${authorKey}/${title.fileName}`}
               text={title.title}
-              other={`${title.date}, ${author.fname} ${author.lname}`} />
+              other={`${pageIndicator}${title.date}`} />
           );
         }
       }

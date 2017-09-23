@@ -693,115 +693,6 @@
     ]
   }
 ,
-  "gerome": {
-    "fname": "Jean-L%C3%A9on",
-    "lname": "G%C3%A9r%C3%B4me",
-    "bio": "Jean-Léon Gérôme (11 May 1824 – 10 January 1904) was a French painter and sculptor in the style now known as academicism. The range of his oeuvre included historical painting, Greek mythology, Orientalism, portraits, and other subjects, bringing the academic painting tradition to an artistic climax. He is considered one of the most important painters from this academic period.",
-    "era": "Academic",
-    "content": [
-      {
-        "title": "The Cock Fight",
-        "date": "1846",
-        "fileName": "gerome-cock-fight-1846"
-      },
-      {
-        "title": "The Prisoner",
-        "date": "1861",
-        "fileName": "gerome-prisoner-1861"
-      },
-      {
-        "title": "Jean Bart",
-        "date": "1862",
-        "fileName": "gerome-jean-bart-1862"
-      },
-      {
-        "title": "Prayer in the Desert",
-        "date": "1864",
-        "fileName": "gerome-prayer-in-the-desert-1864"
-      },
-      {
-        "title": "Arnaut Smoking",
-        "date": "1865",
-        "fileName": "gerome-arnaut-smoking-1865"
-      },
-      {
-        "title": "Carpet Merchant in Cairo",
-        "date": "1867",
-        "fileName": "gerome-carpet-merchant-in-cairo-1867"
-      },
-      {
-        "title": "Napoleon and His General Staff",
-        "date": "1867",
-        "fileName": "gerome-napoleon-and-his-general-staff-1867"
-      },
-      {
-        "title": "Pho Xai",
-        "date": "1867",
-        "fileName": "gerome-pho-xai-1867"
-      },
-      {
-        "title": "Moorish Bath",
-        "date": "1870",
-        "fileName": "gerome-moorish-bath-1870"
-      },
-      {
-        "title": "Home From the Hunt",
-        "date": "1876",
-        "fileName": "gerome-home-from-the-hunt-1876"
-      },
-      {
-        "title": "Sabre Dance in a Cafe",
-        "date": "1876",
-        "fileName": "gerome-sabre-dance-in-a-cafe-1876"
-      },
-      {
-        "title": "Arab Purchasing a Bride",
-        "date": "1881",
-        "fileName": "gerome-arab-purchasing-a-bride-1881"
-      },
-      {
-        "title": "Bathing Scene",
-        "date": "1881",
-        "fileName": "gerome-bathing-scene-1881"
-      },
-      {
-        "title": "Oriental Woman",
-        "date": "1882",
-        "fileName": "gerome-oriental-woman-1882"
-      },
-      {
-        "title": "Selling Slaves in Rome",
-        "date": "1886",
-        "fileName": "gerome-selling-slaves-in-rome-1886"
-      },
-      {
-        "title": "Bathsheba",
-        "date": "1889",
-        "fileName": "gerome-bathsheba-1889"
-      },
-      {
-        "title": "Love Conquers All",
-        "date": "1889",
-        "fileName": "gerome-love-conquers-all-1889"
-      },
-      {
-        "title": "Snake Charmer",
-        "date": "1889",
-        "fileName": "gerome-snake-charmer-1889"
-      },
-      {
-        "title": "Prayer in a Mosque",
-        "date": "1892",
-        "fileName": "gerome-prayer-in-a-mosque-1892"
-      },
-      {
-        "title": "The Harem Bathing",
-        "date": "1901",
-        "fileName": "gerome-harem-bathing-1901"
-      }
-    ]
-  }
-,
   "harnett": {
     "fname": "William",
     "lname": "Harnett",
@@ -907,6 +798,115 @@
         "title": "Old Models",
         "date": "1892",
         "fileName": "harnett-old-models-1892"
+      }
+    ]
+  }
+,
+  "gerome": {
+    "fname": "Jean-L%C3%A9on",
+    "lname": "G%C3%A9r%C3%B4me",
+    "bio": "Jean-Léon Gérôme (11 May 1824 – 10 January 1904) was a French painter and sculptor in the style now known as academicism. The range of his oeuvre included historical painting, Greek mythology, Orientalism, portraits, and other subjects, bringing the academic painting tradition to an artistic climax. He is considered one of the most important painters from this academic period.",
+    "era": "Academic",
+    "content": [
+      {
+        "title": "The Cock Fight",
+        "date": "1846",
+        "fileName": "gerome-cock-fight-1846"
+      },
+      {
+        "title": "The Prisoner",
+        "date": "1861",
+        "fileName": "gerome-prisoner-1861"
+      },
+      {
+        "title": "Jean Bart",
+        "date": "1862",
+        "fileName": "gerome-jean-bart-1862"
+      },
+      {
+        "title": "Prayer in the Desert",
+        "date": "1864",
+        "fileName": "gerome-prayer-in-the-desert-1864"
+      },
+      {
+        "title": "Arnaut Smoking",
+        "date": "1865",
+        "fileName": "gerome-arnaut-smoking-1865"
+      },
+      {
+        "title": "Carpet Merchant in Cairo",
+        "date": "1867",
+        "fileName": "gerome-carpet-merchant-in-cairo-1867"
+      },
+      {
+        "title": "Napoleon and His General Staff",
+        "date": "1867",
+        "fileName": "gerome-napoleon-and-his-general-staff-1867"
+      },
+      {
+        "title": "Pho Xai",
+        "date": "1867",
+        "fileName": "gerome-pho-xai-1867"
+      },
+      {
+        "title": "Moorish Bath",
+        "date": "1870",
+        "fileName": "gerome-moorish-bath-1870"
+      },
+      {
+        "title": "Home From the Hunt",
+        "date": "1876",
+        "fileName": "gerome-home-from-the-hunt-1876"
+      },
+      {
+        "title": "Sabre Dance in a Cafe",
+        "date": "1876",
+        "fileName": "gerome-sabre-dance-in-a-cafe-1876"
+      },
+      {
+        "title": "Arab Purchasing a Bride",
+        "date": "1881",
+        "fileName": "gerome-arab-purchasing-a-bride-1881"
+      },
+      {
+        "title": "Bathing Scene",
+        "date": "1881",
+        "fileName": "gerome-bathing-scene-1881"
+      },
+      {
+        "title": "Oriental Woman",
+        "date": "1882",
+        "fileName": "gerome-oriental-woman-1882"
+      },
+      {
+        "title": "Selling Slaves in Rome",
+        "date": "1886",
+        "fileName": "gerome-selling-slaves-in-rome-1886"
+      },
+      {
+        "title": "Bathsheba",
+        "date": "1889",
+        "fileName": "gerome-bathsheba-1889"
+      },
+      {
+        "title": "Love Conquers All",
+        "date": "1889",
+        "fileName": "gerome-love-conquers-all-1889"
+      },
+      {
+        "title": "Snake Charmer",
+        "date": "1889",
+        "fileName": "gerome-snake-charmer-1889"
+      },
+      {
+        "title": "Prayer in a Mosque",
+        "date": "1892",
+        "fileName": "gerome-prayer-in-a-mosque-1892"
+      },
+      {
+        "title": "The Harem Bathing",
+        "date": "1901",
+        "fileName": "gerome-harem-bathing-1901"
       }
     ]
   }
@@ -1613,115 +1613,6 @@
     ]
   }
 ,
-  "sargent": {
-    "fname": "John Singer",
-    "lname": "Sargent",
-    "bio": "John Singer Sargent (January 12, 1856 – April 14, 1925) was an American artist, considered the 'leading portrait painter of his generation' for his evocations of Edwardian era luxury. During his career, he created roughly 900 oil paintings and more than 2,000 watercolors, as well as countless sketches and charcoal drawings.",
-    "era": "Realism",
-    "content": [
-      {
-        "title": "Seascape",
-        "date": "1875",
-        "fileName": "sargent-seascape-1875"
-      },
-      {
-        "title": "Nice",
-        "date": "1884",
-        "fileName": "sargent-nice-1884"
-      },
-      {
-        "title": "Home Fields",
-        "date": "1885",
-        "fileName": "sargent-home-fields-1885"
-      },
-      {
-        "title": "Poppies",
-        "date": "1886",
-        "fileName": "sargent-poppies-1886"
-      },
-      {
-        "title": "A Morning Walk",
-        "date": "1888",
-        "fileName": "sargent-morning-walk-1888"
-      },
-      {
-        "title": "By the River",
-        "date": "1888",
-        "fileName": "sargent-by-the-river-1888"
-      },
-      {
-        "title": "On the Canal",
-        "date": "1903",
-        "fileName": "sargent-on-the-canal-1903"
-      },
-      {
-        "title": "Black Tent",
-        "date": "1906",
-        "fileName": "sargent-black-tent-1906"
-      },
-      {
-        "title": "Hills of Galilee",
-        "date": "1906",
-        "fileName": "sargent-hills-of-galilee-1906"
-      },
-      {
-        "title": "A Hotel Room",
-        "date": "1907",
-        "fileName": "sargent-hotel-room-1907"
-      },
-      {
-        "title": "A Siesta",
-        "date": "1907",
-        "fileName": "sargent-siesta-1907"
-      },
-      {
-        "title": "Gourds",
-        "date": "1908",
-        "fileName": "sargent-gourds-1909"
-      },
-      {
-        "title": "Boy on a Rock",
-        "date": "1909",
-        "fileName": "sargent-boy-on-a-rock-1909"
-      },
-      {
-        "title": "Glacier Streams",
-        "date": "1909",
-        "fileName": "sargent-glacier-streams-1909"
-      },
-      {
-        "title": "A Waterfall",
-        "date": "1910",
-        "fileName": "sargent-waterfall-1910"
-      },
-      {
-        "title": "In the Alps",
-        "date": "1910",
-        "fileName": "sargent-in-the-alps-1910"
-      },
-      {
-        "title": "Oxen Resting",
-        "date": "1910",
-        "fileName": "sargent-oxen-resting-1910"
-      },
-      {
-        "title": "Magnolias",
-        "date": "1912",
-        "fileName": "sargent-magnolias-1912"
-      },
-      {
-        "title": "Girl Fishing",
-        "date": "1913",
-        "fileName": "sargent-girl-fishing-1913"
-      },
-      {
-        "title": "Palms",
-        "date": "1917",
-        "fileName": "sargent-palms-1917"
-      }
-    ]
-  }
-,
   "rousseau": {
     "fname": "Henri",
     "lname": "Rousseau",
@@ -1827,6 +1718,115 @@
         "title": "The Dream",
         "date": "1910",
         "fileName": "rousseau-dream-1910"
+      }
+    ]
+  }
+,
+  "sargent": {
+    "fname": "John Singer",
+    "lname": "Sargent",
+    "bio": "John Singer Sargent (January 12, 1856 – April 14, 1925) was an American artist, considered the 'leading portrait painter of his generation' for his evocations of Edwardian era luxury. During his career, he created roughly 900 oil paintings and more than 2,000 watercolors, as well as countless sketches and charcoal drawings.",
+    "era": "Realism",
+    "content": [
+      {
+        "title": "Seascape",
+        "date": "1875",
+        "fileName": "sargent-seascape-1875"
+      },
+      {
+        "title": "Nice",
+        "date": "1884",
+        "fileName": "sargent-nice-1884"
+      },
+      {
+        "title": "Home Fields",
+        "date": "1885",
+        "fileName": "sargent-home-fields-1885"
+      },
+      {
+        "title": "Poppies",
+        "date": "1886",
+        "fileName": "sargent-poppies-1886"
+      },
+      {
+        "title": "A Morning Walk",
+        "date": "1888",
+        "fileName": "sargent-morning-walk-1888"
+      },
+      {
+        "title": "By the River",
+        "date": "1888",
+        "fileName": "sargent-by-the-river-1888"
+      },
+      {
+        "title": "On the Canal",
+        "date": "1903",
+        "fileName": "sargent-on-the-canal-1903"
+      },
+      {
+        "title": "Black Tent",
+        "date": "1906",
+        "fileName": "sargent-black-tent-1906"
+      },
+      {
+        "title": "Hills of Galilee",
+        "date": "1906",
+        "fileName": "sargent-hills-of-galilee-1906"
+      },
+      {
+        "title": "A Hotel Room",
+        "date": "1907",
+        "fileName": "sargent-hotel-room-1907"
+      },
+      {
+        "title": "A Siesta",
+        "date": "1907",
+        "fileName": "sargent-siesta-1907"
+      },
+      {
+        "title": "Gourds",
+        "date": "1908",
+        "fileName": "sargent-gourds-1909"
+      },
+      {
+        "title": "Boy on a Rock",
+        "date": "1909",
+        "fileName": "sargent-boy-on-a-rock-1909"
+      },
+      {
+        "title": "Glacier Streams",
+        "date": "1909",
+        "fileName": "sargent-glacier-streams-1909"
+      },
+      {
+        "title": "A Waterfall",
+        "date": "1910",
+        "fileName": "sargent-waterfall-1910"
+      },
+      {
+        "title": "In the Alps",
+        "date": "1910",
+        "fileName": "sargent-in-the-alps-1910"
+      },
+      {
+        "title": "Oxen Resting",
+        "date": "1910",
+        "fileName": "sargent-oxen-resting-1910"
+      },
+      {
+        "title": "Magnolias",
+        "date": "1912",
+        "fileName": "sargent-magnolias-1912"
+      },
+      {
+        "title": "Girl Fishing",
+        "date": "1913",
+        "fileName": "sargent-girl-fishing-1913"
+      },
+      {
+        "title": "Palms",
+        "date": "1917",
+        "fileName": "sargent-palms-1917"
       }
     ]
   }
