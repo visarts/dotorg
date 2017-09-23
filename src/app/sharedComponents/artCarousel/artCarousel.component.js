@@ -8,6 +8,8 @@ export default class ArtCarousel extends React.Component {
 
   constructor (props) {
     super(props);
+    this.thumbPageSize = window.innerWidth < 768 ? this.props.smThumbPageSize : this.props.lgThumbPageSize;
+
     this.getCurrentThumbPage = this.getCurrentThumbPage.bind(this);
     this.state = {
       currentThumbPage: this.getCurrentThumbPage(this.props.currentPosition),
@@ -19,7 +21,6 @@ export default class ArtCarousel extends React.Component {
 
     this.onLeftArrowClick = this.onLeftArrowClick.bind(this);
     this.onRightArrowClick = this.onRightArrowClick.bind(this);
-
   }
 
   getThumbs () {
@@ -45,19 +46,23 @@ export default class ArtCarousel extends React.Component {
   getThumbPages () {
     let thumbs = this.getThumbs();
     let thumbPages = [];
-    const lgThumbPageCount = Math.ceil(thumbs.length / this.props.lgThumbPageSize);
-    const smThumbPageCount = Math.ceil(thumbs.length / this.props.smThumbPageSize);
+    const thumbPageCount = Math.ceil(thumbs.length / this.thumbPageSize);
 
-    for (let i = 0; i < lgThumbPageCount; i++) {
-        let j = parseInt(i) * this.props.lgThumbPageSize;
-        thumbPages.push(thumbs.slice(parseInt(j), (parseInt(j) + this.props.lgThumbPageSize )))
+    for (let i = 0; i < thumbPageCount; i++) {
+      if (parseInt(i) !== (thumbPageCount - 1)) {
+        let j = parseInt(i) * this.thumbPageSize;
+        thumbPages.push(thumbs.slice(parseInt(j), (parseInt(j) + this.thumbPageSize )));
+      } else {
+        thumbPages.push(thumbs.slice(-(this.thumbPageSize)));
+      }
+
     }
     return thumbPages;
   }
 
   getCurrentThumbPage (currentPos) {
-    const mathPos = (currentPos + 1) % this.props.lgThumbPageSize === 0 ? Math.floor : Math.ceil;
-    const currentThumbPage = mathPos(((currentPos + 1) / this.props.lgThumbPageSize)) - 1 || 0;
+    const mathPos = (currentPos + 1) % this.thumbPageSize === 0 ? Math.floor : Math.ceil;
+    const currentThumbPage = mathPos(((currentPos + 1) / this.thumbPageSize)) - 1 || 0;
     return currentThumbPage;
   }
 

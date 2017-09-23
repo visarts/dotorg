@@ -10,6 +10,7 @@ const HomeView = (props) => {
   const date = new Date();
   const creatorFrequency = date.getMonth();
   const contentFrequency = date.getDay();
+  const monthName = date.toLocaleString('en-us', { month: 'long' });
   const author = props.store.authorsData[authorKeys[creatorFrequency]];
   const artist = props.store.artistsData[artistKeys[creatorFrequency]];
   const lit = author.content[contentFrequency] ? author.content[contentFrequency] : author.content[author.content.length - 1];
@@ -20,7 +21,7 @@ const HomeView = (props) => {
       <div className="featured">
         <div className="featuredContent">
           <Link to={`/literature/a/${authorKeys[creatorFrequency]}`} className="featuredBlock">
-            <h4 className="featureDescription">Featured Author: </h4>
+            <h4 className="featureDescription"><em>{monthName}'s</em> Featured Author: </h4>
             <h2>{decodeURIComponent(`${author.fname} ${author.lname}`)}</h2>
           </Link>
           <Link to={`/literature/a/${authorKeys[creatorFrequency]}/${lit.genre}/${lit.fileName}`} className="featuredBlock">
@@ -34,7 +35,7 @@ const HomeView = (props) => {
         </div>
         <div className="featuredContent">
           <Link to={`/arts/a/${artistKeys[creatorFrequency]}`} className="featuredBlock">
-            <h4 className="featureDescription">Featured Artist: </h4>
+            <h4 className="featureDescription"><em>{monthName}'s</em> Featured Artist: </h4>
             <h2>{decodeURIComponent(`${artist.fname} ${artist.lname}`)}</h2>
           </Link>
           <Link to={`/arts/a/${artistKeys[creatorFrequency]}/${artist.era}/${art.fileName}`} className="featuredBlock">

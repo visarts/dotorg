@@ -55,6 +55,7 @@ export default class App extends React.Component {
     /* TODO
       courtship of miles standish, Evangeline, song of hiawatha needs special, multi part section
         might need some special indicator to route separately
+          -- could use same category as novels, when those are added, as 'chaptered' content
 
       wilde -- critic as artist needs multi part (i and ii), lord arthur, possibly for shakespeare sonnet set
 
@@ -65,6 +66,8 @@ export default class App extends React.Component {
       Add middle tier sizing layout for tablets, etc
 
       Add historical memory for read completion in literature
+
+      refactor arts carousel to use css animation and a single array 
     */
 
     return (
