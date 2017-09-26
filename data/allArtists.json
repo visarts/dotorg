@@ -693,115 +693,6 @@
     ]
   }
 ,
-  "harnett": {
-    "fname": "William",
-    "lname": "Harnett",
-    "bio": "William Michael Harnett (August 10, 1848 – October 29, 1892) was an Irish-American painter known for his trompe-l'œil still lifes of ordinary objects.",
-    "era": "Realism",
-    "content": [
-      {
-        "title": "Mortality and Immortality",
-        "date": "1876",
-        "fileName": "harnett-mortality-and-immortality-1876"
-      },
-      {
-        "title": "Raisin Cake with Fruit and Wine",
-        "date": "1876",
-        "fileName": "harnett-raisin-cake-with-fruit-and-wine-1876"
-      },
-      {
-        "title": "Still Life with Ginger Jar",
-        "date": "1876",
-        "fileName": "harnett-still-life-with-ginger-jar-1876"
-      },
-      {
-        "title": "Writing Table",
-        "date": "1877",
-        "fileName": "harnett-writing-table-1877"
-      },
-      {
-        "title": "Job Lot Cheap",
-        "date": "1878",
-        "fileName": "harnett-job-lot-cheap-1878"
-      },
-      {
-        "title": "Music and Literature",
-        "date": "1878",
-        "fileName": "harnett-music-and-literature-1878"
-      },
-      {
-        "title": "Pipe and Mug",
-        "date": "1878",
-        "fileName": "harnett-pipe-and-mug-1878"
-      },
-      {
-        "title": "Solace",
-        "date": "1878",
-        "fileName": "harnett-solace-1878"
-      },
-      {
-        "title": "The Social Club",
-        "date": "1879",
-        "fileName": "harnett-social-club-1879"
-      },
-      {
-        "title": "Fruit and Vase",
-        "date": "1881",
-        "fileName": "harnett-fruit-and-vase-1881"
-      },
-      {
-        "title": "Fruit with Champagne Bottle and Newspaper",
-        "date": "1881",
-        "fileName": "harnett-fruit-with-champagne-bottle-and-newspaper-1881"
-      },
-      {
-        "title": "A Study Table",
-        "date": "1882",
-        "fileName": "harnett-study-table-1882"
-      },
-      {
-        "title": "After the Hunt",
-        "date": "1884",
-        "fileName": "harnett-after-the-hunt-1884"
-      },
-      {
-        "title": "Munich Still Life",
-        "date": "1884",
-        "fileName": "harnett-munich-still-life-1884"
-      },
-      {
-        "title": "Music",
-        "date": "1886",
-        "fileName": "harnett-music-1886"
-      },
-      {
-        "title": "The Old Violin",
-        "date": "1886",
-        "fileName": "harnett-old-violin-1886"
-      },
-      {
-        "title": "Ease",
-        "date": "1887",
-        "fileName": "harnett-ease-1887"
-      },
-      {
-        "title": "Violin and Music",
-        "date": "1888",
-        "fileName": "harnett-violin-and-music-1888"
-      },
-      {
-        "title": "The Old Cupboard Door",
-        "date": "1889",
-        "fileName": "harnett-old-cupboard-door-1889"
-      },
-      {
-        "title": "Old Models",
-        "date": "1892",
-        "fileName": "harnett-old-models-1892"
-      }
-    ]
-  }
-,
   "gerome": {
     "fname": "Jean-L%C3%A9on",
     "lname": "G%C3%A9r%C3%B4me",
@@ -907,6 +798,115 @@
         "title": "The Harem Bathing",
         "date": "1901",
         "fileName": "gerome-harem-bathing-1901"
+      }
+    ]
+  }
+,
+  "harnett": {
+    "fname": "William",
+    "lname": "Harnett",
+    "bio": "William Michael Harnett (August 10, 1848 – October 29, 1892) was an Irish-American painter known for his trompe-l'œil still lifes of ordinary objects.",
+    "era": "Realism",
+    "content": [
+      {
+        "title": "Mortality and Immortality",
+        "date": "1876",
+        "fileName": "harnett-mortality-and-immortality-1876"
+      },
+      {
+        "title": "Raisin Cake with Fruit and Wine",
+        "date": "1876",
+        "fileName": "harnett-raisin-cake-with-fruit-and-wine-1876"
+      },
+      {
+        "title": "Still Life with Ginger Jar",
+        "date": "1876",
+        "fileName": "harnett-still-life-with-ginger-jar-1876"
+      },
+      {
+        "title": "Writing Table",
+        "date": "1877",
+        "fileName": "harnett-writing-table-1877"
+      },
+      {
+        "title": "Job Lot Cheap",
+        "date": "1878",
+        "fileName": "harnett-job-lot-cheap-1878"
+      },
+      {
+        "title": "Music and Literature",
+        "date": "1878",
+        "fileName": "harnett-music-and-literature-1878"
+      },
+      {
+        "title": "Pipe and Mug",
+        "date": "1878",
+        "fileName": "harnett-pipe-and-mug-1878"
+      },
+      {
+        "title": "Solace",
+        "date": "1878",
+        "fileName": "harnett-solace-1878"
+      },
+      {
+        "title": "The Social Club",
+        "date": "1879",
+        "fileName": "harnett-social-club-1879"
+      },
+      {
+        "title": "Fruit and Vase",
+        "date": "1881",
+        "fileName": "harnett-fruit-and-vase-1881"
+      },
+      {
+        "title": "Fruit with Champagne Bottle and Newspaper",
+        "date": "1881",
+        "fileName": "harnett-fruit-with-champagne-bottle-and-newspaper-1881"
+      },
+      {
+        "title": "A Study Table",
+        "date": "1882",
+        "fileName": "harnett-study-table-1882"
+      },
+      {
+        "title": "After the Hunt",
+        "date": "1884",
+        "fileName": "harnett-after-the-hunt-1884"
+      },
+      {
+        "title": "Munich Still Life",
+        "date": "1884",
+        "fileName": "harnett-munich-still-life-1884"
+      },
+      {
+        "title": "Music",
+        "date": "1886",
+        "fileName": "harnett-music-1886"
+      },
+      {
+        "title": "The Old Violin",
+        "date": "1886",
+        "fileName": "harnett-old-violin-1886"
+      },
+      {
+        "title": "Ease",
+        "date": "1887",
+        "fileName": "harnett-ease-1887"
+      },
+      {
+        "title": "Violin and Music",
+        "date": "1888",
+        "fileName": "harnett-violin-and-music-1888"
+      },
+      {
+        "title": "The Old Cupboard Door",
+        "date": "1889",
+        "fileName": "harnett-old-cupboard-door-1889"
+      },
+      {
+        "title": "Old Models",
+        "date": "1892",
+        "fileName": "harnett-old-models-1892"
       }
     ]
   }
@@ -1124,55 +1124,6 @@
         "title": "Venice",
         "date": "1908",
         "fileName": "monet-venice-1908"
-      }
-    ]
-  }
-,
-  "okeeffe": {
-    "fname": "Georgia",
-    "lname": "O'Keeffe",
-    "bio": "Georgia Totto O'Keeffe (November 15, 1887 – March 6, 1986) was an American artist. She was best known for her paintings of enlarged flowers, New York skyscrapers, and New Mexico landscapes. O'Keeffe has been recognized as the 'Mother of American modernism'",
-    "era": "Modernism",
-    "content": [
-      {
-        "title": "Blue and Green Music",
-        "date": "1919",
-        "fileName": "okeeffe-blue-and-green-music-1919"
-      },
-      {
-        "title": "Black Iris",
-        "date": "1927",
-        "fileName": "okeeffe-black-iris-1927"
-      },
-      {
-        "title": "Tan Clam with Seaweed",
-        "date": "1926",
-        "fileName": "okeeffe-tan-clam-with-seaweed-1926"
-      },
-      {
-        "title": "Oriental Poppies",
-        "date": "1926",
-        "fileName": "okeeffe-oriental-poppies-1926"
-      },
-      {
-        "title": "Mountain in New Mexico",
-        "date": "1931",
-        "fileName": "okeeffe-mountain-in-new-mexico-1931"
-      },
-      {
-        "title": "Broken Shell",
-        "date": "1937",
-        "fileName": "okeeffe-broken-shell-1937"
-      },
-      {
-        "title": "Clam and Mussel",
-        "date": "1938",
-        "fileName": "okeeffe-clam-and-mussel-1938"
-      },
-      {
-        "title": "Red Hill and White Shell",
-        "date": "1938",
-        "fileName": "okeeffe-red-hill-and-white-shell-1938"
       }
     ]
   }
@@ -1395,6 +1346,55 @@
     ]
   }
 ,
+  "okeeffe": {
+    "fname": "Georgia",
+    "lname": "O'Keeffe",
+    "bio": "Georgia Totto O'Keeffe (November 15, 1887 – March 6, 1986) was an American artist. She was best known for her paintings of enlarged flowers, New York skyscrapers, and New Mexico landscapes. O'Keeffe has been recognized as the 'Mother of American modernism'",
+    "era": "Modernism",
+    "content": [
+      {
+        "title": "Blue and Green Music",
+        "date": "1919",
+        "fileName": "okeeffe-blue-and-green-music-1919"
+      },
+      {
+        "title": "Black Iris",
+        "date": "1927",
+        "fileName": "okeeffe-black-iris-1927"
+      },
+      {
+        "title": "Tan Clam with Seaweed",
+        "date": "1926",
+        "fileName": "okeeffe-tan-clam-with-seaweed-1926"
+      },
+      {
+        "title": "Oriental Poppies",
+        "date": "1926",
+        "fileName": "okeeffe-oriental-poppies-1926"
+      },
+      {
+        "title": "Mountain in New Mexico",
+        "date": "1931",
+        "fileName": "okeeffe-mountain-in-new-mexico-1931"
+      },
+      {
+        "title": "Broken Shell",
+        "date": "1937",
+        "fileName": "okeeffe-broken-shell-1937"
+      },
+      {
+        "title": "Clam and Mussel",
+        "date": "1938",
+        "fileName": "okeeffe-clam-and-mussel-1938"
+      },
+      {
+        "title": "Red Hill and White Shell",
+        "date": "1938",
+        "fileName": "okeeffe-red-hill-and-white-shell-1938"
+      }
+    ]
+  }
+,
   "renoir": {
     "fname": "Auguste",
     "lname": "Renoir",
@@ -1500,115 +1500,6 @@
         "title": "Fish",
         "date": "1919",
         "fileName": "renoir-fish-1919"
-      }
-    ]
-  }
-,
-  "rossetti": {
-    "fname": "Dante",
-    "lname": "Rossetti",
-    "bio": "Dante Gabriel Rossetti (12 May 1828 – 9 April 1882) was a British poet, illustrator, painter and translator. He founded the Pre-Raphaelite Brotherhood in 1848 with William Holman Hunt and John Everett Millais. Rossetti was later to be the main inspiration for a second generation of artists and writers influenced by the movement, most notably William Morris and Edward Burne-Jones. His work also influenced the European Symbolists and was a major precursor of the Aesthetic movement.",
-    "era": "Pre-Raphaelite",
-    "content": [
-      {
-        "title": "Found",
-        "date": "1854",
-        "fileName": "rossetti-found-1854"
-      },
-      {
-        "title": "Before the Battle",
-        "date": "1858",
-        "fileName": "rossetti-before-the-battle-1858"
-      },
-      {
-        "title": "Bocca Baciata",
-        "date": "1859",
-        "fileName": "rossetti-bocca-baciata-1859"
-      },
-      {
-        "title": "Sir Galahad at the Ruined Chapel",
-        "date": "1859",
-        "fileName": "rossetti-sir-galahad-at-the-ruined-chapel-1859"
-      },
-      {
-        "title": "Jane Morris",
-        "date": "1860",
-        "fileName": "rossetti-jane-morris-1860"
-      },
-      {
-        "title": "Fair Rosamund",
-        "date": "1861",
-        "fileName": "rossetti-fair-rosamund-1861"
-      },
-      {
-        "title": "The Annunciation",
-        "date": "1861",
-        "fileName": "rossetti-annunciation-1861"
-      },
-      {
-        "title": "Joan of Arc",
-        "date": "1864",
-        "fileName": "rossetti-joan-of-arc-1864"
-      },
-      {
-        "title": "Morning Music",
-        "date": "1864",
-        "fileName": "rossetti-morning-music-1864"
-      },
-      {
-        "title": "The Beloved",
-        "date": "1866",
-        "fileName": "rossetti-beloved-1866"
-      },
-      {
-        "title": "The Loving Cup",
-        "date": "1867",
-        "fileName": "rossetti-loving-cup-1867"
-      },
-      {
-        "title": "The Tune of Seven Towers",
-        "date": "1867",
-        "fileName": "rossetti-tune-of-seven-towers-1867"
-      },
-      {
-        "title": "Lady Lilith",
-        "date": "1868",
-        "fileName": "rossetti-lady-lilith-1868"
-      },
-      {
-        "title": "Mariana",
-        "date": "1870",
-        "fileName": "rossetti-mariana-1870"
-      },
-      {
-        "title": "The Bower Meadow",
-        "date": "1872",
-        "fileName": "rossetti-bower-meadow-1872"
-      },
-      {
-        "title": "A Sea Spell",
-        "date": "1877",
-        "fileName": "rossetti-sea-spell-1877"
-      },
-      {
-        "title": "Prosperpine",
-        "date": "1877",
-        "fileName": "rossetti-prosperpine-1877"
-      },
-      {
-        "title": "Pandora",
-        "date": "1879",
-        "fileName": "rossetti-pandora-1879"
-      },
-      {
-        "title": "The Day Dream",
-        "date": "1880",
-        "fileName": "rossetti-day-dream-1880"
-      },
-      {
-        "title": "Joan of Arc",
-        "date": "1882",
-        "fileName": "rossetti-joan-of-arc-1882"
       }
     ]
   }
@@ -1827,6 +1718,115 @@
         "title": "Palms",
         "date": "1917",
         "fileName": "sargent-palms-1917"
+      }
+    ]
+  }
+,
+  "rossetti": {
+    "fname": "Dante",
+    "lname": "Rossetti",
+    "bio": "Dante Gabriel Rossetti (12 May 1828 – 9 April 1882) was a British poet, illustrator, painter and translator. He founded the Pre-Raphaelite Brotherhood in 1848 with William Holman Hunt and John Everett Millais. Rossetti was later to be the main inspiration for a second generation of artists and writers influenced by the movement, most notably William Morris and Edward Burne-Jones. His work also influenced the European Symbolists and was a major precursor of the Aesthetic movement.",
+    "era": "Pre-Raphaelite",
+    "content": [
+      {
+        "title": "Found",
+        "date": "1854",
+        "fileName": "rossetti-found-1854"
+      },
+      {
+        "title": "Before the Battle",
+        "date": "1858",
+        "fileName": "rossetti-before-the-battle-1858"
+      },
+      {
+        "title": "Bocca Baciata",
+        "date": "1859",
+        "fileName": "rossetti-bocca-baciata-1859"
+      },
+      {
+        "title": "Sir Galahad at the Ruined Chapel",
+        "date": "1859",
+        "fileName": "rossetti-sir-galahad-at-the-ruined-chapel-1859"
+      },
+      {
+        "title": "Jane Morris",
+        "date": "1860",
+        "fileName": "rossetti-jane-morris-1860"
+      },
+      {
+        "title": "Fair Rosamund",
+        "date": "1861",
+        "fileName": "rossetti-fair-rosamund-1861"
+      },
+      {
+        "title": "The Annunciation",
+        "date": "1861",
+        "fileName": "rossetti-annunciation-1861"
+      },
+      {
+        "title": "Joan of Arc",
+        "date": "1864",
+        "fileName": "rossetti-joan-of-arc-1864"
+      },
+      {
+        "title": "Morning Music",
+        "date": "1864",
+        "fileName": "rossetti-morning-music-1864"
+      },
+      {
+        "title": "The Beloved",
+        "date": "1866",
+        "fileName": "rossetti-beloved-1866"
+      },
+      {
+        "title": "The Loving Cup",
+        "date": "1867",
+        "fileName": "rossetti-loving-cup-1867"
+      },
+      {
+        "title": "The Tune of Seven Towers",
+        "date": "1867",
+        "fileName": "rossetti-tune-of-seven-towers-1867"
+      },
+      {
+        "title": "Lady Lilith",
+        "date": "1868",
+        "fileName": "rossetti-lady-lilith-1868"
+      },
+      {
+        "title": "Mariana",
+        "date": "1870",
+        "fileName": "rossetti-mariana-1870"
+      },
+      {
+        "title": "The Bower Meadow",
+        "date": "1872",
+        "fileName": "rossetti-bower-meadow-1872"
+      },
+      {
+        "title": "A Sea Spell",
+        "date": "1877",
+        "fileName": "rossetti-sea-spell-1877"
+      },
+      {
+        "title": "Prosperpine",
+        "date": "1877",
+        "fileName": "rossetti-prosperpine-1877"
+      },
+      {
+        "title": "Pandora",
+        "date": "1879",
+        "fileName": "rossetti-pandora-1879"
+      },
+      {
+        "title": "The Day Dream",
+        "date": "1880",
+        "fileName": "rossetti-day-dream-1880"
+      },
+      {
+        "title": "Joan of Arc",
+        "date": "1882",
+        "fileName": "rossetti-joan-of-arc-1882"
       }
     ]
   }

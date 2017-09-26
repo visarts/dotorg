@@ -13,6 +13,7 @@
         padding: 1em;
         background: @secondaryThemeColor;
         min-width: 300px;
+        max-width: 50%;
         transition: all .2s;
 
         .artPickThumb {
@@ -31,6 +32,12 @@
           }
         }
 
+        .featuredSubtext {
+          color: darken(@mainLinkColor, 12%);
+          font-size: .9em;
+          line-height: 1.5em;
+        }
+
         &:hover {
           background: @mainLinkHoverColor;
           box-shadow: 3px 3px 10px @secondaryThemeColor;
@@ -39,6 +46,7 @@
         @media(max-width: @smallScreen) {
           width: 100%;
           min-width: auto;
+          max-width: 100%;
           margin-right: 0px;
         }
       }

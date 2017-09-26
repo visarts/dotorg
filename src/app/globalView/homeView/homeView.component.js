@@ -16,6 +16,22 @@ const HomeView = (props) => {
   const lit = author.content[contentFrequency] ? author.content[contentFrequency] : author.content[author.content.length - 1];
   const art = artist.content[contentFrequency] ? artist.content[contentFrequency] : artist.content[author.content.length - 1];
 
+  // the following is duplicated from listLink
+  const limitText = (text) => {
+    let limitedText = '';
+    let smallScreen = 768;
+    let textLimit = window.innerWidth >= smallScreen ? 200 : 100;
+    if (text) {
+      if (text.length > textLimit) {
+        limitedText = text.substring(0, textLimit);
+        limitedText = limitedText.substring(0, limitedText.lastIndexOf(' ')).concat('...');
+      } else {
+        limitedText = text;
+      }
+    }
+    return limitedText;
+  }
+
   const featuredContent = (() => {
     return (
       <div className="featured">
@@ -23,6 +39,7 @@ const HomeView = (props) => {
           <Link to={`/literature/a/${authorKeys[creatorFrequency]}`} className="featuredBlock">
             <h4 className="featureDescription"><em>{monthName}'s</em> Featured Author: </h4>
             <h2>{decodeURIComponent(`${author.fname} ${author.lname}`)}</h2>
+            <div className="featuredSubtext">{limitText(author.bio)}</div>
           </Link>
           <Link to={`/literature/a/${authorKeys[creatorFrequency]}/${lit.genre}/${lit.fileName}`} className="featuredBlock">
             <img
@@ -37,6 +54,7 @@ const HomeView = (props) => {
           <Link to={`/arts/a/${artistKeys[creatorFrequency]}`} className="featuredBlock">
             <h4 className="featureDescription"><em>{monthName}'s</em> Featured Artist: </h4>
             <h2>{decodeURIComponent(`${artist.fname} ${artist.lname}`)}</h2>
+            <div className="featuredSubtext">{limitText(artist.bio)}</div>
           </Link>
           <Link to={`/arts/a/${artistKeys[creatorFrequency]}/${artist.era}/${art.fileName}`} className="featuredBlock">
             <img

@@ -42,6 +42,6 @@ const GlobalNav = (props) => {
       </div>
     </nav>
   );
-}
+};
 
 export default GlobalNav;

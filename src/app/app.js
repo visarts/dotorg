@@ -15,6 +15,7 @@ export default class App extends React.Component {
     this.storeService.setStore(this.props.data);
     this.store = this.storeService.getStore();
     this.updateAppState = this.updateAppState.bind(this);
+    this.adjustBottomMargin = this.adjustBottomMargin.bind(this);
     this.currentLocation = location.hash.slice(1);
 
     this.state = {
@@ -40,14 +41,23 @@ export default class App extends React.Component {
     }
   }
 
+  adjustBottomMargin () {console.log('adjustBottomMargin');
+    document.querySelector('.globalView').style.marginBottom = `${parseInt(document.querySelector('.globalNav').offsetHeight) + 50}px`;
+  }
+
   // this will update when the route changes and set state with new params
   componentWillReceiveProps (nextProps) {
     let updatedLocation = nextProps.location.pathname;
     if (this.currentLocation !== updatedLocation) {
       this.setState({routing: dataService.getCurrentRouting(updatedLocation)}, () => {
         this.currentLocation = updatedLocation;
+        this.adjustBottomMargin();
       });
     }
+  }
+
+  componentDidMount () {
+    this.adjustBottomMargin();
   }
 
   render () {
@@ -67,7 +77,7 @@ export default class App extends React.Component {
 
       Add historical memory for read completion in literature
 
-      refactor arts carousel to use css animation and a single array 
+      refactor arts carousel to use css animation and a single array
     */
 
     return (
