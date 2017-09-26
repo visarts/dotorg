@@ -78,6 +78,8 @@ export default class App extends React.Component {
       Add historical memory for read completion in literature
 
       refactor arts carousel to use css animation and a single array
+
+      Get dynamic top and bottom margins for global container to accomodoate fixed header/footer
     */
 
     return (

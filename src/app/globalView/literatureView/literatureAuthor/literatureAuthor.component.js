@@ -71,30 +71,31 @@ const LiteratureAuthor = (props) => {
       <img src={`./content/portraits/authors/${authorKey}.jpg`} onError={loadDefaultProfileImage} />
     </div>
   </div>*/}
+
+  {/*<div style={{height: '7px', width: '25px', background: `linear-gradient(to right, #38e02c 0%, #38e02c 50%, black 50%)`}}></div>*/}
   return (
     <div className="literatureAuthor">
       <h1 className="literatureAuthorTitle"><span className="fname">{decodeURIComponent(`${author.fname} `)}</span><span className="lname">{decodeURIComponent(author.lname)}</span></h1>
       <div className="literatureAuthorBio">{ author.bio }</div>
-      <div style={{height: '7px', width: '25px', background: `linear-gradient(to right, #38e02c 0%, #38e02c 50%, black 50%)`}}></div>
       <div className="titlesContainer">
         {titles.shorts[0] && <div className="genreContainer">
-          <div className="titlesTitle"><h3>Short Stories</h3></div>
+          <h2>Short Stories</h2>
           <ul className="titles">{ titles.shorts }</ul>
         </div>}
         {titles.poetry[0] && <div className="genreContainer">
-          <div className="titlesTitle"><h3>Poetry</h3></div>
+          <h2>Poetry</h2>
           <ul className="titles">{ titles.poetry }</ul>
         </div>}
         {titles.nonfiction[0] && <div className="genreContainer">
-          <div className="titlesTitle"><h3>Nonfiction</h3></div>
+          <h2>Nonfiction</h2>
           <ul className="titles">{ titles.nonfiction }</ul>
         </div>}
         {titles.fables[0] && <div className="genreContainer">
-          <div className="titlesTitle"><h3>fables</h3></div>
+          <h2>Fables</h2>
           <ul className="titles">{ titles.fables }</ul>
         </div>}
         {titles.tales[0] && <div className="genreContainer">
-          <div className="titlesTitle"><h3>Tales</h3></div>
+          <h2>Fairy Tales</h2>
           <ul className="titles">{ titles.tales }</ul>
           {/*<div className="titlesFadeOut"></div>*/}
         </div>}

@@ -2,6 +2,12 @@
 @vLinkPadding: 6px;
 
 header {
+  position: fixed;
+  z-index: @navBase;
+  width: 100%;
+  top:0;
+  box-shadow: 0px 5px 25px 15px @secondaryThemeColor;
+
   .globalHeader {
     background: @secondaryThemeColor;
     position: relative;
@@ -21,14 +27,6 @@ header {
 
         .portitudeTitle {
           //font-size: 45px;
-        }
-
-        &.smallLogo {
-          font-size: 150%;
-
-          .portitudeTitle {
-            font-size: 30px;
-          }
         }
 
         a {
@@ -69,17 +67,6 @@ header {
       }
     }
   }
-  .globalHeaderFoot {
-    height: 30px;
-    background: linear-gradient(to bottom, @secondaryThemeColor, @mainThemeColor);
-    transition: all @defaultTransitionTimeout;
-
-    &.hidden {
-      display: block !important;
-      opacity: 0;
-      height: 0px;
-    }
-  }
 
   @media(max-width: @smallScreen) {
     a {
@@ -94,4 +81,15 @@ header {
     }
   }
 
+  &.smallLogo {
+    box-shadow: 0px 5px 25px 15px @mainThemeColor;
+
+    h1 {
+      font-size: 150%;
+
+      .portitudeTitle {
+        font-size: 30px;
+      }
+    }
+  }
 }

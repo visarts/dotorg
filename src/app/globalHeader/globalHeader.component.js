@@ -6,7 +6,7 @@ import './globalHeader.component.less';
 const GlobalHeader = (props) => {
 
   const routing = props.appState.routing;
-  const smallLogoClass = location.hash !== '#/' ? 'smallLogo' : '';
+  const smallLogoClass = routing.currentSection !== '' ? 'smallLogo' : '';
   const subHeader = routing.currentSection === 'literature' ? 'library' : routing.currentSection === 'arts' ? 'gallery' : routing.currentSection;
   const dataType = routing.currentSection === 'literature' ? 'authorsData' : 'artistsData';
   const currentCreator = routing.routeKey === 'a' && routing.currentCreator ?
@@ -19,7 +19,7 @@ const GlobalHeader = (props) => {
   const creatorUrl = currentCreator ? `${sectionUrl}/${routing.routeKey}/${subsection}` : '';
 
   return (
-    <header>
+    <header className={smallLogoClass}>
       <div className="globalHeader">
         <div className="globalContainer">
           <h1 className={smallLogoClass}>
@@ -41,7 +41,6 @@ const GlobalHeader = (props) => {
            />
         </div>
       </div>
-      <div className={`globalHeaderFoot ${smallLogoClass ? 'hidden' : ''}`}></div>
     </header>
   );
 }
