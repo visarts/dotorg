@@ -32,7 +32,7 @@ const ArtsEra = (props) => {
       if (titlesList.length) {
         artistsList.push(
           <div className="artistBlock" key={artistKey}>
-            <h3>{decodeURIComponent(artist.fname)} {decodeURIComponent(artist.lname)}</h3>
+            <h2>{decodeURIComponent(artist.fname)} {decodeURIComponent(artist.lname)}</h2>
             <ul className="contentBlock">
               {titlesList}
             </ul>

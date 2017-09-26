@@ -72,6 +72,7 @@ const HomeView = (props) => {
   return (
     <div className="homeView">
       <div className="section">
+        <h1>Welcome Home</h1>
         <div className="homeDescription">Immerse yourself in the beauty of artwork and literature from the masters of the genre, and enrich your store of knowledge.</div>
       </div>
       <div className="section">

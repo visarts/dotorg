@@ -4,16 +4,6 @@
 .listLink {
   margin-bottom: @hMargin;
 
-  &.listLinkThumbView {
-    margin-right: @hPadding;
-    min-width: 250px;
-    max-width: 350px;
-  }
-
-  &.listLinkInlined {
-    display: inline-block;
-    margin-right: 7px;
-  }
   a {
     padding: @hPadding @vPadding;
     //padding-bottom: @hPadding + @hPadding;
@@ -62,6 +52,17 @@
 
   h3 {
     margin-bottom: @smallPadding;
+  }
+
+  &.listLinkThumbView {
+    margin: @hPadding @hPadding @hPadding 0px;;
+    min-width: 250px;
+    flex-grow: 1;
+  }
+
+  &.listLinkInlined {
+    display: inline-block;
+    margin-right: 7px;
   }
 
   @media (max-width: @smallScreen) {

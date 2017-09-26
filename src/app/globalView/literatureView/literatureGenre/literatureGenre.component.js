@@ -32,7 +32,7 @@ const LiteratureGenre = (props) => {
       if (titlesList.length) {
         authorsList.push(
           <div className="authorBlock" key={authorKey}>
-            <h3>{author.fname} {author.lname}</h3>
+            <h2>{author.fname} {author.lname}</h2>
             <ul className="contentBlock">
               {titlesList}
             </ul>
@@ -48,7 +48,7 @@ const LiteratureGenre = (props) => {
   return (
     <div className="literatureGenre">
       <h1>{props.appState.routing.currentSubSection}</h1>
-      <h2>The best parts of waking up is {props.appState.routing.currentSubSection} in your browser</h2>
+      <div>The best parts of waking up is {props.appState.routing.currentSubSection} in your browser</div>
       <div className="genreContainer">
         {titles}
       </div>
