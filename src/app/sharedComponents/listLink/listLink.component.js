@@ -19,7 +19,7 @@ const ListLink = (props) => {
 
   if (props.thumb) {
     return (
-      <li className="listLink listLinkThumbView">
+      <li className={`listLink listLinkThumbView`}>
         <Link
           to={props.url}
           onClick={props.action}>

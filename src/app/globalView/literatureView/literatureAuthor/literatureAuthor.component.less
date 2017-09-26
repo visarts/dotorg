@@ -4,6 +4,10 @@
 
 .literatureAuthor {
 
+  .literatureAuthorTitle, .literatureAuthorBio {
+    margin-bottom: @hMargin;
+  }
+
   h1 {
 
     .fname {
@@ -16,39 +20,15 @@
     }
   }
 
-  .about {
-    width: 100%;
-    border-top-right-radius: @roundedEdge;
-    border-top-left-radius: @roundedEdge;
-    border-top: 6px solid @titlesBackground;
-    background: @tertiaryThemeColor;
-    display: inline-flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    margin: @hMargin 0;
+  .authorPic {
+    display: inline-block;
+    padding: @vPadding;
+    text-align: center;
 
-    .readMoreLink {
-      float: right;
-      margin-top: 10px;
-      font-size: @smallHeadline;
-    }
-    .authorPic, .bio {
-      display: inline-block;
-      padding: @vPadding;
-    }
-    .authorPic {
-      text-align: center;
-
-      img {
-        border: 1px solid @titlesBackground;
-        max-width: 200px;
-        //width: 100%;
-      }
-    }
-    .bio {
-      //max-width: 40%;
-      //margin: @vMargin 0;
+    img {
+      border: 1px solid @titlesBackground;
+      max-width: 200px;
+      //width: 100%;
     }
   }
 
@@ -116,13 +96,11 @@
   }
 
   @media(max-width: 767px) {
-    .about {
-      flex-wrap: wrap;
 
-      .authorPic {
-        width: 100%;
-      }
+    .authorPic {
+      width: 100%;
     }
+
     .titlesContainer {
       .genreContainer {
         .titles {

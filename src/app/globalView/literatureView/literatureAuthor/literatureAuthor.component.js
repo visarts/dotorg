@@ -6,7 +6,7 @@ import ListLink from 'SharedComponents/listLink/listLink.component';
 import './literatureAuthor.component.less';
 
 const LiteratureAuthor = (props) => {
-  //document.querySelector('body').scrollTop = 0;
+  document.querySelector('body').scrollTop = 0;
 
   const authorKey = props.match.params.author;
   const author = props.store.authorsData[authorKey];
@@ -66,17 +66,16 @@ const LiteratureAuthor = (props) => {
 
   //const percentage = JSON.parse(localStorage.getItem('readtest')).percentage;
   //console.log(percentage);
+  {/*<div className="about">
+    <div className="authorPic">
+      <img src={`./content/portraits/authors/${authorKey}.jpg`} onError={loadDefaultProfileImage} />
+    </div>
+  </div>*/}
   return (
     <div className="literatureAuthor">
-      <h1><span className="fname">{author.fname}</span> <span className="lname">{author.lname}</span></h1>
+      <h1 className="literatureAuthorTitle"><span className="fname">{decodeURIComponent(`${author.fname} `)}</span><span className="lname">{decodeURIComponent(author.lname)}</span></h1>
+      <div className="literatureAuthorBio">{ author.bio }</div>
       <div style={{height: '7px', width: '25px', background: `linear-gradient(to right, #38e02c 0%, #38e02c 50%, black 50%)`}}></div>
-      <div className="about">
-        <div className="authorPic">
-          <img src="./content/artwork/creatorkey/creatorkey-picture-1-1111_sm.jpg" />
-          {/*<img src={`./content/portraits/authors/${authorKey}.jpg`} onError={loadDefaultProfileImage} />*/}
-        </div>
-        <div className="bio">{author.bio}<div className="readMoreLink"><a href="#" target="_blank">Read More <Glyphicon glyph="new-window" /></a></div></div>
-      </div>
       <div className="titlesContainer">
         {titles.shorts[0] && <div className="genreContainer">
           <div className="titlesTitle"><h3>Short Stories</h3></div>
