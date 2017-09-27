@@ -4,6 +4,7 @@ import { Glyphicon } from 'react-bootstrap';
 //import historyService from 'Services/history.service';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
 import ListLink from 'SharedComponents/listLink/listLink.component';
+import SectionHeader from 'SharedComponents/sectionHeader/sectionHeader.component';
 import './artsEra.component.less';
 
 
@@ -32,7 +33,7 @@ const ArtsEra = (props) => {
       if (titlesList.length) {
         artistsList.push(
           <div className="artistBlock" key={artistKey}>
-            <h2>{decodeURIComponent(artist.fname)} {decodeURIComponent(artist.lname)}</h2>
+            <SectionHeader text={`${decodeURIComponent(artist.fname)} ${decodeURIComponent(artist.lname)}`} />
             <ul className="contentBlock">
               {titlesList}
             </ul>

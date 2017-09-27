@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Glyphicon } from 'react-bootstrap';
 //import historyService from 'Services/history.service';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
+import SectionHeader from 'SharedComponents/sectionHeader/sectionHeader.component';
 import ListLink from 'SharedComponents/listLink/listLink.component';
 import './literatureGenre.component.less';
 
@@ -32,7 +33,7 @@ const LiteratureGenre = (props) => {
       if (titlesList.length) {
         authorsList.push(
           <div className="authorBlock" key={authorKey}>
-            <h2>{author.fname} {author.lname}</h2>
+            <SectionHeader text={`${author.fname} ${author.lname}`} />
             <ul className="contentBlock">
               {titlesList}
             </ul>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import SectionHeader from 'SharedComponents/sectionHeader/sectionHeader.component';
 import LiteratureHistory from 'SharedComponents/literatureHistory/literatureHistory.component';
 import ListLink from 'SharedComponents/listLink/listLink.component';
 import './literatureHome.component.less';
@@ -31,7 +32,7 @@ const LiteratureHome = (props) => {
       <div className="homeDescription">Classic literature lines the dusty shelves. Make yourself right at home.</div>
       <LiteratureHistory />
       <div className="titlesContainer">
-        <h2>The Genres</h2>
+        <SectionHeader text="The Genres" />
         <ul className="genresList">
           <ListLink url={`literature/g/shorts`} text="Short Stories" inlined={true} />
           <ListLink url={`literature/g/poetry`} text="Poetry" inlined={true} />
@@ -41,7 +42,7 @@ const LiteratureHome = (props) => {
         </ul>
       </div>
       <div className="titlesContainer">
-        <h2>The Authors</h2>
+        <SectionHeader text="The Authors" />
         <ul className="authorsList">{authorsList}</ul>
       </div>
     </div>

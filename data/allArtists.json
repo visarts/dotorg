@@ -148,115 +148,6 @@
     ]
   }
 ,
-  "cassatt": {
-    "fname": "Mary",
-    "lname": "Cassatt",
-    "bio": "Mary Stevenson Cassatt (May 22, 1844 – June 14, 1926) was an American painter and printmaker. She was born in Pennsylvania, but lived much of her adult life in France, where she first befriended Edgar Degas and later exhibited among the Impressionists. Cassatt often created images of the social and private lives of women, with particular emphasis on the intimate bonds between mothers and children.",
-    "era": "Impressionism",
-    "content": [
-      {
-        "title": "Child Drinking Milk",
-        "date": "1868",
-        "fileName": "cassatt-child-drinking-milk-1868"
-      },
-      {
-        "title": "Bacchante",
-        "date": "1872",
-        "fileName": "cassatt-bacchante-1872"
-      },
-      {
-        "title": "During a Carnival",
-        "date": "1872",
-        "fileName": "cassatt-during-a-carnival-1872"
-      },
-      {
-        "title": "A Musical Party",
-        "date": "1874",
-        "fileName": "cassatt-musical-party-1874"
-      },
-      {
-        "title": "Portrait of a Little Girl",
-        "date": "1874",
-        "fileName": "cassatt-portrait-of-a-little-girl-1874"
-      },
-      {
-        "title": "Poppies in a Field",
-        "date": "1880",
-        "fileName": "cassatt-poppies-in-a-field-1880"
-      },
-      {
-        "title": "Lady at the Tea Table",
-        "date": "1883",
-        "fileName": "cassatt-lady-at-the-tea-table-1883"
-      },
-      {
-        "title": "Girl Arranging Her Hair",
-        "date": "1886",
-        "fileName": "cassatt-girl-arranging-her-hair-1886"
-      },
-      {
-        "title": "At the Window",
-        "date": "1889",
-        "fileName": "cassatt-at-the-window-1889"
-      },
-      {
-        "title": "Lilacs in a Window",
-        "date": "1889",
-        "fileName": "cassatt-lilacs-in-a-window-1889"
-      },
-      {
-        "title": "Contemplation",
-        "date": "1889",
-        "fileName": "cassatt-contemplation-1889"
-      },
-      {
-        "title": "Gathering Fruit",
-        "date": "1893",
-        "fileName": "cassatt-gathering-fruit-1893"
-      },
-      {
-        "title": "Girl With Banjo",
-        "date": "1894",
-        "fileName": "cassatt-girl-with-banjo-1894"
-      },
-      {
-        "title": "In the Park",
-        "date": "1894",
-        "fileName": "cassatt-in-the-park-1894"
-      },
-      {
-        "title": "On the Water",
-        "date": "1895",
-        "fileName": "cassatt-on-the-water-1895"
-      },
-      {
-        "title": "Maternal Kiss",
-        "date": "1896",
-        "fileName": "cassatt-maternal-kiss-1896"
-      },
-      {
-        "title": "Breakfast in Bed",
-        "date": "1897",
-        "fileName": "cassatt-breakfast-in-bed-1897"
-      },
-      {
-        "title": "Pattycake",
-        "date": "1897",
-        "fileName": "cassatt-pattycake-1897"
-      },
-      {
-        "title": "Mother and Child",
-        "date": "1900",
-        "fileName": "cassatt-mother-and-child-1900"
-      },
-      {
-        "title": "Margot in Blue",
-        "date": "1902",
-        "fileName": "cassatt-margot-in-blue-1902"
-      }
-    ]
-  }
-,
   "cezanne": {
     "fname": "Paul",
     "lname": "Cezanne",
@@ -366,111 +257,111 @@
     ]
   }
 ,
-  "creatorkey": {
-    "fname": "Fname",
-    "lname": "Lname",
-    "bio": "This is an artist for testing. For testing indeed, there is plenty to write but not much to say, as this artist never existed and likely never will. ",
+  "cassatt": {
+    "fname": "Mary",
+    "lname": "Cassatt",
+    "bio": "Mary Stevenson Cassatt (May 22, 1844 – June 14, 1926) was an American painter and printmaker. She was born in Pennsylvania, but lived much of her adult life in France, where she first befriended Edgar Degas and later exhibited among the Impressionists. Cassatt often created images of the social and private lives of women, with particular emphasis on the intimate bonds between mothers and children.",
     "era": "Impressionism",
     "content": [
       {
-        "title": "Picture 1",
-        "date": "1111",
-        "fileName": "creatorkey-picture-1-1111"
+        "title": "Child Drinking Milk",
+        "date": "1868",
+        "fileName": "cassatt-child-drinking-milk-1868"
       },
       {
-        "title": "Picture 2",
-        "date": "1112",
-        "fileName": "creatorkey-picture-2-1112"
+        "title": "Bacchante",
+        "date": "1872",
+        "fileName": "cassatt-bacchante-1872"
       },
       {
-        "title": "Picture 3",
-        "date": "1113",
-        "fileName": "creatorkey-picture-3-1113"
+        "title": "During a Carnival",
+        "date": "1872",
+        "fileName": "cassatt-during-a-carnival-1872"
       },
       {
-        "title": "Picture 4",
-        "date": "1114",
-        "fileName": "creatorkey-picture-4-1114"
+        "title": "A Musical Party",
+        "date": "1874",
+        "fileName": "cassatt-musical-party-1874"
       },
       {
-        "title": "Picture 5",
-        "date": "1115",
-        "fileName": "creatorkey-picture-5-1115"
+        "title": "Portrait of a Little Girl",
+        "date": "1874",
+        "fileName": "cassatt-portrait-of-a-little-girl-1874"
       },
       {
-        "title": "Picture 6",
-        "date": "1116",
-        "fileName": "creatorkey-picture-6-1116"
+        "title": "Poppies in a Field",
+        "date": "1880",
+        "fileName": "cassatt-poppies-in-a-field-1880"
       },
       {
-        "title": "Picture 7",
-        "date": "1117",
-        "fileName": "creatorkey-picture-7-1117"
+        "title": "Lady at the Tea Table",
+        "date": "1883",
+        "fileName": "cassatt-lady-at-the-tea-table-1883"
       },
       {
-        "title": "Picture 8",
-        "date": "1118",
-        "fileName": "creatorkey-picture-8-1118"
+        "title": "Girl Arranging Her Hair",
+        "date": "1886",
+        "fileName": "cassatt-girl-arranging-her-hair-1886"
       },
       {
-        "title": "Picture 9",
-        "date": "1119",
-        "fileName": "creatorkey-picture-9-1119"
+        "title": "At the Window",
+        "date": "1889",
+        "fileName": "cassatt-at-the-window-1889"
       },
       {
-        "title": "Picture 10",
-        "date": "1121",
-        "fileName": "creatorkey-picture-10-1121"
+        "title": "Lilacs in a Window",
+        "date": "1889",
+        "fileName": "cassatt-lilacs-in-a-window-1889"
       },
       {
-        "title": "Picture 11",
-        "date": "1122",
-        "fileName": "creatorkey-picture-11-1122"
+        "title": "Contemplation",
+        "date": "1889",
+        "fileName": "cassatt-contemplation-1889"
       },
       {
-        "title": "Picture 12",
-        "date": "1123",
-        "fileName": "creatorkey-picture-12-1123"
+        "title": "Gathering Fruit",
+        "date": "1893",
+        "fileName": "cassatt-gathering-fruit-1893"
       },
       {
-        "title": "Picture 13",
-        "date": "1124",
-        "fileName": "creatorkey-picture-13-1124"
+        "title": "Girl With Banjo",
+        "date": "1894",
+        "fileName": "cassatt-girl-with-banjo-1894"
       },
       {
-        "title": "Picture 14",
-        "date": "1125",
-        "fileName": "creatorkey-picture-14-1125"
+        "title": "In the Park",
+        "date": "1894",
+        "fileName": "cassatt-in-the-park-1894"
       },
       {
-        "title": "Picture 15",
-        "date": "1126",
-        "fileName": "creatorkey-picture-15-1126"
+        "title": "On the Water",
+        "date": "1895",
+        "fileName": "cassatt-on-the-water-1895"
       },
       {
-        "title": "Picture 16",
-        "date": "1127",
-        "fileName": "creatorkey-picture-16-1127"
+        "title": "Maternal Kiss",
+        "date": "1896",
+        "fileName": "cassatt-maternal-kiss-1896"
       },
       {
-        "title": "Picture 17",
-        "date": "1128",
-        "fileName": "creatorkey-picture-17-1128"
+        "title": "Breakfast in Bed",
+        "date": "1897",
+        "fileName": "cassatt-breakfast-in-bed-1897"
       },
       {
-        "title": "Picture 18",
-        "date": "1129",
-        "fileName": "creatorkey-picture-18-1129"
+        "title": "Pattycake",
+        "date": "1897",
+        "fileName": "cassatt-pattycake-1897"
       },
       {
-        "title": "Picture 19",
-        "date": "1131",
-        "fileName": "creatorkey-picture-19-1131"
+        "title": "Mother and Child",
+        "date": "1900",
+        "fileName": "cassatt-mother-and-child-1900"
       },
       {
-        "title": "Picture 20",
-        "date": "1132",
-        "fileName": "creatorkey-picture-20-1132"
+        "title": "Margot in Blue",
+        "date": "1902",
+        "fileName": "cassatt-margot-in-blue-1902"
       }
     ]
   }
@@ -584,111 +475,111 @@
     ]
   }
 ,
-  "gauguin": {
-    "fname": "Paul",
-    "lname": "Gauguin",
-    "bio": "Eugène Henri Paul Gauguin (7 June 1848 – 8 May 1903) was a French post-Impressionist artist. Underappreciated until after his death, Gauguin is now recognized for his experimental use of color and Synthetist style that were distinctly different from Impressionism. His work was influential to the French avant-garde and many modern artists, such as Pablo Picasso and Henri Matisse.",
-    "era": "Post-Impressionism",
+  "creatorkey": {
+    "fname": "Fname",
+    "lname": "Lname",
+    "bio": "This is an artist for testing. For testing indeed, there is plenty to write but not much to say, as this artist never existed and likely never will. ",
+    "era": "Impressionism",
     "content": [
       {
-        "title": "A Clearing",
-        "date": "1874",
-        "fileName": "gauguin-clearing-1874"
+        "title": "Picture 1",
+        "date": "1111",
+        "fileName": "creatorkey-picture-1-1111"
       },
       {
-        "title": "Blue Barge",
-        "date": "1882",
-        "fileName": "gauguin-blue-barge-1882"
+        "title": "Picture 2",
+        "date": "1112",
+        "fileName": "creatorkey-picture-2-1112"
       },
       {
-        "title": "Basket of Flowers",
-        "date": "1884",
-        "fileName": "gauguin-basket-of-flowers-1884"
+        "title": "Picture 3",
+        "date": "1113",
+        "fileName": "creatorkey-picture-3-1113"
       },
       {
-        "title": "Bare Trees",
-        "date": "1885",
-        "fileName": "gauguin-bare-trees-1885"
+        "title": "Picture 4",
+        "date": "1114",
+        "fileName": "creatorkey-picture-4-1114"
       },
       {
-        "title": "Boy by the Water",
-        "date": "1885",
-        "fileName": "gauguin-boy-by-the-water-1885"
+        "title": "Picture 5",
+        "date": "1115",
+        "fileName": "creatorkey-picture-5-1115"
       },
       {
-        "title": "Lilac Bouquet",
-        "date": "1885",
-        "fileName": "gauguin-lilac-bouquet-1885"
+        "title": "Picture 6",
+        "date": "1116",
+        "fileName": "creatorkey-picture-6-1116"
       },
       {
-        "title": "Rocky Coast",
-        "date": "1886",
-        "fileName": "gauguin-rocky-coast-1886"
+        "title": "Picture 7",
+        "date": "1117",
+        "fileName": "creatorkey-picture-7-1117"
       },
       {
-        "title": "By the Seashore",
-        "date": "1887",
-        "fileName": "gauguin-by-the-seashore-1887"
+        "title": "Picture 8",
+        "date": "1118",
+        "fileName": "creatorkey-picture-8-1118"
       },
       {
-        "title": "Huts Under the Trees",
-        "date": "1887",
-        "fileName": "gauguin-huts-under-the-trees-1887"
+        "title": "Picture 9",
+        "date": "1119",
+        "fileName": "creatorkey-picture-9-1119"
       },
       {
-        "title": "Apples and Bowl",
-        "date": "1888",
-        "fileName": "gauguin-apples-and-bowl-1888"
+        "title": "Picture 10",
+        "date": "1121",
+        "fileName": "creatorkey-picture-10-1121"
       },
       {
-        "title": "Blue Trees",
-        "date": "1888",
-        "fileName": "gauguin-blue-trees-1888"
+        "title": "Picture 11",
+        "date": "1122",
+        "fileName": "creatorkey-picture-11-1122"
       },
       {
-        "title": "Haymaking",
-        "date": "1888",
-        "fileName": "gauguin-haymaking-1888"
+        "title": "Picture 12",
+        "date": "1123",
+        "fileName": "creatorkey-picture-12-1123"
       },
       {
-        "title": "Madame Roulin",
-        "date": "1888",
-        "fileName": "gauguin-madame-roulin-1888"
+        "title": "Picture 13",
+        "date": "1124",
+        "fileName": "creatorkey-picture-13-1124"
       },
       {
-        "title": "Night Cafe at Arles",
-        "date": "1888",
-        "fileName": "gauguin-night-cafe-at-arles-1888"
+        "title": "Picture 14",
+        "date": "1125",
+        "fileName": "creatorkey-picture-14-1125"
       },
       {
-        "title": "Among the Lillies",
-        "date": "1889",
-        "fileName": "gauguin-among-the-lillies-1889"
+        "title": "Picture 15",
+        "date": "1126",
+        "fileName": "creatorkey-picture-15-1126"
       },
       {
-        "title": "Flutist on the Cliffs",
-        "date": "1889",
-        "fileName": "gauguin-flutist-on-the-cliffs-1889"
+        "title": "Picture 16",
+        "date": "1127",
+        "fileName": "creatorkey-picture-16-1127"
       },
       {
-        "title": "Still Life with Fan",
-        "date": "1889",
-        "fileName": "gauguin-still-life-with-fan-1889"
+        "title": "Picture 17",
+        "date": "1128",
+        "fileName": "creatorkey-picture-17-1128"
       },
       {
-        "title": "Tahitian Woman Bathing",
-        "date": "1892",
-        "fileName": "gauguin-tahitian-woman-bathing-1892"
+        "title": "Picture 18",
+        "date": "1129",
+        "fileName": "creatorkey-picture-18-1129"
       },
       {
-        "title": "Farm in Brittany",
-        "date": "1894",
-        "fileName": "gauguin-farm-in-brittany-1894"
+        "title": "Picture 19",
+        "date": "1131",
+        "fileName": "creatorkey-picture-19-1131"
       },
       {
-        "title": "Tahitian Landscape",
-        "date": "1897",
-        "fileName": "gauguin-tahitian-landscape-1897"
+        "title": "Picture 20",
+        "date": "1132",
+        "fileName": "creatorkey-picture-20-1132"
       }
     ]
   }
@@ -1016,6 +907,115 @@
         "title": "Conversion of Saul",
         "date": "1511",
         "fileName": "michelangelo-conversion-of-saul-1511"
+      }
+    ]
+  }
+,
+  "gauguin": {
+    "fname": "Paul",
+    "lname": "Gauguin",
+    "bio": "Eugène Henri Paul Gauguin (7 June 1848 – 8 May 1903) was a French post-Impressionist artist. Underappreciated until after his death, Gauguin is now recognized for his experimental use of color and Synthetist style that were distinctly different from Impressionism. His work was influential to the French avant-garde and many modern artists, such as Pablo Picasso and Henri Matisse.",
+    "era": "Post-Impressionism",
+    "content": [
+      {
+        "title": "A Clearing",
+        "date": "1874",
+        "fileName": "gauguin-clearing-1874"
+      },
+      {
+        "title": "Blue Barge",
+        "date": "1882",
+        "fileName": "gauguin-blue-barge-1882"
+      },
+      {
+        "title": "Basket of Flowers",
+        "date": "1884",
+        "fileName": "gauguin-basket-of-flowers-1884"
+      },
+      {
+        "title": "Bare Trees",
+        "date": "1885",
+        "fileName": "gauguin-bare-trees-1885"
+      },
+      {
+        "title": "Boy by the Water",
+        "date": "1885",
+        "fileName": "gauguin-boy-by-the-water-1885"
+      },
+      {
+        "title": "Lilac Bouquet",
+        "date": "1885",
+        "fileName": "gauguin-lilac-bouquet-1885"
+      },
+      {
+        "title": "Rocky Coast",
+        "date": "1886",
+        "fileName": "gauguin-rocky-coast-1886"
+      },
+      {
+        "title": "By the Seashore",
+        "date": "1887",
+        "fileName": "gauguin-by-the-seashore-1887"
+      },
+      {
+        "title": "Huts Under the Trees",
+        "date": "1887",
+        "fileName": "gauguin-huts-under-the-trees-1887"
+      },
+      {
+        "title": "Apples and Bowl",
+        "date": "1888",
+        "fileName": "gauguin-apples-and-bowl-1888"
+      },
+      {
+        "title": "Blue Trees",
+        "date": "1888",
+        "fileName": "gauguin-blue-trees-1888"
+      },
+      {
+        "title": "Haymaking",
+        "date": "1888",
+        "fileName": "gauguin-haymaking-1888"
+      },
+      {
+        "title": "Madame Roulin",
+        "date": "1888",
+        "fileName": "gauguin-madame-roulin-1888"
+      },
+      {
+        "title": "Night Cafe at Arles",
+        "date": "1888",
+        "fileName": "gauguin-night-cafe-at-arles-1888"
+      },
+      {
+        "title": "Among the Lillies",
+        "date": "1889",
+        "fileName": "gauguin-among-the-lillies-1889"
+      },
+      {
+        "title": "Flutist on the Cliffs",
+        "date": "1889",
+        "fileName": "gauguin-flutist-on-the-cliffs-1889"
+      },
+      {
+        "title": "Still Life with Fan",
+        "date": "1889",
+        "fileName": "gauguin-still-life-with-fan-1889"
+      },
+      {
+        "title": "Tahitian Woman Bathing",
+        "date": "1892",
+        "fileName": "gauguin-tahitian-woman-bathing-1892"
+      },
+      {
+        "title": "Farm in Brittany",
+        "date": "1894",
+        "fileName": "gauguin-farm-in-brittany-1894"
+      },
+      {
+        "title": "Tahitian Landscape",
+        "date": "1897",
+        "fileName": "gauguin-tahitian-landscape-1897"
       }
     ]
   }
@@ -1504,115 +1504,6 @@
     ]
   }
 ,
-  "rossetti": {
-    "fname": "Dante",
-    "lname": "Rossetti",
-    "bio": "Dante Gabriel Rossetti (12 May 1828 – 9 April 1882) was a British poet, illustrator, painter and translator. He founded the Pre-Raphaelite Brotherhood in 1848 with William Holman Hunt and John Everett Millais. Rossetti was later to be the main inspiration for a second generation of artists and writers influenced by the movement, most notably William Morris and Edward Burne-Jones. His work also influenced the European Symbolists and was a major precursor of the Aesthetic movement.",
-    "era": "Pre-Raphaelite",
-    "content": [
-      {
-        "title": "Found",
-        "date": "1854",
-        "fileName": "rossetti-found-1854"
-      },
-      {
-        "title": "Before the Battle",
-        "date": "1858",
-        "fileName": "rossetti-before-the-battle-1858"
-      },
-      {
-        "title": "Bocca Baciata",
-        "date": "1859",
-        "fileName": "rossetti-bocca-baciata-1859"
-      },
-      {
-        "title": "Sir Galahad at the Ruined Chapel",
-        "date": "1859",
-        "fileName": "rossetti-sir-galahad-at-the-ruined-chapel-1859"
-      },
-      {
-        "title": "Jane Morris",
-        "date": "1860",
-        "fileName": "rossetti-jane-morris-1860"
-      },
-      {
-        "title": "Fair Rosamund",
-        "date": "1861",
-        "fileName": "rossetti-fair-rosamund-1861"
-      },
-      {
-        "title": "The Annunciation",
-        "date": "1861",
-        "fileName": "rossetti-annunciation-1861"
-      },
-      {
-        "title": "Joan of Arc",
-        "date": "1864",
-        "fileName": "rossetti-joan-of-arc-1864"
-      },
-      {
-        "title": "Morning Music",
-        "date": "1864",
-        "fileName": "rossetti-morning-music-1864"
-      },
-      {
-        "title": "The Beloved",
-        "date": "1866",
-        "fileName": "rossetti-beloved-1866"
-      },
-      {
-        "title": "The Loving Cup",
-        "date": "1867",
-        "fileName": "rossetti-loving-cup-1867"
-      },
-      {
-        "title": "The Tune of Seven Towers",
-        "date": "1867",
-        "fileName": "rossetti-tune-of-seven-towers-1867"
-      },
-      {
-        "title": "Lady Lilith",
-        "date": "1868",
-        "fileName": "rossetti-lady-lilith-1868"
-      },
-      {
-        "title": "Mariana",
-        "date": "1870",
-        "fileName": "rossetti-mariana-1870"
-      },
-      {
-        "title": "The Bower Meadow",
-        "date": "1872",
-        "fileName": "rossetti-bower-meadow-1872"
-      },
-      {
-        "title": "A Sea Spell",
-        "date": "1877",
-        "fileName": "rossetti-sea-spell-1877"
-      },
-      {
-        "title": "Prosperpine",
-        "date": "1877",
-        "fileName": "rossetti-prosperpine-1877"
-      },
-      {
-        "title": "Pandora",
-        "date": "1879",
-        "fileName": "rossetti-pandora-1879"
-      },
-      {
-        "title": "The Day Dream",
-        "date": "1880",
-        "fileName": "rossetti-day-dream-1880"
-      },
-      {
-        "title": "Joan of Arc",
-        "date": "1882",
-        "fileName": "rossetti-joan-of-arc-1882"
-      }
-    ]
-  }
-,
   "rousseau": {
     "fname": "Henri",
     "lname": "Rousseau",
@@ -1722,111 +1613,111 @@
     ]
   }
 ,
-  "sargent": {
-    "fname": "John Singer",
-    "lname": "Sargent",
-    "bio": "John Singer Sargent (January 12, 1856 – April 14, 1925) was an American artist, considered the 'leading portrait painter of his generation' for his evocations of Edwardian era luxury. During his career, he created roughly 900 oil paintings and more than 2,000 watercolors, as well as countless sketches and charcoal drawings.",
-    "era": "Realism",
+  "rossetti": {
+    "fname": "Dante",
+    "lname": "Rossetti",
+    "bio": "Dante Gabriel Rossetti (12 May 1828 – 9 April 1882) was a British poet, illustrator, painter and translator. He founded the Pre-Raphaelite Brotherhood in 1848 with William Holman Hunt and John Everett Millais. Rossetti was later to be the main inspiration for a second generation of artists and writers influenced by the movement, most notably William Morris and Edward Burne-Jones. His work also influenced the European Symbolists and was a major precursor of the Aesthetic movement.",
+    "era": "Pre-Raphaelite",
     "content": [
       {
-        "title": "Seascape",
-        "date": "1875",
-        "fileName": "sargent-seascape-1875"
+        "title": "Found",
+        "date": "1854",
+        "fileName": "rossetti-found-1854"
       },
       {
-        "title": "Nice",
-        "date": "1884",
-        "fileName": "sargent-nice-1884"
+        "title": "Before the Battle",
+        "date": "1858",
+        "fileName": "rossetti-before-the-battle-1858"
       },
       {
-        "title": "Home Fields",
-        "date": "1885",
-        "fileName": "sargent-home-fields-1885"
+        "title": "Bocca Baciata",
+        "date": "1859",
+        "fileName": "rossetti-bocca-baciata-1859"
       },
       {
-        "title": "Poppies",
-        "date": "1886",
-        "fileName": "sargent-poppies-1886"
+        "title": "Sir Galahad at the Ruined Chapel",
+        "date": "1859",
+        "fileName": "rossetti-sir-galahad-at-the-ruined-chapel-1859"
       },
       {
-        "title": "A Morning Walk",
-        "date": "1888",
-        "fileName": "sargent-morning-walk-1888"
+        "title": "Jane Morris",
+        "date": "1860",
+        "fileName": "rossetti-jane-morris-1860"
       },
       {
-        "title": "By the River",
-        "date": "1888",
-        "fileName": "sargent-by-the-river-1888"
+        "title": "Fair Rosamund",
+        "date": "1861",
+        "fileName": "rossetti-fair-rosamund-1861"
       },
       {
-        "title": "On the Canal",
-        "date": "1903",
-        "fileName": "sargent-on-the-canal-1903"
+        "title": "The Annunciation",
+        "date": "1861",
+        "fileName": "rossetti-annunciation-1861"
       },
       {
-        "title": "Black Tent",
-        "date": "1906",
-        "fileName": "sargent-black-tent-1906"
+        "title": "Joan of Arc",
+        "date": "1864",
+        "fileName": "rossetti-joan-of-arc-1864"
       },
       {
-        "title": "Hills of Galilee",
-        "date": "1906",
-        "fileName": "sargent-hills-of-galilee-1906"
+        "title": "Morning Music",
+        "date": "1864",
+        "fileName": "rossetti-morning-music-1864"
       },
       {
-        "title": "A Hotel Room",
-        "date": "1907",
-        "fileName": "sargent-hotel-room-1907"
+        "title": "The Beloved",
+        "date": "1866",
+        "fileName": "rossetti-beloved-1866"
       },
       {
-        "title": "A Siesta",
-        "date": "1907",
-        "fileName": "sargent-siesta-1907"
+        "title": "The Loving Cup",
+        "date": "1867",
+        "fileName": "rossetti-loving-cup-1867"
       },
       {
-        "title": "Gourds",
-        "date": "1908",
-        "fileName": "sargent-gourds-1909"
+        "title": "The Tune of Seven Towers",
+        "date": "1867",
+        "fileName": "rossetti-tune-of-seven-towers-1867"
       },
       {
-        "title": "Boy on a Rock",
-        "date": "1909",
-        "fileName": "sargent-boy-on-a-rock-1909"
+        "title": "Lady Lilith",
+        "date": "1868",
+        "fileName": "rossetti-lady-lilith-1868"
       },
       {
-        "title": "Glacier Streams",
-        "date": "1909",
-        "fileName": "sargent-glacier-streams-1909"
+        "title": "Mariana",
+        "date": "1870",
+        "fileName": "rossetti-mariana-1870"
       },
       {
-        "title": "A Waterfall",
-        "date": "1910",
-        "fileName": "sargent-waterfall-1910"
+        "title": "The Bower Meadow",
+        "date": "1872",
+        "fileName": "rossetti-bower-meadow-1872"
       },
       {
-        "title": "In the Alps",
-        "date": "1910",
-        "fileName": "sargent-in-the-alps-1910"
+        "title": "A Sea Spell",
+        "date": "1877",
+        "fileName": "rossetti-sea-spell-1877"
       },
       {
-        "title": "Oxen Resting",
-        "date": "1910",
-        "fileName": "sargent-oxen-resting-1910"
+        "title": "Prosperpine",
+        "date": "1877",
+        "fileName": "rossetti-prosperpine-1877"
       },
       {
-        "title": "Magnolias",
-        "date": "1912",
-        "fileName": "sargent-magnolias-1912"
+        "title": "Pandora",
+        "date": "1879",
+        "fileName": "rossetti-pandora-1879"
       },
       {
-        "title": "Girl Fishing",
-        "date": "1913",
-        "fileName": "sargent-girl-fishing-1913"
+        "title": "The Day Dream",
+        "date": "1880",
+        "fileName": "rossetti-day-dream-1880"
       },
       {
-        "title": "Palms",
-        "date": "1917",
-        "fileName": "sargent-palms-1917"
+        "title": "Joan of Arc",
+        "date": "1882",
+        "fileName": "rossetti-joan-of-arc-1882"
       }
     ]
   }
@@ -2089,71 +1980,111 @@
     ]
   }
 ,
-  "vonamerling": {
-    "fname": "Friedrich",
-    "lname": "Von Amerling",
-    "bio": "Friedrich von Amerling (14 April 1803 – 14 January 1887) was an Austro-Hungarian portrait painter in the court of Franz Josef. He was born in Vienna and was court painter between 1835 and 1880. With Ferdinand Georg Waldmüller he is one of the outstanding Austrian portrait painters of the 19th century.",
-    "era": "Academic",
+  "sargent": {
+    "fname": "John Singer",
+    "lname": "Sargent",
+    "bio": "John Singer Sargent (January 12, 1856 – April 14, 1925) was an American artist, considered the 'leading portrait painter of his generation' for his evocations of Edwardian era luxury. During his career, he created roughly 900 oil paintings and more than 2,000 watercolors, as well as countless sketches and charcoal drawings.",
+    "era": "Realism",
     "content": [
       {
-        "title": "Rudolph von Arthaber with His Children",
-        "date": "1830",
-        "fileName": "vonamerling-rudolph-von-arthaber-with-his-children-1830"
+        "title": "Seascape",
+        "date": "1875",
+        "fileName": "sargent-seascape-1875"
       },
       {
-        "title": "Emporer Franz I",
-        "date": "1832",
-        "fileName": "vonamerling-emporer-franz-i-1832"
-      },
-      {
-        "title": "Self Portrait",
-        "date": "1834",
-        "fileName": "vonamerling-self-portrait-1834"
-      },
-      {
-        "title": "Lost in Dreams",
-        "date": "1835",
-        "fileName": "vonamerling-lost-in-dreams-1835"
-      },
-      {
-        "title": "Count Istvan Szechenyi",
-        "date": "1836",
-        "fileName": "vonamerling-count-istvan-szechenyi-1836"
-      },
-      {
-        "title": "Prinzessin Marie Franziska",
-        "date": "1836",
-        "fileName": "vonamerling-prinzessin-marie-franziska-1836"
-      },
-      {
-        "title": "Portrait of a Girl",
-        "date": "1837",
-        "fileName": "vonamerling-portrait-of-a-girl-1837"
-      },
-      {
-        "title": "Oriental Woman",
-        "date": "1838",
-        "fileName": "vonamerling-oriental-woman-1838"
-      },
-      {
-        "title": "Countess Nako",
-        "date": "1855",
-        "fileName": "vonamerling-countess-nako-1855"
-      },
-      {
-        "title": "Charity",
-        "date": "1856",
-        "fileName": "vonamerling-charity-1856"
-      },
-      {
-        "title": "Kaiser Franz I",
+        "title": "Nice",
         "date": "1884",
-        "fileName": "vonamerling-kaiser-franz-i-1884"
+        "fileName": "sargent-nice-1884"
       },
       {
-        "title": "Study of a Lunatist",
-        "date": "",
-        "fileName": "vonamerling-study-of-a-lunatist"
+        "title": "Home Fields",
+        "date": "1885",
+        "fileName": "sargent-home-fields-1885"
+      },
+      {
+        "title": "Poppies",
+        "date": "1886",
+        "fileName": "sargent-poppies-1886"
+      },
+      {
+        "title": "A Morning Walk",
+        "date": "1888",
+        "fileName": "sargent-morning-walk-1888"
+      },
+      {
+        "title": "By the River",
+        "date": "1888",
+        "fileName": "sargent-by-the-river-1888"
+      },
+      {
+        "title": "On the Canal",
+        "date": "1903",
+        "fileName": "sargent-on-the-canal-1903"
+      },
+      {
+        "title": "Black Tent",
+        "date": "1906",
+        "fileName": "sargent-black-tent-1906"
+      },
+      {
+        "title": "Hills of Galilee",
+        "date": "1906",
+        "fileName": "sargent-hills-of-galilee-1906"
+      },
+      {
+        "title": "A Hotel Room",
+        "date": "1907",
+        "fileName": "sargent-hotel-room-1907"
+      },
+      {
+        "title": "A Siesta",
+        "date": "1907",
+        "fileName": "sargent-siesta-1907"
+      },
+      {
+        "title": "Gourds",
+        "date": "1908",
+        "fileName": "sargent-gourds-1909"
+      },
+      {
+        "title": "Boy on a Rock",
+        "date": "1909",
+        "fileName": "sargent-boy-on-a-rock-1909"
+      },
+      {
+        "title": "Glacier Streams",
+        "date": "1909",
+        "fileName": "sargent-glacier-streams-1909"
+      },
+      {
+        "title": "A Waterfall",
+        "date": "1910",
+        "fileName": "sargent-waterfall-1910"
+      },
+      {
+        "title": "In the Alps",
+        "date": "1910",
+        "fileName": "sargent-in-the-alps-1910"
+      },
+      {
+        "title": "Oxen Resting",
+        "date": "1910",
+        "fileName": "sargent-oxen-resting-1910"
+      },
+      {
+        "title": "Magnolias",
+        "date": "1912",
+        "fileName": "sargent-magnolias-1912"
+      },
+      {
+        "title": "Girl Fishing",
+        "date": "1913",
+        "fileName": "sargent-girl-fishing-1913"
+      },
+      {
+        "title": "Palms",
+        "date": "1917",
+        "fileName": "sargent-palms-1917"
       }
     ]
   }
@@ -2263,6 +2194,75 @@
         "title": "Tristan and Isolde Sharing the Potion",
         "date": "1916",
         "fileName": "waterhouse-tristan-and-isolde-sharing-the-potion-1916"
+      }
+    ]
+  }
+,
+  "vonamerling": {
+    "fname": "Friedrich",
+    "lname": "Von Amerling",
+    "bio": "Friedrich von Amerling (14 April 1803 – 14 January 1887) was an Austro-Hungarian portrait painter in the court of Franz Josef. He was born in Vienna and was court painter between 1835 and 1880. With Ferdinand Georg Waldmüller he is one of the outstanding Austrian portrait painters of the 19th century.",
+    "era": "Academic",
+    "content": [
+      {
+        "title": "Rudolph von Arthaber with His Children",
+        "date": "1830",
+        "fileName": "vonamerling-rudolph-von-arthaber-with-his-children-1830"
+      },
+      {
+        "title": "Emporer Franz I",
+        "date": "1832",
+        "fileName": "vonamerling-emporer-franz-i-1832"
+      },
+      {
+        "title": "Self Portrait",
+        "date": "1834",
+        "fileName": "vonamerling-self-portrait-1834"
+      },
+      {
+        "title": "Lost in Dreams",
+        "date": "1835",
+        "fileName": "vonamerling-lost-in-dreams-1835"
+      },
+      {
+        "title": "Count Istvan Szechenyi",
+        "date": "1836",
+        "fileName": "vonamerling-count-istvan-szechenyi-1836"
+      },
+      {
+        "title": "Prinzessin Marie Franziska",
+        "date": "1836",
+        "fileName": "vonamerling-prinzessin-marie-franziska-1836"
+      },
+      {
+        "title": "Portrait of a Girl",
+        "date": "1837",
+        "fileName": "vonamerling-portrait-of-a-girl-1837"
+      },
+      {
+        "title": "Oriental Woman",
+        "date": "1838",
+        "fileName": "vonamerling-oriental-woman-1838"
+      },
+      {
+        "title": "Countess Nako",
+        "date": "1855",
+        "fileName": "vonamerling-countess-nako-1855"
+      },
+      {
+        "title": "Charity",
+        "date": "1856",
+        "fileName": "vonamerling-charity-1856"
+      },
+      {
+        "title": "Kaiser Franz I",
+        "date": "1884",
+        "fileName": "vonamerling-kaiser-franz-i-1884"
+      },
+      {
+        "title": "Study of a Lunatist",
+        "date": "",
+        "fileName": "vonamerling-study-of-a-lunatist"
       }
     ]
   }

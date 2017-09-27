@@ -3,6 +3,7 @@ import { Glyphicon } from 'react-bootstrap';
 import historyService from 'Services/history.service';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
 import ListLink from 'SharedComponents/listLink/listLink.component';
+import SectionHeader from 'SharedComponents/sectionHeader/sectionHeader.component';
 import './literatureAuthor.component.less';
 
 const LiteratureAuthor = (props) => {
@@ -79,23 +80,23 @@ const LiteratureAuthor = (props) => {
       <div className="literatureAuthorBio">{ author.bio }</div>
       <div className="titlesContainer">
         {titles.shorts[0] && <div className="genreContainer">
-          <h2 className="genreTitle">Short Stories</h2>
+          <SectionHeader text="Short Stories" />
           <ul className="titles">{ titles.shorts }</ul>
         </div>}
         {titles.poetry[0] && <div className="genreContainer">
-          <h2 className="genreTitle">Poetry</h2>
+          <SectionHeader text="Poetry" />
           <ul className="titles">{ titles.poetry }</ul>
         </div>}
         {titles.nonfiction[0] && <div className="genreContainer">
-          <h2 className="genreTitle">Nonfiction</h2>
+          <SectionHeader text="Nonfiction" />
           <ul className="titles">{ titles.nonfiction }</ul>
         </div>}
         {titles.fables[0] && <div className="genreContainer">
-          <h2 className="genreTitle">Fables</h2>
+          <SectionHeader text="Fables" />
           <ul className="titles">{ titles.fables }</ul>
         </div>}
         {titles.tales[0] && <div className="genreContainer">
-          <h2 className="genreTitle">Fairy Tales</h2>
+          <SectionHeader text="Fairy Tales" />
           <ul className="titles">{ titles.tales }</ul>
           {/*<div className="titlesFadeOut"></div>*/}
         </div>}

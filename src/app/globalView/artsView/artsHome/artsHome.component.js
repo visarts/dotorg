@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ListLink from 'SharedComponents/listLink/listLink.component';
 import ArtHistory from 'SharedComponents/artHistory/artHistory.component';
+import SectionHeader from 'SharedComponents/sectionHeader/sectionHeader.component';
 import './artsHome.component.less';
 
 const ArtsHome = (props) => {
@@ -43,7 +44,7 @@ const ArtsHome = (props) => {
       <div className="homeDescription">The greatest art in history by some of history's greatest artists</div>
       <ArtHistory />
       <div className="titlesContainer">
-        <h2>The Eras</h2>
+        <SectionHeader text="The Eras" />
         <ul className="erasList">
           <ListLink url="arts/g/renaissance" text="Renaissance" inlined={true} />
           <ListLink url="arts/g/baroque" text="Baroque" inlined={true} />
@@ -56,7 +57,7 @@ const ArtsHome = (props) => {
         </ul>
       </div>
       <div className="titlesContainer">
-        <h2>The Artists</h2>
+        <SectionHeader text="The Artists" />
         <ul className="artistsList">{artistsList}</ul>
       </div>
     </div>
