@@ -27,8 +27,8 @@
       //flex: 1 1 25%;
       width: 130px;
       vertical-align: top;
-      margin: 0 4px 4px 0;
-      background-color: @tertiaryThemeColor;
+      margin: 0 @hPadding @hPadding 0;
+      background: linear-gradient(to right, @tertiaryThemeColor 50%, @mainThemeColor);
       border-color: lighten(@mainThemeColor, 5%);
       transition: all @defaultTransitionTimeout;
       word-wrap: break-word;
@@ -50,7 +50,8 @@
       }
 
       &:hover, &:focus {
-        background: @artLinkHoverColor;
+        //background: @artLinkHoverColor;
+        background: linear-gradient(to right, @artLinkHoverColor 50%, darken(@artLinkHoverColor, 10%));
 
         a {
           color: white;

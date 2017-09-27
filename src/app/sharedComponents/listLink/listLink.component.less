@@ -2,16 +2,22 @@
 
 
 .listLink {
-  margin-bottom: @hMargin;
+  //margin-bottom: @hMargin;
+  margin: 0px @vPadding @vPadding 0px;
 
   a {
     padding: @hPadding @vPadding;
     //padding-bottom: @hPadding + @hPadding;
+    border-left: 2px solid lighten(@tertiaryThemeColor, 3%);
+    //border-right: 2px solid darken(@mainThemeColor, 2%);
+    box-shadow: 3px 3px 10px darken(@mainThemeColor, 2%);
     transition: all @defaultTransitionTimeout;
     display: inline-block;
     width: 100%;
     line-height: 1.2em;
-    background: @tertiaryThemeColor;
+    border-radius: @roundedEdge;
+    //background: @tertiaryThemeColor;
+    background: linear-gradient(to right, @tertiaryThemeColor 50%, @mainThemeColor);
 
     .linkListTitle {
 
@@ -40,7 +46,7 @@
 
     &:hover, &:active {
       color: inherit;
-      background: @mainLinkHoverColor;
+      background: linear-gradient(to right, @mainLinkHoverColor 50%, darken(@mainLinkHoverColor, 10%));
       box-shadow: 3px 3px 10px @secondaryThemeColor;
 
       .listLinkSubtext {
@@ -62,7 +68,7 @@
 
   &.listLinkInlined {
     display: inline-block;
-    margin-right: 7px;
+    //margin-right: 7px;
   }
 
   @media (max-width: @smallScreen) {

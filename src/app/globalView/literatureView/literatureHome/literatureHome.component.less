@@ -18,8 +18,8 @@
   .authorsList {
     column-count: 2;
     -moz-column-count: 2;
-    column-gap: 7px;
-    -moz-column-gap: 7px;
+    column-gap: 0px;
+    -moz-column-gap: 0px;
 
   }
 
@@ -30,7 +30,7 @@
   .listLink a {
 
     &:hover {
-      background: @litLinkHoverColor;
+      background: linear-gradient(to right, @litLinkHoverColor 50%, darken(@litLinkHoverColor, 10%));
     }
   }
 

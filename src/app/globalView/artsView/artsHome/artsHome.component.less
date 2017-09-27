@@ -12,7 +12,8 @@
   .artistsList, .erasList {
     .listLink a {
       &:hover {
-        background: @artLinkHoverColor;
+        //background: @artLinkHoverColor;
+        background: linear-gradient(to right, @artLinkHoverColor 50%, darken(@artLinkHoverColor, 10%));
       }
     }
 
@@ -21,8 +22,8 @@
   .artistsList {
     column-count: 2;
     -moz-column-count: 2;
-    column-gap: 7px;
-    -moz-column-gap: 7px;
+    column-gap: 0px;
+    -moz-column-gap: 0px;
     @media(max-width: @smallScreen) {
       column-count: 1;
       -moz-column-count: 1;

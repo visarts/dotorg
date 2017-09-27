@@ -148,115 +148,6 @@
     ]
   }
 ,
-  "cassatt": {
-    "fname": "Mary",
-    "lname": "Cassatt",
-    "bio": "Mary Stevenson Cassatt (May 22, 1844 – June 14, 1926) was an American painter and printmaker. She was born in Pennsylvania, but lived much of her adult life in France, where she first befriended Edgar Degas and later exhibited among the Impressionists. Cassatt often created images of the social and private lives of women, with particular emphasis on the intimate bonds between mothers and children.",
-    "era": "Impressionism",
-    "content": [
-      {
-        "title": "Child Drinking Milk",
-        "date": "1868",
-        "fileName": "cassatt-child-drinking-milk-1868"
-      },
-      {
-        "title": "Bacchante",
-        "date": "1872",
-        "fileName": "cassatt-bacchante-1872"
-      },
-      {
-        "title": "During a Carnival",
-        "date": "1872",
-        "fileName": "cassatt-during-a-carnival-1872"
-      },
-      {
-        "title": "A Musical Party",
-        "date": "1874",
-        "fileName": "cassatt-musical-party-1874"
-      },
-      {
-        "title": "Portrait of a Little Girl",
-        "date": "1874",
-        "fileName": "cassatt-portrait-of-a-little-girl-1874"
-      },
-      {
-        "title": "Poppies in a Field",
-        "date": "1880",
-        "fileName": "cassatt-poppies-in-a-field-1880"
-      },
-      {
-        "title": "Lady at the Tea Table",
-        "date": "1883",
-        "fileName": "cassatt-lady-at-the-tea-table-1883"
-      },
-      {
-        "title": "Girl Arranging Her Hair",
-        "date": "1886",
-        "fileName": "cassatt-girl-arranging-her-hair-1886"
-      },
-      {
-        "title": "At the Window",
-        "date": "1889",
-        "fileName": "cassatt-at-the-window-1889"
-      },
-      {
-        "title": "Lilacs in a Window",
-        "date": "1889",
-        "fileName": "cassatt-lilacs-in-a-window-1889"
-      },
-      {
-        "title": "Contemplation",
-        "date": "1889",
-        "fileName": "cassatt-contemplation-1889"
-      },
-      {
-        "title": "Gathering Fruit",
-        "date": "1893",
-        "fileName": "cassatt-gathering-fruit-1893"
-      },
-      {
-        "title": "Girl With Banjo",
-        "date": "1894",
-        "fileName": "cassatt-girl-with-banjo-1894"
-      },
-      {
-        "title": "In the Park",
-        "date": "1894",
-        "fileName": "cassatt-in-the-park-1894"
-      },
-      {
-        "title": "On the Water",
-        "date": "1895",
-        "fileName": "cassatt-on-the-water-1895"
-      },
-      {
-        "title": "Maternal Kiss",
-        "date": "1896",
-        "fileName": "cassatt-maternal-kiss-1896"
-      },
-      {
-        "title": "Breakfast in Bed",
-        "date": "1897",
-        "fileName": "cassatt-breakfast-in-bed-1897"
-      },
-      {
-        "title": "Pattycake",
-        "date": "1897",
-        "fileName": "cassatt-pattycake-1897"
-      },
-      {
-        "title": "Mother and Child",
-        "date": "1900",
-        "fileName": "cassatt-mother-and-child-1900"
-      },
-      {
-        "title": "Margot in Blue",
-        "date": "1902",
-        "fileName": "cassatt-margot-in-blue-1902"
-      }
-    ]
-  }
-,
   "cezanne": {
     "fname": "Paul",
     "lname": "Cezanne",
@@ -471,6 +362,115 @@
         "title": "Picture 20",
         "date": "1132",
         "fileName": "creatorkey-picture-20-1132"
+      }
+    ]
+  }
+,
+  "cassatt": {
+    "fname": "Mary",
+    "lname": "Cassatt",
+    "bio": "Mary Stevenson Cassatt (May 22, 1844 – June 14, 1926) was an American painter and printmaker. She was born in Pennsylvania, but lived much of her adult life in France, where she first befriended Edgar Degas and later exhibited among the Impressionists. Cassatt often created images of the social and private lives of women, with particular emphasis on the intimate bonds between mothers and children.",
+    "era": "Impressionism",
+    "content": [
+      {
+        "title": "Child Drinking Milk",
+        "date": "1868",
+        "fileName": "cassatt-child-drinking-milk-1868"
+      },
+      {
+        "title": "Bacchante",
+        "date": "1872",
+        "fileName": "cassatt-bacchante-1872"
+      },
+      {
+        "title": "During a Carnival",
+        "date": "1872",
+        "fileName": "cassatt-during-a-carnival-1872"
+      },
+      {
+        "title": "A Musical Party",
+        "date": "1874",
+        "fileName": "cassatt-musical-party-1874"
+      },
+      {
+        "title": "Portrait of a Little Girl",
+        "date": "1874",
+        "fileName": "cassatt-portrait-of-a-little-girl-1874"
+      },
+      {
+        "title": "Poppies in a Field",
+        "date": "1880",
+        "fileName": "cassatt-poppies-in-a-field-1880"
+      },
+      {
+        "title": "Lady at the Tea Table",
+        "date": "1883",
+        "fileName": "cassatt-lady-at-the-tea-table-1883"
+      },
+      {
+        "title": "Girl Arranging Her Hair",
+        "date": "1886",
+        "fileName": "cassatt-girl-arranging-her-hair-1886"
+      },
+      {
+        "title": "At the Window",
+        "date": "1889",
+        "fileName": "cassatt-at-the-window-1889"
+      },
+      {
+        "title": "Lilacs in a Window",
+        "date": "1889",
+        "fileName": "cassatt-lilacs-in-a-window-1889"
+      },
+      {
+        "title": "Contemplation",
+        "date": "1889",
+        "fileName": "cassatt-contemplation-1889"
+      },
+      {
+        "title": "Gathering Fruit",
+        "date": "1893",
+        "fileName": "cassatt-gathering-fruit-1893"
+      },
+      {
+        "title": "Girl With Banjo",
+        "date": "1894",
+        "fileName": "cassatt-girl-with-banjo-1894"
+      },
+      {
+        "title": "In the Park",
+        "date": "1894",
+        "fileName": "cassatt-in-the-park-1894"
+      },
+      {
+        "title": "On the Water",
+        "date": "1895",
+        "fileName": "cassatt-on-the-water-1895"
+      },
+      {
+        "title": "Maternal Kiss",
+        "date": "1896",
+        "fileName": "cassatt-maternal-kiss-1896"
+      },
+      {
+        "title": "Breakfast in Bed",
+        "date": "1897",
+        "fileName": "cassatt-breakfast-in-bed-1897"
+      },
+      {
+        "title": "Pattycake",
+        "date": "1897",
+        "fileName": "cassatt-pattycake-1897"
+      },
+      {
+        "title": "Mother and Child",
+        "date": "1900",
+        "fileName": "cassatt-mother-and-child-1900"
+      },
+      {
+        "title": "Margot in Blue",
+        "date": "1902",
+        "fileName": "cassatt-margot-in-blue-1902"
       }
     ]
   }
@@ -693,115 +693,6 @@
     ]
   }
 ,
-  "gerome": {
-    "fname": "Jean-L%C3%A9on",
-    "lname": "G%C3%A9r%C3%B4me",
-    "bio": "Jean-Léon Gérôme (11 May 1824 – 10 January 1904) was a French painter and sculptor in the style now known as academicism. The range of his oeuvre included historical painting, Greek mythology, Orientalism, portraits, and other subjects, bringing the academic painting tradition to an artistic climax. He is considered one of the most important painters from this academic period.",
-    "era": "Academic",
-    "content": [
-      {
-        "title": "The Cock Fight",
-        "date": "1846",
-        "fileName": "gerome-cock-fight-1846"
-      },
-      {
-        "title": "The Prisoner",
-        "date": "1861",
-        "fileName": "gerome-prisoner-1861"
-      },
-      {
-        "title": "Jean Bart",
-        "date": "1862",
-        "fileName": "gerome-jean-bart-1862"
-      },
-      {
-        "title": "Prayer in the Desert",
-        "date": "1864",
-        "fileName": "gerome-prayer-in-the-desert-1864"
-      },
-      {
-        "title": "Arnaut Smoking",
-        "date": "1865",
-        "fileName": "gerome-arnaut-smoking-1865"
-      },
-      {
-        "title": "Carpet Merchant in Cairo",
-        "date": "1867",
-        "fileName": "gerome-carpet-merchant-in-cairo-1867"
-      },
-      {
-        "title": "Napoleon and His General Staff",
-        "date": "1867",
-        "fileName": "gerome-napoleon-and-his-general-staff-1867"
-      },
-      {
-        "title": "Pho Xai",
-        "date": "1867",
-        "fileName": "gerome-pho-xai-1867"
-      },
-      {
-        "title": "Moorish Bath",
-        "date": "1870",
-        "fileName": "gerome-moorish-bath-1870"
-      },
-      {
-        "title": "Home From the Hunt",
-        "date": "1876",
-        "fileName": "gerome-home-from-the-hunt-1876"
-      },
-      {
-        "title": "Sabre Dance in a Cafe",
-        "date": "1876",
-        "fileName": "gerome-sabre-dance-in-a-cafe-1876"
-      },
-      {
-        "title": "Arab Purchasing a Bride",
-        "date": "1881",
-        "fileName": "gerome-arab-purchasing-a-bride-1881"
-      },
-      {
-        "title": "Bathing Scene",
-        "date": "1881",
-        "fileName": "gerome-bathing-scene-1881"
-      },
-      {
-        "title": "Oriental Woman",
-        "date": "1882",
-        "fileName": "gerome-oriental-woman-1882"
-      },
-      {
-        "title": "Selling Slaves in Rome",
-        "date": "1886",
-        "fileName": "gerome-selling-slaves-in-rome-1886"
-      },
-      {
-        "title": "Bathsheba",
-        "date": "1889",
-        "fileName": "gerome-bathsheba-1889"
-      },
-      {
-        "title": "Love Conquers All",
-        "date": "1889",
-        "fileName": "gerome-love-conquers-all-1889"
-      },
-      {
-        "title": "Snake Charmer",
-        "date": "1889",
-        "fileName": "gerome-snake-charmer-1889"
-      },
-      {
-        "title": "Prayer in a Mosque",
-        "date": "1892",
-        "fileName": "gerome-prayer-in-a-mosque-1892"
-      },
-      {
-        "title": "The Harem Bathing",
-        "date": "1901",
-        "fileName": "gerome-harem-bathing-1901"
-      }
-    ]
-  }
-,
   "harnett": {
     "fname": "William",
     "lname": "Harnett",
@@ -1016,6 +907,164 @@
         "title": "Conversion of Saul",
         "date": "1511",
         "fileName": "michelangelo-conversion-of-saul-1511"
+      }
+    ]
+  }
+,
+  "gerome": {
+    "fname": "Jean-L%C3%A9on",
+    "lname": "G%C3%A9r%C3%B4me",
+    "bio": "Jean-Léon Gérôme (11 May 1824 – 10 January 1904) was a French painter and sculptor in the style now known as academicism. The range of his oeuvre included historical painting, Greek mythology, Orientalism, portraits, and other subjects, bringing the academic painting tradition to an artistic climax. He is considered one of the most important painters from this academic period.",
+    "era": "Academic",
+    "content": [
+      {
+        "title": "The Cock Fight",
+        "date": "1846",
+        "fileName": "gerome-cock-fight-1846"
+      },
+      {
+        "title": "The Prisoner",
+        "date": "1861",
+        "fileName": "gerome-prisoner-1861"
+      },
+      {
+        "title": "Jean Bart",
+        "date": "1862",
+        "fileName": "gerome-jean-bart-1862"
+      },
+      {
+        "title": "Prayer in the Desert",
+        "date": "1864",
+        "fileName": "gerome-prayer-in-the-desert-1864"
+      },
+      {
+        "title": "Arnaut Smoking",
+        "date": "1865",
+        "fileName": "gerome-arnaut-smoking-1865"
+      },
+      {
+        "title": "Carpet Merchant in Cairo",
+        "date": "1867",
+        "fileName": "gerome-carpet-merchant-in-cairo-1867"
+      },
+      {
+        "title": "Napoleon and His General Staff",
+        "date": "1867",
+        "fileName": "gerome-napoleon-and-his-general-staff-1867"
+      },
+      {
+        "title": "Pho Xai",
+        "date": "1867",
+        "fileName": "gerome-pho-xai-1867"
+      },
+      {
+        "title": "Moorish Bath",
+        "date": "1870",
+        "fileName": "gerome-moorish-bath-1870"
+      },
+      {
+        "title": "Home From the Hunt",
+        "date": "1876",
+        "fileName": "gerome-home-from-the-hunt-1876"
+      },
+      {
+        "title": "Sabre Dance in a Cafe",
+        "date": "1876",
+        "fileName": "gerome-sabre-dance-in-a-cafe-1876"
+      },
+      {
+        "title": "Arab Purchasing a Bride",
+        "date": "1881",
+        "fileName": "gerome-arab-purchasing-a-bride-1881"
+      },
+      {
+        "title": "Bathing Scene",
+        "date": "1881",
+        "fileName": "gerome-bathing-scene-1881"
+      },
+      {
+        "title": "Oriental Woman",
+        "date": "1882",
+        "fileName": "gerome-oriental-woman-1882"
+      },
+      {
+        "title": "Selling Slaves in Rome",
+        "date": "1886",
+        "fileName": "gerome-selling-slaves-in-rome-1886"
+      },
+      {
+        "title": "Bathsheba",
+        "date": "1889",
+        "fileName": "gerome-bathsheba-1889"
+      },
+      {
+        "title": "Love Conquers All",
+        "date": "1889",
+        "fileName": "gerome-love-conquers-all-1889"
+      },
+      {
+        "title": "Snake Charmer",
+        "date": "1889",
+        "fileName": "gerome-snake-charmer-1889"
+      },
+      {
+        "title": "Prayer in a Mosque",
+        "date": "1892",
+        "fileName": "gerome-prayer-in-a-mosque-1892"
+      },
+      {
+        "title": "The Harem Bathing",
+        "date": "1901",
+        "fileName": "gerome-harem-bathing-1901"
+      }
+    ]
+  }
+,
+  "okeeffe": {
+    "fname": "Georgia",
+    "lname": "O'Keeffe",
+    "bio": "Georgia Totto O'Keeffe (November 15, 1887 – March 6, 1986) was an American artist. She was best known for her paintings of enlarged flowers, New York skyscrapers, and New Mexico landscapes. O'Keeffe has been recognized as the 'Mother of American modernism'",
+    "era": "Modernism",
+    "content": [
+      {
+        "title": "Blue and Green Music",
+        "date": "1919",
+        "fileName": "okeeffe-blue-and-green-music-1919"
+      },
+      {
+        "title": "Black Iris",
+        "date": "1927",
+        "fileName": "okeeffe-black-iris-1927"
+      },
+      {
+        "title": "Tan Clam with Seaweed",
+        "date": "1926",
+        "fileName": "okeeffe-tan-clam-with-seaweed-1926"
+      },
+      {
+        "title": "Oriental Poppies",
+        "date": "1926",
+        "fileName": "okeeffe-oriental-poppies-1926"
+      },
+      {
+        "title": "Mountain in New Mexico",
+        "date": "1931",
+        "fileName": "okeeffe-mountain-in-new-mexico-1931"
+      },
+      {
+        "title": "Broken Shell",
+        "date": "1937",
+        "fileName": "okeeffe-broken-shell-1937"
+      },
+      {
+        "title": "Clam and Mussel",
+        "date": "1938",
+        "fileName": "okeeffe-clam-and-mussel-1938"
+      },
+      {
+        "title": "Red Hill and White Shell",
+        "date": "1938",
+        "fileName": "okeeffe-red-hill-and-white-shell-1938"
       }
     ]
   }
@@ -1346,55 +1395,6 @@
     ]
   }
 ,
-  "okeeffe": {
-    "fname": "Georgia",
-    "lname": "O'Keeffe",
-    "bio": "Georgia Totto O'Keeffe (November 15, 1887 – March 6, 1986) was an American artist. She was best known for her paintings of enlarged flowers, New York skyscrapers, and New Mexico landscapes. O'Keeffe has been recognized as the 'Mother of American modernism'",
-    "era": "Modernism",
-    "content": [
-      {
-        "title": "Blue and Green Music",
-        "date": "1919",
-        "fileName": "okeeffe-blue-and-green-music-1919"
-      },
-      {
-        "title": "Black Iris",
-        "date": "1927",
-        "fileName": "okeeffe-black-iris-1927"
-      },
-      {
-        "title": "Tan Clam with Seaweed",
-        "date": "1926",
-        "fileName": "okeeffe-tan-clam-with-seaweed-1926"
-      },
-      {
-        "title": "Oriental Poppies",
-        "date": "1926",
-        "fileName": "okeeffe-oriental-poppies-1926"
-      },
-      {
-        "title": "Mountain in New Mexico",
-        "date": "1931",
-        "fileName": "okeeffe-mountain-in-new-mexico-1931"
-      },
-      {
-        "title": "Broken Shell",
-        "date": "1937",
-        "fileName": "okeeffe-broken-shell-1937"
-      },
-      {
-        "title": "Clam and Mussel",
-        "date": "1938",
-        "fileName": "okeeffe-clam-and-mussel-1938"
-      },
-      {
-        "title": "Red Hill and White Shell",
-        "date": "1938",
-        "fileName": "okeeffe-red-hill-and-white-shell-1938"
-      }
-    ]
-  }
-,
   "renoir": {
     "fname": "Auguste",
     "lname": "Renoir",
@@ -1500,6 +1500,115 @@
         "title": "Fish",
         "date": "1919",
         "fileName": "renoir-fish-1919"
+      }
+    ]
+  }
+,
+  "rossetti": {
+    "fname": "Dante",
+    "lname": "Rossetti",
+    "bio": "Dante Gabriel Rossetti (12 May 1828 – 9 April 1882) was a British poet, illustrator, painter and translator. He founded the Pre-Raphaelite Brotherhood in 1848 with William Holman Hunt and John Everett Millais. Rossetti was later to be the main inspiration for a second generation of artists and writers influenced by the movement, most notably William Morris and Edward Burne-Jones. His work also influenced the European Symbolists and was a major precursor of the Aesthetic movement.",
+    "era": "Pre-Raphaelite",
+    "content": [
+      {
+        "title": "Found",
+        "date": "1854",
+        "fileName": "rossetti-found-1854"
+      },
+      {
+        "title": "Before the Battle",
+        "date": "1858",
+        "fileName": "rossetti-before-the-battle-1858"
+      },
+      {
+        "title": "Bocca Baciata",
+        "date": "1859",
+        "fileName": "rossetti-bocca-baciata-1859"
+      },
+      {
+        "title": "Sir Galahad at the Ruined Chapel",
+        "date": "1859",
+        "fileName": "rossetti-sir-galahad-at-the-ruined-chapel-1859"
+      },
+      {
+        "title": "Jane Morris",
+        "date": "1860",
+        "fileName": "rossetti-jane-morris-1860"
+      },
+      {
+        "title": "Fair Rosamund",
+        "date": "1861",
+        "fileName": "rossetti-fair-rosamund-1861"
+      },
+      {
+        "title": "The Annunciation",
+        "date": "1861",
+        "fileName": "rossetti-annunciation-1861"
+      },
+      {
+        "title": "Joan of Arc",
+        "date": "1864",
+        "fileName": "rossetti-joan-of-arc-1864"
+      },
+      {
+        "title": "Morning Music",
+        "date": "1864",
+        "fileName": "rossetti-morning-music-1864"
+      },
+      {
+        "title": "The Beloved",
+        "date": "1866",
+        "fileName": "rossetti-beloved-1866"
+      },
+      {
+        "title": "The Loving Cup",
+        "date": "1867",
+        "fileName": "rossetti-loving-cup-1867"
+      },
+      {
+        "title": "The Tune of Seven Towers",
+        "date": "1867",
+        "fileName": "rossetti-tune-of-seven-towers-1867"
+      },
+      {
+        "title": "Lady Lilith",
+        "date": "1868",
+        "fileName": "rossetti-lady-lilith-1868"
+      },
+      {
+        "title": "Mariana",
+        "date": "1870",
+        "fileName": "rossetti-mariana-1870"
+      },
+      {
+        "title": "The Bower Meadow",
+        "date": "1872",
+        "fileName": "rossetti-bower-meadow-1872"
+      },
+      {
+        "title": "A Sea Spell",
+        "date": "1877",
+        "fileName": "rossetti-sea-spell-1877"
+      },
+      {
+        "title": "Prosperpine",
+        "date": "1877",
+        "fileName": "rossetti-prosperpine-1877"
+      },
+      {
+        "title": "Pandora",
+        "date": "1879",
+        "fileName": "rossetti-pandora-1879"
+      },
+      {
+        "title": "The Day Dream",
+        "date": "1880",
+        "fileName": "rossetti-day-dream-1880"
+      },
+      {
+        "title": "Joan of Arc",
+        "date": "1882",
+        "fileName": "rossetti-joan-of-arc-1882"
       }
     ]
   }
@@ -1718,115 +1827,6 @@
         "title": "Palms",
         "date": "1917",
         "fileName": "sargent-palms-1917"
-      }
-    ]
-  }
-,
-  "rossetti": {
-    "fname": "Dante",
-    "lname": "Rossetti",
-    "bio": "Dante Gabriel Rossetti (12 May 1828 – 9 April 1882) was a British poet, illustrator, painter and translator. He founded the Pre-Raphaelite Brotherhood in 1848 with William Holman Hunt and John Everett Millais. Rossetti was later to be the main inspiration for a second generation of artists and writers influenced by the movement, most notably William Morris and Edward Burne-Jones. His work also influenced the European Symbolists and was a major precursor of the Aesthetic movement.",
-    "era": "Pre-Raphaelite",
-    "content": [
-      {
-        "title": "Found",
-        "date": "1854",
-        "fileName": "rossetti-found-1854"
-      },
-      {
-        "title": "Before the Battle",
-        "date": "1858",
-        "fileName": "rossetti-before-the-battle-1858"
-      },
-      {
-        "title": "Bocca Baciata",
-        "date": "1859",
-        "fileName": "rossetti-bocca-baciata-1859"
-      },
-      {
-        "title": "Sir Galahad at the Ruined Chapel",
-        "date": "1859",
-        "fileName": "rossetti-sir-galahad-at-the-ruined-chapel-1859"
-      },
-      {
-        "title": "Jane Morris",
-        "date": "1860",
-        "fileName": "rossetti-jane-morris-1860"
-      },
-      {
-        "title": "Fair Rosamund",
-        "date": "1861",
-        "fileName": "rossetti-fair-rosamund-1861"
-      },
-      {
-        "title": "The Annunciation",
-        "date": "1861",
-        "fileName": "rossetti-annunciation-1861"
-      },
-      {
-        "title": "Joan of Arc",
-        "date": "1864",
-        "fileName": "rossetti-joan-of-arc-1864"
-      },
-      {
-        "title": "Morning Music",
-        "date": "1864",
-        "fileName": "rossetti-morning-music-1864"
-      },
-      {
-        "title": "The Beloved",
-        "date": "1866",
-        "fileName": "rossetti-beloved-1866"
-      },
-      {
-        "title": "The Loving Cup",
-        "date": "1867",
-        "fileName": "rossetti-loving-cup-1867"
-      },
-      {
-        "title": "The Tune of Seven Towers",
-        "date": "1867",
-        "fileName": "rossetti-tune-of-seven-towers-1867"
-      },
-      {
-        "title": "Lady Lilith",
-        "date": "1868",
-        "fileName": "rossetti-lady-lilith-1868"
-      },
-      {
-        "title": "Mariana",
-        "date": "1870",
-        "fileName": "rossetti-mariana-1870"
-      },
-      {
-        "title": "The Bower Meadow",
-        "date": "1872",
-        "fileName": "rossetti-bower-meadow-1872"
-      },
-      {
-        "title": "A Sea Spell",
-        "date": "1877",
-        "fileName": "rossetti-sea-spell-1877"
-      },
-      {
-        "title": "Prosperpine",
-        "date": "1877",
-        "fileName": "rossetti-prosperpine-1877"
-      },
-      {
-        "title": "Pandora",
-        "date": "1879",
-        "fileName": "rossetti-pandora-1879"
-      },
-      {
-        "title": "The Day Dream",
-        "date": "1880",
-        "fileName": "rossetti-day-dream-1880"
-      },
-      {
-        "title": "Joan of Arc",
-        "date": "1882",
-        "fileName": "rossetti-joan-of-arc-1882"
       }
     ]
   }
