@@ -33,7 +33,7 @@ const ArtsArtist = (props) => {
       //item.artist = artist;
       //item.index = index;
       return (
-        <li className="thumbnail" key={item.fileName}>
+        <li className="artThumb" key={item.fileName}>
           <Link
             to={`/arts/a/${artistKey}/${artist.era}/${item.fileName}`}
             title={item.title}

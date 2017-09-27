@@ -22,22 +22,28 @@
     display: flex;
     flex-flow: row wrap;
 
-    .thumbnail {
+    .artThumb {
       display: inline-block;
       //flex: 1 1 25%;
       width: 130px;
       vertical-align: top;
       margin: 0 @hPadding @hPadding 0;
       background: linear-gradient(to right, @tertiaryThemeColor 50%, @mainThemeColor);
-      border-color: lighten(@mainThemeColor, 5%);
+      //border-color: lighten(@mainThemeColor, 5%);
       transition: all @defaultTransitionTimeout;
       word-wrap: break-word;
+      border-left: 2px solid lighten(@tertiaryThemeColor, 3%);
+      box-shadow: 3px 3px 10px darken(@mainThemeColor, 2%);
+      border-radius: @roundedEdge;
+      //flex-grow: 1;
+      //min-width: 130px;
+      //max-width: 200px;
 
       a {
         display: block;
         width: 100%;
         height: 100%;
-
+        padding: @hPadding;
 
         h3 {
           font-size: 1em;
@@ -68,8 +74,12 @@
     }
 
     @media(max-width: @smallScreen) {
-      .thumbnail {
-        width: 43vw;
+      .artThumb {
+        width: 42vw;
+
+        &:nth-child(even) {
+          margin-right: 0px;
+        }
       }
     }
   }

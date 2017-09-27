@@ -79,23 +79,23 @@ const LiteratureAuthor = (props) => {
       <div className="literatureAuthorBio">{ author.bio }</div>
       <div className="titlesContainer">
         {titles.shorts[0] && <div className="genreContainer">
-          <h2>Short Stories</h2>
+          <h2 className="genreTitle">Short Stories</h2>
           <ul className="titles">{ titles.shorts }</ul>
         </div>}
         {titles.poetry[0] && <div className="genreContainer">
-          <h2>Poetry</h2>
+          <h2 className="genreTitle">Poetry</h2>
           <ul className="titles">{ titles.poetry }</ul>
         </div>}
         {titles.nonfiction[0] && <div className="genreContainer">
-          <h2>Nonfiction</h2>
+          <h2 className="genreTitle">Nonfiction</h2>
           <ul className="titles">{ titles.nonfiction }</ul>
         </div>}
         {titles.fables[0] && <div className="genreContainer">
-          <h2>Fables</h2>
+          <h2 className="genreTitle">Fables</h2>
           <ul className="titles">{ titles.fables }</ul>
         </div>}
         {titles.tales[0] && <div className="genreContainer">
-          <h2>Fairy Tales</h2>
+          <h2 className="genreTitle">Fairy Tales</h2>
           <ul className="titles">{ titles.tales }</ul>
           {/*<div className="titlesFadeOut"></div>*/}
         </div>}
