@@ -148,115 +148,6 @@
     ]
   }
 ,
-  "cezanne": {
-    "fname": "Paul",
-    "lname": "Cezanne",
-    "bio": "Paul Cézanne (19 January 1839 – 22 October 1906) was a French artist and Post-Impressionist painter whose work laid the foundations of the transition from the 19th-century conception of artistic endeavor to a new and radically different world of art in the 20th century. Cézanne's often repetitive, exploratory brushstrokes are highly characteristic and clearly recognizable. He used planes of colour and small brushstrokes that build up to form complex fields. The paintings convey Cézanne's intense study of his subjects.",
-    "era": "Post-Impressionism",
-    "content": [
-      {
-        "title": "The Artist's Father",
-        "date": "1866",
-        "fileName": "cezanne-artists-father-1866"
-      },
-      {
-        "title": "The Thaw",
-        "date": "1871",
-        "fileName": "cezanne-thaw-1871"
-      },
-      {
-        "title": "Hanged Man's House",
-        "date": "1873",
-        "fileName": "cezanne-hanged-mans-house-1873"
-      },
-      {
-        "title": "Hortense Fiquet in a Striped Skirt",
-        "date": "1878",
-        "fileName": "cezanne-hortense-fiquet-in-a-striped-skirt-1878"
-      },
-      {
-        "title": "Bay From L Estaque",
-        "date": "1886",
-        "fileName": "cezanne-bay-from-l-estaque-1886"
-      },
-      {
-        "title": "Mont Sante Victoire",
-        "date": "1887",
-        "fileName": "cezanne-mont-sante-victoire-1887"
-      },
-      {
-        "title": "Still Life with Apples",
-        "date": "1890",
-        "fileName": "cezanne-still-life-with-apples-1890"
-      },
-      {
-        "title": "Boy in a Red Vest",
-        "date": "1890",
-        "fileName": "cezanne-boy-in-a-red-vest-1890"
-      },
-      {
-        "title": "The Drinker",
-        "date": "1890",
-        "fileName": "cezanne-drinker-1890"
-      },
-      {
-        "title": "Man in a Room",
-        "date": "1890",
-        "fileName": "cezanne-man-in-a-room-1890"
-      },
-      {
-        "title": "Peasant",
-        "date": "1891",
-        "fileName": "cezanne-peasant-1891"
-      },
-      {
-        "title": "The Card Players",
-        "date": "1892",
-        "fileName": "cezanne-card-players-1892"
-      },
-      {
-        "title": "Child with Straw Hat",
-        "date": "1896",
-        "fileName": "cezanne-child-with-straw-hat-1896"
-      },
-      {
-        "title": "Great Pine",
-        "date": "1896",
-        "fileName": "cezanne-great-pine-1896"
-      },
-      {
-        "title": "Joachim Gasquet",
-        "date": "1896",
-        "fileName": "cezanne-joachim-gasquet-1896"
-      },
-      {
-        "title": "Chrysanthemums",
-        "date": "1898",
-        "fileName": "cezanne-chrysanthemums-1898"
-      },
-      {
-        "title": "Apples and Oranges",
-        "date": "1899",
-        "fileName": "cezanne-apples-and-oranges-1899"
-      },
-      {
-        "title": "The Skull",
-        "date": "1900",
-        "fileName": "cezanne-skull-1900"
-      },
-      {
-        "title": "Young Italian Girl Resting",
-        "date": "1900",
-        "fileName": "cezanne-young-italian-girl-resting-1900"
-      },
-      {
-        "title": "Woman Seated in Blue",
-        "date": "1902",
-        "fileName": "cezanne-woman-seated-in-blue-1902"
-      }
-    ]
-  }
-,
   "cassatt": {
     "fname": "Mary",
     "lname": "Cassatt",
@@ -362,115 +253,6 @@
         "title": "Margot in Blue",
         "date": "1902",
         "fileName": "cassatt-margot-in-blue-1902"
-      }
-    ]
-  }
-,
-  "degas": {
-    "fname": "Edgar",
-    "lname": "Degas",
-    "bio": "Edgar Degas (19 July 1834 – 27 September 1917) was a French artist famous for his paintings, sculptures, prints, and drawings. He is especially identified with the subject of dance; more than half of his works depict dancers. He is regarded as one of the founders of Impressionism, although he rejected the term, preferring to be called a realist.",
-    "era": "Impressionism",
-    "content": [
-      {
-        "title": "Absinthe Drinkers",
-        "date": "1876",
-        "fileName": "degas-absinthe-drinkers-1876"
-      },
-      {
-        "title": "Woman with Opera Glasses",
-        "date": "1876",
-        "fileName": "degas-woman-with-opera-glasses-1876"
-      },
-      {
-        "title": "Café-Concert at Les Ambassadeurs",
-        "date": "1877",
-        "fileName": "degas-cafe-concert-at-les-ambassadeurs-1877"
-      },
-      {
-        "title": "Dancer with Bouquet",
-        "date": "1877",
-        "fileName": "degas-dancer-with-bouquet-1877"
-      },
-      {
-        "title": "The Star",
-        "date": "1877",
-        "fileName": "degas-star-1877"
-      },
-      {
-        "title": "Song of the Dog",
-        "date": "1877",
-        "fileName": "degas-song-of-the-dog-1877"
-      },
-      {
-        "title": "Singer with a Glove",
-        "date": "1878",
-        "fileName": "degas-singer-with-a-glove-1878"
-      },
-      {
-        "title": "Dancer with a Fan",
-        "date": "1879",
-        "fileName": "degas-dancer-with-a-fan-1879"
-      },
-      {
-        "title": "Before the Entrance",
-        "date": "1880",
-        "fileName": "degas-before-the-entrance-1880"
-      },
-      {
-        "title": "Morning Bath",
-        "date": "1883",
-        "fileName": "degas-morning-bath-1883"
-      },
-      {
-        "title": "Dancer in Green Tutu",
-        "date": "1885",
-        "fileName": "degas-dancer-in-green-tutu-1885"
-      },
-      {
-        "title": "The Tub",
-        "date": "1886",
-        "fileName": "degas-tub-1886"
-      },
-      {
-        "title": "Woman Drying Herself",
-        "date": "1886",
-        "fileName": "degas-woman-drying-herself-1886"
-      },
-      {
-        "title": "Race Horses",
-        "date": "1888",
-        "fileName": "degas-race-horses-1888"
-      },
-      {
-        "title": "Woman Having Her Hair Combed",
-        "date": "1888",
-        "fileName": "degas-woman-having-her-hair-combed-1888"
-      },
-      {
-        "title": "Seated Woman Combing Her Hair",
-        "date": "1890",
-        "fileName": "degas-seated-woman-combing-her-hair-1890"
-      },
-      {
-        "title": "The Morning Bath",
-        "date": "1890",
-        "fileName": "degas-morning-bath-1890"
-      },
-      {
-        "title": "After the Bath",
-        "date": "1894",
-        "fileName": "degas-after-the-bath-1894"
-      },
-      {
-        "title": "Ballet Dancers in the Wings",
-        "date": "1895",
-        "fileName": "degas-ballet-dancers-in-the-wings-1895"
-      },
-      {
-        "title": "Two Bathers on the Grass",
-        "date": "1895",
-        "fileName": "degas-bathers-on-the-grass-1895"
       }
     ]
   }
@@ -584,111 +366,329 @@
     ]
   }
 ,
-  "gerome": {
-    "fname": "Jean-L%C3%A9on",
-    "lname": "G%C3%A9r%C3%B4me",
-    "bio": "Jean-Léon Gérôme (11 May 1824 – 10 January 1904) was a French painter and sculptor in the style now known as academicism. The range of his oeuvre included historical painting, Greek mythology, Orientalism, portraits, and other subjects, bringing the academic painting tradition to an artistic climax. He is considered one of the most important painters from this academic period.",
-    "era": "Academic",
+  "cezanne": {
+    "fname": "Paul",
+    "lname": "Cezanne",
+    "bio": "Paul Cézanne (19 January 1839 – 22 October 1906) was a French artist and Post-Impressionist painter whose work laid the foundations of the transition from the 19th-century conception of artistic endeavor to a new and radically different world of art in the 20th century. Cézanne's often repetitive, exploratory brushstrokes are highly characteristic and clearly recognizable. He used planes of colour and small brushstrokes that build up to form complex fields. The paintings convey Cézanne's intense study of his subjects.",
+    "era": "Post-Impressionism",
     "content": [
       {
-        "title": "The Cock Fight",
-        "date": "1846",
-        "fileName": "gerome-cock-fight-1846"
+        "title": "The Artist's Father",
+        "date": "1866",
+        "fileName": "cezanne-artists-father-1866"
       },
       {
-        "title": "The Prisoner",
-        "date": "1861",
-        "fileName": "gerome-prisoner-1861"
+        "title": "The Thaw",
+        "date": "1871",
+        "fileName": "cezanne-thaw-1871"
       },
       {
-        "title": "Jean Bart",
-        "date": "1862",
-        "fileName": "gerome-jean-bart-1862"
+        "title": "Hanged Man's House",
+        "date": "1873",
+        "fileName": "cezanne-hanged-mans-house-1873"
       },
       {
-        "title": "Prayer in the Desert",
-        "date": "1864",
-        "fileName": "gerome-prayer-in-the-desert-1864"
+        "title": "Hortense Fiquet in a Striped Skirt",
+        "date": "1878",
+        "fileName": "cezanne-hortense-fiquet-in-a-striped-skirt-1878"
       },
       {
-        "title": "Arnaut Smoking",
-        "date": "1865",
-        "fileName": "gerome-arnaut-smoking-1865"
-      },
-      {
-        "title": "Carpet Merchant in Cairo",
-        "date": "1867",
-        "fileName": "gerome-carpet-merchant-in-cairo-1867"
-      },
-      {
-        "title": "Napoleon and His General Staff",
-        "date": "1867",
-        "fileName": "gerome-napoleon-and-his-general-staff-1867"
-      },
-      {
-        "title": "Pho Xai",
-        "date": "1867",
-        "fileName": "gerome-pho-xai-1867"
-      },
-      {
-        "title": "Moorish Bath",
-        "date": "1870",
-        "fileName": "gerome-moorish-bath-1870"
-      },
-      {
-        "title": "Home From the Hunt",
-        "date": "1876",
-        "fileName": "gerome-home-from-the-hunt-1876"
-      },
-      {
-        "title": "Sabre Dance in a Cafe",
-        "date": "1876",
-        "fileName": "gerome-sabre-dance-in-a-cafe-1876"
-      },
-      {
-        "title": "Arab Purchasing a Bride",
-        "date": "1881",
-        "fileName": "gerome-arab-purchasing-a-bride-1881"
-      },
-      {
-        "title": "Bathing Scene",
-        "date": "1881",
-        "fileName": "gerome-bathing-scene-1881"
-      },
-      {
-        "title": "Oriental Woman",
-        "date": "1882",
-        "fileName": "gerome-oriental-woman-1882"
-      },
-      {
-        "title": "Selling Slaves in Rome",
+        "title": "Bay From L Estaque",
         "date": "1886",
-        "fileName": "gerome-selling-slaves-in-rome-1886"
+        "fileName": "cezanne-bay-from-l-estaque-1886"
       },
       {
-        "title": "Bathsheba",
-        "date": "1889",
-        "fileName": "gerome-bathsheba-1889"
+        "title": "Mont Sante Victoire",
+        "date": "1887",
+        "fileName": "cezanne-mont-sante-victoire-1887"
       },
       {
-        "title": "Love Conquers All",
-        "date": "1889",
-        "fileName": "gerome-love-conquers-all-1889"
+        "title": "Still Life with Apples",
+        "date": "1890",
+        "fileName": "cezanne-still-life-with-apples-1890"
       },
       {
-        "title": "Snake Charmer",
-        "date": "1889",
-        "fileName": "gerome-snake-charmer-1889"
+        "title": "Boy in a Red Vest",
+        "date": "1890",
+        "fileName": "cezanne-boy-in-a-red-vest-1890"
       },
       {
-        "title": "Prayer in a Mosque",
+        "title": "The Drinker",
+        "date": "1890",
+        "fileName": "cezanne-drinker-1890"
+      },
+      {
+        "title": "Man in a Room",
+        "date": "1890",
+        "fileName": "cezanne-man-in-a-room-1890"
+      },
+      {
+        "title": "Peasant",
+        "date": "1891",
+        "fileName": "cezanne-peasant-1891"
+      },
+      {
+        "title": "The Card Players",
         "date": "1892",
-        "fileName": "gerome-prayer-in-a-mosque-1892"
+        "fileName": "cezanne-card-players-1892"
       },
       {
-        "title": "The Harem Bathing",
-        "date": "1901",
-        "fileName": "gerome-harem-bathing-1901"
+        "title": "Child with Straw Hat",
+        "date": "1896",
+        "fileName": "cezanne-child-with-straw-hat-1896"
+      },
+      {
+        "title": "Great Pine",
+        "date": "1896",
+        "fileName": "cezanne-great-pine-1896"
+      },
+      {
+        "title": "Joachim Gasquet",
+        "date": "1896",
+        "fileName": "cezanne-joachim-gasquet-1896"
+      },
+      {
+        "title": "Chrysanthemums",
+        "date": "1898",
+        "fileName": "cezanne-chrysanthemums-1898"
+      },
+      {
+        "title": "Apples and Oranges",
+        "date": "1899",
+        "fileName": "cezanne-apples-and-oranges-1899"
+      },
+      {
+        "title": "The Skull",
+        "date": "1900",
+        "fileName": "cezanne-skull-1900"
+      },
+      {
+        "title": "Young Italian Girl Resting",
+        "date": "1900",
+        "fileName": "cezanne-young-italian-girl-resting-1900"
+      },
+      {
+        "title": "Woman Seated in Blue",
+        "date": "1902",
+        "fileName": "cezanne-woman-seated-in-blue-1902"
+      }
+    ]
+  }
+,
+  "degas": {
+    "fname": "Edgar",
+    "lname": "Degas",
+    "bio": "Edgar Degas (19 July 1834 – 27 September 1917) was a French artist famous for his paintings, sculptures, prints, and drawings. He is especially identified with the subject of dance; more than half of his works depict dancers. He is regarded as one of the founders of Impressionism, although he rejected the term, preferring to be called a realist.",
+    "era": "Impressionism",
+    "content": [
+      {
+        "title": "Absinthe Drinkers",
+        "date": "1876",
+        "fileName": "degas-absinthe-drinkers-1876"
+      },
+      {
+        "title": "Woman with Opera Glasses",
+        "date": "1876",
+        "fileName": "degas-woman-with-opera-glasses-1876"
+      },
+      {
+        "title": "Café-Concert at Les Ambassadeurs",
+        "date": "1877",
+        "fileName": "degas-cafe-concert-at-les-ambassadeurs-1877"
+      },
+      {
+        "title": "Dancer with Bouquet",
+        "date": "1877",
+        "fileName": "degas-dancer-with-bouquet-1877"
+      },
+      {
+        "title": "The Star",
+        "date": "1877",
+        "fileName": "degas-star-1877"
+      },
+      {
+        "title": "Song of the Dog",
+        "date": "1877",
+        "fileName": "degas-song-of-the-dog-1877"
+      },
+      {
+        "title": "Singer with a Glove",
+        "date": "1878",
+        "fileName": "degas-singer-with-a-glove-1878"
+      },
+      {
+        "title": "Dancer with a Fan",
+        "date": "1879",
+        "fileName": "degas-dancer-with-a-fan-1879"
+      },
+      {
+        "title": "Before the Entrance",
+        "date": "1880",
+        "fileName": "degas-before-the-entrance-1880"
+      },
+      {
+        "title": "Morning Bath",
+        "date": "1883",
+        "fileName": "degas-morning-bath-1883"
+      },
+      {
+        "title": "Dancer in Green Tutu",
+        "date": "1885",
+        "fileName": "degas-dancer-in-green-tutu-1885"
+      },
+      {
+        "title": "The Tub",
+        "date": "1886",
+        "fileName": "degas-tub-1886"
+      },
+      {
+        "title": "Woman Drying Herself",
+        "date": "1886",
+        "fileName": "degas-woman-drying-herself-1886"
+      },
+      {
+        "title": "Race Horses",
+        "date": "1888",
+        "fileName": "degas-race-horses-1888"
+      },
+      {
+        "title": "Woman Having Her Hair Combed",
+        "date": "1888",
+        "fileName": "degas-woman-having-her-hair-combed-1888"
+      },
+      {
+        "title": "Seated Woman Combing Her Hair",
+        "date": "1890",
+        "fileName": "degas-seated-woman-combing-her-hair-1890"
+      },
+      {
+        "title": "The Morning Bath",
+        "date": "1890",
+        "fileName": "degas-morning-bath-1890"
+      },
+      {
+        "title": "After the Bath",
+        "date": "1894",
+        "fileName": "degas-after-the-bath-1894"
+      },
+      {
+        "title": "Ballet Dancers in the Wings",
+        "date": "1895",
+        "fileName": "degas-ballet-dancers-in-the-wings-1895"
+      },
+      {
+        "title": "Two Bathers on the Grass",
+        "date": "1895",
+        "fileName": "degas-bathers-on-the-grass-1895"
+      }
+    ]
+  }
+,
+  "gauguin": {
+    "fname": "Paul",
+    "lname": "Gauguin",
+    "bio": "Eugène Henri Paul Gauguin (7 June 1848 – 8 May 1903) was a French post-Impressionist artist. Underappreciated until after his death, Gauguin is now recognized for his experimental use of color and Synthetist style that were distinctly different from Impressionism. His work was influential to the French avant-garde and many modern artists, such as Pablo Picasso and Henri Matisse.",
+    "era": "Post-Impressionism",
+    "content": [
+      {
+        "title": "A Clearing",
+        "date": "1874",
+        "fileName": "gauguin-clearing-1874"
+      },
+      {
+        "title": "Blue Barge",
+        "date": "1882",
+        "fileName": "gauguin-blue-barge-1882"
+      },
+      {
+        "title": "Basket of Flowers",
+        "date": "1884",
+        "fileName": "gauguin-basket-of-flowers-1884"
+      },
+      {
+        "title": "Bare Trees",
+        "date": "1885",
+        "fileName": "gauguin-bare-trees-1885"
+      },
+      {
+        "title": "Boy by the Water",
+        "date": "1885",
+        "fileName": "gauguin-boy-by-the-water-1885"
+      },
+      {
+        "title": "Lilac Bouquet",
+        "date": "1885",
+        "fileName": "gauguin-lilac-bouquet-1885"
+      },
+      {
+        "title": "Rocky Coast",
+        "date": "1886",
+        "fileName": "gauguin-rocky-coast-1886"
+      },
+      {
+        "title": "By the Seashore",
+        "date": "1887",
+        "fileName": "gauguin-by-the-seashore-1887"
+      },
+      {
+        "title": "Huts Under the Trees",
+        "date": "1887",
+        "fileName": "gauguin-huts-under-the-trees-1887"
+      },
+      {
+        "title": "Apples and Bowl",
+        "date": "1888",
+        "fileName": "gauguin-apples-and-bowl-1888"
+      },
+      {
+        "title": "Blue Trees",
+        "date": "1888",
+        "fileName": "gauguin-blue-trees-1888"
+      },
+      {
+        "title": "Haymaking",
+        "date": "1888",
+        "fileName": "gauguin-haymaking-1888"
+      },
+      {
+        "title": "Madame Roulin",
+        "date": "1888",
+        "fileName": "gauguin-madame-roulin-1888"
+      },
+      {
+        "title": "Night Cafe at Arles",
+        "date": "1888",
+        "fileName": "gauguin-night-cafe-at-arles-1888"
+      },
+      {
+        "title": "Among the Lillies",
+        "date": "1889",
+        "fileName": "gauguin-among-the-lillies-1889"
+      },
+      {
+        "title": "Flutist on the Cliffs",
+        "date": "1889",
+        "fileName": "gauguin-flutist-on-the-cliffs-1889"
+      },
+      {
+        "title": "Still Life with Fan",
+        "date": "1889",
+        "fileName": "gauguin-still-life-with-fan-1889"
+      },
+      {
+        "title": "Tahitian Woman Bathing",
+        "date": "1892",
+        "fileName": "gauguin-tahitian-woman-bathing-1892"
+      },
+      {
+        "title": "Farm in Brittany",
+        "date": "1894",
+        "fileName": "gauguin-farm-in-brittany-1894"
+      },
+      {
+        "title": "Tahitian Landscape",
+        "date": "1897",
+        "fileName": "gauguin-tahitian-landscape-1897"
       }
     ]
   }
@@ -911,111 +911,111 @@
     ]
   }
 ,
-  "gauguin": {
-    "fname": "Paul",
-    "lname": "Gauguin",
-    "bio": "Eugène Henri Paul Gauguin (7 June 1848 – 8 May 1903) was a French post-Impressionist artist. Underappreciated until after his death, Gauguin is now recognized for his experimental use of color and Synthetist style that were distinctly different from Impressionism. His work was influential to the French avant-garde and many modern artists, such as Pablo Picasso and Henri Matisse.",
-    "era": "Post-Impressionism",
+  "gerome": {
+    "fname": "Jean-L%C3%A9on",
+    "lname": "G%C3%A9r%C3%B4me",
+    "bio": "Jean-Léon Gérôme (11 May 1824 – 10 January 1904) was a French painter and sculptor in the style now known as academicism. The range of his oeuvre included historical painting, Greek mythology, Orientalism, portraits, and other subjects, bringing the academic painting tradition to an artistic climax. He is considered one of the most important painters from this academic period.",
+    "era": "Academic",
     "content": [
       {
-        "title": "A Clearing",
-        "date": "1874",
-        "fileName": "gauguin-clearing-1874"
+        "title": "The Cock Fight",
+        "date": "1846",
+        "fileName": "gerome-cock-fight-1846"
       },
       {
-        "title": "Blue Barge",
+        "title": "The Prisoner",
+        "date": "1861",
+        "fileName": "gerome-prisoner-1861"
+      },
+      {
+        "title": "Jean Bart",
+        "date": "1862",
+        "fileName": "gerome-jean-bart-1862"
+      },
+      {
+        "title": "Prayer in the Desert",
+        "date": "1864",
+        "fileName": "gerome-prayer-in-the-desert-1864"
+      },
+      {
+        "title": "Arnaut Smoking",
+        "date": "1865",
+        "fileName": "gerome-arnaut-smoking-1865"
+      },
+      {
+        "title": "Carpet Merchant in Cairo",
+        "date": "1867",
+        "fileName": "gerome-carpet-merchant-in-cairo-1867"
+      },
+      {
+        "title": "Napoleon and His General Staff",
+        "date": "1867",
+        "fileName": "gerome-napoleon-and-his-general-staff-1867"
+      },
+      {
+        "title": "Pho Xai",
+        "date": "1867",
+        "fileName": "gerome-pho-xai-1867"
+      },
+      {
+        "title": "Moorish Bath",
+        "date": "1870",
+        "fileName": "gerome-moorish-bath-1870"
+      },
+      {
+        "title": "Home From the Hunt",
+        "date": "1876",
+        "fileName": "gerome-home-from-the-hunt-1876"
+      },
+      {
+        "title": "Sabre Dance in a Cafe",
+        "date": "1876",
+        "fileName": "gerome-sabre-dance-in-a-cafe-1876"
+      },
+      {
+        "title": "Arab Purchasing a Bride",
+        "date": "1881",
+        "fileName": "gerome-arab-purchasing-a-bride-1881"
+      },
+      {
+        "title": "Bathing Scene",
+        "date": "1881",
+        "fileName": "gerome-bathing-scene-1881"
+      },
+      {
+        "title": "Oriental Woman",
         "date": "1882",
-        "fileName": "gauguin-blue-barge-1882"
+        "fileName": "gerome-oriental-woman-1882"
       },
       {
-        "title": "Basket of Flowers",
-        "date": "1884",
-        "fileName": "gauguin-basket-of-flowers-1884"
-      },
-      {
-        "title": "Bare Trees",
-        "date": "1885",
-        "fileName": "gauguin-bare-trees-1885"
-      },
-      {
-        "title": "Boy by the Water",
-        "date": "1885",
-        "fileName": "gauguin-boy-by-the-water-1885"
-      },
-      {
-        "title": "Lilac Bouquet",
-        "date": "1885",
-        "fileName": "gauguin-lilac-bouquet-1885"
-      },
-      {
-        "title": "Rocky Coast",
+        "title": "Selling Slaves in Rome",
         "date": "1886",
-        "fileName": "gauguin-rocky-coast-1886"
+        "fileName": "gerome-selling-slaves-in-rome-1886"
       },
       {
-        "title": "By the Seashore",
-        "date": "1887",
-        "fileName": "gauguin-by-the-seashore-1887"
-      },
-      {
-        "title": "Huts Under the Trees",
-        "date": "1887",
-        "fileName": "gauguin-huts-under-the-trees-1887"
-      },
-      {
-        "title": "Apples and Bowl",
-        "date": "1888",
-        "fileName": "gauguin-apples-and-bowl-1888"
-      },
-      {
-        "title": "Blue Trees",
-        "date": "1888",
-        "fileName": "gauguin-blue-trees-1888"
-      },
-      {
-        "title": "Haymaking",
-        "date": "1888",
-        "fileName": "gauguin-haymaking-1888"
-      },
-      {
-        "title": "Madame Roulin",
-        "date": "1888",
-        "fileName": "gauguin-madame-roulin-1888"
-      },
-      {
-        "title": "Night Cafe at Arles",
-        "date": "1888",
-        "fileName": "gauguin-night-cafe-at-arles-1888"
-      },
-      {
-        "title": "Among the Lillies",
+        "title": "Bathsheba",
         "date": "1889",
-        "fileName": "gauguin-among-the-lillies-1889"
+        "fileName": "gerome-bathsheba-1889"
       },
       {
-        "title": "Flutist on the Cliffs",
+        "title": "Love Conquers All",
         "date": "1889",
-        "fileName": "gauguin-flutist-on-the-cliffs-1889"
+        "fileName": "gerome-love-conquers-all-1889"
       },
       {
-        "title": "Still Life with Fan",
+        "title": "Snake Charmer",
         "date": "1889",
-        "fileName": "gauguin-still-life-with-fan-1889"
+        "fileName": "gerome-snake-charmer-1889"
       },
       {
-        "title": "Tahitian Woman Bathing",
+        "title": "Prayer in a Mosque",
         "date": "1892",
-        "fileName": "gauguin-tahitian-woman-bathing-1892"
+        "fileName": "gerome-prayer-in-a-mosque-1892"
       },
       {
-        "title": "Farm in Brittany",
-        "date": "1894",
-        "fileName": "gauguin-farm-in-brittany-1894"
-      },
-      {
-        "title": "Tahitian Landscape",
-        "date": "1897",
-        "fileName": "gauguin-tahitian-landscape-1897"
+        "title": "The Harem Bathing",
+        "date": "1901",
+        "fileName": "gerome-harem-bathing-1901"
       }
     ]
   }
@@ -1504,6 +1504,115 @@
     ]
   }
 ,
+  "rossetti": {
+    "fname": "Dante",
+    "lname": "Rossetti",
+    "bio": "Dante Gabriel Rossetti (12 May 1828 – 9 April 1882) was a British poet, illustrator, painter and translator. He founded the Pre-Raphaelite Brotherhood in 1848 with William Holman Hunt and John Everett Millais. Rossetti was later to be the main inspiration for a second generation of artists and writers influenced by the movement, most notably William Morris and Edward Burne-Jones. His work also influenced the European Symbolists and was a major precursor of the Aesthetic movement.",
+    "era": "Pre-Raphaelite",
+    "content": [
+      {
+        "title": "Found",
+        "date": "1854",
+        "fileName": "rossetti-found-1854"
+      },
+      {
+        "title": "Before the Battle",
+        "date": "1858",
+        "fileName": "rossetti-before-the-battle-1858"
+      },
+      {
+        "title": "Bocca Baciata",
+        "date": "1859",
+        "fileName": "rossetti-bocca-baciata-1859"
+      },
+      {
+        "title": "Sir Galahad at the Ruined Chapel",
+        "date": "1859",
+        "fileName": "rossetti-sir-galahad-at-the-ruined-chapel-1859"
+      },
+      {
+        "title": "Jane Morris",
+        "date": "1860",
+        "fileName": "rossetti-jane-morris-1860"
+      },
+      {
+        "title": "Fair Rosamund",
+        "date": "1861",
+        "fileName": "rossetti-fair-rosamund-1861"
+      },
+      {
+        "title": "The Annunciation",
+        "date": "1861",
+        "fileName": "rossetti-annunciation-1861"
+      },
+      {
+        "title": "Joan of Arc",
+        "date": "1864",
+        "fileName": "rossetti-joan-of-arc-1864"
+      },
+      {
+        "title": "Morning Music",
+        "date": "1864",
+        "fileName": "rossetti-morning-music-1864"
+      },
+      {
+        "title": "The Beloved",
+        "date": "1866",
+        "fileName": "rossetti-beloved-1866"
+      },
+      {
+        "title": "The Loving Cup",
+        "date": "1867",
+        "fileName": "rossetti-loving-cup-1867"
+      },
+      {
+        "title": "The Tune of Seven Towers",
+        "date": "1867",
+        "fileName": "rossetti-tune-of-seven-towers-1867"
+      },
+      {
+        "title": "Lady Lilith",
+        "date": "1868",
+        "fileName": "rossetti-lady-lilith-1868"
+      },
+      {
+        "title": "Mariana",
+        "date": "1870",
+        "fileName": "rossetti-mariana-1870"
+      },
+      {
+        "title": "The Bower Meadow",
+        "date": "1872",
+        "fileName": "rossetti-bower-meadow-1872"
+      },
+      {
+        "title": "A Sea Spell",
+        "date": "1877",
+        "fileName": "rossetti-sea-spell-1877"
+      },
+      {
+        "title": "Prosperpine",
+        "date": "1877",
+        "fileName": "rossetti-prosperpine-1877"
+      },
+      {
+        "title": "Pandora",
+        "date": "1879",
+        "fileName": "rossetti-pandora-1879"
+      },
+      {
+        "title": "The Day Dream",
+        "date": "1880",
+        "fileName": "rossetti-day-dream-1880"
+      },
+      {
+        "title": "Joan of Arc",
+        "date": "1882",
+        "fileName": "rossetti-joan-of-arc-1882"
+      }
+    ]
+  }
+,
   "rousseau": {
     "fname": "Henri",
     "lname": "Rousseau",
@@ -1613,111 +1722,111 @@
     ]
   }
 ,
-  "rossetti": {
-    "fname": "Dante",
-    "lname": "Rossetti",
-    "bio": "Dante Gabriel Rossetti (12 May 1828 – 9 April 1882) was a British poet, illustrator, painter and translator. He founded the Pre-Raphaelite Brotherhood in 1848 with William Holman Hunt and John Everett Millais. Rossetti was later to be the main inspiration for a second generation of artists and writers influenced by the movement, most notably William Morris and Edward Burne-Jones. His work also influenced the European Symbolists and was a major precursor of the Aesthetic movement.",
-    "era": "Pre-Raphaelite",
+  "sargent": {
+    "fname": "John Singer",
+    "lname": "Sargent",
+    "bio": "John Singer Sargent (January 12, 1856 – April 14, 1925) was an American artist, considered the 'leading portrait painter of his generation' for his evocations of Edwardian era luxury. During his career, he created roughly 900 oil paintings and more than 2,000 watercolors, as well as countless sketches and charcoal drawings.",
+    "era": "Realism",
     "content": [
       {
-        "title": "Found",
-        "date": "1854",
-        "fileName": "rossetti-found-1854"
+        "title": "Seascape",
+        "date": "1875",
+        "fileName": "sargent-seascape-1875"
       },
       {
-        "title": "Before the Battle",
-        "date": "1858",
-        "fileName": "rossetti-before-the-battle-1858"
+        "title": "Nice",
+        "date": "1884",
+        "fileName": "sargent-nice-1884"
       },
       {
-        "title": "Bocca Baciata",
-        "date": "1859",
-        "fileName": "rossetti-bocca-baciata-1859"
+        "title": "Home Fields",
+        "date": "1885",
+        "fileName": "sargent-home-fields-1885"
       },
       {
-        "title": "Sir Galahad at the Ruined Chapel",
-        "date": "1859",
-        "fileName": "rossetti-sir-galahad-at-the-ruined-chapel-1859"
+        "title": "Poppies",
+        "date": "1886",
+        "fileName": "sargent-poppies-1886"
       },
       {
-        "title": "Jane Morris",
-        "date": "1860",
-        "fileName": "rossetti-jane-morris-1860"
+        "title": "A Morning Walk",
+        "date": "1888",
+        "fileName": "sargent-morning-walk-1888"
       },
       {
-        "title": "Fair Rosamund",
-        "date": "1861",
-        "fileName": "rossetti-fair-rosamund-1861"
+        "title": "By the River",
+        "date": "1888",
+        "fileName": "sargent-by-the-river-1888"
       },
       {
-        "title": "The Annunciation",
-        "date": "1861",
-        "fileName": "rossetti-annunciation-1861"
+        "title": "On the Canal",
+        "date": "1903",
+        "fileName": "sargent-on-the-canal-1903"
       },
       {
-        "title": "Joan of Arc",
-        "date": "1864",
-        "fileName": "rossetti-joan-of-arc-1864"
+        "title": "Black Tent",
+        "date": "1906",
+        "fileName": "sargent-black-tent-1906"
       },
       {
-        "title": "Morning Music",
-        "date": "1864",
-        "fileName": "rossetti-morning-music-1864"
+        "title": "Hills of Galilee",
+        "date": "1906",
+        "fileName": "sargent-hills-of-galilee-1906"
       },
       {
-        "title": "The Beloved",
-        "date": "1866",
-        "fileName": "rossetti-beloved-1866"
+        "title": "A Hotel Room",
+        "date": "1907",
+        "fileName": "sargent-hotel-room-1907"
       },
       {
-        "title": "The Loving Cup",
-        "date": "1867",
-        "fileName": "rossetti-loving-cup-1867"
+        "title": "A Siesta",
+        "date": "1907",
+        "fileName": "sargent-siesta-1907"
       },
       {
-        "title": "The Tune of Seven Towers",
-        "date": "1867",
-        "fileName": "rossetti-tune-of-seven-towers-1867"
+        "title": "Gourds",
+        "date": "1908",
+        "fileName": "sargent-gourds-1909"
       },
       {
-        "title": "Lady Lilith",
-        "date": "1868",
-        "fileName": "rossetti-lady-lilith-1868"
+        "title": "Boy on a Rock",
+        "date": "1909",
+        "fileName": "sargent-boy-on-a-rock-1909"
       },
       {
-        "title": "Mariana",
-        "date": "1870",
-        "fileName": "rossetti-mariana-1870"
+        "title": "Glacier Streams",
+        "date": "1909",
+        "fileName": "sargent-glacier-streams-1909"
       },
       {
-        "title": "The Bower Meadow",
-        "date": "1872",
-        "fileName": "rossetti-bower-meadow-1872"
+        "title": "A Waterfall",
+        "date": "1910",
+        "fileName": "sargent-waterfall-1910"
       },
       {
-        "title": "A Sea Spell",
-        "date": "1877",
-        "fileName": "rossetti-sea-spell-1877"
+        "title": "In the Alps",
+        "date": "1910",
+        "fileName": "sargent-in-the-alps-1910"
       },
       {
-        "title": "Prosperpine",
-        "date": "1877",
-        "fileName": "rossetti-prosperpine-1877"
+        "title": "Oxen Resting",
+        "date": "1910",
+        "fileName": "sargent-oxen-resting-1910"
       },
       {
-        "title": "Pandora",
-        "date": "1879",
-        "fileName": "rossetti-pandora-1879"
+        "title": "Magnolias",
+        "date": "1912",
+        "fileName": "sargent-magnolias-1912"
       },
       {
-        "title": "The Day Dream",
-        "date": "1880",
-        "fileName": "rossetti-day-dream-1880"
+        "title": "Girl Fishing",
+        "date": "1913",
+        "fileName": "sargent-girl-fishing-1913"
       },
       {
-        "title": "Joan of Arc",
-        "date": "1882",
-        "fileName": "rossetti-joan-of-arc-1882"
+        "title": "Palms",
+        "date": "1917",
+        "fileName": "sargent-palms-1917"
       }
     ]
   }
@@ -1976,115 +2085,6 @@
         "title": "Wheatfield with Crows",
         "date": "1890",
         "fileName": "vangogh-wheatfield-with-crows-1890"
-      }
-    ]
-  }
-,
-  "sargent": {
-    "fname": "John Singer",
-    "lname": "Sargent",
-    "bio": "John Singer Sargent (January 12, 1856 – April 14, 1925) was an American artist, considered the 'leading portrait painter of his generation' for his evocations of Edwardian era luxury. During his career, he created roughly 900 oil paintings and more than 2,000 watercolors, as well as countless sketches and charcoal drawings.",
-    "era": "Realism",
-    "content": [
-      {
-        "title": "Seascape",
-        "date": "1875",
-        "fileName": "sargent-seascape-1875"
-      },
-      {
-        "title": "Nice",
-        "date": "1884",
-        "fileName": "sargent-nice-1884"
-      },
-      {
-        "title": "Home Fields",
-        "date": "1885",
-        "fileName": "sargent-home-fields-1885"
-      },
-      {
-        "title": "Poppies",
-        "date": "1886",
-        "fileName": "sargent-poppies-1886"
-      },
-      {
-        "title": "A Morning Walk",
-        "date": "1888",
-        "fileName": "sargent-morning-walk-1888"
-      },
-      {
-        "title": "By the River",
-        "date": "1888",
-        "fileName": "sargent-by-the-river-1888"
-      },
-      {
-        "title": "On the Canal",
-        "date": "1903",
-        "fileName": "sargent-on-the-canal-1903"
-      },
-      {
-        "title": "Black Tent",
-        "date": "1906",
-        "fileName": "sargent-black-tent-1906"
-      },
-      {
-        "title": "Hills of Galilee",
-        "date": "1906",
-        "fileName": "sargent-hills-of-galilee-1906"
-      },
-      {
-        "title": "A Hotel Room",
-        "date": "1907",
-        "fileName": "sargent-hotel-room-1907"
-      },
-      {
-        "title": "A Siesta",
-        "date": "1907",
-        "fileName": "sargent-siesta-1907"
-      },
-      {
-        "title": "Gourds",
-        "date": "1908",
-        "fileName": "sargent-gourds-1909"
-      },
-      {
-        "title": "Boy on a Rock",
-        "date": "1909",
-        "fileName": "sargent-boy-on-a-rock-1909"
-      },
-      {
-        "title": "Glacier Streams",
-        "date": "1909",
-        "fileName": "sargent-glacier-streams-1909"
-      },
-      {
-        "title": "A Waterfall",
-        "date": "1910",
-        "fileName": "sargent-waterfall-1910"
-      },
-      {
-        "title": "In the Alps",
-        "date": "1910",
-        "fileName": "sargent-in-the-alps-1910"
-      },
-      {
-        "title": "Oxen Resting",
-        "date": "1910",
-        "fileName": "sargent-oxen-resting-1910"
-      },
-      {
-        "title": "Magnolias",
-        "date": "1912",
-        "fileName": "sargent-magnolias-1912"
-      },
-      {
-        "title": "Girl Fishing",
-        "date": "1913",
-        "fileName": "sargent-girl-fishing-1913"
-      },
-      {
-        "title": "Palms",
-        "date": "1917",
-        "fileName": "sargent-palms-1917"
       }
     ]
   }

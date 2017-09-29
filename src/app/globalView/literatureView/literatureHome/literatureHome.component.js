@@ -8,7 +8,6 @@ import './literatureHome.component.less';
 
 const LiteratureHome = (props) => {
 
-  document.querySelector('body').scrollTop = 0;
   document.title = 'Portitude Library';
 
   const authorsList = [];

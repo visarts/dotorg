@@ -47,6 +47,10 @@ export default class App extends React.Component {
     if (this.currentLocation !== updatedLocation) {
       this.setState({routing: dataService.getCurrentRouting(updatedLocation)}, () => {
         this.currentLocation = updatedLocation;
+        console.log(nextProps);
+        if (!this.state.routing.currentWork) {
+          window.scroll(0, 0);
+        }
       });
     }
   }
@@ -70,7 +74,7 @@ export default class App extends React.Component {
 
       refactor arts carousel to use css animation and a single array
 
-      Get dynamic top and bottom margins for global container to accomodoate fixed header/footer
+      Need to fix issue with monthly creators -- use fixed array to get, not object keys
     */
 
     return (

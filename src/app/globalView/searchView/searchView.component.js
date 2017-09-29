@@ -7,7 +7,6 @@ const SearchView = (props) => {
 
   // will need grab all content json files and walk through every item to look for a match of item title
 
-  document.querySelector('body').scrollTop = 0;
   const searchInput = props.appState.searchInput ? props.appState.searchInput : '';
   const artistNames = dataService.getArtistNames();
   const authorNames = dataService.getAuthorNames();

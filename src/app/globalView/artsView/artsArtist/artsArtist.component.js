@@ -8,7 +8,6 @@ import './artsArtist.component.less';
 
 const ArtsArtist = (props) => {
 
-  document.querySelector('body').scrollTop = 0;
   const artistKey = props.match.params.artist;
   const artist = props.store.artistsData[artistKey];
 

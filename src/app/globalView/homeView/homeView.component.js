@@ -4,7 +4,6 @@ import './homeView.component.less';
 
 const HomeView = (props) => {
 
-  document.querySelector('body').scrollTop = 0;
   const authorKeys = Object.keys(props.store.authorsData);
   const artistKeys = Object.keys(props.store.artistsData);
   const date = new Date();

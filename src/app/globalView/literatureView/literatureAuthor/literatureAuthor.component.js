@@ -7,7 +7,6 @@ import SectionHeader from 'SharedComponents/sectionHeader/sectionHeader.componen
 import './literatureAuthor.component.less';
 
 const LiteratureAuthor = (props) => {
-  document.querySelector('body').scrollTop = 0;
 
   const authorKey = props.match.params.author;
   const author = props.store.authorsData[authorKey];
