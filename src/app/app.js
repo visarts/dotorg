@@ -74,7 +74,6 @@ export default class App extends React.Component {
 
       refactor arts carousel to use css animation and a single array
 
-      Need to fix issue with monthly creators -- use fixed array to get, not object keys
     */
 
     return (

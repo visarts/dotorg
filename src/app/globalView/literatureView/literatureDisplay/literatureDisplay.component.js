@@ -189,7 +189,7 @@ export default class LiteratureDisplay extends React.Component {
             <div className="readingBody">
               <div className={this.state.currentPage > 1 ? 'literatureTitle smallTitles' : 'literatureTitle'}>
                 <h1>{decodeURIComponent(this.currentWork.title)}</h1>
-                <h2>{this.author.fname} {this.author.lname}</h2>
+                <h2 className={this.state.currentPage > 1 ? 'hidden' : ''}>{this.author.fname} {this.author.lname}</h2>
               </div>
               <div className={`htmlContent ${this.state.currentFontSizeClass}`} dangerouslySetInnerHTML={this.setHTMLContent()}></div>
             </div>

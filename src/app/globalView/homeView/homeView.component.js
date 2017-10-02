@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import dataService from 'Services/data.service';
 import './homeView.component.less';
 
 const HomeView = (props) => {
 
-  const authorKeys = Object.keys(props.store.authorsData);
-  const artistKeys = Object.keys(props.store.artistsData);
+  const authorKeys = dataService.getAuthorNames();
+  const artistKeys = dataService.getArtistNames();
   const date = new Date();
   const creatorFrequency = date.getMonth();
   const contentFrequency = date.getDay();

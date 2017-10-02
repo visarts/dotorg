@@ -2,7 +2,6 @@ import React from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from 'react-router-dom';
 import { Modal, Glyphicon, DropdownButton, MenuItem } from 'react-bootstrap';
-import Lightbox from 'react-images';
 import eventService from 'Services/event.service';
 import ArtCarousel from 'SharedComponents/artCarousel/artCarousel.component';
 import './artsDisplay.component.less';
