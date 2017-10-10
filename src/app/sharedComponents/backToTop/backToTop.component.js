@@ -34,10 +34,7 @@ export default class BackToTop extends React.Component  {
   }
 
   goBackToTop (event) {
-    //document.querySelector('html').scrollTop = 0;
-    while (window.pageYOffset > 0) {
-      window.scrollBy(0, 5);
-    }
+    document.querySelector('html').scrollTop = 0;
     /*var timerID = setInterval(function() {
     if( window.pageYOffset <= 500 )
         window.scrollBy(0, 5);
