@@ -47,7 +47,6 @@ export default class App extends React.Component {
     if (this.currentLocation !== updatedLocation) {
       this.setState({routing: dataService.getCurrentRouting(updatedLocation)}, () => {
         this.currentLocation = updatedLocation;
-        console.log(nextProps);
         if (!this.state.routing.currentWork) {
           window.scroll(0, 0);
         }

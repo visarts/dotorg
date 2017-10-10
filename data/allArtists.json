@@ -257,115 +257,6 @@
     ]
   }
 ,
-  "cezanne": {
-    "fname": "Paul",
-    "lname": "Cezanne",
-    "bio": "Paul Cézanne (19 January 1839 – 22 October 1906) was a French artist and Post-Impressionist painter whose work laid the foundations of the transition from the 19th-century conception of artistic endeavor to a new and radically different world of art in the 20th century. Cézanne's often repetitive, exploratory brushstrokes are highly characteristic and clearly recognizable. He used planes of colour and small brushstrokes that build up to form complex fields. The paintings convey Cézanne's intense study of his subjects.",
-    "era": "Post-Impressionism",
-    "content": [
-      {
-        "title": "The Artist's Father",
-        "date": "1866",
-        "fileName": "cezanne-artists-father-1866"
-      },
-      {
-        "title": "The Thaw",
-        "date": "1871",
-        "fileName": "cezanne-thaw-1871"
-      },
-      {
-        "title": "Hanged Man's House",
-        "date": "1873",
-        "fileName": "cezanne-hanged-mans-house-1873"
-      },
-      {
-        "title": "Hortense Fiquet in a Striped Skirt",
-        "date": "1878",
-        "fileName": "cezanne-hortense-fiquet-in-a-striped-skirt-1878"
-      },
-      {
-        "title": "Bay From L Estaque",
-        "date": "1886",
-        "fileName": "cezanne-bay-from-l-estaque-1886"
-      },
-      {
-        "title": "Mont Sante Victoire",
-        "date": "1887",
-        "fileName": "cezanne-mont-sante-victoire-1887"
-      },
-      {
-        "title": "Still Life with Apples",
-        "date": "1890",
-        "fileName": "cezanne-still-life-with-apples-1890"
-      },
-      {
-        "title": "Boy in a Red Vest",
-        "date": "1890",
-        "fileName": "cezanne-boy-in-a-red-vest-1890"
-      },
-      {
-        "title": "The Drinker",
-        "date": "1890",
-        "fileName": "cezanne-drinker-1890"
-      },
-      {
-        "title": "Man in a Room",
-        "date": "1890",
-        "fileName": "cezanne-man-in-a-room-1890"
-      },
-      {
-        "title": "Peasant",
-        "date": "1891",
-        "fileName": "cezanne-peasant-1891"
-      },
-      {
-        "title": "The Card Players",
-        "date": "1892",
-        "fileName": "cezanne-card-players-1892"
-      },
-      {
-        "title": "Child with Straw Hat",
-        "date": "1896",
-        "fileName": "cezanne-child-with-straw-hat-1896"
-      },
-      {
-        "title": "Great Pine",
-        "date": "1896",
-        "fileName": "cezanne-great-pine-1896"
-      },
-      {
-        "title": "Joachim Gasquet",
-        "date": "1896",
-        "fileName": "cezanne-joachim-gasquet-1896"
-      },
-      {
-        "title": "Chrysanthemums",
-        "date": "1898",
-        "fileName": "cezanne-chrysanthemums-1898"
-      },
-      {
-        "title": "Apples and Oranges",
-        "date": "1899",
-        "fileName": "cezanne-apples-and-oranges-1899"
-      },
-      {
-        "title": "The Skull",
-        "date": "1900",
-        "fileName": "cezanne-skull-1900"
-      },
-      {
-        "title": "Young Italian Girl Resting",
-        "date": "1900",
-        "fileName": "cezanne-young-italian-girl-resting-1900"
-      },
-      {
-        "title": "Woman Seated in Blue",
-        "date": "1902",
-        "fileName": "cezanne-woman-seated-in-blue-1902"
-      }
-    ]
-  }
-,
   "creatorkey": {
     "fname": "Fname",
     "lname": "Lname",
@@ -471,6 +362,115 @@
         "title": "Picture 20",
         "date": "1132",
         "fileName": "creatorkey-picture-20-1132"
+      }
+    ]
+  }
+,
+  "cezanne": {
+    "fname": "Paul",
+    "lname": "Cezanne",
+    "bio": "Paul Cézanne (19 January 1839 – 22 October 1906) was a French artist and Post-Impressionist painter whose work laid the foundations of the transition from the 19th-century conception of artistic endeavor to a new and radically different world of art in the 20th century. Cézanne's often repetitive, exploratory brushstrokes are highly characteristic and clearly recognizable. He used planes of colour and small brushstrokes that build up to form complex fields. The paintings convey Cézanne's intense study of his subjects.",
+    "era": "Post-Impressionism",
+    "content": [
+      {
+        "title": "The Artist's Father",
+        "date": "1866",
+        "fileName": "cezanne-artists-father-1866"
+      },
+      {
+        "title": "The Thaw",
+        "date": "1871",
+        "fileName": "cezanne-thaw-1871"
+      },
+      {
+        "title": "Hanged Man's House",
+        "date": "1873",
+        "fileName": "cezanne-hanged-mans-house-1873"
+      },
+      {
+        "title": "Hortense Fiquet in a Striped Skirt",
+        "date": "1878",
+        "fileName": "cezanne-hortense-fiquet-in-a-striped-skirt-1878"
+      },
+      {
+        "title": "Bay From L Estaque",
+        "date": "1886",
+        "fileName": "cezanne-bay-from-l-estaque-1886"
+      },
+      {
+        "title": "Mont Sante Victoire",
+        "date": "1887",
+        "fileName": "cezanne-mont-sante-victoire-1887"
+      },
+      {
+        "title": "Still Life with Apples",
+        "date": "1890",
+        "fileName": "cezanne-still-life-with-apples-1890"
+      },
+      {
+        "title": "Boy in a Red Vest",
+        "date": "1890",
+        "fileName": "cezanne-boy-in-a-red-vest-1890"
+      },
+      {
+        "title": "The Drinker",
+        "date": "1890",
+        "fileName": "cezanne-drinker-1890"
+      },
+      {
+        "title": "Man in a Room",
+        "date": "1890",
+        "fileName": "cezanne-man-in-a-room-1890"
+      },
+      {
+        "title": "Peasant",
+        "date": "1891",
+        "fileName": "cezanne-peasant-1891"
+      },
+      {
+        "title": "The Card Players",
+        "date": "1892",
+        "fileName": "cezanne-card-players-1892"
+      },
+      {
+        "title": "Child with Straw Hat",
+        "date": "1896",
+        "fileName": "cezanne-child-with-straw-hat-1896"
+      },
+      {
+        "title": "Great Pine",
+        "date": "1896",
+        "fileName": "cezanne-great-pine-1896"
+      },
+      {
+        "title": "Joachim Gasquet",
+        "date": "1896",
+        "fileName": "cezanne-joachim-gasquet-1896"
+      },
+      {
+        "title": "Chrysanthemums",
+        "date": "1898",
+        "fileName": "cezanne-chrysanthemums-1898"
+      },
+      {
+        "title": "Apples and Oranges",
+        "date": "1899",
+        "fileName": "cezanne-apples-and-oranges-1899"
+      },
+      {
+        "title": "The Skull",
+        "date": "1900",
+        "fileName": "cezanne-skull-1900"
+      },
+      {
+        "title": "Young Italian Girl Resting",
+        "date": "1900",
+        "fileName": "cezanne-young-italian-girl-resting-1900"
+      },
+      {
+        "title": "Woman Seated in Blue",
+        "date": "1902",
+        "fileName": "cezanne-woman-seated-in-blue-1902"
       }
     ]
   }
@@ -911,6 +911,114 @@
     ]
   }
 ,
+  "monet": {
+    "fname": "Claude",
+    "lname": "Monet",
+    "bio": "Oscar-Claude Monet (14 November 1840 – 5 December 1926) was a founder of French Impressionist painting, and the most consistent and prolific practitioner of the movement's philosophy of expressing one's perceptions before nature, especially as applied to plein-air landscape painting.",
+    "era": "Impressionism",
+    "content": [
+      {
+        "title": "Garden at Sante Adresse",
+        "date": "1867",
+        "fileName": "monet-garden-at-sante-adresse-1867"
+      },
+      {
+        "title": "Lady in the Garden",
+        "date": "1867",
+        "fileName": "monet-lady-in-the-garden-1867"
+      },
+      {
+        "title": "Bathing at la Grenouillere",
+        "date": "1869",
+        "fileName": "monet-bathing-at-la-grenouillere-1869"
+      },
+      {
+        "title": "Thames at Westminster",
+        "date": "1871",
+        "fileName": "monet-thames-at-westminster-1871"
+      },
+      {
+        "title": "Impression Sunrise",
+        "date": "1872",
+        "fileName": "monet-impression-sunrise-1872"
+      },{
+        "title": "Promenade",
+        "date": "1872",
+        "fileName": "monet-promenade-1872"
+      },
+      {
+        "title": "Monet in his Garden at Argenteuil",
+        "date": "1875",
+        "fileName": "monet-monet-in-his-garden-1875"
+      },
+      {
+        "title": "Madame Monet in Japanese Costume",
+        "date": "1876",
+        "fileName": "monet-madame-monet-in-japanese-costume-1876"
+      },
+      {
+        "title": "Boat Studio",
+        "date": "1876",
+        "fileName": "monet-boat-studio-1876"
+      },
+      {
+        "title": "Station St. Lazare",
+        "date": "1877",
+        "fileName": "monet-station-st-lazare-1877"
+      },
+      {
+        "title": "Rock Arch West of Etretat",
+        "date": "1883",
+        "fileName": "monet-rock-arch-west-of-etretat-1883"
+      },
+      {
+        "title": "Bordighera",
+        "date": "1884",
+        "fileName": "monet-bordighera-1884"
+      },
+      {
+        "title": "Corniche of Monaco",
+        "date": "1884",
+        "fileName": "monet-corniche-of-monaco-1884"
+      },
+      {
+        "title": "Woman with Umbrella",
+        "date": "1886",
+        "fileName": "monet-woman-with-umbrella-1886"
+      },
+      {
+        "title": "Haystacks",
+        "date": "1890",
+        "fileName": "monet-haystacks-1890"
+      },
+      {
+        "title": "Poplars Along the River",
+        "date": "1891",
+        "fileName": "monet-poplars-along-the-river-1891"
+      },
+      {
+        "title": "Waterloo Bridge",
+        "date": "1901",
+        "fileName": "monet-waterloo-bridge-1901"
+      },
+      {
+        "title": "Waterlillies",
+        "date": "1903",
+        "fileName": "monet-waterlillies-1903"
+      },
+      {
+        "title": "Sun Breaking Through Fog",
+        "date": "1904",
+        "fileName": "monet-sun-breaking-through-fog-1904"
+      },
+      {
+        "title": "Venice",
+        "date": "1908",
+        "fileName": "monet-venice-1908"
+      }
+    ]
+  }
+,
   "michelangelo": {
     "fname": "Buonarroti",
     "lname": "Michelangelo",
@@ -1020,163 +1128,6 @@
     ]
   }
 ,
-  "monet": {
-    "fname": "Claude",
-    "lname": "Monet",
-    "bio": "Oscar-Claude Monet (14 November 1840 – 5 December 1926) was a founder of French Impressionist painting, and the most consistent and prolific practitioner of the movement's philosophy of expressing one's perceptions before nature, especially as applied to plein-air landscape painting.",
-    "era": "Impressionism",
-    "content": [
-      {
-        "title": "Garden at Sante Adresse",
-        "date": "1867",
-        "fileName": "monet-garden-at-sante-adresse-1867"
-      },
-      {
-        "title": "Lady in the Garden",
-        "date": "1867",
-        "fileName": "monet-lady-in-the-garden-1867"
-      },
-      {
-        "title": "Bathing at la Grenouillere",
-        "date": "1869",
-        "fileName": "monet-bathing-at-la-grenouillere-1869"
-      },
-      {
-        "title": "Thames at Westminster",
-        "date": "1871",
-        "fileName": "monet-thames-at-westminster-1871"
-      },
-      {
-        "title": "Impression Sunrise",
-        "date": "1872",
-        "fileName": "monet-impression-sunrise-1872"
-      },{
-        "title": "Promenade",
-        "date": "1872",
-        "fileName": "monet-promenade-1872"
-      },
-      {
-        "title": "Monet in his Garden at Argenteuil",
-        "date": "1875",
-        "fileName": "monet-monet-in-his-garden-1875"
-      },
-      {
-        "title": "Madame Monet in Japanese Costume",
-        "date": "1876",
-        "fileName": "monet-madame-monet-in-japanese-costume-1876"
-      },
-      {
-        "title": "Boat Studio",
-        "date": "1876",
-        "fileName": "monet-boat-studio-1876"
-      },
-      {
-        "title": "Station St. Lazare",
-        "date": "1877",
-        "fileName": "monet-station-st-lazare-1877"
-      },
-      {
-        "title": "Rock Arch West of Etretat",
-        "date": "1883",
-        "fileName": "monet-rock-arch-west-of-etretat-1883"
-      },
-      {
-        "title": "Bordighera",
-        "date": "1884",
-        "fileName": "monet-bordighera-1884"
-      },
-      {
-        "title": "Corniche of Monaco",
-        "date": "1884",
-        "fileName": "monet-corniche-of-monaco-1884"
-      },
-      {
-        "title": "Woman with Umbrella",
-        "date": "1886",
-        "fileName": "monet-woman-with-umbrella-1886"
-      },
-      {
-        "title": "Haystacks",
-        "date": "1890",
-        "fileName": "monet-haystacks-1890"
-      },
-      {
-        "title": "Poplars Along the River",
-        "date": "1891",
-        "fileName": "monet-poplars-along-the-river-1891"
-      },
-      {
-        "title": "Waterloo Bridge",
-        "date": "1901",
-        "fileName": "monet-waterloo-bridge-1901"
-      },
-      {
-        "title": "Waterlillies",
-        "date": "1903",
-        "fileName": "monet-waterlillies-1903"
-      },
-      {
-        "title": "Sun Breaking Through Fog",
-        "date": "1904",
-        "fileName": "monet-sun-breaking-through-fog-1904"
-      },
-      {
-        "title": "Venice",
-        "date": "1908",
-        "fileName": "monet-venice-1908"
-      }
-    ]
-  }
-,
-  "okeeffe": {
-    "fname": "Georgia",
-    "lname": "O'Keeffe",
-    "bio": "Georgia Totto O'Keeffe (November 15, 1887 – March 6, 1986) was an American artist. She was best known for her paintings of enlarged flowers, New York skyscrapers, and New Mexico landscapes. O'Keeffe has been recognized as the 'Mother of American modernism'",
-    "era": "Modernism",
-    "content": [
-      {
-        "title": "Blue and Green Music",
-        "date": "1919",
-        "fileName": "okeeffe-blue-and-green-music-1919"
-      },
-      {
-        "title": "Black Iris",
-        "date": "1927",
-        "fileName": "okeeffe-black-iris-1927"
-      },
-      {
-        "title": "Tan Clam with Seaweed",
-        "date": "1926",
-        "fileName": "okeeffe-tan-clam-with-seaweed-1926"
-      },
-      {
-        "title": "Oriental Poppies",
-        "date": "1926",
-        "fileName": "okeeffe-oriental-poppies-1926"
-      },
-      {
-        "title": "Mountain in New Mexico",
-        "date": "1931",
-        "fileName": "okeeffe-mountain-in-new-mexico-1931"
-      },
-      {
-        "title": "Broken Shell",
-        "date": "1937",
-        "fileName": "okeeffe-broken-shell-1937"
-      },
-      {
-        "title": "Clam and Mussel",
-        "date": "1938",
-        "fileName": "okeeffe-clam-and-mussel-1938"
-      },
-      {
-        "title": "Red Hill and White Shell",
-        "date": "1938",
-        "fileName": "okeeffe-red-hill-and-white-shell-1938"
-      }
-    ]
-  }
-,
   "raphael": {
     "fname": "",
     "lname": "Raphael Sanzio da Urbino",
@@ -1282,6 +1233,55 @@
         "title": "Joanna of Aragon",
         "date": "1518",
         "fileName": "raphael-joanna-of-aragon-1518"
+      }
+    ]
+  }
+,
+  "okeeffe": {
+    "fname": "Georgia",
+    "lname": "O'Keeffe",
+    "bio": "Georgia Totto O'Keeffe (November 15, 1887 – March 6, 1986) was an American artist. She was best known for her paintings of enlarged flowers, New York skyscrapers, and New Mexico landscapes. O'Keeffe has been recognized as the 'Mother of American modernism'",
+    "era": "Modernism",
+    "content": [
+      {
+        "title": "Blue and Green Music",
+        "date": "1919",
+        "fileName": "okeeffe-blue-and-green-music-1919"
+      },
+      {
+        "title": "Black Iris",
+        "date": "1927",
+        "fileName": "okeeffe-black-iris-1927"
+      },
+      {
+        "title": "Tan Clam with Seaweed",
+        "date": "1926",
+        "fileName": "okeeffe-tan-clam-with-seaweed-1926"
+      },
+      {
+        "title": "Oriental Poppies",
+        "date": "1926",
+        "fileName": "okeeffe-oriental-poppies-1926"
+      },
+      {
+        "title": "Mountain in New Mexico",
+        "date": "1931",
+        "fileName": "okeeffe-mountain-in-new-mexico-1931"
+      },
+      {
+        "title": "Broken Shell",
+        "date": "1937",
+        "fileName": "okeeffe-broken-shell-1937"
+      },
+      {
+        "title": "Clam and Mussel",
+        "date": "1938",
+        "fileName": "okeeffe-clam-and-mussel-1938"
+      },
+      {
+        "title": "Red Hill and White Shell",
+        "date": "1938",
+        "fileName": "okeeffe-red-hill-and-white-shell-1938"
       }
     ]
   }
@@ -1613,115 +1613,6 @@
     ]
   }
 ,
-  "seurat": {
-    "fname": "Georges",
-    "lname": "Seurat",
-    "bio": "Georges-Pierre Seurat (2 December 1859 – 29 March 1891) was a French post-Impressionist painter and draftsman. He is noted for his innovative use of drawing media and for devising the painting techniques known as chromoluminarism and pointillism. Seurat's artistic personality was compounded of qualities which are usually supposed to be opposed and incompatible: on the one hand, his extreme and delicate sensibility; on the other, a passion for logical abstraction and an almost mathematical precision of mind.",
-    "era": "Post-Impressionism",
-    "content": [
-      {
-        "title": "Vase of Flowers",
-        "date": "1879",
-        "fileName": "seurat-vase-of-flowers-1879"
-      },
-      {
-        "title": "Forest at Pontaubert",
-        "date": "1881",
-        "fileName": "seurat-forest-at-pontaubert-1881"
-      },
-      {
-        "title": "River Banks",
-        "date": "1883",
-        "fileName": "seurat-river-banks-1883"
-      },
-      {
-        "title": "Bathing at Asniers",
-        "date": "1884",
-        "fileName": "seurat-bathing-at-asniers-1884"
-      },
-      {
-        "title": "Boats at Lowtide on Grandcamp",
-        "date": "1885",
-        "fileName": "seurat-boats-at-lowtide-on-grandcamp-1885"
-      },
-      {
-        "title": "Fort Samson",
-        "date": "1885",
-        "fileName": "seurat-fort-samson-1885"
-      },
-      {
-        "title": "Sunday Afternoon on the Island of Grande Jatte",
-        "date": "1886",
-        "fileName": "seurat-sunday-afternoon-on-the-island-of-grande-jatte-1886"
-      },
-      {
-        "title": "The Bridge at Courbevoie",
-        "date": "1886",
-        "fileName": "seurat-bridge-at-courbevoie-1886"
-      },
-      {
-        "title": "Gray Weather",
-        "date": "1888",
-        "fileName": "seurat-gray-weather-1888"
-      },
-      {
-        "title": "Circus Sideshow",
-        "date": "1888",
-        "fileName": "seurat-circus-sideshow-1888"
-      },
-      {
-        "title": "The Models",
-        "date": "1888",
-        "fileName": "seurat-models-1888"
-      },
-      {
-        "title": "Sunday at Port en Bessin",
-        "date": "1888",
-        "fileName": "seurat-sunday-at-port-en-bessin-1888"
-      },
-      {
-        "title": "Port en Bessin Entrance to the Harbor",
-        "date": "1888",
-        "fileName": "seurat-port-en-bessin-entrance-to-the-harbor-1888"
-      },
-      {
-        "title": "Port en Bessin",
-        "date": "1888",
-        "fileName": "seurat-port-en-bessin-1888"
-      },
-      {
-        "title": "The Siene at La Grande Jatte",
-        "date": "1888",
-        "fileName": "seurat-siene-at-la-grande-jatte-1888"
-      },
-      {
-        "title": "Eiffel Tower",
-        "date": "1889",
-        "fileName": "seurat-eiffel-tower-1889"
-      },
-      {
-        "title": "View of le Crotoy",
-        "date": "1889",
-        "fileName": "seurat-view-of-le-crotoy-1889"
-      },
-      {
-        "title": "Le Chahut (The Can-can)",
-        "date": "1890",
-        "fileName": "seurat-le-chahut-1890"
-      },
-      {
-        "title": "Young Woman Powdering Herself",
-        "date": "1890",
-        "fileName": "seurat-young-woman-powdering-herself-1890"
-      },
-      {
-        "title": "The Circus",
-        "date": "1891",
-        "fileName": "seurat-circus-1891"
-      }
-    ]
-  }
-,
   "rossetti": {
     "fname": "Dante",
     "lname": "Rossetti",
@@ -1827,6 +1718,115 @@
         "title": "Joan of Arc",
         "date": "1882",
         "fileName": "rossetti-joan-of-arc-1882"
+      }
+    ]
+  }
+,
+  "seurat": {
+    "fname": "Georges",
+    "lname": "Seurat",
+    "bio": "Georges-Pierre Seurat (2 December 1859 – 29 March 1891) was a French post-Impressionist painter and draftsman. He is noted for his innovative use of drawing media and for devising the painting techniques known as chromoluminarism and pointillism. Seurat's artistic personality was compounded of qualities which are usually supposed to be opposed and incompatible: on the one hand, his extreme and delicate sensibility; on the other, a passion for logical abstraction and an almost mathematical precision of mind.",
+    "era": "Post-Impressionism",
+    "content": [
+      {
+        "title": "Vase of Flowers",
+        "date": "1879",
+        "fileName": "seurat-vase-of-flowers-1879"
+      },
+      {
+        "title": "Forest at Pontaubert",
+        "date": "1881",
+        "fileName": "seurat-forest-at-pontaubert-1881"
+      },
+      {
+        "title": "River Banks",
+        "date": "1883",
+        "fileName": "seurat-river-banks-1883"
+      },
+      {
+        "title": "Bathing at Asniers",
+        "date": "1884",
+        "fileName": "seurat-bathing-at-asniers-1884"
+      },
+      {
+        "title": "Boats at Lowtide on Grandcamp",
+        "date": "1885",
+        "fileName": "seurat-boats-at-lowtide-on-grandcamp-1885"
+      },
+      {
+        "title": "Fort Samson",
+        "date": "1885",
+        "fileName": "seurat-fort-samson-1885"
+      },
+      {
+        "title": "Sunday Afternoon on the Island of Grande Jatte",
+        "date": "1886",
+        "fileName": "seurat-sunday-afternoon-on-the-island-of-grande-jatte-1886"
+      },
+      {
+        "title": "The Bridge at Courbevoie",
+        "date": "1886",
+        "fileName": "seurat-bridge-at-courbevoie-1886"
+      },
+      {
+        "title": "Gray Weather",
+        "date": "1888",
+        "fileName": "seurat-gray-weather-1888"
+      },
+      {
+        "title": "Circus Sideshow",
+        "date": "1888",
+        "fileName": "seurat-circus-sideshow-1888"
+      },
+      {
+        "title": "The Models",
+        "date": "1888",
+        "fileName": "seurat-models-1888"
+      },
+      {
+        "title": "Sunday at Port en Bessin",
+        "date": "1888",
+        "fileName": "seurat-sunday-at-port-en-bessin-1888"
+      },
+      {
+        "title": "Port en Bessin Entrance to the Harbor",
+        "date": "1888",
+        "fileName": "seurat-port-en-bessin-entrance-to-the-harbor-1888"
+      },
+      {
+        "title": "Port en Bessin",
+        "date": "1888",
+        "fileName": "seurat-port-en-bessin-1888"
+      },
+      {
+        "title": "The Siene at La Grande Jatte",
+        "date": "1888",
+        "fileName": "seurat-siene-at-la-grande-jatte-1888"
+      },
+      {
+        "title": "Eiffel Tower",
+        "date": "1889",
+        "fileName": "seurat-eiffel-tower-1889"
+      },
+      {
+        "title": "View of le Crotoy",
+        "date": "1889",
+        "fileName": "seurat-view-of-le-crotoy-1889"
+      },
+      {
+        "title": "Le Chahut (The Can-can)",
+        "date": "1890",
+        "fileName": "seurat-le-chahut-1890"
+      },
+      {
+        "title": "Young Woman Powdering Herself",
+        "date": "1890",
+        "fileName": "seurat-young-woman-powdering-herself-1890"
+      },
+      {
+        "title": "The Circus",
+        "date": "1891",
+        "fileName": "seurat-circus-1891"
       }
     ]
   }
@@ -2089,75 +2089,6 @@
     ]
   }
 ,
-  "vonamerling": {
-    "fname": "Friedrich",
-    "lname": "Von Amerling",
-    "bio": "Friedrich von Amerling (14 April 1803 – 14 January 1887) was an Austro-Hungarian portrait painter in the court of Franz Josef. He was born in Vienna and was court painter between 1835 and 1880. With Ferdinand Georg Waldmüller he is one of the outstanding Austrian portrait painters of the 19th century.",
-    "era": "Academic",
-    "content": [
-      {
-        "title": "Rudolph von Arthaber with His Children",
-        "date": "1830",
-        "fileName": "vonamerling-rudolph-von-arthaber-with-his-children-1830"
-      },
-      {
-        "title": "Emporer Franz I",
-        "date": "1832",
-        "fileName": "vonamerling-emporer-franz-i-1832"
-      },
-      {
-        "title": "Self Portrait",
-        "date": "1834",
-        "fileName": "vonamerling-self-portrait-1834"
-      },
-      {
-        "title": "Lost in Dreams",
-        "date": "1835",
-        "fileName": "vonamerling-lost-in-dreams-1835"
-      },
-      {
-        "title": "Count Istvan Szechenyi",
-        "date": "1836",
-        "fileName": "vonamerling-count-istvan-szechenyi-1836"
-      },
-      {
-        "title": "Prinzessin Marie Franziska",
-        "date": "1836",
-        "fileName": "vonamerling-prinzessin-marie-franziska-1836"
-      },
-      {
-        "title": "Portrait of a Girl",
-        "date": "1837",
-        "fileName": "vonamerling-portrait-of-a-girl-1837"
-      },
-      {
-        "title": "Oriental Woman",
-        "date": "1838",
-        "fileName": "vonamerling-oriental-woman-1838"
-      },
-      {
-        "title": "Countess Nako",
-        "date": "1855",
-        "fileName": "vonamerling-countess-nako-1855"
-      },
-      {
-        "title": "Charity",
-        "date": "1856",
-        "fileName": "vonamerling-charity-1856"
-      },
-      {
-        "title": "Kaiser Franz I",
-        "date": "1884",
-        "fileName": "vonamerling-kaiser-franz-i-1884"
-      },
-      {
-        "title": "Study of a Lunatist",
-        "date": "",
-        "fileName": "vonamerling-study-of-a-lunatist"
-      }
-    ]
-  }
-,
   "waterhouse": {
     "fname": "John William",
     "lname": "Waterhouse",
@@ -2263,6 +2194,75 @@
         "title": "Tristan and Isolde Sharing the Potion",
         "date": "1916",
         "fileName": "waterhouse-tristan-and-isolde-sharing-the-potion-1916"
+      }
+    ]
+  }
+,
+  "vonamerling": {
+    "fname": "Friedrich",
+    "lname": "Von Amerling",
+    "bio": "Friedrich von Amerling (14 April 1803 – 14 January 1887) was an Austro-Hungarian portrait painter in the court of Franz Josef. He was born in Vienna and was court painter between 1835 and 1880. With Ferdinand Georg Waldmüller he is one of the outstanding Austrian portrait painters of the 19th century.",
+    "era": "Academic",
+    "content": [
+      {
+        "title": "Rudolph von Arthaber with His Children",
+        "date": "1830",
+        "fileName": "vonamerling-rudolph-von-arthaber-with-his-children-1830"
+      },
+      {
+        "title": "Emporer Franz I",
+        "date": "1832",
+        "fileName": "vonamerling-emporer-franz-i-1832"
+      },
+      {
+        "title": "Self Portrait",
+        "date": "1834",
+        "fileName": "vonamerling-self-portrait-1834"
+      },
+      {
+        "title": "Lost in Dreams",
+        "date": "1835",
+        "fileName": "vonamerling-lost-in-dreams-1835"
+      },
+      {
+        "title": "Count Istvan Szechenyi",
+        "date": "1836",
+        "fileName": "vonamerling-count-istvan-szechenyi-1836"
+      },
+      {
+        "title": "Prinzessin Marie Franziska",
+        "date": "1836",
+        "fileName": "vonamerling-prinzessin-marie-franziska-1836"
+      },
+      {
+        "title": "Portrait of a Girl",
+        "date": "1837",
+        "fileName": "vonamerling-portrait-of-a-girl-1837"
+      },
+      {
+        "title": "Oriental Woman",
+        "date": "1838",
+        "fileName": "vonamerling-oriental-woman-1838"
+      },
+      {
+        "title": "Countess Nako",
+        "date": "1855",
+        "fileName": "vonamerling-countess-nako-1855"
+      },
+      {
+        "title": "Charity",
+        "date": "1856",
+        "fileName": "vonamerling-charity-1856"
+      },
+      {
+        "title": "Kaiser Franz I",
+        "date": "1884",
+        "fileName": "vonamerling-kaiser-franz-i-1884"
+      },
+      {
+        "title": "Study of a Lunatist",
+        "date": "",
+        "fileName": "vonamerling-study-of-a-lunatist"
       }
     ]
   }
