@@ -26,7 +26,7 @@ export default class BackToTop extends React.Component  {
 
     // Set a timeout to run after scrolling ends
     this.scrollTimer = setTimeout(() => {
-      if (document.querySelector('html').scrollTop > 100 && document.querySelector('.backToTop')) {console.log('something');
+      if (document.querySelector('html').scrollTop > 100 && document.querySelector('.backToTop')) {
         document.querySelector('.backToTop').style.visibility = "visible";
       }
 

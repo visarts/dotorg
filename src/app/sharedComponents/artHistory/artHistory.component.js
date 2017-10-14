@@ -18,8 +18,8 @@ const ArtHistory = (props) => {
             src={`./content/artwork/${historyObj.artist.creatorKey}/${historyObj.fileName}_sm.jpg`}
             alt={historyObj.title} />
         </Link>
-        <Link to={`/arts/${historyObj.artist.creatorKey}/${historyObj.fileName}`}>{decodeURIComponent(historyObj.title)}</Link>
-        <div className="artHistoryObjDesc">By {decodeURIComponent(`${historyObj.artist.fname} ${historyObj.artist.lname}`)}<br />
+        <Link to={`/arts/${historyObj.artist.creatorKey}/${historyObj.fileName}`}>{historyObj.title}</Link>
+        <div className="artHistoryObjDesc">By {`${historyObj.artist.fname} ${historyObj.artist.lname}`}<br />
           {historyObj.timestamp}
         </div>
       </li>

@@ -54,8 +54,8 @@ const ArtsArtist = (props) => {
   return (
     <div className="artsArtist">
       <h1 className="artsArtistTitle">
-        <span className="fname">{decodeURIComponent(`${artist.fname} `)}</span>
-        <span className="lname">{decodeURIComponent(`${artist.lname}`)}</span>
+        <span className="fname">{`${artist.fname} `}</span>
+        <span className="lname">{artist.lname}</span>
       </h1>
       <div className="artsArtistBio">{ artist.bio }</div>
       <ul className="imageGrid">{ getThumbs() }</ul>

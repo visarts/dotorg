@@ -12,7 +12,7 @@ const GlobalHeader = (props) => {
   const currentCreator = routing.routeKey === 'a' && routing.currentCreator ?
           props.store[dataType][routing.currentCreator] :
               routing.routeKey === 'g' && routing.currentSubSection ? routing.currentSubSection : '';
-  const subSubHeader = currentCreator.lname ? `${decodeURIComponent(currentCreator.lname.toLowerCase())}` : currentCreator;
+  const subSubHeader = currentCreator.lname ? `${currentCreator.lname.toLowerCase()}` : currentCreator;
 
   const sectionUrl = `/${routing.currentSection}`;
   const subsection = routing.routeKey === 'g' ? routing.currentSubSection : routing.currentCreator;

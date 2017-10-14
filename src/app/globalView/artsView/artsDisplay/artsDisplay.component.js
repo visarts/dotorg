@@ -60,10 +60,10 @@ const ArtsDisplay = (props) => {
         onHide={hideModal.bind(this)}
         dialogClassName="custom-modal arts-modal">
         <Modal.Header closeButton>
-          <h1>{decodeURIComponent(artist.lname)} | {currentArtwork.date}</h1>
+          <h1>{artist.lname} | {currentArtwork.date}</h1>
         </Modal.Header>
         <Modal.Body className="darkMode">
-          <h1 className="artsTitle">{decodeURIComponent(currentArtwork.title)}</h1>
+          <h1 className="artsTitle">{currentArtwork.title}</h1>
           <div className="artsContent">
             {currentPosition > 0 && <Link to={artist.content[prevPosition].fileName} className="thumbArrow thumbArrowLeft"><Glyphicon glyph="menu-left" /></Link>}
             <img src={`./content/artwork/${artistKey}/${currentArtwork.fileName}.jpg`} className="artsDisplayImage" />

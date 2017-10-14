@@ -30,12 +30,14 @@ const getAuthorNames = () => {
 };
 
 const getAllAuthorsData = () => {
-  const allAuthors = require('allAuthors.json');
+  let allAuthors = require('allAuthors.json');
+  allAuthors = JSON.parse(decodeURIComponent(JSON.stringify(allAuthors)));
   return allAuthors;
 };
 
 const getAllArtistsData = () => {
-  const allArtists = require('allArtists.json');
+  let allArtists = require('allArtists.json');
+  allArtists = JSON.parse(decodeURIComponent(JSON.stringify(allArtists)));
   return allArtists;
 };
 

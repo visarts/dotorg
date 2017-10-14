@@ -27,7 +27,7 @@ const ListLink = (props) => {
             className="listLinkThumb"
             src={props.thumb}
             alt={props.text} />
-          <h3 className="linkListTitle">{decodeURIComponent(props.text)}</h3>
+          <h3 className="linkListTitle">{props.text}</h3>
           {props.other && <div className="listLinkSubtext">{otherText}</div>}
         </Link>
       </li>
@@ -38,7 +38,7 @@ const ListLink = (props) => {
       <Link
         to={props.url}
         onClick={props.action}>
-        <h3 className="linkListTitle">{decodeURIComponent(props.text)}</h3>
+        <h3 className="linkListTitle">{props.text}</h3>
         {props.other && <div className="listLinkSubtext">{otherText}</div>}
         <div>{props.children}</div>
       </Link>

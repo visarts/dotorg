@@ -174,7 +174,7 @@ export default class LiteratureDisplay extends React.Component {
                 let params = this.props.appState.getTrimmedURI(1);
                 return (
                   <LinkContainer to={`/${params}/${item.fileName}`} key={item.title.toLowerCase()}>
-                    <MenuItem eventKey={index} key={item.fileName}>{decodeURIComponent(item.title)}</MenuItem>
+                    <MenuItem eventKey={index} key={item.fileName}>{item.title}</MenuItem>
                   </LinkContainer>
                 )
               }).filter((item) => {return item.key.indexOf(this.state.searchInput.toLowerCase()) > -1})}
@@ -188,7 +188,7 @@ export default class LiteratureDisplay extends React.Component {
           <Modal.Body className={`${this.state.readingModeClass}`} onClick={this.closeAllMenus.bind(this)}>
             <div className="readingBody">
               <div className={this.state.currentPage > 1 ? 'literatureTitle smallTitles' : 'literatureTitle'}>
-                <h1>{decodeURIComponent(this.currentWork.title)}</h1>
+                <h1>{this.currentWork.title}</h1>
                 <h2 className={this.state.currentPage > 1 ? 'hidden' : ''}>{this.author.fname} {this.author.lname}</h2>
               </div>
               <div className={`htmlContent ${this.state.currentFontSizeClass}`} dangerouslySetInnerHTML={this.setHTMLContent()}></div>

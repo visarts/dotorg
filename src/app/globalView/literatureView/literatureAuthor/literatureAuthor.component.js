@@ -75,7 +75,7 @@ const LiteratureAuthor = (props) => {
   {/*<div style={{height: '7px', width: '25px', background: `linear-gradient(to right, #38e02c 0%, #38e02c 50%, black 50%)`}}></div>*/}
   return (
     <div className="literatureAuthor">
-      <h1 className="literatureAuthorTitle"><span className="fname">{decodeURIComponent(`${author.fname} `)}</span><span className="lname">{decodeURIComponent(author.lname)}</span></h1>
+      <h1 className="literatureAuthorTitle"><span className="fname">{`${author.fname} `}</span><span className="lname">{author.lname}</span></h1>
       <div className="literatureAuthorBio">{ author.bio }</div>
       <div className="titlesContainer">
         {titles.shorts[0] && <div className="genreContainer">
