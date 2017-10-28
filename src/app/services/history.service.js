@@ -39,7 +39,7 @@ const addToHistory = (history) => {
   if (historyList.length > historyLimit) {
     historyList.pop();
   }
-  localStorage.setItem(history.type, JSON.stringify(historyList));
+  localStorage.setItem(history.type, historyList);
 };
 
 const getHistory = (type) => {

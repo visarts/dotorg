@@ -7,18 +7,19 @@ import './artHistory.component.less';
 const ArtHistory = (props) => {
   let historyList = historyService.getHistory('artHistory');
   let historyListMap = historyList.map((historyObj, index) => {
+    const artistKey = historyObj.fileName.slice(0, historyObj.fileName.indexOf('-'));
     return (
       <li className="artHistoryObj" key={historyObj.fileName}>
         <Link
-          to={`./content/artwork/${historyObj.artist.creatorKey}/${historyObj.fileName}.jpg`}
+          to={`./content/artwork/a/${artistKey}/${historyObj.fileName}.jpg`}
           title={historyObj.title}
           key={historyObj.fileName}>
           <img
             className="artHistoryObjThumb"
-            src={`./content/artwork/${historyObj.artist.creatorKey}/${historyObj.fileName}_sm.jpg`}
+            src={`./content/artwork/a/${artistKey}/${historyObj.fileName}_sm.jpg`}
             alt={historyObj.title} />
         </Link>
-        <Link to={`/arts/${historyObj.artist.creatorKey}/${historyObj.fileName}`}>{historyObj.title}</Link>
+        <Link to={`/arts/a/${artistKey}/${historyObj.fileName}`}>{historyObj.title}</Link>
         <div className="artHistoryObjDesc">By {`${historyObj.artist.fname} ${historyObj.artist.lname}`}<br />
           {historyObj.timestamp}
         </div>

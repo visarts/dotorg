@@ -15,7 +15,9 @@ const LiteratureAuthor = (props) => {
 
 
   const openTitle = (title) => {
-    //historyService.addToHistory({type: 'litHistory', data: title})
+    let newTitle = title;
+    newTitle.author = author;
+    historyService.addToHistory({type: 'litHistory', data: newTitle})
   };
 
 
