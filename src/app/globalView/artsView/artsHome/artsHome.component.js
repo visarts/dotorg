@@ -45,14 +45,14 @@ const ArtsHome = (props) => {
       <div className="titlesContainer">
         <SectionHeader text="The Eras" />
         <ul className="erasList">
-          <ListLink url="arts/g/renaissance" text="Renaissance" inlined={true} />
-          <ListLink url="arts/g/baroque" text="Baroque" inlined={true} />
-          <ListLink url="arts/g/pre-raphaelite" text="Pre-Raphaelite" inlined={true} />
-          <ListLink url="arts/g/academic" text="Academic" inlined={true} />
-          <ListLink url="arts/g/impressionism" text="Impressionism" inlined={true} />
-          <ListLink url="arts/g/post-impressionism" text="Post-Impressionism" inlined={true} />
-          <ListLink url="arts/g/realism" text="Realism" inlined={true} />
-          <ListLink url="arts/g/modernism" text="Modernism" inlined={true} />
+          <ListLink url="arts/g/renaissance" text="Renaissance" inlined />
+          <ListLink url="arts/g/baroque" text="Baroque" inlined />
+          <ListLink url="arts/g/pre-raphaelite" text="Pre-Raphaelite" inlined />
+          <ListLink url="arts/g/academic" text="Academic" inlined />
+          <ListLink url="arts/g/impressionism" text="Impressionism" inlined />
+          <ListLink url="arts/g/post-impressionism" text="Post-Impressionism" inlined />
+          <ListLink url="arts/g/realism" text="Realism" inlined />
+          <ListLink url="arts/g/modernism" text="Modernism" inlined />
         </ul>
       </div>
       <div className="titlesContainer">

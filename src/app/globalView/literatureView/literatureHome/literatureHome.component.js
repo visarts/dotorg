@@ -23,8 +23,6 @@ const LiteratureHome = (props) => {
     );
   }
 
-
-
   return (
     <div className="literatureHome">
       <h1>Welcome to the Portitude Library</h1>
@@ -33,11 +31,11 @@ const LiteratureHome = (props) => {
       <div className="titlesContainer">
         <SectionHeader text="The Genres" />
         <ul className="genresList">
-          <ListLink url={`literature/g/shorts`} text="Short Stories" inlined={true} />
-          <ListLink url={`literature/g/poetry`} text="Poetry" inlined={true} />
-          <ListLink url={`literature/g/nonfiction`} text="Nonfiction" inlined={true} />
-          <ListLink url={`literature/g/fables`} text="Fables" inlined={true} />
-          <ListLink url={`literature/g/tales`} text="Tales" inlined={true} />
+          <ListLink url={`literature/g/shorts`} text="Short Stories" inlined />
+          <ListLink url={`literature/g/poetry`} text="Poetry" inlined />
+          <ListLink url={`literature/g/nonfiction`} text="Nonfiction" inlined />
+          <ListLink url={`literature/g/fables`} text="Fables" inlined />
+          <ListLink url={`literature/g/tales`} text="Tales" inlined />
         </ul>
       </div>
       <div className="titlesContainer">
