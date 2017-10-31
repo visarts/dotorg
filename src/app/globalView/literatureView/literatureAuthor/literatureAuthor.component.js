@@ -10,17 +10,7 @@ const LiteratureAuthor = (props) => {
 
   const authorKey = props.match.params.author;
   const author = props.store.authorsData[authorKey];
-  //openTitle = openTitle.bind(this);
   document.title = `Portitude Library: ${author.fname} ${author.lname}`;
-
-
-  const openTitle = (title) => {
-    let newTitle = title;
-    newTitle.author = author;
-    historyService.addToHistory({type: 'litHistory', data: newTitle})
-  };
-
-
 
   const getTitles = () => {
     let genres = {
@@ -31,13 +21,11 @@ const LiteratureAuthor = (props) => {
       tales: []
     };
     author.content.map((title, index) => {
-      //title.author = author;
       let pageIndicator = title.genre === 'poetry' ? `${author.lname}, ` : title.pageSizes.length === 1 ? '1 page, ' : title.pageSizes.length + ' pages, ';
       let titleLink = (
         <ListLink
           key={title.fileName}
           url={`/literature/a/${authorKey}/${title.genre}/${title.fileName}`}
-          action={openTitle.bind(this, title)}
           text={title.title}
           other={`${pageIndicator}${title.date}`} />);
       switch(title.genre) {

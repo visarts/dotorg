@@ -2,6 +2,7 @@ import React from 'react';
 import { Modal, Glyphicon, DropdownButton, MenuItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import DOMPurify from '../../../../lib/purify.js';
+import historyService from 'Services/history.service';
 import dataService from 'Services/data.service';
 import './literatureDisplay.component.less';
 
@@ -31,6 +32,7 @@ export default class LiteratureDisplay extends React.Component {
     this.currentWorkKey = this.props.match.params.work;
     this.currentWork = this.author.content.filter(work => work.fileName === this.currentWorkKey)[0];
 
+    historyService.addToHistory({type: 'litHistory', data: Object.assign({}, this.currentWork, {author: this.author})})
     document.title = `Portitude Library: ${this.author.fname} ${this.author.lname} - ${this.currentWork.title}`;
 
     dataService.getHTMLContent(this.authorKey, this.currentWorkKey)

@@ -18,8 +18,8 @@
 // const store = createStore(reducer);
 
 
-const artHistory = localStorage.getItem('artHistory') ? JSON.parse(localStorage.getItem('artHistory')) : [];
-const literatureHistory = localStorage.getItem('litHistory') ? JSON.parse(localStorage.getItem('litHistory')) : [];
+const artHistory = localStorage.getItem('artHistory') ? JSON.parse(localStorage.getItem('artHistory')): {historyList: []};
+const literatureHistory = localStorage.getItem('litHistory') ? JSON.parse(localStorage.getItem('litHistory')) : {historyList: []};
 const historyLimit = 10;
 
 const setTimestamp = () => {
@@ -29,7 +29,7 @@ const setTimestamp = () => {
 
 const addToHistory = (history) => {
   let data = history.data;
-  let historyList = history.type === 'artHistory' ? artHistory : literatureHistory;
+  let historyList = history.type === 'artHistory' ? artHistory.historyList : literatureHistory.historyList;
   let duplicateIndex = getDuplicateIndex(data, historyList);
   data.timestamp = setTimestamp();
   if (duplicateIndex > -1) {
@@ -39,11 +39,11 @@ const addToHistory = (history) => {
   if (historyList.length > historyLimit) {
     historyList.pop();
   }
-  localStorage.setItem(history.type, historyList);
+  localStorage.setItem(history.type, JSON.stringify({historyList}));
 };
 
 const getHistory = (type) => {
-  return type === 'artHistory' ? artHistory : literatureHistory;
+  return type === 'artHistory' ? artHistory.historyList : literatureHistory.historyList;
 }
 
 const clearHistory = (type) => {

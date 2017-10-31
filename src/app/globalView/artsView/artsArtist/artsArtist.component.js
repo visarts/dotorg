@@ -46,11 +46,6 @@ const ArtsArtist = (props) => {
     });
   };
 
-  /*openImage (item) {
-    //historyService.addToHistory({type: 'artHistory', data: item});
-    setState({currentImage: item});
-  }*/
-
   return (
     <div className="artsArtist">
       <h1 className="artsArtistTitle">
