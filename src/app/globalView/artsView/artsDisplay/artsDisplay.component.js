@@ -2,6 +2,7 @@ import React from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from 'react-router-dom';
 import { Modal, Glyphicon, DropdownButton, MenuItem } from 'react-bootstrap';
+import historyService from 'Services/history.service';
 import eventService from 'Services/event.service';
 import ArtCarousel from 'SharedComponents/artCarousel/artCarousel.component';
 import './artsDisplay.component.less';
@@ -13,6 +14,7 @@ const ArtsDisplay = (props) => {
   const currentArtwork = artist.content.filter(artwork => artwork.fileName === currentArtworkKey)[0];
 
   document.title = `Portitude Gallery: ${artist.fname} ${artist.lname} - ${currentArtwork.title}`;
+  historyService.addToHistory({type: 'artHistory', data: Object.assign({}, currentArtwork, {artist: artist})});
 
   const getCurrentArtwork = () => artist.content.filter(artwork => artwork.fileName === currentArtworkKey)[0];
   const getPosition = () => {

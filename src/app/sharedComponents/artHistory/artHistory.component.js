@@ -11,15 +11,15 @@ const ArtHistory = (props) => {
     return (
       <li className="artHistoryObj" key={historyObj.fileName}>
         <Link
-          to={`./content/artwork/a/${artistKey}/${historyObj.fileName}.jpg`}
+          to={`./content/artwork/${artistKey}/${historyObj.fileName}.jpg`}
           title={historyObj.title}
           key={historyObj.fileName}>
           <img
             className="artHistoryObjThumb"
-            src={`./content/artwork/a/${artistKey}/${historyObj.fileName}_sm.jpg`}
+            src={`./content/artwork/${artistKey}/${historyObj.fileName}_sm.jpg`}
             alt={historyObj.title} />
         </Link>
-        <Link to={`/arts/a/${artistKey}/${historyObj.fileName}`}>{historyObj.title}</Link>
+        <Link to={`/arts/a/${artistKey}/${historyObj.artist.era}/${historyObj.fileName}`}>{historyObj.title}</Link>
         <div className="artHistoryObjDesc">By {`${historyObj.artist.fname} ${historyObj.artist.lname}`}<br />
           {historyObj.timestamp}
         </div>
