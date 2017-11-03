@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 //import { Button } from 'react-bootstrap'
 import historyService from 'Services/history.service';
+import PrimaryButton from 'SharedComponents/buttons/primary/primaryButton.component';
 import './artHistory.component.less';
 
 const ArtHistory = (props) => {
@@ -29,13 +30,13 @@ const ArtHistory = (props) => {
   let dynamicClass = historyListMap.length ? '' : 'hideArtHistory';
 
   return (
-    <ul className={`artHistoryList ${dynamicClass}`}>
+    <div className={`artHistoryList ${dynamicClass}`}>
       <h3>Recently viewed:</h3>
-      {historyListMap}
+      <ul>{historyListMap}</ul>
       <div className="clearHistory">
-        <button className="button" onClick={historyService.clearHistory.bind(this, 'artHistory')}>Clear History</button>
+        <PrimaryButton action={historyService.clearHistory.bind(this, 'artHistory')} text="Clear History" />
       </div>
-    </ul>
+    </div>
   );
 
 }

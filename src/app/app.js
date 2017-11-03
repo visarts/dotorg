@@ -73,6 +73,8 @@ export default class App extends React.Component {
 
       refactor arts carousel to use css animation and a single array
 
+      refactor history display into carousel 
+
     */
 
     return (
