@@ -10,18 +10,18 @@ const ArtHistory = (props) => {
   let historyListMap = historyList.map((historyObj, index) => {
     const artistKey = historyObj.fileName.slice(0, historyObj.fileName.indexOf('-'));
     return (
-      <li className="artHistoryObj" key={historyObj.fileName}>
+      <li className="historyItem" key={historyObj.fileName}>
         <Link
           to={`./content/artwork/${artistKey}/${historyObj.fileName}.jpg`}
           title={historyObj.title}
           key={historyObj.fileName}>
           <img
-            className="artHistoryObjThumb"
+            className="historyItemThumb"
             src={`./content/artwork/${artistKey}/${historyObj.fileName}_sm.jpg`}
             alt={historyObj.title} />
         </Link>
         <Link to={`/arts/a/${artistKey}/${historyObj.artist.era}/${historyObj.fileName}`}>{historyObj.title}</Link>
-        <div className="artHistoryObjDesc">By {`${historyObj.artist.fname} ${historyObj.artist.lname}`}<br />
+        <div className="historyItemDesc">By {`${historyObj.artist.fname} ${historyObj.artist.lname}`}<br />
           {historyObj.timestamp}
         </div>
       </li>
@@ -30,9 +30,9 @@ const ArtHistory = (props) => {
   let dynamicClass = historyListMap.length ? '' : 'hideArtHistory';
 
   return (
-    <div className={`artHistoryList ${dynamicClass}`}>
+    <div className={`historyCarousel ${dynamicClass}`}>
       <h3>Recently viewed:</h3>
-      <ul>{historyListMap}</ul>
+      <ul className="historyList">{historyListMap}</ul>
       <div className="clearHistory">
         <PrimaryButton action={historyService.clearHistory.bind(this, 'artHistory')} text="Clear History" />
       </div>

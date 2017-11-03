@@ -1,6 +1,6 @@
 @import '../../../styles/globals';
 
-.artHistoryList {
+.historyCarousel {
   margin: @hMargin 0px;
   padding: @hPadding @vPadding;
   background: @tertiaryThemeColor;
@@ -9,20 +9,25 @@
     display: none;
   }
 
-  .artHistoryObj {
+  .historyList {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .historyItem {
     line-height: 1.2em;
     display: inline-block;
     padding: @hPadding @vPadding;
-    min-width: 300px;
+    min-width: 280px;
 
-    .artHistoryObjThumb {
+    .historyItemThumb {
       display: inline-block;
       float: left;
       margin-right: 5px;
       width: 50px;
     }
 
-    .artHistoryObjDesc {
+    .historyItemDesc {
       font-size: .75em;
       color: darken(@mainLinkColor, 15%);
     }

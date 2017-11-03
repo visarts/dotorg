@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-//import { Button } from 'react-bootstrap'
 import historyService from 'Services/history.service';
+import PrimaryButton from 'SharedComponents/buttons/primary/primaryButton.component';
 import './literatureHistory.component.less';
 
 const LiteratureHistory = (props) => {
@@ -23,7 +23,7 @@ const LiteratureHistory = (props) => {
       <h3>Recently read:</h3>
       {historyListMap}
       <div className="clearHistory">
-        <button className="button" onClick={historyService.clearHistory.bind(this, 'litHistory')}>Clear History</button>
+        <PrimaryButton text="Clear History" action={historyService.clearHistory.bind(this, 'litHistory')} />
       </div>
     </ul>
   );
