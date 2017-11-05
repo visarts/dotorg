@@ -802,111 +802,111 @@
     ]
   }
 ,
-  "harnett": {
-    "fname": "William",
-    "lname": "Harnett",
-    "bio": "William Michael Harnett (August 10, 1848 – October 29, 1892) was an Irish-American painter known for his trompe-l'œil still lifes of ordinary objects.",
-    "era": "Realism",
+  "michelangelo": {
+    "fname": "Buonarroti",
+    "lname": "Michelangelo",
+    "bio": "Michelangelo di Lodovico Buonarroti Simoni (6 March 1475 – 18 February 1564) was an Italian sculptor, painter, architect, and poet of the High Renaissance born in the Republic of Florence, who exerted an unparalleled influence on the development of Western art. Considered to be the greatest living artist during his lifetime, he has since been described as one of the greatest artists of all time.",
+    "era": "Renaissance",
     "content": [
       {
-        "title": "Mortality and Immortality",
-        "date": "1876",
-        "fileName": "harnett-mortality-and-immortality-1876"
+        "title": "Bacchus",
+        "date": "1497",
+        "fileName": "michelangelo-bacchus-1497"
       },
       {
-        "title": "Raisin Cake with Fruit and Wine",
-        "date": "1876",
-        "fileName": "harnett-raisin-cake-with-fruit-and-wine-1876"
+        "title": "David and Goliath",
+        "date": "1500",
+        "fileName": "michelangelo-david-and-goliath-1500"
       },
       {
-        "title": "Still Life with Ginger Jar",
-        "date": "1876",
-        "fileName": "harnett-still-life-with-ginger-jar-1876"
+        "title": "Pieta",
+        "date": "1500",
+        "fileName": "michelangelo-pieta-1500"
       },
       {
-        "title": "Writing Table",
-        "date": "1877",
-        "fileName": "harnett-writing-table-1877"
+        "title": "David",
+        "date": "1501",
+        "fileName": "michelangelo-david-1501"
       },
       {
-        "title": "Job Lot Cheap",
-        "date": "1878",
-        "fileName": "harnett-job-lot-cheap-1878"
+        "title": "Holy Family",
+        "date": "1505",
+        "fileName": "michelangelo-holy-family-1505"
       },
       {
-        "title": "Music and Literature",
-        "date": "1878",
-        "fileName": "harnett-music-and-literature-1878"
+        "title": "Creation of Eve",
+        "date": "1509",
+        "fileName": "michelangelo-creation-of-eve-1509"
       },
       {
-        "title": "Pipe and Mug",
-        "date": "1878",
-        "fileName": "harnett-pipe-and-mug-1878"
+        "title": "Isaiah",
+        "date": "1509",
+        "fileName": "michelangelo-isaiah-1509"
       },
       {
-        "title": "Solace",
-        "date": "1878",
-        "fileName": "harnett-solace-1878"
+        "title": "Zechariah",
+        "date": "1509",
+        "fileName": "michelangelo-zechariah-1509"
       },
       {
-        "title": "The Social Club",
-        "date": "1879",
-        "fileName": "harnett-social-club-1879"
+        "title": "Ezekiel",
+        "date": "1510",
+        "fileName": "michelangelo-ezekiel-1510"
       },
       {
-        "title": "Fruit and Vase",
-        "date": "1881",
-        "fileName": "harnett-fruit-and-vase-1881"
+        "title": "Daniel",
+        "date": "1511",
+        "fileName": "michelangelo-daniel-1511"
       },
       {
-        "title": "Fruit with Champagne Bottle and Newspaper",
-        "date": "1881",
-        "fileName": "harnett-fruit-with-champagne-bottle-and-newspaper-1881"
+        "title": "Geremia",
+        "date": "1511",
+        "fileName": "michelangelo-geremia-1511"
       },
       {
-        "title": "A Study Table",
-        "date": "1882",
-        "fileName": "harnett-study-table-1882"
+        "title": "Jonah",
+        "date": "1512",
+        "fileName": "michelangelo-jonah-1512"
       },
       {
-        "title": "After the Hunt",
-        "date": "1884",
-        "fileName": "harnett-after-the-hunt-1884"
+        "title": "The Creation",
+        "date": "1512",
+        "fileName": "michelangelo-creation-1512"
       },
       {
-        "title": "Munich Still Life",
-        "date": "1884",
-        "fileName": "harnett-munich-still-life-1884"
+        "title": "Sybille de Cummes",
+        "date": "1516",
+        "fileName": "michelangelo-sybille-de-cummes-1516"
       },
       {
-        "title": "Music",
-        "date": "1886",
-        "fileName": "harnett-music-1886"
+        "title": "Moses",
+        "date": "1526",
+        "fileName": "michelangelo-moses-1526"
       },
       {
-        "title": "The Old Violin",
-        "date": "1886",
-        "fileName": "harnett-old-violin-1886"
+        "title": "Night",
+        "date": "1530",
+        "fileName": "michelangelo-night-1530"
       },
       {
-        "title": "Ease",
-        "date": "1887",
-        "fileName": "harnett-ease-1887"
+        "title": "Leda and the Swan",
+        "date": "1531",
+        "fileName": "michelangelo-lady-and-the-swan-1531"
       },
       {
-        "title": "Violin and Music",
-        "date": "1888",
-        "fileName": "harnett-violin-and-music-1888"
+        "title": "Dawn",
+        "date": "1531",
+        "fileName": "michelangelo-dawn-1531"
       },
       {
-        "title": "The Old Cupboard Door",
-        "date": "1889",
-        "fileName": "harnett-old-cupboard-door-1889"
+        "title": "Twilight",
+        "date": "1542",
+        "fileName": "michelangelo-twilight-1542"
       },
       {
-        "title": "Old Models",
-        "date": "1892",
-        "fileName": "harnett-old-models-1892"
+        "title": "Conversion of Saul",
+        "date": "1511",
+        "fileName": "michelangelo-conversion-of-saul-1511"
       }
     ]
   }
@@ -1019,111 +1019,111 @@
     ]
   }
 ,
-  "michelangelo": {
-    "fname": "Buonarroti",
-    "lname": "Michelangelo",
-    "bio": "Michelangelo di Lodovico Buonarroti Simoni (6 March 1475 – 18 February 1564) was an Italian sculptor, painter, architect, and poet of the High Renaissance born in the Republic of Florence, who exerted an unparalleled influence on the development of Western art. Considered to be the greatest living artist during his lifetime, he has since been described as one of the greatest artists of all time.",
-    "era": "Renaissance",
+  "harnett": {
+    "fname": "William",
+    "lname": "Harnett",
+    "bio": "William Michael Harnett (August 10, 1848 – October 29, 1892) was an Irish-American painter known for his trompe-l'œil still lifes of ordinary objects.",
+    "era": "Realism",
     "content": [
       {
-        "title": "Bacchus",
-        "date": "1497",
-        "fileName": "michelangelo-bacchus-1497"
+        "title": "Mortality and Immortality",
+        "date": "1876",
+        "fileName": "harnett-mortality-and-immortality-1876"
       },
       {
-        "title": "David and Goliath",
-        "date": "1500",
-        "fileName": "michelangelo-david-and-goliath-1500"
+        "title": "Raisin Cake with Fruit and Wine",
+        "date": "1876",
+        "fileName": "harnett-raisin-cake-with-fruit-and-wine-1876"
       },
       {
-        "title": "Pieta",
-        "date": "1500",
-        "fileName": "michelangelo-pieta-1500"
+        "title": "Still Life with Ginger Jar",
+        "date": "1876",
+        "fileName": "harnett-still-life-with-ginger-jar-1876"
       },
       {
-        "title": "David",
-        "date": "1501",
-        "fileName": "michelangelo-david-1501"
+        "title": "Writing Table",
+        "date": "1877",
+        "fileName": "harnett-writing-table-1877"
       },
       {
-        "title": "Holy Family",
-        "date": "1505",
-        "fileName": "michelangelo-holy-family-1505"
+        "title": "Job Lot Cheap",
+        "date": "1878",
+        "fileName": "harnett-job-lot-cheap-1878"
       },
       {
-        "title": "Creation of Eve",
-        "date": "1509",
-        "fileName": "michelangelo-creation-of-eve-1509"
+        "title": "Music and Literature",
+        "date": "1878",
+        "fileName": "harnett-music-and-literature-1878"
       },
       {
-        "title": "Isaiah",
-        "date": "1509",
-        "fileName": "michelangelo-isaiah-1509"
+        "title": "Pipe and Mug",
+        "date": "1878",
+        "fileName": "harnett-pipe-and-mug-1878"
       },
       {
-        "title": "Zechariah",
-        "date": "1509",
-        "fileName": "michelangelo-zechariah-1509"
+        "title": "Solace",
+        "date": "1878",
+        "fileName": "harnett-solace-1878"
       },
       {
-        "title": "Ezekiel",
-        "date": "1510",
-        "fileName": "michelangelo-ezekiel-1510"
+        "title": "The Social Club",
+        "date": "1879",
+        "fileName": "harnett-social-club-1879"
       },
       {
-        "title": "Daniel",
-        "date": "1511",
-        "fileName": "michelangelo-daniel-1511"
+        "title": "Fruit and Vase",
+        "date": "1881",
+        "fileName": "harnett-fruit-and-vase-1881"
       },
       {
-        "title": "Geremia",
-        "date": "1511",
-        "fileName": "michelangelo-geremia-1511"
+        "title": "Fruit with Champagne Bottle and Newspaper",
+        "date": "1881",
+        "fileName": "harnett-fruit-with-champagne-bottle-and-newspaper-1881"
       },
       {
-        "title": "Jonah",
-        "date": "1512",
-        "fileName": "michelangelo-jonah-1512"
+        "title": "A Study Table",
+        "date": "1882",
+        "fileName": "harnett-study-table-1882"
       },
       {
-        "title": "The Creation",
-        "date": "1512",
-        "fileName": "michelangelo-creation-1512"
+        "title": "After the Hunt",
+        "date": "1884",
+        "fileName": "harnett-after-the-hunt-1884"
       },
       {
-        "title": "Sybille de Cummes",
-        "date": "1516",
-        "fileName": "michelangelo-sybille-de-cummes-1516"
+        "title": "Munich Still Life",
+        "date": "1884",
+        "fileName": "harnett-munich-still-life-1884"
       },
       {
-        "title": "Moses",
-        "date": "1526",
-        "fileName": "michelangelo-moses-1526"
+        "title": "Music",
+        "date": "1886",
+        "fileName": "harnett-music-1886"
       },
       {
-        "title": "Night",
-        "date": "1530",
-        "fileName": "michelangelo-night-1530"
+        "title": "The Old Violin",
+        "date": "1886",
+        "fileName": "harnett-old-violin-1886"
       },
       {
-        "title": "Leda and the Swan",
-        "date": "1531",
-        "fileName": "michelangelo-lady-and-the-swan-1531"
+        "title": "Ease",
+        "date": "1887",
+        "fileName": "harnett-ease-1887"
       },
       {
-        "title": "Dawn",
-        "date": "1531",
-        "fileName": "michelangelo-dawn-1531"
+        "title": "Violin and Music",
+        "date": "1888",
+        "fileName": "harnett-violin-and-music-1888"
       },
       {
-        "title": "Twilight",
-        "date": "1542",
-        "fileName": "michelangelo-twilight-1542"
+        "title": "The Old Cupboard Door",
+        "date": "1889",
+        "fileName": "harnett-old-cupboard-door-1889"
       },
       {
-        "title": "Conversion of Saul",
-        "date": "1511",
-        "fileName": "michelangelo-conversion-of-saul-1511"
+        "title": "Old Models",
+        "date": "1892",
+        "fileName": "harnett-old-models-1892"
       }
     ]
   }

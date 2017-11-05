@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const ROOT_PATH = path.resolve(__dirname);
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -31,13 +32,18 @@ module.exports = {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendors'
     }),
+    new HtmlWebpackPlugin({
+      title: 'Portitude: the Art of Learning',
+      inject: true,
+      template: './index.ejs',
+      hash: true
+    }),
     /*new webpack.optimize.UglifyJsPlugin({
       compressor: {
         warnings: false
       }
     }),*/
     new CopyWebpackPlugin([
-      { from: 'index.html', to: 'index.html' },
       { from: 'src/images', to: 'images'},
       { from: 'content', to: 'content'},
       { from: 'data/allArtists.json', to: 'data' },

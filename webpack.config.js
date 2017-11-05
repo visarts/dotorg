@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const ROOT_PATH = path.resolve(__dirname);
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -31,11 +32,16 @@ module.exports = {
       name: 'vendors'
     }),
     new CopyWebpackPlugin([
-      { from: 'index.html', to: 'index.html' },
       { from: 'src/images', to: 'images'},
       { from: 'content', to: 'content'}
     ]),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'Portitude: the Art of Learning',
+      inject: true,
+      template: './index.ejs',
+      hash: true
+    })
     /*new MergeJsonWebpackPlugin({
       'output': {
         'groupBy': [
