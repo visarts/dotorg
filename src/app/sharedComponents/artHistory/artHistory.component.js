@@ -29,7 +29,7 @@ const ArtHistory = (props) => {
       </li>
     );
   });
-  let dynamicClass = historyListMap.length ? '' : 'hideArtHistory';
+  let dynamicClass = historyListMap.length ? '' : 'hide';
 
   return (
     <div className={`historyCarousel ${dynamicClass}`}>
