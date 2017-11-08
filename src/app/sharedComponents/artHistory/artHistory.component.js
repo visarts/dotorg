@@ -18,6 +18,7 @@ const ArtHistory = (props) => {
           <div className="historyItemThumb">
             <img
               src={`./content/artwork/${artistKey}/${historyObj.fileName}_sm.jpg`}
+              id={historyObj.fileName + '-thumb'}
               alt={historyObj.title} />
           </div>
           <div className="historyItemTitle">{historyObj.title}</div>
@@ -29,12 +30,22 @@ const ArtHistory = (props) => {
       </li>
     );
   });
+
+  const goToNext = () => {console.log('goToNext');
+    const lastItem = document.querySelectorAll('.historyItem')[7];
+    const lastItemPos = lastItem.getBoundingClientRect().left;
+    document.querySelector('.historyList').style.marginLeft = `-${lastItemPos}px`;
+  }
+
   let dynamicClass = historyListMap.length ? '' : 'hide';
 
   return (
     <div className={`historyCarousel ${dynamicClass}`}>
       <h3>Recently viewed:</h3>
-      <ul className="historyList">{historyListMap}</ul>
+      <div className="carousel">
+        <span className="buttonNext" onClick={goToNext}></span>
+        <ul className="historyList">{historyListMap}</ul>
+      </div>
       <div className="clearHistory">
         <PrimaryButton action={historyService.clearHistory.bind(this, 'artHistory')} text="Clear History" />
       </div>

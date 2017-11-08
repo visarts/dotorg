@@ -9,6 +9,31 @@
     display: none;
   }
 
+  .carousel {
+    position: relative;
+    overflow: hidden;
+
+    .buttonNext {
+      position: absolute;
+      right: -10px;
+      top: 50%;
+      cursor: pointer;
+
+      &:after {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: '\003e';
+        //padding: 7px;
+        background: orange;
+        color: white;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+
   .historyList {
     display: flex;
     overflow: hidden;
