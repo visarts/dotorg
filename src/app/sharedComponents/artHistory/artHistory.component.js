@@ -34,7 +34,7 @@ const ArtHistory = (props) => {
   const goToNext = () => {console.log('goToNext');
     const lastItem = document.querySelectorAll('.historyItem')[7];
     const lastItemPos = lastItem.getBoundingClientRect().left;
-    document.querySelector('.historyList').style.marginLeft = `-${lastItemPos}px`;
+    document.querySelector('.historyList').style.left = `-${lastItemPos}px`;
   }
 
   let dynamicClass = historyListMap.length ? '' : 'hide';
@@ -43,8 +43,9 @@ const ArtHistory = (props) => {
     <div className={`historyCarousel ${dynamicClass}`}>
       <h3>Recently viewed:</h3>
       <div className="carousel">
-        <span className="buttonNext" onClick={goToNext}></span>
+
         <ul className="historyList">{historyListMap}</ul>
+        <span className="buttonNext" onClick={goToNext}></span>
       </div>
       <div className="clearHistory">
         <PrimaryButton action={historyService.clearHistory.bind(this, 'artHistory')} text="Clear History" />
