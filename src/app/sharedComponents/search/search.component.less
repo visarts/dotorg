@@ -1,14 +1,10 @@
 @import '../../../styles/globals';
 
 .search {
-  display: flex;
+  display: inline-block;
   position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0px 0px 0px @vMargin;
-  vertical-align: middle;
-  padding: @hPadding @vPadding;
-  padding-right: 0;
+  top: 5px;
+  right: 0px;
 
   .searchInput {
     height: @searchHeight;
@@ -48,6 +44,9 @@
   }
 
   .glyphicon {
+    position: absolute;
+    right: 0px;
+    top: 5px;
     cursor: pointer;
     padding: @hPadding;
     color: lighten(@mainThemeColor, 20%);

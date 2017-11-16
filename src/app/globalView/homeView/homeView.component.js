@@ -9,7 +9,7 @@ const HomeView = (props) => {
   const artistKeys = dataService.getArtistNames();
   const date = new Date();
   const creatorFrequency = date.getMonth();
-  const contentFrequency = date.getDay();
+  const contentFrequency = date.getDate();
   const monthName = date.toLocaleString('en-us', { month: 'long' });
   const author = props.store.authorsData[authorKeys[creatorFrequency]];
   const artist = props.store.artistsData[artistKeys[creatorFrequency]];
@@ -20,7 +20,7 @@ const HomeView = (props) => {
   const limitText = (text) => {
     let limitedText = '';
     let smallScreen = 768;
-    let textLimit = window.innerWidth >= smallScreen ? 200 : 100;
+    let textLimit = window.innerWidth >= smallScreen ? 100 : 75;
     if (text) {
       if (text.length > textLimit) {
         limitedText = text.substring(0, textLimit);

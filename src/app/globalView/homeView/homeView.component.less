@@ -10,8 +10,11 @@
         display: inline-block;
         margin-right: @vMargin;
         margin-bottom: @hMargin;
-        padding: 1em;
-        background: @secondaryThemeColor;
+        padding: 2em;
+        border-left: 2px solid lighten(@tertiaryThemeColor, 3%);
+        box-shadow: 3px 3px 10px darken(@mainThemeColor, 2%);
+        border-radius: @roundedEdge;
+        background: linear-gradient(to right, @tertiaryThemeColor 50%, @mainThemeColor);
         min-width: 300px;
         max-width: 50%;
         transition: all .2s;
@@ -39,7 +42,7 @@
         }
 
         &:hover {
-          background: @mainLinkHoverColor;
+          background: linear-gradient(to right, @mainLinkHoverColor 50%, darken(@mainLinkHoverColor, 10%));
           box-shadow: 3px 3px 10px @secondaryThemeColor;
         }
 
