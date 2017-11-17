@@ -30,7 +30,8 @@ export default class Search extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      searchClass: 'collapsed'
+      searchClass: 'collapsed',
+      searchInput: ''
     };
     this.onChange = this.onChange.bind(this);
     this.onKeyDown = this.onKeyDown.bind(this);
@@ -50,14 +51,16 @@ export default class Search extends React.Component {
   }
 
   submitSearch (event) {
-    event.target.blur();
-    if (window.innerWidth > 600 || this.state.searchClass === 'expanded') {
-      document.location.hash = '#/search';
-    } else if (window.innerWidth <= 600) {
-      this.setState({ searchClass: 'expanded' });
+    if (this.state.searchInput) {
+      event.target.blur();
+      if (window.innerWidth > 600 || this.state.searchClass === 'expanded') {
+        document.location.hash = '#/search';
+      } else if (window.innerWidth <= 600) {
+        this.setState({ searchClass: 'expanded' });
 
-      document.querySelector('.searchInput').removeEventListener('onClick', this.focusSearchField);
+        document.querySelector('.searchInput').removeEventListener('onClick', this.focusSearchField);
 
+      }
     }
   }
 
@@ -66,8 +69,14 @@ export default class Search extends React.Component {
   }
 
   onChange (event) {
-    const clean = DOMPurify.sanitize(event.target.value);
-    this.props.updateAppState({searchInput: clean.toLowerCase()});
+    const cleanInput = DOMPurify.sanitize(event.target.value);
+
+    if (cleanInput) {
+      this.setState({searchInput: cleanInput}, () => {
+        this.props.updateAppState({searchInput: cleanInput.toLowerCase()});
+      });
+
+    }
   }
 
   onKeyDown (event) {
