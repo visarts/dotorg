@@ -6,7 +6,7 @@ const ListLink = (props) => {
 
   let otherText = '';
   let smallScreen = 768;
-  let otherTextLimit = window.innerWidth >= smallScreen ? 200 : 100;
+  let otherTextLimit = window.innerWidth >= smallScreen ? 130 : 100;
 
   if (props.other) {
     if (props.other.length > otherTextLimit) {

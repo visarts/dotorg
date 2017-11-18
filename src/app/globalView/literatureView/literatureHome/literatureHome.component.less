@@ -15,21 +15,25 @@
   }
 
   .authorsList {
-    column-count: 2;
-    -moz-column-count: 2;
-    column-gap: 0px;
-    -moz-column-gap: 0px;
-
+    // column-count: 2;
+    // -moz-column-count: 2;
+    // column-gap: 0px;
+    // -moz-column-gap: 0px;
+    display: inline-flex;
+    flex-flow: row wrap;
   }
 
   .genresList {
 
   }
 
-  .listLink a {
-
-    &:hover {
-      background: linear-gradient(to right, @litLinkHoverColor 50%, darken(@litLinkHoverColor, 10%));
+  .listLink {
+    max-width: 351px;
+    a {
+      height: 100%;
+      &:hover {
+        background: linear-gradient(to right, @litLinkHoverColor 50%, darken(@litLinkHoverColor, 10%));
+      }
     }
   }
 
