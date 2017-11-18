@@ -30,7 +30,6 @@
 .modal {
   .custom-modal {
     position: relative;
-    height: @modalHeight;
     border-radius: 0px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, .5);
 
@@ -80,13 +79,14 @@
         height: 33px;
       }
     }
-    }
+  }
 
     .modal-content {
-      height: 91vh;
       overflow: hidden;
       background: transparent;
       border: none;
+      max-height: 800px;
+      margin-bottom: @footerHeight;
 
       .modal-header {
         background: linear-gradient(to top, @secondaryThemeColor, lighten(@secondaryThemeColor, 7%));
@@ -107,7 +107,6 @@
         }
 
         button {
-          //background-color: #444444;
           background: transparent;
           font-weight: 400;
 
@@ -121,14 +120,11 @@
 
       .modal-body {
         position: relative;
-        //top: calc(@headerHeight + @navHeight);
-        //bottom: @footerHeight;
-        //left: 0;
-        //right: 0;
         height: calc(~'@{modalHeight} - @{calcHeight}');
         transition: background-color .2s;
         overflow-y: auto;
         overflow-x: hidden;
+
         .modal-title {
           border-bottom: 1px solid @tertiaryThemeColor;
           padding-bottom: 5px;
@@ -190,12 +186,13 @@
       }
 
       .modal-footer {
+        height: @footerHeight;
         //opacity: .75;
         border-radius: 0 0 6px 6px;
-        position: relative;
-        //bottom: 0;
-        //left: 0;
-        //right: 0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
         background: @tertiaryThemeColor;
         color: darken(@mainTextColor, 10%);
         border: none;
