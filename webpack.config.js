@@ -33,6 +33,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       { from: 'src/images', to: 'images'},
+      { from: 'favicon.ico', to: '' },
       { from: 'content', to: 'content'}
     ]),
     new webpack.HotModuleReplacementPlugin(),
