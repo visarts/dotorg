@@ -1,59 +1,10 @@
 @import '../../../styles/globals';
 
 .historyCarousel {
-  margin: @hMargin 0px;
-  padding: @hPadding @vPadding;
-  background: @tertiaryThemeColor;
+
 
   &.hide {
     display: none;
   }
 
-  .carousel {
-    position: relative;
-    overflow: hidden;
-
-    .buttonNext {
-      position: absolute;
-      right: -10px;
-      top: 50%;
-      cursor: pointer;
-
-      &:after {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        content: '\003e';
-        //padding: 7px;
-        background: orange;
-        color: white;
-        border-radius: 50%;
-        height: 30px;
-        width: 30px;
-      }
-    }
-  }
-
-  .historyList {
-    display: flex;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .historyItem {
-    line-height: 1.2em;
-    display: inline-block;
-    padding: @hPadding @vPadding;
-    min-width: 140px;
-
-    .historyItemThumb {
-      margin-bottom: 10px;
-      //width: 50px;
-    }
-
-    .historyItemDesc {
-      font-size: .75em;
-      color: darken(@mainLinkColor, 15%);
-    }
-  }
 }

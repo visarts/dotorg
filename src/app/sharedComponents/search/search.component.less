@@ -1,55 +1,5 @@
 @import '../../../styles/globals';
 
 .search {
-  display: inline-block;
-  position: absolute;
-  top: 5px;
-  right: 0px;
-
-  .searchInput {
-    height: @searchHeight;
-    transition: all @defaultTransitionTimeout;
-    color: @mainTextColor;
-    padding: 4px;
-
-    &.collapsed, &.expanded {
-      background: @mainThemeColor;
-      border: 1px @tertiaryThemeColor solid;
-
-      &:focus, &:active {
-        outline: none;
-      }
-    }
-
-    &.collapsed {
-      color: lighten(@mainThemeColor, 20%);
-      width: 10em;
-    }
-
-    &.expanded {
-      background: @tertiaryThemeColor;
-      width: 15em;
-    }
-
-    @media(max-width: 600px) {
-      &.collapsed {
-        width: 0px;
-        padding: 0px;
-        border: none;
-      }
-      &.expanded {
-        //width: 10em;
-      }
-    }
-  }
-
-  .glyphicon {
-    position: absolute;
-    right: 0px;
-    top: 5px;
-    cursor: pointer;
-    padding: @hPadding;
-    color: lighten(@mainThemeColor, 20%);
-  }
-
+  
 }

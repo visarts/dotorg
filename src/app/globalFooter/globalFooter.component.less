@@ -1,26 +1,5 @@
 @import '../../styles/globals';
 
 .globalFooter {
-  position: fixed;
-  display: flex;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: @secondaryThemeColor;
-  color: @mainLinkColor;
-  height: @footerHeight_sm;
-  align-items: center;
-  .copyright {
-    display: inline-block;
-    font-size: .5em;
-    padding: @hPadding 0;
-    color: lighten(@mainThemeColor, 20%);
-  }
 
-  @media(max-width: @smallScreen) {
-    .copyright {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
 }

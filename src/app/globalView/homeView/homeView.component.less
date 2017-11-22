@@ -1,58 +1,5 @@
 @import '../../../styles/globals.less';
 
 .homeView {
-  .featured {
-    .featuredContent {
 
-      .featuredBlock {
-        vertical-align: top;
-        border-radius: @roundedEdge;
-        display: inline-block;
-        margin-right: @vMargin;
-        margin-bottom: @hMargin;
-        padding: 2em;
-        border-left: 2px solid lighten(@tertiaryThemeColor, 3%);
-        box-shadow: 3px 3px 10px darken(@mainThemeColor, 2%);
-        border-radius: @roundedEdge;
-        background: linear-gradient(to right, @tertiaryThemeColor 50%, @mainThemeColor);
-        min-width: 300px;
-        max-width: 50%;
-        transition: all .2s;
-
-        .artPickThumb {
-          width: 100px;
-          float: right;
-          display: inline-block;
-          padding-right: @vPadding;
-          padding-bottom: @hMargin;
-        }
-
-        .featureDescription {
-          margin-top: 0px;
-          color: @mainLinkColor !important;
-          &:hover {
-            color: @mainLinkColor;
-          }
-        }
-
-        .featuredSubtext {
-          color: darken(@mainLinkColor, 12%);
-          font-size: .9em;
-          line-height: 1.5em;
-        }
-
-        &:hover {
-          background: linear-gradient(to right, @mainLinkHoverColor 50%, darken(@mainLinkHoverColor, 10%));
-          box-shadow: 3px 3px 10px @secondaryThemeColor;
-        }
-
-        @media(max-width: @smallScreen) {
-          width: 100%;
-          min-width: auto;
-          max-width: 100%;
-          margin-right: 0px;
-        }
-      }
-    }
-  }
 }
