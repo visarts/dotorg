@@ -14,7 +14,7 @@ const HomeView = (props) => {
   const author = props.store.authorsData[authorKeys[creatorFrequency]];
   const artist = props.store.artistsData[artistKeys[creatorFrequency]];
   const lit = author.content[contentFrequency] ? author.content[contentFrequency] : author.content[author.content.length - 1];
-  const art = artist.content[contentFrequency] ? artist.content[contentFrequency] : artist.content[author.content.length - 1];
+  const art = artist.content[contentFrequency] ? artist.content[contentFrequency] : artist.content[artist.content.length - 1];
 
   // the following is duplicated from listLink
   const limitText = (text) => {

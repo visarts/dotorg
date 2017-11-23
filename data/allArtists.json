@@ -1,153 +1,4 @@
 {
-  "bouguereau": {
-    "fname": "William",
-    "lname": "Bouguereau",
-    "bio": "William-Adolphe Bouguereau (November 30, 1825 – August 19, 1905) was a French academic painter and traditionalist. In his realistic genre paintings he used mythological themes, making modern interpretations of classical subjects, with an emphasis on the female human body. During his life he enjoyed significant popularity in France and the United States, was given numerous official honors, and received top prices for his work",
-    "era": "Academic",
-    "content": [
-      {
-        "title": "Dante and Virgil in Hell",
-        "date": "1850",
-        "fileName": "bouguereau-dante-and-virgil-in-hell-1850"
-      },
-      {
-        "title": "Fraternal Love",
-        "date": "1851",
-        "fileName": "bouguereau-fraternal-love-1851"
-      },
-      {
-        "title": "The Bather",
-        "date": "1870",
-        "fileName": "bouguereau-bather-1870"
-      },
-      {
-        "title": "Italian Girl Drawing Water",
-        "date": "1871",
-        "fileName": "bouguereau-italian-girl-drawing-water-1871"
-      },
-      {
-        "title": "Nymphs and Satyr",
-        "date": "1873",
-        "fileName": "bouguereau-nymphs-and-satyr-1873"
-      },
-      {
-        "title": "At the Edge of the Brook (1)",
-        "date": "1875",
-        "fileName": "bouguereau-at-the-edge-of-the-brook-1875"
-      },
-      {
-        "title": "At the Edge of the Brook (2)",
-        "date": "1879",
-        "fileName": "bouguereau-at-the-edge-of-the-brook-1879"
-      },
-      {
-        "title": "Nymphaeum",
-        "date": "1878",
-        "fileName": "bouguereau-nymphaeum-1878"
-      },
-      {
-        "title": "A Young Girl Defending Herself Against Eros",
-        "date": "1880",
-        "fileName": "bouguereau-young-girl-defending-herself-against-eros-1880"
-      },
-      {
-        "title": "Flagellation of Our Lord Jesus Christ",
-        "date": "1880",
-        "fileName": "bouguereau-flagellation-of-our-lord-jesus-christ-1880"
-      },
-      {
-        "title": "Nut Gatherers",
-        "date": "1882",
-        "fileName": "bouguereau-nut-gatherers-1882"
-      },
-      {
-        "title": "Bouguereau Biblis",
-        "date": "1884",
-        "fileName": "bouguereau-bouguereau-biblis-1884"
-      },
-      {
-        "title": "Lost Pleiad",
-        "date": "1884",
-        "fileName": "bouguereau-lost-pleiad-1884"
-      },
-      {
-        "title": "Woman with Shell",
-        "date": "1885",
-        "fileName": "bouguereau-woman-with-shell-1885"
-      },
-      {
-        "title": "Young Girl Going to Fountain",
-        "date": "1885",
-        "fileName": "bouguereau-young-girl-going-to-fountain-1885"
-      },
-      {
-        "title": "Thirst",
-        "date": "1886",
-        "fileName": "bouguereau-thirst-1886"
-      },
-      {
-        "title": "Bohemian",
-        "date": "1890",
-        "fileName": "bouguereau-bohemian-1890"
-      },
-      {
-        "title": "A Private Vocation",
-        "date": "1890",
-        "fileName": "bouguereau-private-vacation-1890"
-      },
-      {
-        "title": "Penelope",
-        "date": "1891",
-        "fileName": "bouguereau-penelope-1891"
-      },
-      {
-        "title": "Youth",
-        "date": "1893",
-        "fileName": "bouguereau-youth-1893"
-      },
-      {
-        "title": "Not too Much to Carry",
-        "date": "1895",
-        "fileName": "bouguereau-not-too-much-to-carry-1895"
-      },
-      {
-        "title": "Spring Breeze",
-        "date": "1895",
-        "fileName": "bouguereau-spring-breeze-1895"
-      },
-      {
-        "title": "A Calling",
-        "date": "1896",
-        "fileName": "bouguereau-calling-1896"
-      },
-      {
-        "title": "Wave",
-        "date": "1896",
-        "fileName": "bouguereau-wave-1896"
-      },
-      {
-        "title": "Admiration",
-        "date": "1897",
-        "fileName": "bouguereau-admiration-1897"
-      },
-      {
-        "title": "Tricoeause",
-        "date": "1897",
-        "fileName": "bouguereau-tricoeause-1897"
-      },
-      {
-        "title": "Head of a Young Girl",
-        "date": "1898",
-        "fileName": "bouguereau-head-of-a-young-girl-1898"
-      },
-      {
-        "title": "A Childhood Idyll",
-        "date": "1900",
-        "fileName": "bouguereau-childhood-idyll-1900"
-      }
-    ]
-  }
-,
   "cassatt": {
     "fname": "Mary",
     "lname": "Cassatt",
@@ -366,115 +217,6 @@
     ]
   }
 ,
-  "creatorkey": {
-    "fname": "Fname",
-    "lname": "Lname",
-    "bio": "This is an artist for testing. For testing indeed, there is plenty to write but not much to say, as this artist never existed and likely never will. ",
-    "era": "Impressionism",
-    "content": [
-      {
-        "title": "Picture 1",
-        "date": "1111",
-        "fileName": "creatorkey-picture-1-1111"
-      },
-      {
-        "title": "Picture 2",
-        "date": "1112",
-        "fileName": "creatorkey-picture-2-1112"
-      },
-      {
-        "title": "Picture 3",
-        "date": "1113",
-        "fileName": "creatorkey-picture-3-1113"
-      },
-      {
-        "title": "Picture 4",
-        "date": "1114",
-        "fileName": "creatorkey-picture-4-1114"
-      },
-      {
-        "title": "Picture 5",
-        "date": "1115",
-        "fileName": "creatorkey-picture-5-1115"
-      },
-      {
-        "title": "Picture 6",
-        "date": "1116",
-        "fileName": "creatorkey-picture-6-1116"
-      },
-      {
-        "title": "Picture 7",
-        "date": "1117",
-        "fileName": "creatorkey-picture-7-1117"
-      },
-      {
-        "title": "Picture 8",
-        "date": "1118",
-        "fileName": "creatorkey-picture-8-1118"
-      },
-      {
-        "title": "Picture 9",
-        "date": "1119",
-        "fileName": "creatorkey-picture-9-1119"
-      },
-      {
-        "title": "Picture 10",
-        "date": "1121",
-        "fileName": "creatorkey-picture-10-1121"
-      },
-      {
-        "title": "Picture 11",
-        "date": "1122",
-        "fileName": "creatorkey-picture-11-1122"
-      },
-      {
-        "title": "Picture 12",
-        "date": "1123",
-        "fileName": "creatorkey-picture-12-1123"
-      },
-      {
-        "title": "Picture 13",
-        "date": "1124",
-        "fileName": "creatorkey-picture-13-1124"
-      },
-      {
-        "title": "Picture 14",
-        "date": "1125",
-        "fileName": "creatorkey-picture-14-1125"
-      },
-      {
-        "title": "Picture 15",
-        "date": "1126",
-        "fileName": "creatorkey-picture-15-1126"
-      },
-      {
-        "title": "Picture 16",
-        "date": "1127",
-        "fileName": "creatorkey-picture-16-1127"
-      },
-      {
-        "title": "Picture 17",
-        "date": "1128",
-        "fileName": "creatorkey-picture-17-1128"
-      },
-      {
-        "title": "Picture 18",
-        "date": "1129",
-        "fileName": "creatorkey-picture-18-1129"
-      },
-      {
-        "title": "Picture 19",
-        "date": "1131",
-        "fileName": "creatorkey-picture-19-1131"
-      },
-      {
-        "title": "Picture 20",
-        "date": "1132",
-        "fileName": "creatorkey-picture-20-1132"
-      }
-    ]
-  }
-,
   "degas": {
     "fname": "Edgar",
     "lname": "Degas",
@@ -580,6 +322,264 @@
         "title": "Two Bathers on the Grass",
         "date": "1895",
         "fileName": "degas-bathers-on-the-grass-1895"
+      }
+    ]
+  }
+,
+  "bouguereau": {
+    "fname": "William",
+    "lname": "Bouguereau",
+    "bio": "William-Adolphe Bouguereau (November 30, 1825 – August 19, 1905) was a French academic painter and traditionalist. In his realistic genre paintings he used mythological themes, making modern interpretations of classical subjects, with an emphasis on the female human body. During his life he enjoyed significant popularity in France and the United States, was given numerous official honors, and received top prices for his work",
+    "era": "Academic",
+    "content": [
+      {
+        "title": "Dante and Virgil in Hell",
+        "date": "1850",
+        "fileName": "bouguereau-dante-and-virgil-in-hell-1850"
+      },
+      {
+        "title": "Fraternal Love",
+        "date": "1851",
+        "fileName": "bouguereau-fraternal-love-1851"
+      },
+      {
+        "title": "The Bather",
+        "date": "1870",
+        "fileName": "bouguereau-bather-1870"
+      },
+      {
+        "title": "Italian Girl Drawing Water",
+        "date": "1871",
+        "fileName": "bouguereau-italian-girl-drawing-water-1871"
+      },
+      {
+        "title": "Nymphs and Satyr",
+        "date": "1873",
+        "fileName": "bouguereau-nymphs-and-satyr-1873"
+      },
+      {
+        "title": "At the Edge of the Brook (1)",
+        "date": "1875",
+        "fileName": "bouguereau-at-the-edge-of-the-brook-1875"
+      },
+      {
+        "title": "At the Edge of the Brook (2)",
+        "date": "1879",
+        "fileName": "bouguereau-at-the-edge-of-the-brook-1879"
+      },
+      {
+        "title": "Nymphaeum",
+        "date": "1878",
+        "fileName": "bouguereau-nymphaeum-1878"
+      },
+      {
+        "title": "A Young Girl Defending Herself Against Eros",
+        "date": "1880",
+        "fileName": "bouguereau-young-girl-defending-herself-against-eros-1880"
+      },
+      {
+        "title": "Flagellation of Our Lord Jesus Christ",
+        "date": "1880",
+        "fileName": "bouguereau-flagellation-of-our-lord-jesus-christ-1880"
+      },
+      {
+        "title": "Nut Gatherers",
+        "date": "1882",
+        "fileName": "bouguereau-nut-gatherers-1882"
+      },
+      {
+        "title": "Bouguereau Biblis",
+        "date": "1884",
+        "fileName": "bouguereau-bouguereau-biblis-1884"
+      },
+      {
+        "title": "Lost Pleiad",
+        "date": "1884",
+        "fileName": "bouguereau-lost-pleiad-1884"
+      },
+      {
+        "title": "Woman with Shell",
+        "date": "1885",
+        "fileName": "bouguereau-woman-with-shell-1885"
+      },
+      {
+        "title": "Young Girl Going to Fountain",
+        "date": "1885",
+        "fileName": "bouguereau-young-girl-going-to-fountain-1885"
+      },
+      {
+        "title": "Thirst",
+        "date": "1886",
+        "fileName": "bouguereau-thirst-1886"
+      },
+      {
+        "title": "Bohemian",
+        "date": "1890",
+        "fileName": "bouguereau-bohemian-1890"
+      },
+      {
+        "title": "A Private Vocation",
+        "date": "1890",
+        "fileName": "bouguereau-private-vacation-1890"
+      },
+      {
+        "title": "Penelope",
+        "date": "1891",
+        "fileName": "bouguereau-penelope-1891"
+      },
+      {
+        "title": "Youth",
+        "date": "1893",
+        "fileName": "bouguereau-youth-1893"
+      },
+      {
+        "title": "Not too Much to Carry",
+        "date": "1895",
+        "fileName": "bouguereau-not-too-much-to-carry-1895"
+      },
+      {
+        "title": "Spring Breeze",
+        "date": "1895",
+        "fileName": "bouguereau-spring-breeze-1895"
+      },
+      {
+        "title": "A Calling",
+        "date": "1896",
+        "fileName": "bouguereau-calling-1896"
+      },
+      {
+        "title": "Wave",
+        "date": "1896",
+        "fileName": "bouguereau-wave-1896"
+      },
+      {
+        "title": "Admiration",
+        "date": "1897",
+        "fileName": "bouguereau-admiration-1897"
+      },
+      {
+        "title": "Tricoeause",
+        "date": "1897",
+        "fileName": "bouguereau-tricoeause-1897"
+      },
+      {
+        "title": "Head of a Young Girl",
+        "date": "1898",
+        "fileName": "bouguereau-head-of-a-young-girl-1898"
+      },
+      {
+        "title": "A Childhood Idyll",
+        "date": "1900",
+        "fileName": "bouguereau-childhood-idyll-1900"
+      }
+    ]
+  }
+,
+  "creatorkey": {
+    "fname": "Fname",
+    "lname": "Lname",
+    "bio": "This is an artist for testing. For testing indeed, there is plenty to write but not much to say, as this artist never existed and likely never will. ",
+    "era": "Impressionism",
+    "content": [
+      {
+        "title": "Picture 1",
+        "date": "1111",
+        "fileName": "creatorkey-picture-1-1111"
+      },
+      {
+        "title": "Picture 2",
+        "date": "1112",
+        "fileName": "creatorkey-picture-2-1112"
+      },
+      {
+        "title": "Picture 3",
+        "date": "1113",
+        "fileName": "creatorkey-picture-3-1113"
+      },
+      {
+        "title": "Picture 4",
+        "date": "1114",
+        "fileName": "creatorkey-picture-4-1114"
+      },
+      {
+        "title": "Picture 5",
+        "date": "1115",
+        "fileName": "creatorkey-picture-5-1115"
+      },
+      {
+        "title": "Picture 6",
+        "date": "1116",
+        "fileName": "creatorkey-picture-6-1116"
+      },
+      {
+        "title": "Picture 7",
+        "date": "1117",
+        "fileName": "creatorkey-picture-7-1117"
+      },
+      {
+        "title": "Picture 8",
+        "date": "1118",
+        "fileName": "creatorkey-picture-8-1118"
+      },
+      {
+        "title": "Picture 9",
+        "date": "1119",
+        "fileName": "creatorkey-picture-9-1119"
+      },
+      {
+        "title": "Picture 10",
+        "date": "1121",
+        "fileName": "creatorkey-picture-10-1121"
+      },
+      {
+        "title": "Picture 11",
+        "date": "1122",
+        "fileName": "creatorkey-picture-11-1122"
+      },
+      {
+        "title": "Picture 12",
+        "date": "1123",
+        "fileName": "creatorkey-picture-12-1123"
+      },
+      {
+        "title": "Picture 13",
+        "date": "1124",
+        "fileName": "creatorkey-picture-13-1124"
+      },
+      {
+        "title": "Picture 14",
+        "date": "1125",
+        "fileName": "creatorkey-picture-14-1125"
+      },
+      {
+        "title": "Picture 15",
+        "date": "1126",
+        "fileName": "creatorkey-picture-15-1126"
+      },
+      {
+        "title": "Picture 16",
+        "date": "1127",
+        "fileName": "creatorkey-picture-16-1127"
+      },
+      {
+        "title": "Picture 17",
+        "date": "1128",
+        "fileName": "creatorkey-picture-17-1128"
+      },
+      {
+        "title": "Picture 18",
+        "date": "1129",
+        "fileName": "creatorkey-picture-18-1129"
+      },
+      {
+        "title": "Picture 19",
+        "date": "1131",
+        "fileName": "creatorkey-picture-19-1131"
+      },
+      {
+        "title": "Picture 20",
+        "date": "1132",
+        "fileName": "creatorkey-picture-20-1132"
       }
     ]
   }
@@ -802,6 +802,115 @@
     ]
   }
 ,
+  "harnett": {
+    "fname": "William",
+    "lname": "Harnett",
+    "bio": "William Michael Harnett (August 10, 1848 – October 29, 1892) was an Irish-American painter known for his trompe-l'œil still lifes of ordinary objects.",
+    "era": "Realism",
+    "content": [
+      {
+        "title": "Mortality and Immortality",
+        "date": "1876",
+        "fileName": "harnett-mortality-and-immortality-1876"
+      },
+      {
+        "title": "Raisin Cake with Fruit and Wine",
+        "date": "1876",
+        "fileName": "harnett-raisin-cake-with-fruit-and-wine-1876"
+      },
+      {
+        "title": "Still Life with Ginger Jar",
+        "date": "1876",
+        "fileName": "harnett-still-life-with-ginger-jar-1876"
+      },
+      {
+        "title": "Writing Table",
+        "date": "1877",
+        "fileName": "harnett-writing-table-1877"
+      },
+      {
+        "title": "Job Lot Cheap",
+        "date": "1878",
+        "fileName": "harnett-job-lot-cheap-1878"
+      },
+      {
+        "title": "Music and Literature",
+        "date": "1878",
+        "fileName": "harnett-music-and-literature-1878"
+      },
+      {
+        "title": "Pipe and Mug",
+        "date": "1878",
+        "fileName": "harnett-pipe-and-mug-1878"
+      },
+      {
+        "title": "Solace",
+        "date": "1878",
+        "fileName": "harnett-solace-1878"
+      },
+      {
+        "title": "The Social Club",
+        "date": "1879",
+        "fileName": "harnett-social-club-1879"
+      },
+      {
+        "title": "Fruit and Vase",
+        "date": "1881",
+        "fileName": "harnett-fruit-and-vase-1881"
+      },
+      {
+        "title": "Fruit with Champagne Bottle and Newspaper",
+        "date": "1881",
+        "fileName": "harnett-fruit-with-champagne-bottle-and-newspaper-1881"
+      },
+      {
+        "title": "A Study Table",
+        "date": "1882",
+        "fileName": "harnett-study-table-1882"
+      },
+      {
+        "title": "After the Hunt",
+        "date": "1884",
+        "fileName": "harnett-after-the-hunt-1884"
+      },
+      {
+        "title": "Munich Still Life",
+        "date": "1884",
+        "fileName": "harnett-munich-still-life-1884"
+      },
+      {
+        "title": "Music",
+        "date": "1886",
+        "fileName": "harnett-music-1886"
+      },
+      {
+        "title": "The Old Violin",
+        "date": "1886",
+        "fileName": "harnett-old-violin-1886"
+      },
+      {
+        "title": "Ease",
+        "date": "1887",
+        "fileName": "harnett-ease-1887"
+      },
+      {
+        "title": "Violin and Music",
+        "date": "1888",
+        "fileName": "harnett-violin-and-music-1888"
+      },
+      {
+        "title": "The Old Cupboard Door",
+        "date": "1889",
+        "fileName": "harnett-old-cupboard-door-1889"
+      },
+      {
+        "title": "Old Models",
+        "date": "1892",
+        "fileName": "harnett-old-models-1892"
+      }
+    ]
+  }
+,
   "michelangelo": {
     "fname": "Buonarroti",
     "lname": "Michelangelo",
@@ -1019,269 +1128,111 @@
     ]
   }
 ,
-  "harnett": {
-    "fname": "William",
-    "lname": "Harnett",
-    "bio": "William Michael Harnett (August 10, 1848 – October 29, 1892) was an Irish-American painter known for his trompe-l'œil still lifes of ordinary objects.",
-    "era": "Realism",
+  "renoir": {
+    "fname": "Auguste",
+    "lname": "Renoir",
+    "bio": "Pierre-Auguste Renoir, commonly known as Auguste Renoir (25 February 1841 – 3 December 1919), was a French artist who was a leading painter in the development of the Impressionist style. As a celebrator of beauty and especially feminine sensuality, it has been said that 'Renoir is the final representative of a tradition which runs directly from Rubens to Watteau.'",
+    "era": "Impressionism",
     "content": [
       {
-        "title": "Mortality and Immortality",
+        "title": "Crown of Roses",
+        "date": "1858",
+        "fileName": "renoir-crown-of-roses-1858"
+      },
+      {
+        "title": "Girl Gathering Flowers",
+        "date": "1872",
+        "fileName": "renoir-girl-gathering-flowers-1872"
+      },
+      {
+        "title": "On the Path",
+        "date": "1872",
+        "fileName": "renoir-on-the-path-1872"
+      },
+      {
+        "title": "The Parisian",
+        "date": "1874",
+        "fileName": "renoir-parisian-1874"
+      },
+      {
+        "title": "By the Fireside",
+        "date": "1875",
+        "fileName": "renoir-by-the-fireside-1875"
+      },
+      {
+        "title": "Self Portrait",
+        "date": "1875",
+        "fileName": "renoir-self-portrait-1875"
+      },
+      {
+        "title": "First Outing",
         "date": "1876",
-        "fileName": "harnett-mortality-and-immortality-1876"
+        "fileName": "renoir-first-outing-1876"
       },
       {
-        "title": "Raisin Cake with Fruit and Wine",
+        "title": "Nini in the Garden",
         "date": "1876",
-        "fileName": "harnett-raisin-cake-with-fruit-and-wine-1876"
+        "fileName": "renoir-nini-in-the-garden-1876"
       },
       {
-        "title": "Still Life with Ginger Jar",
-        "date": "1876",
-        "fileName": "harnett-still-life-with-ginger-jar-1876"
-      },
-      {
-        "title": "Writing Table",
-        "date": "1877",
-        "fileName": "harnett-writing-table-1877"
-      },
-      {
-        "title": "Job Lot Cheap",
-        "date": "1878",
-        "fileName": "harnett-job-lot-cheap-1878"
-      },
-      {
-        "title": "Music and Literature",
-        "date": "1878",
-        "fileName": "harnett-music-and-literature-1878"
-      },
-      {
-        "title": "Pipe and Mug",
-        "date": "1878",
-        "fileName": "harnett-pipe-and-mug-1878"
-      },
-      {
-        "title": "Solace",
-        "date": "1878",
-        "fileName": "harnett-solace-1878"
-      },
-      {
-        "title": "The Social Club",
+        "title": "Oarsmen at Chatou",
         "date": "1879",
-        "fileName": "harnett-social-club-1879"
+        "fileName": "renoir-oarsmen-at-chatou-1879"
       },
       {
-        "title": "Fruit and Vase",
+        "title": "Girl with Fan",
         "date": "1881",
-        "fileName": "harnett-fruit-and-vase-1881"
+        "fileName": "renoir-girl-with-fan-1881"
       },
       {
-        "title": "Fruit with Champagne Bottle and Newspaper",
-        "date": "1881",
-        "fileName": "harnett-fruit-with-champagne-bottle-and-newspaper-1881"
+        "title": "Field and Haystacks",
+        "date": "1885",
+        "fileName": "renoir-field-and-haystacks-1885"
       },
       {
-        "title": "A Study Table",
-        "date": "1882",
-        "fileName": "harnett-study-table-1882"
+        "title": "Fields of Wheat",
+        "date": "1885",
+        "fileName": "renoir-fields-of-wheat-1885"
       },
       {
-        "title": "After the Hunt",
-        "date": "1884",
-        "fileName": "harnett-after-the-hunt-1884"
+        "title": "Girl with Hoop",
+        "date": "1885",
+        "fileName": "renoir-girl-with-hoop-1885"
       },
       {
-        "title": "Munich Still Life",
-        "date": "1884",
-        "fileName": "harnett-munich-still-life-1884"
-      },
-      {
-        "title": "Music",
-        "date": "1886",
-        "fileName": "harnett-music-1886"
-      },
-      {
-        "title": "The Old Violin",
-        "date": "1886",
-        "fileName": "harnett-old-violin-1886"
-      },
-      {
-        "title": "Ease",
-        "date": "1887",
-        "fileName": "harnett-ease-1887"
-      },
-      {
-        "title": "Violin and Music",
-        "date": "1888",
-        "fileName": "harnett-violin-and-music-1888"
-      },
-      {
-        "title": "The Old Cupboard Door",
-        "date": "1889",
-        "fileName": "harnett-old-cupboard-door-1889"
-      },
-      {
-        "title": "Old Models",
+        "title": "Girls at the Piano",
         "date": "1892",
-        "fileName": "harnett-old-models-1892"
-      }
-    ]
-  }
-,
-  "okeeffe": {
-    "fname": "Georgia",
-    "lname": "O'Keeffe",
-    "bio": "Georgia Totto O'Keeffe (November 15, 1887 – March 6, 1986) was an American artist. She was best known for her paintings of enlarged flowers, New York skyscrapers, and New Mexico landscapes. O'Keeffe has been recognized as the 'Mother of American modernism'",
-    "era": "Modernism",
-    "content": [
+        "fileName": "renoir-girls-at-the-piano-1892"
+      },
       {
-        "title": "Blue and Green Music",
+        "title": "Beaulieu Landscape",
+        "date": "1893",
+        "fileName": "renoir-beaulieu-landscape-1893"
+      },
+      {
+        "title": "Bust of a Young Girl",
+        "date": "1895",
+        "fileName": "renoir-bust-of-a-young-girl-1895"
+      },
+      {
+        "title": "Landscape in Normandy",
+        "date": "1895",
+        "fileName": "renoir-landscape-in-normandy-1895"
+      },
+      {
+        "title": "Coco Holding an Orange",
+        "date": "1904",
+        "fileName": "renoir-coco-holding-an-orange-1904"
+      },
+      {
+        "title": "Flower Study",
+        "date": "1913",
+        "fileName": "renoir-flower-study-1913"
+      },
+      {
+        "title": "Fish",
         "date": "1919",
-        "fileName": "okeeffe-blue-and-green-music-1919"
-      },
-      {
-        "title": "Black Iris",
-        "date": "1927",
-        "fileName": "okeeffe-black-iris-1927"
-      },
-      {
-        "title": "Tan Clam with Seaweed",
-        "date": "1926",
-        "fileName": "okeeffe-tan-clam-with-seaweed-1926"
-      },
-      {
-        "title": "Oriental Poppies",
-        "date": "1926",
-        "fileName": "okeeffe-oriental-poppies-1926"
-      },
-      {
-        "title": "Mountain in New Mexico",
-        "date": "1931",
-        "fileName": "okeeffe-mountain-in-new-mexico-1931"
-      },
-      {
-        "title": "Broken Shell",
-        "date": "1937",
-        "fileName": "okeeffe-broken-shell-1937"
-      },
-      {
-        "title": "Clam and Mussel",
-        "date": "1938",
-        "fileName": "okeeffe-clam-and-mussel-1938"
-      },
-      {
-        "title": "Red Hill and White Shell",
-        "date": "1938",
-        "fileName": "okeeffe-red-hill-and-white-shell-1938"
-      }
-    ]
-  }
-,
-  "raphael": {
-    "fname": "",
-    "lname": "Raphael Sanzio da Urbino",
-    "bio": "Raffaello Sanzio da Urbino (March 28 or April 6, 1483 – April 6, 1520), was an Italian painter and architect of the High Renaissance. His work is admired for its clarity of form, ease of composition, and visual achievement of the Neoplatonic ideal of human grandeur. Together with Michelangelo and Leonardo da Vinci, he forms the traditional trinity of great masters of that period.",
-    "era": "Renaissance",
-    "content": [
-      {
-        "title": "Crucifixion",
-        "date": "1503",
-        "fileName": "raphael-crucifixion-1503"
-      },
-      {
-        "title": "Betrothal of the Virgin",
-        "date": "1504",
-        "fileName": "raphael-betrothal-of-the-virgin-1504"
-      },
-      {
-        "title": "Cowper Madonna",
-        "date": "1505",
-        "fileName": "raphael-cowper-madonna-1505"
-      },
-      {
-        "title": "St. George Fighting a Dragon",
-        "date": "1505",
-        "fileName": "raphael-st-george-fighting-a-dragon-1505"
-      },
-      {
-        "title": "Holy Family",
-        "date": "1506",
-        "fileName": "raphael-holy-family-1506"
-      },
-      {
-        "title": "Woman with Unicorn",
-        "date": "1506",
-        "fileName": "raphael-woman-with-unicorn-1506"
-      },
-      {
-        "title": "School of Athens",
-        "date": "1511",
-        "fileName": "raphael-school-of-athens-1511"
-      },
-      {
-        "title": "School of Athens (detail)",
-        "date": "1511",
-        "fileName": "raphael-school-of-athens-detail-1511"
-      },
-      {
-        "title": "Expulsion of Helidorus from the Temple",
-        "date": "1512",
-        "fileName": "raphael-expulsion-of-helidorus-from-the-temple-1512"
-      },
-      {
-        "title": "Isaiah",
-        "date": "1512",
-        "fileName": "raphael-isaiah-1512"
-      },
-      {
-        "title": "Julius II",
-        "date": "1512",
-        "fileName": "raphael-julius-ii-1512"
-      },
-      {
-        "title": "Madonna di Foligno",
-        "date": "1512",
-        "fileName": "raphael-madonna-di-foligno-1512"
-      },
-      {
-        "title": "Nymph Galeta",
-        "date": "1514",
-        "fileName": "raphael-nymph-galeta-1514"
-      },
-      {
-        "title": "Sistine Madonna",
-        "date": "1514",
-        "fileName": "raphael-sistine-madonna-1514"
-      },
-      {
-        "title": "Two Cherubs",
-        "date": "1514",
-        "fileName": "raphael-two-cherubs-1514"
-      },
-      {
-        "title": "Baldassare Castiglione",
-        "date": "1515",
-        "fileName": "raphael-baldassare-castiglione-1515"
-      },
-      {
-        "title": "Bindo Altoviti",
-        "date": "1515",
-        "fileName": "raphael-bindo-altoviti-1515"
-      },
-      {
-        "title": "Portrait of Artist with Friend",
-        "date": "1518",
-        "fileName": "raphael-portrait-of-artist-with-friend-1518"
-      },
-      {
-        "title": "St. Michael Trampling Satan",
-        "date": "1518",
-        "fileName": "raphael-st-michael-trampling-satan-1518"
-      },
-      {
-        "title": "Joanna of Aragon",
-        "date": "1518",
-        "fileName": "raphael-joanna-of-aragon-1518"
+        "fileName": "renoir-fish-1919"
       }
     ]
   }
@@ -1395,111 +1346,160 @@
     ]
   }
 ,
-  "renoir": {
-    "fname": "Auguste",
-    "lname": "Renoir",
-    "bio": "Pierre-Auguste Renoir, commonly known as Auguste Renoir (25 February 1841 – 3 December 1919), was a French artist who was a leading painter in the development of the Impressionist style. As a celebrator of beauty and especially feminine sensuality, it has been said that 'Renoir is the final representative of a tradition which runs directly from Rubens to Watteau.'",
-    "era": "Impressionism",
+  "raphael": {
+    "fname": "",
+    "lname": "Raphael Sanzio da Urbino",
+    "bio": "Raffaello Sanzio da Urbino (March 28 or April 6, 1483 – April 6, 1520), was an Italian painter and architect of the High Renaissance. His work is admired for its clarity of form, ease of composition, and visual achievement of the Neoplatonic ideal of human grandeur. Together with Michelangelo and Leonardo da Vinci, he forms the traditional trinity of great masters of that period.",
+    "era": "Renaissance",
     "content": [
       {
-        "title": "Crown of Roses",
-        "date": "1858",
-        "fileName": "renoir-crown-of-roses-1858"
+        "title": "Crucifixion",
+        "date": "1503",
+        "fileName": "raphael-crucifixion-1503"
       },
       {
-        "title": "Girl Gathering Flowers",
-        "date": "1872",
-        "fileName": "renoir-girl-gathering-flowers-1872"
+        "title": "Betrothal of the Virgin",
+        "date": "1504",
+        "fileName": "raphael-betrothal-of-the-virgin-1504"
       },
       {
-        "title": "On the Path",
-        "date": "1872",
-        "fileName": "renoir-on-the-path-1872"
+        "title": "Cowper Madonna",
+        "date": "1505",
+        "fileName": "raphael-cowper-madonna-1505"
       },
       {
-        "title": "The Parisian",
-        "date": "1874",
-        "fileName": "renoir-parisian-1874"
+        "title": "St. George Fighting a Dragon",
+        "date": "1505",
+        "fileName": "raphael-st-george-fighting-a-dragon-1505"
       },
       {
-        "title": "By the Fireside",
-        "date": "1875",
-        "fileName": "renoir-by-the-fireside-1875"
+        "title": "Holy Family",
+        "date": "1506",
+        "fileName": "raphael-holy-family-1506"
       },
       {
-        "title": "Self Portrait",
-        "date": "1875",
-        "fileName": "renoir-self-portrait-1875"
+        "title": "Woman with Unicorn",
+        "date": "1506",
+        "fileName": "raphael-woman-with-unicorn-1506"
       },
       {
-        "title": "First Outing",
-        "date": "1876",
-        "fileName": "renoir-first-outing-1876"
+        "title": "School of Athens",
+        "date": "1511",
+        "fileName": "raphael-school-of-athens-1511"
       },
       {
-        "title": "Nini in the Garden",
-        "date": "1876",
-        "fileName": "renoir-nini-in-the-garden-1876"
+        "title": "School of Athens (detail)",
+        "date": "1511",
+        "fileName": "raphael-school-of-athens-detail-1511"
       },
       {
-        "title": "Oarsmen at Chatou",
-        "date": "1879",
-        "fileName": "renoir-oarsmen-at-chatou-1879"
+        "title": "Expulsion of Helidorus from the Temple",
+        "date": "1512",
+        "fileName": "raphael-expulsion-of-helidorus-from-the-temple-1512"
       },
       {
-        "title": "Girl with Fan",
-        "date": "1881",
-        "fileName": "renoir-girl-with-fan-1881"
+        "title": "Isaiah",
+        "date": "1512",
+        "fileName": "raphael-isaiah-1512"
       },
       {
-        "title": "Field and Haystacks",
-        "date": "1885",
-        "fileName": "renoir-field-and-haystacks-1885"
+        "title": "Julius II",
+        "date": "1512",
+        "fileName": "raphael-julius-ii-1512"
       },
       {
-        "title": "Fields of Wheat",
-        "date": "1885",
-        "fileName": "renoir-fields-of-wheat-1885"
+        "title": "Madonna di Foligno",
+        "date": "1512",
+        "fileName": "raphael-madonna-di-foligno-1512"
       },
       {
-        "title": "Girl with Hoop",
-        "date": "1885",
-        "fileName": "renoir-girl-with-hoop-1885"
+        "title": "Nymph Galeta",
+        "date": "1514",
+        "fileName": "raphael-nymph-galeta-1514"
       },
       {
-        "title": "Girls at the Piano",
-        "date": "1892",
-        "fileName": "renoir-girls-at-the-piano-1892"
+        "title": "Sistine Madonna",
+        "date": "1514",
+        "fileName": "raphael-sistine-madonna-1514"
       },
       {
-        "title": "Beaulieu Landscape",
-        "date": "1893",
-        "fileName": "renoir-beaulieu-landscape-1893"
+        "title": "Two Cherubs",
+        "date": "1514",
+        "fileName": "raphael-two-cherubs-1514"
       },
       {
-        "title": "Bust of a Young Girl",
-        "date": "1895",
-        "fileName": "renoir-bust-of-a-young-girl-1895"
+        "title": "Baldassare Castiglione",
+        "date": "1515",
+        "fileName": "raphael-baldassare-castiglione-1515"
       },
       {
-        "title": "Landscape in Normandy",
-        "date": "1895",
-        "fileName": "renoir-landscape-in-normandy-1895"
+        "title": "Bindo Altoviti",
+        "date": "1515",
+        "fileName": "raphael-bindo-altoviti-1515"
       },
       {
-        "title": "Coco Holding an Orange",
-        "date": "1904",
-        "fileName": "renoir-coco-holding-an-orange-1904"
+        "title": "Portrait of Artist with Friend",
+        "date": "1518",
+        "fileName": "raphael-portrait-of-artist-with-friend-1518"
       },
       {
-        "title": "Flower Study",
-        "date": "1913",
-        "fileName": "renoir-flower-study-1913"
+        "title": "St. Michael Trampling Satan",
+        "date": "1518",
+        "fileName": "raphael-st-michael-trampling-satan-1518"
       },
       {
-        "title": "Fish",
+        "title": "Joanna of Aragon",
+        "date": "1518",
+        "fileName": "raphael-joanna-of-aragon-1518"
+      }
+    ]
+  }
+,
+  "okeeffe": {
+    "fname": "Georgia",
+    "lname": "O'Keeffe",
+    "bio": "Georgia Totto O'Keeffe (November 15, 1887 – March 6, 1986) was an American artist. She was best known for her paintings of enlarged flowers, New York skyscrapers, and New Mexico landscapes. O'Keeffe has been recognized as the 'Mother of American modernism'",
+    "era": "Modernism",
+    "content": [
+      {
+        "title": "Blue and Green Music",
         "date": "1919",
-        "fileName": "renoir-fish-1919"
+        "fileName": "okeeffe-blue-and-green-music-1919"
+      },
+      {
+        "title": "Black Iris",
+        "date": "1927",
+        "fileName": "okeeffe-black-iris-1927"
+      },
+      {
+        "title": "Tan Clam with Seaweed",
+        "date": "1926",
+        "fileName": "okeeffe-tan-clam-with-seaweed-1926"
+      },
+      {
+        "title": "Oriental Poppies",
+        "date": "1926",
+        "fileName": "okeeffe-oriental-poppies-1926"
+      },
+      {
+        "title": "Mountain in New Mexico",
+        "date": "1931",
+        "fileName": "okeeffe-mountain-in-new-mexico-1931"
+      },
+      {
+        "title": "Broken Shell",
+        "date": "1937",
+        "fileName": "okeeffe-broken-shell-1937"
+      },
+      {
+        "title": "Clam and Mussel",
+        "date": "1938",
+        "fileName": "okeeffe-clam-and-mussel-1938"
+      },
+      {
+        "title": "Red Hill and White Shell",
+        "date": "1938",
+        "fileName": "okeeffe-red-hill-and-white-shell-1938"
       }
     ]
   }
@@ -1609,115 +1609,6 @@
         "title": "Joan of Arc",
         "date": "1882",
         "fileName": "rossetti-joan-of-arc-1882"
-      }
-    ]
-  }
-,
-  "rousseau": {
-    "fname": "Henri",
-    "lname": "Rousseau",
-    "bio": "Henri Julien Félix Rousseau (May 21, 1844 – September 2, 1910) was a French post-impressionist painter in the Naïve or Primitive manner. He was also known as Le Douanier (the customs officer), a humorous description of his occupation as a toll and tax collector.",
-    "era": "Post-Impressionism",
-    "content": [
-      {
-        "title": "Landscape with Bridge",
-        "date": "1877",
-        "fileName": "rousseau-landscape-with-bridge-1877"
-      },
-      {
-        "title": "The Mill",
-        "date": "1879",
-        "fileName": "rousseau-mill-1879"
-      },
-      {
-        "title": "Landscape",
-        "date": "1886",
-        "fileName": "rousseau-landscape-1886"
-      },
-      {
-        "title": "Riverbank",
-        "date": "1890",
-        "fileName": "rousseau-riverbank-1890"
-      },
-      {
-        "title": "Suprise",
-        "date": "1891",
-        "fileName": "rousseau-suprise-1891"
-      },
-      {
-        "title": "The Artilleryman",
-        "date": "1893",
-        "fileName": "rousseau-artilleryman-1893"
-      },
-      {
-        "title": "Family Fishing",
-        "date": "1895",
-        "fileName": "rousseau-family-fishing-1895"
-      },
-      {
-        "title": "Suburban Scene",
-        "date": "1896",
-        "fileName": "rousseau-suburban-scene-1896"
-      },
-      {
-        "title": "The Chair Factory",
-        "date": "1897",
-        "fileName": "rousseau-chair-factory-1897"
-      },
-      {
-        "title": "The Quarry",
-        "date": "1897",
-        "fileName": "rousseau-quarry-1897"
-      },
-      {
-        "title": "Boat in a Storm",
-        "date": "1898",
-        "fileName": "rousseau-boat-in-a-storm-1898"
-      },
-      {
-        "title": "Happy Quartet",
-        "date": "1902",
-        "fileName": "rousseau-happy-quartet-1902"
-      },
-      {
-        "title": "Child with Puppet",
-        "date": "1903",
-        "fileName": "rousseau-child-with-puppet-1903"
-      },
-      {
-        "title": "Scout Attacked by a Tiger",
-        "date": "1904",
-        "fileName": "rousseau-scout-attacked-by-a-tiger-1904"
-      },
-      {
-        "title": "Girl with Doll",
-        "date": "1905",
-        "fileName": "rousseau-girl-with-doll-1905"
-      },
-      {
-        "title": "Old Juniors Cart",
-        "date": "1908",
-        "fileName": "rousseau-old-juniors-cart-1908"
-      },
-      {
-        "title": "Bouquet of Flowers",
-        "date": "1910",
-        "fileName": "rousseau-bouquet-of-flowers-1910"
-      },
-      {
-        "title": "Jungle with Lion",
-        "date": "1910",
-        "fileName": "rousseau-jungle-with-lion-1910"
-      },
-      {
-        "title": "Meadowland",
-        "date": "1910",
-        "fileName": "rousseau-meadowland-1910"
-      },
-      {
-        "title": "The Dream",
-        "date": "1910",
-        "fileName": "rousseau-dream-1910"
       }
     ]
   }
@@ -2089,71 +1980,111 @@
     ]
   }
 ,
-  "vonamerling": {
-    "fname": "Friedrich",
-    "lname": "Von Amerling",
-    "bio": "Friedrich von Amerling (14 April 1803 – 14 January 1887) was an Austro-Hungarian portrait painter in the court of Franz Josef. He was born in Vienna and was court painter between 1835 and 1880. With Ferdinand Georg Waldmüller he is one of the outstanding Austrian portrait painters of the 19th century.",
-    "era": "Academic",
+  "rousseau": {
+    "fname": "Henri",
+    "lname": "Rousseau",
+    "bio": "Henri Julien Félix Rousseau (May 21, 1844 – September 2, 1910) was a French post-impressionist painter in the Naïve or Primitive manner. He was also known as Le Douanier (the customs officer), a humorous description of his occupation as a toll and tax collector.",
+    "era": "Post-Impressionism",
     "content": [
       {
-        "title": "Rudolph von Arthaber with His Children",
-        "date": "1830",
-        "fileName": "vonamerling-rudolph-von-arthaber-with-his-children-1830"
+        "title": "Landscape with Bridge",
+        "date": "1877",
+        "fileName": "rousseau-landscape-with-bridge-1877"
       },
       {
-        "title": "Emporer Franz I",
-        "date": "1832",
-        "fileName": "vonamerling-emporer-franz-i-1832"
+        "title": "The Mill",
+        "date": "1879",
+        "fileName": "rousseau-mill-1879"
       },
       {
-        "title": "Self Portrait",
-        "date": "1834",
-        "fileName": "vonamerling-self-portrait-1834"
+        "title": "Landscape",
+        "date": "1886",
+        "fileName": "rousseau-landscape-1886"
       },
       {
-        "title": "Lost in Dreams",
-        "date": "1835",
-        "fileName": "vonamerling-lost-in-dreams-1835"
+        "title": "Riverbank",
+        "date": "1890",
+        "fileName": "rousseau-riverbank-1890"
       },
       {
-        "title": "Count Istvan Szechenyi",
-        "date": "1836",
-        "fileName": "vonamerling-count-istvan-szechenyi-1836"
+        "title": "Suprise",
+        "date": "1891",
+        "fileName": "rousseau-suprise-1891"
       },
       {
-        "title": "Prinzessin Marie Franziska",
-        "date": "1836",
-        "fileName": "vonamerling-prinzessin-marie-franziska-1836"
+        "title": "The Artilleryman",
+        "date": "1893",
+        "fileName": "rousseau-artilleryman-1893"
       },
       {
-        "title": "Portrait of a Girl",
-        "date": "1837",
-        "fileName": "vonamerling-portrait-of-a-girl-1837"
+        "title": "Family Fishing",
+        "date": "1895",
+        "fileName": "rousseau-family-fishing-1895"
       },
       {
-        "title": "Oriental Woman",
-        "date": "1838",
-        "fileName": "vonamerling-oriental-woman-1838"
+        "title": "Suburban Scene",
+        "date": "1896",
+        "fileName": "rousseau-suburban-scene-1896"
       },
       {
-        "title": "Countess Nako",
-        "date": "1855",
-        "fileName": "vonamerling-countess-nako-1855"
+        "title": "The Chair Factory",
+        "date": "1897",
+        "fileName": "rousseau-chair-factory-1897"
       },
       {
-        "title": "Charity",
-        "date": "1856",
-        "fileName": "vonamerling-charity-1856"
+        "title": "The Quarry",
+        "date": "1897",
+        "fileName": "rousseau-quarry-1897"
       },
       {
-        "title": "Kaiser Franz I",
-        "date": "1884",
-        "fileName": "vonamerling-kaiser-franz-i-1884"
+        "title": "Boat in a Storm",
+        "date": "1898",
+        "fileName": "rousseau-boat-in-a-storm-1898"
       },
       {
-        "title": "Study of a Lunatist",
-        "date": "",
-        "fileName": "vonamerling-study-of-a-lunatist"
+        "title": "Happy Quartet",
+        "date": "1902",
+        "fileName": "rousseau-happy-quartet-1902"
+      },
+      {
+        "title": "Child with Puppet",
+        "date": "1903",
+        "fileName": "rousseau-child-with-puppet-1903"
+      },
+      {
+        "title": "Scout Attacked by a Tiger",
+        "date": "1904",
+        "fileName": "rousseau-scout-attacked-by-a-tiger-1904"
+      },
+      {
+        "title": "Girl with Doll",
+        "date": "1905",
+        "fileName": "rousseau-girl-with-doll-1905"
+      },
+      {
+        "title": "Old Juniors Cart",
+        "date": "1908",
+        "fileName": "rousseau-old-juniors-cart-1908"
+      },
+      {
+        "title": "Bouquet of Flowers",
+        "date": "1910",
+        "fileName": "rousseau-bouquet-of-flowers-1910"
+      },
+      {
+        "title": "Jungle with Lion",
+        "date": "1910",
+        "fileName": "rousseau-jungle-with-lion-1910"
+      },
+      {
+        "title": "Meadowland",
+        "date": "1910",
+        "fileName": "rousseau-meadowland-1910"
+      },
+      {
+        "title": "The Dream",
+        "date": "1910",
+        "fileName": "rousseau-dream-1910"
       }
     ]
   }
@@ -2263,6 +2194,75 @@
         "title": "Tristan and Isolde Sharing the Potion",
         "date": "1916",
         "fileName": "waterhouse-tristan-and-isolde-sharing-the-potion-1916"
+      }
+    ]
+  }
+,
+  "vonamerling": {
+    "fname": "Friedrich",
+    "lname": "Von Amerling",
+    "bio": "Friedrich von Amerling (14 April 1803 – 14 January 1887) was an Austro-Hungarian portrait painter in the court of Franz Josef. He was born in Vienna and was court painter between 1835 and 1880. With Ferdinand Georg Waldmüller he is one of the outstanding Austrian portrait painters of the 19th century.",
+    "era": "Academic",
+    "content": [
+      {
+        "title": "Rudolph von Arthaber with His Children",
+        "date": "1830",
+        "fileName": "vonamerling-rudolph-von-arthaber-with-his-children-1830"
+      },
+      {
+        "title": "Emporer Franz I",
+        "date": "1832",
+        "fileName": "vonamerling-emporer-franz-i-1832"
+      },
+      {
+        "title": "Self Portrait",
+        "date": "1834",
+        "fileName": "vonamerling-self-portrait-1834"
+      },
+      {
+        "title": "Lost in Dreams",
+        "date": "1835",
+        "fileName": "vonamerling-lost-in-dreams-1835"
+      },
+      {
+        "title": "Count Istvan Szechenyi",
+        "date": "1836",
+        "fileName": "vonamerling-count-istvan-szechenyi-1836"
+      },
+      {
+        "title": "Prinzessin Marie Franziska",
+        "date": "1836",
+        "fileName": "vonamerling-prinzessin-marie-franziska-1836"
+      },
+      {
+        "title": "Portrait of a Girl",
+        "date": "1837",
+        "fileName": "vonamerling-portrait-of-a-girl-1837"
+      },
+      {
+        "title": "Oriental Woman",
+        "date": "1838",
+        "fileName": "vonamerling-oriental-woman-1838"
+      },
+      {
+        "title": "Countess Nako",
+        "date": "1855",
+        "fileName": "vonamerling-countess-nako-1855"
+      },
+      {
+        "title": "Charity",
+        "date": "1856",
+        "fileName": "vonamerling-charity-1856"
+      },
+      {
+        "title": "Kaiser Franz I",
+        "date": "1884",
+        "fileName": "vonamerling-kaiser-franz-i-1884"
+      },
+      {
+        "title": "Study of a Lunatist",
+        "date": "",
+        "fileName": "vonamerling-study-of-a-lunatist"
       }
     ]
   }
