@@ -29,8 +29,7 @@ module.exports = {
       }
     }),
     new ExtractTextPlugin({
-      filename: 'styles/[name].css',
-      allChunks: true
+      filename: 'styles/[name].css'
     }),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendors'
