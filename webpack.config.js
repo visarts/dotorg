@@ -19,14 +19,17 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin('dist'),
+    new webpack.ProvidePlugin({
+      React: 'react',
+      ReactDOM: 'react-dom'
+    }),
     new webpack.DefinePlugin({
       'process.env':{
         'NODE_ENV': JSON.stringify('development')
       }
     }),
     new ExtractTextPlugin({
-      filename: 'styles/[name].css',
-      allChunks: true
+      filename: 'styles/[name].css'
     }),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendors'

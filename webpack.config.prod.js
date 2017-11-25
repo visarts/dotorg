@@ -32,43 +32,24 @@ module.exports = {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendors'
     }),
+    new webpack.optimize.AggressiveMergingPlugin(),
     new HtmlWebpackPlugin({
       title: 'Portitude: the Art of Learning',
       inject: true,
       template: './index.ejs',
       hash: true
     }),
-    /*new webpack.optimize.UglifyJsPlugin({
+    new webpack.optimize.UglifyJsPlugin({
       compressor: {
         warnings: false
       }
-    }),*/
+    }),
     new CopyWebpackPlugin([
       { from: 'src/images', to: 'images'},
       { from: 'content', to: 'content'},
       { from: 'data/allArtists.json', to: 'data' },
       { from: 'data/allAuthors.json', to: 'data' }
     ])
-    /*new MergeJsonWebpackPlugin({
-      'output': {
-        'groupBy': [
-          {
-            'pattern':'./data/authors/*.json',
-            'fileName':'./data/allAuthors.json'
-          }
-        ]
-      }
-    }),
-    new MergeJsonWebpackPlugin({
-      'output': {
-        'groupBy': [
-          {
-            'pattern':'./data/artists/*.json',
-            'fileName':'./data/allArtists.json'
-          }
-        ]
-      }
-    })*/
   ],
   module: {
 		rules: [
