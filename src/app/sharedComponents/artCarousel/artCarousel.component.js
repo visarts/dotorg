@@ -1,8 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { Glyphicon } from 'react-bootstrap';
 import './artCarousel.component.less';
-
 
 export default class ArtCarousel extends React.Component {
 

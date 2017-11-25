@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import ListLink from 'SharedComponents/listLink/listLink.component';
 import ArtHistory from 'SharedComponents/artHistory/artHistory.component';

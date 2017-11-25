@@ -1,4 +1,3 @@
-import React from 'react';
 import { Modal, Glyphicon, DropdownButton, MenuItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import DOMPurify from '../../../../lib/purify.js';

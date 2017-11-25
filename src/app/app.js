@@ -1,4 +1,3 @@
-import React from 'react';
 import { Route } from 'react-router-dom';
 import dataService from 'Services/data.service';
 import StoreService from 'Services/store.service';
@@ -73,7 +72,7 @@ export default class App extends React.Component {
 
       refactor arts carousel to use css animation and a single array
 
-      refactor history display into carousel 
+      refactor history display into carousel
 
     */
 

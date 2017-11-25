@@ -1,4 +1,3 @@
-import React from 'react';
 import { Route } from 'react-router-dom';
 import ArtsHome from './artsHome/artsHome.component';
 import ArtsArtist from './artsArtist/artsArtist.component';

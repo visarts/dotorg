@@ -1,4 +1,3 @@
-import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import historyService from 'Services/history.service';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Route } from 'react-router-dom';
 import LiteratureHome from './literatureHome/literatureHome.component';
 import LiteratureAuthor from './literatureAuthor/literatureAuthor.component';

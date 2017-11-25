@@ -1,4 +1,3 @@
-import React from 'react';
 import { Glyphicon } from 'react-bootstrap';
 import historyService from 'Services/history.service';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';

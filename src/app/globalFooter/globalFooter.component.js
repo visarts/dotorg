@@ -1,4 +1,3 @@
-import React from 'react';
 import './globalFooter.component.less';
 
 const GlobalFooter = (props) => {

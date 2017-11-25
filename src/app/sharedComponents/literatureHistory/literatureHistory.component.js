@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import historyService from 'Services/history.service';
 import PrimaryButton from 'SharedComponents/buttons/primary/primaryButton.component';

@@ -1,6 +1,4 @@
 
-import React from 'react';
-import ReactDOM from 'react-dom';
 import { Route, HashRouter as Router } from 'react-router-dom';
 import dataService from 'Services/data.service';
 import App from './app/app';

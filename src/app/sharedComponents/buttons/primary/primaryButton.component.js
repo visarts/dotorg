@@ -1,6 +1,4 @@
-import React from 'react';
 import './primaryButton.component.less';
-
 
 const PrimaryButton = (props) => {
 
