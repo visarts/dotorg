@@ -47,20 +47,35 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: 'src/images', to: 'images'},
       { from: 'content', to: 'content'},
-      { from: 'data/allArtists.json', to: 'data' },
-      { from: 'data/allAuthors.json', to: 'data' }
+      { from: 'data/compiled', to: 'data' }
     ])
   ],
   module: {
 		rules: [
-			{
+      {
         test: /\.less$/,
         exclude: /node_modules/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            'css-loader?url=false',
-            'less-loader'
+            {
+              loader: 'css-loader',
+              options: {
+                url: false,
+                modules: true,
+                importLoaders: 1,
+                localIdentName: '[name]__[local]___[hash:base64:4]'
+              }
+            },
+            {
+              loader: 'less-loader',
+              options: {
+                paths: [
+                  path.resolve(ROOT_PATH, 'node_modules'),
+                  path.resolve(ROOT_PATH, 'src/styles')
+                ]
+              }
+            }
           ]
         })
 			},
@@ -108,7 +123,6 @@ module.exports = {
     extensions: ['*', '.js', '.jsx', '.json', '.less', '.html'],
     alias:{
       Services: path.resolve(ROOT_PATH, 'src/app/services'),
-      Styles: path.resolve(ROOT_PATH, 'src/app/styles'),
       Literature: path.resolve(ROOT_PATH, 'content/literature'),
       Artwork: path.resolve(ROOT_PATH, 'content/artwork'),
       SharedComponents: path.resolve(ROOT_PATH, 'src/app/sharedComponents'),

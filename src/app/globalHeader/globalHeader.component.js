@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import Search from 'SharedComponents/search/search.component';
-import './globalHeader.component.less';
+import styles from './globalHeader.component.less';
 
 const GlobalHeader = (props) => {
 
@@ -19,7 +19,7 @@ const GlobalHeader = (props) => {
 
   return (
     <header className={smallLogoClass}>
-      <div className="globalHeader">
+      <div className={`wrapper ${styles.headline}`}>
         <div className="globalContainer">
           <h1 className={smallLogoClass}>
             <Link to="/" className="portitudeTitle">Portitude</Link>
