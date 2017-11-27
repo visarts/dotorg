@@ -67,6 +67,146 @@
     ]
   }
 ,
+  "dickens": {
+    "fname": "Charles",
+    "lname": "Dickens",
+    "bio": "Charles John Huffam Dickens (7 February 1812 – 9 June 1870) was an English writer and social critic. He created some of the world's best-known fictional characters and is regarded by many as the greatest novelist of the Victorian era. His works enjoyed unprecedented popularity during his lifetime, and by the 20th century critics and scholars had recognised him as a literary genius. His novels and short stories enjoy lasting popularity.",
+    "content": [
+      {
+        "title": "A Flight",
+        "date": "1851",
+        "fileName": "dickens-a-flight-1851",
+        "genre": "shorts"
+      },
+      {
+        "title": "A Walk in a Workhouse",
+        "date": "1850",
+        "fileName": "dickens-a-walk-in-a-workhouse-1850",
+        "genre": "nonfiction"
+      },
+      {
+        "title": "Bill-Sticking",
+        "date": "1851",
+        "fileName": "dickens-bill-sticking-1851",
+        "genre": "shorts"
+      },
+      {
+        "title": "Christmas at Fezziwig's Warehouse",
+        "date": "1843",
+        "fileName": "dickens-christmas-at-fezziwigs-warehouse-1843",
+        "genre": "shorts"
+      },
+      {
+        "title": "Down with the Tide",
+        "date": "1853",
+        "fileName": "dickens-down-with-the-tide-1853",
+        "genre": "shorts"
+      },
+      {
+        "title": "Familiar Epistle from a Parent to a Child Aged Two Years and Two Months",
+        "date": "1839",
+        "fileName": "dickens-familiar-epistle-from-a-parent-to-a-child-1839",
+        "genre": "shorts"
+      },
+      {
+        "title": "Going Into Society",
+        "date": "1858",
+        "fileName": "dickens-going-into-society-1858",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Lamplighter",
+        "date": "1838",
+        "fileName": "dickens-lamplighter-1838",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Lost Arctic Voyagers",
+        "date": "1854",
+        "fileName": "dickens-lost-arctic-voyagers-1854",
+        "genre": "nonfiction"
+      },
+      {
+        "title": "Lying Awake",
+        "date": "1852",
+        "fileName": "dickens-lying-awake-1852",
+        "genre": "shorts"
+      },
+      {
+        "title": "Mugby Junction",
+        "date": "1866",
+        "fileName": "dickens-mugby-junction-1866",
+        "genre": "shorts"
+      },
+      {
+        "title": "Nobody's Story",
+        "date": "1853",
+        "fileName": "dickens-nobodys-story-1853",
+        "genre": "shorts"
+      },
+      {
+        "title": "On Duty with Inspector Field",
+        "date": "1851",
+        "fileName": "dickens-on-duty-with-inspector-field-1851",
+        "genre": "nonfiction"
+      },
+      {
+        "title": "On Grief, and How to Heal a Mourning Heart",
+        "date": "1862",
+        "fileName": "dickens-on-grief-and-how-to-heal-a-mourning-heart-1862",
+        "genre": "nonfiction"
+      },
+      {
+        "title": "Our School",
+        "date": "1851",
+        "fileName": "dickens-our-school-1851",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Perils of Certain English Prisoners",
+        "date": "1857",
+        "fileName": "dickens-perils-of-certain-english-prisoners-1857",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Poor Relation's Story",
+        "date": "1852",
+        "fileName": "dickens-poor-relations-story-1852",
+        "genre": "shorts"
+      },
+      {
+        "title": "Somebody's Luggage",
+        "date": "1862",
+        "fileName": "dickens-somebodys-luggage-1862",
+        "genre": "shorts"
+      },
+      {
+        "title": "To be Read at Dusk",
+        "date": "1852",
+        "fileName": "dickens-to-be-read-at-dusk-1852",
+        "genre": "shorts"
+      },
+      {
+        "title": "What Christmas is as We Grow Older",
+        "date": "1851",
+        "fileName": "dickens-what-christmas-is-as-we-grow-older-1851",
+        "genre": "nonfiction"
+      },
+      {
+        "title": "What is Sensational?",
+        "date": "1867",
+        "fileName": "dickens-what-is-sensational-1867",
+        "genre": "nonfiction"
+      },
+      {
+        "title": "The Wreck of the Golden Mary",
+        "date": "1856",
+        "fileName": "dickens-wreck-of-the-golden-mary-1856",
+        "genre": "shorts"
+      }
+    ]
+  }
+,
   "andersen": {
     "fname": "Hans Christian",
     "lname": "Andersen",
@@ -1089,146 +1229,6 @@
     ]
   }
 ,
-  "dickens": {
-    "fname": "Charles",
-    "lname": "Dickens",
-    "bio": "Charles John Huffam Dickens (7 February 1812 – 9 June 1870) was an English writer and social critic. He created some of the world's best-known fictional characters and is regarded by many as the greatest novelist of the Victorian era. His works enjoyed unprecedented popularity during his lifetime, and by the 20th century critics and scholars had recognised him as a literary genius. His novels and short stories enjoy lasting popularity.",
-    "content": [
-      {
-        "title": "A Flight",
-        "date": "1851",
-        "fileName": "dickens-a-flight-1851",
-        "genre": "shorts"
-      },
-      {
-        "title": "A Walk in a Workhouse",
-        "date": "1850",
-        "fileName": "dickens-a-walk-in-a-workhouse-1850",
-        "genre": "nonfiction"
-      },
-      {
-        "title": "Bill-Sticking",
-        "date": "1851",
-        "fileName": "dickens-bill-sticking-1851",
-        "genre": "shorts"
-      },
-      {
-        "title": "Christmas at Fezziwig's Warehouse",
-        "date": "1843",
-        "fileName": "dickens-christmas-at-fezziwigs-warehouse-1843",
-        "genre": "shorts"
-      },
-      {
-        "title": "Down with the Tide",
-        "date": "1853",
-        "fileName": "dickens-down-with-the-tide-1853",
-        "genre": "shorts"
-      },
-      {
-        "title": "Familiar Epistle from a Parent to a Child Aged Two Years and Two Months",
-        "date": "1839",
-        "fileName": "dickens-familiar-epistle-from-a-parent-to-a-child-1839",
-        "genre": "shorts"
-      },
-      {
-        "title": "Going Into Society",
-        "date": "1858",
-        "fileName": "dickens-going-into-society-1858",
-        "genre": "shorts"
-      },
-      {
-        "title": "The Lamplighter",
-        "date": "1838",
-        "fileName": "dickens-lamplighter-1838",
-        "genre": "shorts"
-      },
-      {
-        "title": "The Lost Arctic Voyagers",
-        "date": "1854",
-        "fileName": "dickens-lost-arctic-voyagers-1854",
-        "genre": "nonfiction"
-      },
-      {
-        "title": "Lying Awake",
-        "date": "1852",
-        "fileName": "dickens-lying-awake-1852",
-        "genre": "shorts"
-      },
-      {
-        "title": "Mugby Junction",
-        "date": "1866",
-        "fileName": "dickens-mugby-junction-1866",
-        "genre": "shorts"
-      },
-      {
-        "title": "Nobody's Story",
-        "date": "1853",
-        "fileName": "dickens-nobodys-story-1853",
-        "genre": "shorts"
-      },
-      {
-        "title": "On Duty with Inspector Field",
-        "date": "1851",
-        "fileName": "dickens-on-duty-with-inspector-field-1851",
-        "genre": "nonfiction"
-      },
-      {
-        "title": "On Grief, and How to Heal a Mourning Heart",
-        "date": "1862",
-        "fileName": "dickens-on-grief-and-how-to-heal-a-mourning-heart-1862",
-        "genre": "nonfiction"
-      },
-      {
-        "title": "Our School",
-        "date": "1851",
-        "fileName": "dickens-our-school-1851",
-        "genre": "shorts"
-      },
-      {
-        "title": "The Perils of Certain English Prisoners",
-        "date": "1857",
-        "fileName": "dickens-perils-of-certain-english-prisoners-1857",
-        "genre": "shorts"
-      },
-      {
-        "title": "The Poor Relation's Story",
-        "date": "1852",
-        "fileName": "dickens-poor-relations-story-1852",
-        "genre": "shorts"
-      },
-      {
-        "title": "Somebody's Luggage",
-        "date": "1862",
-        "fileName": "dickens-somebodys-luggage-1862",
-        "genre": "shorts"
-      },
-      {
-        "title": "To be Read at Dusk",
-        "date": "1852",
-        "fileName": "dickens-to-be-read-at-dusk-1852",
-        "genre": "shorts"
-      },
-      {
-        "title": "What Christmas is as We Grow Older",
-        "date": "1851",
-        "fileName": "dickens-what-christmas-is-as-we-grow-older-1851",
-        "genre": "nonfiction"
-      },
-      {
-        "title": "What is Sensational?",
-        "date": "1867",
-        "fileName": "dickens-what-is-sensational-1867",
-        "genre": "nonfiction"
-      },
-      {
-        "title": "The Wreck of the Golden Mary",
-        "date": "1856",
-        "fileName": "dickens-wreck-of-the-golden-mary-1856",
-        "genre": "shorts"
-      }
-    ]
-  }
-,
   "dickinson": {
     "fname": "Emily",
     "lname": "Dickinson",
@@ -1666,104 +1666,6 @@
     ]
   }
 
-,
-  "kafka": {
-    "fname": "Franz",
-    "lname": "Kafka",
-    "bio": "Franz Kafka (3 July 1883 – 3 June 1924) was a German-language novelist and short story writer, widely regarded as one of the major figures of 20th-century literature. His work, which fuses elements of realism and the fantastic, typically features isolated protagonists faced by bizarre or surrealistic predicaments and incomprehensible social-bureaucratic powers, and has been interpreted as exploring themes of alienation, existential anxiety, guilt, and absurdity. The term 'Kafkaesque' has entered the English language to describe situations like those in his writing.",
-    "content": [
-      {
-        "title": "A Hunger Artist",
-        "date": "1922",
-        "fileName": "kafka-a-hunger-artist-1922",
-        "genre": "shorts"
-      },
-      {
-        "title": "Before the Law",
-        "date": "1919",
-        "fileName": "kafka-before-the-law-1919",
-        "genre": "shorts"
-      },
-      {
-        "title": "Excursion Into the Mountains",
-        "date": "1912",
-        "fileName": "kafka-excursion-into-the-mountains-1912",
-        "genre": "shorts"
-      },
-      {
-        "title": "The Great Wall of China",
-        "date": "1918",
-        "fileName": "kafka-great-wall-of-china-1918",
-        "genre": "shorts"
-      },
-      {
-        "title": "The Hunter Gracchus",
-        "date": "1917",
-        "fileName": "kafka-hunter-gracchus-1917",
-        "genre": "shorts"
-      },
-      {
-        "title": "In the Penal Colony",
-        "date": "1914",
-        "fileName": "kafka-in-the-penal-colony-1914",
-        "genre": "shorts"
-      },
-      {
-        "title": "The Judgment",
-        "date": "1915",
-        "fileName": "kafka-judgment-1913",
-        "genre": "shorts"
-      },
-      {
-        "title": "Metamorphosis",
-        "date": "1915",
-        "fileName": "kafka-metamorphosis-1915",
-        "genre": "shorts"
-      },
-      {
-        "title": "On the Tram",
-        "date": "1912",
-        "fileName": "kafka-on-the-tram-1912",
-        "genre": "shorts"
-      },
-      {
-        "title": "The Street Window",
-        "date": "1912",
-        "fileName": "kafka-street-window-1912",
-        "genre": "shorts"
-      },
-      {
-        "title": "The Tradesman",
-        "date": "1912",
-        "fileName": "kafka-tradesman-1912",
-        "genre": "shorts"
-      },
-      {
-        "title": "The Trees",
-        "date": "1912",
-        "fileName": "kafka-trees-1912",
-        "genre": "shorts"
-      },
-      {
-        "title": "Unhappiness",
-        "date": "1912",
-        "fileName": "kafka-unhappiness-1912",
-        "genre": "shorts"
-      },
-      {
-        "title": "Up in the Gallery",
-        "date": "1919",
-        "fileName": "kafka-up-in-the-gallery-1919",
-        "genre": "shorts"
-      },
-      {
-        "title": "The Way Home",
-        "date": "1912",
-        "fileName": "kafka-way-home-1912",
-        "genre": "shorts"
-      }
-    ]
-  }
 ,
   "grimm": {
     "fname": "The Brothers",
@@ -2253,183 +2155,99 @@
     ]
   }
 ,
-  "ohenry": {
-    "fname": "",
-    "lname": "O. Henry",
-    "bio": "William Sydney Porter (September 11, 1862 – June 5, 1910), known by his pen name O. Henry, was an American short story writer. His stories are known for their surprise endings.",
+  "kafka": {
+    "fname": "Franz",
+    "lname": "Kafka",
+    "bio": "Franz Kafka (3 July 1883 – 3 June 1924) was a German-language novelist and short story writer, widely regarded as one of the major figures of 20th-century literature. His work, which fuses elements of realism and the fantastic, typically features isolated protagonists faced by bizarre or surrealistic predicaments and incomprehensible social-bureaucratic powers, and has been interpreted as exploring themes of alienation, existential anxiety, guilt, and absurdity. The term 'Kafkaesque' has entered the English language to describe situations like those in his writing.",
     "content": [
       {
-        "title": "After Twenty Years",
-        "date": "1906",
-        "fileName": "ohenry-after-twenty-years-1906",
+        "title": "A Hunger Artist",
+        "date": "1922",
+        "fileName": "kafka-a-hunger-artist-1922",
         "genre": "shorts"
       },
       {
-        "title": "An Afternoon Miracle",
-        "date": "1902",
-        "fileName": "ohenry-an-afternoon-miracle-1902",
+        "title": "Before the Law",
+        "date": "1919",
+        "fileName": "kafka-before-the-law-1919",
         "genre": "shorts"
       },
       {
-        "title": "Babes in the Jungle",
-        "date": "1910",
-        "fileName": "ohenry-babes-in-the-jungle-1910",
+        "title": "Excursion Into the Mountains",
+        "date": "1912",
+        "fileName": "kafka-excursion-into-the-mountains-1912",
         "genre": "shorts"
       },
       {
-        "title": "Buried Treasure",
-        "date": "1908",
-        "fileName": "ohenry-buried-treasure-1908",
+        "title": "The Great Wall of China",
+        "date": "1918",
+        "fileName": "kafka-great-wall-of-china-1918",
         "genre": "shorts"
       },
       {
-        "title": "Christmas by Injunction",
-        "date": "1907",
-        "fileName": "ohenry-christmas-by-injunction-1907",
-        "genre": "shorts"
-      },
-      {
-        "title": "Confessions of a Humorist",
+        "title": "The Hunter Gracchus",
         "date": "1917",
-        "fileName": "ohenry-confessions-of-a-humorist-1917",
+        "fileName": "kafka-hunter-gracchus-1917",
         "genre": "shorts"
       },
       {
-        "title": "The Detective Detector",
-        "date": "1917",
-        "fileName": "ohenry-detective-detector-1917",
+        "title": "In the Penal Colony",
+        "date": "1914",
+        "fileName": "kafka-in-the-penal-colony-1914",
         "genre": "shorts"
       },
       {
-        "title": "The Duplicity of Hargraves",
-        "date": "1911",
-        "fileName": "ohenry-duplicity-of-hargraves-1911",
+        "title": "The Judgment",
+        "date": "1915",
+        "fileName": "kafka-judgment-1913",
         "genre": "shorts"
       },
       {
-        "title": "The Furnished Room",
-        "date": "1904",
-        "fileName": "ohenry-furnished-room-1904",
+        "title": "Metamorphosis",
+        "date": "1915",
+        "fileName": "kafka-metamorphosis-1915",
         "genre": "shorts"
       },
       {
-        "title": "Georgia's Ruling",
-        "date": "1900",
-        "fileName": "ohenry-georgias-ruling-1900",
+        "title": "On the Tram",
+        "date": "1912",
+        "fileName": "kafka-on-the-tram-1912",
         "genre": "shorts"
       },
       {
-        "title": "The Gift of the Magi",
-        "date": "1905",
-        "fileName": "ohenry-gift-of-the-magi-1905",
+        "title": "The Street Window",
+        "date": "1912",
+        "fileName": "kafka-street-window-1912",
         "genre": "shorts"
       },
       {
-        "title": "The Green Door",
-        "date": "1906",
-        "fileName": "ohenry-green-door-1906",
+        "title": "The Tradesman",
+        "date": "1912",
+        "fileName": "kafka-tradesman-1912",
         "genre": "shorts"
       },
       {
-        "title": "He Also Serves",
-        "date": "1909",
-        "fileName": "ohenry-he-also-serves-1909",
+        "title": "The Trees",
+        "date": "1912",
+        "fileName": "kafka-trees-1912",
         "genre": "shorts"
       },
       {
-        "title": "The Indian Summer of Dry Valley Johnson",
-        "date": "1907",
-        "fileName": "ohenry-indian-summer-of-dry-valley-johnson-1907",
+        "title": "Unhappiness",
+        "date": "1912",
+        "fileName": "kafka-unhappiness-1912",
         "genre": "shorts"
       },
       {
-        "title": "The Last Leaf",
-        "date": "1907",
-        "fileName": "ohenry-last-leaf-1907",
+        "title": "Up in the Gallery",
+        "date": "1919",
+        "fileName": "kafka-up-in-the-gallery-1919",
         "genre": "shorts"
       },
       {
-        "title": "A Little Talk About Mobs",
-        "date": "1917",
-        "fileName": "ohenry-little-talk-about-mobs-1917",
-        "genre": "shorts"
-      },
-      {
-        "title": "The Missing Chord",
-        "date": "1907",
-        "fileName": "ohenry-missing-chord-1907",
-        "genre": "shorts"
-      },
-      {
-        "title": "A Newspaper Story",
-        "date": "1910",
-        "fileName": "ohenry-newspaper-story-1910",
-        "genre": "shorts"
-      },
-      {
-        "title": "One Dollar's Worth",
-        "date": "1910",
-        "fileName": "ohenry-one-dollars-worth-1910",
-        "genre": "shorts"
-      },
-      {
-        "title": "Out of Nazareth",
-        "date": "1917",
-        "fileName": "ohenry-out-of-nazareth-1917",
-        "genre": "shorts"
-      },
-      {
-        "title": "The Princess and the Puma",
-        "date": "1907",
-        "fileName": "ohenry-princess-and-the-puma-1907",
-        "genre": "shorts"
-      },
-      {
-        "title": "The Ransom of Red Chief",
-        "date": "1910",
-        "fileName": "ohenry-ransom-of-red-chief-1910",
-        "genre": "shorts"
-      },
-      {
-        "title": "The Roads We Take",
-        "date": "1910",
-        "fileName": "ohenry-roads-we-take-1910",
-        "genre": "shorts"
-      },
-      {
-        "title": "Seats of the Haughty",
-        "date": "1907",
-        "fileName": "ohenry-seats-of-the-haughty-1907",
-        "genre": "shorts"
-      },
-      {
-        "title": "The Sphinx Apple",
-        "date": "1907",
-        "fileName": "ohenry-sphinx-apple-1907",
-        "genre": "shorts"
-      },
-      {
-        "title": "A Technical Error",
-        "date": "1910",
-        "fileName": "ohenry-technical-error-1910",
-        "genre": "shorts"
-      },
-      {
-        "title": "The Third Ingredient",
-        "date": "1908",
-        "fileName": "ohenry-third-ingredient-1908",
-        "genre": "shorts"
-      },
-      {
-        "title": "The Whirligig of Life",
-        "date": "1910",
-        "fileName": "ohenry-whirligig-of-life-1910",
-        "genre": "shorts"
-      },
-      {
-        "title": "The World and the Door",
-        "date": "1910",
-        "fileName": "ohenry-world-and-the-door-1910",
+        "title": "The Way Home",
+        "date": "1912",
+        "fileName": "kafka-way-home-1912",
         "genre": "shorts"
       }
     ]
@@ -3057,106 +2875,184 @@
     ]
   }
 ,
-  "shakespeare": {
-    "fname": "William",
-    "lname": "Shakespeare",
-    "bio": "Shakespeare was an English poet, playwright, and actor, widely regarded as the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet, and the 'Bard of Avon'. His extant works, including collaborations, consist of approximately 38 plays, 154 sonnets, two long narrative poems, and a few other verses, some of uncertain authorship. ",
+  "ohenry": {
+    "fname": "",
+    "lname": "O. Henry",
+    "bio": "William Sydney Porter (September 11, 1862 – June 5, 1910), known by his pen name O. Henry, was an American short story writer. His stories are known for their surprise endings.",
     "content": [
       {
-        "title": "Sonnets Part 1 (I-X)",
-        "date": "1609",
-        "fileName": "shakespeare-sonnets-part-01-1609",
-        "genre": "poetry"
+        "title": "After Twenty Years",
+        "date": "1906",
+        "fileName": "ohenry-after-twenty-years-1906",
+        "genre": "shorts"
       },
       {
-        "title": "Sonnets Part 2 (XI-XX)",
-        "date": "1609",
-        "fileName": "shakespeare-sonnets-part-02-1609",
-        "genre": "poetry"
+        "title": "An Afternoon Miracle",
+        "date": "1902",
+        "fileName": "ohenry-an-afternoon-miracle-1902",
+        "genre": "shorts"
       },
       {
-        "title": "Sonnets Part 3 (XXI-XXX)",
-        "date": "1609",
-        "fileName": "shakespeare-sonnets-part-03-1609",
-        "genre": "poetry"
+        "title": "Babes in the Jungle",
+        "date": "1910",
+        "fileName": "ohenry-babes-in-the-jungle-1910",
+        "genre": "shorts"
       },
       {
-        "title": "Sonnets Part 4 (XXXI-XL)",
-        "date": "1609",
-        "fileName": "shakespeare-sonnets-part-04-1609",
-        "genre": "poetry"
+        "title": "Buried Treasure",
+        "date": "1908",
+        "fileName": "ohenry-buried-treasure-1908",
+        "genre": "shorts"
       },
       {
-        "title": "Sonnets Part 5 (XLI-L)",
-        "date": "1609",
-        "fileName": "shakespeare-sonnets-part-05-1609",
-        "genre": "poetry"
+        "title": "Christmas by Injunction",
+        "date": "1907",
+        "fileName": "ohenry-christmas-by-injunction-1907",
+        "genre": "shorts"
       },
       {
-        "title": "Sonnets Part 6 (LI-LX)",
-        "date": "1609",
-        "fileName": "shakespeare-sonnets-part-06-1609",
-        "genre": "poetry"
+        "title": "Confessions of a Humorist",
+        "date": "1917",
+        "fileName": "ohenry-confessions-of-a-humorist-1917",
+        "genre": "shorts"
       },
       {
-        "title": "Sonnets Part 7 (LXI-LXX)",
-        "date": "1609",
-        "fileName": "shakespeare-sonnets-part-07-1609",
-        "genre": "poetry"
+        "title": "The Detective Detector",
+        "date": "1917",
+        "fileName": "ohenry-detective-detector-1917",
+        "genre": "shorts"
       },
       {
-        "title": "Sonnets Part 8 (LXXI-LXXX)",
-        "date": "1609",
-        "fileName": "shakespeare-sonnets-part-08-1609",
-        "genre": "poetry"
+        "title": "The Duplicity of Hargraves",
+        "date": "1911",
+        "fileName": "ohenry-duplicity-of-hargraves-1911",
+        "genre": "shorts"
       },
       {
-        "title": "Sonnets Part 9 (LXXXI-XC)",
-        "date": "1609",
-        "fileName": "shakespeare-sonnets-part-09-1609",
-        "genre": "poetry"
+        "title": "The Furnished Room",
+        "date": "1904",
+        "fileName": "ohenry-furnished-room-1904",
+        "genre": "shorts"
       },
       {
-        "title": "Sonnets Part 10 (XCI-C)",
-        "date": "1609",
-        "fileName": "shakespeare-sonnets-part-10-1609",
-        "genre": "poetry"
+        "title": "Georgia's Ruling",
+        "date": "1900",
+        "fileName": "ohenry-georgias-ruling-1900",
+        "genre": "shorts"
       },
       {
-        "title": "Sonnets Part 11 (CI-CX)",
-        "date": "1609",
-        "fileName": "shakespeare-sonnets-part-11-1609",
-        "genre": "poetry"
+        "title": "The Gift of the Magi",
+        "date": "1905",
+        "fileName": "ohenry-gift-of-the-magi-1905",
+        "genre": "shorts"
       },
       {
-        "title": "Sonnets Part 12 (CXI-CXX)",
-        "date": "1609",
-        "fileName": "shakespeare-sonnets-part-12-1609",
-        "genre": "poetry"
+        "title": "The Green Door",
+        "date": "1906",
+        "fileName": "ohenry-green-door-1906",
+        "genre": "shorts"
       },
       {
-        "title": "Sonnets Part 13 (CXXI-CXXX)",
-        "date": "1609",
-        "fileName": "shakespeare-sonnets-part-13-1609",
-        "genre": "poetry"
+        "title": "He Also Serves",
+        "date": "1909",
+        "fileName": "ohenry-he-also-serves-1909",
+        "genre": "shorts"
       },
       {
-        "title": "Sonnets Part 14 (CXXXI-CXL)",
-        "date": "1609",
-        "fileName": "shakespeare-sonnets-part-14-1609",
-        "genre": "poetry"
+        "title": "The Indian Summer of Dry Valley Johnson",
+        "date": "1907",
+        "fileName": "ohenry-indian-summer-of-dry-valley-johnson-1907",
+        "genre": "shorts"
       },
       {
-        "title": "Sonnets Part 15 (CXLI-CL)",
-        "date": "1609",
-        "fileName": "shakespeare-sonnets-part-15-1609",
-        "genre": "poetry"
+        "title": "The Last Leaf",
+        "date": "1907",
+        "fileName": "ohenry-last-leaf-1907",
+        "genre": "shorts"
       },
       {
-        "title": "Sonnets Part 16 (CLI-CLIV)",
-        "date": "1609",
-        "fileName": "shakespeare-sonnets-part-16-1609",
-        "genre": "poetry"
+        "title": "A Little Talk About Mobs",
+        "date": "1917",
+        "fileName": "ohenry-little-talk-about-mobs-1917",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Missing Chord",
+        "date": "1907",
+        "fileName": "ohenry-missing-chord-1907",
+        "genre": "shorts"
+      },
+      {
+        "title": "A Newspaper Story",
+        "date": "1910",
+        "fileName": "ohenry-newspaper-story-1910",
+        "genre": "shorts"
+      },
+      {
+        "title": "One Dollar's Worth",
+        "date": "1910",
+        "fileName": "ohenry-one-dollars-worth-1910",
+        "genre": "shorts"
+      },
+      {
+        "title": "Out of Nazareth",
+        "date": "1917",
+        "fileName": "ohenry-out-of-nazareth-1917",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Princess and the Puma",
+        "date": "1907",
+        "fileName": "ohenry-princess-and-the-puma-1907",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Ransom of Red Chief",
+        "date": "1910",
+        "fileName": "ohenry-ransom-of-red-chief-1910",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Roads We Take",
+        "date": "1910",
+        "fileName": "ohenry-roads-we-take-1910",
+        "genre": "shorts"
+      },
+      {
+        "title": "Seats of the Haughty",
+        "date": "1907",
+        "fileName": "ohenry-seats-of-the-haughty-1907",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Sphinx Apple",
+        "date": "1907",
+        "fileName": "ohenry-sphinx-apple-1907",
+        "genre": "shorts"
+      },
+      {
+        "title": "A Technical Error",
+        "date": "1910",
+        "fileName": "ohenry-technical-error-1910",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Third Ingredient",
+        "date": "1908",
+        "fileName": "ohenry-third-ingredient-1908",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Whirligig of Life",
+        "date": "1910",
+        "fileName": "ohenry-whirligig-of-life-1910",
+        "genre": "shorts"
+      },
+      {
+        "title": "The World and the Door",
+        "date": "1910",
+        "fileName": "ohenry-world-and-the-door-1910",
+        "genre": "shorts"
       }
     ]
   }
@@ -3507,6 +3403,110 @@
         "date": "1839",
         "fileName": "poe-william-wilson-1839",
         "genre": "shorts"
+      }
+    ]
+  }
+,
+  "shakespeare": {
+    "fname": "William",
+    "lname": "Shakespeare",
+    "bio": "Shakespeare was an English poet, playwright, and actor, widely regarded as the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet, and the 'Bard of Avon'. His extant works, including collaborations, consist of approximately 38 plays, 154 sonnets, two long narrative poems, and a few other verses, some of uncertain authorship. ",
+    "content": [
+      {
+        "title": "Sonnets Part 1 (I-X)",
+        "date": "1609",
+        "fileName": "shakespeare-sonnets-part-01-1609",
+        "genre": "poetry"
+      },
+      {
+        "title": "Sonnets Part 2 (XI-XX)",
+        "date": "1609",
+        "fileName": "shakespeare-sonnets-part-02-1609",
+        "genre": "poetry"
+      },
+      {
+        "title": "Sonnets Part 3 (XXI-XXX)",
+        "date": "1609",
+        "fileName": "shakespeare-sonnets-part-03-1609",
+        "genre": "poetry"
+      },
+      {
+        "title": "Sonnets Part 4 (XXXI-XL)",
+        "date": "1609",
+        "fileName": "shakespeare-sonnets-part-04-1609",
+        "genre": "poetry"
+      },
+      {
+        "title": "Sonnets Part 5 (XLI-L)",
+        "date": "1609",
+        "fileName": "shakespeare-sonnets-part-05-1609",
+        "genre": "poetry"
+      },
+      {
+        "title": "Sonnets Part 6 (LI-LX)",
+        "date": "1609",
+        "fileName": "shakespeare-sonnets-part-06-1609",
+        "genre": "poetry"
+      },
+      {
+        "title": "Sonnets Part 7 (LXI-LXX)",
+        "date": "1609",
+        "fileName": "shakespeare-sonnets-part-07-1609",
+        "genre": "poetry"
+      },
+      {
+        "title": "Sonnets Part 8 (LXXI-LXXX)",
+        "date": "1609",
+        "fileName": "shakespeare-sonnets-part-08-1609",
+        "genre": "poetry"
+      },
+      {
+        "title": "Sonnets Part 9 (LXXXI-XC)",
+        "date": "1609",
+        "fileName": "shakespeare-sonnets-part-09-1609",
+        "genre": "poetry"
+      },
+      {
+        "title": "Sonnets Part 10 (XCI-C)",
+        "date": "1609",
+        "fileName": "shakespeare-sonnets-part-10-1609",
+        "genre": "poetry"
+      },
+      {
+        "title": "Sonnets Part 11 (CI-CX)",
+        "date": "1609",
+        "fileName": "shakespeare-sonnets-part-11-1609",
+        "genre": "poetry"
+      },
+      {
+        "title": "Sonnets Part 12 (CXI-CXX)",
+        "date": "1609",
+        "fileName": "shakespeare-sonnets-part-12-1609",
+        "genre": "poetry"
+      },
+      {
+        "title": "Sonnets Part 13 (CXXI-CXXX)",
+        "date": "1609",
+        "fileName": "shakespeare-sonnets-part-13-1609",
+        "genre": "poetry"
+      },
+      {
+        "title": "Sonnets Part 14 (CXXXI-CXL)",
+        "date": "1609",
+        "fileName": "shakespeare-sonnets-part-14-1609",
+        "genre": "poetry"
+      },
+      {
+        "title": "Sonnets Part 15 (CXLI-CL)",
+        "date": "1609",
+        "fileName": "shakespeare-sonnets-part-15-1609",
+        "genre": "poetry"
+      },
+      {
+        "title": "Sonnets Part 16 (CLI-CLIV)",
+        "date": "1609",
+        "fileName": "shakespeare-sonnets-part-16-1609",
+        "genre": "poetry"
       }
     ]
   }

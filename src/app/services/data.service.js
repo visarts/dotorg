@@ -1,23 +1,24 @@
 import axios from 'axios';
 
-const getAuthorData = (author) => {
+/*const getAuthorData = (author) => {
   const authorData = require(`authors/${author}.json`);
   return authorData;
-};
+};*/
 
-const getAuthorsData = () => {
+/*const getAuthorsData = () => {
   const authorsData = require('authors.json');
   return authorsData.authors;
-}
-const getArtistData = (artist) => {
+};*/
+
+/*const getArtistData = (artist) => {
   const artistData = require(`artists/${artist}.json`);
   return artistData;
-};
+};*/
 
-const getArtistsData = () => {
+/*const getArtistsData = () => {
   const artistsData = require('artists.json');
   return artistsData.artists;
-}
+};*/
 
 const getArtistNames = () => {
   const namesData = require('creatorKeys.json');
@@ -30,15 +31,17 @@ const getAuthorNames = () => {
 };
 
 const getAllAuthorsData = () => {
-  let allAuthors = require('allAuthors.json');
-  allAuthors = JSON.parse(decodeURIComponent(JSON.stringify(allAuthors)));
-  return allAuthors;
+  return axios.get('./data/allAuthors.json')
+    .then((results) => {
+      return results.data;
+    });
 };
 
 const getAllArtistsData = () => {
-  let allArtists = require('allArtists.json');
-  allArtists = JSON.parse(decodeURIComponent(JSON.stringify(allArtists)));
-  return allArtists;
+  return axios.get('./data/allArtists.json')
+    .then((results) => {
+      return results.data;
+    });
 };
 
 const getHTMLContent = (creatorKey, currentWorkKey) => {
@@ -94,8 +97,8 @@ Work from genre:
 
 */
 const getCurrentRouting = (currentRoute) => {
-  let params = currentRoute.slice(1).split('/');
-  let mappedParams = {
+  const params = currentRoute.slice(1).split('/');
+  const mappedParams = {
     currentSection: params[0] || '',
     currentSubSection: params[1] && params[1] === 'a' && params[3] ? params[3] : params[1] && params[1] === 'g' && params[2] ? params[2] : '',
     currentCreator: params[1] && params[1] === 'a' && params[2] ? params[2] : params[1] && params[1] === 'g' && params[3] ? params[3] : '',
@@ -103,19 +106,15 @@ const getCurrentRouting = (currentRoute) => {
     routeKey: params[1] ? params[1] : ''
   };
   return mappedParams;
-}
+};
 
 const dataService = {
-  getAuthorData,
-  getAuthorsData,
   getAuthorNames,
-  getArtistData,
-  getArtistsData,
   getArtistNames,
   getAllAuthorsData,
   getAllArtistsData,
   getHTMLContent,
   getCurrentRouting
-}
+};
 
 export default dataService;

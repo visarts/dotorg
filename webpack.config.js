@@ -22,7 +22,7 @@ module.exports = {
     filename: '[name].js'
   },
   plugins: [
-    new CleanWebpackPlugin('dist'),
+    //new CleanWebpackPlugin('dist'),
     new webpack.ProvidePlugin({
       React: 'react',
       ReactDOM: 'react-dom'
@@ -41,7 +41,8 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: 'src/images', to: 'images'},
       { from: 'favicon.ico', to: '' },
-      { from: 'content', to: 'content'}
+      { from: 'content', to: 'content'},
+      { from: 'data/prod', to: 'data'}
     ]),
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
@@ -86,7 +87,6 @@ module.exports = {
                 modules: true,
                 importLoaders: 1,
                 localIdentName: '[name]__[local]___[hash:base64:4]'
-
               }
             },
             {
