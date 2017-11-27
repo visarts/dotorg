@@ -18,7 +18,7 @@ const GlobalHeader = (props) => {
   const creatorUrl = currentCreator ? `${sectionUrl}/${routing.routeKey}/${subsection}` : '';
 
   return (
-    <header className={smallLogoClass}>
+    <div className={smallLogoClass}>
       <div className={`wrapper ${styles.headline}`}>
         <div className="globalContainer">
           <h1 className={smallLogoClass}>
@@ -40,8 +40,8 @@ const GlobalHeader = (props) => {
            />
         </div>
       </div>
-    </header>
+    </div>
   );
-}
+};
 
 export default GlobalHeader;

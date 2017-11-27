@@ -1,12 +1,13 @@
-//@import '../../styles/globals';
 @import 'globals';
 
 @vLinkPadding: 6px;
 
-header {
-
-}
-
 .headline {
   background: @artLinkHoverColor;
+  .borderRadius(@roundedEdge);
+
+  a {
+    // example of a mixin imported from globals
+    .whiteText();
+  }
 }
