@@ -9,6 +9,10 @@ const MergeJsonWebpackPlugin = require('merge-jsons-webpack-plugin');
 
 module.exports = {
   devtool: 'eval',
+  devServer: {
+     contentBase: path.join(ROOT_PATH, 'dist'),
+     hot: true
+  },
   entry: {
     vendors: './src/vendors.js',
     main: ['./src/styles/main.less', './src/index.js']
@@ -68,8 +72,8 @@ module.exports = {
     })*/
   ],
   module: {
-		rules: [
-			{
+    rules: [
+      {
         test: /\.less$/,
         exclude: /node_modules/,
         use: ExtractTextPlugin.extract({
@@ -82,6 +86,7 @@ module.exports = {
                 modules: true,
                 importLoaders: 1,
                 localIdentName: '[name]__[local]___[hash:base64:4]'
+
               }
             },
             {
@@ -95,7 +100,7 @@ module.exports = {
             }
           ]
         })
-			},
+      },
       {
 				test: /\.jsx$/,
 				exclude: /node_modules/,
@@ -111,7 +116,7 @@ module.exports = {
         }
 			},
       {
-        test: /\.jpg$/,
+        test: /\.(png|jpg)$/,
         use: 'file-loader'
       },
       {

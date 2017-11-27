@@ -12,9 +12,8 @@
     "url": "https://github.com/visarts/dotorg.git"
   },
   "scripts": {
-    "start": "webpack && webpack-dev-server --content-base dist/",
+    "start": "webpack && webpack-dev-server",
     "build": "npm run merge && npm run paging && webpack --config webpack.config.prod.js",
-    "watch": "webpack -d --watch --hot",
     "merge": "node src/lib/mergingService.js",
     "paging": "node src/lib/pagingService.js"
   },
@@ -49,7 +48,6 @@
     "less": "^2.7.2",
     "less-loader": "^4.0.5",
     "merge-jsons-webpack-plugin": "^1.0.11",
-    "optimize-css-assets-webpack-plugin": "^1.3.1",
     "style-loader": "^0.17.0",
     "webpack": "^2.7.0",
     "webpack-dev-server": "^2.7.1"

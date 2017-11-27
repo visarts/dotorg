@@ -4,7 +4,7 @@ const ROOT_PATH = path.resolve(__dirname);
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+//const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MergeJsonWebpackPlugin = require('merge-jsons-webpack-plugin');
 
@@ -56,7 +56,6 @@ module.exports = {
         test: /\.less$/,
         exclude: /node_modules/,
         use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
           use: [
             {
               loader: 'css-loader',
@@ -94,7 +93,7 @@ module.exports = {
         }
 			},
       {
-        test: /\.jpg$/,
+        test: /\.(png|jpg)$/,
         use: 'file-loader'
       },
       {
