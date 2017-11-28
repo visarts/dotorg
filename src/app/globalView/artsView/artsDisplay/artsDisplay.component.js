@@ -8,7 +8,7 @@ import './artsDisplay.component.less';
 
 const ArtsDisplay = (props) => {
   const artistKey = props.match.params.artist;
-  const artist = props.store.artistsData[artistKey];
+  const artist = props.store.artwork[artistKey];
   const currentArtworkKey = props.match.params.artwork;
   const currentArtwork = artist.content.filter(artwork => artwork.fileName === currentArtworkKey)[0];
 
@@ -18,33 +18,32 @@ const ArtsDisplay = (props) => {
   const getCurrentArtwork = () => artist.content.filter(artwork => artwork.fileName === currentArtworkKey)[0];
   const getPosition = () => {
     let position = 0;
-    for (let i in artist.content) {
+    for (const i in artist.content) {
       if (artist.content[i].fileName === currentArtwork.fileName) {
         position = i;
         break;
       }
     }
     return parseInt(position);
-  }
+  };
   const currentPosition = getPosition();
   const nextPosition = currentPosition === artist.content.length - 1 ? currentPosition : currentPosition + 1;
   const prevPosition = currentPosition === 0 ? currentPosition : currentPosition - 1;
   const hideModal = () => {
-    let params = props.appState.getTrimmedURI(2);
-    location.hash = `#/${params}`
-    //location.hash = `#/arts/artists/${artistKey}`;
-  }
+    const params = props.appState.getTrimmedURI(2);
+    location.hash = `#/${params}`;
+    //location.hash = `#/artwork/artists/${artistKey}`;
+  };
 
   const leftSwipeHandler = () => {
-    let rightArrow = document.querySelector('.thumbArrowRight') ? document.querySelector('.thumbArrowRight') : document.querySelector('.artsDisplayImage');
+    const rightArrow = document.querySelector('.thumbArrowRight') ? document.querySelector('.thumbArrowRight') : document.querySelector('.artsDisplayImage');
     rightArrow.click();
 
-  }
+  };
   const rightSwipeHandler = () => {
-    let leftArrow = document.querySelector('.thumbArrowLeft') ? document.querySelector('.thumbArrowLeft') : document.querySelector('.artsDisplayImage');
+    const leftArrow = document.querySelector('.thumbArrowLeft') ? document.querySelector('.thumbArrowLeft') : document.querySelector('.artsDisplayImage');
     leftArrow.click();
-
-  }
+  };
 
   eventService.setSwipeActions({
     node: '.artsContent',
@@ -85,6 +84,6 @@ const ArtsDisplay = (props) => {
       </Modal>
     </div>
   );
-}
+};
 
 export default ArtsDisplay;

@@ -30,14 +30,14 @@ const getAuthorNames = () => {
   return namesData.authors;
 };
 
-const getAllAuthorsData = () => {
+const getAllLiterature = () => {
   return axios.get('./data/allAuthors.json')
     .then((results) => {
       return results.data;
     });
 };
 
-const getAllArtistsData = () => {
+const getAllArtwork = () => {
   return axios.get('./data/allArtists.json')
     .then((results) => {
       return results.data;
@@ -111,8 +111,8 @@ const getCurrentRouting = (currentRoute) => {
 const dataService = {
   getAuthorNames,
   getArtistNames,
-  getAllAuthorsData,
-  getAllArtistsData,
+  getAllLiterature,
+  getAllArtwork,
   getHTMLContent,
   getCurrentRouting
 };

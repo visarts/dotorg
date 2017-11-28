@@ -11,7 +11,7 @@ const ArtHistory = (props) => {
     return (
       <li className="historyItem" key={historyObj.fileName}>
         <Link
-          to={`/arts/a/${artistKey}/${historyObj.artist.era}/${historyObj.fileName}`}
+          to={`/artwork/a/${artistKey}/${historyObj.artist.era}/${historyObj.fileName}`}
           title={historyObj.title}
           key={historyObj.fileName}>
           <div className="historyItemThumb">

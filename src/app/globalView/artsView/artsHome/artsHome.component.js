@@ -10,12 +10,12 @@ const ArtsHome = (props) => {
 
   const artistsList = [];
 
-  for(let artistKey in props.store.artistsData) {
-    let artist = props.store.artistsData[artistKey];
+  for(const artistKey in props.store.artwork) {
+    const artist = props.store.artwork[artistKey];
     artistsList.push(
       <ListLink
         key={artistKey}
-        url={`/arts/a/${artistKey}`}
+        url={`/artwork/a/${artistKey}`}
         text={`${artist.fname} ${artist.lname}`}
         other={artist.bio}>
         {/*<div style={{display: 'flex', flexWrap: 'nowrap', overflow: 'hidden'}}>
@@ -44,14 +44,14 @@ const ArtsHome = (props) => {
       <div className="titlesContainer">
         <SectionHeader text="The Eras" />
         <ul className="erasList">
-          <ListLink url="arts/g/renaissance" text="Renaissance" inlined />
-          <ListLink url="arts/g/baroque" text="Baroque" inlined />
-          <ListLink url="arts/g/pre-raphaelite" text="Pre-Raphaelite" inlined />
-          <ListLink url="arts/g/academic" text="Academic" inlined />
-          <ListLink url="arts/g/impressionism" text="Impressionism" inlined />
-          <ListLink url="arts/g/post-impressionism" text="Post-Impressionism" inlined />
-          <ListLink url="arts/g/realism" text="Realism" inlined />
-          <ListLink url="arts/g/modernism" text="Modernism" inlined />
+          <ListLink url="artwork/g/renaissance" text="Renaissance" inlined />
+          <ListLink url="artwork/g/baroque" text="Baroque" inlined />
+          <ListLink url="artwork/g/pre-raphaelite" text="Pre-Raphaelite" inlined />
+          <ListLink url="artwork/g/academic" text="Academic" inlined />
+          <ListLink url="artwork/g/impressionism" text="Impressionism" inlined />
+          <ListLink url="artwork/g/post-impressionism" text="Post-Impressionism" inlined />
+          <ListLink url="artwork/g/realism" text="Realism" inlined />
+          <ListLink url="artwork/g/modernism" text="Modernism" inlined />
         </ul>
       </div>
       <div className="titlesContainer">
@@ -60,6 +60,6 @@ const ArtsHome = (props) => {
       </div>
     </div>
   );
-}
+};
 
 export default ArtsHome;

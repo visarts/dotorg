@@ -4,9 +4,9 @@ import './globalNav.component.less';
 
 const GlobalNav = (props) => {
 
-  const selectedSection = location.hash.includes('/literature') ? 'litSelected' : location.hash.includes('/arts') ? 'artSelected' : '';
+  const selectedSection = location.hash.includes('/literature') ? 'litSelected' : location.hash.includes('/artwork') ? 'artSelected' : '';
   const litSelected = location.hash.includes('/literature') ? 'selected' : 'unselected';
-  const artSelected = location.hash.includes('/arts') ? 'selected' : 'unselected';
+  const artSelected = location.hash.includes('/artwork') ? 'selected' : 'unselected';
   const subPage = location.hash === '#/' ? '' : 'subPage';
   const bannerImg = litSelected === 'selected' ? './images/litp.jpg' : './images/frontp.jpg';
 
@@ -28,7 +28,7 @@ const GlobalNav = (props) => {
 
         </div>
       </Link>
-      <Link to='/arts'>
+      <Link to='/artwork'>
         <div className="navDescription">
           <div className={`navImage navArt ${subPage}`}>
             <div className="navTitle">

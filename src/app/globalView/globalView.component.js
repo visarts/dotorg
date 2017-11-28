@@ -25,7 +25,7 @@ const GlobalView = (props) => {
               updateAppState={props.updateAppState}
               {...routeProps} />
           )} />
-          <Route path="/arts" render={routeProps => (
+          <Route path="/artwork" render={routeProps => (
             <ArtsView
               store={props.store}
               appState={props.appState}

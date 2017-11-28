@@ -8,31 +8,31 @@ const ArtsView = (props) => {
 
   return (
     <div className="artsView">
-      <Route exact path='/arts' render={routeProps => (
+      <Route exact path='/artwork' render={routeProps => (
         <ArtsHome
           store={props.store}
           appState={props.appState}
           {...routeProps} />
       )} />
-      <Route path='/arts/g/:era' render={routeProps => (
+      <Route path='/artwork/g/:era' render={routeProps => (
         <ArtsEra
           store={props.store}
           appState={props.appState}
           {...routeProps} />
       )} />
-      <Route path='/arts/a/:artist' render={routeProps => (
+      <Route path='/artwork/a/:artist' render={routeProps => (
         <ArtsArtist
           store={props.store}
           appState={props.appState}
           {...routeProps} />
       )} />
-      <Route path='/arts/a/:artist/:era/:artwork' render={routeProps => (
+      <Route path='/artwork/a/:artist/:era/:artwork' render={routeProps => (
         <ArtsDisplay
           store={props.store}
           appState={props.appState}
           {...routeProps} />
       )} />
-      <Route path='/arts/g/:era/:artist/:artwork' render={routeProps => (
+      <Route path='/artwork/g/:era/:artist/:artwork' render={routeProps => (
         <ArtsDisplay
           store={props.store}
           appState={props.appState}

@@ -30,7 +30,7 @@ const SearchView = (props) => {
   let creator = '';
   let works = '';
   if (nameKey) {
-    let dataType = isArtist ? 'artistsData' : 'authorsData';
+    let dataType = isArtist ? 'artwork' : 'literature';
     let keyType = isArtist ? 'creatorKey' : 'creatorKey';
     creator = props[dataType].filter((item, index) => {
       return item[keyType] === nameKey ? item : false;
@@ -41,7 +41,7 @@ const SearchView = (props) => {
   const getAuthorsList = authorList.length ? authorList.map((nameKey, index) => {
     return (
       <li key={index}>
-        <Link to={`literature/authors/${nameKey}`} onClick={() => {props.updateAppState({searchInput: nameKey})}} key={index}>{nameKey}</Link>
+        <Link to={`literature/authors/${nameKey}`} onClick={() => {props.updateAppState({searchInput: nameKey});}} key={index}>{nameKey}</Link>
       </li>
     );
   }) : null;
@@ -49,7 +49,7 @@ const SearchView = (props) => {
   const getArtistsList = artistList.length ? artistList.map((nameKey, index) => {
     return (
       <li key={index}>
-        <Link to={`arts/artists/${nameKey}`} onClick={() => {props.updateAppState({searchInput: nameKey})}} key={index}>{nameKey}</Link>
+        <Link to={`artwork/artists/${nameKey}`} onClick={() => {props.updateAppState({searchInput: nameKey});}} key={index}>{nameKey}</Link>
       </li>
     );
   }) : null;
@@ -73,6 +73,6 @@ const SearchView = (props) => {
         </div>}
     </div>
   );
-}
+};
 
 export default SearchView;

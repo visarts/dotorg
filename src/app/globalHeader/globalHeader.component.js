@@ -5,9 +5,9 @@ import styles from './globalHeader.component.less';
 const GlobalHeader = (props) => {
 
   const hiddenKey = 'hidden';
-console.log(props.store);
+console.log(props.appState.routing);
   const routing = props.appState.routing;
-  const dataType = routing.currentSection === 'literature' ? 'authorsData' : 'artistsData';
+  const dataType = routing.currentSection;
 
   const currentCreator = (() => {
     if (routing.routeKey === 'a' && routing.currentCreator) {
@@ -20,7 +20,7 @@ console.log(props.store);
   })();
 
   const smallLogoClass = routing.currentSection !== '' ? 'smallLogo' : '';
-  const subHeader = routing.currentSection === 'literature' ? 'library' : routing.currentSection === 'arts' ? 'gallery' : routing.currentSection;
+  const subHeader = routing.currentSection === 'literature' ? 'library' : routing.currentSection === 'artwork' ? 'gallery' : routing.currentSection;
   const subSubHeader = currentCreator.lname ? `${currentCreator.lname.toLowerCase()}` : currentCreator;
 
   const sectionUrl = `/${routing.currentSection}`;

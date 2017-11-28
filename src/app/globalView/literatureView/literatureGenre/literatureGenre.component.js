@@ -13,9 +13,9 @@ const LiteratureGenre = (props) => {
 
   const getTitles = () => {
     let authorsList = [];
-    for(let authorKey in props.store.authorsData) {
+    for(let authorKey in props.store.literature) {
       let titlesList = [];
-      let author = props.store.authorsData[authorKey];
+      let author = props.store.literature[authorKey];
       for (let i in author.content) {
         let title = author.content[i];
         let pageIndicator = title.genre === 'poetry' ? `${author.lname}, ` : title.pageSizes.length === 1 ? '1 page, ' : title.pageSizes.length + ' pages, '

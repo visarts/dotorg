@@ -10,16 +10,16 @@ const HomeView = (props) => {
   const creatorFrequency = date.getMonth();
   const contentFrequency = date.getDate();
   const monthName = date.toLocaleString('en-us', { month: 'long' });
-  const author = props.store.authorsData[authorKeys[creatorFrequency]];
-  const artist = props.store.artistsData[artistKeys[creatorFrequency]];
+  const author = props.store.literature[authorKeys[creatorFrequency]];
+  const artist = props.store.artwork[artistKeys[creatorFrequency]];
   const lit = author.content[contentFrequency] ? author.content[contentFrequency] : author.content[author.content.length - 1];
   const art = artist.content[contentFrequency] ? artist.content[contentFrequency] : artist.content[artist.content.length - 1];
 
   // the following is duplicated from listLink
   const limitText = (text) => {
     let limitedText = '';
-    let smallScreen = 768;
-    let textLimit = window.innerWidth >= smallScreen ? 100 : 75;
+    const smallScreen = 768;
+    const textLimit = window.innerWidth >= smallScreen ? 100 : 75;
     if (text) {
       if (text.length > textLimit) {
         limitedText = text.substring(0, textLimit);
@@ -29,7 +29,7 @@ const HomeView = (props) => {
       }
     }
     return limitedText;
-  }
+  };
 
   const featuredContent = (() => {
     return (
@@ -50,12 +50,12 @@ const HomeView = (props) => {
           </Link>
         </div>
         <div className="featuredContent">
-          <Link to={`/arts/a/${artistKeys[creatorFrequency]}`} className="featuredBlock">
+          <Link to={`/artwork/a/${artistKeys[creatorFrequency]}`} className="featuredBlock">
             <h4 className="featureDescription"><em>{monthName}'s</em> Featured Artist: </h4>
             <h2>{`${artist.fname} ${artist.lname}`}</h2>
             <div className="featuredSubtext">{limitText(artist.bio)}</div>
           </Link>
-          <Link to={`/arts/a/${artistKeys[creatorFrequency]}/${artist.era}/${art.fileName}`} className="featuredBlock">
+          <Link to={`/artwork/a/${artistKeys[creatorFrequency]}/${artist.era}/${art.fileName}`} className="featuredBlock">
             <img
               className="artPickThumb"
               src={`./content/artwork/${artistKeys[creatorFrequency]}/${art.fileName}_sm.jpg`}
@@ -65,7 +65,7 @@ const HomeView = (props) => {
           </Link>
         </div>
       </div>
-    )
+    );
   })();
 
   return (
@@ -79,6 +79,6 @@ const HomeView = (props) => {
       </div>
     </div>
   );
-}
+};
 
 export default HomeView;

@@ -693,115 +693,6 @@
     ]
   }
 ,
-  "harnett": {
-    "fname": "William",
-    "lname": "Harnett",
-    "bio": "William Michael Harnett (August 10, 1848 – October 29, 1892) was an Irish-American painter known for his trompe-l'œil still lifes of ordinary objects.",
-    "era": "Realism",
-    "content": [
-      {
-        "title": "Mortality and Immortality",
-        "date": "1876",
-        "fileName": "harnett-mortality-and-immortality-1876"
-      },
-      {
-        "title": "Raisin Cake with Fruit and Wine",
-        "date": "1876",
-        "fileName": "harnett-raisin-cake-with-fruit-and-wine-1876"
-      },
-      {
-        "title": "Still Life with Ginger Jar",
-        "date": "1876",
-        "fileName": "harnett-still-life-with-ginger-jar-1876"
-      },
-      {
-        "title": "Writing Table",
-        "date": "1877",
-        "fileName": "harnett-writing-table-1877"
-      },
-      {
-        "title": "Job Lot Cheap",
-        "date": "1878",
-        "fileName": "harnett-job-lot-cheap-1878"
-      },
-      {
-        "title": "Music and Literature",
-        "date": "1878",
-        "fileName": "harnett-music-and-literature-1878"
-      },
-      {
-        "title": "Pipe and Mug",
-        "date": "1878",
-        "fileName": "harnett-pipe-and-mug-1878"
-      },
-      {
-        "title": "Solace",
-        "date": "1878",
-        "fileName": "harnett-solace-1878"
-      },
-      {
-        "title": "The Social Club",
-        "date": "1879",
-        "fileName": "harnett-social-club-1879"
-      },
-      {
-        "title": "Fruit and Vase",
-        "date": "1881",
-        "fileName": "harnett-fruit-and-vase-1881"
-      },
-      {
-        "title": "Fruit with Champagne Bottle and Newspaper",
-        "date": "1881",
-        "fileName": "harnett-fruit-with-champagne-bottle-and-newspaper-1881"
-      },
-      {
-        "title": "A Study Table",
-        "date": "1882",
-        "fileName": "harnett-study-table-1882"
-      },
-      {
-        "title": "After the Hunt",
-        "date": "1884",
-        "fileName": "harnett-after-the-hunt-1884"
-      },
-      {
-        "title": "Munich Still Life",
-        "date": "1884",
-        "fileName": "harnett-munich-still-life-1884"
-      },
-      {
-        "title": "Music",
-        "date": "1886",
-        "fileName": "harnett-music-1886"
-      },
-      {
-        "title": "The Old Violin",
-        "date": "1886",
-        "fileName": "harnett-old-violin-1886"
-      },
-      {
-        "title": "Ease",
-        "date": "1887",
-        "fileName": "harnett-ease-1887"
-      },
-      {
-        "title": "Violin and Music",
-        "date": "1888",
-        "fileName": "harnett-violin-and-music-1888"
-      },
-      {
-        "title": "The Old Cupboard Door",
-        "date": "1889",
-        "fileName": "harnett-old-cupboard-door-1889"
-      },
-      {
-        "title": "Old Models",
-        "date": "1892",
-        "fileName": "harnett-old-models-1892"
-      }
-    ]
-  }
-,
   "gerome": {
     "fname": "Jean-L%C3%A9on",
     "lname": "G%C3%A9r%C3%B4me",
@@ -907,6 +798,115 @@
         "title": "The Harem Bathing",
         "date": "1901",
         "fileName": "gerome-harem-bathing-1901"
+      }
+    ]
+  }
+,
+  "harnett": {
+    "fname": "William",
+    "lname": "Harnett",
+    "bio": "William Michael Harnett (August 10, 1848 – October 29, 1892) was an Irish-American painter known for his trompe-l'œil still lifes of ordinary objects.",
+    "era": "Realism",
+    "content": [
+      {
+        "title": "Mortality and Immortality",
+        "date": "1876",
+        "fileName": "harnett-mortality-and-immortality-1876"
+      },
+      {
+        "title": "Raisin Cake with Fruit and Wine",
+        "date": "1876",
+        "fileName": "harnett-raisin-cake-with-fruit-and-wine-1876"
+      },
+      {
+        "title": "Still Life with Ginger Jar",
+        "date": "1876",
+        "fileName": "harnett-still-life-with-ginger-jar-1876"
+      },
+      {
+        "title": "Writing Table",
+        "date": "1877",
+        "fileName": "harnett-writing-table-1877"
+      },
+      {
+        "title": "Job Lot Cheap",
+        "date": "1878",
+        "fileName": "harnett-job-lot-cheap-1878"
+      },
+      {
+        "title": "Music and Literature",
+        "date": "1878",
+        "fileName": "harnett-music-and-literature-1878"
+      },
+      {
+        "title": "Pipe and Mug",
+        "date": "1878",
+        "fileName": "harnett-pipe-and-mug-1878"
+      },
+      {
+        "title": "Solace",
+        "date": "1878",
+        "fileName": "harnett-solace-1878"
+      },
+      {
+        "title": "The Social Club",
+        "date": "1879",
+        "fileName": "harnett-social-club-1879"
+      },
+      {
+        "title": "Fruit and Vase",
+        "date": "1881",
+        "fileName": "harnett-fruit-and-vase-1881"
+      },
+      {
+        "title": "Fruit with Champagne Bottle and Newspaper",
+        "date": "1881",
+        "fileName": "harnett-fruit-with-champagne-bottle-and-newspaper-1881"
+      },
+      {
+        "title": "A Study Table",
+        "date": "1882",
+        "fileName": "harnett-study-table-1882"
+      },
+      {
+        "title": "After the Hunt",
+        "date": "1884",
+        "fileName": "harnett-after-the-hunt-1884"
+      },
+      {
+        "title": "Munich Still Life",
+        "date": "1884",
+        "fileName": "harnett-munich-still-life-1884"
+      },
+      {
+        "title": "Music",
+        "date": "1886",
+        "fileName": "harnett-music-1886"
+      },
+      {
+        "title": "The Old Violin",
+        "date": "1886",
+        "fileName": "harnett-old-violin-1886"
+      },
+      {
+        "title": "Ease",
+        "date": "1887",
+        "fileName": "harnett-ease-1887"
+      },
+      {
+        "title": "Violin and Music",
+        "date": "1888",
+        "fileName": "harnett-violin-and-music-1888"
+      },
+      {
+        "title": "The Old Cupboard Door",
+        "date": "1889",
+        "fileName": "harnett-old-cupboard-door-1889"
+      },
+      {
+        "title": "Old Models",
+        "date": "1892",
+        "fileName": "harnett-old-models-1892"
       }
     ]
   }
@@ -1128,6 +1128,115 @@
     ]
   }
 ,
+  "rembrandt": {
+    "fname": "",
+    "lname": "Rembrandt",
+    "bio": "Rembrandt Harmenszoon van Rijn (15 July 1606 – 4 October 1669) was a Dutch draughtsman, painter, and printmaker. An innovative and prolific master in three media, he is generally considered one of the greatest visual artists in the history of art and the most important in Dutch art history. Unlike most Dutch masters of the 17th century, Rembrandt's works depict a wide range of style and subject matter, from portraits and self-portraits to landscapes, genre scenes, allegorical and historical scenes, biblical and mythological themes as well as animal studies.",
+    "era": "Baroque",
+    "content": [
+      {
+        "title": "Self Portrait (as a young man)",
+        "date": "1628",
+        "fileName": "rembrandt-self-portrait-as-a-young-man-1628"
+      },
+      {
+        "title": "Head of an Old Man",
+        "date": "1630",
+        "fileName": "rembrandt-head-of-an-old-man-1630"
+      },
+      {
+        "title": "Resurrection of Lazarus",
+        "date": "1630",
+        "fileName": "rembrandt-resurrection-of-lazarus-1630"
+      },
+      {
+        "title": "Anatomy",
+        "date": "1632",
+        "fileName": "rembrandt-anatomy-1632"
+      },
+      {
+        "title": "Archangel Leaving Family of Tobias",
+        "date": "1632",
+        "fileName": "rembrandt-archangel-leaving-family-of-tobias-1632"
+      },
+      {
+        "title": "Philosopher in Meditation",
+        "date": "1632",
+        "fileName": "rembrandt-philosopher-in-meditation-1632"
+      },
+      {
+        "title": "Christ in the Storm on the Sea of Galilee",
+        "date": "1633",
+        "fileName": "rembrandt-christ-in-the-storm-1633"
+      },
+      {
+        "title": "The Feast of Belshazzar",
+        "date": "1635",
+        "fileName": "rembrandt-feast-of-belshazzar-1635"
+      },
+      {
+        "title": "Night Watch",
+        "date": "1642",
+        "fileName": "rembrandt-night-watch-1642"
+      },
+      {
+        "title": "Supper at Emmaus",
+        "date": "1648",
+        "fileName": "rembrandt-supper-at-emmaus-1648"
+      },
+      {
+        "title": "The Mill",
+        "date": "1650",
+        "fileName": "rembrandt-mill-1650"
+      },
+      {
+        "title": "Aristotle Contemplating Bust of Homer",
+        "date": "1653",
+        "fileName": "rembrandt-aristotle-contemplating-bust-of-homer-1653"
+      },
+      {
+        "title": "Bathsheba",
+        "date": "1654",
+        "fileName": "rembrandt-bathsheba-1654"
+      },
+      {
+        "title": "Jacob Blessing Sons of Joseph",
+        "date": "1656",
+        "fileName": "rembrandt-jacob-blessing-sons-of-joseph-1656"
+      },
+      {
+        "title": "Young Jew as Christ",
+        "date": "1656",
+        "fileName": "rembrandt-young-jew-as-christ-1656"
+      },
+      {
+        "title": "Lady with an Ostrich Fan",
+        "date": "1660",
+        "fileName": "rembrandt-lady-with-an-ostrich-fan-1660"
+      },
+      {
+        "title": "Return of the Prodigal Son",
+        "date": "1660",
+        "fileName": "rembrandt-return-of-the-prodigal-son-1660"
+      },
+      {
+        "title": "Saul and David",
+        "date": "1660",
+        "fileName": "rembrandt-saul-and-david-1660"
+      },
+      {
+        "title": "Matthew",
+        "date": "1661",
+        "fileName": "rembrandt-matthew-1661"
+      },
+      {
+        "title": "Self Portrait as St. Paul",
+        "date": "1661",
+        "fileName": "rembrandt-self-portrait-as-st-paul-1661"
+      }
+    ]
+  }
+,
   "okeeffe": {
     "fname": "Georgia",
     "lname": "O'Keeffe",
@@ -1286,111 +1395,111 @@
     ]
   }
 ,
-  "rembrandt": {
-    "fname": "",
-    "lname": "Rembrandt",
-    "bio": "Rembrandt Harmenszoon van Rijn (15 July 1606 – 4 October 1669) was a Dutch draughtsman, painter, and printmaker. An innovative and prolific master in three media, he is generally considered one of the greatest visual artists in the history of art and the most important in Dutch art history. Unlike most Dutch masters of the 17th century, Rembrandt's works depict a wide range of style and subject matter, from portraits and self-portraits to landscapes, genre scenes, allegorical and historical scenes, biblical and mythological themes as well as animal studies.",
-    "era": "Baroque",
+  "rossetti": {
+    "fname": "Dante",
+    "lname": "Rossetti",
+    "bio": "Dante Gabriel Rossetti (12 May 1828 – 9 April 1882) was a British poet, illustrator, painter and translator. He founded the Pre-Raphaelite Brotherhood in 1848 with William Holman Hunt and John Everett Millais. Rossetti was later to be the main inspiration for a second generation of artists and writers influenced by the movement, most notably William Morris and Edward Burne-Jones. His work also influenced the European Symbolists and was a major precursor of the Aesthetic movement.",
+    "era": "Pre-Raphaelite",
     "content": [
       {
-        "title": "Self Portrait (as a young man)",
-        "date": "1628",
-        "fileName": "rembrandt-self-portrait-as-a-young-man-1628"
+        "title": "Found",
+        "date": "1854",
+        "fileName": "rossetti-found-1854"
       },
       {
-        "title": "Head of an Old Man",
-        "date": "1630",
-        "fileName": "rembrandt-head-of-an-old-man-1630"
+        "title": "Before the Battle",
+        "date": "1858",
+        "fileName": "rossetti-before-the-battle-1858"
       },
       {
-        "title": "Resurrection of Lazarus",
-        "date": "1630",
-        "fileName": "rembrandt-resurrection-of-lazarus-1630"
+        "title": "Bocca Baciata",
+        "date": "1859",
+        "fileName": "rossetti-bocca-baciata-1859"
       },
       {
-        "title": "Anatomy",
-        "date": "1632",
-        "fileName": "rembrandt-anatomy-1632"
+        "title": "Sir Galahad at the Ruined Chapel",
+        "date": "1859",
+        "fileName": "rossetti-sir-galahad-at-the-ruined-chapel-1859"
       },
       {
-        "title": "Archangel Leaving Family of Tobias",
-        "date": "1632",
-        "fileName": "rembrandt-archangel-leaving-family-of-tobias-1632"
+        "title": "Jane Morris",
+        "date": "1860",
+        "fileName": "rossetti-jane-morris-1860"
       },
       {
-        "title": "Philosopher in Meditation",
-        "date": "1632",
-        "fileName": "rembrandt-philosopher-in-meditation-1632"
+        "title": "Fair Rosamund",
+        "date": "1861",
+        "fileName": "rossetti-fair-rosamund-1861"
       },
       {
-        "title": "Christ in the Storm on the Sea of Galilee",
-        "date": "1633",
-        "fileName": "rembrandt-christ-in-the-storm-1633"
+        "title": "The Annunciation",
+        "date": "1861",
+        "fileName": "rossetti-annunciation-1861"
       },
       {
-        "title": "The Feast of Belshazzar",
-        "date": "1635",
-        "fileName": "rembrandt-feast-of-belshazzar-1635"
+        "title": "Joan of Arc",
+        "date": "1864",
+        "fileName": "rossetti-joan-of-arc-1864"
       },
       {
-        "title": "Night Watch",
-        "date": "1642",
-        "fileName": "rembrandt-night-watch-1642"
+        "title": "Morning Music",
+        "date": "1864",
+        "fileName": "rossetti-morning-music-1864"
       },
       {
-        "title": "Supper at Emmaus",
-        "date": "1648",
-        "fileName": "rembrandt-supper-at-emmaus-1648"
+        "title": "The Beloved",
+        "date": "1866",
+        "fileName": "rossetti-beloved-1866"
       },
       {
-        "title": "The Mill",
-        "date": "1650",
-        "fileName": "rembrandt-mill-1650"
+        "title": "The Loving Cup",
+        "date": "1867",
+        "fileName": "rossetti-loving-cup-1867"
       },
       {
-        "title": "Aristotle Contemplating Bust of Homer",
-        "date": "1653",
-        "fileName": "rembrandt-aristotle-contemplating-bust-of-homer-1653"
+        "title": "The Tune of Seven Towers",
+        "date": "1867",
+        "fileName": "rossetti-tune-of-seven-towers-1867"
       },
       {
-        "title": "Bathsheba",
-        "date": "1654",
-        "fileName": "rembrandt-bathsheba-1654"
+        "title": "Lady Lilith",
+        "date": "1868",
+        "fileName": "rossetti-lady-lilith-1868"
       },
       {
-        "title": "Jacob Blessing Sons of Joseph",
-        "date": "1656",
-        "fileName": "rembrandt-jacob-blessing-sons-of-joseph-1656"
+        "title": "Mariana",
+        "date": "1870",
+        "fileName": "rossetti-mariana-1870"
       },
       {
-        "title": "Young Jew as Christ",
-        "date": "1656",
-        "fileName": "rembrandt-young-jew-as-christ-1656"
+        "title": "The Bower Meadow",
+        "date": "1872",
+        "fileName": "rossetti-bower-meadow-1872"
       },
       {
-        "title": "Lady with an Ostrich Fan",
-        "date": "1660",
-        "fileName": "rembrandt-lady-with-an-ostrich-fan-1660"
+        "title": "A Sea Spell",
+        "date": "1877",
+        "fileName": "rossetti-sea-spell-1877"
       },
       {
-        "title": "Return of the Prodigal Son",
-        "date": "1660",
-        "fileName": "rembrandt-return-of-the-prodigal-son-1660"
+        "title": "Prosperpine",
+        "date": "1877",
+        "fileName": "rossetti-prosperpine-1877"
       },
       {
-        "title": "Saul and David",
-        "date": "1660",
-        "fileName": "rembrandt-saul-and-david-1660"
+        "title": "Pandora",
+        "date": "1879",
+        "fileName": "rossetti-pandora-1879"
       },
       {
-        "title": "Matthew",
-        "date": "1661",
-        "fileName": "rembrandt-matthew-1661"
+        "title": "The Day Dream",
+        "date": "1880",
+        "fileName": "rossetti-day-dream-1880"
       },
       {
-        "title": "Self Portrait as St. Paul",
-        "date": "1661",
-        "fileName": "rembrandt-self-portrait-as-st-paul-1661"
+        "title": "Joan of Arc",
+        "date": "1882",
+        "fileName": "rossetti-joan-of-arc-1882"
       }
     ]
   }
@@ -1500,115 +1609,6 @@
         "title": "Fish",
         "date": "1919",
         "fileName": "renoir-fish-1919"
-      }
-    ]
-  }
-,
-  "rossetti": {
-    "fname": "Dante",
-    "lname": "Rossetti",
-    "bio": "Dante Gabriel Rossetti (12 May 1828 – 9 April 1882) was a British poet, illustrator, painter and translator. He founded the Pre-Raphaelite Brotherhood in 1848 with William Holman Hunt and John Everett Millais. Rossetti was later to be the main inspiration for a second generation of artists and writers influenced by the movement, most notably William Morris and Edward Burne-Jones. His work also influenced the European Symbolists and was a major precursor of the Aesthetic movement.",
-    "era": "Pre-Raphaelite",
-    "content": [
-      {
-        "title": "Found",
-        "date": "1854",
-        "fileName": "rossetti-found-1854"
-      },
-      {
-        "title": "Before the Battle",
-        "date": "1858",
-        "fileName": "rossetti-before-the-battle-1858"
-      },
-      {
-        "title": "Bocca Baciata",
-        "date": "1859",
-        "fileName": "rossetti-bocca-baciata-1859"
-      },
-      {
-        "title": "Sir Galahad at the Ruined Chapel",
-        "date": "1859",
-        "fileName": "rossetti-sir-galahad-at-the-ruined-chapel-1859"
-      },
-      {
-        "title": "Jane Morris",
-        "date": "1860",
-        "fileName": "rossetti-jane-morris-1860"
-      },
-      {
-        "title": "Fair Rosamund",
-        "date": "1861",
-        "fileName": "rossetti-fair-rosamund-1861"
-      },
-      {
-        "title": "The Annunciation",
-        "date": "1861",
-        "fileName": "rossetti-annunciation-1861"
-      },
-      {
-        "title": "Joan of Arc",
-        "date": "1864",
-        "fileName": "rossetti-joan-of-arc-1864"
-      },
-      {
-        "title": "Morning Music",
-        "date": "1864",
-        "fileName": "rossetti-morning-music-1864"
-      },
-      {
-        "title": "The Beloved",
-        "date": "1866",
-        "fileName": "rossetti-beloved-1866"
-      },
-      {
-        "title": "The Loving Cup",
-        "date": "1867",
-        "fileName": "rossetti-loving-cup-1867"
-      },
-      {
-        "title": "The Tune of Seven Towers",
-        "date": "1867",
-        "fileName": "rossetti-tune-of-seven-towers-1867"
-      },
-      {
-        "title": "Lady Lilith",
-        "date": "1868",
-        "fileName": "rossetti-lady-lilith-1868"
-      },
-      {
-        "title": "Mariana",
-        "date": "1870",
-        "fileName": "rossetti-mariana-1870"
-      },
-      {
-        "title": "The Bower Meadow",
-        "date": "1872",
-        "fileName": "rossetti-bower-meadow-1872"
-      },
-      {
-        "title": "A Sea Spell",
-        "date": "1877",
-        "fileName": "rossetti-sea-spell-1877"
-      },
-      {
-        "title": "Prosperpine",
-        "date": "1877",
-        "fileName": "rossetti-prosperpine-1877"
-      },
-      {
-        "title": "Pandora",
-        "date": "1879",
-        "fileName": "rossetti-pandora-1879"
-      },
-      {
-        "title": "The Day Dream",
-        "date": "1880",
-        "fileName": "rossetti-day-dream-1880"
-      },
-      {
-        "title": "Joan of Arc",
-        "date": "1882",
-        "fileName": "rossetti-joan-of-arc-1882"
       }
     ]
   }
@@ -1940,6 +1940,75 @@
     ]
   }
 ,
+  "vonamerling": {
+    "fname": "Friedrich",
+    "lname": "Von Amerling",
+    "bio": "Friedrich von Amerling (14 April 1803 – 14 January 1887) was an Austro-Hungarian portrait painter in the court of Franz Josef. He was born in Vienna and was court painter between 1835 and 1880. With Ferdinand Georg Waldmüller he is one of the outstanding Austrian portrait painters of the 19th century.",
+    "era": "Academic",
+    "content": [
+      {
+        "title": "Rudolph von Arthaber with His Children",
+        "date": "1830",
+        "fileName": "vonamerling-rudolph-von-arthaber-with-his-children-1830"
+      },
+      {
+        "title": "Emporer Franz I",
+        "date": "1832",
+        "fileName": "vonamerling-emporer-franz-i-1832"
+      },
+      {
+        "title": "Self Portrait",
+        "date": "1834",
+        "fileName": "vonamerling-self-portrait-1834"
+      },
+      {
+        "title": "Lost in Dreams",
+        "date": "1835",
+        "fileName": "vonamerling-lost-in-dreams-1835"
+      },
+      {
+        "title": "Count Istvan Szechenyi",
+        "date": "1836",
+        "fileName": "vonamerling-count-istvan-szechenyi-1836"
+      },
+      {
+        "title": "Prinzessin Marie Franziska",
+        "date": "1836",
+        "fileName": "vonamerling-prinzessin-marie-franziska-1836"
+      },
+      {
+        "title": "Portrait of a Girl",
+        "date": "1837",
+        "fileName": "vonamerling-portrait-of-a-girl-1837"
+      },
+      {
+        "title": "Oriental Woman",
+        "date": "1838",
+        "fileName": "vonamerling-oriental-woman-1838"
+      },
+      {
+        "title": "Countess Nako",
+        "date": "1855",
+        "fileName": "vonamerling-countess-nako-1855"
+      },
+      {
+        "title": "Charity",
+        "date": "1856",
+        "fileName": "vonamerling-charity-1856"
+      },
+      {
+        "title": "Kaiser Franz I",
+        "date": "1884",
+        "fileName": "vonamerling-kaiser-franz-i-1884"
+      },
+      {
+        "title": "Study of a Lunatist",
+        "date": "",
+        "fileName": "vonamerling-study-of-a-lunatist"
+      }
+    ]
+  }
+,
   "vangogh": {
     "fname": "Vincent",
     "lname": "Van Gogh",
@@ -2085,75 +2154,6 @@
         "title": "Wheatfield with Crows",
         "date": "1890",
         "fileName": "vangogh-wheatfield-with-crows-1890"
-      }
-    ]
-  }
-,
-  "vonamerling": {
-    "fname": "Friedrich",
-    "lname": "Von Amerling",
-    "bio": "Friedrich von Amerling (14 April 1803 – 14 January 1887) was an Austro-Hungarian portrait painter in the court of Franz Josef. He was born in Vienna and was court painter between 1835 and 1880. With Ferdinand Georg Waldmüller he is one of the outstanding Austrian portrait painters of the 19th century.",
-    "era": "Academic",
-    "content": [
-      {
-        "title": "Rudolph von Arthaber with His Children",
-        "date": "1830",
-        "fileName": "vonamerling-rudolph-von-arthaber-with-his-children-1830"
-      },
-      {
-        "title": "Emporer Franz I",
-        "date": "1832",
-        "fileName": "vonamerling-emporer-franz-i-1832"
-      },
-      {
-        "title": "Self Portrait",
-        "date": "1834",
-        "fileName": "vonamerling-self-portrait-1834"
-      },
-      {
-        "title": "Lost in Dreams",
-        "date": "1835",
-        "fileName": "vonamerling-lost-in-dreams-1835"
-      },
-      {
-        "title": "Count Istvan Szechenyi",
-        "date": "1836",
-        "fileName": "vonamerling-count-istvan-szechenyi-1836"
-      },
-      {
-        "title": "Prinzessin Marie Franziska",
-        "date": "1836",
-        "fileName": "vonamerling-prinzessin-marie-franziska-1836"
-      },
-      {
-        "title": "Portrait of a Girl",
-        "date": "1837",
-        "fileName": "vonamerling-portrait-of-a-girl-1837"
-      },
-      {
-        "title": "Oriental Woman",
-        "date": "1838",
-        "fileName": "vonamerling-oriental-woman-1838"
-      },
-      {
-        "title": "Countess Nako",
-        "date": "1855",
-        "fileName": "vonamerling-countess-nako-1855"
-      },
-      {
-        "title": "Charity",
-        "date": "1856",
-        "fileName": "vonamerling-charity-1856"
-      },
-      {
-        "title": "Kaiser Franz I",
-        "date": "1884",
-        "fileName": "vonamerling-kaiser-franz-i-1884"
-      },
-      {
-        "title": "Study of a Lunatist",
-        "date": "",
-        "fileName": "vonamerling-study-of-a-lunatist"
       }
     ]
   }
