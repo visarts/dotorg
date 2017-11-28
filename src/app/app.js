@@ -77,7 +77,7 @@ export default class App extends React.Component {
     */
 
     return (
-      <div className="app">
+      <div className={`portitude ${this.state.routing.currentSection}`}>
         <GlobalHeader
           store={this.store}
           appState={this.state}
@@ -94,7 +94,7 @@ export default class App extends React.Component {
           appState={this.state}
           updateAppState={this.updateAppState} />
         <GlobalFooter
-          store={this.state}
+          store={this.store}
           appState={this.state}
           updateAppState={this.updateAppState} />
       </div>

@@ -15,7 +15,7 @@ module.exports = {
   },
   entry: {
     vendors: './src/vendors.js',
-    main: ['./src/styles/main.less', './src/index.js']
+    main: './src/index.js'
   },
   output: {
     path: path.resolve(ROOT_PATH, 'dist'),
@@ -33,7 +33,8 @@ module.exports = {
       }
     }),
     new ExtractTextPlugin({
-      filename: 'styles/[name].css'
+      filename: 'styles/[name].css',
+      allChunks: true
     }),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendors'
@@ -49,7 +50,7 @@ module.exports = {
       title: 'Portitude: the Art of Learning',
       inject: true,
       template: './index.ejs',
-      hash: true
+      hash: false
     })
     /*new MergeJsonWebpackPlugin({
       'output': {

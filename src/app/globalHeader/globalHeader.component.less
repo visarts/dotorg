@@ -2,12 +2,10 @@
 
 @vLinkPadding: 6px;
 
-.headline {
-  background: @artLinkHoverColor;
-  .borderRadius(@roundedEdge);
+.header {
+  background-color: @mainThemeColor;
 
-  a {
-    // example of a mixin imported from globals
-    .whiteText();
+  &.artwork, &.literature {
+    background-color: @secondaryLinkColor;
   }
 }
