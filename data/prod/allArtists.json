@@ -148,115 +148,6 @@
     ]
   }
 ,
-  "cassatt": {
-    "fname": "Mary",
-    "lname": "Cassatt",
-    "bio": "Mary Stevenson Cassatt (May 22, 1844 – June 14, 1926) was an American painter and printmaker. She was born in Pennsylvania, but lived much of her adult life in France, where she first befriended Edgar Degas and later exhibited among the Impressionists. Cassatt often created images of the social and private lives of women, with particular emphasis on the intimate bonds between mothers and children.",
-    "era": "Impressionism",
-    "content": [
-      {
-        "title": "Child Drinking Milk",
-        "date": "1868",
-        "fileName": "cassatt-child-drinking-milk-1868"
-      },
-      {
-        "title": "Bacchante",
-        "date": "1872",
-        "fileName": "cassatt-bacchante-1872"
-      },
-      {
-        "title": "During a Carnival",
-        "date": "1872",
-        "fileName": "cassatt-during-a-carnival-1872"
-      },
-      {
-        "title": "A Musical Party",
-        "date": "1874",
-        "fileName": "cassatt-musical-party-1874"
-      },
-      {
-        "title": "Portrait of a Little Girl",
-        "date": "1874",
-        "fileName": "cassatt-portrait-of-a-little-girl-1874"
-      },
-      {
-        "title": "Poppies in a Field",
-        "date": "1880",
-        "fileName": "cassatt-poppies-in-a-field-1880"
-      },
-      {
-        "title": "Lady at the Tea Table",
-        "date": "1883",
-        "fileName": "cassatt-lady-at-the-tea-table-1883"
-      },
-      {
-        "title": "Girl Arranging Her Hair",
-        "date": "1886",
-        "fileName": "cassatt-girl-arranging-her-hair-1886"
-      },
-      {
-        "title": "At the Window",
-        "date": "1889",
-        "fileName": "cassatt-at-the-window-1889"
-      },
-      {
-        "title": "Lilacs in a Window",
-        "date": "1889",
-        "fileName": "cassatt-lilacs-in-a-window-1889"
-      },
-      {
-        "title": "Contemplation",
-        "date": "1889",
-        "fileName": "cassatt-contemplation-1889"
-      },
-      {
-        "title": "Gathering Fruit",
-        "date": "1893",
-        "fileName": "cassatt-gathering-fruit-1893"
-      },
-      {
-        "title": "Girl With Banjo",
-        "date": "1894",
-        "fileName": "cassatt-girl-with-banjo-1894"
-      },
-      {
-        "title": "In the Park",
-        "date": "1894",
-        "fileName": "cassatt-in-the-park-1894"
-      },
-      {
-        "title": "On the Water",
-        "date": "1895",
-        "fileName": "cassatt-on-the-water-1895"
-      },
-      {
-        "title": "Maternal Kiss",
-        "date": "1896",
-        "fileName": "cassatt-maternal-kiss-1896"
-      },
-      {
-        "title": "Breakfast in Bed",
-        "date": "1897",
-        "fileName": "cassatt-breakfast-in-bed-1897"
-      },
-      {
-        "title": "Pattycake",
-        "date": "1897",
-        "fileName": "cassatt-pattycake-1897"
-      },
-      {
-        "title": "Mother and Child",
-        "date": "1900",
-        "fileName": "cassatt-mother-and-child-1900"
-      },
-      {
-        "title": "Margot in Blue",
-        "date": "1902",
-        "fileName": "cassatt-margot-in-blue-1902"
-      }
-    ]
-  }
-,
   "cezanne": {
     "fname": "Paul",
     "lname": "Cezanne",
@@ -366,6 +257,115 @@
     ]
   }
 ,
+  "cassatt": {
+    "fname": "Mary",
+    "lname": "Cassatt",
+    "bio": "Mary Stevenson Cassatt (May 22, 1844 – June 14, 1926) was an American painter and printmaker. She was born in Pennsylvania, but lived much of her adult life in France, where she first befriended Edgar Degas and later exhibited among the Impressionists. Cassatt often created images of the social and private lives of women, with particular emphasis on the intimate bonds between mothers and children.",
+    "era": "Impressionism",
+    "content": [
+      {
+        "title": "Child Drinking Milk",
+        "date": "1868",
+        "fileName": "cassatt-child-drinking-milk-1868"
+      },
+      {
+        "title": "Bacchante",
+        "date": "1872",
+        "fileName": "cassatt-bacchante-1872"
+      },
+      {
+        "title": "During a Carnival",
+        "date": "1872",
+        "fileName": "cassatt-during-a-carnival-1872"
+      },
+      {
+        "title": "A Musical Party",
+        "date": "1874",
+        "fileName": "cassatt-musical-party-1874"
+      },
+      {
+        "title": "Portrait of a Little Girl",
+        "date": "1874",
+        "fileName": "cassatt-portrait-of-a-little-girl-1874"
+      },
+      {
+        "title": "Poppies in a Field",
+        "date": "1880",
+        "fileName": "cassatt-poppies-in-a-field-1880"
+      },
+      {
+        "title": "Lady at the Tea Table",
+        "date": "1883",
+        "fileName": "cassatt-lady-at-the-tea-table-1883"
+      },
+      {
+        "title": "Girl Arranging Her Hair",
+        "date": "1886",
+        "fileName": "cassatt-girl-arranging-her-hair-1886"
+      },
+      {
+        "title": "At the Window",
+        "date": "1889",
+        "fileName": "cassatt-at-the-window-1889"
+      },
+      {
+        "title": "Lilacs in a Window",
+        "date": "1889",
+        "fileName": "cassatt-lilacs-in-a-window-1889"
+      },
+      {
+        "title": "Contemplation",
+        "date": "1889",
+        "fileName": "cassatt-contemplation-1889"
+      },
+      {
+        "title": "Gathering Fruit",
+        "date": "1893",
+        "fileName": "cassatt-gathering-fruit-1893"
+      },
+      {
+        "title": "Girl With Banjo",
+        "date": "1894",
+        "fileName": "cassatt-girl-with-banjo-1894"
+      },
+      {
+        "title": "In the Park",
+        "date": "1894",
+        "fileName": "cassatt-in-the-park-1894"
+      },
+      {
+        "title": "On the Water",
+        "date": "1895",
+        "fileName": "cassatt-on-the-water-1895"
+      },
+      {
+        "title": "Maternal Kiss",
+        "date": "1896",
+        "fileName": "cassatt-maternal-kiss-1896"
+      },
+      {
+        "title": "Breakfast in Bed",
+        "date": "1897",
+        "fileName": "cassatt-breakfast-in-bed-1897"
+      },
+      {
+        "title": "Pattycake",
+        "date": "1897",
+        "fileName": "cassatt-pattycake-1897"
+      },
+      {
+        "title": "Mother and Child",
+        "date": "1900",
+        "fileName": "cassatt-mother-and-child-1900"
+      },
+      {
+        "title": "Margot in Blue",
+        "date": "1902",
+        "fileName": "cassatt-margot-in-blue-1902"
+      }
+    ]
+  }
+,
   "creatorkey": {
     "fname": "Fname",
     "lname": "Lname",
@@ -471,8 +471,6 @@
         "title": "Picture 20",
         "date": "1132",
         "fileName": "creatorkey-picture-20-1132"
-<<<<<<< HEAD:data/allArtists.json
-=======
       }
     ]
   }
@@ -582,7 +580,6 @@
         "title": "Two Bathers on the Grass",
         "date": "1895",
         "fileName": "degas-bathers-on-the-grass-1895"
->>>>>>> 47684dfb4c22e9f0de51975d66b121d18f24c9e0:data/prod/allArtists.json
       }
     ]
   }
@@ -696,111 +693,111 @@
     ]
   }
 ,
-  "degas": {
-    "fname": "Edgar",
-    "lname": "Degas",
-    "bio": "Edgar Degas (19 July 1834 – 27 September 1917) was a French artist famous for his paintings, sculptures, prints, and drawings. He is especially identified with the subject of dance; more than half of his works depict dancers. He is regarded as one of the founders of Impressionism, although he rejected the term, preferring to be called a realist.",
-    "era": "Impressionism",
+  "harnett": {
+    "fname": "William",
+    "lname": "Harnett",
+    "bio": "William Michael Harnett (August 10, 1848 – October 29, 1892) was an Irish-American painter known for his trompe-l'œil still lifes of ordinary objects.",
+    "era": "Realism",
     "content": [
       {
-        "title": "Absinthe Drinkers",
+        "title": "Mortality and Immortality",
         "date": "1876",
-        "fileName": "degas-absinthe-drinkers-1876"
+        "fileName": "harnett-mortality-and-immortality-1876"
       },
       {
-        "title": "Woman with Opera Glasses",
+        "title": "Raisin Cake with Fruit and Wine",
         "date": "1876",
-        "fileName": "degas-woman-with-opera-glasses-1876"
+        "fileName": "harnett-raisin-cake-with-fruit-and-wine-1876"
       },
       {
-        "title": "Café-Concert at Les Ambassadeurs",
+        "title": "Still Life with Ginger Jar",
+        "date": "1876",
+        "fileName": "harnett-still-life-with-ginger-jar-1876"
+      },
+      {
+        "title": "Writing Table",
         "date": "1877",
-        "fileName": "degas-cafe-concert-at-les-ambassadeurs-1877"
+        "fileName": "harnett-writing-table-1877"
       },
       {
-        "title": "Dancer with Bouquet",
-        "date": "1877",
-        "fileName": "degas-dancer-with-bouquet-1877"
-      },
-      {
-        "title": "The Star",
-        "date": "1877",
-        "fileName": "degas-star-1877"
-      },
-      {
-        "title": "Song of the Dog",
-        "date": "1877",
-        "fileName": "degas-song-of-the-dog-1877"
-      },
-      {
-        "title": "Singer with a Glove",
+        "title": "Job Lot Cheap",
         "date": "1878",
-        "fileName": "degas-singer-with-a-glove-1878"
+        "fileName": "harnett-job-lot-cheap-1878"
       },
       {
-        "title": "Dancer with a Fan",
+        "title": "Music and Literature",
+        "date": "1878",
+        "fileName": "harnett-music-and-literature-1878"
+      },
+      {
+        "title": "Pipe and Mug",
+        "date": "1878",
+        "fileName": "harnett-pipe-and-mug-1878"
+      },
+      {
+        "title": "Solace",
+        "date": "1878",
+        "fileName": "harnett-solace-1878"
+      },
+      {
+        "title": "The Social Club",
         "date": "1879",
-        "fileName": "degas-dancer-with-a-fan-1879"
+        "fileName": "harnett-social-club-1879"
       },
       {
-        "title": "Before the Entrance",
-        "date": "1880",
-        "fileName": "degas-before-the-entrance-1880"
+        "title": "Fruit and Vase",
+        "date": "1881",
+        "fileName": "harnett-fruit-and-vase-1881"
       },
       {
-        "title": "Morning Bath",
-        "date": "1883",
-        "fileName": "degas-morning-bath-1883"
+        "title": "Fruit with Champagne Bottle and Newspaper",
+        "date": "1881",
+        "fileName": "harnett-fruit-with-champagne-bottle-and-newspaper-1881"
       },
       {
-        "title": "Dancer in Green Tutu",
-        "date": "1885",
-        "fileName": "degas-dancer-in-green-tutu-1885"
+        "title": "A Study Table",
+        "date": "1882",
+        "fileName": "harnett-study-table-1882"
       },
       {
-        "title": "The Tub",
+        "title": "After the Hunt",
+        "date": "1884",
+        "fileName": "harnett-after-the-hunt-1884"
+      },
+      {
+        "title": "Munich Still Life",
+        "date": "1884",
+        "fileName": "harnett-munich-still-life-1884"
+      },
+      {
+        "title": "Music",
         "date": "1886",
-        "fileName": "degas-tub-1886"
+        "fileName": "harnett-music-1886"
       },
       {
-        "title": "Woman Drying Herself",
+        "title": "The Old Violin",
         "date": "1886",
-        "fileName": "degas-woman-drying-herself-1886"
+        "fileName": "harnett-old-violin-1886"
       },
       {
-        "title": "Race Horses",
+        "title": "Ease",
+        "date": "1887",
+        "fileName": "harnett-ease-1887"
+      },
+      {
+        "title": "Violin and Music",
         "date": "1888",
-        "fileName": "degas-race-horses-1888"
+        "fileName": "harnett-violin-and-music-1888"
       },
       {
-        "title": "Woman Having Her Hair Combed",
-        "date": "1888",
-        "fileName": "degas-woman-having-her-hair-combed-1888"
+        "title": "The Old Cupboard Door",
+        "date": "1889",
+        "fileName": "harnett-old-cupboard-door-1889"
       },
       {
-        "title": "Seated Woman Combing Her Hair",
-        "date": "1890",
-        "fileName": "degas-seated-woman-combing-her-hair-1890"
-      },
-      {
-        "title": "The Morning Bath",
-        "date": "1890",
-        "fileName": "degas-morning-bath-1890"
-      },
-      {
-        "title": "After the Bath",
-        "date": "1894",
-        "fileName": "degas-after-the-bath-1894"
-      },
-      {
-        "title": "Ballet Dancers in the Wings",
-        "date": "1895",
-        "fileName": "degas-ballet-dancers-in-the-wings-1895"
-      },
-      {
-        "title": "Two Bathers on the Grass",
-        "date": "1895",
-        "fileName": "degas-bathers-on-the-grass-1895"
+        "title": "Old Models",
+        "date": "1892",
+        "fileName": "harnett-old-models-1892"
       }
     ]
   }
@@ -914,111 +911,111 @@
     ]
   }
 ,
-  "harnett": {
-    "fname": "William",
-    "lname": "Harnett",
-    "bio": "William Michael Harnett (August 10, 1848 – October 29, 1892) was an Irish-American painter known for his trompe-l'œil still lifes of ordinary objects.",
-    "era": "Realism",
+  "michelangelo": {
+    "fname": "Buonarroti",
+    "lname": "Michelangelo",
+    "bio": "Michelangelo di Lodovico Buonarroti Simoni (6 March 1475 – 18 February 1564) was an Italian sculptor, painter, architect, and poet of the High Renaissance born in the Republic of Florence, who exerted an unparalleled influence on the development of Western art. Considered to be the greatest living artist during his lifetime, he has since been described as one of the greatest artists of all time.",
+    "era": "Renaissance",
     "content": [
       {
-        "title": "Mortality and Immortality",
-        "date": "1876",
-        "fileName": "harnett-mortality-and-immortality-1876"
+        "title": "Bacchus",
+        "date": "1497",
+        "fileName": "michelangelo-bacchus-1497"
       },
       {
-        "title": "Raisin Cake with Fruit and Wine",
-        "date": "1876",
-        "fileName": "harnett-raisin-cake-with-fruit-and-wine-1876"
+        "title": "David and Goliath",
+        "date": "1500",
+        "fileName": "michelangelo-david-and-goliath-1500"
       },
       {
-        "title": "Still Life with Ginger Jar",
-        "date": "1876",
-        "fileName": "harnett-still-life-with-ginger-jar-1876"
+        "title": "Pieta",
+        "date": "1500",
+        "fileName": "michelangelo-pieta-1500"
       },
       {
-        "title": "Writing Table",
-        "date": "1877",
-        "fileName": "harnett-writing-table-1877"
+        "title": "David",
+        "date": "1501",
+        "fileName": "michelangelo-david-1501"
       },
       {
-        "title": "Job Lot Cheap",
-        "date": "1878",
-        "fileName": "harnett-job-lot-cheap-1878"
+        "title": "Holy Family",
+        "date": "1505",
+        "fileName": "michelangelo-holy-family-1505"
       },
       {
-        "title": "Music and Literature",
-        "date": "1878",
-        "fileName": "harnett-music-and-literature-1878"
+        "title": "Creation of Eve",
+        "date": "1509",
+        "fileName": "michelangelo-creation-of-eve-1509"
       },
       {
-        "title": "Pipe and Mug",
-        "date": "1878",
-        "fileName": "harnett-pipe-and-mug-1878"
+        "title": "Isaiah",
+        "date": "1509",
+        "fileName": "michelangelo-isaiah-1509"
       },
       {
-        "title": "Solace",
-        "date": "1878",
-        "fileName": "harnett-solace-1878"
+        "title": "Zechariah",
+        "date": "1509",
+        "fileName": "michelangelo-zechariah-1509"
       },
       {
-        "title": "The Social Club",
-        "date": "1879",
-        "fileName": "harnett-social-club-1879"
+        "title": "Ezekiel",
+        "date": "1510",
+        "fileName": "michelangelo-ezekiel-1510"
       },
       {
-        "title": "Fruit and Vase",
-        "date": "1881",
-        "fileName": "harnett-fruit-and-vase-1881"
+        "title": "Daniel",
+        "date": "1511",
+        "fileName": "michelangelo-daniel-1511"
       },
       {
-        "title": "Fruit with Champagne Bottle and Newspaper",
-        "date": "1881",
-        "fileName": "harnett-fruit-with-champagne-bottle-and-newspaper-1881"
+        "title": "Geremia",
+        "date": "1511",
+        "fileName": "michelangelo-geremia-1511"
       },
       {
-        "title": "A Study Table",
-        "date": "1882",
-        "fileName": "harnett-study-table-1882"
+        "title": "Jonah",
+        "date": "1512",
+        "fileName": "michelangelo-jonah-1512"
       },
       {
-        "title": "After the Hunt",
-        "date": "1884",
-        "fileName": "harnett-after-the-hunt-1884"
+        "title": "The Creation",
+        "date": "1512",
+        "fileName": "michelangelo-creation-1512"
       },
       {
-        "title": "Munich Still Life",
-        "date": "1884",
-        "fileName": "harnett-munich-still-life-1884"
+        "title": "Sybille de Cummes",
+        "date": "1516",
+        "fileName": "michelangelo-sybille-de-cummes-1516"
       },
       {
-        "title": "Music",
-        "date": "1886",
-        "fileName": "harnett-music-1886"
+        "title": "Moses",
+        "date": "1526",
+        "fileName": "michelangelo-moses-1526"
       },
       {
-        "title": "The Old Violin",
-        "date": "1886",
-        "fileName": "harnett-old-violin-1886"
+        "title": "Night",
+        "date": "1530",
+        "fileName": "michelangelo-night-1530"
       },
       {
-        "title": "Ease",
-        "date": "1887",
-        "fileName": "harnett-ease-1887"
+        "title": "Leda and the Swan",
+        "date": "1531",
+        "fileName": "michelangelo-lady-and-the-swan-1531"
       },
       {
-        "title": "Violin and Music",
-        "date": "1888",
-        "fileName": "harnett-violin-and-music-1888"
+        "title": "Dawn",
+        "date": "1531",
+        "fileName": "michelangelo-dawn-1531"
       },
       {
-        "title": "The Old Cupboard Door",
-        "date": "1889",
-        "fileName": "harnett-old-cupboard-door-1889"
+        "title": "Twilight",
+        "date": "1542",
+        "fileName": "michelangelo-twilight-1542"
       },
       {
-        "title": "Old Models",
-        "date": "1892",
-        "fileName": "harnett-old-models-1892"
+        "title": "Conversion of Saul",
+        "date": "1511",
+        "fileName": "michelangelo-conversion-of-saul-1511"
       }
     ]
   }
@@ -1127,172 +1124,6 @@
         "title": "Venice",
         "date": "1908",
         "fileName": "monet-venice-1908"
-      }
-    ]
-  }
-,
-<<<<<<< HEAD:data/allArtists.json
-  "okeeffe": {
-    "fname": "Georgia",
-    "lname": "O'Keeffe",
-    "bio": "Georgia Totto O'Keeffe (November 15, 1887 – March 6, 1986) was an American artist. She was best known for her paintings of enlarged flowers, New York skyscrapers, and New Mexico landscapes. O'Keeffe has been recognized as the 'Mother of American modernism'",
-    "era": "Modernism",
-    "content": [
-      {
-        "title": "Blue and Green Music",
-        "date": "1919",
-        "fileName": "okeeffe-blue-and-green-music-1919"
-      },
-      {
-        "title": "Black Iris",
-        "date": "1927",
-        "fileName": "okeeffe-black-iris-1927"
-      },
-      {
-        "title": "Tan Clam with Seaweed",
-        "date": "1926",
-        "fileName": "okeeffe-tan-clam-with-seaweed-1926"
-      },
-      {
-        "title": "Oriental Poppies",
-        "date": "1926",
-        "fileName": "okeeffe-oriental-poppies-1926"
-      },
-      {
-        "title": "Mountain in New Mexico",
-        "date": "1931",
-        "fileName": "okeeffe-mountain-in-new-mexico-1931"
-      },
-      {
-        "title": "Broken Shell",
-        "date": "1937",
-        "fileName": "okeeffe-broken-shell-1937"
-      },
-      {
-        "title": "Clam and Mussel",
-        "date": "1938",
-        "fileName": "okeeffe-clam-and-mussel-1938"
-      },
-      {
-        "title": "Red Hill and White Shell",
-        "date": "1938",
-        "fileName": "okeeffe-red-hill-and-white-shell-1938"
-      }
-    ]
-  }
-,
-  "michelangelo": {
-    "fname": "Buonarroti",
-    "lname": "Michelangelo",
-    "bio": "Michelangelo di Lodovico Buonarroti Simoni (6 March 1475 – 18 February 1564) was an Italian sculptor, painter, architect, and poet of the High Renaissance born in the Republic of Florence, who exerted an unparalleled influence on the development of Western art. Considered to be the greatest living artist during his lifetime, he has since been described as one of the greatest artists of all time.",
-    "era": "Renaissance",
-=======
-  "rembrandt": {
-    "fname": "",
-    "lname": "Rembrandt",
-    "bio": "Rembrandt Harmenszoon van Rijn (15 July 1606 – 4 October 1669) was a Dutch draughtsman, painter, and printmaker. An innovative and prolific master in three media, he is generally considered one of the greatest visual artists in the history of art and the most important in Dutch art history. Unlike most Dutch masters of the 17th century, Rembrandt's works depict a wide range of style and subject matter, from portraits and self-portraits to landscapes, genre scenes, allegorical and historical scenes, biblical and mythological themes as well as animal studies.",
-    "era": "Baroque",
->>>>>>> 47684dfb4c22e9f0de51975d66b121d18f24c9e0:data/prod/allArtists.json
-    "content": [
-      {
-        "title": "Bacchus",
-        "date": "1497",
-        "fileName": "michelangelo-bacchus-1497"
-      },
-      {
-        "title": "David and Goliath",
-        "date": "1500",
-        "fileName": "michelangelo-david-and-goliath-1500"
-      },
-      {
-        "title": "Pieta",
-        "date": "1500",
-        "fileName": "michelangelo-pieta-1500"
-      },
-      {
-        "title": "David",
-        "date": "1501",
-        "fileName": "michelangelo-david-1501"
-      },
-      {
-        "title": "Holy Family",
-        "date": "1505",
-        "fileName": "michelangelo-holy-family-1505"
-      },
-      {
-        "title": "Creation of Eve",
-        "date": "1509",
-        "fileName": "michelangelo-creation-of-eve-1509"
-      },
-      {
-        "title": "Isaiah",
-        "date": "1509",
-        "fileName": "michelangelo-isaiah-1509"
-      },
-      {
-        "title": "Zechariah",
-        "date": "1509",
-        "fileName": "michelangelo-zechariah-1509"
-      },
-      {
-        "title": "Ezekiel",
-        "date": "1510",
-        "fileName": "michelangelo-ezekiel-1510"
-      },
-      {
-        "title": "Daniel",
-        "date": "1511",
-        "fileName": "michelangelo-daniel-1511"
-      },
-      {
-        "title": "Geremia",
-        "date": "1511",
-        "fileName": "michelangelo-geremia-1511"
-      },
-      {
-        "title": "Jonah",
-        "date": "1512",
-        "fileName": "michelangelo-jonah-1512"
-      },
-      {
-        "title": "The Creation",
-        "date": "1512",
-        "fileName": "michelangelo-creation-1512"
-      },
-      {
-        "title": "Sybille de Cummes",
-        "date": "1516",
-        "fileName": "michelangelo-sybille-de-cummes-1516"
-      },
-      {
-        "title": "Moses",
-        "date": "1526",
-        "fileName": "michelangelo-moses-1526"
-      },
-      {
-        "title": "Night",
-        "date": "1530",
-        "fileName": "michelangelo-night-1530"
-      },
-      {
-        "title": "Leda and the Swan",
-        "date": "1531",
-        "fileName": "michelangelo-lady-and-the-swan-1531"
-      },
-      {
-        "title": "Dawn",
-        "date": "1531",
-        "fileName": "michelangelo-dawn-1531"
-      },
-      {
-        "title": "Twilight",
-        "date": "1542",
-        "fileName": "michelangelo-twilight-1542"
-      },
-      {
-        "title": "Conversion of Saul",
-        "date": "1511",
-        "fileName": "michelangelo-conversion-of-saul-1511"
       }
     ]
   }
@@ -1421,7 +1252,6 @@
         "title": "Sistine Madonna",
         "date": "1514",
         "fileName": "raphael-sistine-madonna-1514"
-<<<<<<< HEAD:data/allArtists.json
       },
       {
         "title": "Two Cherubs",
@@ -1670,38 +1500,6 @@
         "title": "Fish",
         "date": "1919",
         "fileName": "renoir-fish-1919"
-=======
-      },
-      {
-        "title": "Two Cherubs",
-        "date": "1514",
-        "fileName": "raphael-two-cherubs-1514"
-      },
-      {
-        "title": "Baldassare Castiglione",
-        "date": "1515",
-        "fileName": "raphael-baldassare-castiglione-1515"
-      },
-      {
-        "title": "Bindo Altoviti",
-        "date": "1515",
-        "fileName": "raphael-bindo-altoviti-1515"
-      },
-      {
-        "title": "Portrait of Artist with Friend",
-        "date": "1518",
-        "fileName": "raphael-portrait-of-artist-with-friend-1518"
-      },
-      {
-        "title": "St. Michael Trampling Satan",
-        "date": "1518",
-        "fileName": "raphael-st-michael-trampling-satan-1518"
-      },
-      {
-        "title": "Joanna of Aragon",
-        "date": "1518",
-        "fileName": "raphael-joanna-of-aragon-1518"
->>>>>>> 47684dfb4c22e9f0de51975d66b121d18f24c9e0:data/prod/allArtists.json
       }
     ]
   }
@@ -1912,222 +1710,6 @@
         "fileName": "rousseau-jungle-with-lion-1910"
       },
       {
-<<<<<<< HEAD:data/allArtists.json
-=======
-        "title": "Joan of Arc",
-        "date": "1882",
-        "fileName": "rossetti-joan-of-arc-1882"
-      }
-    ]
-  }
-,
-  "renoir": {
-    "fname": "Auguste",
-    "lname": "Renoir",
-    "bio": "Pierre-Auguste Renoir, commonly known as Auguste Renoir (25 February 1841 – 3 December 1919), was a French artist who was a leading painter in the development of the Impressionist style. As a celebrator of beauty and especially feminine sensuality, it has been said that 'Renoir is the final representative of a tradition which runs directly from Rubens to Watteau.'",
-    "era": "Impressionism",
-    "content": [
-      {
-        "title": "Crown of Roses",
-        "date": "1858",
-        "fileName": "renoir-crown-of-roses-1858"
-      },
-      {
-        "title": "Girl Gathering Flowers",
-        "date": "1872",
-        "fileName": "renoir-girl-gathering-flowers-1872"
-      },
-      {
-        "title": "On the Path",
-        "date": "1872",
-        "fileName": "renoir-on-the-path-1872"
-      },
-      {
-        "title": "The Parisian",
-        "date": "1874",
-        "fileName": "renoir-parisian-1874"
-      },
-      {
-        "title": "By the Fireside",
-        "date": "1875",
-        "fileName": "renoir-by-the-fireside-1875"
-      },
-      {
-        "title": "Self Portrait",
-        "date": "1875",
-        "fileName": "renoir-self-portrait-1875"
-      },
-      {
-        "title": "First Outing",
-        "date": "1876",
-        "fileName": "renoir-first-outing-1876"
-      },
-      {
-        "title": "Nini in the Garden",
-        "date": "1876",
-        "fileName": "renoir-nini-in-the-garden-1876"
-      },
-      {
-        "title": "Oarsmen at Chatou",
-        "date": "1879",
-        "fileName": "renoir-oarsmen-at-chatou-1879"
-      },
-      {
-        "title": "Girl with Fan",
-        "date": "1881",
-        "fileName": "renoir-girl-with-fan-1881"
-      },
-      {
-        "title": "Field and Haystacks",
-        "date": "1885",
-        "fileName": "renoir-field-and-haystacks-1885"
-      },
-      {
-        "title": "Fields of Wheat",
-        "date": "1885",
-        "fileName": "renoir-fields-of-wheat-1885"
-      },
-      {
-        "title": "Girl with Hoop",
-        "date": "1885",
-        "fileName": "renoir-girl-with-hoop-1885"
-      },
-      {
-        "title": "Girls at the Piano",
-        "date": "1892",
-        "fileName": "renoir-girls-at-the-piano-1892"
-      },
-      {
-        "title": "Beaulieu Landscape",
-        "date": "1893",
-        "fileName": "renoir-beaulieu-landscape-1893"
-      },
-      {
-        "title": "Bust of a Young Girl",
-        "date": "1895",
-        "fileName": "renoir-bust-of-a-young-girl-1895"
-      },
-      {
-        "title": "Landscape in Normandy",
-        "date": "1895",
-        "fileName": "renoir-landscape-in-normandy-1895"
-      },
-      {
-        "title": "Coco Holding an Orange",
-        "date": "1904",
-        "fileName": "renoir-coco-holding-an-orange-1904"
-      },
-      {
-        "title": "Flower Study",
-        "date": "1913",
-        "fileName": "renoir-flower-study-1913"
-      },
-      {
-        "title": "Fish",
-        "date": "1919",
-        "fileName": "renoir-fish-1919"
-      }
-    ]
-  }
-,
-  "rousseau": {
-    "fname": "Henri",
-    "lname": "Rousseau",
-    "bio": "Henri Julien Félix Rousseau (May 21, 1844 – September 2, 1910) was a French post-impressionist painter in the Naïve or Primitive manner. He was also known as Le Douanier (the customs officer), a humorous description of his occupation as a toll and tax collector.",
-    "era": "Post-Impressionism",
-    "content": [
-      {
-        "title": "Landscape with Bridge",
-        "date": "1877",
-        "fileName": "rousseau-landscape-with-bridge-1877"
-      },
-      {
-        "title": "The Mill",
-        "date": "1879",
-        "fileName": "rousseau-mill-1879"
-      },
-      {
-        "title": "Landscape",
-        "date": "1886",
-        "fileName": "rousseau-landscape-1886"
-      },
-      {
-        "title": "Riverbank",
-        "date": "1890",
-        "fileName": "rousseau-riverbank-1890"
-      },
-      {
-        "title": "Suprise",
-        "date": "1891",
-        "fileName": "rousseau-suprise-1891"
-      },
-      {
-        "title": "The Artilleryman",
-        "date": "1893",
-        "fileName": "rousseau-artilleryman-1893"
-      },
-      {
-        "title": "Family Fishing",
-        "date": "1895",
-        "fileName": "rousseau-family-fishing-1895"
-      },
-      {
-        "title": "Suburban Scene",
-        "date": "1896",
-        "fileName": "rousseau-suburban-scene-1896"
-      },
-      {
-        "title": "The Chair Factory",
-        "date": "1897",
-        "fileName": "rousseau-chair-factory-1897"
-      },
-      {
-        "title": "The Quarry",
-        "date": "1897",
-        "fileName": "rousseau-quarry-1897"
-      },
-      {
-        "title": "Boat in a Storm",
-        "date": "1898",
-        "fileName": "rousseau-boat-in-a-storm-1898"
-      },
-      {
-        "title": "Happy Quartet",
-        "date": "1902",
-        "fileName": "rousseau-happy-quartet-1902"
-      },
-      {
-        "title": "Child with Puppet",
-        "date": "1903",
-        "fileName": "rousseau-child-with-puppet-1903"
-      },
-      {
-        "title": "Scout Attacked by a Tiger",
-        "date": "1904",
-        "fileName": "rousseau-scout-attacked-by-a-tiger-1904"
-      },
-      {
-        "title": "Girl with Doll",
-        "date": "1905",
-        "fileName": "rousseau-girl-with-doll-1905"
-      },
-      {
-        "title": "Old Juniors Cart",
-        "date": "1908",
-        "fileName": "rousseau-old-juniors-cart-1908"
-      },
-      {
-        "title": "Bouquet of Flowers",
-        "date": "1910",
-        "fileName": "rousseau-bouquet-of-flowers-1910"
-      },
-      {
-        "title": "Jungle with Lion",
-        "date": "1910",
-        "fileName": "rousseau-jungle-with-lion-1910"
-      },
-      {
->>>>>>> 47684dfb4c22e9f0de51975d66b121d18f24c9e0:data/prod/allArtists.json
         "title": "Meadowland",
         "date": "1910",
         "fileName": "rousseau-meadowland-1910"
@@ -2358,75 +1940,6 @@
     ]
   }
 ,
-  "vonamerling": {
-    "fname": "Friedrich",
-    "lname": "Von Amerling",
-    "bio": "Friedrich von Amerling (14 April 1803 – 14 January 1887) was an Austro-Hungarian portrait painter in the court of Franz Josef. He was born in Vienna and was court painter between 1835 and 1880. With Ferdinand Georg Waldmüller he is one of the outstanding Austrian portrait painters of the 19th century.",
-    "era": "Academic",
-    "content": [
-      {
-        "title": "Rudolph von Arthaber with His Children",
-        "date": "1830",
-        "fileName": "vonamerling-rudolph-von-arthaber-with-his-children-1830"
-      },
-      {
-        "title": "Emporer Franz I",
-        "date": "1832",
-        "fileName": "vonamerling-emporer-franz-i-1832"
-      },
-      {
-        "title": "Self Portrait",
-        "date": "1834",
-        "fileName": "vonamerling-self-portrait-1834"
-      },
-      {
-        "title": "Lost in Dreams",
-        "date": "1835",
-        "fileName": "vonamerling-lost-in-dreams-1835"
-      },
-      {
-        "title": "Count Istvan Szechenyi",
-        "date": "1836",
-        "fileName": "vonamerling-count-istvan-szechenyi-1836"
-      },
-      {
-        "title": "Prinzessin Marie Franziska",
-        "date": "1836",
-        "fileName": "vonamerling-prinzessin-marie-franziska-1836"
-      },
-      {
-        "title": "Portrait of a Girl",
-        "date": "1837",
-        "fileName": "vonamerling-portrait-of-a-girl-1837"
-      },
-      {
-        "title": "Oriental Woman",
-        "date": "1838",
-        "fileName": "vonamerling-oriental-woman-1838"
-      },
-      {
-        "title": "Countess Nako",
-        "date": "1855",
-        "fileName": "vonamerling-countess-nako-1855"
-      },
-      {
-        "title": "Charity",
-        "date": "1856",
-        "fileName": "vonamerling-charity-1856"
-      },
-      {
-        "title": "Kaiser Franz I",
-        "date": "1884",
-        "fileName": "vonamerling-kaiser-franz-i-1884"
-      },
-      {
-        "title": "Study of a Lunatist",
-        "date": "",
-        "fileName": "vonamerling-study-of-a-lunatist"
-      }
-    ]
-  }
-,
   "vangogh": {
     "fname": "Vincent",
     "lname": "Van Gogh",
@@ -2576,7 +2089,6 @@
     ]
   }
 ,
-<<<<<<< HEAD:data/allArtists.json
   "vonamerling": {
     "fname": "Friedrich",
     "lname": "Von Amerling",
@@ -2646,8 +2158,6 @@
     ]
   }
 ,
-=======
->>>>>>> 47684dfb4c22e9f0de51975d66b121d18f24c9e0:data/prod/allArtists.json
   "waterhouse": {
     "fname": "John William",
     "lname": "Waterhouse",
