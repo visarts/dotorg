@@ -6,6 +6,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MergeJsonWebpackPlugin = require('merge-jsons-webpack-plugin');
+const AutoPrefixer = require('autoprefixer');
 
 module.exports = {
   devtool: 'eval',
@@ -22,7 +23,7 @@ module.exports = {
     filename: '[name].js'
   },
   plugins: [
-    //new CleanWebpackPlugin('dist'),
+    new CleanWebpackPlugin('dist'),
     new webpack.ProvidePlugin({
       React: 'react',
       ReactDOM: 'react-dom'
@@ -46,6 +47,16 @@ module.exports = {
       { from: 'data/prod', to: 'data'}
     ]),
     new webpack.HotModuleReplacementPlugin(),
+    new webpack.NamedModulesPlugin(),
+    /*new webpack.LoaderOptionsPlugin({
+      options: {
+        postcss: [
+          AutoPrefixer({
+            browsers: ['last 2 versions', 'ios 8', 'ie 9', 'ie 10', 'ie 11']
+          })
+        ]
+      }
+    }),*/
     new HtmlWebpackPlugin({
       title: 'Portitude: the Art of Learning',
       inject: true,
@@ -76,7 +87,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.less$/,
+        test: /\.scss$/,
         exclude: /node_modules/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
@@ -85,15 +96,18 @@ module.exports = {
               loader: 'css-loader',
               options: {
                 url: false,
-                modules: true,
+                //modules: true,
                 importLoaders: 1,
-                localIdentName: '[name]__[local]___[hash:base64:4]'
+                //localIdentName: '[name]__[local]___[hash:base64:4]'
               }
             },
+            /*{
+              loader: 'postcss-loader'
+            },*/
             {
-              loader: 'less-loader',
+              loader: 'sass-loader',
               options: {
-                paths: [
+                includePaths: [
                   path.resolve(ROOT_PATH, 'node_modules'),
                   path.resolve(ROOT_PATH, 'src/styles')
                 ]
@@ -143,7 +157,7 @@ module.exports = {
 		]
 	},
   resolve: {
-    extensions: ['*', '.js', '.jsx', '.json', '.less', '.html'],
+    extensions: ['*', '.js', '.jsx', '.json', '.scss', '.html'],
     alias:{
       Services: path.resolve(ROOT_PATH, 'src/app/services'),
       Literature: path.resolve(ROOT_PATH, 'content/literature'),

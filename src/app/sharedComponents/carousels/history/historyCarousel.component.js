@@ -1,4 +1,4 @@
-import './historyCarousel.less';
+import './historyCarousel.scss';
 
 const HistoryCarousel = (props) => {
 

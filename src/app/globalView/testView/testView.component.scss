@@ -1,4 +1,4 @@
-@import '../../../styles/globals';
+@import 'globals';
 
 .testView {
   padding: 30px;
@@ -19,7 +19,7 @@
 
   .todoItem {
     .deleteTODO {
-      color: lighten(@tertiaryThemeColor, 20%);
+      color: lighten($tertiaryThemeColor, 20%);
       cursor: pointer;
       padding-left: 10px;
 

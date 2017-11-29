@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import ListLink from 'SharedComponents/listLink/listLink.component';
 import ArtHistory from 'SharedComponents/artHistory/artHistory.component';
 import SectionHeader from 'SharedComponents/sectionHeader/sectionHeader.component';
-import './artsHome.component.less';
+import './artsHome.component.scss';
 
 const ArtsHome = (props) => {
 

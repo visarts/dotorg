@@ -3,7 +3,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import DOMPurify from '../../../../lib/purify.js';
 import historyService from 'Services/history.service';
 import dataService from 'Services/data.service';
-import './literatureDisplay.component.less';
+import './literatureDisplay.component.scss';
 
 export default class LiteratureDisplay extends React.Component {
 
@@ -38,7 +38,7 @@ export default class LiteratureDisplay extends React.Component {
       .then((results) => {
         this.htmlContent = results;
         this.pages = [];
-        for (let i in this.currentWork.pageSizes) {
+        for (const i in this.currentWork.pageSizes) {
           const page = this.htmlContent.slice(0, this.currentWork.pageSizes[i]);
           this.htmlContent = this.htmlContent.slice(this.currentWork.pageSizes[i]);
           this.pages.push(page);

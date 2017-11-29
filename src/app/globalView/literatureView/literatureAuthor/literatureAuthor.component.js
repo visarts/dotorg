@@ -3,7 +3,7 @@ import historyService from 'Services/history.service';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
 import ListLink from 'SharedComponents/listLink/listLink.component';
 import SectionHeader from 'SharedComponents/sectionHeader/sectionHeader.component';
-import './literatureAuthor.component.less';
+import './literatureAuthor.component.scss';
 
 const LiteratureAuthor = (props) => {
 

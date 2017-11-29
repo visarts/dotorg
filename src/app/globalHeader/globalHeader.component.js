@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import Search from 'SharedComponents/search/search.component';
-import styles from './globalHeader.component.less';
+import './globalHeader.component.scss';
 
 const GlobalHeader = (props) => {
 
   const hiddenKey = 'hidden';
-console.log(props.appState.routing);
+
   const routing = props.appState.routing;
   const dataType = routing.currentSection;
 
@@ -56,7 +56,7 @@ console.log(props.appState.routing);
 
 
   return (
-    <div className={`${styles.header} ${styles[props.appState.routing.currentSection]}`}>
+    <div className="header">
       <h1>
         <Link to="/" className="portitudeTitle">Portitude</Link>
         <Link to={sectionUrl} className={routing.currentSection ? '' : 'hidden'}>

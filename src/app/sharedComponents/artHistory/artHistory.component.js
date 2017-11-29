@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom';
 //import { Button } from 'react-bootstrap'
 import historyService from 'Services/history.service';
 import PrimaryButton from 'SharedComponents/buttons/primary/primaryButton.component';
-import './artHistory.component.less';
+import './artHistory.component.scss';
 
 const ArtHistory = (props) => {
-  let historyList = historyService.getHistory('artHistory');
-  let historyListMap = historyList.map((historyObj, index) => {
+  const historyList = historyService.getHistory('artHistory');
+  const historyListMap = historyList.map((historyObj, index) => {
     const artistKey = historyObj.fileName.slice(0, historyObj.fileName.indexOf('-'));
     return (
       <li className="historyItem" key={historyObj.fileName}>
@@ -17,7 +17,7 @@ const ArtHistory = (props) => {
           <div className="historyItemThumb">
             <img
               src={`./content/artwork/${artistKey}/${historyObj.fileName}_sm.jpg`}
-              id={historyObj.fileName + '-thumb'}
+              id={`${historyObj.fileName}-thumb`}
               alt={historyObj.title} />
           </div>
           <div className="historyItemTitle">{historyObj.title}</div>
@@ -34,9 +34,9 @@ const ArtHistory = (props) => {
     const lastItem = document.querySelectorAll('.historyItem')[7];
     const lastItemPos = lastItem.getBoundingClientRect().left;
     document.querySelector('.historyList').style.left = `-${lastItemPos}px`;
-  }
+  };
 
-  let dynamicClass = historyListMap.length ? '' : 'hide';
+  const dynamicClass = historyListMap.length ? '' : 'hide';
 
   return (
     <div className={`historyCarousel ${dynamicClass}`}>
@@ -52,6 +52,6 @@ const ArtHistory = (props) => {
     </div>
   );
 
-}
+};
 
 export default ArtHistory;

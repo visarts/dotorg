@@ -1,4 +1,4 @@
-import './primaryButton.component.less';
+import './primaryButton.component.scss';
 
 const PrimaryButton = (props) => {
 

@@ -1,7 +1,7 @@
 import { Route, Link } from 'react-router-dom';
 import historyService from 'Services/history.service';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
-import './artsArtist.component.less';
+import './artsArtist.component.scss';
 
 
 const ArtsArtist = (props) => {

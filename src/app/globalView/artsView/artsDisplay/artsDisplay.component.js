@@ -4,7 +4,7 @@ import { Modal, Glyphicon, DropdownButton, MenuItem } from 'react-bootstrap';
 import historyService from 'Services/history.service';
 import eventService from 'Services/event.service';
 import ArtCarousel from 'SharedComponents/artCarousel/artCarousel.component';
-import './artsDisplay.component.less';
+import './artsDisplay.component.scss';
 
 const ArtsDisplay = (props) => {
   const artistKey = props.match.params.artist;

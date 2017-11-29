@@ -1,5 +1,5 @@
 import React from 'react';
-import './testView.component.less';
+import './testView.component.scss';
 
 export default class TestView extends React.Component {
 
@@ -21,7 +21,7 @@ export default class TestView extends React.Component {
 
   addTODO (event) {
     if (this.state.currentInput) {
-      let todos = this.state.todos.slice();
+      const todos = this.state.todos.slice();
       todos.push(this.state.currentInput);
       this.setState({currentInput: '', todos: todos});
     } else {
@@ -40,7 +40,7 @@ export default class TestView extends React.Component {
   }
 
   removeTODOItem (item) {
-    let todos = this.state.todos.slice();
+    const todos = this.state.todos.slice();
     todos.splice(item, 1);
     this.setState({todos: todos});
   }
@@ -72,6 +72,6 @@ export default class TestView extends React.Component {
           {this.getTODOList()}
         </ul>
       </div>
-    )
+    );
   }
 }

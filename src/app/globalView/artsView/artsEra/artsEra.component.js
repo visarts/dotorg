@@ -4,7 +4,7 @@ import { Glyphicon } from 'react-bootstrap';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
 import ListLink from 'SharedComponents/listLink/listLink.component';
 import SectionHeader from 'SharedComponents/sectionHeader/sectionHeader.component';
-import './artsEra.component.less';
+import './artsEra.component.scss';
 
 
 const ArtsEra = (props) => {

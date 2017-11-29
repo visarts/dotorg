@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import dataService from 'Services/data.service';
-import './searchView.component.less';
+import './searchView.component.scss';
 
 const SearchView = (props) => {
 
@@ -13,12 +13,12 @@ const SearchView = (props) => {
   //const isAuthor = false;
   const artistList = [];
   const authorList = [];
-  for (let i in artistNames) {
+  for (const i in artistNames) {
     if (artistNames[i].indexOf(searchInput) > -1) {
       artistList.push(artistNames[i]);
     }
   }
-  for (let i in authorNames) {
+  for (const i in authorNames) {
     if (authorNames[i].indexOf(searchInput) > -1) {
       authorList.push(authorNames[i]);
     }

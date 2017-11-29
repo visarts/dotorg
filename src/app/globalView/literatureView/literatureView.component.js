@@ -41,4 +41,4 @@ const LiteratureView = (props) => {
   );
 };
 
-export default LiteratureView
+export default LiteratureView;

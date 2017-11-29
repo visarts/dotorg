@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import historyService from 'Services/history.service';
 import PrimaryButton from 'SharedComponents/buttons/primary/primaryButton.component';
-import './literatureHistory.component.less';
+import './literatureHistory.component.scss';
 
 const LiteratureHistory = (props) => {
 

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import dataService from 'Services/data.service';
-import './homeView.component.less';
+import './homeView.component.scss';
 
 const HomeView = (props) => {
 

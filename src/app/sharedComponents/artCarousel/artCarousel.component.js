@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Glyphicon } from 'react-bootstrap';
-import './artCarousel.component.less';
+import './artCarousel.component.scss';
 
 export default class ArtCarousel extends React.Component {
 
@@ -42,13 +42,13 @@ export default class ArtCarousel extends React.Component {
   }
 
   getThumbPages () {
-    let thumbs = this.getThumbs();
-    let thumbPages = [];
+    const thumbs = this.getThumbs();
+    const thumbPages = [];
     const thumbPageCount = Math.ceil(thumbs.length / this.thumbPageSize);
 
     for (let i = 0; i < thumbPageCount; i++) {
       if (parseInt(i) !== (thumbPageCount - 1)) {
-        let j = parseInt(i) * this.thumbPageSize;
+        const j = parseInt(i) * this.thumbPageSize;
         thumbPages.push(thumbs.slice(parseInt(j), (parseInt(j) + this.thumbPageSize )));
       } else {
         thumbPages.push(thumbs.slice(-(this.thumbPageSize)));
@@ -65,11 +65,11 @@ export default class ArtCarousel extends React.Component {
   }
 
   onLeftArrowClick () {
-    this.setState({currentThumbPage: this.state.currentThumbPage - 1})
+    this.setState({currentThumbPage: this.state.currentThumbPage - 1});
   }
 
   onRightArrowClick () {
-    this.setState({currentThumbPage: this.state.currentThumbPage + 1})
+    this.setState({currentThumbPage: this.state.currentThumbPage + 1});
   }
 
   componentWillReceiveProps (nextProps) {

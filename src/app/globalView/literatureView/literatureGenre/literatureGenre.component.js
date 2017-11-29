@@ -4,7 +4,7 @@ import { Glyphicon } from 'react-bootstrap';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
 import SectionHeader from 'SharedComponents/sectionHeader/sectionHeader.component';
 import ListLink from 'SharedComponents/listLink/listLink.component';
-import './literatureGenre.component.less';
+import './literatureGenre.component.scss';
 
 
 const LiteratureGenre = (props) => {
@@ -12,13 +12,13 @@ const LiteratureGenre = (props) => {
   document.title = `Portitude Library: ${props.appState.routing.currentSubSection}`;
 
   const getTitles = () => {
-    let authorsList = [];
-    for(let authorKey in props.store.literature) {
-      let titlesList = [];
-      let author = props.store.literature[authorKey];
-      for (let i in author.content) {
-        let title = author.content[i];
-        let pageIndicator = title.genre === 'poetry' ? `${author.lname}, ` : title.pageSizes.length === 1 ? '1 page, ' : title.pageSizes.length + ' pages, '
+    const authorsList = [];
+    for(const authorKey in props.store.literature) {
+      const titlesList = [];
+      const author = props.store.literature[authorKey];
+      for (const i in author.content) {
+        const title = author.content[i];
+        const pageIndicator = title.genre === 'poetry' ? `${author.lname}, ` : title.pageSizes.length === 1 ? '1 page, ' : title.pageSizes.length + ' pages, ';
         if (title.genre === props.appState.routing.currentSubSection) {
           titlesList.push(
             <ListLink
@@ -41,7 +41,7 @@ const LiteratureGenre = (props) => {
       }
     }
     return authorsList;
-  }
+  };
 
   const titles = getTitles();
 
@@ -54,7 +54,7 @@ const LiteratureGenre = (props) => {
       </div>
       <BackToTop />
     </div>
-  )
+  );
 };
 
 export default LiteratureGenre;
