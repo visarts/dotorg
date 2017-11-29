@@ -1,5 +1,4 @@
-import React from 'react';
-import './sectionHeader.component.less';
+import './sectionHeader.component.scss';
 
 
 const SectionHeader = (props) => {

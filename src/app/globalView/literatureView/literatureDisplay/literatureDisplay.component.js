@@ -1,10 +1,9 @@
-import React from 'react';
 import { Modal, Glyphicon, DropdownButton, MenuItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import DOMPurify from '../../../../lib/purify.js';
 import historyService from 'Services/history.service';
 import dataService from 'Services/data.service';
-import './literatureDisplay.component.less';
+import './literatureDisplay.component.scss';
 
 export default class LiteratureDisplay extends React.Component {
 
@@ -28,7 +27,7 @@ export default class LiteratureDisplay extends React.Component {
 
   setValues () {
     this.authorKey = this.props.match.params.author;
-    this.author = this.props.store.authorsData[this.authorKey];
+    this.author = this.props.store.literature[this.authorKey];
     this.currentWorkKey = this.props.match.params.work;
     this.currentWork = this.author.content.filter(work => work.fileName === this.currentWorkKey)[0];
 
@@ -39,8 +38,8 @@ export default class LiteratureDisplay extends React.Component {
       .then((results) => {
         this.htmlContent = results;
         this.pages = [];
-        for (let i in this.currentWork.pageSizes) {
-          let page = this.htmlContent.slice(0, this.currentWork.pageSizes[i]);
+        for (const i in this.currentWork.pageSizes) {
+          const page = this.htmlContent.slice(0, this.currentWork.pageSizes[i]);
           this.htmlContent = this.htmlContent.slice(this.currentWork.pageSizes[i]);
           this.pages.push(page);
         }
@@ -53,7 +52,7 @@ export default class LiteratureDisplay extends React.Component {
   setPageNum (pageNum) {
     this.setState({currentPage: pageNum, readMoreMenuIsOpen: false, readingControlsAreOpen: false}, () => {
       const currentHash = this.originalHash.indexOf('?page=') > -1 ? this.originalHash.slice(0, this.originalHash.indexOf('?')) : this.originalHash;
-      document.location.hash = currentHash + `?page=${pageNum}`;
+      document.location.hash = `${currentHash}?page=${pageNum}`;
       document.querySelector('.modal-body').scrollTop = 0;
     });
 
@@ -87,11 +86,11 @@ export default class LiteratureDisplay extends React.Component {
 
   hideModal () {
     //record last place
-    let percentage = Math.round((parseInt(this.state.currentPage) / parseInt(this.pages.length)) * 100);
+    const percentage = Math.round((parseInt(this.state.currentPage) / parseInt(this.pages.length)) * 100);
     localStorage.setItem('readtest', JSON.stringify({authorKey: this.authorKey, workKey: this.currentWorkKey, percentage}));
     //reconstruct the uri from the original, take two params off the top to return to origin
-    let params = this.props.appState.getTrimmedURI(2);
-    location.hash = `#/${params}`
+    const params = this.props.appState.getTrimmedURI(2);
+    location.hash = `#/${params}`;
   }
 
   setReadingMode () {
@@ -106,15 +105,15 @@ export default class LiteratureDisplay extends React.Component {
   }
 
   toggleReadMoreMenu (e) {
-    let newState = {
+    const newState = {
       readMoreMenuIsOpen: this.state.readMoreMenuIsOpen ? false : true,
       readingControlsAreOpen: false
-    }
+    };
     this.setState(newState);
   }
 
   toggleReadingControls (e) {
-    let newState = {
+    const newState = {
       readMoreMenuIsOpen: false,
       readingControlsAreOpen: this.state.readingControlsAreOpen ? false : true
     };
@@ -123,7 +122,7 @@ export default class LiteratureDisplay extends React.Component {
 
   closeAllMenus (e) {
     if (this.state.readMoreMenuIsOpen || this.state.readingControlsAreOpen) {
-      let newState = {
+      const newState = {
         readMoreMenuIsOpen: false,
         readingControlsAreOpen: false
       };
@@ -173,13 +172,13 @@ export default class LiteratureDisplay extends React.Component {
             </div>
             <ul className="literatureTitleList">
               {this.author.content.map((item, index) => {
-                let params = this.props.appState.getTrimmedURI(1);
+                const params = this.props.appState.getTrimmedURI(1);
                 return (
                   <LinkContainer to={`/${params}/${item.fileName}`} key={item.title.toLowerCase()}>
                     <MenuItem eventKey={index} key={item.fileName}>{item.title}</MenuItem>
                   </LinkContainer>
-                )
-              }).filter((item) => {return item.key.indexOf(this.state.searchInput.toLowerCase()) > -1})}
+                );
+              }).filter((item) => {return item.key.indexOf(this.state.searchInput.toLowerCase()) > -1;})}
             </ul>
           </div>
           <div className={`readingControlsMenu ${this.state.readingControlsAreOpen ? '' : 'readingControlsMenuClosed'}`}>

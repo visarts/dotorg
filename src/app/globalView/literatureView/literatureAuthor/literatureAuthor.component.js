@@ -1,19 +1,18 @@
-import React from 'react';
 import { Glyphicon } from 'react-bootstrap';
 import historyService from 'Services/history.service';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
 import ListLink from 'SharedComponents/listLink/listLink.component';
 import SectionHeader from 'SharedComponents/sectionHeader/sectionHeader.component';
-import './literatureAuthor.component.less';
+import './literatureAuthor.component.scss';
 
 const LiteratureAuthor = (props) => {
 
   const authorKey = props.match.params.author;
-  const author = props.store.authorsData[authorKey];
+  const author = props.store.literature[authorKey];
   document.title = `Portitude Library: ${author.fname} ${author.lname}`;
 
   const getTitles = () => {
-    let genres = {
+    const genres = {
       shorts: [],
       poetry: [],
       nonfiction: [],
@@ -21,8 +20,8 @@ const LiteratureAuthor = (props) => {
       tales: []
     };
     author.content.map((title, index) => {
-      let pageIndicator = title.genre === 'poetry' ? `${author.lname}, ` : title.pageSizes.length === 1 ? '1 page, ' : title.pageSizes.length + ' pages, ';
-      let titleLink = (
+      const pageIndicator = title.genre === 'poetry' ? `${author.lname}, ` : title.pageSizes.length === 1 ? '1 page, ' : title.pageSizes.length + ' pages, ';
+      const titleLink = (
         <ListLink
           key={title.fileName}
           url={`/literature/a/${authorKey}/${title.genre}/${title.fileName}`}
@@ -93,6 +92,6 @@ const LiteratureAuthor = (props) => {
       </div>
     </div>
   );
-}
+};
 
 export default LiteratureAuthor;

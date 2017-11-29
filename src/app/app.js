@@ -1,4 +1,3 @@
-import React from 'react';
 import { Route } from 'react-router-dom';
 import dataService from 'Services/data.service';
 import StoreService from 'Services/store.service';
@@ -30,12 +29,12 @@ export default class App extends React.Component {
   // allows for routing changes in modals and the like when origin is unknown
   getTrimmedURI (num) {
     if (num) {
-      let numb = parseInt(num);
-      let params = location.hash.slice(2).split('/');
+      const numb = parseInt(num);
+      const params = location.hash.slice(2).split('/');
       for (let i = 0; i < num; i++) {
         params.pop();
       }
-      let newParams = params.join('/');
+      const newParams = params.join('/');
       return newParams;
     }
   }
@@ -43,7 +42,7 @@ export default class App extends React.Component {
 
   // this will update when the route changes and set state with new params
   componentWillReceiveProps (nextProps) {
-    let updatedLocation = nextProps.location.pathname;
+    const updatedLocation = nextProps.location.pathname;
     if (this.currentLocation !== updatedLocation) {
       this.setState({routing: dataService.getCurrentRouting(updatedLocation)}, () => {
         this.currentLocation = updatedLocation;
@@ -73,12 +72,12 @@ export default class App extends React.Component {
 
       refactor arts carousel to use css animation and a single array
 
-      refactor history display into carousel 
+      refactor history display into carousel
 
     */
 
     return (
-      <div className="app">
+      <div className={`portitude ${this.state.routing.currentSection}`}>
         <GlobalHeader
           store={this.store}
           appState={this.state}
@@ -95,7 +94,7 @@ export default class App extends React.Component {
           appState={this.state}
           updateAppState={this.updateAppState} />
         <GlobalFooter
-          store={this.state}
+          store={this.store}
           appState={this.state}
           updateAppState={this.updateAppState} />
       </div>

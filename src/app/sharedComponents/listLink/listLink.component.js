@@ -1,12 +1,11 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import './listLink.component.less';
+import './listLink.component.scss';
 
 const ListLink = (props) => {
 
   let otherText = '';
-  let smallScreen = 768;
-  let otherTextLimit = window.innerWidth >= smallScreen ? 130 : 100;
+  const smallScreen = 768;
+  const otherTextLimit = window.innerWidth >= smallScreen ? 130 : 100;
 
   if (props.other) {
     if (props.other.length > otherTextLimit) {

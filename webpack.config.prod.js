@@ -4,7 +4,7 @@ const ROOT_PATH = path.resolve(__dirname);
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+//const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MergeJsonWebpackPlugin = require('merge-jsons-webpack-plugin');
 
@@ -47,20 +47,34 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: 'src/images', to: 'images'},
       { from: 'content', to: 'content'},
-      { from: 'data/allArtists.json', to: 'data' },
-      { from: 'data/allAuthors.json', to: 'data' }
+      { from: 'data/prod', to: 'data' }
     ])
   ],
   module: {
 		rules: [
-			{
+      {
         test: /\.less$/,
         exclude: /node_modules/,
         use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
           use: [
-            'css-loader?url=false',
-            'less-loader'
+            {
+              loader: 'css-loader',
+              options: {
+                url: false,
+                modules: true,
+                importLoaders: 1,
+                localIdentName: '[name]__[local]___[hash:base64:4]'
+              }
+            },
+            {
+              loader: 'less-loader',
+              options: {
+                paths: [
+                  path.resolve(ROOT_PATH, 'node_modules'),
+                  path.resolve(ROOT_PATH, 'src/styles')
+                ]
+              }
+            }
           ]
         })
 			},
@@ -79,7 +93,7 @@ module.exports = {
         }
 			},
       {
-        test: /\.jpg$/,
+        test: /\.(png|jpg)$/,
         use: 'file-loader'
       },
       {
@@ -108,7 +122,6 @@ module.exports = {
     extensions: ['*', '.js', '.jsx', '.json', '.less', '.html'],
     alias:{
       Services: path.resolve(ROOT_PATH, 'src/app/services'),
-      Styles: path.resolve(ROOT_PATH, 'src/app/styles'),
       Literature: path.resolve(ROOT_PATH, 'content/literature'),
       Artwork: path.resolve(ROOT_PATH, 'content/artwork'),
       SharedComponents: path.resolve(ROOT_PATH, 'src/app/sharedComponents'),
@@ -120,4 +133,4 @@ module.exports = {
       path.resolve('./node_modules')
     ]
   }
-}
+};

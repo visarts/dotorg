@@ -6,12 +6,17 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MergeJsonWebpackPlugin = require('merge-jsons-webpack-plugin');
+const AutoPrefixer = require('autoprefixer');
 
 module.exports = {
   devtool: 'eval',
+  devServer: {
+     contentBase: path.join(ROOT_PATH, 'dist'),
+     hot: true
+  },
   entry: {
     vendors: './src/vendors.js',
-    main: ['./src/styles/main.less', './src/index.js']
+    main: './src/index.js'
   },
   output: {
     path: path.resolve(ROOT_PATH, 'dist'),
@@ -37,14 +42,25 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: 'src/images', to: 'images'},
       { from: 'favicon.ico', to: '' },
-      { from: 'content', to: 'content'}
+      { from: 'content', to: 'content'},
+      { from: 'data/prod', to: 'data'}
     ]),
     new webpack.HotModuleReplacementPlugin(),
+    new webpack.NamedModulesPlugin(),
+    /*new webpack.LoaderOptionsPlugin({
+      options: {
+        postcss: [
+          AutoPrefixer({
+            browsers: ['last 2 versions', 'ios 8', 'ie 9', 'ie 10', 'ie 11']
+          })
+        ]
+      }
+    }),*/
     new HtmlWebpackPlugin({
       title: 'Portitude: the Art of Learning',
       inject: true,
       template: './index.ejs',
-      hash: true
+      hash: false
     })
     /*new MergeJsonWebpackPlugin({
       'output': {
@@ -68,18 +84,37 @@ module.exports = {
     })*/
   ],
   module: {
-		rules: [
-			{
-        test: /\.less$/,
+    rules: [
+      {
+        test: /\.scss$/,
         exclude: /node_modules/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            'css-loader?url=false',
-            'less-loader'
+            {
+              loader: 'css-loader',
+              options: {
+                url: false,
+                //modules: true,
+                importLoaders: 1,
+                //localIdentName: '[name]__[local]___[hash:base64:4]'
+              }
+            },
+            /*{
+              loader: 'postcss-loader'
+            },*/
+            {
+              loader: 'sass-loader',
+              options: {
+                includePaths: [
+                  path.resolve(ROOT_PATH, 'node_modules'),
+                  path.resolve(ROOT_PATH, 'src/styles')
+                ]
+              }
+            }
           ]
         })
-			},
+      },
       {
 				test: /\.jsx$/,
 				exclude: /node_modules/,
@@ -95,7 +130,7 @@ module.exports = {
         }
 			},
       {
-        test: /\.jpg$/,
+        test: /\.(png|jpg)$/,
         use: 'file-loader'
       },
       {
@@ -121,10 +156,9 @@ module.exports = {
 		]
 	},
   resolve: {
-    extensions: ['*', '.js', '.jsx', '.json', '.less', '.html'],
+    extensions: ['*', '.js', '.jsx', '.json', '.scss', '.html'],
     alias:{
       Services: path.resolve(ROOT_PATH, 'src/app/services'),
-      Styles: path.resolve(ROOT_PATH, 'src/app/styles'),
       Literature: path.resolve(ROOT_PATH, 'content/literature'),
       Artwork: path.resolve(ROOT_PATH, 'content/artwork'),
       SharedComponents: path.resolve(ROOT_PATH, 'src/app/sharedComponents'),
@@ -136,4 +170,4 @@ module.exports = {
       path.resolve('./node_modules')
     ]
   }
-}
+};

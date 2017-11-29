@@ -1,8 +1,8 @@
 const jsonConcat = require('json-concat');
 
 const mergingService = () => {
-  jsonConcat({src: 'data/authors/', dest: 'data/allAuthors.json'}, () => {return;})
-  jsonConcat({src: 'data/artists/', dest: 'data/allArtists.json'}, () => {return;})
+  jsonConcat({src: 'data/literature/', dest: 'data/prod/allAuthors.json'}, () => {return;});
+  jsonConcat({src: 'data/artwork/', dest: 'data/prod/allArtists.json'}, () => {return;});
 };
 
 mergingService();

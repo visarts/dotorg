@@ -1,6 +1,4 @@
-import React from 'react';
-import './primaryButton.component.less';
-
+import './primaryButton.component.scss';
 
 const PrimaryButton = (props) => {
 

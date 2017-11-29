@@ -1,4 +1,3 @@
-import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import HomeView from './homeView/homeView.component';
 import ArtsView from './artsView/artsView.component';
@@ -26,7 +25,7 @@ const GlobalView = (props) => {
               updateAppState={props.updateAppState}
               {...routeProps} />
           )} />
-          <Route path="/arts" render={routeProps => (
+          <Route path="/artwork" render={routeProps => (
             <ArtsView
               store={props.store}
               appState={props.appState}

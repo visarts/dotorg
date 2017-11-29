@@ -1,10 +1,9 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 import SectionHeader from 'SharedComponents/sectionHeader/sectionHeader.component';
 import LiteratureHistory from 'SharedComponents/literatureHistory/literatureHistory.component';
 import ListLink from 'SharedComponents/listLink/listLink.component';
-import './literatureHome.component.less';
+import './literatureHome.component.scss';
 
 const LiteratureHome = (props) => {
 
@@ -12,8 +11,8 @@ const LiteratureHome = (props) => {
 
   const authorsList = [];
 
-  for(let index in props.store.authorsData) {
-    let author = props.store.authorsData[index];
+  for(const index in props.store.literature) {
+    const author = props.store.literature[index];
     authorsList.push(
       <ListLink
         key={index}
@@ -43,7 +42,7 @@ const LiteratureHome = (props) => {
         <ul className="authorsList">{authorsList}</ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default LiteratureHome;

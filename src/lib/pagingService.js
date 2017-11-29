@@ -2,7 +2,7 @@ const fs = require('fs-extra');
 const axios =  require('axios');
 
 const pagingService = () => {
-  const allAuthorsFile = 'data/allAuthors.json';
+  const allAuthorsFile = 'data/prod/allAuthors.json';
 
   fs.readJson(allAuthorsFile, (error, result) => {
     const allAuthors = result;
@@ -60,6 +60,6 @@ const pagingService = () => {
     fs.writeJson(allAuthorsFile, allAuthors);
 
   });
-}
+};
 
 pagingService();

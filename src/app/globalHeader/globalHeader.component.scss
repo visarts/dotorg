@@ -1,0 +1,11 @@
+@import 'globals';
+
+$vLinkPadding: 6px;
+
+.header {
+  background-color: $mainThemeColor;
+
+  &.artwork, &.literature {
+    background-color: $secondaryLinkColor;
+  }
+}

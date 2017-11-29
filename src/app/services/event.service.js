@@ -6,9 +6,9 @@ const setSwipeActions = (eventObj) => {
 
   let xDown = null;
   let yDown = null;
-  let rightSwipeHandler = eventObj.rightSwipeHandler;
-  let leftSwipeHandler = eventObj.leftSwipeHandler;
-  let node = eventObj.node;
+  const rightSwipeHandler = eventObj.rightSwipeHandler;
+  const leftSwipeHandler = eventObj.leftSwipeHandler;
+  const node = eventObj.node;
   const handleTouchStart = (evt) => {
     xDown = evt.touches[0].clientX;
     yDown = evt.touches[0].clientY;
@@ -56,9 +56,5 @@ const setSwipeActions = (eventObj) => {
     document.querySelector(node).addEventListener('touchmove', handleTouchMove, false);
   }, 100);
 };
-
-
-
-
 
 export default {setSwipeActions};

@@ -1,0 +1,38 @@
+// $mainThemeColor: #232328;
+// $transparentThemeColor: rgba(35, 35, 40, .9);
+// $transparentTertiaryThemeColor: rgba(52, 54, 58, .9);
+// $secondaryThemeColor: #101114;
+// $tertiaryThemeColor: #34363a;
+// $mainHighlightColor: #101114;
+// $mainTextColor: lighten($mainThemeColor, 70%);
+// $mainLinkColor: darken($mainTextColor, 20%);
+// $darkLinkColor: darken($mainTextColor, 30%);
+// $mainLinkHoverColor: #553377;
+//#663399
+//#2b765d
+
+//palegoldenrod
+// warm grey
+$mainThemeColor: #2a2625;
+$secondaryThemeColor: #181615;
+$tertiaryThemeColor: #363231;
+$activeBackgroundColor: lighten($tertiaryThemeColor, 10%);
+$mainHighlightColor: #181615;
+
+$mainTextColor: lighten($mainThemeColor, 70%);
+$mainLinkColor: darken($mainTextColor, 20%);
+$secondaryLinkColor: #cfbfb0;
+$darkLinkColor: darken($mainTextColor, 30%);
+
+//$mainLinkHoverColor: #005533;
+//$mainLinkHoverColor: #87322C
+$mainLinkHoverColor: rgba(110, 100, 80, .75);
+//$artLinkHoverColor: rgba(40, 72, 40, .75);
+$artLinkHoverColor: rgba(20, 70, 100, .75);
+$litLinkHoverColor: rgba(100, 35, 30, .75);
+//$mainLinkHoverColor: rgba(110, 10, 5, .65);
+$secondaryLinkHoverColor: white;
+
+$transparentThemeColor: rgba(42, 38, 37, .9);
+$transparentTertiaryThemeColor: rgba(54, 50, 49, .9);
+//$transparentLinkHoverColor: rgba(0, 85, 51, .75);

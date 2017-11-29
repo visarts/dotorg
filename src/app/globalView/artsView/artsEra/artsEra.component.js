@@ -1,11 +1,10 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { Glyphicon } from 'react-bootstrap';
 //import historyService from 'Services/history.service';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
 import ListLink from 'SharedComponents/listLink/listLink.component';
 import SectionHeader from 'SharedComponents/sectionHeader/sectionHeader.component';
-import './artsEra.component.less';
+import './artsEra.component.scss';
 
 
 const ArtsEra = (props) => {
@@ -13,18 +12,18 @@ const ArtsEra = (props) => {
   document.title = `Portitude Gallery: artwork from the ${props.appState.routing.currentSubSection} era`;
 
   const getTitles = () => {
-    let artistsList = [];
-    for(let artistKey in props.store.artistsData) {
-      let titlesList = [];
-      let artist = props.store.artistsData[artistKey];
-      for (let i in artist.content) {
-        let title = artist.content[i];
+    const artistsList = [];
+    for(const artistKey in props.store.artwork) {
+      const titlesList = [];
+      const artist = props.store.artwork[artistKey];
+      for (const i in artist.content) {
+        const title = artist.content[i];
         if (artist.era.toLowerCase() === props.appState.routing.currentSubSection) {
           titlesList.push(
             <ListLink
               key={title.fileName}
               thumb={`./content/artwork/${artistKey}/${title.fileName}_sm.jpg`}
-              url={`/arts/g/${artist.era.toLowerCase()}/${artistKey}/${title.fileName}`}
+              url={`/artwork/g/${artist.era.toLowerCase()}/${artistKey}/${title.fileName}`}
               text={title.title}
               other={`${title.date}, ${artist.lname}`} />
           );
@@ -42,7 +41,7 @@ const ArtsEra = (props) => {
       }
     }
     return artistsList;
-  }
+  };
 
   const titles = getTitles();
 
@@ -55,7 +54,7 @@ const ArtsEra = (props) => {
       </div>
       <BackToTop />
     </div>
-  )
+  );
 };
 
 export default ArtsEra;

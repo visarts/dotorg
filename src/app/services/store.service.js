@@ -13,7 +13,7 @@ export default class StoreService {
   }
 
   getStore () {
-    let store = localStorage.getItem('store');
+    const store = localStorage.getItem('store');
     return store ? JSON.parse(store) : {};
   }
 

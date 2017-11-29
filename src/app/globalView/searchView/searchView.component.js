@@ -1,7 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import dataService from 'Services/data.service';
-import './searchView.component.less';
+import './searchView.component.scss';
 
 const SearchView = (props) => {
 
@@ -14,12 +13,12 @@ const SearchView = (props) => {
   //const isAuthor = false;
   const artistList = [];
   const authorList = [];
-  for (let i in artistNames) {
+  for (const i in artistNames) {
     if (artistNames[i].indexOf(searchInput) > -1) {
       artistList.push(artistNames[i]);
     }
   }
-  for (let i in authorNames) {
+  for (const i in authorNames) {
     if (authorNames[i].indexOf(searchInput) > -1) {
       authorList.push(authorNames[i]);
     }
@@ -31,7 +30,7 @@ const SearchView = (props) => {
   let creator = '';
   let works = '';
   if (nameKey) {
-    let dataType = isArtist ? 'artistsData' : 'authorsData';
+    let dataType = isArtist ? 'artwork' : 'literature';
     let keyType = isArtist ? 'creatorKey' : 'creatorKey';
     creator = props[dataType].filter((item, index) => {
       return item[keyType] === nameKey ? item : false;
@@ -42,7 +41,7 @@ const SearchView = (props) => {
   const getAuthorsList = authorList.length ? authorList.map((nameKey, index) => {
     return (
       <li key={index}>
-        <Link to={`literature/authors/${nameKey}`} onClick={() => {props.updateAppState({searchInput: nameKey})}} key={index}>{nameKey}</Link>
+        <Link to={`literature/authors/${nameKey}`} onClick={() => {props.updateAppState({searchInput: nameKey});}} key={index}>{nameKey}</Link>
       </li>
     );
   }) : null;
@@ -50,7 +49,7 @@ const SearchView = (props) => {
   const getArtistsList = artistList.length ? artistList.map((nameKey, index) => {
     return (
       <li key={index}>
-        <Link to={`arts/artists/${nameKey}`} onClick={() => {props.updateAppState({searchInput: nameKey})}} key={index}>{nameKey}</Link>
+        <Link to={`artwork/artists/${nameKey}`} onClick={() => {props.updateAppState({searchInput: nameKey});}} key={index}>{nameKey}</Link>
       </li>
     );
   }) : null;
@@ -74,6 +73,6 @@ const SearchView = (props) => {
         </div>}
     </div>
   );
-}
+};
 
 export default SearchView;

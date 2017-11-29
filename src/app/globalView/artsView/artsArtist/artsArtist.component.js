@@ -1,14 +1,13 @@
-import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import historyService from 'Services/history.service';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
-import './artsArtist.component.less';
+import './artsArtist.component.scss';
 
 
 const ArtsArtist = (props) => {
 
   const artistKey = props.match.params.artist;
-  const artist = props.store.artistsData[artistKey];
+  const artist = props.store.artwork[artistKey];
 
   document.title = `Portitude Gallery: ${artist.fname} ${artist.lname}`;
 
@@ -33,7 +32,7 @@ const ArtsArtist = (props) => {
       return (
         <li className="artThumb" key={item.fileName}>
           <Link
-            to={`/arts/a/${artistKey}/${artist.era}/${item.fileName}`}
+            to={`/artwork/a/${artistKey}/${artist.era}/${item.fileName}`}
             title={item.title}
             key={item.fileName}>
             <img

@@ -1,19 +1,16 @@
-
-import React from 'react';
-import ReactDOM from 'react-dom';
+import './styles/main.scss';
 import { Route, HashRouter as Router } from 'react-router-dom';
+import axios from 'axios';
 import dataService from 'Services/data.service';
 import App from './app/app';
 
-
-let authorsData = dataService.getAllAuthorsData();
-let artistsData = dataService.getAllArtistsData();
-let data = { authorsData, artistsData };
-
-ReactDOM.render((
-  <Router>
-    <Route path="/" render={routeProps => (
-      <App data={data} {...routeProps} />
-    )} />
-  </Router>
-), document.querySelector('app'));
+axios.all([dataService.getAllLiterature(), dataService.getAllArtwork()])
+  .then(axios.spread((literature, artwork) => {
+    ReactDOM.render((
+      <Router>
+        <Route path="/" render={routeProps => (
+          <App data={{literature, artwork}} {...routeProps} />
+        )} />
+      </Router>
+    ), document.querySelector('app'));
+  }));

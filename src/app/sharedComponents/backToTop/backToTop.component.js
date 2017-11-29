@@ -1,6 +1,5 @@
-import React from 'react';
 import { Glyphicon } from 'react-bootstrap';
-import './backToTop.component.less';
+import './backToTop.component.scss';
 
 export default class BackToTop extends React.Component  {
 
@@ -51,4 +50,4 @@ export default class BackToTop extends React.Component  {
       </div>
     );
   }
-};
+}

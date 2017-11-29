@@ -23,14 +23,14 @@ const literatureHistory = localStorage.getItem('litHistory') ? JSON.parse(localS
 const historyLimit = 10;
 
 const setTimestamp = () => {
-  let date = new Date();
+  const date = new Date();
   return date.toLocaleDateString();
 };
 
 const addToHistory = (history) => {
-  let data = history.data;
-  let historyList = history.type === 'artHistory' ? artHistory.historyList : literatureHistory.historyList;
-  let duplicateIndex = getDuplicateIndex(data, historyList);
+  const data = history.data;
+  const historyList = history.type === 'artHistory' ? artHistory.historyList : literatureHistory.historyList;
+  const duplicateIndex = getDuplicateIndex(data, historyList);
   data.timestamp = setTimestamp();
   if (duplicateIndex > -1) {
     historyList.splice(duplicateIndex, 1);
@@ -44,7 +44,7 @@ const addToHistory = (history) => {
 
 const getHistory = (type) => {
   return type === 'artHistory' ? artHistory.historyList : literatureHistory.historyList;
-}
+};
 
 const clearHistory = (type) => {
   localStorage.removeItem(type);
@@ -53,7 +53,7 @@ const clearHistory = (type) => {
 
 const getDuplicateIndex = (obj, arr) => {
   let isDuplicate = -1;
-  for (let i in arr) {
+  for (const i in arr) {
     if (obj.fileName === arr[i].fileName) {
       isDuplicate = i;
       break;

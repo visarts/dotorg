@@ -1,5 +1,4 @@
-import React from 'react';
-import './globalFooter.component.less';
+import './globalFooter.component.scss';
 
 const GlobalFooter = (props) => {
   return (
@@ -9,6 +8,6 @@ const GlobalFooter = (props) => {
       </div>
     </div>
   );
-}
+};
 
 export default GlobalFooter;
