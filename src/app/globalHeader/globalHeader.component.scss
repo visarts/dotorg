@@ -5,6 +5,9 @@ $vLinkPadding: 6px;
 .header {
   background-color: $mainThemeColor;
 
+  @include paddingHorizontal('lg');
+  @include paddingVertical('sm');
+
   &.artwork, &.literature {
     background-color: $secondaryLinkColor;
   }

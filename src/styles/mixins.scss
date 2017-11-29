@@ -1,0 +1,35 @@
+$padding_sm: .5rem;
+$padding_md: 1rem;
+$padding_lg: 2rem;
+
+@mixin paddingHorizontal($size) {
+  @if $size == 'sm' {
+    padding-top: $padding_sm;
+    padding-bottom: $padding_sm;
+  } @else if $size == 'md' {
+    padding-top: $padding_md;
+    padding-bottom: $padding_md;
+  } @else if $size == 'lg' {
+    padding-top: $padding_lg;
+    padding-bottom: $padding_lg;
+  } @else {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+}
+
+@mixin paddingVertical($size) {
+  @if $size == 'sm' {
+    padding-left: $padding_sm;
+    padding-right: $padding_sm;
+  } @else if $size == 'md' {
+    padding-left: $padding_md;
+    padding-right: $padding_md;
+  } @else if $size == 'lg' {
+    padding-left: $padding_lg;
+    padding-right: $padding_lg;
+  } @else {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}

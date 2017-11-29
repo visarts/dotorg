@@ -53,7 +53,8 @@ module.exports = {
           AutoPrefixer({
             browsers: ['last 2 versions', 'ios 8', 'ie 9', 'ie 10', 'ie 11']
           })
-        ]
+        ],
+        context: path.join(ROOT_PATH, './src')
       }
     }),*/
     new HtmlWebpackPlugin({
