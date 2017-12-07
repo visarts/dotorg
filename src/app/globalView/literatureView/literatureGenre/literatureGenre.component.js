@@ -18,7 +18,7 @@ const LiteratureGenre = (props) => {
       const author = props.store.literature[authorKey];
       for (const i in author.content) {
         const title = author.content[i];
-        const pageIndicator = title.genre === 'poetry' ? `${author.lname}, ` : title.pageSizes.length === 1 ? '1 page, ' : title.pageSizes.length + ' pages, ';
+        const pageIndicator = title.genre === 'poetry' ? `${author.lname}, ` : title.pageSizes.length === 1 ? '1 page, ' : `${title.pageSizes.length} pages, `;
         if (title.genre === props.appState.routing.currentSubSection) {
           titlesList.push(
             <ListLink

@@ -11,8 +11,8 @@ const AutoPrefixer = require('autoprefixer');
 module.exports = {
   devtool: 'eval',
   devServer: {
-     contentBase: path.join(ROOT_PATH, 'dist'),
-     hot: true
+     contentBase: path.join(ROOT_PATH, 'dist')
+     //hot: true
   },
   entry: {
     vendors: './src/vendors.js',
@@ -45,8 +45,8 @@ module.exports = {
       { from: 'content', to: 'content'},
       { from: 'data/prod', to: 'data'}
     ]),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NamedModulesPlugin(),
+    //new webpack.HotModuleReplacementPlugin(),
+    //new webpack.NamedModulesPlugin(),
     /*new webpack.LoaderOptionsPlugin({
       options: {
         postcss: [

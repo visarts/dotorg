@@ -20,7 +20,7 @@ const LiteratureAuthor = (props) => {
       tales: []
     };
     author.content.map((title, index) => {
-      const pageIndicator = title.genre === 'poetry' ? `${author.lname}, ` : title.pageSizes.length === 1 ? '1 page, ' : title.pageSizes.length + ' pages, ';
+      const pageIndicator = title.genre === 'poetry' ? `${author.lname}, ` : title.pageSizes.length === 1 ? '1 page, ' : `${title.pageSizes.length} pages, `;
       const titleLink = (
         <ListLink
           key={title.fileName}

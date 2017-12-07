@@ -14,6 +14,8 @@ html {
 }
 
 body {
+  background-color: $tertiaryThemeColor;
+  color: $mainTextColor;
   margin: 0rem;
   padding: 0rem;
   font-size: 1.6rem;
@@ -27,15 +29,22 @@ h1 {
   margin: 0rem 0rem 0rem 1rem;
 }
 
-:global {
-  .portitude {
+li {
+  list-style: none;
+}
 
-    &.artwork {
+.portitude {
 
-    }
+  &.artwork {
 
-    &.literature {
-
-    }
   }
+
+  &.literature {
+
+  }
+}
+
+.globalView {
+  @include paddingHorizontal('sm');
+  @include paddingVertical('lg');
 }

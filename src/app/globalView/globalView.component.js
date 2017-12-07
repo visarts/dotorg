@@ -8,7 +8,7 @@ import TestView from './testView/testView.component';
 const GlobalView = (props) => {
 
   return (
-    <div className={`globalView ${props.appState.routing.currentSection === '' ? '' : 'subPage'}`}>
+    <div className="globalView">
       <div className="globalContainer">
         <Switch location={props.location} key={props.location.key}>
           <Route exact path='/' render={routeProps => (
