@@ -1,0 +1,141 @@
+{
+  "dickens": {
+    "fname": "Charles",
+    "lname": "Dickens",
+    "bio": "Charles John Huffam Dickens (7 February 1812 – 9 June 1870) was an English writer and social critic. He created some of the world's best-known fictional characters and is regarded by many as the greatest novelist of the Victorian era. His works enjoyed unprecedented popularity during his lifetime, and by the 20th century critics and scholars had recognised him as a literary genius. His novels and short stories enjoy lasting popularity.",
+    "content": [
+      {
+        "title": "A Flight",
+        "date": "1851",
+        "fileName": "dickens-a-flight-1851",
+        "genre": "shorts"
+      },
+      {
+        "title": "A Walk in a Workhouse",
+        "date": "1850",
+        "fileName": "dickens-a-walk-in-a-workhouse-1850",
+        "genre": "nonfiction"
+      },
+      {
+        "title": "Bill-Sticking",
+        "date": "1851",
+        "fileName": "dickens-bill-sticking-1851",
+        "genre": "shorts"
+      },
+      {
+        "title": "Christmas at Fezziwig's Warehouse",
+        "date": "1843",
+        "fileName": "dickens-christmas-at-fezziwigs-warehouse-1843",
+        "genre": "shorts"
+      },
+      {
+        "title": "Down with the Tide",
+        "date": "1853",
+        "fileName": "dickens-down-with-the-tide-1853",
+        "genre": "shorts"
+      },
+      {
+        "title": "Familiar Epistle from a Parent to a Child Aged Two Years and Two Months",
+        "date": "1839",
+        "fileName": "dickens-familiar-epistle-from-a-parent-to-a-child-1839",
+        "genre": "shorts"
+      },
+      {
+        "title": "Going Into Society",
+        "date": "1858",
+        "fileName": "dickens-going-into-society-1858",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Lamplighter",
+        "date": "1838",
+        "fileName": "dickens-lamplighter-1838",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Lost Arctic Voyagers",
+        "date": "1854",
+        "fileName": "dickens-lost-arctic-voyagers-1854",
+        "genre": "nonfiction"
+      },
+      {
+        "title": "Lying Awake",
+        "date": "1852",
+        "fileName": "dickens-lying-awake-1852",
+        "genre": "shorts"
+      },
+      {
+        "title": "Mugby Junction",
+        "date": "1866",
+        "fileName": "dickens-mugby-junction-1866",
+        "genre": "shorts"
+      },
+      {
+        "title": "Nobody's Story",
+        "date": "1853",
+        "fileName": "dickens-nobodys-story-1853",
+        "genre": "shorts"
+      },
+      {
+        "title": "On Duty with Inspector Field",
+        "date": "1851",
+        "fileName": "dickens-on-duty-with-inspector-field-1851",
+        "genre": "nonfiction"
+      },
+      {
+        "title": "On Grief, and How to Heal a Mourning Heart",
+        "date": "1862",
+        "fileName": "dickens-on-grief-and-how-to-heal-a-mourning-heart-1862",
+        "genre": "nonfiction"
+      },
+      {
+        "title": "Our School",
+        "date": "1851",
+        "fileName": "dickens-our-school-1851",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Perils of Certain English Prisoners",
+        "date": "1857",
+        "fileName": "dickens-perils-of-certain-english-prisoners-1857",
+        "genre": "shorts"
+      },
+      {
+        "title": "The Poor Relation's Story",
+        "date": "1852",
+        "fileName": "dickens-poor-relations-story-1852",
+        "genre": "shorts"
+      },
+      {
+        "title": "Somebody's Luggage",
+        "date": "1862",
+        "fileName": "dickens-somebodys-luggage-1862",
+        "genre": "shorts"
+      },
+      {
+        "title": "To be Read at Dusk",
+        "date": "1852",
+        "fileName": "dickens-to-be-read-at-dusk-1852",
+        "genre": "shorts"
+      },
+      {
+        "title": "What Christmas is as We Grow Older",
+        "date": "1851",
+        "fileName": "dickens-what-christmas-is-as-we-grow-older-1851",
+        "genre": "nonfiction"
+      },
+      {
+        "title": "What is Sensational?",
+        "date": "1867",
+        "fileName": "dickens-what-is-sensational-1867",
+        "genre": "nonfiction"
+      },
+      {
+        "title": "The Wreck of the Golden Mary",
+        "date": "1856",
+        "fileName": "dickens-wreck-of-the-golden-mary-1856",
+        "genre": "shorts"
+      }
+    ]
+  }
+}

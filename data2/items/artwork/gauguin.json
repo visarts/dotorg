@@ -1,0 +1,110 @@
+{
+  "gauguin": {
+    "fname": "Paul",
+    "lname": "Gauguin",
+    "bio": "Eugène Henri Paul Gauguin (7 June 1848 – 8 May 1903) was a French post-Impressionist artist. Underappreciated until after his death, Gauguin is now recognized for his experimental use of color and Synthetist style that were distinctly different from Impressionism. His work was influential to the French avant-garde and many modern artists, such as Pablo Picasso and Henri Matisse.",
+    "era": "Post-Impressionism",
+    "content": [
+      {
+        "title": "A Clearing",
+        "date": "1874",
+        "fileName": "gauguin-clearing-1874"
+      },
+      {
+        "title": "Blue Barge",
+        "date": "1882",
+        "fileName": "gauguin-blue-barge-1882"
+      },
+      {
+        "title": "Basket of Flowers",
+        "date": "1884",
+        "fileName": "gauguin-basket-of-flowers-1884"
+      },
+      {
+        "title": "Bare Trees",
+        "date": "1885",
+        "fileName": "gauguin-bare-trees-1885"
+      },
+      {
+        "title": "Boy by the Water",
+        "date": "1885",
+        "fileName": "gauguin-boy-by-the-water-1885"
+      },
+      {
+        "title": "Lilac Bouquet",
+        "date": "1885",
+        "fileName": "gauguin-lilac-bouquet-1885"
+      },
+      {
+        "title": "Rocky Coast",
+        "date": "1886",
+        "fileName": "gauguin-rocky-coast-1886"
+      },
+      {
+        "title": "By the Seashore",
+        "date": "1887",
+        "fileName": "gauguin-by-the-seashore-1887"
+      },
+      {
+        "title": "Huts Under the Trees",
+        "date": "1887",
+        "fileName": "gauguin-huts-under-the-trees-1887"
+      },
+      {
+        "title": "Apples and Bowl",
+        "date": "1888",
+        "fileName": "gauguin-apples-and-bowl-1888"
+      },
+      {
+        "title": "Blue Trees",
+        "date": "1888",
+        "fileName": "gauguin-blue-trees-1888"
+      },
+      {
+        "title": "Haymaking",
+        "date": "1888",
+        "fileName": "gauguin-haymaking-1888"
+      },
+      {
+        "title": "Madame Roulin",
+        "date": "1888",
+        "fileName": "gauguin-madame-roulin-1888"
+      },
+      {
+        "title": "Night Cafe at Arles",
+        "date": "1888",
+        "fileName": "gauguin-night-cafe-at-arles-1888"
+      },
+      {
+        "title": "Among the Lillies",
+        "date": "1889",
+        "fileName": "gauguin-among-the-lillies-1889"
+      },
+      {
+        "title": "Flutist on the Cliffs",
+        "date": "1889",
+        "fileName": "gauguin-flutist-on-the-cliffs-1889"
+      },
+      {
+        "title": "Still Life with Fan",
+        "date": "1889",
+        "fileName": "gauguin-still-life-with-fan-1889"
+      },
+      {
+        "title": "Tahitian Woman Bathing",
+        "date": "1892",
+        "fileName": "gauguin-tahitian-woman-bathing-1892"
+      },
+      {
+        "title": "Farm in Brittany",
+        "date": "1894",
+        "fileName": "gauguin-farm-in-brittany-1894"
+      },
+      {
+        "title": "Tahitian Landscape",
+        "date": "1897",
+        "fileName": "gauguin-tahitian-landscape-1897"
+      }
+    ]
+  }
+}

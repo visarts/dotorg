@@ -1,4 +1,5 @@
 import { Route, Link } from 'react-router-dom';
+import { Helmet } from "react-helmet";
 import historyService from 'Services/history.service';
 import BackToTop from 'SharedComponents/backToTop/backToTop.component';
 import './artsArtist.component.scss';
@@ -8,8 +9,6 @@ const ArtsArtist = (props) => {
 
   const artistKey = props.match.params.artist;
   const artist = props.store.artwork[artistKey];
-
-  document.title = `Portitude Gallery: ${artist.fname} ${artist.lname}`;
 
   /*const getImages = () => {
     const imageList = [];
@@ -47,6 +46,9 @@ const ArtsArtist = (props) => {
 
   return (
     <div className="artsArtist">
+      <Helmet>
+        <title>{`Portitude Gallery: ${artist.fname} ${artist.lname}`}</title>
+      </Helmet>
       <h1 className="artsArtistTitle">
         <span className="fname">{`${artist.fname} `}</span>
         <span className="lname">{artist.lname}</span>

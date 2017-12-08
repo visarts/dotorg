@@ -1,0 +1,150 @@
+{
+  "bouguereau": {
+    "fname": "William",
+    "lname": "Bouguereau",
+    "bio": "William-Adolphe Bouguereau (November 30, 1825 – August 19, 1905) was a French academic painter and traditionalist. In his realistic genre paintings he used mythological themes, making modern interpretations of classical subjects, with an emphasis on the female human body. During his life he enjoyed significant popularity in France and the United States, was given numerous official honors, and received top prices for his work",
+    "era": "Academic",
+    "content": [
+      {
+        "title": "Dante and Virgil in Hell",
+        "date": "1850",
+        "fileName": "bouguereau-dante-and-virgil-in-hell-1850"
+      },
+      {
+        "title": "Fraternal Love",
+        "date": "1851",
+        "fileName": "bouguereau-fraternal-love-1851"
+      },
+      {
+        "title": "The Bather",
+        "date": "1870",
+        "fileName": "bouguereau-bather-1870"
+      },
+      {
+        "title": "Italian Girl Drawing Water",
+        "date": "1871",
+        "fileName": "bouguereau-italian-girl-drawing-water-1871"
+      },
+      {
+        "title": "Nymphs and Satyr",
+        "date": "1873",
+        "fileName": "bouguereau-nymphs-and-satyr-1873"
+      },
+      {
+        "title": "At the Edge of the Brook (1)",
+        "date": "1875",
+        "fileName": "bouguereau-at-the-edge-of-the-brook-1875"
+      },
+      {
+        "title": "At the Edge of the Brook (2)",
+        "date": "1879",
+        "fileName": "bouguereau-at-the-edge-of-the-brook-1879"
+      },
+      {
+        "title": "Nymphaeum",
+        "date": "1878",
+        "fileName": "bouguereau-nymphaeum-1878"
+      },
+      {
+        "title": "A Young Girl Defending Herself Against Eros",
+        "date": "1880",
+        "fileName": "bouguereau-young-girl-defending-herself-against-eros-1880"
+      },
+      {
+        "title": "Flagellation of Our Lord Jesus Christ",
+        "date": "1880",
+        "fileName": "bouguereau-flagellation-of-our-lord-jesus-christ-1880"
+      },
+      {
+        "title": "Nut Gatherers",
+        "date": "1882",
+        "fileName": "bouguereau-nut-gatherers-1882"
+      },
+      {
+        "title": "Bouguereau Biblis",
+        "date": "1884",
+        "fileName": "bouguereau-bouguereau-biblis-1884"
+      },
+      {
+        "title": "Lost Pleiad",
+        "date": "1884",
+        "fileName": "bouguereau-lost-pleiad-1884"
+      },
+      {
+        "title": "Woman with Shell",
+        "date": "1885",
+        "fileName": "bouguereau-woman-with-shell-1885"
+      },
+      {
+        "title": "Young Girl Going to Fountain",
+        "date": "1885",
+        "fileName": "bouguereau-young-girl-going-to-fountain-1885"
+      },
+      {
+        "title": "Thirst",
+        "date": "1886",
+        "fileName": "bouguereau-thirst-1886"
+      },
+      {
+        "title": "Bohemian",
+        "date": "1890",
+        "fileName": "bouguereau-bohemian-1890"
+      },
+      {
+        "title": "A Private Vocation",
+        "date": "1890",
+        "fileName": "bouguereau-private-vacation-1890"
+      },
+      {
+        "title": "Penelope",
+        "date": "1891",
+        "fileName": "bouguereau-penelope-1891"
+      },
+      {
+        "title": "Youth",
+        "date": "1893",
+        "fileName": "bouguereau-youth-1893"
+      },
+      {
+        "title": "Not too Much to Carry",
+        "date": "1895",
+        "fileName": "bouguereau-not-too-much-to-carry-1895"
+      },
+      {
+        "title": "Spring Breeze",
+        "date": "1895",
+        "fileName": "bouguereau-spring-breeze-1895"
+      },
+      {
+        "title": "A Calling",
+        "date": "1896",
+        "fileName": "bouguereau-calling-1896"
+      },
+      {
+        "title": "Wave",
+        "date": "1896",
+        "fileName": "bouguereau-wave-1896"
+      },
+      {
+        "title": "Admiration",
+        "date": "1897",
+        "fileName": "bouguereau-admiration-1897"
+      },
+      {
+        "title": "Tricoeause",
+        "date": "1897",
+        "fileName": "bouguereau-tricoeause-1897"
+      },
+      {
+        "title": "Head of a Young Girl",
+        "date": "1898",
+        "fileName": "bouguereau-head-of-a-young-girl-1898"
+      },
+      {
+        "title": "A Childhood Idyll",
+        "date": "1900",
+        "fileName": "bouguereau-childhood-idyll-1900"
+      }
+    ]
+  }
+}

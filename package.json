@@ -52,6 +52,7 @@
     "merge-jsons-webpack-plugin": "^1.0.11",
     "node-sass": "^4.7.2",
     "postcss-loader": "^2.0.9",
+    "react-helmet": "^5.2.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.17.0",
     "webpack": "^2.7.0",

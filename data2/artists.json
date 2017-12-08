@@ -1,0 +1,152 @@
+{
+  "artists": [
+    {
+      "fname": "Fname",
+      "lname": "Lname",
+      "creatorKey": "creatorkey",
+      "bio": "This is an artist for testing",
+      "era": "Impressionism"
+    },
+    {
+      "fname": "William",
+      "lname": "Bougeureau",
+      "creatorKey": "bouguereau",
+      "bio": "Much has been said of Bougeureau which cannot be detailed here.",
+      "era": "Academic"
+    },
+    {
+      "fname": "Mary",
+      "lname": "Cassatt",
+      "creatorKey": "cassatt",
+      "bio": "Much has been said of Cassatt which cannot be detailed here.",
+      "era": "Impressionism"
+    },
+    {
+      "fname": "Paul",
+      "lname": "Cezanne",
+      "creatorKey": "cezanne",
+      "bio": "Much has been said of Cezanne which cannot be detailed here.",
+      "era": "Post-Impressionism"
+    },
+    {
+      "fname": "Edgar",
+      "lname": "Degas",
+      "creatorKey": "degas",
+      "bio": "Much has been said of Degas which cannot be detailed here.",
+      "era": "Impressionism"
+    },
+    {
+      "fname": "Paul",
+      "lname": "Gauguin",
+      "creatorKey": "gauguin",
+      "bio": "Much has been said of Gaugin which cannot be detailed here.",
+      "era": "Post-Impressionism"
+    },
+
+    {
+      "fname": "Jean-L%C3%A9on",
+      "lname": "G%C3%A9r%C3%B4me",
+      "creatorKey": "gerome",
+      "bio": "Much has been said of Gérôme which cannot be detailed here.",
+      "era": "Academic"
+    },
+    {
+      "fname": "William",
+      "lname": "Harnett",
+      "creatorKey": "harnett",
+      "bio": "Much has been said of Harnett which cannot be detailed here.",
+      "era": "Realism"
+    },
+    {
+      "fname": "Buonarroti",
+      "lname": "Michelangelo",
+      "creatorKey": "michelangelo",
+      "bio": "Much has been said of Michelangelo which cannot be detailed here.",
+      "era": "Renaissance"
+    },
+    {
+      "fname": "Claude",
+      "lname": "Monet",
+      "creatorKey": "monet",
+      "bio": "Much has been said of Monet which cannot be detailed here.",
+      "era": "Impressionism"
+    },
+    {
+      "fname": "Georgia",
+      "lname": "O'Keeffe",
+      "creatorKey": "okeeffe",
+      "bio": "Much has been said of O'Keeffe which cannot be detailed here.",
+      "era": "Modernism"
+    },
+    {
+      "fname": "",
+      "lname": "Raphael Sanzio da Urbino",
+      "creatorKey": "raphael",
+      "bio": "Much has been said of Raphael which cannot be detailed here.",
+      "era": "Renaissance"
+    },
+    {
+      "fname": "",
+      "lname": "Rembrandt",
+      "creatorKey": "rembrandt",
+      "bio": "Much has been said of Rembrandt which cannot be detailed here.",
+      "era": "Baroque"
+    },
+    {
+      "fname": "Auguste",
+      "lname": "Renoir",
+      "creatorKey": "renoir",
+      "bio": "Much has been said of Renoir which cannot be detailed here.",
+      "era": "Impressionism"
+    },
+    {
+      "fname": "Dante",
+      "lname": "Rossetti",
+      "creatorKey": "rossetti",
+      "bio": "Much has been said of Rossetti which cannot be detailed here.",
+      "era": "Pre-Raphaelite"
+    },
+    {
+      "fname": "Henri",
+      "lname": "Rousseau",
+      "creatorKey": "rousseau",
+      "bio": "Much has been said of Rousseau which cannot be detailed here.",
+      "era": "Post-Impressionism"
+    },
+    {
+      "fname": "John Singer",
+      "lname": "Sargent",
+      "creatorKey": "sargent",
+      "bio": "Much has been said of Sargent which cannot be detailed here.",
+      "era": "Realism"
+    },
+    {
+      "fname": "Georges",
+      "lname": "Seurat",
+      "creatorKey": "seurat",
+      "bio": "Much has been said of Seurat which cannot be detailed here.",
+      "era": "Post-Impressionism"
+    },
+    {
+      "fname": "Vincent",
+      "lname": "Van Gogh",
+      "creatorKey": "vangogh",
+      "bio": "Much has been said of Van Gogh which cannot be detailed here.",
+      "era": "Post-Impressionism"
+    },
+    {
+      "fname": "Friedrich",
+      "lname": "Von Amerling",
+      "creatorKey": "vonamerling",
+      "bio": "Much has been said of Von Amerling which cannot be detailed here.",
+      "era": "Academic"
+    },
+    {
+      "fname": "John William",
+      "lname": "Waterhouse",
+      "creatorKey": "waterhouse",
+      "bio": "Much has been said of Waterhouse which cannot be detailed here.",
+      "era": "Pre-Raphaelite"
+    }
+  ]
+}
