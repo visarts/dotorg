@@ -1,5 +1,4 @@
 const fs = require('fs-extra');
-const axios =  require('axios');
 
 const pagingService = () => {
   const allAuthorsFile = 'data/prod/allAuthors.json';
@@ -7,10 +6,10 @@ const pagingService = () => {
   fs.readJson(allAuthorsFile, (error, result) => {
     const allAuthors = result;
 
-    for(let authorIndex in allAuthors) {
+    for(const authorIndex in allAuthors) {
       const author = allAuthors[authorIndex];
 
-      for (let contentIndex in author.content) {
+      for (const contentIndex in author.content) {
         const item = author.content[contentIndex];
 
         if (!item.pageSizes) {

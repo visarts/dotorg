@@ -76,11 +76,15 @@ env:
 #    # e.g. react (must run `npm install eslint-plugin-react` first)
 #    # - react
 
-
+#plugins:
+    #- react
 # extends:
 
 #    # - eslint:recommended                # enables a subset of core rules that report common problems, which have a check mark on the rules page
 #    # - eslint:all                        # enable all core rules in the currently installed version of ESLint
+#extends:
+    #- "eslint:recommended"
+    #- "plugin:react/recommended"
 
 
 rules:
@@ -96,6 +100,7 @@ rules:
 
     ######## Possible Errors ########
 
+    # prop-types: 0
     for-direction: 0                     # enforce �for� loop update clause moving the counter in the right direction.
     getter-return: 0                     # enforce return statements in getters
     no-await-in-loop: 0                  # disallow await inside of loops
@@ -223,7 +228,7 @@ rules:
     no-undef: 0                          # disallow the use of undeclared variables unless mentioned in /*global */ comments
     no-undef-init: 0                     # disallow initializing variables to undefined
     no-undefined: 0                      # disallow the use of undefined as an identifier
-    no-unused-vars: 0                    # disallow unused variables
+    no-unused-vars: 1                    # disallow unused variables
     no-use-before-define: 0              # disallow the use of variables before they are defined
 
 

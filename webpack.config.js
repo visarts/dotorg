@@ -5,8 +5,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const MergeJsonWebpackPlugin = require('merge-jsons-webpack-plugin');
-const AutoPrefixer = require('autoprefixer');
+//const MergeJsonWebpackPlugin = require('merge-jsons-webpack-plugin');
+//const AutoPrefixer = require('autoprefixer');
 
 module.exports = {
   devtool: 'eval',
@@ -43,7 +43,8 @@ module.exports = {
       { from: 'src/images', to: 'images'},
       { from: 'favicon.ico', to: '' },
       { from: 'content', to: 'content'},
-      { from: 'data/prod', to: 'data'}
+      { from: 'data/prod', to: 'data'},
+      { from: 'data/prod2', to: 'data2'}
     ]),
     //new webpack.HotModuleReplacementPlugin(),
     //new webpack.NamedModulesPlugin(),

@@ -15,7 +15,7 @@ export default class App extends React.Component {
     this.store = this.storeService.getStore();
     this.updateAppState = this.updateAppState.bind(this);
     this.currentLocation = location.hash.slice(1);
-
+console.log(props);
     this.state = {
       routing: dataService.getCurrentRouting(this.currentLocation),
       getTrimmedURI: this.getTrimmedURI.bind(this)
@@ -29,7 +29,6 @@ export default class App extends React.Component {
   // allows for routing changes in modals and the like when origin is unknown
   getTrimmedURI (num) {
     if (num) {
-      const numb = parseInt(num);
       const params = location.hash.slice(2).split('/');
       for (let i = 0; i < num; i++) {
         params.pop();

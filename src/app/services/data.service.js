@@ -44,6 +44,20 @@ const getAllArtwork = () => {
     });
 };
 
+const getCollections = (type) => {
+  return axios.get(`./data2/${type}-collections.json`)
+    .then((results) => {
+      return results.data;
+    });
+};
+
+const getItems = (type) => {
+  return axios.get(`./data2/${type}-items.json`)
+    .then((results) => {
+      return results.data;
+    });
+};
+
 const getHTMLContent = (creatorKey, currentWorkKey) => {
   return axios.get(`./content/literature/${creatorKey}/${currentWorkKey}.html`)
     .then((results) => {
@@ -113,6 +127,8 @@ const dataService = {
   getArtistNames,
   getAllLiterature,
   getAllArtwork,
+  getCollections,
+  getItems,
   getHTMLContent,
   getCurrentRouting
 };
