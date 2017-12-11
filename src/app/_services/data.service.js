@@ -20,7 +20,7 @@ import axios from 'axios';
   return artistsData.artists;
 };*/
 
-const getArtistNames = () => {
+/*const getArtistNames = () => {
   const namesData = require('creatorKeys.json');
   return namesData.artists;
 };
@@ -42,17 +42,17 @@ const getAllArtwork = () => {
     .then((results) => {
       return results.data;
     });
-};
+};*/
 
 const getCollections = (type) => {
-  return axios.get(`./data2/${type}-collections.json`)
+  return axios.get(`./data/${type}-collections.json`)
     .then((results) => {
       return results.data;
     });
 };
 
 const getItems = (type) => {
-  return axios.get(`./data2/${type}-items.json`)
+  return axios.get(`./data/${type}-items.json`)
     .then((results) => {
       return results.data;
     });
@@ -123,10 +123,10 @@ const getCurrentRouting = (currentRoute) => {
 };
 
 const dataService = {
-  getAuthorNames,
-  getArtistNames,
-  getAllLiterature,
-  getAllArtwork,
+  //getAuthorNames,
+  //getArtistNames,
+  //getAllLiterature,
+  //getAllArtwork,
   getCollections,
   getItems,
   getHTMLContent,

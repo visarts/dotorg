@@ -43,8 +43,7 @@ module.exports = {
       { from: 'src/images', to: 'images'},
       { from: 'favicon.ico', to: '' },
       { from: 'content', to: 'content'},
-      { from: 'data/prod', to: 'data'},
-      { from: 'data/prod2', to: 'data2'}
+      { from: 'data/prod', to: 'data'}
     ]),
     //new webpack.HotModuleReplacementPlugin(),
     //new webpack.NamedModulesPlugin(),
@@ -160,7 +159,7 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.jsx', '.json', '.scss', '.html'],
     alias:{
-      Services: path.resolve(ROOT_PATH, 'src/app/services'),
+      Services: path.resolve(ROOT_PATH, 'src/app/_services'),
       Literature: path.resolve(ROOT_PATH, 'content/literature'),
       Artwork: path.resolve(ROOT_PATH, 'content/artwork'),
       SharedComponents: path.resolve(ROOT_PATH, 'src/app/sharedComponents'),

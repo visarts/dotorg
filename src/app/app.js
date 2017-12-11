@@ -1,25 +1,32 @@
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import dataService from 'Services/data.service';
-import StoreService from 'Services/store.service';
-import GlobalHeader from './globalHeader/globalHeader.component';
-import GlobalNav from './globalNav/globalNav.component';
-import GlobalFooter from './globalFooter/globalFooter.component';
-import GlobalView from './globalView/globalView.component';
+import storeService from 'Services/store.service';
+//import GlobalHeader from './globalHeader/globalHeader.component';
+//import GlobalNav from './globalNav/globalNav.component';
+//import GlobalFooter from './globalFooter/globalFooter.component';
+//import GlobalView from './globalView/globalView.component';
+
+import GlobalHeader from './_global/header/globalHeader.component';
+import GlobalNav from './_global/navigation/globalNav.component';
+import GlobalFooter from './_global/footer/globalFooter.component';
+
+import Home from './home/home.component';
+import ArtHome from './artwork/artHome.component';
+import LitHome from './literature/litHome.component';
 
 export default class App extends React.Component {
 
   constructor (props) {
     super(props);
-    this.storeService = new StoreService();
-    this.storeService.setStore(this.props.data);
-    this.store = this.storeService.getStore();
+    storeService.setStore(this.props.data);
+    this.store = storeService.getStore();
     this.updateAppState = this.updateAppState.bind(this);
     this.currentLocation = location.hash.slice(1);
 console.log(props);
-    this.state = {
+    /*this.state = {
       routing: dataService.getCurrentRouting(this.currentLocation),
       getTrimmedURI: this.getTrimmedURI.bind(this)
-    };
+    };*/
   }
 
   updateAppState (newState) {
@@ -27,7 +34,7 @@ console.log(props);
   }
 
   // allows for routing changes in modals and the like when origin is unknown
-  getTrimmedURI (num) {
+  /*getTrimmedURI (num) {
     if (num) {
       const params = location.hash.slice(2).split('/');
       for (let i = 0; i < num; i++) {
@@ -36,19 +43,19 @@ console.log(props);
       const newParams = params.join('/');
       return newParams;
     }
-  }
+  }*/
 
 
   // this will update when the route changes and set state with new params
   componentWillReceiveProps (nextProps) {
     const updatedLocation = nextProps.location.pathname;
     if (this.currentLocation !== updatedLocation) {
-      this.setState({routing: dataService.getCurrentRouting(updatedLocation)}, () => {
+      /*this.setState({routing: dataService.getCurrentRouting(updatedLocation)}, () => {
         this.currentLocation = updatedLocation;
         if (!this.state.routing.currentWork) {
           window.scroll(0, 0);
         }
-      });
+      });*/
     }
   }
 
@@ -74,28 +81,27 @@ console.log(props);
       refactor history display into carousel
 
     */
-
+    // className={`portitude ${this.state.routing.currentSection}`}
     return (
-      <div className={`portitude ${this.state.routing.currentSection}`}>
-        <GlobalHeader
-          store={this.store}
-          appState={this.state}
-          updateAppState={this.updateAppState} />
-        <Route path="/" render={routeProps => (
-          <GlobalView
-            store={this.store}
-            appState={this.state}
-            updateAppState={this.updateAppState}
-            {...routeProps} />
-        )}/>
-        <GlobalNav
-          store={this.store}
-          appState={this.state}
-          updateAppState={this.updateAppState} />
-        <GlobalFooter
-          store={this.store}
-          appState={this.state}
-          updateAppState={this.updateAppState} />
+      <div>
+        <GlobalHeader store={this.store} />
+        <GlobalNav store={this.store} />
+        <Route exact path="/" render={routeProps => {
+          return (
+            <Home store={this.store} />
+          );
+        }} />
+        <Route exact path="/artwork" render={routeProps => {
+          return (
+            <ArtHome store={this.store} />
+          );
+        }} />
+        <Route exact path="/literature" render={routeProps => {
+          return (
+            <LitHome store={this.store} />
+          );
+        }} />
+        <GlobalFooter store={this.store} />
       </div>
     );
   }

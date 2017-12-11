@@ -126,7 +126,7 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.jsx', '.json', '.scss', '.html'],
     alias:{
-      Services: path.resolve(ROOT_PATH, 'src/app/services'),
+      Services: path.resolve(ROOT_PATH, 'src/app/_services'),
       Literature: path.resolve(ROOT_PATH, 'content/literature'),
       Artwork: path.resolve(ROOT_PATH, 'content/artwork'),
       SharedComponents: path.resolve(ROOT_PATH, 'src/app/sharedComponents'),

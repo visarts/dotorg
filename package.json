@@ -1,7 +1,7 @@
 {
   "name": "portitude",
   "version": "0.0.1",
-  "description": "A place for the arts",
+  "description": "A place for the arts and literature",
   "main": "app.js",
   "keywords": [
     "arts",
@@ -14,8 +14,7 @@
   "scripts": {
     "start": "webpack && webpack-dev-server",
     "build": "npm run merge && npm run paging && webpack --config webpack.config.prod.js",
-    "merge": "node src/lib/mergingService.js",
-    "merge2": "node lib/mergingService2.js",
+    "merge": "node lib/mergingService.js",
     "paging": "node src/lib/pagingService.js"
   },
   "author": "Brendan Best",

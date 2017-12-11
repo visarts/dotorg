@@ -18,7 +18,7 @@ export default class BackToTop extends React.Component  {
     window.removeEventListener('scroll', this.setScroll);
   }
 
-  setScroll (event) {
+  setScroll () {
     document.querySelector('.backToTop').style.visibility = "hidden";
     // Clear our timeout throughout the scroll
     window.clearTimeout( this.scrollTimer );
@@ -32,7 +32,7 @@ export default class BackToTop extends React.Component  {
     }, 100);
   }
 
-  goBackToTop (event) {
+  goBackToTop () {
     document.querySelector('html').scrollTop = 0;
     /*var timerID = setInterval(function() {
     if( window.pageYOffset <= 500 )
