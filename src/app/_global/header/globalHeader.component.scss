@@ -11,4 +11,8 @@ $vLinkPadding: 6px;
   &.artwork, &.literature {
     background-color: $secondaryLinkColor;
   }
+
+  a {
+    color: white;
+  }
 }

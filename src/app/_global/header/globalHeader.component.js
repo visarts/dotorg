@@ -4,7 +4,9 @@ import './globalHeader.component.scss';
 const GlobalHeader = (props) => {
   return (
     <div className="header">
-      <h1>Portitude</h1>
+      <Link to="/">
+        <h1>Portitude</h1>
+      </Link>
     </div>
   );
 };

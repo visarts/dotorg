@@ -1,32 +1,27 @@
 import { Route, Switch } from 'react-router-dom';
 import dataService from 'Services/data.service';
 import storeService from 'Services/store.service';
-//import GlobalHeader from './globalHeader/globalHeader.component';
-//import GlobalNav from './globalNav/globalNav.component';
-//import GlobalFooter from './globalFooter/globalFooter.component';
-//import GlobalView from './globalView/globalView.component';
 
 import GlobalHeader from './_global/header/globalHeader.component';
 import GlobalNav from './_global/navigation/globalNav.component';
 import GlobalFooter from './_global/footer/globalFooter.component';
 
-import Home from './home/home.component';
-import ArtHome from './artwork/artHome.component';
-import LitHome from './literature/litHome.component';
+import HomeContainer from './home/home.container';
+
+import ArtworkIndex from './artwork/artwork.index';
+
 
 export default class App extends React.Component {
 
   constructor (props) {
     super(props);
     storeService.setStore(this.props.data);
-    this.store = storeService.getStore();
+    this.globalStore = storeService.getStore();
     this.updateAppState = this.updateAppState.bind(this);
     this.currentLocation = location.hash.slice(1);
-console.log(props);
-    /*this.state = {
-      routing: dataService.getCurrentRouting(this.currentLocation),
-      getTrimmedURI: this.getTrimmedURI.bind(this)
-    };*/
+    this.state = {
+      routing: dataService.getRoutingState(this.currentLocation)
+    };
   }
 
   updateAppState (newState) {
@@ -50,12 +45,9 @@ console.log(props);
   componentWillReceiveProps (nextProps) {
     const updatedLocation = nextProps.location.pathname;
     if (this.currentLocation !== updatedLocation) {
-      /*this.setState({routing: dataService.getCurrentRouting(updatedLocation)}, () => {
+      this.setState({routing: dataService.getRoutingState(updatedLocation)}, () => {
         this.currentLocation = updatedLocation;
-        if (!this.state.routing.currentWork) {
-          window.scroll(0, 0);
-        }
-      });*/
+      });
     }
   }
 
@@ -82,26 +74,36 @@ console.log(props);
 
     */
     // className={`portitude ${this.state.routing.currentSection}`}
+    // console.log(this.globalStore);
     return (
-      <div>
-        <GlobalHeader store={this.store} />
-        <GlobalNav store={this.store} />
-        <Route exact path="/" render={routeProps => {
-          return (
-            <Home store={this.store} />
-          );
-        }} />
-        <Route exact path="/artwork" render={routeProps => {
-          return (
-            <ArtHome store={this.store} />
-          );
-        }} />
-        <Route exact path="/literature" render={routeProps => {
-          return (
-            <LitHome store={this.store} />
-          );
-        }} />
-        <GlobalFooter store={this.store} />
+      <div className="portitude">
+        <GlobalHeader
+          globalState={this.state}
+          globalStore={this.globalStore} />
+        <GlobalNav
+          globalState={this.state}
+          globalStore={this.globalStore} />
+        <Route exact path="/" render={routeProps => (
+          <HomeContainer
+            globalStore={this.globalStore}
+            globalState={this.state}
+            {...routeProps} />
+        )} />
+        <Route path="/artwork" render={routeProps => (
+          <ArtworkIndex
+            globalStore={this.globalStore.artwork}
+            globalState={this.state}
+            {...routeProps} />
+        )} />
+        <Route path="/literature" render={routeProps => (
+          <HomeContainer
+            globalStore={this.globalStore.literature}
+            globalState={this.state}
+            {...routeProps} />
+        )} />
+        <GlobalFooter
+          globalState={this.state}
+          globalStore={this.globalStore} />
       </div>
     );
   }

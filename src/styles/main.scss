@@ -14,7 +14,8 @@ html {
 }
 
 body {
-  background-color: $tertiaryThemeColor;
+  background: linear-gradient(to left, $tertiaryThemeColor, lighten($tertiaryThemeColor, 15%));
+  background-image: url('../images/darkfabric.png');
   color: $mainTextColor;
   margin: 0rem;
   padding: 0rem;

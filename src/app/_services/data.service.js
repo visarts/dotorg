@@ -110,7 +110,7 @@ Work from genre:
 /literature/g/shorts/kipling/kipling-short-name-1899
 
 */
-const getCurrentRouting = (currentRoute) => {
+/* const getCurrentRouting = (currentRoute) => {
   const params = currentRoute.slice(1).split('/');
   const mappedParams = {
     currentSection: params[0] || '',
@@ -118,6 +118,16 @@ const getCurrentRouting = (currentRoute) => {
     currentCreator: params[1] && params[1] === 'a' && params[2] ? params[2] : params[1] && params[1] === 'g' && params[3] ? params[3] : '',
     currentWork: params[4] ? params[4] : '',
     routeKey: params[1] ? params[1] : ''
+  };
+  return mappedParams;
+}; */
+
+const getRoutingState = (currentRoute) => {
+  const params = currentRoute.slice(1).split('/');
+  const mappedParams = {
+    section: params[0] || '',
+    collection: params[1] || '',
+    item: params[2] || ''
   };
   return mappedParams;
 };
@@ -130,7 +140,8 @@ const dataService = {
   getCollections,
   getItems,
   getHTMLContent,
-  getCurrentRouting
+  getRoutingState
+  //getCurrentRouting
 };
 
 export default dataService;
