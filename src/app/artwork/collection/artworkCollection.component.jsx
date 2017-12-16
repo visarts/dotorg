@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './artworkCollection.style.scss';
 
 const Collection = (props) => {
@@ -10,13 +11,13 @@ const Collection = (props) => {
   const items = props.globalStore.items.filter(item => {
     const itemId = item.id.split('-');
     if (collection.type === 'category' && item.category === collection.id) {
-      item.creator = itemId[0];
+      item.creator = props.globalStore.collections.filter(collection => collection.id === itemId[0])[0];
       item.date = itemId[itemId.length - 1] || '';
       return true;
     } else if (collection.type === 'creator' && itemId[0] === collection.id) {
-      const itemCreator = itemId[0];
-      const itemDate = itemId[itemId.length - 1] || '';
-      return { item, itemCreator, itemDate };
+      item.category = props.globalStore.collections.filter(collection => collection.id === item.category)[0];
+      item.date = itemId[itemId.length - 1] || '';
+      return true;
     }
   });
 console.log(items);
@@ -28,9 +29,20 @@ console.log(items);
       </div>
       <div className="collection_items">
         {collection.type === 'category' && items.map(item => (
-          <div key={item.id}>
-            <span>Artist: {props.globalStore.collections.filter(collection => collection.id === item.creator)[0].name.last}</span><br />
-          </div>
+          <ul key={item.id}>
+            <li><Link to={`/artwork/${item.creator.id}/${item.id}`}><img src={`./content/artwork/${item.creator.id}/${item.id}_sm.jpg`} /></Link></li>
+            <li>Name: {item.name}</li>
+            <li>Date: {item.date}</li>
+            <li>Artist: {item.creator.name.last}</li><br />
+          </ul>
+        ))}
+        {collection.type === 'creator' && items.map(item => (
+          <ul key={item.id}>
+            <li><Link to={`/artwork/${collection.id}/${item.id}`}><img src={`./content/artwork/${collection.id}/${item.id}_sm.jpg`} /></Link></li>
+            <li>Name: {item.name}</li>
+            <li>Date: {item.date}</li>
+            <li>Era: {item.category.name}</li><br />
+          </ul>
         ))}
       </div>
     </div>
