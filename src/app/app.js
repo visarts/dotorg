@@ -83,24 +83,26 @@ export default class App extends React.Component {
         <GlobalNav
           globalState={this.state}
           globalStore={this.globalStore} />
-        <Route exact path="/" render={routeProps => (
-          <HomeContainer
-            globalStore={this.globalStore}
-            globalState={this.state}
-            {...routeProps} />
-        )} />
-        <Route path="/artwork" render={routeProps => (
-          <ArtworkIndex
-            globalStore={this.globalStore.artwork}
-            globalState={this.state}
-            {...routeProps} />
-        )} />
-        <Route path="/literature" render={routeProps => (
-          <HomeContainer
-            globalStore={this.globalStore.literature}
-            globalState={this.state}
-            {...routeProps} />
-        )} />
+        <div className="view">
+          <Route exact path="/" render={routeProps => (
+            <HomeContainer
+              globalStore={this.globalStore}
+              globalState={this.state}
+              {...routeProps} />
+          )} />
+          <Route path="/artwork" render={routeProps => (
+            <ArtworkIndex
+              globalStore={this.globalStore.artwork}
+              globalState={this.state}
+              {...routeProps} />
+          )} />
+          <Route path="/literature" render={routeProps => (
+            <HomeContainer
+              globalStore={this.globalStore.literature}
+              globalState={this.state}
+              {...routeProps} />
+          )} />
+        </div>
         <GlobalFooter
           globalState={this.state}
           globalStore={this.globalStore} />

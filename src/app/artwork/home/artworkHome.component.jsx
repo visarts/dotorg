@@ -2,6 +2,29 @@ import { Link } from 'react-router-dom';
 import './artworkHome.style.scss';
 
 const Home = (props) => {
+console.log(props.globalStore);
+  const collections = props.globalStore.collections;
+
+  const artCollections = {
+    artists: [],
+    eras: []
+  };
+
+  for (const key in collections) {
+    if (collections[key].type === 'category') {
+      artCollections.eras.push(
+        <li key={key}>
+          <Link to={`artwork/${key}`}>{collections[key].name}</Link>
+        </li>
+      );
+    } else {
+      artCollections.artists.push(
+        <li key={key}>
+          <Link to={`artwork/${key}`}>{collections[key].name.last}</Link>
+        </li>
+      );
+    }
+  }
 
   return (
     <div className="artwork_home">
@@ -9,25 +32,13 @@ const Home = (props) => {
       <div>
         <h1>Eras</h1>
         <div className="artwork_eras">
-          {props.globalStore.collections.map(collection => {
-            return collection.type === 'category' && (
-              <div key={collection.id}>
-                <Link to={`/artwork/${collection.id}`}>{collection.name}</Link>
-              </div>
-            );
-          })}
+          <ul>{artCollections.eras}</ul>
         </div>
       </div>
       <div>
         <h1>Artists</h1>
         <div className="artwork_artists">
-          {props.globalStore.collections.map(collection => {
-            return collection.type === 'creator' && (
-              <div key={collection.id}>
-                <Link to={`/artwork/${collection.id}`}>{collection.name.last}, {collection.name.first || ''}</Link>
-              </div>
-            );
-          })}
+          <ul>{artCollections.artists}</ul>
         </div>
       </div>
     </div>

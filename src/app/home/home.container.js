@@ -7,7 +7,7 @@ export default class HomeContainer extends Component {
 
   render () {
     return (
-      <Home />
+      <Home {...this.props} />
     );
   }
 }

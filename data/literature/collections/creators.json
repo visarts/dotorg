@@ -1,107 +1,92 @@
-[
-  {
-    "id": "aesop",
+{
+  "aesop": {
     "name": { "last": "Aesop", "first": "" },
     "desc": "Much has been said of Aesop which cannot be detailed here.",
     "dates": ["600 BC", "564 BC"],
     "type": "creator"
   },
-  {
-    "id": "andersen",
+  "andersen": {
     "name": { "last": "Andersen", "first": "Hans Christian" },
     "desc": "Hans Christian Andersen was born in the town of Odense, Denmark, on 2 April 1805. He was an only child. Andersen's father, also Hans, considered himself related to nobility. His paternal grandmother had told his father that their family had in the past belonged to a higher social class, but investigations prove these stories unfounded. A persistent theory suggests that Andersen was an illegitimate son of King Christian VIII, but this theory has been criticized by others.",
     "dates": ["April 2 1805", "August 4 1875"],
     "type": "creator"
   },
-  {
-    "id": "dickens",
+  "dickens": {
     "name": { "last": "Dickens", "first": "Charles" },
     "desc": "Much has been said of Dickens which cannot be detailed here.",
     "dates": ["", ""],
     "type": "creator"
   },
-  {
-    "id": "dickinson",
+  "dickinson": {
     "name": { "last": "Dickinson", "first": "Emily" },
     "desc": "Much has been said of Emily which cannot be detailed here.",
     "dates": ["", ""],
     "type": "creator"
   },
-  {
-    "id": "frost",
+  "dickinson": {
     "name": { "last": "Frost", "first": "Robert" },
     "desc": "Much has been said of Frost which cannot be detailed here.",
     "dates": ["", ""],
     "type": "creator"
   },
-  {
-    "id": "grimm",
+  "grimm": {
     "name": { "last": "Grimm", "first": "The Brothers" },
     "desc": "Much has been said of the Grimm brothers which cannot be detailed here.",
     "dates": ["", ""],
     "type": "creator"
   },
-  {
-    "id": "kafka",
+  "kafka": {
     "name": { "last": "Kafka", "first": "Franz" },
     "desc": "Much has been said of Kafka which cannot be detailed here.",
     "dates": ["", ""],
     "type": "creator"
   },
-  {
-    "id": "kipling",
+  "kipling": {
     "name": { "last": "Kipling", "first": "Rudyard" },
     "desc": "Much has been said of Rudyard which cannot be detailed here.",
     "dates": ["", ""],
     "type": "creator"
   },
-  {
-    "id": "longfellow",
+  "longfellow": {
     "name": { "last": "Longfellow", "first": "Henry Wadsworth" },
     "desc": "Much has been said of Mr. Longfellow which cannot be detailed here.",
     "dates": ["", ""],
     "type": "creator"
   },
-  {
-    "id": "ohenry",
+  "ohenry": {
     "name": { "last": "O. Henry" },
     "desc": "Much has been said of O. Henry which cannot be detailed here.",
     "dates": ["", ""],
     "type": "creator"
   },
-  {
-    "id": "poe",
+  "poe": {
     "name": { "last": "Poe", "first": "Edgar Allan" },
     "desc": "Much has been said of Mr. Poe which cannot be detailed here.",
     "dates": ["", ""],
     "type": "creator"
   },
-  {
-    "id": "shakespeare",
+  "shakespeare": {
     "name": { "last": "Shakespeare", "first": "William" },
     "desc": "Much has been said of Shakespeare which cannot be detailed here.",
     "dates": ["", ""],
     "type": "creator"
   },
-  {
-    "id": "thoreau",
+  "thoreau": {
     "name": { "last": "Thoreau", "first": "Henry David" },
     "desc": "Much has been said of Thoreau which cannot be detailed here.",
     "dates": ["", ""],
     "type": "creator"
   },
-  {
-    "id": "twain",
+  "twain": {
     "name": { "last": "Twain", "first": "Mark" },
     "desc": "Much has been said of Mark Twain which cannot be detailed here.",
     "dates": ["", ""],
     "type": "creator"
   },
-  {
-    "id": "wilde",
+  "wilde": {
     "name": { "last": "Wilde", "first": "Oscar" },
     "desc": "Much has been said of Oscar which cannot be detailed here.",
     "dates": ["", ""],
     "type": "creator"
   }
-]
+}

@@ -15,7 +15,7 @@
     "start": "webpack && webpack-dev-server",
     "build": "npm run merge && npm run paging && webpack --config webpack.config.prod.js",
     "merge": "node lib/mergingService.js",
-    "paging": "node src/lib/pagingService.js"
+    "paging": "node lib/pagingService.js"
   },
   "author": "Brendan Best",
   "license": "ISC",
