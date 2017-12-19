@@ -8,7 +8,7 @@ axios.all([
   dataService.getCollections('artwork'),
   dataService.getItems('artwork'),
   dataService.getCollections('literature'),
-  dataService.getItems('literature'),
+  dataService.getItems('literature')
 ])
   .then(axios.spread((artwork_collections, artwork_items, literature_collections, literature_items) => {
     ReactDOM.render((

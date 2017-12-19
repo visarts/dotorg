@@ -24,7 +24,7 @@
     "name": { "last": "Cezanne", "first": "Paul" },
     "desc": "Much has been said of Cezanne which cannot be detailed here.",
     "dates": ["", ""],
-    "category": "post-impressionism",
+    "category": "post_impressionism",
     "type": "creator"
   },
   "degas": {
@@ -38,7 +38,7 @@
     "name": { "last": "Gauguin", "first": "Paul" },
     "desc": "Much has been said of Gaugin which cannot be detailed here.",
     "dates": ["", ""],
-    "category": "post-impressionism",
+    "category": "post_impressionism",
     "type": "creator"
   },
 
@@ -102,14 +102,14 @@
     "name": { "last": "Rossetti", "first": "Dante" },
     "desc": "Much has been said of Rossetti which cannot be detailed here.",
     "dates": ["", ""],
-    "category": "pre-raphaelite",
+    "category": "pre_raphaelite",
     "type": "creator"
   },
   "rousseau": {
     "name": { "last": "Rousseau", "first": "Henri" },
     "desc": "Much has been said of Rousseau which cannot be detailed here.",
     "dates": ["", ""],
-    "category": "post-impressionism",
+    "category": "post_impressionism",
     "type": "creator"
   },
   "sargent": {
@@ -123,14 +123,14 @@
     "name": { "last": "Seurat", "first": "Georges" },
     "desc": "Much has been said of Seurat which cannot be detailed here.",
     "dates": ["", ""],
-    "category": "post-impressionism",
+    "category": "post_impressionism",
     "type": "creator"
   },
   "vangogh": {
     "name": { "last": "Van Gogh", "first": "Vincent" },
     "desc": "Much has been said of Van Gogh which cannot be detailed here.",
     "dates": ["", ""],
-    "category": "post-impressionism",
+    "category": "post_impressionism",
     "type": "creator"
   },
   "vonamerling": {
@@ -144,7 +144,7 @@
     "name": { "last": "Waterhouse", "first": "John William" },
     "desc": "Much has been said of Waterhouse which cannot be detailed here.",
     "dates": ["", ""],
-    "category": "pre-raphaelite",
+    "category": "pre_raphaelite",
     "type": "creator"
   }
 }

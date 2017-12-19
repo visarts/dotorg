@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './artworkHome.style.scss';
 
 const Home = (props) => {
-console.log(props.globalStore);
+
   const collections = props.globalStore.collections;
 
   const artCollections = {

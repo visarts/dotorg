@@ -9,7 +9,7 @@
     "desc": "Short stories with an important lesson",
     "type": "category"
   },
-  "fairy-tales": {
+  "fairy_tales": {
     "name": "Fairy Tales",
     "desc": "The mystical the magical the stories of dreams and waking nightmares",
     "type": "category"
