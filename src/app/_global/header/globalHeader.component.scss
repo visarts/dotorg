@@ -3,6 +3,10 @@
 $vLinkPadding: 6px;
 
 .header {
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  right: 0rem;
   background-color: $secondaryThemeColor;
 
   @include paddingHorizontal('sm');

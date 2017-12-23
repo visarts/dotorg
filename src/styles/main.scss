@@ -39,6 +39,8 @@ li {
 }
 
 .portitude {
+  position: relative;
+  margin-bottom: $globalFooterHeight;
 
 
   &.artwork {
