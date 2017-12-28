@@ -9,6 +9,7 @@ import GlobalFooter from './_global/footer/globalFooter.component';
 import HomeContainer from './home/home.container';
 
 import ArtworkIndex from './artwork/artwork.index';
+import LiteratureIndex from './literature/literature.index';
 
 
 export default class App extends React.Component {
@@ -97,7 +98,7 @@ export default class App extends React.Component {
               {...routeProps} />
           )} />
           <Route path="/literature" render={routeProps => (
-            <HomeContainer
+            <LiteratureIndex
               globalStore={this.globalStore.literature}
               globalState={this.state}
               {...routeProps} />

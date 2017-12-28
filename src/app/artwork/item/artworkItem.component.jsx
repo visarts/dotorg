@@ -10,7 +10,7 @@ const Item = (props) => {
   };
 
   return (
-    <div className="artwork_collection">
+    <div className="artwork_item">
       <Modal
         show={true}
         onHide={hideModal.bind(this)}
