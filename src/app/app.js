@@ -77,7 +77,7 @@ export default class App extends React.Component {
     // className={`portitude ${this.state.routing.currentSection}`}
     // console.log(this.globalStore);
     return (
-      <div className="portitude">
+      <div id="portitude">
         <GlobalHeader
           globalState={this.state}
           globalStore={this.globalStore} />
