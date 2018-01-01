@@ -34,13 +34,18 @@ h1 {
   margin: 0rem 0rem 0rem 1rem;
 }
 
+ul {
+  padding-left: 0rem;
+}
+
 li {
   list-style: none;
 }
 
 #portitude {
   position: relative;
-  margin-bottom: $globalFooterHeight;
+  min-height: 100%;
+  padding-bottom: $globalFooterHeight;
 
 
   &.artwork {

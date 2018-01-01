@@ -1,7 +1,7 @@
 @import 'globals';
 
 .globalFooter {
-  position: fixed;
+  position: absolute;
   background: $secondaryThemeColor;
   opacity: .8;
   bottom: 0px;
