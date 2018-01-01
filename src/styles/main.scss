@@ -14,12 +14,14 @@ html {
 }
 
 body {
-  background: linear-gradient(to left, $tertiaryThemeColor, lighten($tertiaryThemeColor, 15%));
-  background-image: url('../images/darkfabric.png');
+  //background: linear-gradient(to left, $tertiaryThemeColor, lighten($tertiaryThemeColor, 15%));
+  //background-image: url('../images/darkfabric.png');
+  background-color: $mainThemeColor;
   color: $mainTextColor;
   margin: 0rem;
   padding: 0rem;
   font-size: 1.6rem;
+  font-family: 'PT Sans', sans-serif;
 
   @media(max-width: $smallScreen) {
 
@@ -30,8 +32,12 @@ a {
   color: #aaa;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Catamaran';
+}
+
 h1 {
-  margin: 0rem 0rem 0rem 1rem;
+  margin: 0rem 0rem 1rem 0rem;
 }
 
 ul {
@@ -45,6 +51,7 @@ li {
 #portitude {
   position: relative;
   min-height: 100%;
+  padding-top: $globalHeaderHeight;
   padding-bottom: $globalFooterHeight;
 
 
@@ -59,5 +66,6 @@ li {
 
 .view {
   @include paddingHorizontal('lg');
-  @include paddingVertical('lg');
+  @include globalGutters();
+  //@include paddingVertical('lg');
 }

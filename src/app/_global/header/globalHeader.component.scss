@@ -4,13 +4,17 @@ $vLinkPadding: 6px;
 
 .header {
   position: fixed;
+  display: flex;
   top: 0rem;
   left: 0rem;
   right: 0rem;
   background-color: $secondaryThemeColor;
+  height: $globalHeaderHeight;
+  border-bottom: 2px solid $artLinkHoverColor;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
 
   @include paddingHorizontal('sm');
-  @include paddingVertical('lg');
+  @include globalGutters();
 
   &.artwork, &.literature {
     background-color: $secondaryLinkColor;

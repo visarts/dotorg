@@ -1,6 +1,7 @@
 $padding_sm: .5rem;
 $padding_md: 1rem;
 $padding_lg: 2rem;
+$padding_xl: 10rem;
 
 @mixin paddingHorizontal($size) {
   @if $size == 'sm' {
@@ -31,5 +32,15 @@ $padding_lg: 2rem;
   } @else {
     padding-left: 0rem;
     padding-right: 0rem;
+  }
+}
+
+@mixin globalGutters () {
+  padding-left: $padding_xl;
+  padding-right: $padding_xl;
+
+  @media(max-width: $smallScreen) {
+    padding-left: $padding_md;
+    padding-right: $padding_md;
   }
 }

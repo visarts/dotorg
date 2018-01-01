@@ -2,6 +2,10 @@ import { Route, Switch } from 'react-router-dom';
 import dataService from 'Services/data.service';
 import storeService from 'Services/store.service';
 
+import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+
 import GlobalHeader from './_global/header/globalHeader.component';
 import GlobalNav from './_global/navigation/globalNav.component';
 import GlobalFooter from './_global/footer/globalFooter.component';
@@ -77,37 +81,39 @@ export default class App extends React.Component {
     // className={`portitude ${this.state.routing.currentSection}`}
     // console.log(this.globalStore);
     return (
-      <div id="portitude">
-        <GlobalHeader
-          globalState={this.state}
-          globalStore={this.globalStore} />
-        <GlobalNav
-          globalState={this.state}
-          globalStore={this.globalStore} />
-        <div className="view">
-          <Route exact path="/" render={routeProps => (
-            <HomeContainer
-              globalStore={this.globalStore}
-              globalState={this.state}
-              {...routeProps} />
-          )} />
-          <Route path="/artwork" render={routeProps => (
-            <ArtworkIndex
-              globalStore={this.globalStore.artwork}
-              globalState={this.state}
-              {...routeProps} />
-          )} />
-          <Route path="/literature" render={routeProps => (
-            <LiteratureIndex
-              globalStore={this.globalStore.literature}
-              globalState={this.state}
-              {...routeProps} />
-          )} />
+      <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
+        <div id="portitude">
+          <GlobalHeader
+            globalState={this.state}
+            globalStore={this.globalStore} />
+          <GlobalNav
+            globalState={this.state}
+            globalStore={this.globalStore} />
+          <div className="view">
+            <Route exact path="/" render={routeProps => (
+              <HomeContainer
+                globalStore={this.globalStore}
+                globalState={this.state}
+                {...routeProps} />
+            )} />
+            <Route path="/artwork" render={routeProps => (
+              <ArtworkIndex
+                globalStore={this.globalStore.artwork}
+                globalState={this.state}
+                {...routeProps} />
+            )} />
+            <Route path="/literature" render={routeProps => (
+              <LiteratureIndex
+                globalStore={this.globalStore.literature}
+                globalState={this.state}
+                {...routeProps} />
+            )} />
+          </div>
+          <GlobalFooter
+            globalState={this.state}
+            globalStore={this.globalStore} />
         </div>
-        <GlobalFooter
-          globalState={this.state}
-          globalStore={this.globalStore} />
-      </div>
+      </MuiThemeProvider>
     );
   }
 }

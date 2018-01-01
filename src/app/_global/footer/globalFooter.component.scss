@@ -7,6 +7,8 @@
   bottom: 0px;
   left: 0px;
   right: 0px;
-  padding: 10px;
   height: $globalFooterHeight;
+
+  @include paddingHorizontal('sm');
+  @include globalGutters();
 }
