@@ -12,8 +12,11 @@ const GlobalHeader = (props) => {
       <Link to="/">
         <h1>Portitude</h1>
       </Link>
-      <DropDownMenu maxHeight={300} value={10} onChange={handleChange}>
-        <MenuItem value={1} key={1} primaryText="first link" />
+      <DropDownMenu maxHeight={300} value="RIFGKDJ adg" onChange={handleChange}>
+        <MenuItem value="RIFGKDJ adg" key={1} primaryText="first link" />
+        <MenuItem value="RIFGKDJ hasdf" key={2} primaryText="first link" />
+        <MenuItem value="RIFGKDJ hah" key={3} primaryText="first link" />
+        <MenuItem value="RIFGKDJ 23g" key={4} primaryText="first link" />
       </DropDownMenu>
     </div>
   );

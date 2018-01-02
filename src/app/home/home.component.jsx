@@ -5,8 +5,10 @@ const Home = (props) => {
   return (
     <div className="home">
       <h1>The portitude home</h1>
-      <div><Link to="artwork">Artwork</Link></div>
-      <div><Link to="literature">Literature</Link></div>
+      <div className="section">
+        <div className="subSection"><Link to="artwork">Artwork</Link></div>
+        <div className="subSection"><Link to="literature">Literature</Link></div>
+      </div>
       {/*props.globalStore.artwork.items.map((item, key) => (
         <Link to={`/artwork/${item.id.split('-')[0]}/${item.id}`} key={item.id}>
           <ul>

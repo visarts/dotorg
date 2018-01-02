@@ -1,1 +1,10 @@
 @import 'globals';
+
+.section {
+  display: flex;
+}
+
+.subSection {
+  @include paddingHorizontal('lg');
+  @include paddingVertical('lg');
+}

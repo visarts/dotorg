@@ -6,9 +6,9 @@ import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
-import GlobalHeader from './_global/header/globalHeader.component';
-import GlobalNav from './_global/navigation/globalNav.component';
-import GlobalFooter from './_global/footer/globalFooter.component';
+import GlobalHeaderContainer from './_global/header/globalHeader.container';
+import GlobalNavContainer from './_global/navigation/globalNav.container';
+import GlobalFooterContainer from './_global/footer/globalFooter.container';
 
 import HomeContainer from './home/home.container';
 
@@ -82,11 +82,11 @@ export default class App extends React.Component {
     // console.log(this.globalStore);
     return (
       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
-        <div id="portitude">
-          <GlobalHeader
+        <div id="portitude" className={this.state.routing.section}>
+          <GlobalHeaderContainer
             globalState={this.state}
             globalStore={this.globalStore} />
-          <GlobalNav
+          <GlobalNavContainer
             globalState={this.state}
             globalStore={this.globalStore} />
           <div className="view">
@@ -109,7 +109,7 @@ export default class App extends React.Component {
                 {...routeProps} />
             )} />
           </div>
-          <GlobalFooter
+          <GlobalFooterContainer
             globalState={this.state}
             globalStore={this.globalStore} />
         </div>

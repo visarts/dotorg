@@ -8,7 +8,7 @@ html, body {
 html {
   box-sizing: border-box;
   font-size: 10px;
-}
+}d
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -53,15 +53,14 @@ li {
   min-height: 100%;
   padding-top: $globalHeaderHeight;
   padding-bottom: $globalFooterHeight;
+}
 
+.artwork {
+  background-color: #454;
+}
 
-  &.artwork {
-
-  }
-
-  &.literature {
-
-  }
+.literature {
+  background-color: #545;
 }
 
 .view {
