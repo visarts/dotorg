@@ -15,7 +15,7 @@ const Collection = (props) => {
     creators[creatorId].push(
       <li key={key}>
         <Link to={`/literature/${props.globalState.routing.collection}/${item.id}`}>
-          {item.name} by {creator.name.first} {creator.name.last}
+          {item.name}
         </Link>
       </li>
     );
