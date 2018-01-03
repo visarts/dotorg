@@ -16,7 +16,7 @@ html {
 body {
   //background: linear-gradient(to left, $tertiaryThemeColor, lighten($tertiaryThemeColor, 15%));
   //background-image: url('../images/darkfabric.png');
-  background-color: $mainThemeColor;
+  background-color: lighten($mainThemeColor, 5%);
   color: $mainTextColor;
   margin: 0rem;
   padding: 0rem;
@@ -30,10 +30,15 @@ body {
 
 a {
   color: #aaa;
+
+  &:hover, &:active, &:focus {
+    color: #FFF;
+  }
 }
 
 h1, h2, h3, h4 {
   font-family: 'Catamaran';
+  margin: 0rem;
 }
 
 h1 {
