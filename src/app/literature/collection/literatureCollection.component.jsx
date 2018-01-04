@@ -4,7 +4,6 @@ import './literatureCollection.style.scss';
 const Collection = (props) => {
 
   const collection = props.globalStore.collections[props.globalState.routing.collection];
-
   const creators = {};
 
   collection.items.map((item, key) => {

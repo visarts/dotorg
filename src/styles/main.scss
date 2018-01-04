@@ -51,6 +51,7 @@ ul {
 
 li {
   list-style: none;
+  margin-bottom: 20px;
 }
 
 #portitude {
@@ -72,4 +73,16 @@ li {
   @include paddingHorizontal('lg');
   @include globalGutters();
   //@include paddingVertical('lg');
+}
+
+// artwork styles
+.thumbContainer {
+  display: inline-block;
+  font-size: 2.4rem;
+  background-color: rgba(0, 0, 0, .2);
+
+  &--image {
+    display: inline-block;
+    margin-right: 10px;
+  }
 }

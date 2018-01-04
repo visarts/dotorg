@@ -45,23 +45,29 @@ const getAllArtwork = () => {
 };*/
 
 const getCollections = (type) => {
-  return axios.get(`./data/${type}-collections.json`)
+  return axios.get(`./data/${type}-collections.json`, {
+    transformResponse: res => decodeURIComponent(res)
+  })
     .then((results) => {
-      return results.data;
+      return JSON.parse(results.data);
     });
 };
 
 const getItems = (type) => {
-  return axios.get(`./data/${type}-items.json`)
+  return axios.get(`./data/${type}-items.json`, {
+    transformResponse: res => decodeURIComponent(res)
+  })
     .then((results) => {
-      return results.data;
+      return JSON.parse(results.data);
     });
 };
 
 const getHTMLContent = (creatorKey, currentWorkKey) => {
-  return axios.get(`./content/literature/${creatorKey}/${currentWorkKey}.html`)
+  return axios.get(`./content/literature/${creatorKey}/${currentWorkKey}.html`, {
+    transformResponse: res => decodeURIComponent(res)
+  })
     .then((results) => {
-      return results.data;
+      return JSON.parse(results.data);
     });
 };
 
