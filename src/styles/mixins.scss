@@ -44,3 +44,9 @@ $padding_xl: 10rem;
     padding-right: $padding_md;
   }
 }
+
+@mixin mobile {
+  @media (max-width: $smallScreen) {
+    @content;
+  }
+}

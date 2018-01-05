@@ -13,8 +13,12 @@ const Collection = (props) => {
 
     creators[creatorId].push(
       <li key={key}>
-        <Link to={`/artwork/${props.globalState.routing.collection}/${item.id}`}>
-          {item.name}
+        <Link to={`/artwork/${props.globalState.routing.collection}/${item.id}`} className="thumbContainer">
+          <img
+            src={`./content/artwork/${creatorId}/${item.id}_sm.jpg`}
+            className="thumbContainer--image"
+            alt={item.title} />
+          {item.name} ({item.id.substring(item.id.lastIndexOf('-') + 1)})
         </Link>
       </li>
     );

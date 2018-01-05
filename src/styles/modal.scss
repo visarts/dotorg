@@ -1,0 +1,13 @@
+
+.portitudeModal {
+  background: $mainThemeColor;
+  position: relative;
+  margin: 2rem auto 4rem auto;
+  width: 60rem;
+  border-radius: 10px;
+
+  @include mobile {
+    width: 95vw;
+    margin: 1rem auto 2rem auto;
+  }
+}

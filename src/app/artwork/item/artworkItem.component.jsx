@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Modal, Glyphicon, DropdownButton, MenuItem } from 'react-bootstrap';
+import Modal from 'material-ui/Modal';
 import './artworkItem.style.scss';
 
 const Item = (props) => {
@@ -12,13 +12,12 @@ const Item = (props) => {
   return (
     <div className="artwork_item">
       <Modal
-        show={true}
-        onHide={hideModal.bind(this)}
-        dialogClassName="artwork_item_modal">
-        <Modal.Body>
+        open={true}
+        onClose={hideModal.bind(this)}>
+        <div className="portitudeModal">
           <h1>{item.name}</h1>
-          <div>{item.category}</div>
-        </Modal.Body>
+          <div>{props.globalStore.collections[item.category].name}</div>
+        </div>
       </Modal>
     </div>
   );

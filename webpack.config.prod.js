@@ -21,6 +21,10 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin('dist'),
+    new webpack.ProvidePlugin({
+      React: 'react',
+      ReactDOM: 'react-dom'
+    }),
     new webpack.DefinePlugin({
       'process.env':{
         'NODE_ENV': JSON.stringify('production')
@@ -48,6 +52,7 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: 'src/images', to: 'images'},
       { from: 'content', to: 'content'},
+      { from: 'favicon.ico', to: '' },
       { from: 'data/prod', to: 'data' }
     ])
   ],

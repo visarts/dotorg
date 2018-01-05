@@ -1,5 +1,6 @@
 @import 'normalize';
 @import 'globals';
+@import 'modal';
 
 html, body {
   height: 100%;
@@ -11,6 +12,10 @@ html {
 }d
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+div {
+  outline: none;
 }
 
 body {
@@ -30,9 +35,14 @@ body {
 
 a {
   color: #aaa;
+  text-decoration: none;
 
   &:hover, &:active, &:focus {
     color: #FFF;
+  }
+
+  &:focus {
+    outline: 1px solid rgba(255, 255, 255, .4);
   }
 }
 
