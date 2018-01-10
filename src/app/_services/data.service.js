@@ -62,12 +62,12 @@ const getItems = (type) => {
     });
 };
 
-const getHTMLContent = (creatorKey, currentWorkKey) => {
-  return axios.get(`./content/literature/${creatorKey}/${currentWorkKey}.html`, {
+const getHTMLContent = (creatorId, itemId) => {
+  return axios.get(`./content/literature/${creatorId}/${itemId}.html`, {
     transformResponse: res => decodeURIComponent(res)
   })
     .then((results) => {
-      return JSON.parse(results.data);
+      return results.data;
     });
 };
 

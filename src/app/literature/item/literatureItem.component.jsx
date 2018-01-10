@@ -17,6 +17,7 @@ const Item = (props) => {
         <div className="portitudeModal">
           <h1>{item.name}</h1>
           <div>{props.globalStore.collections[item.category].name}</div>
+          <div className="modalContent" dangerouslySetInnerHTML={props.content} />
         </div>
       </Modal>
     </div>
