@@ -18,15 +18,20 @@ export default class App extends React.Component {
     super(props);
     storeService.setStore(this.props.data);
     this.globalStore = storeService.getStore();
-    this.updateAppState = this.updateAppState.bind(this);
     this.currentLocation = location.hash.slice(1);
     this.state = {
       routing: dataService.getRoutingState(this.currentLocation)
     };
+    this.updateAppState = this.updateAppState.bind(this);
+    this.setGlobalClassName = this.setGlobalClassName.bind(this);
   }
 
   updateAppState (newState) {
     this.setState(Object.assign(this.state, newState));
+  }
+
+  setGlobalClassName () {
+    document.body.className = this.state.routing.section || '';
   }
 
   // allows for routing changes in modals and the like when origin is unknown
@@ -41,6 +46,10 @@ export default class App extends React.Component {
     }
   }*/
 
+  componentDidMount () {
+    this.setGlobalClassName();
+  }
+
 
   // this will update when the route changes and set state with new params
   componentWillReceiveProps (nextProps) {
@@ -48,6 +57,7 @@ export default class App extends React.Component {
     if (this.currentLocation !== updatedLocation) {
       this.setState({routing: dataService.getRoutingState(updatedLocation)}, () => {
         this.currentLocation = updatedLocation;
+        this.setGlobalClassName();
       });
     }
   }
@@ -77,7 +87,7 @@ export default class App extends React.Component {
     // className={`portitude ${this.state.routing.currentSection}`}
     // console.log(this.globalStore);
     return (
-      <div id="portitude" className={this.state.routing.section}>
+      <div id="portitude">
         <GlobalHeaderContainer
           globalState={this.state}
           globalStore={this.globalStore} />
