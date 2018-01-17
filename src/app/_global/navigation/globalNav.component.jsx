@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './globalNav.component.scss';
+import './globalNav.style.scss';
 
 const GlobalNav = (props) => {
 

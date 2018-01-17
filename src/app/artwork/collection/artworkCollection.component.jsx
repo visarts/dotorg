@@ -18,7 +18,9 @@ const Collection = (props) => {
             src={`./content/artwork/${creatorId}/${item.id}_sm.jpg`}
             className="thumbContainer--image"
             alt={item.title} />
-          {item.name} ({item.id.substring(item.id.lastIndexOf('-') + 1)})
+          <span className="thumbContainer--text">
+            {item.name} ({item.id.substring(item.id.lastIndexOf('-') + 1)})
+          </span>
         </Link>
       </li>
     );

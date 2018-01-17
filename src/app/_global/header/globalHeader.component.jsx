@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import Favorite from 'material-ui-icons/Favorite';
-import './globalHeader.component.scss';
+import './globalHeader.style.scss';
 
 const GlobalHeader = (props) => {
 

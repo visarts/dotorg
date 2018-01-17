@@ -12,7 +12,7 @@ const Collection = (props) => {
     creators[creatorId] = creators[creatorId] ? creators[creatorId] : [];
 
     creators[creatorId].push(
-      <li key={key}>
+      <li key={key} className="listItem">
         <Link to={`/literature/${props.globalState.routing.collection}/${item.id}`}>
           {item.name}
         </Link>

@@ -6,8 +6,12 @@ const Home = (props) => {
     <div className="home">
       <h1>The garden of pages and paintings</h1>
       <div className="section">
-        <div className="subSection"><Link to="artwork">Artwork</Link></div>
-        <div className="subSection"><Link to="literature">Literature</Link></div>
+        <div className="subSection">
+          <Link to="artwork">Artwork</Link>
+        </div>
+        <div className="subSection">
+          <Link to="literature">Literature</Link>
+        </div>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ const Creator = (props) => {
     collections[item.category] = collections[item.category] ? collections[item.category] : [];
 
     collections[item.category].push(
-      <li key={key}>
+      <li key={key} className="listItem">
         <Link to={`/literature/${props.globalState.routing.collection}/${item.id}`}>
           {item.name} ({item.id.substring(item.id.lastIndexOf('-') + 1)})
         </Link>

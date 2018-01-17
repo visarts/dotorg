@@ -40,8 +40,8 @@ $padding_xl: 10rem;
   padding-right: $padding_xl;
 
   @media(max-width: $smallScreen) {
-    padding-left: $padding_md;
-    padding-right: $padding_md;
+    padding-left: $padding_lg;
+    padding-right: $padding_lg;
   }
 }
 

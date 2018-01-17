@@ -5,21 +5,21 @@ const Home = (props) => {
 
   const collections = props.globalStore.collections;
 
-  const litCollections = {
+  const displayCollections = {
     authors: [],
     genres: []
   };
 
   for (const key in collections) {
     if (collections[key].type === 'category') {
-      litCollections.genres.push(
-        <li key={key}>
+      displayCollections.genres.push(
+        <li key={key} className="listItem">
           <Link to={`literature/${key}`}>{collections[key].name}</Link>
         </li>
       );
     } else {
-      litCollections.authors.push(
-        <li key={key}>
+      displayCollections.authors.push(
+        <li key={key} className="listItem">
           <Link to={`literature/${key}`}>{collections[key].name.last}</Link>
         </li>
       );
@@ -32,13 +32,13 @@ const Home = (props) => {
       <div>
         <h1>genres</h1>
         <div className="literature_genres">
-          <ul>{litCollections.genres}</ul>
+          <ul>{displayCollections.genres}</ul>
         </div>
       </div>
       <div>
         <h1>authors</h1>
         <div className="literature_authors">
-          <ul>{litCollections.authors}</ul>
+          <ul>{displayCollections.authors}</ul>
         </div>
       </div>
     </div>

@@ -19,7 +19,9 @@ const Creator = (props) => {
                   src={`./content/artwork/${props.globalState.routing.collection}/${item.id}_sm.jpg`}
                   className="thumbContainer--image"
                   alt={item.title} />
-                {item.name} ({item.id.substring(item.id.lastIndexOf('-') + 1)})
+                <span className="thumbContainer--text">
+                  {item.name} ({item.id.substring(item.id.lastIndexOf('-') + 1)})
+                </span>
               </Link>
             </li>
           ))}
