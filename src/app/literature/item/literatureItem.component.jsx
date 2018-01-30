@@ -18,6 +18,7 @@ const Item = (props) => {
           <h1>{item.name}</h1>
           <div>{props.globalStore.collections[item.category].name}</div>
           <div className="modalContent" dangerouslySetInnerHTML={props.content} />
+          <div className="modalFooter">Prev || Next</div>
         </div>
       </Modal>
     </div>
