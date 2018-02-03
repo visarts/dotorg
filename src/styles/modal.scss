@@ -9,11 +9,11 @@
   // padding: 20px;
 
   .literature & {
-    background: rgba(#545, .8);
+    background: rgba($literature_theme, .8);
   }
 
   .artwork & {
-    background: rgba(#454, .8);
+    background: rgba($artwork_theme, .8);
   }
   @include mobile {
     width: 95vw;
