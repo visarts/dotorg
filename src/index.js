@@ -1,4 +1,4 @@
-import './styles/main.scss';
+import './styles/index.scss';
 import { Route, HashRouter as Router } from 'react-router-dom';
 import axios from 'axios';
 import dataService from 'Services/data.service';

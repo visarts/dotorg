@@ -1,19 +1,5 @@
 @import 'globals';
 
 .modalContent {
-  max-height: 100%;
-  overflow-y: auto;
-  line-height: $default_line_height;
-}
-
-.modalFooter {
-  padding: 1rem;
-  position: absolute;
-  bottom: 0rem;
-  left: 0rem;
-  right: 0rem;
-  background: rgba(black, .75);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
 }

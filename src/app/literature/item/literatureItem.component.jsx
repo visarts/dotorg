@@ -15,10 +15,14 @@ const Item = (props) => {
         open={true}
         onClose={hideModal.bind(this)}>
         <div className="portitudeModal">
-          <h1>{item.name}</h1>
-          <div>{props.globalStore.collections[item.category].name}</div>
-          <div className="modalContent" dangerouslySetInnerHTML={props.content} />
-          <div className="modalFooter">Prev || Next</div>
+          <div className="portitudeModal--header">
+            <h1>{item.name}</h1>
+            <div>{props.globalStore.collections[item.category].name}</div>
+          </div>
+          <div className="portitudeModal--body">
+            <div className="modalContent" dangerouslySetInnerHTML={props.content} />
+          </div>
+          <div className="portitudeModal--footer">Prev || Next</div>
         </div>
       </Modal>
     </div>
