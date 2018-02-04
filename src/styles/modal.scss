@@ -24,13 +24,17 @@
 
   &--header {
     background-color: $secondaryThemeColor;
+    z-index: $navLayer;
+    box-shadow: 2px 0px 30px rgba(#000000, .7);
+    border-bottom: 2px solid $artLinkHoverColor;
   }
 
   &--body {
     max-height: 100%;
-    padding: 1rem 2rem;
+    padding: 2rem;
     overflow-y: auto;
     line-height: $default_line_height;
+    z-index: $contentLayer;
   }
 
   &--footer {
@@ -43,6 +47,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: $navLayer;
+    box-shadow: -2px 0px 30px rgba(#000000, .7);
   }
 
   @include mobile {

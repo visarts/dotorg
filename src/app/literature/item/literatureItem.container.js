@@ -51,7 +51,6 @@ export default class ItemContainer extends Component {
 
   setNextPage () {
     const currentPage = this.state.currentPage + 1;
-    console.log(this.pages);
     this.setState({content: this.pages[currentPage], currentPage});
   }
 
@@ -71,8 +70,7 @@ export default class ItemContainer extends Component {
             setLastPage={this.setLastPage}
             setNextPage={this.setNextPage}
             setPreviousPage={this.setPreviousPage}
-            isFirstPage={this.state.currentPage === 0}
-            isLastPage={this.state.currentPage === this.pages.length - 1}
+            pages={this.pages}
             currentPage={this.state.currentPage} />
         }
       </div>
