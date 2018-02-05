@@ -1,11 +1,11 @@
 import { Component } from 'react';
-import GlobalHeader from './globalHeader.component';
+import GlobalHeaderComponent from './globalHeader.component';
 
-export default class GlobalHeaderContainer extends Component {
+export default class GlobalHeader extends Component {
 
   render () {
     return (
-      <GlobalHeader {...this.props} />
+      <GlobalHeaderComponent {...this.props} />
     );
   }
 }

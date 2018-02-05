@@ -1,11 +1,11 @@
 import { Component } from 'react';
-import Creator from './literatureCreator.component';
+import CreatorComponent from './literatureCreator.component';
 
-export default class CreatorContainer extends Component {
+export default class Creator extends Component {
 
   render () {
     return (
-      <Creator {...this.props} />
+      <CreatorComponent {...this.props} />
     );
   }
 }

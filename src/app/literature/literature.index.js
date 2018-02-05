@@ -1,25 +1,25 @@
 import { Route, Switch } from 'react-router-dom';
-import HomeContainer from './home/literatureHome.container';
-import CollectionContainer from './collection/literatureCollection.container';
-import CreatorContainer from './creator/literatureCreator.container';
-import ItemContainer from './item/literatureItem.container';
+import Home from './home/literatureHome.container';
+import Collection from './collection/literatureCollection.container';
+import Creator from './creator/literatureCreator.container';
+import Item from './item/literatureItem.container';
 
 const LiteratureIndex = (props) => {
 
   return (
     <div className="literature">
       <Route exact path="/literature" render={routeProps => (
-        <HomeContainer {...props} {...routeProps} />
+        <Home {...props} {...routeProps} />
       )} />
       <Route path='/literature/:collection' render={routeProps => {
         if (props.globalStore.collections[props.globalState.routing.collection].type === 'creator') {
-          return (<CreatorContainer {...props} {...routeProps} />);
+          return (<Creator {...props} {...routeProps} />);
         } else {
-          return (<CollectionContainer {...props} {...routeProps} />);
+          return (<Collection {...props} {...routeProps} />);
         }
       }} />
       <Route path='/literature/:collection/:item' render={routeProps => (
-        <ItemContainer {...props} {...routeProps} />
+        <Item {...props} {...routeProps} />
       )} />
     </div>
   );

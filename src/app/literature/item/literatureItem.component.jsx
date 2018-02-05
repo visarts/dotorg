@@ -5,7 +5,7 @@ import KeyboardArrowLeft from 'material-ui-icons/KeyboardArrowLeft';
 import KeyboardArrowRight from 'material-ui-icons/KeyboardArrowRight';
 import './literatureItem.style.scss';
 
-const Item = (props) => {
+const ItemComponent = (props) => {
 
   const item = props.globalStore.items.find(item => item.id === props.globalState.routing.item);
   const authorId = item.id.split('-')[0];
@@ -47,4 +47,4 @@ const Item = (props) => {
   );
 };
 
-export default Item;
+export default ItemComponent;

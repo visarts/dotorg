@@ -15,11 +15,14 @@
 
   .artwork & {
     background: rgba($artwork_theme, .8);
+    width: 80rem;
   }
 
   &--header, &--body, &--footer {
     flex: 0 1 auto;
-    padding: 1rem 2rem;
+
+    @include paddingHorizontal('md');
+    @include paddingVertical('lg');
   }
 
   &--header {
@@ -38,7 +41,6 @@
   }
 
   &--footer {
-    padding: 1rem;
     position: absolute;
     bottom: 0rem;
     left: 0rem;
@@ -54,5 +56,9 @@
   @include mobile {
     width: 95vw;
     margin: 1rem auto 2rem auto;
+
+    .artwork & {
+      width: 95vw;
+    }
   }
 }

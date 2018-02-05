@@ -1,11 +1,11 @@
 import { Component } from 'react';
-import Collection from './artworkCollection.component';
+import CollectionComponent from './artworkCollection.component';
 
-export default class CollectionContainer extends Component {
+export default class Collection extends Component {
 
   render () {
     return (
-      <Collection {...this.props} />
+      <CollectionComponent {...this.props} />
     );
   }
 }

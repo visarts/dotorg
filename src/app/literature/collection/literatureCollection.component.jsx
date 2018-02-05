@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './literatureCollection.style.scss';
 
-const Collection = (props) => {
+const CollectionComponent = (props) => {
 
   const collection = props.globalStore.collections[props.globalState.routing.collection];
   const creators = {};
@@ -33,4 +33,4 @@ const Collection = (props) => {
   );
 };
 
-export default Collection;
+export default CollectionComponent;

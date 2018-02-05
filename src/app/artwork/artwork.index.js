@@ -1,25 +1,25 @@
 import { Route, Switch } from 'react-router-dom';
-import HomeContainer from './home/artworkHome.container';
-import CollectionContainer from './collection/artworkCollection.container';
-import CreatorContainer from './creator/artworkCreator.container';
-import ItemContainer from './item/artworkItem.container';
+import Home from './home/artworkHome.container';
+import Collection from './collection/artworkCollection.container';
+import Creator from './creator/artworkCreator.container';
+import Item from './item/artworkItem.container';
 
 const ArtworkIndex = (props) => {
 
   return (
     <div className="artwork">
       <Route exact path="/artwork" render={routeProps => (
-        <HomeContainer {...props} {...routeProps} />
+        <Home {...props} {...routeProps} />
       )} />
       <Route path='/artwork/:collection' render={routeProps => {
         if (props.globalStore.collections[props.globalState.routing.collection].type === 'creator') {
-          return (<CreatorContainer {...props} {...routeProps} />);
+          return (<Creator {...props} {...routeProps} />);
         } else {
-          return (<CollectionContainer {...props} {...routeProps} />);
+          return (<Collection {...props} {...routeProps} />);
         }
       }}  />
       <Route path='/artwork/:collection/:item' render={routeProps => (
-        <ItemContainer {...props} {...routeProps} />
+        <Item {...props} {...routeProps} />
       )} />
     </div>
   );

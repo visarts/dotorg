@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import Favorite from 'material-ui-icons/Favorite';
 import './globalHeader.style.scss';
 
-const GlobalHeader = (props) => {
+const GlobalHeaderComponent = (props) => {
 
   return (
     <div className="header">
@@ -13,4 +13,4 @@ const GlobalHeader = (props) => {
   );
 };
 
-export default GlobalHeader;
+export default GlobalHeaderComponent;

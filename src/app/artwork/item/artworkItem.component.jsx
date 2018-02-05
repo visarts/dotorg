@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import Modal from 'material-ui/Modal';
 import './artworkItem.style.scss';
 
-const Item = (props) => {
+const ItemComponent = (props) => {
 
   const item = props.globalStore.items.find(item => item.id === props.globalState.routing.item);
   const creatorId = item.id.split('-')[0];
@@ -35,4 +35,4 @@ const Item = (props) => {
   );
 };
 
-export default Item;
+export default ItemComponent;

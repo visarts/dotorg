@@ -1,11 +1,11 @@
 import { Component } from 'react';
-import GlobalNav from './globalNav.component';
+import GlobalNavComponent from './globalNav.component';
 
-export default class GlobalNavContainer extends Component {
+export default class GlobalNav extends Component {
 
   render () {
     return (
-      <GlobalNav {...this.props} />
+      <GlobalNavComponent {...this.props} />
     );
   }
 }

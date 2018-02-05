@@ -1,11 +1,11 @@
 import { Component } from 'react';
-import GlobalFooter from './globalFooter.component';
+import GlobalFooterComponent from './globalFooter.component';
 
-export default class GlobalFooterContainer extends Component {
+export default class GlobalFooter extends Component {
 
   render () {
     return (
-      <GlobalFooter {...this.props} />
+      <GlobalFooterComponent {...this.props} />
     );
   }
 }

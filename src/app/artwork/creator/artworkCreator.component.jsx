@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './artworkCreator.style.scss';
 
-const Creator = (props) => {
+const CreatorComponent = (props) => {
 
   const creator = props.globalStore.collections[props.globalState.routing.collection];
   const { first, last } = creator.name;
@@ -31,4 +31,4 @@ const Creator = (props) => {
   );
 };
 
-export default Creator;
+export default CreatorComponent;

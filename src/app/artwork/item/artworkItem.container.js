@@ -1,11 +1,11 @@
 import { Component } from 'react';
-import Item from './artworkItem.component';
+import ItemComponent from './artworkItem.component';
 
-export default class ItemContainer extends Component {
+export default class Item extends Component {
 
   render () {
     return (
-      <Item {...this.props} />
+      <ItemComponent {...this.props} />
     );
   }
 }

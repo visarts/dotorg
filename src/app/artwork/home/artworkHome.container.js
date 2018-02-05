@@ -1,11 +1,11 @@
 import { Component } from 'react';
-import Home from './artworkHome.component';
+import HomeComponent from './artworkHome.component';
 
-export default class HomeContainer extends Component {
+export default class Home extends Component {
 
   render () {
     return (
-      <Home {...this.props} />
+      <HomeComponent {...this.props} />
     );
   }
 }

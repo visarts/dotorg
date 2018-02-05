@@ -2,11 +2,11 @@ import { Route, Switch } from 'react-router-dom';
 import dataService from 'Services/data.service';
 import storeService from 'Services/store.service';
 
-import GlobalHeaderContainer from './_global/header/globalHeader.container';
-import GlobalNavContainer from './_global/navigation/globalNav.container';
-import GlobalFooterContainer from './_global/footer/globalFooter.container';
+import GlobalHeader from './_global/header/globalHeader.container';
+import GlobalNav from './_global/navigation/globalNav.container';
+import GlobalFooter from './_global/footer/globalFooter.container';
 
-import HomeContainer from './home/home.container';
+import Home from './home/home.container';
 
 import ArtworkIndex from './artwork/artwork.index';
 import LiteratureIndex from './literature/literature.index';
@@ -88,15 +88,15 @@ export default class App extends React.Component {
     // console.log(this.globalStore);
     return (
       <div id="portitude">
-        <GlobalHeaderContainer
+        <GlobalHeader
           globalState={this.state}
           globalStore={this.globalStore} />
-        <GlobalNavContainer
+        <GlobalNav
           globalState={this.state}
           globalStore={this.globalStore} />
         <div className="view">
           <Route exact path="/" render={routeProps => (
-            <HomeContainer
+            <Home
               globalStore={this.globalStore}
               globalState={this.state}
               {...routeProps} />
@@ -114,7 +114,7 @@ export default class App extends React.Component {
               {...routeProps} />
           )} />
         </div>
-        <GlobalFooterContainer
+        <GlobalFooter
           globalState={this.state}
           globalStore={this.globalStore} />
       </div>

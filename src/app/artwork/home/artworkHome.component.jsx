@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './artworkHome.style.scss';
 
-const Home = (props) => {
+const HomeComponent = (props) => {
 
   const collections = props.globalStore.collections;
 
@@ -45,4 +45,4 @@ const Home = (props) => {
   );
 };
 
-export default Home;
+export default HomeComponent;

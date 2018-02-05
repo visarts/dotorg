@@ -1,11 +1,11 @@
 import { Component } from 'react';
-import Creator from './artworkCreator.component';
+import CreatorComponent from './artworkCreator.component';
 
-export default class CreatorContainer extends Component {
+export default class Creator extends Component {
 
   render () {
     return (
-      <Creator {...this.props} />
+      <CreatorComponent {...this.props} />
     );
   }
 }

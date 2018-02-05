@@ -1,13 +1,13 @@
-import './globalFooter.component.scss';
+import './globalFooter.style.scss';
 
-const GlobalFooter = (props) => {
+const GlobalFooterComponent = (props) => {
   return (
     <div className="globalFooter">
       <div className="globalContainer">
-        <div className="copyright">{decodeURIComponent('%C2%A9')} 2017 Portitude.com</div>
+        <div className="copyright">{decodeURIComponent('%C2%A9')} 2004-2018 Portitude</div>
       </div>
     </div>
   );
 };
 
-export default GlobalFooter;
+export default GlobalFooterComponent;

@@ -1,9 +1,9 @@
 import { Component } from 'react';
 import _ from 'lodash';
 import dataService from 'Services/data.service';
-import Item from './literatureItem.component';
+import ItemComponent from './literatureItem.component';
 
-export default class ItemContainer extends Component {
+export default class Item extends Component {
   constructor (props) {
     super(props);
     this.state = {
@@ -63,7 +63,7 @@ export default class ItemContainer extends Component {
     return (
       <div>
         {this.state.content &&
-          <Item
+          <ItemComponent
             {...this.props}
             content={this.state.content}
             setFirstPage={this.setFirstPage}
