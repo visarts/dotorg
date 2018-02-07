@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import Modal from 'material-ui/Modal';
 import './artworkItem.style.scss';
-
 const ItemComponent = (props) => {
 
   const item = props.globalStore.items.find(item => item.id === props.globalState.routing.item);
@@ -9,6 +8,8 @@ const ItemComponent = (props) => {
   const hideModal = () => {
     location.hash = location.hash.substring(0, location.hash.lastIndexOf('/'));
   };
+
+  const url = require(`Artwork/${creatorId}/${item.id}.jpg`);
 
   return (
     <div className="artwork--item">
@@ -23,7 +24,7 @@ const ItemComponent = (props) => {
           <div className="portitudeModal--body">
             <div className="image--container">
               <img
-                src={`./content/artwork/${creatorId}/${item.id}.jpg`}
+                src={url}
                 className="image--large"
                 alt={item.title} />
             </div>
