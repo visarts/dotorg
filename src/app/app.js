@@ -2,9 +2,9 @@ import { Route, Switch } from 'react-router-dom';
 import dataService from 'Services/data.service';
 import storeService from 'Services/store.service';
 
-import GlobalHeader from './_global/header/globalHeader.container';
-import GlobalNav from './_global/navigation/globalNav.container';
-import GlobalFooter from './_global/footer/globalFooter.container';
+import GlobalHeader from 'global/header/globalHeader.container';
+import GlobalNav from 'global/navigation/globalNav.container';
+import GlobalFooter from 'global/footer/globalFooter.container';
 
 import Home from './home/home.container';
 

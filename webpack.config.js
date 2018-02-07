@@ -156,7 +156,9 @@ module.exports = {
       Literature: path.resolve(ROOT_PATH, 'content/literature'),
       Artwork: path.resolve(ROOT_PATH, 'content/artwork'),
       SharedComponents: path.resolve(ROOT_PATH, 'src/app/sharedComponents'),
-      Images: path.resolve(ROOT_PATH, 'src/images')
+      Images: path.resolve(ROOT_PATH, 'src/images'),
+      global: path.resolve(ROOT_PATH, 'src/app/_global'),
+      common: path.resolve(ROOT_PATH, 'src/app/_common')
     },
     modules: [
       path.resolve('./src'),

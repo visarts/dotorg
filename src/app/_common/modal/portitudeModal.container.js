@@ -5,7 +5,8 @@ export default class PortitudeModal extends Component {
 
   render () {
     return (
-      <PortitudeModalComponent {...this.props} />
+      <PortitudeModalComponent
+        {...this.props} />
     );
   }
 }
