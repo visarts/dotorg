@@ -1,4 +1,113 @@
 {
+  "cassatt": {
+    "fname": "Mary",
+    "lname": "Cassatt",
+    "bio": "Mary Stevenson Cassatt (May 22, 1844 – June 14, 1926) was an American painter and printmaker. She was born in Pennsylvania, but lived much of her adult life in France, where she first befriended Edgar Degas and later exhibited among the Impressionists. Cassatt often created images of the social and private lives of women, with particular emphasis on the intimate bonds between mothers and children.",
+    "era": "Impressionism",
+    "content": [
+      {
+        "title": "Child Drinking Milk",
+        "date": "1868",
+        "fileName": "cassatt-child-drinking-milk-1868"
+      },
+      {
+        "title": "Bacchante",
+        "date": "1872",
+        "fileName": "cassatt-bacchante-1872"
+      },
+      {
+        "title": "During a Carnival",
+        "date": "1872",
+        "fileName": "cassatt-during-a-carnival-1872"
+      },
+      {
+        "title": "A Musical Party",
+        "date": "1874",
+        "fileName": "cassatt-musical-party-1874"
+      },
+      {
+        "title": "Portrait of a Little Girl",
+        "date": "1874",
+        "fileName": "cassatt-portrait-of-a-little-girl-1874"
+      },
+      {
+        "title": "Poppies in a Field",
+        "date": "1880",
+        "fileName": "cassatt-poppies-in-a-field-1880"
+      },
+      {
+        "title": "Lady at the Tea Table",
+        "date": "1883",
+        "fileName": "cassatt-lady-at-the-tea-table-1883"
+      },
+      {
+        "title": "Girl Arranging Her Hair",
+        "date": "1886",
+        "fileName": "cassatt-girl-arranging-her-hair-1886"
+      },
+      {
+        "title": "At the Window",
+        "date": "1889",
+        "fileName": "cassatt-at-the-window-1889"
+      },
+      {
+        "title": "Lilacs in a Window",
+        "date": "1889",
+        "fileName": "cassatt-lilacs-in-a-window-1889"
+      },
+      {
+        "title": "Contemplation",
+        "date": "1889",
+        "fileName": "cassatt-contemplation-1889"
+      },
+      {
+        "title": "Gathering Fruit",
+        "date": "1893",
+        "fileName": "cassatt-gathering-fruit-1893"
+      },
+      {
+        "title": "Girl With Banjo",
+        "date": "1894",
+        "fileName": "cassatt-girl-with-banjo-1894"
+      },
+      {
+        "title": "In the Park",
+        "date": "1894",
+        "fileName": "cassatt-in-the-park-1894"
+      },
+      {
+        "title": "On the Water",
+        "date": "1895",
+        "fileName": "cassatt-on-the-water-1895"
+      },
+      {
+        "title": "Maternal Kiss",
+        "date": "1896",
+        "fileName": "cassatt-maternal-kiss-1896"
+      },
+      {
+        "title": "Breakfast in Bed",
+        "date": "1897",
+        "fileName": "cassatt-breakfast-in-bed-1897"
+      },
+      {
+        "title": "Pattycake",
+        "date": "1897",
+        "fileName": "cassatt-pattycake-1897"
+      },
+      {
+        "title": "Mother and Child",
+        "date": "1900",
+        "fileName": "cassatt-mother-and-child-1900"
+      },
+      {
+        "title": "Margot in Blue",
+        "date": "1902",
+        "fileName": "cassatt-margot-in-blue-1902"
+      }
+    ]
+  }
+,
   "bouguereau": {
     "fname": "William",
     "lname": "Bouguereau",
@@ -144,115 +253,6 @@
         "title": "A Childhood Idyll",
         "date": "1900",
         "fileName": "bouguereau-childhood-idyll-1900"
-      }
-    ]
-  }
-,
-  "cassatt": {
-    "fname": "Mary",
-    "lname": "Cassatt",
-    "bio": "Mary Stevenson Cassatt (May 22, 1844 – June 14, 1926) was an American painter and printmaker. She was born in Pennsylvania, but lived much of her adult life in France, where she first befriended Edgar Degas and later exhibited among the Impressionists. Cassatt often created images of the social and private lives of women, with particular emphasis on the intimate bonds between mothers and children.",
-    "era": "Impressionism",
-    "content": [
-      {
-        "title": "Child Drinking Milk",
-        "date": "1868",
-        "fileName": "cassatt-child-drinking-milk-1868"
-      },
-      {
-        "title": "Bacchante",
-        "date": "1872",
-        "fileName": "cassatt-bacchante-1872"
-      },
-      {
-        "title": "During a Carnival",
-        "date": "1872",
-        "fileName": "cassatt-during-a-carnival-1872"
-      },
-      {
-        "title": "A Musical Party",
-        "date": "1874",
-        "fileName": "cassatt-musical-party-1874"
-      },
-      {
-        "title": "Portrait of a Little Girl",
-        "date": "1874",
-        "fileName": "cassatt-portrait-of-a-little-girl-1874"
-      },
-      {
-        "title": "Poppies in a Field",
-        "date": "1880",
-        "fileName": "cassatt-poppies-in-a-field-1880"
-      },
-      {
-        "title": "Lady at the Tea Table",
-        "date": "1883",
-        "fileName": "cassatt-lady-at-the-tea-table-1883"
-      },
-      {
-        "title": "Girl Arranging Her Hair",
-        "date": "1886",
-        "fileName": "cassatt-girl-arranging-her-hair-1886"
-      },
-      {
-        "title": "At the Window",
-        "date": "1889",
-        "fileName": "cassatt-at-the-window-1889"
-      },
-      {
-        "title": "Lilacs in a Window",
-        "date": "1889",
-        "fileName": "cassatt-lilacs-in-a-window-1889"
-      },
-      {
-        "title": "Contemplation",
-        "date": "1889",
-        "fileName": "cassatt-contemplation-1889"
-      },
-      {
-        "title": "Gathering Fruit",
-        "date": "1893",
-        "fileName": "cassatt-gathering-fruit-1893"
-      },
-      {
-        "title": "Girl With Banjo",
-        "date": "1894",
-        "fileName": "cassatt-girl-with-banjo-1894"
-      },
-      {
-        "title": "In the Park",
-        "date": "1894",
-        "fileName": "cassatt-in-the-park-1894"
-      },
-      {
-        "title": "On the Water",
-        "date": "1895",
-        "fileName": "cassatt-on-the-water-1895"
-      },
-      {
-        "title": "Maternal Kiss",
-        "date": "1896",
-        "fileName": "cassatt-maternal-kiss-1896"
-      },
-      {
-        "title": "Breakfast in Bed",
-        "date": "1897",
-        "fileName": "cassatt-breakfast-in-bed-1897"
-      },
-      {
-        "title": "Pattycake",
-        "date": "1897",
-        "fileName": "cassatt-pattycake-1897"
-      },
-      {
-        "title": "Mother and Child",
-        "date": "1900",
-        "fileName": "cassatt-mother-and-child-1900"
-      },
-      {
-        "title": "Margot in Blue",
-        "date": "1902",
-        "fileName": "cassatt-margot-in-blue-1902"
       }
     ]
   }
@@ -475,115 +475,6 @@
     ]
   }
 ,
-  "gauguin": {
-    "fname": "Paul",
-    "lname": "Gauguin",
-    "bio": "Eugène Henri Paul Gauguin (7 June 1848 – 8 May 1903) was a French post-Impressionist artist. Underappreciated until after his death, Gauguin is now recognized for his experimental use of color and Synthetist style that were distinctly different from Impressionism. His work was influential to the French avant-garde and many modern artists, such as Pablo Picasso and Henri Matisse.",
-    "era": "Post-Impressionism",
-    "content": [
-      {
-        "title": "A Clearing",
-        "date": "1874",
-        "fileName": "gauguin-clearing-1874"
-      },
-      {
-        "title": "Blue Barge",
-        "date": "1882",
-        "fileName": "gauguin-blue-barge-1882"
-      },
-      {
-        "title": "Basket of Flowers",
-        "date": "1884",
-        "fileName": "gauguin-basket-of-flowers-1884"
-      },
-      {
-        "title": "Bare Trees",
-        "date": "1885",
-        "fileName": "gauguin-bare-trees-1885"
-      },
-      {
-        "title": "Boy by the Water",
-        "date": "1885",
-        "fileName": "gauguin-boy-by-the-water-1885"
-      },
-      {
-        "title": "Lilac Bouquet",
-        "date": "1885",
-        "fileName": "gauguin-lilac-bouquet-1885"
-      },
-      {
-        "title": "Rocky Coast",
-        "date": "1886",
-        "fileName": "gauguin-rocky-coast-1886"
-      },
-      {
-        "title": "By the Seashore",
-        "date": "1887",
-        "fileName": "gauguin-by-the-seashore-1887"
-      },
-      {
-        "title": "Huts Under the Trees",
-        "date": "1887",
-        "fileName": "gauguin-huts-under-the-trees-1887"
-      },
-      {
-        "title": "Apples and Bowl",
-        "date": "1888",
-        "fileName": "gauguin-apples-and-bowl-1888"
-      },
-      {
-        "title": "Blue Trees",
-        "date": "1888",
-        "fileName": "gauguin-blue-trees-1888"
-      },
-      {
-        "title": "Haymaking",
-        "date": "1888",
-        "fileName": "gauguin-haymaking-1888"
-      },
-      {
-        "title": "Madame Roulin",
-        "date": "1888",
-        "fileName": "gauguin-madame-roulin-1888"
-      },
-      {
-        "title": "Night Cafe at Arles",
-        "date": "1888",
-        "fileName": "gauguin-night-cafe-at-arles-1888"
-      },
-      {
-        "title": "Among the Lillies",
-        "date": "1889",
-        "fileName": "gauguin-among-the-lillies-1889"
-      },
-      {
-        "title": "Flutist on the Cliffs",
-        "date": "1889",
-        "fileName": "gauguin-flutist-on-the-cliffs-1889"
-      },
-      {
-        "title": "Still Life with Fan",
-        "date": "1889",
-        "fileName": "gauguin-still-life-with-fan-1889"
-      },
-      {
-        "title": "Tahitian Woman Bathing",
-        "date": "1892",
-        "fileName": "gauguin-tahitian-woman-bathing-1892"
-      },
-      {
-        "title": "Farm in Brittany",
-        "date": "1894",
-        "fileName": "gauguin-farm-in-brittany-1894"
-      },
-      {
-        "title": "Tahitian Landscape",
-        "date": "1897",
-        "fileName": "gauguin-tahitian-landscape-1897"
-      }
-    ]
-  }
-,
   "degas": {
     "fname": "Edgar",
     "lname": "Degas",
@@ -689,6 +580,115 @@
         "title": "Two Bathers on the Grass",
         "date": "1895",
         "fileName": "degas-bathers-on-the-grass-1895"
+      }
+    ]
+  }
+,
+  "gauguin": {
+    "fname": "Paul",
+    "lname": "Gauguin",
+    "bio": "Eugène Henri Paul Gauguin (7 June 1848 – 8 May 1903) was a French post-Impressionist artist. Underappreciated until after his death, Gauguin is now recognized for his experimental use of color and Synthetist style that were distinctly different from Impressionism. His work was influential to the French avant-garde and many modern artists, such as Pablo Picasso and Henri Matisse.",
+    "era": "Post-Impressionism",
+    "content": [
+      {
+        "title": "A Clearing",
+        "date": "1874",
+        "fileName": "gauguin-clearing-1874"
+      },
+      {
+        "title": "Blue Barge",
+        "date": "1882",
+        "fileName": "gauguin-blue-barge-1882"
+      },
+      {
+        "title": "Basket of Flowers",
+        "date": "1884",
+        "fileName": "gauguin-basket-of-flowers-1884"
+      },
+      {
+        "title": "Bare Trees",
+        "date": "1885",
+        "fileName": "gauguin-bare-trees-1885"
+      },
+      {
+        "title": "Boy by the Water",
+        "date": "1885",
+        "fileName": "gauguin-boy-by-the-water-1885"
+      },
+      {
+        "title": "Lilac Bouquet",
+        "date": "1885",
+        "fileName": "gauguin-lilac-bouquet-1885"
+      },
+      {
+        "title": "Rocky Coast",
+        "date": "1886",
+        "fileName": "gauguin-rocky-coast-1886"
+      },
+      {
+        "title": "By the Seashore",
+        "date": "1887",
+        "fileName": "gauguin-by-the-seashore-1887"
+      },
+      {
+        "title": "Huts Under the Trees",
+        "date": "1887",
+        "fileName": "gauguin-huts-under-the-trees-1887"
+      },
+      {
+        "title": "Apples and Bowl",
+        "date": "1888",
+        "fileName": "gauguin-apples-and-bowl-1888"
+      },
+      {
+        "title": "Blue Trees",
+        "date": "1888",
+        "fileName": "gauguin-blue-trees-1888"
+      },
+      {
+        "title": "Haymaking",
+        "date": "1888",
+        "fileName": "gauguin-haymaking-1888"
+      },
+      {
+        "title": "Madame Roulin",
+        "date": "1888",
+        "fileName": "gauguin-madame-roulin-1888"
+      },
+      {
+        "title": "Night Cafe at Arles",
+        "date": "1888",
+        "fileName": "gauguin-night-cafe-at-arles-1888"
+      },
+      {
+        "title": "Among the Lillies",
+        "date": "1889",
+        "fileName": "gauguin-among-the-lillies-1889"
+      },
+      {
+        "title": "Flutist on the Cliffs",
+        "date": "1889",
+        "fileName": "gauguin-flutist-on-the-cliffs-1889"
+      },
+      {
+        "title": "Still Life with Fan",
+        "date": "1889",
+        "fileName": "gauguin-still-life-with-fan-1889"
+      },
+      {
+        "title": "Tahitian Woman Bathing",
+        "date": "1892",
+        "fileName": "gauguin-tahitian-woman-bathing-1892"
+      },
+      {
+        "title": "Farm in Brittany",
+        "date": "1894",
+        "fileName": "gauguin-farm-in-brittany-1894"
+      },
+      {
+        "title": "Tahitian Landscape",
+        "date": "1897",
+        "fileName": "gauguin-tahitian-landscape-1897"
       }
     ]
   }
@@ -1019,55 +1019,6 @@
     ]
   }
 ,
-  "okeeffe": {
-    "fname": "Georgia",
-    "lname": "O'Keeffe",
-    "bio": "Georgia Totto O'Keeffe (November 15, 1887 – March 6, 1986) was an American artist. She was best known for her paintings of enlarged flowers, New York skyscrapers, and New Mexico landscapes. O'Keeffe has been recognized as the 'Mother of American modernism'",
-    "era": "Modernism",
-    "content": [
-      {
-        "title": "Blue and Green Music",
-        "date": "1919",
-        "fileName": "okeeffe-blue-and-green-music-1919"
-      },
-      {
-        "title": "Black Iris",
-        "date": "1927",
-        "fileName": "okeeffe-black-iris-1927"
-      },
-      {
-        "title": "Tan Clam with Seaweed",
-        "date": "1926",
-        "fileName": "okeeffe-tan-clam-with-seaweed-1926"
-      },
-      {
-        "title": "Oriental Poppies",
-        "date": "1926",
-        "fileName": "okeeffe-oriental-poppies-1926"
-      },
-      {
-        "title": "Mountain in New Mexico",
-        "date": "1931",
-        "fileName": "okeeffe-mountain-in-new-mexico-1931"
-      },
-      {
-        "title": "Broken Shell",
-        "date": "1937",
-        "fileName": "okeeffe-broken-shell-1937"
-      },
-      {
-        "title": "Clam and Mussel",
-        "date": "1938",
-        "fileName": "okeeffe-clam-and-mussel-1938"
-      },
-      {
-        "title": "Red Hill and White Shell",
-        "date": "1938",
-        "fileName": "okeeffe-red-hill-and-white-shell-1938"
-      }
-    ]
-  }
-,
   "michelangelo": {
     "fname": "Buonarroti",
     "lname": "Michelangelo",
@@ -1173,6 +1124,55 @@
         "title": "Conversion of Saul",
         "date": "1511",
         "fileName": "michelangelo-conversion-of-saul-1511"
+      }
+    ]
+  }
+,
+  "okeeffe": {
+    "fname": "Georgia",
+    "lname": "O'Keeffe",
+    "bio": "Georgia Totto O'Keeffe (November 15, 1887 – March 6, 1986) was an American artist. She was best known for her paintings of enlarged flowers, New York skyscrapers, and New Mexico landscapes. O'Keeffe has been recognized as the 'Mother of American modernism'",
+    "era": "Modernism",
+    "content": [
+      {
+        "title": "Blue and Green Music",
+        "date": "1919",
+        "fileName": "okeeffe-blue-and-green-music-1919"
+      },
+      {
+        "title": "Black Iris",
+        "date": "1927",
+        "fileName": "okeeffe-black-iris-1927"
+      },
+      {
+        "title": "Tan Clam with Seaweed",
+        "date": "1926",
+        "fileName": "okeeffe-tan-clam-with-seaweed-1926"
+      },
+      {
+        "title": "Oriental Poppies",
+        "date": "1926",
+        "fileName": "okeeffe-oriental-poppies-1926"
+      },
+      {
+        "title": "Mountain in New Mexico",
+        "date": "1931",
+        "fileName": "okeeffe-mountain-in-new-mexico-1931"
+      },
+      {
+        "title": "Broken Shell",
+        "date": "1937",
+        "fileName": "okeeffe-broken-shell-1937"
+      },
+      {
+        "title": "Clam and Mussel",
+        "date": "1938",
+        "fileName": "okeeffe-clam-and-mussel-1938"
+      },
+      {
+        "title": "Red Hill and White Shell",
+        "date": "1938",
+        "fileName": "okeeffe-red-hill-and-white-shell-1938"
       }
     ]
   }
@@ -1831,115 +1831,6 @@
     ]
   }
 ,
-  "seurat": {
-    "fname": "Georges",
-    "lname": "Seurat",
-    "bio": "Georges-Pierre Seurat (2 December 1859 – 29 March 1891) was a French post-Impressionist painter and draftsman. He is noted for his innovative use of drawing media and for devising the painting techniques known as chromoluminarism and pointillism. Seurat's artistic personality was compounded of qualities which are usually supposed to be opposed and incompatible: on the one hand, his extreme and delicate sensibility; on the other, a passion for logical abstraction and an almost mathematical precision of mind.",
-    "era": "Post-Impressionism",
-    "content": [
-      {
-        "title": "Vase of Flowers",
-        "date": "1879",
-        "fileName": "seurat-vase-of-flowers-1879"
-      },
-      {
-        "title": "Forest at Pontaubert",
-        "date": "1881",
-        "fileName": "seurat-forest-at-pontaubert-1881"
-      },
-      {
-        "title": "River Banks",
-        "date": "1883",
-        "fileName": "seurat-river-banks-1883"
-      },
-      {
-        "title": "Bathing at Asniers",
-        "date": "1884",
-        "fileName": "seurat-bathing-at-asniers-1884"
-      },
-      {
-        "title": "Boats at Lowtide on Grandcamp",
-        "date": "1885",
-        "fileName": "seurat-boats-at-lowtide-on-grandcamp-1885"
-      },
-      {
-        "title": "Fort Samson",
-        "date": "1885",
-        "fileName": "seurat-fort-samson-1885"
-      },
-      {
-        "title": "Sunday Afternoon on the Island of Grande Jatte",
-        "date": "1886",
-        "fileName": "seurat-sunday-afternoon-on-the-island-of-grande-jatte-1886"
-      },
-      {
-        "title": "The Bridge at Courbevoie",
-        "date": "1886",
-        "fileName": "seurat-bridge-at-courbevoie-1886"
-      },
-      {
-        "title": "Gray Weather",
-        "date": "1888",
-        "fileName": "seurat-gray-weather-1888"
-      },
-      {
-        "title": "Circus Sideshow",
-        "date": "1888",
-        "fileName": "seurat-circus-sideshow-1888"
-      },
-      {
-        "title": "The Models",
-        "date": "1888",
-        "fileName": "seurat-models-1888"
-      },
-      {
-        "title": "Sunday at Port en Bessin",
-        "date": "1888",
-        "fileName": "seurat-sunday-at-port-en-bessin-1888"
-      },
-      {
-        "title": "Port en Bessin Entrance to the Harbor",
-        "date": "1888",
-        "fileName": "seurat-port-en-bessin-entrance-to-the-harbor-1888"
-      },
-      {
-        "title": "Port en Bessin",
-        "date": "1888",
-        "fileName": "seurat-port-en-bessin-1888"
-      },
-      {
-        "title": "The Siene at La Grande Jatte",
-        "date": "1888",
-        "fileName": "seurat-siene-at-la-grande-jatte-1888"
-      },
-      {
-        "title": "Eiffel Tower",
-        "date": "1889",
-        "fileName": "seurat-eiffel-tower-1889"
-      },
-      {
-        "title": "View of le Crotoy",
-        "date": "1889",
-        "fileName": "seurat-view-of-le-crotoy-1889"
-      },
-      {
-        "title": "Le Chahut (The Can-can)",
-        "date": "1890",
-        "fileName": "seurat-le-chahut-1890"
-      },
-      {
-        "title": "Young Woman Powdering Herself",
-        "date": "1890",
-        "fileName": "seurat-young-woman-powdering-herself-1890"
-      },
-      {
-        "title": "The Circus",
-        "date": "1891",
-        "fileName": "seurat-circus-1891"
-      }
-    ]
-  }
-,
   "vangogh": {
     "fname": "Vincent",
     "lname": "Van Gogh",
@@ -2085,6 +1976,115 @@
         "title": "Wheatfield with Crows",
         "date": "1890",
         "fileName": "vangogh-wheatfield-with-crows-1890"
+      }
+    ]
+  }
+,
+  "seurat": {
+    "fname": "Georges",
+    "lname": "Seurat",
+    "bio": "Georges-Pierre Seurat (2 December 1859 – 29 March 1891) was a French post-Impressionist painter and draftsman. He is noted for his innovative use of drawing media and for devising the painting techniques known as chromoluminarism and pointillism. Seurat's artistic personality was compounded of qualities which are usually supposed to be opposed and incompatible: on the one hand, his extreme and delicate sensibility; on the other, a passion for logical abstraction and an almost mathematical precision of mind.",
+    "era": "Post-Impressionism",
+    "content": [
+      {
+        "title": "Vase of Flowers",
+        "date": "1879",
+        "fileName": "seurat-vase-of-flowers-1879"
+      },
+      {
+        "title": "Forest at Pontaubert",
+        "date": "1881",
+        "fileName": "seurat-forest-at-pontaubert-1881"
+      },
+      {
+        "title": "River Banks",
+        "date": "1883",
+        "fileName": "seurat-river-banks-1883"
+      },
+      {
+        "title": "Bathing at Asniers",
+        "date": "1884",
+        "fileName": "seurat-bathing-at-asniers-1884"
+      },
+      {
+        "title": "Boats at Lowtide on Grandcamp",
+        "date": "1885",
+        "fileName": "seurat-boats-at-lowtide-on-grandcamp-1885"
+      },
+      {
+        "title": "Fort Samson",
+        "date": "1885",
+        "fileName": "seurat-fort-samson-1885"
+      },
+      {
+        "title": "Sunday Afternoon on the Island of Grande Jatte",
+        "date": "1886",
+        "fileName": "seurat-sunday-afternoon-on-the-island-of-grande-jatte-1886"
+      },
+      {
+        "title": "The Bridge at Courbevoie",
+        "date": "1886",
+        "fileName": "seurat-bridge-at-courbevoie-1886"
+      },
+      {
+        "title": "Gray Weather",
+        "date": "1888",
+        "fileName": "seurat-gray-weather-1888"
+      },
+      {
+        "title": "Circus Sideshow",
+        "date": "1888",
+        "fileName": "seurat-circus-sideshow-1888"
+      },
+      {
+        "title": "The Models",
+        "date": "1888",
+        "fileName": "seurat-models-1888"
+      },
+      {
+        "title": "Sunday at Port en Bessin",
+        "date": "1888",
+        "fileName": "seurat-sunday-at-port-en-bessin-1888"
+      },
+      {
+        "title": "Port en Bessin Entrance to the Harbor",
+        "date": "1888",
+        "fileName": "seurat-port-en-bessin-entrance-to-the-harbor-1888"
+      },
+      {
+        "title": "Port en Bessin",
+        "date": "1888",
+        "fileName": "seurat-port-en-bessin-1888"
+      },
+      {
+        "title": "The Siene at La Grande Jatte",
+        "date": "1888",
+        "fileName": "seurat-siene-at-la-grande-jatte-1888"
+      },
+      {
+        "title": "Eiffel Tower",
+        "date": "1889",
+        "fileName": "seurat-eiffel-tower-1889"
+      },
+      {
+        "title": "View of le Crotoy",
+        "date": "1889",
+        "fileName": "seurat-view-of-le-crotoy-1889"
+      },
+      {
+        "title": "Le Chahut (The Can-can)",
+        "date": "1890",
+        "fileName": "seurat-le-chahut-1890"
+      },
+      {
+        "title": "Young Woman Powdering Herself",
+        "date": "1890",
+        "fileName": "seurat-young-woman-powdering-herself-1890"
+      },
+      {
+        "title": "The Circus",
+        "date": "1891",
+        "fileName": "seurat-circus-1891"
       }
     ]
   }

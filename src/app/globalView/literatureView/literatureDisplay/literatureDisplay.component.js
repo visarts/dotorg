@@ -22,6 +22,7 @@ export default class LiteratureDisplay extends React.Component {
       readMoreMenuIsOpen: false,
       readingControlsAreOpen: false
     };
+    this.pages = [];
     this.setValues = this.setValues.bind(this);
     this.setValues();
   }
@@ -102,7 +103,7 @@ export default class LiteratureDisplay extends React.Component {
   }
 
   setHTMLContent () {
-    return {__html: this.pages[this.state.currentPage - 1]};
+    return {__html: this.pages ? this.pages[this.state.currentPage - 1] : ''};
   }
 
   toggleReadMoreMenu (e) {
@@ -156,8 +157,8 @@ export default class LiteratureDisplay extends React.Component {
   render () {
     return (
       <div className="literatureDisplay">
-        {this.pages && <Modal
-          show={true}
+        <Modal
+          show
           onHide={this.hideModal.bind(this)}
           dialogClassName="custom-modal literature-modal">
           <Modal.Header closeButton>
@@ -210,7 +211,7 @@ export default class LiteratureDisplay extends React.Component {
             {/*<button className="closeModal" onClick=this.hideModal.bind(this)>Close</button>*/}
           </Modal.Footer>
 
-        </Modal>}
+        </Modal>
       </div>
     );
   }
