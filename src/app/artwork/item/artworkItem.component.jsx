@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import Modal from 'material-ui/Modal';
+import PortitudeModal from 'common/modal/portitudeModal.container';
 import './artworkItem.style.scss';
+
 const ItemComponent = (props) => {
 
   const item = props.globalStore.items.find(item => item.id === props.globalState.routing.item);
@@ -13,25 +15,21 @@ const ItemComponent = (props) => {
 
   return (
     <div className="artwork--item">
-      <Modal
+      <PortitudeModal
         open={true}
-        onClose={hideModal.bind(this)}>
-        <div className="portitudeModal">
-          <div className="portitudeModal--header">
-            <h1>{item.name}</h1>
-            <div>{props.globalStore.collections[item.category].name}</div>
+        onClose={hideModal.bind(this)}
+        size="lg"
+        header={{title: item.name, subtitle: props.globalStore.collections[item.category].name}}>
+        <div className="portitudeModal--body">
+          <div className="image--container">
+            <img
+              src={url}
+              className="image--large"
+              alt={item.title} />
           </div>
-          <div className="portitudeModal--body">
-            <div className="image--container">
-              <img
-                src={url}
-                className="image--large"
-                alt={item.title} />
-            </div>
-          </div>
-          <div className="portitudeModal--footer"></div>
         </div>
-      </Modal>
+        <div className="portitudeModal--footer"></div>
+      </PortitudeModal>
     </div>
   );
 };

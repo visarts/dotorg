@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import Button from 'material-ui/Button';
-import Modal from 'material-ui/Modal';
 import KeyboardArrowLeft from 'material-ui-icons/KeyboardArrowLeft';
 import KeyboardArrowRight from 'material-ui-icons/KeyboardArrowRight';
+import PortitudeModal from 'common/modal/portitudeModal.container';
 import './literatureItem.style.scss';
 
 const ItemComponent = (props) => {
@@ -21,28 +21,24 @@ const ItemComponent = (props) => {
 
   return (
     <div className="literature_item">
-      <Modal
+      <PortitudeModal
         open={true}
-        onClose={hideModal.bind(this)}>
-        <div className="portitudeModal">
-          <div className="portitudeModal--header">
-            <h1>{item.name}</h1>
-            <div>{author.name.first} {author.name.last}</div>
-          </div>
-          <div className="portitudeModal--body">
-            <div className="modalContent" dangerouslySetInnerHTML={{__html: props.pages[props.currentPage]}} />
-          </div>
-          <div className="portitudeModal--footer">
-            {totalDisplayPages > 1 &&
-              <div className="pagination">
-                <Button className="pagination--button" color="primary" raised onClick={props.setPreviousPage} disabled={props.currentPage === 0}><KeyboardArrowLeft /></Button>
-                <span className="pagination--marker">{currentDisplayPage} / {totalDisplayPages}</span>
-                <Button className="pagination--button" color="primary" raised onClick={props.setNextPage} disabled={props.currentPage === totalDisplayPages - 1}><KeyboardArrowRight /></Button>
-              </div>
-            }
-          </div>
+        onClose={hideModal.bind(this)}
+        size="md"
+        header={{title: item.name, subtitle: `${author.name.first} ${author.name.last}`}}>
+        <div className="portitudeModal--body">
+          <div className="modalContent" dangerouslySetInnerHTML={{__html: props.pages[props.currentPage]}} />
         </div>
-      </Modal>
+        <div className="portitudeModal--footer">
+          {totalDisplayPages > 1 &&
+            <div className="pagination">
+              <Button className="pagination--button" color="primary" raised onClick={props.setPreviousPage} disabled={props.currentPage === 0}><KeyboardArrowLeft /></Button>
+              <span className="pagination--marker">{currentDisplayPage} / {totalDisplayPages}</span>
+              <Button className="pagination--button" color="primary" raised onClick={props.setNextPage} disabled={props.currentPage === totalDisplayPages - 1}><KeyboardArrowRight /></Button>
+            </div>
+          }
+        </div>
+      </PortitudeModal>
     </div>
   );
 };
