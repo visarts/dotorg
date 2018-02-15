@@ -27,7 +27,7 @@ const ItemComponent = (props) => {
         size="md"
         header={{title: item.name, subtitle: `${author.name.first} ${author.name.last}`}}>
         <div className="portitudeModal--body">
-          <div className="modalContent" dangerouslySetInnerHTML={{__html: props.pages[props.currentPage]}} />
+          <div className={`modalContent ${currentDisplayPage === 1 && 'firstPage'}`} dangerouslySetInnerHTML={{__html: props.pages[props.currentPage]}} />
         </div>
         <div className="portitudeModal--footer">
           {totalDisplayPages > 1 &&
