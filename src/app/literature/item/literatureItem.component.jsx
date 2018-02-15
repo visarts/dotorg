@@ -24,12 +24,12 @@ const ItemComponent = (props) => {
       <PortitudeModal
         open={true}
         onClose={hideModal.bind(this)}
-        size="md"
-        header={{title: item.name, subtitle: `${author.name.first} ${author.name.last}`}}>
-        <div className="portitudeModal--body">
+        size="md">
+        <PortitudeModal.Header title={item.name} subtitle={`${author.name.first} ${author.name.last}`} />
+        <PortitudeModal.Body>
           <div className={`modalContent ${currentDisplayPage === 1 && 'firstPage'}`} dangerouslySetInnerHTML={{__html: props.pages[props.currentPage]}} />
-        </div>
-        <div className="portitudeModal--footer">
+        </PortitudeModal.Body>
+        <PortitudeModal.Footer>
           {totalDisplayPages > 1 &&
             <div className="pagination">
               <Button className="pagination--button" color="primary" raised onClick={props.setPreviousPage} disabled={props.currentPage === 0}><KeyboardArrowLeft /></Button>
@@ -37,7 +37,7 @@ const ItemComponent = (props) => {
               <Button className="pagination--button" color="primary" raised onClick={props.setNextPage} disabled={props.currentPage === totalDisplayPages - 1}><KeyboardArrowRight /></Button>
             </div>
           }
-        </div>
+        </PortitudeModal.Footer>
       </PortitudeModal>
     </div>
   );

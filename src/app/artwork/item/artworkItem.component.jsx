@@ -18,17 +18,17 @@ const ItemComponent = (props) => {
       <PortitudeModal
         open={true}
         onClose={hideModal.bind(this)}
-        size="lg"
-        header={{title: item.name, subtitle: props.globalStore.collections[item.category].name}}>
-        <div className="portitudeModal--body">
+        size="lg">
+        <PortitudeModal.Header title={item.name} subtitle={props.globalStore.collections[item.category].name} />
+        <PortitudeModal.Body className="portitudeModal--body">
           <div className="image--container">
             <img
               src={url}
               className="image--large"
               alt={item.title} />
           </div>
-        </div>
-        <div className="portitudeModal--footer"></div>
+        </PortitudeModal.Body>
+        <PortitudeModal.Footer></PortitudeModal.Footer>
       </PortitudeModal>
     </div>
   );

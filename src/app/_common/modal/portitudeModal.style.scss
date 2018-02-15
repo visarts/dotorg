@@ -1,5 +1,7 @@
 @import 'globals';
 
+$modal_footer_height: 6rem;
+
 .portitudeModal {
   display: flex;
   flex-direction: column;
@@ -46,6 +48,7 @@
     max-height: 100%;
     color: $mainThemeColor;
     padding: 2rem;
+    padding-bottom: $modal_footer_height;
     overflow-y: auto;
     line-height: $default_line_height;
     z-index: $contentLayer;
@@ -63,6 +66,7 @@
     align-items: center;
     z-index: $navLayer;
     box-shadow: -2px 0px 30px rgba(#000000, .7);
+    height: $modal_footer_height;
   }
 
   @include mobile {

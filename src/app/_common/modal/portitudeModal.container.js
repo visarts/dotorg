@@ -1,7 +1,11 @@
 import { Component } from 'react';
 import PortitudeModalComponent from './portitudeModal.component';
+import ModalHeader from './modalHeader.component';
+import ModalBody from './modalBody.component';
+import ModalFooter from './modalFooter.component';
 
-export default class PortitudeModal extends Component {
+
+class PortitudeModal extends Component {
 
   render () {
     return (
@@ -10,3 +14,8 @@ export default class PortitudeModal extends Component {
     );
   }
 }
+PortitudeModal.Header = ModalHeader;
+PortitudeModal.Body = ModalBody;
+PortitudeModal.Footer = ModalFooter;
+
+export default PortitudeModal;
