@@ -1,10 +1,10 @@
-import { Link } from 'react-router-dom';
-import './artworkCreator.style.scss';
+import { Link } from 'react-router-dom'
+import './artworkCreator.style.scss'
 
 const CreatorComponent = (props) => {
 
-  const creator = props.globalStore.collections[props.globalState.routing.collection];
-  const { first, last } = creator.name;
+  const creator = props.globalStore.collections[props.globalState.routing.collection]
+  const { first, last } = creator.name
 
   return (
     <div className="artwork_creator">
@@ -28,7 +28,7 @@ const CreatorComponent = (props) => {
         </ul>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CreatorComponent;
+export default CreatorComponent

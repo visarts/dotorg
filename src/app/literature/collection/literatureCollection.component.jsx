@@ -1,15 +1,15 @@
-import { Link } from 'react-router-dom';
-import './literatureCollection.style.scss';
+import { Link } from 'react-router-dom'
+import './literatureCollection.style.scss'
 
 const CollectionComponent = (props) => {
 
-  const collection = props.globalStore.collections[props.globalState.routing.collection];
-  const creators = {};
+  const collection = props.globalStore.collections[props.globalState.routing.collection]
+  const creators = {}
 
   collection.items.map((item, key) => {
-    const creatorId = item.id.split('-')[0];
-    const creator = props.globalStore.collections[creatorId];
-    creators[creatorId] = creators[creatorId] ? creators[creatorId] : [];
+    const creatorId = item.id.split('-')[0]
+    const creator = props.globalStore.collections[creatorId]
+    creators[creatorId] = creators[creatorId] ? creators[creatorId] : []
 
     creators[creatorId].push(
       <li key={key} className="listItem">
@@ -17,8 +17,8 @@ const CollectionComponent = (props) => {
           {item.name}
         </Link>
       </li>
-    );
-  });
+    )
+  })
 
   return (
     <div className="literature_collection">
@@ -30,7 +30,7 @@ const CollectionComponent = (props) => {
         </div>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default CollectionComponent;
+export default CollectionComponent

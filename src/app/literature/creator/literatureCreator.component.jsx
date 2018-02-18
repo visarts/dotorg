@@ -1,15 +1,15 @@
-import { Link } from 'react-router-dom';
-import './literatureCreator.style.scss';
+import { Link } from 'react-router-dom'
+import './literatureCreator.style.scss'
 
 const CreatorComponent = (props) => {
 
-  const creator = props.globalStore.collections[props.globalState.routing.collection];
-  const { first, last } = creator.name;
-  const collections = [];
+  const creator = props.globalStore.collections[props.globalState.routing.collection]
+  const { first, last } = creator.name
+  const collections = []
 
   creator.items.map((item, key) => {
-    const collection = props.globalStore.collections[item.category];
-    collections[item.category] = collections[item.category] ? collections[item.category] : [];
+    const collection = props.globalStore.collections[item.category]
+    collections[item.category] = collections[item.category] ? collections[item.category] : []
 
     collections[item.category].push(
       <li key={key} className="listItem">
@@ -17,8 +17,8 @@ const CreatorComponent = (props) => {
           {item.name} ({item.id.substring(item.id.lastIndexOf('-') + 1)})
         </Link>
       </li>
-    );
-  });
+    )
+  })
 
   return (
     <div className="literature_creator">
@@ -30,7 +30,7 @@ const CreatorComponent = (props) => {
         </div>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default CreatorComponent;
+export default CreatorComponent

@@ -4,7 +4,7 @@ const ModalFooter = (props) => {
     <div className="portitudeModal--footer">
       {props.children}
     </div>
-  );
-};
+  )
+}
 
-export default ModalFooter;
+export default ModalFooter

@@ -1,5 +1,5 @@
-import Modal from 'material-ui/Modal';
-import './portitudeModal.style.scss';
+import Modal from 'material-ui/Modal'
+import './portitudeModal.style.scss'
 
 /*
   props:
@@ -11,7 +11,7 @@ import './portitudeModal.style.scss';
 
 */
 const PortitudeModalComponent = (props) => {
-  const modalClass = props.size ? `portitudeModal--${props.size}` : '';
+  const modalClass = props.size ? `portitudeModal--${props.size}` : ''
 
   return (
     <Modal
@@ -21,7 +21,7 @@ const PortitudeModalComponent = (props) => {
         {props.children}
       </div>
     </Modal>
-  );
-};
+  )
+}
 
-export default PortitudeModalComponent;
+export default PortitudeModalComponent

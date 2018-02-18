@@ -1,7 +1,8 @@
-import { Link } from 'react-router-dom';
-import './home.style.scss';
+import { Link } from 'react-router-dom'
+import './home.style.scss'
 
 const HomeComponent = (props) => {
+  console.log(props)
   return (
     <div className="home">
       <h1>The garden of pages and paintings</h1>
@@ -14,7 +15,7 @@ const HomeComponent = (props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default HomeComponent;
+export default HomeComponent

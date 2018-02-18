@@ -4,7 +4,7 @@ const ModalBody = (props) => {
     <div className="portitudeModal--body">
       {props.children}
     </div>
-  );
-};
+  )
+}
 
-export default ModalBody;
+export default ModalBody

@@ -1,15 +1,15 @@
-import { Link } from 'react-router-dom';
-import './artworkCollection.style.scss';
+import { Link } from 'react-router-dom'
+import './artworkCollection.style.scss'
 
 const CollectionComponent = (props) => {
 
-  const collection = props.globalStore.collections[props.globalState.routing.collection];
-  const creators = {};
+  const collection = props.globalStore.collections[props.globalState.routing.collection]
+  const creators = {}
 
   collection.items.map((item, key) => {
-    const creatorId = item.id.split('-')[0];
-    const creator = props.globalStore.collections[creatorId];
-    creators[creatorId] = creators[creatorId] ? creators[creatorId] : [];
+    const creatorId = item.id.split('-')[0]
+    const creator = props.globalStore.collections[creatorId]
+    creators[creatorId] = creators[creatorId] ? creators[creatorId] : []
 
     creators[creatorId].push(
       <li key={key}>
@@ -23,8 +23,8 @@ const CollectionComponent = (props) => {
           </span>
         </Link>
       </li>
-    );
-  });
+    )
+  })
 
   return (
     <div className="artwork_collection">
@@ -36,7 +36,7 @@ const CollectionComponent = (props) => {
         </div>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default CollectionComponent;
+export default CollectionComponent

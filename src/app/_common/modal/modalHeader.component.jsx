@@ -5,7 +5,7 @@ const ModalHeader = (props) => {
       <h1>{props.title || ''}</h1>
       <div>{props.subtitle || ''}</div>
     </div>
-  );
-};
+  )
+}
 
-export default ModalHeader;
+export default ModalHeader

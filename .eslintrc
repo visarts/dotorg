@@ -324,7 +324,7 @@ rules:
     quote-props: 0                       # require quotes around object literal property names
     quotes: 0                            # enforce the consistent use of either backticks, double, or single quotes
     require-jsdoc: 0                     # require JSDoc comments
-    semi: 2                              # require or disallow semicolons instead of ASI
+    semi: [2, "never"]                              # require or disallow semicolons instead of ASI
     semi-spacing: 2                      # enforce consistent spacing before and after semicolons
     semi-style: 2                        # enforce location of semicolons
     sort-keys: 0                         # require object keys to be sorted

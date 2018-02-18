@@ -1,14 +1,14 @@
-import { Link } from 'react-router-dom';
-import './artworkHome.style.scss';
+import { Link } from 'react-router-dom'
+import './artworkHome.style.scss'
 
 const HomeComponent = (props) => {
 
-  const collections = props.globalStore.collections;
+  const collections = props.globalStore.collections
 
   const displayCollections = {
     artists: [],
     eras: []
-  };
+  }
 
   for (const key in collections) {
     if (collections[key].type === 'category') {
@@ -16,13 +16,13 @@ const HomeComponent = (props) => {
         <li key={key}>
           <Link to={`artwork/${key}`} className="listItem">{collections[key].name}</Link>
         </li>
-      );
+      )
     } else {
       displayCollections.artists.push(
         <li key={key}>
           <Link to={`artwork/${key}`} className="listItem">{collections[key].name.last}</Link>
         </li>
-      );
+      )
     }
   }
 
@@ -42,7 +42,7 @@ const HomeComponent = (props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default HomeComponent;
+export default HomeComponent

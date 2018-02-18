@@ -1,4 +1,4 @@
-// import {createStore} from 'redux';
+// import {createStore} from 'redux'
 //
 // function reducer (state, action) {
 //   switch (action.type) {
@@ -15,57 +15,57 @@
 //   }
 // }
 //
-// const store = createStore(reducer);
+// const store = createStore(reducer)
 
 
-const artHistory = localStorage.getItem('artHistory') ? JSON.parse(localStorage.getItem('artHistory')): {historyList: []};
-const literatureHistory = localStorage.getItem('litHistory') ? JSON.parse(localStorage.getItem('litHistory')) : {historyList: []};
-const historyLimit = 10;
+const artHistory = localStorage.getItem('artHistory') ? JSON.parse(localStorage.getItem('artHistory')): {historyList: []}
+const literatureHistory = localStorage.getItem('litHistory') ? JSON.parse(localStorage.getItem('litHistory')) : {historyList: []}
+const historyLimit = 10
 
 const setTimestamp = () => {
-  const date = new Date();
-  return date.toLocaleDateString();
-};
+  const date = new Date()
+  return date.toLocaleDateString()
+}
 
 const addToHistory = (history) => {
-  const data = history.data;
-  const historyList = history.type === 'artHistory' ? artHistory.historyList : literatureHistory.historyList;
-  const duplicateIndex = getDuplicateIndex(data, historyList);
-  data.timestamp = setTimestamp();
+  const data = history.data
+  const historyList = history.type === 'artHistory' ? artHistory.historyList : literatureHistory.historyList
+  const duplicateIndex = getDuplicateIndex(data, historyList)
+  data.timestamp = setTimestamp()
   if (duplicateIndex > -1) {
-    historyList.splice(duplicateIndex, 1);
+    historyList.splice(duplicateIndex, 1)
   }
-  historyList.unshift(data);
+  historyList.unshift(data)
   if (historyList.length > historyLimit) {
-    historyList.pop();
+    historyList.pop()
   }
-  localStorage.setItem(history.type, JSON.stringify({historyList}));
-};
+  localStorage.setItem(history.type, JSON.stringify({historyList}))
+}
 
 const getHistory = (type) => {
-  return type === 'artHistory' ? artHistory.historyList : literatureHistory.historyList;
-};
+  return type === 'artHistory' ? artHistory.historyList : literatureHistory.historyList
+}
 
 const clearHistory = (type) => {
-  localStorage.removeItem(type);
-  location.reload();
-};
+  localStorage.removeItem(type)
+  location.reload()
+}
 
 const getDuplicateIndex = (obj, arr) => {
-  let isDuplicate = -1;
+  let isDuplicate = -1
   for (const i in arr) {
     if (obj.fileName === arr[i].fileName) {
-      isDuplicate = i;
-      break;
+      isDuplicate = i
+      break
     }
   }
-  return isDuplicate;
-};
+  return isDuplicate
+}
 
 const historyService = {
   addToHistory,
   getHistory,
   clearHistory
-};
+}
 
-export default historyService;
+export default historyService

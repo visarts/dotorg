@@ -1,17 +1,17 @@
-import { Link } from 'react-router-dom';
-import Modal from 'material-ui/Modal';
-import PortitudeModal from 'common/modal/portitudeModal.container';
-import './artworkItem.style.scss';
+import { Link } from 'react-router-dom'
+import Modal from 'material-ui/Modal'
+import PortitudeModal from 'common/modal/portitudeModal.container'
+import './artworkItem.style.scss'
 
 const ItemComponent = (props) => {
 
-  const item = props.globalStore.items.find(item => item.id === props.globalState.routing.item);
-  const creatorId = item.id.split('-')[0];
+  const item = props.globalStore.items.find(item => item.id === props.globalState.routing.item)
+  const creatorId = item.id.split('-')[0]
   const hideModal = () => {
-    location.hash = location.hash.substring(0, location.hash.lastIndexOf('/'));
-  };
+    location.hash = location.hash.substring(0, location.hash.lastIndexOf('/'))
+  }
 
-  const url = require(`Artwork/${creatorId}/${item.id}.jpg`);
+  const url = require(`Artwork/${creatorId}/${item.id}.jpg`)
 
   return (
     <div className="artwork--item">
@@ -31,7 +31,7 @@ const ItemComponent = (props) => {
         <PortitudeModal.Footer></PortitudeModal.Footer>
       </PortitudeModal>
     </div>
-  );
-};
+  )
+}
 
-export default ItemComponent;
+export default ItemComponent

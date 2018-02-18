@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
-import Favorite from 'material-ui-icons/Favorite';
-import './globalHeader.style.scss';
+import { Link } from 'react-router-dom'
+import Favorite from 'material-ui-icons/Favorite'
+import './globalHeader.style.scss'
 
 const GlobalHeaderComponent = (props) => {
 
@@ -10,7 +10,7 @@ const GlobalHeaderComponent = (props) => {
         <h1><Favorite /> Portitude</h1>
       </Link>
     </div>
-  );
-};
+  )
+}
 
-export default GlobalHeaderComponent;
+export default GlobalHeaderComponent

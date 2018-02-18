@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import './globalNav.style.scss';
+import { Link } from 'react-router-dom'
+import './globalNav.style.scss'
 
 const GlobalNavComponent = (props) => {
 
@@ -7,7 +7,7 @@ const GlobalNavComponent = (props) => {
     <div className="globalNav">
 
     </div>
-  );
-};
+  )
+}
 
-export default GlobalNavComponent;
+export default GlobalNavComponent
