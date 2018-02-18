@@ -16,7 +16,6 @@ export default class App extends React.Component {
 
   constructor (props) {
     super(props)
-    storeService.setStore(this.props.data)
     this.globalStore = storeService.getStore()
     this.currentLocation = location.hash.slice(1)
     this.state = {

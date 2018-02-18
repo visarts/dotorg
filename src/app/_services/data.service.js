@@ -1,4 +1,11 @@
 import axios from 'axios'
+import _ from 'lodash'
+
+import storeService from 'Services/store.service'
+
+const { artwork, literature } = storeService.getStore()
+
+console.log(artwork, literature)
 
 /*const getAuthorData = (author) => {
   const authorData = require(`authors/${author}.json`)
@@ -44,7 +51,7 @@ const getAllArtwork = () => {
     })
 }*/
 
-const getCollections = (type) => {
+const getCollections = type => {
   return axios.get(`./data/${type}-collections.json`, {
     transformResponse: res => decodeURIComponent(res)
   })
@@ -53,7 +60,7 @@ const getCollections = (type) => {
     })
 }
 
-const getItems = (type) => {
+const getItems = type => {
   return axios.get(`./data/${type}-items.json`, {
     transformResponse: res => decodeURIComponent(res)
   })
@@ -138,6 +145,29 @@ const getRoutingState = (currentRoute) => {
   return mappedParams
 }
 
+const getAllData = () => {
+  // const store = localStorage.getItem('store')
+  return Promise.all([
+    getCollections('artwork'),
+    getItems('artwork'),
+    getCollections('literature'),
+    getItems('literature')
+  ])
+  .then(response => {
+    const [ artwork_collections, artwork_items, literature_collections, literature_items ] = response
+    return {
+      artwork: {
+        collections: artwork_collections,
+        items: artwork_items
+      },
+      literature: {
+        collections: literature_collections,
+        items: literature_items
+      }
+    }
+  })
+}
+
 const dataService = {
   //getAuthorNames,
   //getArtistNames,
@@ -146,7 +176,8 @@ const dataService = {
   getCollections,
   getItems,
   getHTMLContent,
-  getRoutingState
+  getRoutingState,
+  getAllData
   //getCurrentRouting
 }
 
