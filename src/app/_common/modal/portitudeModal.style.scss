@@ -45,10 +45,11 @@ $modal_footer_height: 6rem;
   }
 
   &--body {
+    margin-bottom: $modal_footer_height;
     max-height: 100%;
     color: $mainThemeColor;
     padding: 2rem;
-    padding-bottom: $modal_footer_height;
+    // padding-bottom: $modal_footer_height;
     overflow-y: auto;
     line-height: $default_line_height;
     z-index: $contentLayer;

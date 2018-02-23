@@ -3,6 +3,18 @@ $padding_md: 1rem;
 $padding_lg: 2rem;
 $padding_xl: 10rem;
 
+$sizes: (
+  lg: 2rem,
+  md: 1.5rem,
+  sm: 1rem
+);
+
+$breakpoints: (
+  lg: '1250px',
+  md: '1000px',
+  sm: '650px'
+);
+
 @mixin paddingHorizontal($size) {
   @if $size == 'sm' {
     padding-top: $padding_sm;
@@ -47,6 +59,18 @@ $padding_xl: 10rem;
 
 @mixin mobile {
   @media (max-width: $smallScreen) {
+    @content;
+  }
+}
+
+@mixin breakpointDown($size) {
+  @media (max-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpointUp($size) {
+  @media (min-width: map-get($breakpoints, $size)) {
     @content;
   }
 }
