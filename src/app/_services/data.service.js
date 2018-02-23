@@ -4,7 +4,6 @@ import _ from 'lodash'
 import storeService from 'Services/store.service'
 
 const { artwork, literature } = storeService.getStore()
-console.log(literature)
 /*const getAuthorData = (author) => {
   const authorData = require(`authors/${author}.json`)
   return authorData
@@ -78,16 +77,17 @@ const getLiteratureCreator = creatorId => {
 }
 
 // gets all creators and their items in a given collection
-const getLiteratureCreatorsByCollection = (collectionId) => {
+const getLiteratureCreatorsByCollection = collectionId => {
   const collection = literature.collections[collectionId]
-  const parsedCollection = _.map(collection.items, item => {
+  const filteredItems = _.map(collection.items, item => {
     const creatorId = item.id.split('-')[0]
     const creator = getLiteratureCreator(creatorId)
+
   })
 }
 
 // gets all collections and their items with a given creator
-const getLiteratureCollectionsByCreator = (creatorId) => {
+const getLiteratureCollectionsByCreator = creatorId => {
 
 }
 
