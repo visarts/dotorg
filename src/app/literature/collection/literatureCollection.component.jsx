@@ -17,7 +17,7 @@ const CollectionComponent = (props) => {
             <ul>
               {_.map(creator.items, (item, itemIndex) => (
                 <li key={itemIndex} className="listItem">
-                  <Link to={`/literature/${collectionId}/${item.id}`}>
+                  <Link to={literatureService.getItemPath(collectionId, item.id)}>
                     {item.name}
                   </Link>
                 </li>

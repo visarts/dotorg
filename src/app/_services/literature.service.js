@@ -54,4 +54,13 @@ const getCreatorGroupedByCollections = creatorId => {
   return collections
 }
 
-export default { getCollectionGroupedByCreators, getCreatorGroupedByCollections, getCollection }
+const getItemPath = (collectionId, itemId) => {
+  return `/literature/${collectionId}/${itemId}`
+}
+
+export default {
+  getCollectionGroupedByCreators,
+  getCreatorGroupedByCollections,
+  getCollection,
+  getItemPath
+}
