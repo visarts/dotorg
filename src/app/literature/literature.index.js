@@ -1,4 +1,5 @@
 import { Route, Switch } from 'react-router-dom'
+import literatureService from 'Services/literature.service'
 import Home from './home/literatureHome.container'
 import Collection from './collection/literatureCollection.container'
 import Creator from './creator/literatureCreator.container'
@@ -12,7 +13,8 @@ const LiteratureIndex = (props) => {
         <Home {...props} {...routeProps} />
       )} />
       <Route path='/literature/:collection' render={routeProps => {
-        if (props.globalStore.collections[props.globalState.routing.collection].type === 'creator') {
+        const collection = literatureService.getCollection(props.globalState.routing.collection)
+        if (collection.type === 'creator') {
           return (<Creator {...props} {...routeProps} />)
         } else {
           return (<Collection {...props} {...routeProps} />)

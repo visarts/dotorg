@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import _ from 'lodash'
 import dataService from 'Services/data.service'
+import literatureService from 'Services/literature.service'
 import ItemComponent from './literatureItem.component'
 
 export default class Item extends Component {
@@ -10,7 +11,7 @@ export default class Item extends Component {
       content: false,
       currentPage: 0
     }
-    this.item = this.props.globalStore.items.find(item => item.id === props.globalState.routing.item)
+    this.item = literatureService.getItemWith(this.props.globalState.routing.collection, this.props.globalState.routing.item)
     this.pages = []
     this.setPages = this.setPages.bind(this)
     this.setFirstPage = this.setFirstPage.bind(this)
@@ -30,9 +31,7 @@ export default class Item extends Component {
   }
 
   setContent () {
-    const itemId = this.props.globalState.routing.item
-    const authorId = itemId.split('-')[0]
-    dataService.getHTMLContent(authorId, itemId)
+    dataService.getHTMLContent(this.item.creator.id, this.item.id)
       .then(content => {
         this.setPages(content)
         this.setState({content: this.pages[this.state.currentPage]})
@@ -65,6 +64,7 @@ export default class Item extends Component {
         {this.state.content &&
           <ItemComponent
             {...this.props}
+            item={this.item}
             content={this.state.content}
             setFirstPage={this.setFirstPage}
             setLastPage={this.setLastPage}

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+
 import Button from 'material-ui/Button'
 import KeyboardArrowLeft from 'material-ui-icons/KeyboardArrowLeft'
 import KeyboardArrowRight from 'material-ui-icons/KeyboardArrowRight'
@@ -7,10 +8,10 @@ import './literatureItem.style.scss'
 
 const ItemComponent = (props) => {
 
-  const item = props.globalStore.items.find(item => item.id === props.globalState.routing.item)
-  const authorId = item.id.split('-')[0]
-  const collectionName = props.globalStore.collections[item.category].name
-  const author = props.globalStore.collections[authorId]
+  const item = props.item
+  const author = item.creator
+  const collection = item.collection
+
   // create a portitude modal component that has all this functional stuff built in
   const hideModal = () => {
     location.hash = location.hash.substring(0, location.hash.lastIndexOf('/'))

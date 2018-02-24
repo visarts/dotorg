@@ -1,30 +1,11 @@
 import { Link } from 'react-router-dom'
+import literatureService from 'Services/literature.service'
 import './literatureHome.style.scss'
 
 const HomeComponent = (props) => {
 
-  const collections = props.globalStore.collections
-
-  const displayCollections = {
-    authors: [],
-    genres: []
-  }
-
-  for (const key in collections) {
-    if (collections[key].type === 'category') {
-      displayCollections.genres.push(
-        <li key={key} className="listItem">
-          <Link to={`literature/${key}`}>{collections[key].name}</Link>
-        </li>
-      )
-    } else {
-      displayCollections.authors.push(
-        <li key={key} className="listItem">
-          <Link to={`literature/${key}`}>{collections[key].name.last}</Link>
-        </li>
-      )
-    }
-  }
+  const collections = literatureService.getAllCollectionsMetaData()
+  const creators = literatureService.getAllCreatorsMetaData()
 
   return (
     <div className="literature_home">
@@ -32,13 +13,25 @@ const HomeComponent = (props) => {
       <div>
         <h1>genres</h1>
         <div className="literature_genres">
-          <ul>{displayCollections.genres}</ul>
+          <ul>
+            {_.map(collections, (collection, index) => (
+              <li key={index} className="listItem">
+                <Link to={literatureService.getCollectionPath(collection.id)}>{collection.name}</Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
       <div>
         <h1>authors</h1>
         <div className="literature_authors">
-          <ul>{displayCollections.authors}</ul>
+          <ul>
+            {_.map(creators, (creator, index) => (
+              <li key={index} className="listItem">
+                <Link to={literatureService.getCollectionPath(creator.id)}>{creator.name.last}</Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>

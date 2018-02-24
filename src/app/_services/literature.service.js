@@ -2,10 +2,71 @@ import _ from 'lodash'
 
 import storeService from 'Services/store.service'
 
-const { artwork, literature } = storeService.getStore()
+const { literature } = storeService.getStore()
 
 const getCollection = collectionId => {
   return literature.collections[collectionId]
+}
+
+const getItem = (collectionId, itemId) => {
+  return _.find(literature.collections[collectionId].items, item => item.id === itemId)
+}
+
+const getItemWith = (collectionId, itemId) => {
+  const item = getItem(collectionId, itemId)
+  const creatorId = _.head(item.id.split('-'))
+  const creator = getCollection(creatorId)
+  const collection = getCollection(item.category)
+  const itemWith = {
+    id: item.id,
+    name: item.name,
+    pageSizes: item.pageSizes,
+    creator: {
+      id: creatorId,
+      name: creator.name,
+      desc: creator.desc,
+      dates: creator.dates
+    },
+    collection: {
+      id: item.category,
+      name: collection.name,
+      desc: collection.desc
+    }
+  }
+  return itemWith
+}
+
+const getAllCreatorKeys = () => {
+  return _.keys(literature.collections)
+}
+// returns metadata of each creator in an array
+const getAllCreatorsMetaData = () => {
+  // here compact removes the undefined elements that map returns due to them being 'category' types
+  const creators = _.compact(_.map(literature.collections, (creator, creatorKey) => {
+    if (creator.type === 'creator') {
+      return {
+        id: creatorKey,
+        name: creator.name,
+        desc: creator.desc,
+        dates: creator.dates
+      }
+    }
+  }))
+  return creators
+}
+
+const getAllCollectionsMetaData = () => {
+  // here compact removes the undefined elements that map returns due to them being 'category' types
+  const collections = _.compact(_.map(literature.collections, (collection, collectionKey) => {
+    if (collection.type === 'category') {
+      return {
+        id: collectionKey,
+        name: collection.name,
+        desc: collection.desc
+      }
+    }
+  }))
+  return collections
 }
 
 // returns an array of creators that includes creator metadata and an items array of items matching the collection in that creator
@@ -54,6 +115,10 @@ const getCreatorGroupedByCollections = creatorId => {
   return collections
 }
 
+const getCollectionPath = collectionId => {
+  return `/literature/${collectionId}`
+}
+
 const getItemPath = (collectionId, itemId) => {
   return `/literature/${collectionId}/${itemId}`
 }
@@ -62,5 +127,11 @@ export default {
   getCollectionGroupedByCreators,
   getCreatorGroupedByCollections,
   getCollection,
-  getItemPath
+  getItem,
+  getItemWith,
+  getItemPath,
+  getCollectionPath,
+  getAllCreatorKeys,
+  getAllCreatorsMetaData,
+  getAllCollectionsMetaData
 }

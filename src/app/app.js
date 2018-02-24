@@ -108,7 +108,6 @@ export default class App extends React.Component {
           )} />
           <Route path="/literature" render={routeProps => (
             <LiteratureIndex
-              globalStore={this.globalStore.literature}
               globalState={this.state}
               {...routeProps} />
           )} />
