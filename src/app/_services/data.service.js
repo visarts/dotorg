@@ -1,9 +1,5 @@
 import axios from 'axios'
-import _ from 'lodash'
 
-import storeService from 'Services/store.service'
-
-const { artwork, literature } = storeService.getStore()
 /*const getAuthorData = (author) => {
   const authorData = require(`authors/${author}.json`)
   return authorData
@@ -71,25 +67,6 @@ const getItems = type => {
     a) front page gets all items with all creators and any combination of collections, creators, and items
     b) section page
 */
-
-const getLiteratureCreator = creatorId => {
-  return literature.collections[creatorId]
-}
-
-// gets all creators and their items in a given collection
-const getLiteratureCreatorsByCollection = collectionId => {
-  const collection = literature.collections[collectionId]
-  const filteredItems = _.map(collection.items, item => {
-    const creatorId = item.id.split('-')[0]
-    const creator = getLiteratureCreator(creatorId)
-
-  })
-}
-
-// gets all collections and their items with a given creator
-const getLiteratureCollectionsByCreator = creatorId => {
-
-}
 
 const getHTMLContent = (creatorId, itemId) => {
   return axios.get(`./content/literature/${creatorId}/${itemId}.html`, {
