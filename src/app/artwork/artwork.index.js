@@ -1,4 +1,5 @@
 import { Route, Switch } from 'react-router-dom'
+import artworkService from 'Services/artwork.service'
 import Home from './home/artworkHome.container'
 import Collection from './collection/artworkCollection.container'
 import Creator from './creator/artworkCreator.container'
@@ -12,7 +13,8 @@ const ArtworkIndex = (props) => {
         <Home {...props} {...routeProps} />
       )} />
       <Route path='/artwork/:collection' render={routeProps => {
-        if (props.globalStore.collections[props.globalState.routing.collection].type === 'creator') {
+        const collection = artworkService.getCollection(props.globalState.routing.collection)
+        if (collection.type === 'creator') {
           return (<Creator {...props} {...routeProps} />)
         } else {
           return (<Collection {...props} {...routeProps} />)

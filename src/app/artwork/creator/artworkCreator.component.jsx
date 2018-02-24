@@ -1,22 +1,24 @@
 import { Link } from 'react-router-dom'
+import artworkService from 'Services/artwork.service'
 import './artworkCreator.style.scss'
 
 const CreatorComponent = (props) => {
 
-  const creator = props.globalStore.collections[props.globalState.routing.collection]
+  const creatorId = props.globalState.routing.collection
+  const creator = artworkService.getCollection(creatorId)
   const { first, last } = creator.name
 
   return (
     <div className="artwork_creator">
-      <h1>{first} {last}</h1>
+      <h1>{creator.name.first} {creator.name.last}</h1>
       <div className="section">
         <h2>Gallery</h2>
         <ul>
-          {creator.items.map((item, key) => (
-            <li key={key}>
-              <Link to={`/artwork/${props.globalState.routing.collection}/${item.id}`} className="thumbContainer">
+          {_.map(creator.items, (item, itemIndex) => (
+            <li key={itemIndex}>
+              <Link to={artworkService.getItemPath(creatorId, item.id)} className="thumbContainer">
                 <img
-                  src={`./content/artwork/${props.globalState.routing.collection}/${item.id}_sm.jpg`}
+                  src={artworkService.getImagePathSm(creatorId, item.id)}
                   className="thumbContainer--image"
                   alt={item.title} />
                 <span className="thumbContainer--text">

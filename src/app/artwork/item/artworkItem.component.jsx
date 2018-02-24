@@ -1,29 +1,27 @@
 import { Link } from 'react-router-dom'
 import Modal from 'material-ui/Modal'
 import PortitudeModal from 'common/modal/portitudeModal.container'
+import artworkService from 'Services/artwork.service'
+
 import './artworkItem.style.scss'
 
 const ItemComponent = (props) => {
 
-  const item = props.globalStore.items.find(item => item.id === props.globalState.routing.item)
-  const creatorId = item.id.split('-')[0]
-  const hideModal = () => {
-    location.hash = location.hash.substring(0, location.hash.lastIndexOf('/'))
-  }
-
-  const url = require(`Artwork/${creatorId}/${item.id}.jpg`)
+  const item = props.item
+  const collection = item.collection
+  const artist = item.creator
 
   return (
     <div className="artwork--item">
       <PortitudeModal
         open={true}
-        onClose={hideModal.bind(this)}
+        onClose={props.hideModal}
         size="lg">
-        <PortitudeModal.Header title={item.name} subtitle={props.globalStore.collections[item.category].name} />
+        <PortitudeModal.Header title={item.name} subtitle={item.name} />
         <PortitudeModal.Body className="portitudeModal--body">
           <div className="image--container">
             <img
-              src={url}
+              src={props.imagePath}
               className="image--large"
               alt={item.title} />
           </div>

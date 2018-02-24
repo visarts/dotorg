@@ -102,7 +102,6 @@ export default class App extends React.Component {
           )} />
           <Route path="/artwork" render={routeProps => (
             <ArtworkIndex
-              globalStore={this.globalStore.artwork}
               globalState={this.state}
               {...routeProps} />
           )} />

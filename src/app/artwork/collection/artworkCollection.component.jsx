@@ -1,40 +1,38 @@
 import { Link } from 'react-router-dom'
+import artworkService from 'Services/artwork.service'
 import './artworkCollection.style.scss'
 
 const CollectionComponent = (props) => {
 
-  const collection = props.globalStore.collections[props.globalState.routing.collection]
-  const creators = {}
-
-  collection.items.map((item, key) => {
-    const creatorId = item.id.split('-')[0]
-    const creator = props.globalStore.collections[creatorId]
-    creators[creatorId] = creators[creatorId] ? creators[creatorId] : []
-
-    creators[creatorId].push(
-      <li key={key}>
-        <Link to={`/artwork/${props.globalState.routing.collection}/${item.id}`} className="thumbContainer">
-          <img
-            src={`./content/artwork/${creatorId}/${item.id}_sm.jpg`}
-            className="thumbContainer--image"
-            alt={item.title} />
-          <span className="thumbContainer--text">
-            {item.name} ({item.id.substring(item.id.lastIndexOf('-') + 1)})
-          </span>
-        </Link>
-      </li>
-    )
-  })
+  const collectionId = props.globalState.routing.collection
+  const collection = artworkService.getCollection(collectionId)
+  const groupedCollection = artworkService.getCollectionGroupedByCreators(collectionId)
 
   return (
     <div className="artwork_collection">
       <h1>{collection.name}</h1>
-      {creators && Object.keys(creators).map((item, key) => (
-        <div className="section" key={key}>
-          <h2>{props.globalStore.collections[item].name.last}</h2>
-          <ul>{creators[item]}</ul>
-        </div>
-      ))}
+      {_.map(groupedCollection, (creator, index) => {
+        return (
+          <div className="section" key={index}>
+            <h2>{creator.name.last}</h2>
+            <ul>
+              {_.map(creator.items, (item, itemIndex) => (
+                <li key={itemIndex} className="listItem">
+                  <Link to={artworkService.getItemPath(collectionId, item.id)} className="thumbContainer">
+                    <img
+                      src={artworkService.getImagePathSm(creator.id, item.id)}
+                      className="thumbContainer--image"
+                      alt={item.title} />
+                    <span className="thumbContainer--text">
+                      {item.name} ({item.id.substring(item.id.lastIndexOf('-') + 1)})
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )
+      })}
     </div>
   )
 }
