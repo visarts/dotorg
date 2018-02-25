@@ -83,9 +83,9 @@ plugins:
 
 #    # - eslint:recommended                # enables a subset of core rules that report common problems, which have a check mark on the rules page
 #    # - eslint:all                        # enable all core rules in the currently installed version of ESLint
-#extends:
-    #- "eslint:recommended"
-    #- "plugin:react/recommended"
+extends:
+    - eslint:recommended
+    - plugin:react/recommended
 
 
 rules:
@@ -98,6 +98,13 @@ rules:
     #    If a rule has additional options, you can specify them using array literal syntax, such as:
     #        quotes: [2, double]
 
+    ######## REACT RULES ############
+
+    react/jsx-uses-react: 2
+    react/jsx-uses-vars: 2
+    react/react-in-jsx-scope: 0
+    react/prop-types: 0
+    react/no-unused-state: 2
 
     ######## Possible Errors ########
 
@@ -173,10 +180,10 @@ rules:
     no-invalid-this: 0                   # disallow this keywords outside of classes or class-like objects
     no-iterator: 0                       # disallow the use of the __iterator__ property
     no-labels: 0                         # disallow labeled statements
-    no-lone-blocks: 0                    # disallow unnecessary nested blocks
+    no-lone-blocks: 2                    # disallow unnecessary nested blocks
     no-loop-func: 0                      # disallow function declarations and expressions inside loop statements
     no-magic-numbers: 0                  # disallow magic numbers
-    no-multi-spaces: 0                   # disallow multiple spaces
+    no-multi-spaces: 2                   # disallow multiple spaces
     no-multi-str: 0                      # disallow multiline strings
     no-new: 0                            # disallow new operators outside of assignments or comparisons
     no-new-func: 0                       # disallow new operators with the Function object
@@ -185,7 +192,7 @@ rules:
     no-octal-escape: 0                   # disallow octal escape sequences in string literals
     no-param-reassign: 0                 # disallow reassigning function parameters
     no-proto: 0                          # disallow the use of the __proto__ property
-    no-redeclare: 0                      # disallow variable redeclaration
+    no-redeclare: 2                      # disallow variable redeclaration
     no-restricted-properties: 0          # disallow certain properties on certain objects
     no-return-assign: 0                  # disallow assignment operators in return statements
     no-return-await: 0                   # disallow unnecessary return await
@@ -226,11 +233,11 @@ rules:
     no-restricted-globals: 0             # disallow specified global variables
     no-shadow: 0                         # disallow variable declarations from shadowing variables declared in the outer scope
     no-shadow-restricted-names: 0        # disallow identifiers from shadowing restricted names
-    no-undef: 0                          # disallow the use of undeclared variables unless mentioned in /*global */ comments
+    no-undef: 2                          # disallow the use of undeclared variables unless mentioned in /*global */ comments
     no-undef-init: 0                     # disallow initializing variables to undefined
     no-undefined: 0                      # disallow the use of undefined as an identifier
-    no-unused-vars: 0                    # disallow unused variables
-    no-use-before-define: 0              # disallow the use of variables before they are defined
+    no-unused-vars: 1                    # disallow unused variables
+    no-use-before-define: 2              # disallow the use of variables before they are defined
 
 
     ######## Node.js and CommonJS ########
@@ -258,11 +265,11 @@ rules:
     camelcase: 0                         # enforce camelcase naming convention
     capitalized-comments: 0              # enforce or disallow capitalization of the first letter of a comment
     comma-dangle: 0                      # require or disallow trailing commas
-    comma-spacing: 0                     # enforce consistent spacing before and after commas
-    comma-style: 0                       # enforce consistent comma style
-    computed-property-spacing: 0         # enforce consistent spacing inside computed property brackets
+    comma-spacing: 2                     # enforce consistent spacing before and after commas
+    comma-style: 2                       # enforce consistent comma style
+    computed-property-spacing: 2         # enforce consistent spacing inside computed property brackets
     consistent-this: 0                   # enforce consistent naming when capturing the current execution context
-    eol-last: 0                          # require or disallow newline at the end of files
+    eol-last: 2                          # require or disallow newline at the end of files
     func-call-spacing: 0                 # require or disallow spacing between function identifiers and their invocations
     func-name-matching: 0                # require function names to match the name of the variable or property to which they are assigned
     func-names: 0                        # require or disallow named function expressions
@@ -276,9 +283,9 @@ rules:
     key-spacing: 0                       # enforce consistent spacing between keys and values in object literal properties
     keyword-spacing: 0                   # enforce consistent spacing before and after keywords
     line-comment-position: 0             # enforce position of line comments
-    linebreak-style: 0                   # enforce consistent linebreak style
+    linebreak-style: 2                   # enforce consistent linebreak style
     lines-around-comment: 0              # require empty lines around comments
-    lines-between-class-members: 0       # require or disallow an empty line between class members
+    lines-between-class-members: 2       # require or disallow an empty line between class members
     max-depth: 0                         # enforce a maximum depth that blocks can be nested
     max-len: 0                           # enforce a maximum line length
     max-lines: 0                         # enforce a maximum number of lines per file
@@ -334,7 +341,7 @@ rules:
     space-in-parens: 0                   # enforce consistent spacing inside parentheses
     space-infix-ops: 0                   # require spacing around infix operators
     space-unary-ops: 0                   # enforce consistent spacing before or after unary operators
-    spaced-comment: 0                    # enforce consistent spacing after the // or /* in a comment
+    spaced-comment: 2                    # enforce consistent spacing after the // or /* in a comment
     switch-colon-spacing: 0              # enforce spacing around colons of switch statements
     template-tag-spacing: 0              # require or disallow spacing between template tags and their literals
     unicode-bom: 0                       # require or disallow Unicode byte order mark (BOM)
@@ -369,7 +376,7 @@ rules:
     prefer-spread: 0                     # require spread operators instead of .apply()
     prefer-template: 1                   # require template literals instead of string concatenation
     require-yield: 0                     # require generator functions to contain yield
-    rest-spread-spacing: 0               # enforce spacing between rest and spread operators and their expressions
+    rest-spread-spacing: 2               # enforce spacing between rest and spread operators and their expressions
     sort-imports: 0                      # enforce sorted import declarations within modules
     symbol-description: 0                # require symbol descriptions
     template-curly-spacing: 0            # require or disallow spacing around embedded expressions of template strings

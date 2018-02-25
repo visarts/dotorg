@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import artworkService from 'Services/artwork.service'
 import Home from './home/artworkHome.container'
 import Collection from './collection/artworkCollection.container'
@@ -19,7 +19,7 @@ const ArtworkIndex = (props) => {
         } else {
           return (<Collection {...props} {...routeProps} />)
         }
-      }}  />
+      }} />
       <Route path='/artwork/:collection/:item' render={routeProps => (
         <Item {...props} {...routeProps} />
       )} />

@@ -1,3 +1,4 @@
+import _ from 'lodash'
 import { Link } from 'react-router-dom'
 import literatureService from 'Services/literature.service'
 import './literatureCollection.style.scss'

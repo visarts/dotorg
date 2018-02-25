@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import literatureService from 'Services/literature.service'
 import Home from './home/literatureHome.container'
 import Collection from './collection/literatureCollection.container'

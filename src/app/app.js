@@ -1,4 +1,5 @@
-import { Route, Switch } from 'react-router-dom'
+import React from 'react'
+import { Route } from 'react-router-dom'
 import dataService from 'Services/data.service'
 import storeService from 'Services/store.service'
 
@@ -10,7 +11,6 @@ import Home from './home/home.container'
 
 import ArtworkIndex from './artwork/artwork.index'
 import LiteratureIndex from './literature/literature.index'
-
 
 export default class App extends React.Component {
 
@@ -33,22 +33,9 @@ export default class App extends React.Component {
     document.body.className = this.state.routing.section || ''
   }
 
-  // allows for routing changes in modals and the like when origin is unknown
-  /*getTrimmedURI (num) {
-    if (num) {
-      const params = location.hash.slice(2).split('/')
-      for (let i = 0 i < num i++) {
-        params.pop()
-      }
-      const newParams = params.join('/')
-      return newParams
-    }
-  }*/
-
   componentDidMount () {
     this.setGlobalClassName()
   }
-
 
   // this will update when the route changes and set state with new params
   componentWillReceiveProps (nextProps) {
@@ -83,8 +70,7 @@ export default class App extends React.Component {
       refactor history display into carousel
 
     */
-    // className={`portitude ${this.state.routing.currentSection}`}
-    // console.log(this.globalStore)
+
     return (
       <div id="portitude">
         <GlobalHeader

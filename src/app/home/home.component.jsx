@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './home.style.scss'
 
-const HomeComponent = (props) => {
+const HomeComponent = (/* props */) => {
   return (
     <div className="home">
       <h1>The garden of pages and paintings</h1>

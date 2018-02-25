@@ -1,15 +1,12 @@
-import { Link } from 'react-router-dom'
-import Modal from 'material-ui/Modal'
 import PortitudeModal from 'common/modal/portitudeModal.container'
-import artworkService from 'Services/artwork.service'
 
 import './artworkItem.style.scss'
 
 const ItemComponent = (props) => {
 
   const item = props.item
-  const collection = item.collection
-  const artist = item.creator
+  // const collection = item.collection
+  // const artist = item.creator
 
   return (
     <div className="artwork--item">

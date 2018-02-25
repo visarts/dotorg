@@ -1,3 +1,4 @@
+import _ from 'lodash'
 import { Link } from 'react-router-dom'
 import artworkService from 'Services/artwork.service'
 import './artworkCollection.style.scss'

@@ -1,3 +1,4 @@
+import _ from 'lodash'
 import { Link } from 'react-router-dom'
 import artworkService from 'Services/artwork.service'
 import './artworkCreator.style.scss'
@@ -6,7 +7,6 @@ const CreatorComponent = (props) => {
 
   const creatorId = props.globalState.routing.collection
   const creator = artworkService.getCollection(creatorId)
-  const { first, last } = creator.name
 
   return (
     <div className="artwork_creator">

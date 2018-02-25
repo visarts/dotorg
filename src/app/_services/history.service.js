@@ -22,6 +22,17 @@ const artHistory = localStorage.getItem('artHistory') ? JSON.parse(localStorage.
 const literatureHistory = localStorage.getItem('litHistory') ? JSON.parse(localStorage.getItem('litHistory')) : {historyList: []}
 const historyLimit = 10
 
+const getDuplicateIndex = (obj, arr) => {
+  let isDuplicate = -1
+  for (const i in arr) {
+    if (obj.fileName === arr[i].fileName) {
+      isDuplicate = i
+      break
+    }
+  }
+  return isDuplicate
+}
+
 const setTimestamp = () => {
   const date = new Date()
   return date.toLocaleDateString()
@@ -49,17 +60,6 @@ const getHistory = (type) => {
 const clearHistory = (type) => {
   localStorage.removeItem(type)
   location.reload()
-}
-
-const getDuplicateIndex = (obj, arr) => {
-  let isDuplicate = -1
-  for (const i in arr) {
-    if (obj.fileName === arr[i].fileName) {
-      isDuplicate = i
-      break
-    }
-  }
-  return isDuplicate
 }
 
 const historyService = {

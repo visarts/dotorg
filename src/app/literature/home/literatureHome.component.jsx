@@ -1,8 +1,9 @@
+import _ from 'lodash'
 import { Link } from 'react-router-dom'
 import literatureService from 'Services/literature.service'
 import './literatureHome.style.scss'
 
-const HomeComponent = (props) => {
+const HomeComponent = (/* props */) => {
 
   const collections = literatureService.getAllCollectionsMetaData()
   const creators = literatureService.getAllCreatorsMetaData()

@@ -1,49 +1,5 @@
 import axios from 'axios'
 
-/*const getAuthorData = (author) => {
-  const authorData = require(`authors/${author}.json`)
-  return authorData
-}*/
-
-/*const getAuthorsData = () => {
-  const authorsData = require('authors.json')
-  return authorsData.authors
-}*/
-
-/*const getArtistData = (artist) => {
-  const artistData = require(`artists/${artist}.json`)
-  return artistData
-}*/
-
-/*const getArtistsData = () => {
-  const artistsData = require('artists.json')
-  return artistsData.artists
-}*/
-
-/*const getArtistNames = () => {
-  const namesData = require('creatorKeys.json')
-  return namesData.artists
-}
-
-const getAuthorNames = () => {
-  const namesData = require('creatorKeys.json')
-  return namesData.authors
-}
-
-const getAllLiterature = () => {
-  return axios.get('./data/allAuthors.json')
-    .then((results) => {
-      return results.data
-    })
-}
-
-const getAllArtwork = () => {
-  return axios.get('./data/allArtists.json')
-    .then((results) => {
-      return results.data
-    })
-}*/
-
 const getCollections = type => {
   return axios.get(`./data/${type}-collections.json`, {
     transformResponse: res => decodeURIComponent(res)
@@ -76,18 +32,6 @@ const getHTMLContent = (creatorId, itemId) => {
       return results.data
     })
 }
-
-/*const getCurrentRouting = (currentRoute) => {
-  let params = currentRoute.slice(1).split('/')
-  let mappedParams = {
-    currentSection: params[0] || '',
-    currentSubSection: params[1] ? params[1] : '',
-    currentCreator: params[2] ? params[2] : '',
-    currentWork: params[3] ? params[3] : '',
-    isSpecial: params[1] && params[1] === 'genres' ? true : false
-  }
-  return mappedParams
-}*/
 
 /*
 DOTORG routing
@@ -168,16 +112,11 @@ const getAllData = () => {
 }
 
 const dataService = {
-  //getAuthorNames,
-  //getArtistNames,
-  //getAllLiterature,
-  //getAllArtwork,
   getCollections,
   getItems,
   getHTMLContent,
   getRoutingState,
   getAllData
-  //getCurrentRouting
 }
 
 export default dataService

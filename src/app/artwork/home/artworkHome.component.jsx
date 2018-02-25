@@ -1,8 +1,9 @@
+import _ from 'lodash'
 import { Link } from 'react-router-dom'
 import artworkService from 'Services/artwork.service'
 import './artworkHome.style.scss'
 
-const HomeComponent = (props) => {
+const HomeComponent = (/* props */) => {
 
   const collections = artworkService.getAllCollectionsMetaData()
   const creators = artworkService.getAllCreatorsMetaData()
