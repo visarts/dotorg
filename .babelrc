@@ -9,6 +9,7 @@
   ],
   "plugins" : [
     "array-includes",
-    "syntax-dynamic-import"
+    "syntax-dynamic-import",
+    "transform-class-properties"
   ]
 }

@@ -21,24 +21,22 @@ export default class App extends React.Component {
     this.state = {
       routing: dataService.getRoutingState(this.currentLocation)
     }
-    this.updateAppState = this.updateAppState.bind(this)
-    this.setGlobalClassName = this.setGlobalClassName.bind(this)
   }
 
-  updateAppState (newState) {
+  updateAppState = newState => {
     this.setState(Object.assign(this.state, newState))
   }
 
-  setGlobalClassName () {
+  setGlobalClassName = () => {
     document.body.className = this.state.routing.section || ''
   }
 
-  componentDidMount () {
+  componentDidMount = () => {
     this.setGlobalClassName()
   }
 
   // this will update when the route changes and set state with new params
-  componentWillReceiveProps (nextProps) {
+  componentWillReceiveProps = nextProps => {
     const updatedLocation = nextProps.location.pathname
     if (this.currentLocation !== updatedLocation) {
       this.setState({routing: dataService.getRoutingState(updatedLocation)}, () => {
