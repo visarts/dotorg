@@ -1,17 +1,18 @@
 import { Component } from 'react'
-import dataService from 'Services/data.service'
+import navigationService from 'Services/navigation.service'
 import GlobalHeaderComponent from './globalHeader.component'
 
 export default class GlobalHeader extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      navigationData: dataService.getNavigationData(this.props.globalState.routing)
+      navigationData: navigationService.getNavigationData(this.props.globalState.routing)
     }
   }
 
+  // regrab the nav data every time the routing changes
   componentWillReceiveProps (nextProps) {
-    this.setState({navigationData: dataService.getNavigationData(nextProps.globalState.routing)})
+    this.setState({navigationData: navigationService.getNavigationData(nextProps.globalState.routing)})
   }
 
   render () {
