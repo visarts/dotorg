@@ -48,7 +48,7 @@ export default class Item extends Component {
     this.setState({content: this.pages[currentPage], currentPage})
   }
 
-  setNextPage () {
+  setNextPage (e) {
     const currentPage = this.state.currentPage + 1
     this.setState({content: this.pages[currentPage], currentPage})
   }

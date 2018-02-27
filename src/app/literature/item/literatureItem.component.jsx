@@ -14,7 +14,6 @@ const ItemComponent = (props) => {
   const hideModal = () => {
     location.hash = location.hash.substring(0, location.hash.lastIndexOf('/'))
   }
-
   const totalDisplayPages = props.pages.length
   const currentDisplayPage = props.currentPage + 1
 
@@ -31,9 +30,9 @@ const ItemComponent = (props) => {
         <PortitudeModal.Footer>
           {totalDisplayPages > 1 &&
             <div className="pagination">
-              <Button className="pagination--button" color="primary" raised onClick={props.setPreviousPage} disabled={props.currentPage === 0}><KeyboardArrowLeft /></Button>
+              <Button className="pagination--button" color="primary" variant="raised" onClick={props.setPreviousPage} disabled={props.currentPage === 0}><KeyboardArrowLeft /></Button>
               <span className="pagination--marker">{currentDisplayPage} / {totalDisplayPages}</span>
-              <Button className="pagination--button" color="primary" raised onClick={props.setNextPage} disabled={props.currentPage === totalDisplayPages - 1}><KeyboardArrowRight /></Button>
+              <Button className="pagination--button" color="primary" variant="raised" onClick={props.setNextPage} disabled={props.currentPage === totalDisplayPages - 1}><KeyboardArrowRight /></Button>
             </div>
           }
         </PortitudeModal.Footer>
