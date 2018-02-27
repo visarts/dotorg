@@ -111,12 +111,14 @@ const getAllData = () => {
   })
 }
 
+
+
 const dataService = {
   getCollections,
   getItems,
   getHTMLContent,
   getRoutingState,
-  getAllData
+  getAllData,
 }
 
 export default dataService
