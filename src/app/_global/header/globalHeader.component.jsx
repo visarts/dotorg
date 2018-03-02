@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Typography from 'material-ui/Typography'
 import Favorite from 'material-ui-icons/Favorite'
 import './globalHeader.style.scss'
 
@@ -8,7 +9,7 @@ const GlobalHeaderComponent = (props) => {
     <div className="header">
       <div className="header--navigation">
         <Link to={navigationData.root.fullPath} className="header--navigation--item">
-          <h1><Favorite /> {navigationData.root.name}</h1>
+          <Typography variant="headline"><Favorite /> {navigationData.root.name}</Typography>
         </Link>
         {navigationData.section.name &&
           <Link to={navigationData.section.fullPath} className="header--navigation--item">
