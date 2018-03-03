@@ -1,18 +1,18 @@
-const webpack = require('webpack');
-const path = require('path');
-const ROOT_PATH = path.resolve(__dirname);
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-//const MergeJsonWebpackPlugin = require('merge-jsons-webpack-plugin');
-//const AutoPrefixer = require('autoprefixer');
+const webpack = require('webpack')
+const path = require('path')
+const ROOT_PATH = path.resolve(__dirname)
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+// const MergeJsonWebpackPlugin = require('merge-jsons-webpack-plugin')
+// const AutoPrefixer = require('autoprefixer')
 
 module.exports = {
   devtool: 'eval',
   devServer: {
      contentBase: path.join(ROOT_PATH, 'dist')
-     //hot: true
+     // hot: true
   },
   entry: {
     vendors: './src/vendors.js',
@@ -45,9 +45,9 @@ module.exports = {
       { from: 'content', to: 'content'},
       { from: 'data/prod', to: 'data'}
     ]),
-    //new webpack.HotModuleReplacementPlugin(),
-    //new webpack.NamedModulesPlugin(),
-    /*new webpack.LoaderOptionsPlugin({
+    // new webpack.HotModuleReplacementPlugin(),
+    // new webpack.NamedModulesPlugin(),
+    /* new webpack.LoaderOptionsPlugin({
       options: {
         postcss: [
           AutoPrefixer({
@@ -63,7 +63,7 @@ module.exports = {
       template: './index.ejs',
       hash: false
     })
-    /*new MergeJsonWebpackPlugin({
+    /* new MergeJsonWebpackPlugin({
       'output': {
         'groupBy': [
           {
@@ -96,12 +96,12 @@ module.exports = {
               loader: 'css-loader',
               options: {
                 url: false,
-                //modules: true,
+                // modules: true,
                 importLoaders: 1,
-                //localIdentName: '[name]__[local]___[hash:base64:4]'
+                // localIdentName: '[name]__[local]___[hash:base64:4]'
               }
             },
-            /*{
+            /* {
               loader: 'postcss-loader'
             },*/
             {
@@ -166,4 +166,4 @@ module.exports = {
       path.resolve('./node_modules')
     ]
   }
-};
+}

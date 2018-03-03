@@ -1,13 +1,13 @@
-const webpack = require('webpack');
-const path = require('path');
-const ROOT_PATH = path.resolve(__dirname);
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-//const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const MergeJsonWebpackPlugin = require('merge-jsons-webpack-plugin');
-const AutoPrefixer = require('autoprefixer');
+const webpack = require('webpack')
+const path = require('path')
+const ROOT_PATH = path.resolve(__dirname)
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+// const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+// const MergeJsonWebpackPlugin = require('merge-jsons-webpack-plugin')
+// const AutoPrefixer = require('autoprefixer')
 
 module.exports = {
   devtool: 'source-map',
@@ -68,12 +68,12 @@ module.exports = {
               loader: 'css-loader',
               options: {
                 url: false,
-                //modules: true,
+                // modules: true,
                 importLoaders: 1,
-                //localIdentName: '[name]__[local]___[hash:base64:4]'
+                // localIdentName: '[name]__[local]___[hash:base64:4]'
               }
             },
-            /*{
+            /* {
               loader: 'postcss-loader'
             },*/
             {
@@ -138,4 +138,4 @@ module.exports = {
       path.resolve('./node_modules')
     ]
   }
-};
+}
