@@ -3,26 +3,32 @@ import Typography from 'common/typography/typography.container'
 import Favorite from 'material-ui-icons/Favorite'
 import './globalHeader.style.scss'
 
-const GlobalHeaderComponent = (props) => {
+const GlobalHeaderComponent = props => {
   const { navigationData } = props
+
   return (
     <div className="header">
-      <div className="header--navigation">
-        <Link to={navigationData.root.fullPath} className="header--navigation--item">
-          <Typography type="headline"><Favorite /> {navigationData.root.name}</Typography>
+      <div className="header-navigation">
+        <Link to={navigationData.root.fullPath} className="header-navigation-item">
+          <Typography type="headline">
+            <span className="header-navigation-icon"><Favorite /></span>
+            {navigationData.root.name}
+          </Typography>
         </Link>
         {navigationData.section.name &&
-          <Link to={navigationData.section.fullPath} className="header--navigation--item">
-            <Typography type="subheadline">{navigationData.section.name}</Typography>
+          <Link to={navigationData.section.fullPath} className="header-navigation-item">
+            <Typography type="headline">
+              {navigationData.section.name}
+            </Typography>
           </Link>
         }
         {navigationData.collection.name &&
-          <Link to={navigationData.collection.fullPath} className="header--navigation--item">
+          <Link to={navigationData.collection.fullPath} className="header-navigation-item">
             <Typography type="subheadline">{navigationData.collection.name}</Typography>
           </Link>
         }
         {navigationData.item.name && false &&
-          <Link to={navigationData.item.fullPath} className="header--navigation--item">
+          <Link to={navigationData.item.fullPath} className="header-navigation-item">
             <h1>{navigationData.item.name}</h1>
           </Link>
         }

@@ -10,9 +10,9 @@ const HomeComponent = (/* props */) => {
 
   return (
     <div className="literature_home">
-      <h1>Artwork Home</h1>
+      <h1>Literature Home</h1>
       <div>
-        <h1>genres</h1>
+        <h1>Genres</h1>
         <div className="literature_genres">
           <ul>
             {_.map(collections, (collection, index) => (
@@ -24,7 +24,7 @@ const HomeComponent = (/* props */) => {
         </div>
       </div>
       <div>
-        <h1>authors</h1>
+        <h1>Authors</h1>
         <div className="literature_authors">
           <ul>
             {_.map(creators, (creator, index) => (

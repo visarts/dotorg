@@ -2,6 +2,12 @@
 
 $vLinkPadding: 6px;
 
+@keyframes iconography {
+  0% {color: #B44;}
+  50% {color: #34A;}
+  100% {color: #B44;}
+}
+
 .header {
   position: fixed;
   display: flex;
@@ -30,14 +36,22 @@ $vLinkPadding: 6px;
     margin: 0rem;
   }
 
-  &--navigation {
+  &-navigation {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
 
-    &--item {
+    &-item {
       display: inline-flex;
       margin-right: map-get($sizes, 'sm');
+    }
+
+    &-icon {
+      animation-name: iconography;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      padding-right: .5rem;
+
     }
   }
 }

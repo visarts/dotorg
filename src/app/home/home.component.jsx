@@ -7,10 +7,10 @@ const HomeComponent = (/* props */) => {
       <h1>The garden of pages and paintings</h1>
       <div className="section">
         <div className="subSection">
-          <Link to="artwork">Artwork</Link>
+          <Link to="artwork" className="subSection--link artwork">Artwork</Link>
         </div>
         <div className="subSection">
-          <Link to="literature">Literature</Link>
+          <Link to="literature" className="subSection--link literature">Literature</Link>
         </div>
       </div>
     </div>

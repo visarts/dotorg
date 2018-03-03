@@ -11,9 +11,8 @@
 //#663399
 //#2b765d
 
-//palegoldenrod
-// warm grey
-$mainThemeColor: #2a2625;
+// $mainThemeColor: #2a2625;
+$mainThemeColor: #181615;
 $secondaryThemeColor: #181615;
 $tertiaryThemeColor: #363231;
 $activeBackgroundColor: lighten($tertiaryThemeColor, 10%);
@@ -38,5 +37,6 @@ $transparentTertiaryThemeColor: rgba(54, 50, 49, .9);
 //$transparentLinkHoverColor: rgba(0, 85, 51, .75);
 
 
-$artwork_theme: #545;
-$literature_theme: #454;
+$artwork_theme: #662a2a;
+$literature_theme: #333a4f;
+// $literature_theme: #334a2f;

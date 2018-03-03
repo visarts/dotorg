@@ -1,10 +1,25 @@
 @import 'globals';
 
 .section {
-  
+  display: flex;
+  width: 100%;
 }
 
 .subSection {
-  @include paddingHorizontal('lg');
-  @include paddingVertical('lg');
+  width: 50%;
+
+  &--link {
+    display: inline-flex;
+    width: 100%;
+    @include paddingHorizontal('lg');
+    @include paddingVertical('lg');
+
+    &--artwork {
+      background: $artwork_theme;
+    }
+
+    &--literature {
+      background: $literature_theme;
+    }
+  }
 }

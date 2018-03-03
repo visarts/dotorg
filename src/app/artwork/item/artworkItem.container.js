@@ -10,6 +10,10 @@ export default class Item extends Component {
     this.hideModal = this.hideModal.bind(this)
   }
 
+  componentWillReceiveProps (nextProps) {
+    console.log('nextProps')
+  }
+
   hideModal () {
     location.hash = location.hash.substring(0, location.hash.lastIndexOf('/'))
   }
