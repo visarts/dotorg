@@ -33,10 +33,11 @@ $vLinkPadding: 6px;
   &--navigation {
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
 
     &--item {
       display: inline-flex;
-      margin-right: 1rem;
+      margin-right: map-get($sizes, 'sm');
     }
   }
 }

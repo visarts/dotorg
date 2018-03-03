@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import Typography from 'material-ui/Typography'
+import Typography from 'common/typography/typography.container'
 import Favorite from 'material-ui-icons/Favorite'
 import './globalHeader.style.scss'
 
@@ -9,19 +9,19 @@ const GlobalHeaderComponent = (props) => {
     <div className="header">
       <div className="header--navigation">
         <Link to={navigationData.root.fullPath} className="header--navigation--item">
-          <Typography variant="headline"><Favorite /> {navigationData.root.name}</Typography>
+          <Typography type="headline"><Favorite /> {navigationData.root.name}</Typography>
         </Link>
         {navigationData.section.name &&
           <Link to={navigationData.section.fullPath} className="header--navigation--item">
-            <h1>{navigationData.section.name}</h1>
+            <Typography type="subheadline">{navigationData.section.name}</Typography>
           </Link>
         }
         {navigationData.collection.name &&
           <Link to={navigationData.collection.fullPath} className="header--navigation--item">
-            <h1>{navigationData.collection.name}</h1>
+            <Typography type="subheadline">{navigationData.collection.name}</Typography>
           </Link>
         }
-        {navigationData.item.name &&
+        {navigationData.item.name && false &&
           <Link to={navigationData.item.fullPath} className="header--navigation--item">
             <h1>{navigationData.item.name}</h1>
           </Link>

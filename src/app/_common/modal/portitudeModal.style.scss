@@ -7,17 +7,17 @@ $modal_footer_height: 6rem;
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  margin: 2rem auto 4rem auto;
-  border-radius: 1rem;
+  margin: 1.5rem auto 3rem auto;
+  border-radius: .5rem;
   box-shadow: 0px 3px 40px rgba(0, 0, 0, .5);
   background: #BFBDBB;
 
   &--md {
-    width: 60rem;
+    width: 40rem;
   }
 
   &--lg {
-    width: 80rem;
+    width: 55rem;
   }
 
   .literature & {
@@ -25,8 +25,9 @@ $modal_footer_height: 6rem;
   }
 
   .artwork & {
-    background: rgba($artwork_theme, .8);
-    width: 80rem;
+    // background: rgba($artwork_theme, .8);
+    width: 70rem;
+    max-width: 95vw;
   }
 
   &--header, &--body, &--footer {

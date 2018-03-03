@@ -1,5 +1,6 @@
 import _ from 'lodash'
 import { Link } from 'react-router-dom'
+import Typography from 'common/typography/typography.container'
 import artworkService from 'Services/artwork.service'
 import './artworkCollection.style.scss'
 
@@ -24,9 +25,9 @@ const CollectionComponent = (props) => {
                       src={artworkService.getImagePathSm(creator.id, item.id)}
                       className="thumbContainer--image"
                       alt={item.title} />
-                    <span className="thumbContainer--text">
+                    <Typography type="subtitle" className="thumbContainer--text">
                       {item.name} ({item.id.substring(item.id.lastIndexOf('-') + 1)})
-                    </span>
+                    </Typography>
                   </Link>
                 </li>
               ))}

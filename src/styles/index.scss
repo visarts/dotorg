@@ -9,6 +9,7 @@ html, body {
 
 html {
   box-sizing: border-box;
+  font-size: 15px;
   // font-size: 10px;
 }
 *, *:before, *:after {
@@ -26,7 +27,7 @@ body {
   color: $mainTextColor;
   margin: 0rem;
   padding: 0rem;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-family: 'PT Sans', sans-serif;
 
   @media(max-width: $smallScreen) {
@@ -63,7 +64,7 @@ ul {
 
 li {
   list-style: none;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 p {
@@ -103,8 +104,8 @@ pre {
   display: flex;
   font-size: $listItemHeadline;
   background-color: rgba(255, 255, 255, .1);
-  border-radius: .5rem;
-  box-shadow: .4rem .4rem 1.4rem rgba(0, 0, 0, .3);
+  border-radius: $roundedEdge;
+  box-shadow: .2rem .2rem .75rem rgba(0, 0, 0, .3);
   color: rgba(#FFF, .6);
 
   &--image, &--text {
@@ -112,14 +113,13 @@ pre {
   }
 
   &--image {
-    border-top-left-radius: .5rem;
-    border-bottom-left-radius: .5rem;
+    border-top-left-radius: .4rem;
+    border-bottom-left-radius: .4rem;
   }
 
   &--text {
     display: inline-block;
-    padding: 1rem;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, .5);
+    @include padding('md');
   }
 
   &:hover {

@@ -1,12 +1,12 @@
-$padding_sm: .5rem;
-$padding_md: 1rem;
-$padding_lg: 2rem;
-$padding_xl: 10rem;
+$padding_sm: .35rem;
+$padding_md: .75rem;
+$padding_lg: 1.5rem;
+$padding_xl: 7.5rem;
 
 $sizes: (
-  lg: 2rem,
-  md: 1.5rem,
-  sm: 1rem
+  lg: 1.5rem,
+  md: 1.2rem,
+  sm: .75rem
 );
 
 $breakpoints: (
@@ -44,6 +44,18 @@ $breakpoints: (
   } @else {
     padding-left: 0rem;
     padding-right: 0rem;
+  }
+}
+
+@mixin padding($size) {
+  @if $size == 'sm' {
+    padding: $padding_sm;
+  } @else if $size == 'md' {
+    padding: $padding_md;
+  } @else if $size == 'lg' {
+    padding: $padding_lg;
+  } @else {
+    padding: 0rem;
   }
 }
 

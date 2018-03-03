@@ -69,6 +69,7 @@ env:
 # globals:
 globals:
   module: true
+  React: true
   __dirname: true
 #    # e.g. angular
 #    # angular: true
