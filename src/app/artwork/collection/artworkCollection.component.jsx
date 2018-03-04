@@ -24,7 +24,7 @@ const CollectionComponent = (props) => {
                   key={itemIndex}
                   image={{
                     src: artworkService.getImagePathSm(creator.id, item.id),
-                    alt: item.title
+                    alt: item.name
                   }}
                   primaryText={`${item.name} (${item.id.substring(item.id.lastIndexOf('-') + 1)})`} />
               ))}
