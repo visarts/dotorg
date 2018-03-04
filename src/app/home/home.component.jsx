@@ -1,16 +1,21 @@
 import { Link } from 'react-router-dom'
+import Typography from 'common/typography/typography.container'
 import './home.style.scss'
 
 const HomeComponent = (/* props */) => {
   return (
     <div className="home">
-      <h1>The garden of pages and paintings</h1>
+      <Typography type="headline">Welcome home</Typography>
       <div className="section">
         <div className="subSection">
-          <Link to="artwork" className="subSection--link artwork">Artwork</Link>
+          <Link to="artwork" className="subSection--link subSection--link--artwork">
+            <Typography type="listItem">Artwork</Typography>
+          </Link>
         </div>
         <div className="subSection">
-          <Link to="literature" className="subSection--link literature">Literature</Link>
+          <Link to="literature" className="subSection--link subSection--link--literature">
+            <Typography type="listItem">Literature</Typography>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
 import dataService from 'Services/data.service'
-import storeService from 'Services/store.service'
+import navigationService from 'Services/navigation.service'
 
 import GlobalHeader from 'global/header/globalHeader.container'
 import GlobalNav from 'global/navigation/globalNav.container'
@@ -16,10 +16,11 @@ export default class App extends React.Component {
 
   constructor (props) {
     super(props)
-    this.globalStore = storeService.getStore()
     this.currentLocation = location.hash.slice(1)
+    const routing = dataService.getRoutingState(this.currentLocation)
     this.state = {
-      routing: dataService.getRoutingState(this.currentLocation)
+      routing,
+      navigationData: navigationService.getNavigationData(routing)
     }
   }
 
@@ -39,7 +40,11 @@ export default class App extends React.Component {
   componentWillReceiveProps = nextProps => {
     const updatedLocation = nextProps.location.pathname
     if (this.currentLocation !== updatedLocation) {
-      this.setState({routing: dataService.getRoutingState(updatedLocation)}, () => {
+      const routing = dataService.getRoutingState(updatedLocation)
+      this.setState({
+        routing,
+        navigationData: navigationService.getNavigationData(routing)
+      }, () => {
         this.currentLocation = updatedLocation
         this.setGlobalClassName()
       })
@@ -72,15 +77,12 @@ export default class App extends React.Component {
     return (
       <div id="portitude">
         <GlobalHeader
-          globalState={this.state}
-          globalStore={this.globalStore} />
+          globalState={this.state} />
         <GlobalNav
-          globalState={this.state}
-          globalStore={this.globalStore} />
+          globalState={this.state} />
         <div className="view">
           <Route exact path="/" render={routeProps => (
             <Home
-              globalStore={this.globalStore}
               globalState={this.state}
               {...routeProps} />
           )} />
@@ -96,8 +98,7 @@ export default class App extends React.Component {
           )} />
         </div>
         <GlobalFooter
-          globalState={this.state}
-          globalStore={this.globalStore} />
+          globalState={this.state} />
       </div>
     )
   }

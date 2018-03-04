@@ -4,9 +4,8 @@ import _ from 'lodash'
 
 const getNavigationData = routing => {
   const collection = artworkService.getCollection(routing.collection) ||
-    literatureService.getCollection(routing.collection) ||
-    ''
-  const collectionName = collection ? collection.type === 'category' ? collection.name : collection.name.last : ''
+    literatureService.getCollection(routing.collection) || ''
+  const collectionName = collection && collection.name
   const navigationData = {
     root: {
       path: '/',
@@ -21,7 +20,8 @@ const getNavigationData = routing => {
     collection: {
       path: routing.collection ? `${routing.collection}/` : '',
       fullPath: `/${routing.section}/${routing.collection}/`,
-      name: collectionName || ''
+      name: collectionName || '',
+      type: collection.type
     },
     item: {
       path: routing.item ? `${routing.item}/` : '',

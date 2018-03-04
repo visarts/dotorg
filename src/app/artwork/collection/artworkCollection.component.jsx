@@ -1,5 +1,5 @@
 import _ from 'lodash'
-import { Link } from 'react-router-dom'
+import { List, ListItem } from 'common/list/list.container'
 import Typography from 'common/typography/typography.container'
 import artworkService from 'Services/artwork.service'
 import './artworkCollection.style.scss'
@@ -12,26 +12,23 @@ const CollectionComponent = (props) => {
 
   return (
     <div className="artwork_collection">
-      <h1>{collection.name}</h1>
+      <Typography type="title">{collection.name}</Typography>
       {_.map(groupedCollection, (creator, index) => {
         return (
           <div className="section" key={index}>
-            <h2>{creator.name.last}</h2>
-            <ul>
+            <Typography type="subtitle">{creator.name.last}</Typography>
+            <List>
               {_.map(creator.items, (item, itemIndex) => (
-                <li key={itemIndex} className="listItem">
-                  <Link to={artworkService.getItemPath(collectionId, item.id)} className="thumbContainer">
-                    <img
-                      src={artworkService.getImagePathSm(creator.id, item.id)}
-                      className="thumbContainer--image"
-                      alt={item.title} />
-                    <Typography type="subtitle" className="thumbContainer--text">
-                      {item.name} ({item.id.substring(item.id.lastIndexOf('-') + 1)})
-                    </Typography>
-                  </Link>
-                </li>
+                <ListItem
+                  to={artworkService.getItemPath(collectionId, item.id)}
+                  key={itemIndex}
+                  image={{
+                    src: artworkService.getImagePathSm(creator.id, item.id),
+                    alt: item.title
+                  }}
+                  primaryText={`${item.name} (${item.id.substring(item.id.lastIndexOf('-') + 1)})`} />
               ))}
-            </ul>
+            </List>
           </div>
         )
       })}

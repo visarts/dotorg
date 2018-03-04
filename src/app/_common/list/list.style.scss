@@ -1,0 +1,36 @@
+@import 'globals';
+
+.list-item {
+  &-link {
+    color: $mainLinkColor;
+    &:hover {
+      color: $mainLinkHoverColor;
+    }
+    &--thumbnail {
+      display: flex;
+      background-color: $highlightBackgroundColor;
+      border-radius: $roundedEdge;
+      // box-shadow: .1rem .1rem .5rem rgba(#000, .7);
+      // color: rgba(#FFF, .6);
+
+      &:hover {
+        background-color: $mainLinkHoverColor;
+      }
+    }
+  }
+
+
+  &-image, &-text {
+    display: inline-block;
+  }
+
+  &-image {
+    border-top-left-radius: .4rem;
+    border-bottom-left-radius: .4rem;
+  }
+
+  &-text {
+    display: inline-block;
+    @include padding('md');
+  }
+}

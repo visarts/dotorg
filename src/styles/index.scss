@@ -23,7 +23,7 @@ div {
 body {
   //background: linear-gradient(to left, $tertiyarnaryThemeColor, lighten($tertiaryThemeColor, 15%));
   //background-image: url('../images/darkfabric.png');
-  background-color: lighten($mainThemeColor, 5%);
+  background-color: $mainThemeColor;
   color: $mainTextColor;
   margin: 0rem;
   padding: 0rem;
@@ -36,12 +36,12 @@ body {
 }
 
 a {
-  color: #aaa;
+  color: $mainLinkColor;
   text-decoration: none;
   transition: .2s all;
 
   &:hover, &:active, &:focus {
-    color: #FFF;
+    color: $mainLinkHoverColor;
   }
 
   &:focus {
@@ -83,11 +83,11 @@ pre {
 }
 
 .artwork {
-  background-color: $artwork_theme;
+  // background-color: $artwork_theme;
 }
 
 .literature {
-  background-color: $literature_theme;
+  // background-color: $literature_theme;
 }
 
 .view {

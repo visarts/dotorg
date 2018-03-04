@@ -1,21 +1,21 @@
 import { Link } from 'react-router-dom'
-import Typography from 'common/typography.container'
+import Typography from 'common/typography/typography.container'
 
 const ListItemComponent = props => {
   const className = `list-item ${props.className || ''}`
   if (props.to) {
     return (
-      <li className={className}>
-        <Link to={props.to} className="list-item--link">
-          {props.image && <img src={props.image.src} className="list-item--image" alt={props.image.alt || props.image.src} />}
-          {props.primaryText && <Typography type="listPrimary">{props.primaryText}</Typography>}
-          {props.secondaryText && <Typography type="listSecondary">{props.secondaryText}</Typography>}
+      <li className={className} key={props.key || 0}>
+        <Link to={props.to} className={`list-item-link${props.image ? '--thumbnail' : ''}`}>
+          {props.image && <img src={props.image.src} className="list-item-image" alt={props.image.alt || props.image.src} />}
+          {props.primaryText && <Typography type="listPrimary" className={props.image && 'list-item-text'}>{props.primaryText}</Typography>}
+          {props.secondaryText && <Typography type="listSecondary" className={props.image && 'list-item-text'}>{props.secondaryText}</Typography>}
         </Link>
       </li>
     )
   } else {
     return (
-      <li className={className}>
+      <li className={className} key={props.key || 0}>
         {props.primaryText && <Typography type="listPrimary">{props.primaryText}</Typography>}
         {props.secondaryText && <Typography type="listSecondary">{props.secondaryText}</Typography>}
       </li>

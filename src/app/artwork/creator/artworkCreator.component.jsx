@@ -1,5 +1,6 @@
 import _ from 'lodash'
-import { Link } from 'react-router-dom'
+import { List, ListItem } from 'common/list/list.container'
+import Typography from 'common/typography/typography.container'
 import artworkService from 'Services/artwork.service'
 import './artworkCreator.style.scss'
 
@@ -10,24 +11,21 @@ const CreatorComponent = (props) => {
 
   return (
     <div className="artwork_creator">
-      <h1>{creator.name.first} {creator.name.last}</h1>
+      <Typography type="title">{creator.name.first} {creator.name.last}</Typography>
       <div className="section">
-        <h2>Gallery</h2>
-        <ul>
+        <Typography type="subtitle">Gallery</Typography>
+        <List>
           {_.map(creator.items, (item, itemIndex) => (
-            <li key={itemIndex}>
-              <Link to={artworkService.getItemPath(creatorId, item.id)} className="thumbContainer">
-                <img
-                  src={artworkService.getImagePathSm(creatorId, item.id)}
-                  className="thumbContainer--image"
-                  alt={item.title} />
-                <span className="thumbContainer--text">
-                  {item.name} ({item.id.substring(item.id.lastIndexOf('-') + 1)})
-                </span>
-              </Link>
-            </li>
+            <ListItem
+              to={artworkService.getItemPath(creatorId, item.id)}
+              key={itemIndex}
+              image={{
+                src: artworkService.getImagePathSm(creatorId, item.id),
+                alt: item.title
+              }}
+              primaryText={`${item.name} (${item.id.substring(item.id.lastIndexOf('-') + 1)})`} />
           ))}
-        </ul>
+        </List>
       </div>
     </div>
   )

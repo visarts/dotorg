@@ -1,5 +1,6 @@
 import _ from 'lodash'
-import { Link } from 'react-router-dom'
+import { List, ListItem } from 'common/list/list.container'
+import Typography from 'common/typography/typography.container'
 import artworkService from 'Services/artwork.service'
 import './artworkHome.style.scss'
 
@@ -10,29 +11,30 @@ const HomeComponent = (/* props */) => {
 
   return (
     <div className="artwork_home">
-      <h1>Artwork Home</h1>
       <div>
-        <h1>Eras</h1>
+        <Typography type="subtitle">Eras</Typography>
         <div className="artwork_eras">
-          <ul>
+          <List>
             {_.map(collections, (collection, index) => (
-              <li key={index} className="listItem">
-                <Link to={artworkService.getCollectionPath(collection.id)}>{collection.name}</Link>
-              </li>
+              <ListItem
+                to={artworkService.getCollectionPath(collection.id)}
+                primaryText={collection.name}
+                key={index} />
             ))}
-          </ul>
+          </List>
         </div>
       </div>
       <div>
-        <h1>Artists</h1>
+        <Typography type="subtitle">Artists</Typography>
         <div className="artwork_artists">
-          <ul>
+          <List>
             {_.map(creators, (creator, index) => (
-              <li key={index} className="listItem">
-                <Link to={artworkService.getCollectionPath(creator.id)}>{creator.name.last}</Link>
-              </li>
+              <ListItem
+                to={artworkService.getCollectionPath(creator.id)}
+                primaryText={creator.name.last}
+                key={index} />
             ))}
-          </ul>
+          </List>
         </div>
       </div>
     </div>

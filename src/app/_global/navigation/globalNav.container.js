@@ -5,7 +5,7 @@ export default class GlobalNav extends Component {
 
   render () {
     return (
-      <GlobalNavComponent {...this.props} />
+      <GlobalNavComponent navigationData={this.props.globalState.navigationData} {...this.props} />
     )
   }
 }

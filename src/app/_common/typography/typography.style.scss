@@ -1,10 +1,14 @@
-.typography {
-  &--headline {
+@import 'globals';
 
+.typography {
+  opacity: 1;
+  transition: .2s opacity;
+  &--headline {
+    font-size: calc(1rem + 1vw);
   }
 
   &--subheadline {
-
+    font-size: calc(.8rem + 1vw);
   }
 
   &--title {
@@ -21,5 +25,14 @@
 
   &--subheader {
 
+  }
+
+  &--listPrimary {
+    font-size: $listItemHeadline;
+  }
+
+  &--listSecondary {
+    font-size: $listItemHeadline;
+    font-style: italic;
   }
 }

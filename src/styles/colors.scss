@@ -12,31 +12,35 @@
 //#2b765d
 
 // $mainThemeColor: #2a2625;
-$mainThemeColor: #181615;
+// $mainThemeColor: #181615;
+$mainThemeColor: #afafa8;
 $secondaryThemeColor: #181615;
 $tertiaryThemeColor: #363231;
 $activeBackgroundColor: lighten($tertiaryThemeColor, 10%);
 $mainHighlightColor: #181615;
 
-$mainTextColor: lighten($mainThemeColor, 70%);
-$mainLinkColor: darken($mainTextColor, 20%);
+$mainTextColor: darken($mainThemeColor, 80%);
+$lightTextColor: lighten($mainThemeColor, 70%);
+$mainLinkColor: darken($mainThemeColor, 40%);
 $secondaryLinkColor: #cfbfb0;
 $darkLinkColor: darken($mainTextColor, 30%);
 
 //$mainLinkHoverColor: #005533;
 //$mainLinkHoverColor: #87322C
-$mainLinkHoverColor: rgba(110, 100, 80, .75);
+$mainLinkHoverColor: darken($mainThemeColor, 20%);
 //$artLinkHoverColor: rgba(40, 72, 40, .75);
 $artLinkHoverColor: rgba(20, 70, 100, .75);
 $litLinkHoverColor: rgba(100, 35, 30, .75);
 //$mainLinkHoverColor: rgba(110, 10, 5, .65);
 $secondaryLinkHoverColor: white;
 
+$highlightBackgroundColor: lighten($mainThemeColor, 10%);
+
 $transparentThemeColor: rgba(42, 38, 37, .9);
 $transparentTertiaryThemeColor: rgba(54, 50, 49, .9);
 //$transparentLinkHoverColor: rgba(0, 85, 51, .75);
 
 
-$artwork_theme: #662a2a;
+$artwork_theme: #662828;
 $literature_theme: #333a4f;
 // $literature_theme: #334a2f;

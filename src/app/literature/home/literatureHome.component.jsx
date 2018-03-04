@@ -1,5 +1,6 @@
 import _ from 'lodash'
 import { Link } from 'react-router-dom'
+import Typography from 'common/typography/typography.container'
 import literatureService from 'Services/literature.service'
 import './literatureHome.style.scss'
 
@@ -10,9 +11,8 @@ const HomeComponent = (/* props */) => {
 
   return (
     <div className="literature_home">
-      <h1>Literature Home</h1>
       <div>
-        <h1>Genres</h1>
+        <Typography type="subtitle">Genres</Typography>
         <div className="literature_genres">
           <ul>
             {_.map(collections, (collection, index) => (
@@ -24,7 +24,7 @@ const HomeComponent = (/* props */) => {
         </div>
       </div>
       <div>
-        <h1>Authors</h1>
+        <Typography type="subtitle">Titles</Typography>
         <div className="literature_authors">
           <ul>
             {_.map(creators, (creator, index) => (

@@ -1,5 +1,6 @@
 import _ from 'lodash'
 import { Link } from 'react-router-dom'
+import Typography from 'common/typography/typography.container'
 import literatureService from 'Services/literature.service'
 import './literatureCollection.style.scss'
 
@@ -14,7 +15,7 @@ const CollectionComponent = (props) => {
       {_.map(groupedCollection, (creator, index) => {
         return (
           <div className="section" key={index}>
-            <h2>{creator.name.last}</h2>
+            <Typography type="subtitle">{creator.name.last}</Typography>
             <ul>
               {_.map(creator.items, (item, itemIndex) => (
                 <li key={itemIndex} className="listItem">
