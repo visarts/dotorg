@@ -1,6 +1,7 @@
 @import 'globals';
 
 .modalContent {
+  font-size: 1.1em;
   &.firstPage::first-letter {
     float: left;
     font-size: 3em;

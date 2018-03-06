@@ -7,14 +7,12 @@
 
 .navigation {
   // margin-top: $globalHeaderHeight;
-
-
   .container {
     color: $lightTextColor;
     display: flex;
     justify-content: center;
     width: 100%;
-    @include paddingHorizontal('md');
+    @include paddingHorizontal('sm');
     @include globalGutters();
     transition: .3s all;
 
@@ -31,7 +29,7 @@
     }
 
     &.visible {
-      height: 51px;
+      height: 3.2rem;
     }
 
     &.hidden {

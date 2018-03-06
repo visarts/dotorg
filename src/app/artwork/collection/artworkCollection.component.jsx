@@ -7,12 +7,11 @@ import './artworkCollection.style.scss'
 const CollectionComponent = (props) => {
 
   const collectionId = props.globalState.routing.collection
-  const collection = artworkService.getCollection(collectionId)
+  // const collection = artworkService.getCollection(collectionId)
   const groupedCollection = artworkService.getCollectionGroupedByCreators(collectionId)
 
   return (
     <div className="artwork_collection">
-      <Typography type="title">{collection.name}</Typography>
       {_.map(groupedCollection, (creator, index) => {
         return (
           <div className="section" key={index}>
@@ -26,7 +25,8 @@ const CollectionComponent = (props) => {
                     src: artworkService.getImagePathSm(creator.id, item.id),
                     alt: item.name
                   }}
-                  primaryText={`${item.name} (${item.id.substring(item.id.lastIndexOf('-') + 1)})`} />
+                  primaryText={item.name}
+                  secondaryText={`${creator.name.first} ${creator.name.last}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
               ))}
             </List>
           </div>

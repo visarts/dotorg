@@ -40,8 +40,8 @@ parserOptions:
 env:
 
     browser: true                       # browser global variables
-    node: false                          # Node.js global variables and Node.js scoping.
-    commonjs: false                      # CommonJS global variables and CommonJS scoping (use this for browser-only code that uses Browserify/WebPack).
+    node: true                          # Node.js global variables and Node.js scoping.
+    commonjs: true                      # CommonJS global variables and CommonJS scoping (use this for browser-only code that uses Browserify/WebPack).
     shared-node-browser: false           # Globals common to both Node and Browser.
     es6: true                           # enable all ECMAScript 6 features except for modules (this automatically sets the ecmaVersion parser option to 6).
     worker: false                        # web workers global variables.
@@ -237,7 +237,7 @@ rules:
     no-restricted-globals: 0             # disallow specified global variables
     no-shadow: 0                         # disallow variable declarations from shadowing variables declared in the outer scope
     no-shadow-restricted-names: 0        # disallow identifiers from shadowing restricted names
-    no-undef: 2                          # disallow the use of undeclared variables unless mentioned in /*global */ comments
+    no-undef: 0                          # disallow the use of undeclared variables unless mentioned in /*global */ comments
     no-undef-init: 0                     # disallow initializing variables to undefined
     no-undefined: 0                      # disallow the use of undefined as an identifier
     no-unused-vars: [1, { "vars": "all", "args": "none", "ignoreRestSiblings": false }]                    # disallow unused variables

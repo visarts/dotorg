@@ -2,37 +2,48 @@
 
 .typography {
   opacity: 1;
-  transition: .2s opacity;
-  &--headline {
+  transition: .2s all;
+
+  &-headline {
     font-size: calc(1rem + 1vw);
   }
 
-  &--subheadline {
+  &-headlineLarge {
+    font-size: 1.8rem;
+  }
+
+  &-subheadline {
     font-size: calc(.8rem + 1vw);
   }
 
-  &--title {
+  &-title {
     font-size: 2rem;
   }
 
-  &--subtitle {
+  &-subtitle {
     font-size: 1.5rem;
   }
 
-  &--header {
+  &-header {
 
   }
 
-  &--subheader {
+  &-subheader {
 
   }
 
-  &--listPrimary {
+  &-listPrimary {
     font-size: $listItemHeadline;
   }
 
-  &--listSecondary {
-    font-size: $listItemHeadline;
-    font-style: italic;
+  &-listSecondary {
+    font-size: 1.1rem;
+    color: $mainLinkHoverColor;
+    // font-style: italic;
+  }
+
+  &-paragraph {
+    margin: 0;
+    margin-bottom: 1rem;
   }
 }

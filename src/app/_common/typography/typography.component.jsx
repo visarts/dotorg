@@ -1,6 +1,7 @@
 import './typography.style.scss'
 
 const types = {
+  headlineLarge: 'h1',
   headline: 'h1',
   subheadline: 'h2',
   title: 'h1',
@@ -8,13 +9,14 @@ const types = {
   header: 'h3',
   subheader: 'h4',
   listPrimary: 'span',
-  listSecondary: 'span'
+  listSecondary: 'span',
+  paragraph: 'p'
 }
 
 const TypographyComponent = props => {
   const elementType = types[props.type] || 'h1'
   // add any prop className to existing
-  const className = `typography typography--${props.type || 'headline'} ${props.className || ''}`
+  const className = `typography typography-${props.type || 'headline'} ${props.className || ''}`
 
   return (
     React.createElement(elementType, {className, style: props.style}, props.children || '')

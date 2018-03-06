@@ -32,7 +32,7 @@ const GlobalNavComponent = props => {
   return (
     <div className="navigation">
       <div className={`container ${props.globalState.routing.section} ${visibilityClass}`}>
-        <Typography type="title">{getDescText()}</Typography>
+        <Typography type="title" className="nomargin">{getDescText()}</Typography>
       </div>
     </div>
   )

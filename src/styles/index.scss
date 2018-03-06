@@ -9,7 +9,11 @@ html, body {
 
 html {
   box-sizing: border-box;
-  font-size: 15px;
+  font-size: 16px;
+
+  @include mobile {
+    font-size: 14px;
+  }
   // font-size: 10px;
 }
 *, *:before, *:after {
@@ -73,6 +77,7 @@ p {
 
 pre {
   font-family: inherit;
+  margin-top: 0;
 }
 
 #portitude {
@@ -99,30 +104,6 @@ pre {
   font-size: $listItemHeadline;
 }
 
-// artwork styles
-.thumbContainer {
-  display: flex;
-  font-size: $listItemHeadline;
-  background-color: rgba(255, 255, 255, .1);
-  border-radius: $roundedEdge;
-  box-shadow: .2rem .2rem .75rem rgba(0, 0, 0, .3);
-  color: rgba(#FFF, .6);
-
-  &--image, &--text {
-    display: inline-block;
-  }
-
-  &--image {
-    border-top-left-radius: .4rem;
-    border-bottom-left-radius: .4rem;
-  }
-
-  &--text {
-    display: inline-block;
-    @include padding('md');
-  }
-
-  &:hover {
-    background-color: rgba(#000, 0);
-  }
+.nomargin {
+  margin: 0;
 }

@@ -1,9 +1,10 @@
+import Typography from 'common/typography/typography.container'
 const ModalHeader = (props) => {
 
   return (
     <div className="portitudeModal--header">
-      <h1>{props.title || ''}</h1>
-      <div>{props.subtitle || ''}</div>
+      <Typography type="title" className="nomargin">{props.title || ''}</Typography>
+      <Typography type="subtitle">{props.subtitle || ''}</Typography>
     </div>
   )
 }

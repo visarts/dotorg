@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import _ from 'lodash'
+
 import dataService from 'Services/data.service'
 import literatureService from 'Services/literature.service'
 import ItemComponent from './literatureItem.component'
@@ -9,7 +10,8 @@ export default class Item extends Component {
     super(props)
     this.state = {
       content: false,
-      currentPage: 0
+      currentPage: 0,
+      modalIsOpen: true
     }
     this.item = literatureService.getItemWith(this.props.globalState.routing.collection, this.props.globalState.routing.item)
     this.pages = []
@@ -58,12 +60,20 @@ export default class Item extends Component {
     this.setState({content: this.pages[currentPage], currentPage})
   }
 
+  hideModal = () => {
+    this.setState({modalIsOpen: false}, () => {
+      location.hash = location.hash.substring(0, location.hash.lastIndexOf('/'))
+    })
+  }
+
   render () {
     return (
       <div>
         {this.state.content &&
           <ItemComponent
             {...this.props}
+            modalIsOpen={this.state.modalIsOpen}
+            hideModal={this.hideModal}
             item={this.item}
             content={this.state.content}
             setFirstPage={this.setFirstPage}

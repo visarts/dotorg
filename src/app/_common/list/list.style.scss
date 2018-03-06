@@ -14,7 +14,7 @@
       // color: rgba(#FFF, .6);
 
       &:hover {
-        background-color: $mainLinkHoverColor;
+        background-color: $highlightBackgroundHoverColor;
       }
     }
   }
@@ -29,8 +29,13 @@
     border-bottom-left-radius: .4rem;
   }
 
+  &-desc {
+    display: flex;
+    flex-direction: column;
+    @include padding('md');
+  }
+
   &-text {
     display: inline-block;
-    @include padding('md');
   }
 }

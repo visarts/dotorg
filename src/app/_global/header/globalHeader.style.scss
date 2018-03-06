@@ -41,6 +41,10 @@ $vLinkPadding: 6px;
     flex-wrap: nowrap;
     align-items:stretch;
 
+    li {
+      margin: 0;
+    }
+
     &-item {
       display: inline-flex;
       margin-right: map-get($sizes, 'sm');
