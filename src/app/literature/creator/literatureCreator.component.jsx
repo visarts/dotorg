@@ -16,16 +16,14 @@ const CreatorComponent = (props) => {
         return (
           <div className="section" key={collection.id}>
             <Typography type="subtitle">{collection.name}</Typography>
-            <ul>
+            <List>
               {_.map(collection.items, (item, itemIndex) => (
-                <List key={itemIndex}>
-                  <ListItem
-                    to={literatureService.getItemPath(creatorId, item.id)}
-                    key={item.id}
-                    primaryText={`${item.name} (${item.id.substring(item.id.lastIndexOf('-') + 1)})`} />
-                </List>
+                <ListItem
+                  to={literatureService.getItemPath(creatorId, item.id)}
+                  key={item.id}
+                  primaryText={`${item.name} (${item.id.substring(item.id.lastIndexOf('-') + 1)})`} />
               ))}
-            </ul>
+            </List>
           </div>
         )
       })}
