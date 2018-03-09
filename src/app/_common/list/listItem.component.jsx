@@ -6,7 +6,7 @@ const ListItemComponent = props => {
   if (props.to) {
     return (
       <li className={className} key={props.key || 0}>
-        <Link to={props.to} className={`list-item-link${props.image ? '--thumbnail' : ''}`}>
+        <Link to={props.to} className={`${props.image ? 'list-item-link list-item-link--thumbnail' : 'list-item-link'}`}>
           {props.image && <img src={props.image.src} className="list-item-image" alt={props.image.alt || props.image.src} />}
           <div className="list-item-desc">
             {props.primaryText && <Typography type="listPrimary" className={props.image && 'list-item-text'}>{props.primaryText}</Typography>}

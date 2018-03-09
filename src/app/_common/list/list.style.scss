@@ -1,21 +1,22 @@
 @import 'globals';
 
 .list-item {
+  // margin: 0;
+
+  border-radius: $roundedEdge;
   &-link {
+    display: block;
+    background-color: $highlightBackgroundColor;
     color: $mainLinkColor;
     &:hover {
       color: $mainLinkHoverColor;
+      background-color: $highlightBackgroundHoverColor;
     }
     &--thumbnail {
       display: flex;
-      background-color: $highlightBackgroundColor;
-      border-radius: $roundedEdge;
       // box-shadow: .1rem .1rem .5rem rgba(#000, .7);
       // color: rgba(#FFF, .6);
 
-      &:hover {
-        background-color: $highlightBackgroundHoverColor;
-      }
     }
   }
 
@@ -25,8 +26,10 @@
   }
 
   &-image {
-    border-top-left-radius: .4rem;
-    border-bottom-left-radius: .4rem;
+    width: 100px;
+    height: 100px;
+    border-top-left-radius: $roundedEdge;
+    border-bottom-left-radius: $roundedEdge;
   }
 
   &-desc {
