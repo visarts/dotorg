@@ -9,7 +9,7 @@
   }
 
   &-headlineLarge {
-    font-size: 1.8rem;
+    font-size: calc(1rem + 1vw + 10px);
   }
 
   &-subheadline {
