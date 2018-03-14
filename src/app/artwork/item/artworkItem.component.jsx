@@ -15,7 +15,7 @@ const ItemComponent = (props) => {
         onClose={props.hideModal}
         size="lg">
         <PortitudeModal.Header title={item.name} subtitle={item.name} />
-        <PortitudeModal.Body className="portitudeModal--body">
+        <PortitudeModal.Body fullHeight={true}>
           <div className="image--container">
             <img
               src={props.imagePath}
@@ -23,7 +23,7 @@ const ItemComponent = (props) => {
               alt={item.title} />
           </div>
         </PortitudeModal.Body>
-        <PortitudeModal.Footer></PortitudeModal.Footer>
+        {/* <PortitudeModal.Footer></PortitudeModal.Footer> */}
       </PortitudeModal>
     </div>
   )
