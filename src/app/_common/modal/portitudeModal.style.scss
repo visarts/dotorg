@@ -54,6 +54,10 @@ $modal_footer_height: 4rem;
     overflow-y: auto;
     line-height: $default_line_height;
     z-index: $contentLayer;
+
+    &-full {
+      margin-bottom: 0px;
+    }
   }
 
   &--footer {

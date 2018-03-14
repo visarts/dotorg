@@ -20,7 +20,7 @@ const ItemComponent = (props) => {
         onClose={props.hideModal}
         size="md">
         <PortitudeModal.Header title={item.name} subtitle={`${author.name.first} ${author.name.last}`} />
-        <PortitudeModal.Body>
+        <PortitudeModal.Body fullHeight={totalDisplayPages < 2}>
           <div className={`modalContent ${currentDisplayPage === 1 && 'firstPage'}`} dangerouslySetInnerHTML={{__html: props.pages[props.currentPage]}} />
         </PortitudeModal.Body>
         {totalDisplayPages > 1 &&
