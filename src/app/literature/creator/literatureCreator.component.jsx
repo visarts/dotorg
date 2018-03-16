@@ -7,7 +7,7 @@ import './literatureCreator.style.scss'
 const CreatorComponent = (props) => {
 
   const creatorId = props.globalState.routing.collection
-  // const creator = literatureService.getCollection(creatorId)
+  const creator = literatureService.getCollection(creatorId)
   const groupedCreator = literatureService.getCreatorGroupedByCollections(creatorId)
 
   return (
@@ -21,7 +21,8 @@ const CreatorComponent = (props) => {
                 <ListItem
                   to={literatureService.getItemPath(creatorId, item.id)}
                   key={item.id}
-                  primaryText={`${item.name} (${item.id.substring(item.id.lastIndexOf('-') + 1)})`} />
+                  primaryText={item.name}
+                  secondaryText={`${creator.name.first} ${creator.name.last}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`}/>
               ))}
             </List>
           </div>
