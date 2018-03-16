@@ -10,7 +10,7 @@ import './portitudeModal.style.scss'
     headerSubTitle: ''
 
 */
-const PortitudeModalComponent = (props) => {
+const PortitudeModalComponent = props => {
   const modalClass = props.size ? `portitudeModal--${props.size}` : ''
 
   return (

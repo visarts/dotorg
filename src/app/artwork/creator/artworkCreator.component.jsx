@@ -4,7 +4,7 @@ import Typography from 'common/typography/typography.container'
 import artworkService from 'Services/artwork.service'
 import './artworkCreator.style.scss'
 
-const CreatorComponent = (props) => {
+const CreatorComponent = props => {
 
   const creatorId = props.globalState.routing.collection
   const creator = artworkService.getCollection(creatorId)

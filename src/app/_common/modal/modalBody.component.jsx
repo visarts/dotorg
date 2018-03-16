@@ -1,4 +1,4 @@
-const ModalBody = (props) => {
+const ModalBody = props => {
 
   return (
     <div className={`portitudeModal--body ${props.fullHeight ? 'portitudeModal--body-full' : ''}`}>

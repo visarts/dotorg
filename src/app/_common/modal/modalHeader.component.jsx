@@ -1,5 +1,6 @@
 import Typography from 'common/typography/typography.container'
-const ModalHeader = (props) => {
+
+const ModalHeader = props => {
 
   return (
     <div className="portitudeModal--header">

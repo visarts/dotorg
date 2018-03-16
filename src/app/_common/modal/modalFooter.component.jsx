@@ -1,4 +1,4 @@
-const ModalFooter = (props) => {
+const ModalFooter = props => {
 
   return (
     <div className="portitudeModal--footer">

@@ -4,7 +4,7 @@ import Typography from 'common/typography/typography.container'
 import artworkService from 'Services/artwork.service'
 import './artworkCollection.style.scss'
 
-const CollectionComponent = (props) => {
+const CollectionComponent = props => {
 
   const collectionId = props.globalState.routing.collection
   // const collection = artworkService.getCollection(collectionId)
