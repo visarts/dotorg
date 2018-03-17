@@ -24,10 +24,6 @@ $vLinkPadding: 6px;
   @include paddingHorizontal('sm');
   @include globalGutters();
 
-  &.artwork, &.literature {
-    background-color: $secondaryLinkColor;
-  }
-
   a {
     color: $lightTextColor;
   }

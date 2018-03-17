@@ -6,7 +6,6 @@
 // $mainHighlightColor: #101114;
 // $mainTextColor: lighten($mainThemeColor, 70%);
 // $mainLinkColor: darken($mainTextColor, 20%);
-// $darkLinkColor: darken($mainTextColor, 30%);
 // $mainLinkHoverColor: #553377;
 //#663399
 //#2b765d
@@ -22,8 +21,6 @@ $mainHighlightColor: #181615;
 $mainTextColor: darken($mainThemeColor, 80%);
 $lightTextColor: lighten($mainThemeColor, 70%);
 $mainLinkColor: darken($mainThemeColor, 40%);
-$secondaryLinkColor: #cfbfb0;
-$darkLinkColor: darken($mainTextColor, 30%);
 
 //$mainLinkHoverColor: #005533;
 //$mainLinkHoverColor: #87322C
@@ -45,3 +42,9 @@ $transparentTertiaryThemeColor: rgba(54, 50, 49, .9);
 $artwork_theme: #662828;
 $literature_theme: #333a4f;
 // $literature_theme: #334a2f;
+
+/* :: TYPOGRAPHY :: */
+$text_dark: darken($mainThemeColor, 80%);
+$text_light: lighten($mainThemeColor, 70%);
+$text_link_dark: darken($mainThemeColor, 40%);
+$text_link_light: lighten($mainThemeColor, 50%);

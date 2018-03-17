@@ -28,7 +28,7 @@ body {
   //background: linear-gradient(to left, $tertiyarnaryThemeColor, lighten($tertiaryThemeColor, 15%));
   //background-image: url('../images/darkfabric.png');
   background-color: $mainThemeColor;
-  color: $mainTextColor;
+  color: $text_dark;
   margin: 0rem;
   padding: 0rem;
   font-size: 1rem;
@@ -40,7 +40,7 @@ body {
 }
 
 a {
-  color: $mainLinkColor;
+  color: $text_link_dark;
   text-decoration: none;
   transition: .2s all;
 

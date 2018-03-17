@@ -2,6 +2,7 @@ $padding_sm: .35rem;
 $padding_md: .75rem;
 $padding_lg: 1.5rem;
 $padding_xl: 7.5rem;
+$padding_rel_10: 10vw;
 
 $sizes: (
   lg: 1.5rem,
@@ -60,8 +61,8 @@ $breakpoints: (
 }
 
 @mixin globalGutters () {
-  padding-left: $padding_xl;
-  padding-right: $padding_xl;
+  padding-left: $padding_rel_10;
+  padding-right: $padding_rel_10;
 
   @media(max-width: $smallScreen) {
     padding-left: $padding_lg;
