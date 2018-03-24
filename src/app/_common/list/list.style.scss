@@ -14,9 +14,7 @@
     }
     &--thumbnail {
       display: flex;
-      // box-shadow: .1rem .1rem .5rem rgba(#000, .7);
-      // color: rgba(#FFF, .6);
-
+      @include boxShadow('md');
     }
   }
 

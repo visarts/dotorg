@@ -32,7 +32,12 @@ const HomeComponent = (/* props */) => {
               <ListItem
                 to={literatureService.getCollectionPath(creator.id)}
                 primaryText={creator.name.last}
-                key={index} />
+                key={index}
+                image={{
+                  src: `./content/portraits/authors/${creator.id}.jpg`,
+                  alt: creator.name.last,
+                  default: './content/portraits/profile.jpg'
+                }} />
             ))}
           </List>
         </div>

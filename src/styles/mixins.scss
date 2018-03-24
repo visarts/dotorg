@@ -70,6 +70,12 @@ $breakpoints: (
   }
 }
 
+@mixin boxShadow ($size) {
+  @if $size == 'md' {
+    box-shadow: 2px 2px 10px rgba(#000, .2);
+  }
+}
+
 @mixin mobile {
   @media (max-width: $smallScreen) {
     @content;

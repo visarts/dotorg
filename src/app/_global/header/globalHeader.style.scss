@@ -16,6 +16,7 @@ $vLinkPadding: 6px;
   top: 0rem;
   left: 0rem;
   right: 0rem;
+  z-index: $headerLayer;
   background-color: $secondaryThemeColor;
   height: $globalHeaderHeight;
   border-bottom: 2px solid $artLinkHoverColor;
