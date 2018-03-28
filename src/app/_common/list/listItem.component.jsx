@@ -18,7 +18,7 @@ const ListItemComponent = props => {
           }
           <div className="list-item-desc">
             {props.primaryText && <Typography type="listPrimary" className={props.image && 'list-item-text'}>{props.primaryText}</Typography>}
-            {props.secondaryText && <Typography type="listSecondary" className={props.image && 'list-item-text'}>{props.secondaryText}</Typography>}
+            {props.secondaryText && <Typography type="listSecondary" className={props.image && 'list-item-text'}>{props.secondaryText} {props.children}</Typography>}
           </div>
         </Link>
       </li>
