@@ -31,13 +31,16 @@ const HomeComponent = (/* props */) => {
             {_.map(creators, (creator, index) => (
               <ListItem
                 to={artworkService.getCollectionPath(creator.id)}
-                primaryText={creator.name.last}
                 key={index}
+                primaryText={creator.name.last}
+                secondaryText={`${creator.dates[0]} \u2014 ${creator.dates[1]}`}
                 image={{
                   src: `./content/portraits/artists/${creator.id}.jpg`,
                   alt: creator.name.last,
                   default: './content/portraits/profile.jpg'
-                }} />
+                }}>
+                  <div>{creator.desc}</div>
+                </ListItem>
             ))}
           </List>
         </div>
