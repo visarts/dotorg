@@ -1,16 +1,16 @@
-import './image.style.scss'
+import { StyledImage, StyledImageSrc } from './image.style'
 
 const ImageComponent = props => {
   return (
-    <span className={`image ${props.type === 'thumbnail' ? 'image--thumbnail' : ''}`}>
+    <StyledImage type={props.type}>
       {props.src &&
-        <img
+        <StyledImageSrc
+          type={props.type}
           src={props.src}
-          className="image-src"
           onError={props.loadDefaultImage}
           alt={props.alt || props.src} />
       }
-    </span>
+    </StyledImage>
   )
 }
 
