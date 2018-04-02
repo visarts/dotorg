@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
+
 import dataService from 'Services/data.service'
 import navigationService from 'Services/navigation.service'
 
@@ -11,6 +12,8 @@ import Home from './home/home.container'
 
 import ArtworkIndex from './artwork/artwork.index'
 import LiteratureIndex from './literature/literature.index'
+
+import StyledApp from './app.style'
 
 export default class App extends React.Component {
 
@@ -75,7 +78,7 @@ export default class App extends React.Component {
     */
 
     return (
-      <div id="portitude">
+      <StyledApp id="portitude">
         <GlobalHeader
           globalState={this.state} />
         <GlobalNav
@@ -99,7 +102,7 @@ export default class App extends React.Component {
         </div>
         <GlobalFooter
           globalState={this.state} />
-      </div>
+      </StyledApp>
     )
   }
 }
