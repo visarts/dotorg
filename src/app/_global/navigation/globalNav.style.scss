@@ -7,7 +7,7 @@
 
 .navigation {
   // margin-top: $globalHeaderHeight;
-  .container {
+  &.container {
     color: $text_link_light;
     display: flex;
     justify-content: center;
