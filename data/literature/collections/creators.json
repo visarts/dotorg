@@ -14,79 +14,79 @@
   "dickens": {
     "name": { "last": "Dickens", "first": "Charles" },
     "desc": "Much has been said of Dickens which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["February 7, 1812", "June 9, 1870"],
     "type": "creator"
   },
   "dickinson": {
     "name": { "last": "Dickinson", "first": "Emily" },
     "desc": "Much has been said of Emily which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["December 10, 1830", "May 15, 1886"],
     "type": "creator"
   },
   "dickinson": {
     "name": { "last": "Frost", "first": "Robert" },
     "desc": "Much has been said of Frost which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["March 26, 1874", "January 29, 1963"],
     "type": "creator"
   },
   "grimm": {
     "name": { "last": "Grimm", "first": "The Brothers" },
     "desc": "Much has been said of the Grimm brothers which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["1786", "1859"],
     "type": "creator"
   },
   "kafka": {
     "name": { "last": "Kafka", "first": "Franz" },
     "desc": "Much has been said of Kafka which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["July 3, 1883", "June 3, 1924"],
     "type": "creator"
   },
   "kipling": {
     "name": { "last": "Kipling", "first": "Rudyard" },
     "desc": "Much has been said of Rudyard which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["December 30, 1865", "January 18, 1936"],
     "type": "creator"
   },
   "longfellow": {
     "name": { "last": "Longfellow", "first": "Henry Wadsworth" },
     "desc": "Much has been said of Mr. Longfellow which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["February 27, 1807", "March 24, 1882"],
     "type": "creator"
   },
   "ohenry": {
     "name": { "last": "O. Henry" },
     "desc": "Much has been said of O. Henry which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["September 11, 1862", "June 5, 1910"],
     "type": "creator"
   },
   "poe": {
     "name": { "last": "Poe", "first": "Edgar Allan" },
     "desc": "Much has been said of Mr. Poe which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["January 19, 1809", "October 7, 1849"],
     "type": "creator"
   },
   "shakespeare": {
     "name": { "last": "Shakespeare", "first": "William" },
     "desc": "Much has been said of Shakespeare which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["1564", "April 23, 1616"],
     "type": "creator"
   },
   "thoreau": {
     "name": { "last": "Thoreau", "first": "Henry David" },
     "desc": "Much has been said of Thoreau which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["July 12, 1817", "May 6, 1862"],
     "type": "creator"
   },
   "twain": {
     "name": { "last": "Twain", "first": "Mark" },
     "desc": "Much has been said of Mark Twain which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["November 30, 1835", "April 21, 1910"],
     "type": "creator"
   },
   "wilde": {
     "name": { "last": "Wilde", "first": "Oscar" },
     "desc": "Much has been said of Oscar which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["October 16, 1854", "November 30, 1900"],
     "type": "creator"
   }
 }

@@ -1,149 +1,142 @@
 {
-  "creatorkey": {
-    "name": { "last": "Lname", "first": "Fname" },
-    "desc": "This is an artist for testing",
-    "dates": ["", ""],
-    "category": "impressionism",
-    "type": "creator"
-  },
   "bouguereau": {
     "name": { "last": "Bougeureau", "first": "William" },
     "desc": "Much has been said of Bougeureau which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["November 30, 1825", "August 19, 1905"],
     "category": "academic",
     "type": "creator"
   },
   "cassatt": {
     "name": { "last": "Cassatt", "first": "Mary" },
     "desc": "Much has been said of Cassatt which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["May 22, 1844", "June 14, 1926"],
     "category": "impressionism",
     "type": "creator"
   },
   "cezanne": {
     "name": { "last": "Cezanne", "first": "Paul" },
     "desc": "Much has been said of Cezanne which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["January 19, 1839", "October 22, 1906"],
     "category": "post_impressionism",
     "type": "creator"
   },
   "degas": {
     "name": { "last": "Degas", "first": "Edgar" },
     "desc": "Much has been said of Degas which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["July 19, 1834", "September 27, 1917"],
     "category": "impressionism",
     "type": "creator"
   },
   "gauguin": {
     "name": { "last": "Gauguin", "first": "Paul" },
     "desc": "Much has been said of Gaugin which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["June 7, 1848", "May 8, 1903"],
     "category": "post_impressionism",
     "type": "creator"
   },
 
   "gerome": {
     "name": { "last": "G%C3%A9r%C3%B4me", "first": "Jean-L%C3%A9on" },
-    "desc": "Much has been said of Gérôme which cannot be detailed here.",
-    "dates": ["", ""],
+    "desc": "Much has been said of G%C3%A9r%C3%B4me which cannot be detailed here.",
+    "dates": ["May 11, 1824", "January 10, 1904"],
     "category": "academic",
     "type": "creator"
   },
   "harnett": {
     "name": { "last": "Harnett", "first": "William" },
     "desc": "Much has been said of Harnett which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["August 10, 1848", "October 29, 1892"],
     "category": "realism",
     "type": "creator"
   },
   "michelangelo": {
     "name": { "last": "Michelangelo", "first": "Buonarroti" },
     "desc": "Much has been said of Michelangelo which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["March 6, 1475", "February 18, 1564"],
     "category": "renaissance",
     "type": "creator"
   },
   "monet": {
     "name": { "last": "Monet", "first": "Claude" },
     "desc": "Much has been said of Monet which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["November 14, 1840", "December 5, 1926"],
     "category": "impressionism",
     "type": "creator"
   },
   "okeeffe": {
     "name": { "last": "O'Keeffe", "first": "Georgia" },
     "desc": "Much has been said of O'Keeffe which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["November 15, 1887", "March 6, 1986"],
     "category": "modernism",
     "type": "creator"
   },
   "raphael": {
     "name": { "last": "Raphael Sanzio da Urbino", "first": "" },
     "desc": "Much has been said of Raphael which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["1483", "April 6, 1520"],
     "category": "renaissance",
     "type": "creator"
   },
   "rembrandt": {
     "name": { "last": "Rembrandt", "first": "" },
     "desc": "Much has been said of Rembrandt which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["July 15, 1606", "October 4, 1669"],
     "category": "baroque",
     "type": "creator"
   },
   "renoir": {
-    "name": { "last": "Renoir", "first": "Auguste" },
+    "name": { "last": "Renoir", "first": "Pierre-Auguste" },
     "desc": "Much has been said of Renoir which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["February 25, 1841", "December 3, 1919"],
     "category": "impressionism",
     "type": "creator"
   },
   "rossetti": {
     "name": { "last": "Rossetti", "first": "Dante" },
     "desc": "Much has been said of Rossetti which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["May 12, 1828", "April 9, 1882"],
     "category": "pre_raphaelite",
     "type": "creator"
   },
   "rousseau": {
     "name": { "last": "Rousseau", "first": "Henri" },
     "desc": "Much has been said of Rousseau which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["May 21, 1844", "September 2, 1910"],
     "category": "post_impressionism",
     "type": "creator"
   },
   "sargent": {
     "name": { "last": "Sargent", "first": "John Singer" },
     "desc": "Much has been said of Sargent which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["January 12, 1856", "April 14, 1925"],
     "category": "realism",
     "type": "creator"
   },
   "seurat": {
     "name": { "last": "Seurat", "first": "Georges" },
     "desc": "Much has been said of Seurat which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["December 2, 1859", "March 29, 1891"],
     "category": "post_impressionism",
     "type": "creator"
   },
   "vangogh": {
     "name": { "last": "Van Gogh", "first": "Vincent" },
     "desc": "Much has been said of Van Gogh which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["March 30, 1853", "July 29, 1890"],
     "category": "post_impressionism",
     "type": "creator"
   },
   "vonamerling": {
     "name": { "last": "Von Amerling", "first": "Friedrich" },
     "desc": "Much has been said of Von Amerling which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["April 14, 1803", "January 14, 1887"],
     "category": "academic",
     "type": "creator"
   },
   "waterhouse": {
     "name": { "last": "Waterhouse", "first": "John William" },
     "desc": "Much has been said of Waterhouse which cannot be detailed here.",
-    "dates": ["", ""],
+    "dates": ["April 6, 1849", "February 10, 1917"],
     "category": "pre_raphaelite",
     "type": "creator"
   }
