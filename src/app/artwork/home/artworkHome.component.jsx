@@ -34,13 +34,12 @@ const HomeComponent = (/* props */) => {
                 key={index}
                 primaryText={creator.name.last}
                 secondaryText={`${creator.dates[0]} \u2014 ${creator.dates[1]}`}
+                tertiaryText={creator.desc}
                 image={{
                   src: `./content/portraits/artists/${creator.id}.jpg`,
                   alt: creator.name.last,
                   default: './content/portraits/profile.jpg'
-                }}>
-                  <div>{creator.desc}</div>
-                </ListItem>
+                }} />
             ))}
           </List>
         </div>
