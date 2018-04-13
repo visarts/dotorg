@@ -32,9 +32,9 @@ const HomeComponent = (/* props */) => {
               <ListItem
                 to={artworkService.getCollectionPath(creator.id)}
                 key={index}
-                primaryText={creator.name.last}
-                secondaryText={`${creator.dates[0]} \u2014 ${creator.dates[1]}`}
-                tertiaryText={creator.desc}
+                headline={creator.name.last}
+                subHeadline={`${creator.dates[0]} \u2014 ${creator.dates[1]}`}
+                primaryText={creator.desc}
                 image={{
                   src: `./content/portraits/artists/${creator.id}.jpg`,
                   alt: creator.name.last,

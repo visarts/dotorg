@@ -4,12 +4,10 @@ import Typography from 'common/typography/typography.container'
 import Image from 'common/image/image.container'
 
 const ListItemComponent = props => {
-
-  const className = `list-item ${props.className || ''}`
   const truncateLength = window.innerWidth > 768 ? 220 : 100
   if (props.to) {
     return (
-      <li className={className} key={props.key || 0}>
+      <li className={`list-item ${props.className || ''}`} key={props.key || 0}>
         <Link to={props.to} className={`${props.image ? 'list-item-link list-item-link--thumbnail' : 'list-item-link'}`}>
           {props.image &&
             <Image
@@ -19,9 +17,9 @@ const ListItemComponent = props => {
               alt={props.image.alt || props.image.src} />
           }
           <div className="list-item-desc">
-            {props.primaryText && <Typography type="listPrimary" className={props.image && 'list-item-text'}>{props.primaryText}</Typography>}
-            {props.secondaryText && <Typography type="listSecondary" className={props.image && 'list-item-text'}>{props.secondaryText}</Typography>}
-            {props.tertiaryText && <Typography type="listSecondary" className={props.image && 'list-item-text'}>{_.truncate(props.tertiaryText, { length: truncateLength, separator: ' ' })}</Typography>}
+            {props.headline && <Typography type="listPrimary" className={props.image && 'list-item-text'}>{props.headline}</Typography>}
+            {props.subHeadline && <Typography type="listSecondary" className={props.image && 'list-item-text'}>{props.subHeadline}</Typography>}
+            {props.primaryText && <Typography type="listSecondary" className={props.image && 'list-item-text'}>{_.truncate(props.primaryText, { length: truncateLength, separator: ' ' })}</Typography>}
           </div>
         </Link>
       </li>
@@ -29,8 +27,8 @@ const ListItemComponent = props => {
   } else {
     return (
       <li className={className} key={props.key || 0}>
-        {props.primaryText && <Typography type="listPrimary">{props.primaryText}</Typography>}
-        {props.secondaryText && <Typography type="listSecondary">{props.secondaryText}</Typography>}
+        {props.headline && <Typography type="listPrimary">{props.headline}</Typography>}
+        {props.subHeadline && <Typography type="listSecondary">{props.subHeadline}</Typography>}
       </li>
     )
   }

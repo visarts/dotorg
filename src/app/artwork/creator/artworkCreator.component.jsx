@@ -23,8 +23,8 @@ const CreatorComponent = props => {
                 src: artworkService.getImagePathSm(creatorId, item.id),
                 alt: item.title
               }}
-              primaryText={item.name}
-              secondaryText={`${creator.name.first} ${creator.name.last}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
+              headline={item.name}
+              subHeadline={`${creator.name.first} ${creator.name.last}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
           ))}
         </List>
       </div>

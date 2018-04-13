@@ -18,7 +18,7 @@ const HomeComponent = (/* props */) => {
             {_.map(collections, (collection, index) => (
               <ListItem
                 to={literatureService.getCollectionPath(collection.id)}
-                primaryText={collection.name}
+                headline={collection.name}
                 key={index} />
             ))}
           </List>
@@ -32,9 +32,9 @@ const HomeComponent = (/* props */) => {
               <ListItem
                 to={literatureService.getCollectionPath(creator.id)}
                 key={index}
-                primaryText={creator.name.last}
-                secondaryText={`${creator.dates[0]} \u2014 ${creator.dates[1]}`}
-                tertiaryText={creator.desc}
+                headline={creator.name.last}
+                subHeadline={`${creator.dates[0]} \u2014 ${creator.dates[1]}`}
+                primaryText={creator.desc}
                 image={{
                   src: `./content/portraits/authors/${creator.id}.jpg`,
                   alt: creator.name.last,

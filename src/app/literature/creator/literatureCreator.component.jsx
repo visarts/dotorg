@@ -21,8 +21,8 @@ const CreatorComponent = (props) => {
                 <ListItem
                   to={literatureService.getItemPath(creatorId, item.id)}
                   key={item.id}
-                  primaryText={item.name}
-                  secondaryText={`${creator.name.first} ${creator.name.last}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`}/>
+                  headline={item.name}
+                  subHeadline={`${creator.name.first} ${creator.name.last}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`}/>
               ))}
             </List>
           </div>

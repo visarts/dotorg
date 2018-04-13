@@ -20,8 +20,8 @@ const CollectionComponent = (props) => {
                 <ListItem
                   to={literatureService.getItemPath(collectionId, item.id)}
                   key={itemIndex}
-                  primaryText={item.name}
-                  secondaryText={`${creator.name.first} ${creator.name.last}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
+                  headline={item.name}
+                  subHeadline={`${creator.name.first} ${creator.name.last}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
               ))}
             </List>
           </div>
