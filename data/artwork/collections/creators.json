@@ -1,7 +1,7 @@
 {
   "bouguereau": {
-    "name": { "last": "Bougeureau", "first": "William" },
-    "desc": "Much has been said of Bougeureau which cannot be detailed here.",
+    "name": { "last": "Bouguereau", "first": "William" },
+    "desc": "Much has been said of Bouguereau which cannot be detailed here.",
     "dates": ["November 30, 1825", "August 19, 1905"],
     "category": "academic",
     "type": "creator"
@@ -29,7 +29,7 @@
   },
   "gauguin": {
     "name": { "last": "Gauguin", "first": "Paul" },
-    "desc": "Much has been said of Gaugin which cannot be detailed here.",
+    "desc": "Much has been said of Gauguin which cannot be detailed here.",
     "dates": ["June 7, 1848", "May 8, 1903"],
     "category": "post_impressionism",
     "type": "creator"

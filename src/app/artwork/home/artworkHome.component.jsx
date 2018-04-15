@@ -18,7 +18,7 @@ const HomeComponent = (/* props */) => {
             {_.map(collections, (collection, index) => (
               <ListItem
                 to={artworkService.getCollectionPath(collection.id)}
-                primaryText={collection.name}
+                headline={collection.name}
                 key={index} />
             ))}
           </List>
