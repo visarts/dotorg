@@ -1,7 +1,7 @@
 import _ from 'lodash'
 import { Link } from 'react-router-dom'
-import Typography from 'common/typography/typography.container'
-import Image from 'common/image/image.container'
+import Typography from 'common/typography'
+import Image from 'common/image'
 
 const ListItemComponent = props => {
   const truncateLength = window.innerWidth > 768 ? 220 : 100

@@ -10,7 +10,7 @@ import './portitudeModal.style.scss'
     headerSubTitle: ''
 
 */
-const PortitudeModalComponent = props => {
+const ModalComponent = props => {
   const modalClass = props.size ? `portitudeModal--${props.size}` : ''
 
   return (
@@ -24,4 +24,4 @@ const PortitudeModalComponent = props => {
   )
 }
 
-export default PortitudeModalComponent
+export default ModalComponent

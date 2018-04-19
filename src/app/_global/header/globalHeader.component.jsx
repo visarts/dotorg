@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import Typography from 'common/typography/typography.container'
+import Typography from 'common/typography'
 import Favorite from 'material-ui-icons/Favorite'
 import './globalHeader.style.scss'
 

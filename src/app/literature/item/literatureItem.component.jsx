@@ -1,7 +1,7 @@
 import Button from 'material-ui/Button'
 import KeyboardArrowLeft from 'material-ui-icons/KeyboardArrowLeft'
 import KeyboardArrowRight from 'material-ui-icons/KeyboardArrowRight'
-import PortitudeModal from 'common/modal/portitudeModal.container'
+import Modal from 'common/modal'
 import './literatureItem.style.scss'
 
 const ItemComponent = (props) => {
@@ -15,24 +15,24 @@ const ItemComponent = (props) => {
 
   return (
     <div className="literature_item">
-      <PortitudeModal
+      <Modal
         open={props.modalIsOpen}
         onClose={props.hideModal}
         size="md">
-        <PortitudeModal.Header title={item.name} subtitle={`${author.name.first} ${author.name.last}`} />
-        <PortitudeModal.Body fullHeight={totalDisplayPages < 2}>
+        <Modal.Header title={item.name} subtitle={`${author.name.first} ${author.name.last}`} />
+        <Modal.Body fullHeight={totalDisplayPages < 2}>
           <div className={`modalContent ${currentDisplayPage === 1 && 'firstPage'}`} dangerouslySetInnerHTML={{__html: props.pages[props.currentPage]}} />
-        </PortitudeModal.Body>
+        </Modal.Body>
         {totalDisplayPages > 1 &&
-          <PortitudeModal.Footer>
+          <Modal.Footer>
             <div className="pagination">
               <Button className="pagination--button" color="primary" variant="raised" onClick={props.setPreviousPage} disabled={props.currentPage === 0}><KeyboardArrowLeft /></Button>
               <span className="pagination--marker">{currentDisplayPage} / {totalDisplayPages}</span>
               <Button className="pagination--button" color="primary" variant="raised" onClick={props.setNextPage} disabled={props.currentPage === totalDisplayPages - 1}><KeyboardArrowRight /></Button>
             </div>
-          </PortitudeModal.Footer>
+          </Modal.Footer>
         }
-      </PortitudeModal>
+      </Modal>
     </div>
   )
 }

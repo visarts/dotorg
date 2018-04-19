@@ -1,4 +1,4 @@
-import PortitudeModal from 'common/modal/portitudeModal.container'
+import Modal from 'common/modal'
 
 import './artworkItem.style.scss'
 
@@ -10,21 +10,21 @@ const ItemComponent = (props) => {
 
   return (
     <div className="artwork--item">
-      <PortitudeModal
+      <Modal
         open={true}
         onClose={props.hideModal}
         size="lg">
-        <PortitudeModal.Header title={item.name} subtitle={`${creator.name.first} ${creator.name.last}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
-        <PortitudeModal.Body fullHeight={true}>
+        <Modal.Header title={item.name} subtitle={`${creator.name.first} ${creator.name.last}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
+        <Modal.Body fullHeight={true}>
           <div className="image--container">
             <img
               src={props.imagePath}
               className="image--large"
               alt={item.title} />
           </div>
-        </PortitudeModal.Body>
+        </Modal.Body>
         {/* <PortitudeModal.Footer></PortitudeModal.Footer> */}
-      </PortitudeModal>
+      </Modal>
     </div>
   )
 }

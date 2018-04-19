@@ -1,6 +1,6 @@
 import _ from 'lodash'
-import { List, ListItem } from 'common/list/list.container'
-import Typography from 'common/typography/typography.container'
+import { List, ListItem } from 'common/list'
+import Typography from 'common/typography'
 import literatureService from 'Services/literature.service'
 import './literatureHome.style.scss'
 
