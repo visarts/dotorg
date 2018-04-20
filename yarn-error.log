@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/a600749/.nvm/versions/node/v9.2.0/bin/node /Users/a600749/.nvm/versions/node/v9.2.0/bin/yarn add .
+  /Users/a600749/.nvm/versions/node/v9.2.0/bin/node /Users/a600749/.nvm/versions/node/v9.2.0/bin/yarn start
 
 PATH: 
   /Users/a600749/.nvm/versions/node/v9.2.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -60,6 +60,7 @@ npm manifest:
       "babel-plugin-array-includes": "^2.0.3",
       "babel-plugin-syntax-dynamic-import": "^6.18.0",
       "babel-plugin-transform-class-properties": "^6.24.1",
+      "babel-plugin-transform-object-rest-spread": "^6.26.0",
       "babel-preset-env": "^1.6.1",
       "babel-preset-es2015": "^6.24.1",
       "babel-preset-react": "^6.24.1",
@@ -7076,14 +7077,16 @@ Lockfile:
       window-size "0.1.0"
 
 Trace: 
-  Error: Received malformed response from registry for undefined. The registry may be down.
-      at new MessageError (/Users/a600749/.nvm/versions/node/v9.2.0/lib/node_modules/yarn/lib/cli.js:186:110)
-      at Function.<anonymous> (/Users/a600749/.nvm/versions/node/v9.2.0/lib/node_modules/yarn/lib/cli.js:51419:15)
-      at Generator.next (<anonymous>)
-      at step (/Users/a600749/.nvm/versions/node/v9.2.0/lib/node_modules/yarn/lib/cli.js:98:30)
-      at /Users/a600749/.nvm/versions/node/v9.2.0/lib/node_modules/yarn/lib/cli.js:116:14
-      at new Promise (<anonymous>)
-      at new F (/Users/a600749/.nvm/versions/node/v9.2.0/lib/node_modules/yarn/lib/cli.js:23451:28)
-      at Function.<anonymous> (/Users/a600749/.nvm/versions/node/v9.2.0/lib/node_modules/yarn/lib/cli.js:95:12)
-      at Function.findVersionInRegistryResponse (/Users/a600749/.nvm/versions/node/v9.2.0/lib/node_modules/yarn/lib/cli.js:51461:19)
-      at NpmResolver.<anonymous> (/Users/a600749/.nvm/versions/node/v9.2.0/lib/node_modules/yarn/lib/cli.js:51479:28)
+  Error: Command failed.
+  Exit code: 127
+  Command: sh
+  Arguments: -c webpack && webpack-dev-server
+  Directory: /Users/a600749/development/dotorg
+  Output:
+  
+      at ProcessTermError.MessageError (/Users/a600749/.nvm/versions/node/v9.2.0/lib/node_modules/yarn/lib/cli.js:186:110)
+      at new ProcessTermError (/Users/a600749/.nvm/versions/node/v9.2.0/lib/node_modules/yarn/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/Users/a600749/.nvm/versions/node/v9.2.0/lib/node_modules/yarn/lib/cli.js:30281:17)
+      at ChildProcess.emit (events.js:159:13)
+      at maybeClose (internal/child_process.js:943:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)
