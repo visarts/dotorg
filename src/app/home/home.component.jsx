@@ -9,12 +9,12 @@ const HomeComponent = (/* props */) => {
       <div className="section">
         <div className="subSection">
           <Link to="artwork" className="subSection--link subSection--link--artwork">
-            <Typography type="listItem">Artwork</Typography>
+            <Typography type="listPrimary">Artwork</Typography>
           </Link>
         </div>
         <div className="subSection">
           <Link to="literature" className="subSection--link subSection--link--literature">
-            <Typography type="listItem">Literature</Typography>
+            <Typography type="listPrimary">Literature</Typography>
           </Link>
         </div>
       </div>

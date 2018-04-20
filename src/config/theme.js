@@ -13,8 +13,10 @@ const padding = {
 export const themeConfig = {
   colors: {
     foreground: {
-      light: '#dfdfdf',
-      dark: '#777777',
+      light: '#DFDFDF',
+      light2: '#CFCFCF',
+      dark: '#5A5A55',
+      dark2: '#6E6E66',
     },
     background: {
       light: '#afafaa',
@@ -23,7 +25,7 @@ export const themeConfig = {
     accent: {
       purple: '#4c2950',
       blue: '#333a4f',
-    }
+    },
   },
   spacing: {
     globalGutter: padding.rel[10],

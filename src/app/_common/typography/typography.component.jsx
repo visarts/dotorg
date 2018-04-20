@@ -1,4 +1,5 @@
-import './typography.style.scss'
+import { StyledTypography } from './typography.style'
+// import './typography.style.scss'
 
 const types = {
   headlineLarge: 'h1',
@@ -8,18 +9,19 @@ const types = {
   subtitle: 'h2',
   header: 'h3',
   subheader: 'h4',
-  listPrimary: 'span',
+  listPrimary: 'h3',
   listSecondary: 'span',
-  paragraph: 'p'
+  paragraph: 'p',
 }
 
 const TypographyComponent = props => {
-  const elementType = types[props.type] || 'h1'
   // add any prop className to existing
-  const className = `typography typography-${props.type || 'headline'} ${props.className || ''}`
 
   return (
-    React.createElement(elementType, {className, style: props.style}, props.children || '')
+    // React.createElement(elementType, {className, style: props.style}, props.children || '')
+    <StyledTypography type={props.type} element={types[props.type] || 'h1'}>
+      {props.children}
+    </StyledTypography>
   )
 }
 
