@@ -17,4 +17,12 @@ export const StyledTypography = styled(({element, children, type, ...other}) => 
   ${props => props.type === 'listPrimary' && css`
     font-size: 1.2rem;
   `}
+  ${props => props.type === 'listSecondary' && css`
+    font-size: .9rem;
+    color: ${props.theme.colors.foreground.dark2};
+  `}
+  ${props => props.type === 'paragraph' && css`
+    margin: 0;
+    margin-bottom: 1rem;
+  `}
 `
