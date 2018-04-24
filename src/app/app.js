@@ -4,14 +4,14 @@ import { Route } from 'react-router-dom'
 import dataService from 'Services/data.service'
 import navigationService from 'Services/navigation.service'
 
-import GlobalHeader from 'global/header/globalHeader.container'
-import GlobalNav from 'global/navigation/globalNav.container'
-import GlobalFooter from 'global/footer/globalFooter.container'
+import GlobalHeader from 'global/header'
+import GlobalNav from 'global/navigation'
+import GlobalFooter from 'global/footer'
 
-import Home from './home/home.container'
+import Home from './home'
 
-import ArtworkIndex from './artwork/artwork.index'
-import LiteratureIndex from './literature/literature.index'
+import ArtworkIndex from './artwork'
+import LiteratureIndex from './literature'
 
 import StyledApp from './app.style'
 
