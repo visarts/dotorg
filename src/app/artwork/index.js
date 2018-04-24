@@ -1,11 +1,11 @@
 import { Route } from 'react-router-dom'
 import artworkService from 'Services/artwork.service'
-import Home from './home/artworkHome.container'
-import Collection from './collection/artworkCollection.container'
-import Creator from './creator/artworkCreator.container'
-import Item from './item/artworkItem.container'
+import Home from './home'
+import Collection from './collection'
+import Creator from './creator'
+import Item from './item'
 
-const ArtworkIndex = (props) => {
+const Artwork = props => {
 
   return (
     <div className="artwork">
@@ -27,4 +27,4 @@ const ArtworkIndex = (props) => {
   )
 }
 
-export default ArtworkIndex
+export default Artwork

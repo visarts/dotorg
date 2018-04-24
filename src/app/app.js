@@ -10,8 +10,8 @@ import GlobalFooter from 'global/footer'
 
 import Home from './home'
 
-import ArtworkIndex from './artwork'
-import LiteratureIndex from './literature'
+import Artwork from './artwork'
+import Literature from './literature'
 
 import StyledApp from './app.style'
 
@@ -90,12 +90,12 @@ export default class App extends React.Component {
               {...routeProps} />
           )} />
           <Route path="/artwork" render={routeProps => (
-            <ArtworkIndex
+            <Artwork
               globalState={this.state}
               {...routeProps} />
           )} />
           <Route path="/literature" render={routeProps => (
-            <LiteratureIndex
+            <Literature
               globalState={this.state}
               {...routeProps} />
           )} />

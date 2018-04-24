@@ -1,11 +1,11 @@
 import { Route } from 'react-router-dom'
 import literatureService from 'Services/literature.service'
-import Home from './home/literatureHome.container'
-import Collection from './collection/literatureCollection.container'
-import Creator from './creator/literatureCreator.container'
-import Item from './item/literatureItem.container'
+import Home from './home'
+import Collection from './collection'
+import Creator from './creator'
+import Item from './item'
 
-const LiteratureIndex = (props) => {
+const Literature = props => {
 
   return (
     <div className="literature">
@@ -27,4 +27,4 @@ const LiteratureIndex = (props) => {
   )
 }
 
-export default LiteratureIndex
+export default Literature
