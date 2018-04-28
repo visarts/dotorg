@@ -1,8 +1,9 @@
 const padding = {
-  sm: '.35rem',
-  md: '.75rem',
-  lg: '1.5rem',
-  xl: '7.5rem',
+  xs: '5px',
+  sm: '10px',
+  md: '15px',
+  lg: '20px',
+  xl: '35px',
   rel: {
     [10]: '10vw',
     [15]: '15vw',
@@ -21,14 +22,17 @@ export const themeConfig = {
     background: {
       light: '#afafaa',
       dark: '#363630',
+      darker: '#181615',
     },
     accent: {
       purple: '#4c2950',
       blue: '#333a4f',
     },
   },
+  padding,
   spacing: {
     globalGutter: padding.rel[10],
     globalGutter_sm: padding.lg,
+    globalFooterHeight: '150px'
   }
 }

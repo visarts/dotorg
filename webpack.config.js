@@ -158,7 +158,8 @@ module.exports = {
       SharedComponents: path.resolve(ROOT_PATH, 'src/app/sharedComponents'),
       Images: path.resolve(ROOT_PATH, 'src/images'),
       global: path.resolve(ROOT_PATH, 'src/app/_global'),
-      common: path.resolve(ROOT_PATH, 'src/app/_common')
+      common: path.resolve(ROOT_PATH, 'src/app/_common'),
+      config: path.resolve(ROOT_PATH, 'src/config')
     },
     modules: [
       path.resolve('./src'),

@@ -6,7 +6,7 @@ import navigationService from 'Services/navigation.service'
 
 import GlobalHeader from 'global/header'
 import GlobalNav from 'global/navigation'
-import GlobalFooter from 'global/footer'
+import { Footer } from 'global'
 
 import Home from './home'
 
@@ -100,7 +100,7 @@ export default class App extends React.Component {
               {...routeProps} />
           )} />
         </div>
-        <GlobalFooter
+        <Footer
           globalState={this.state} />
       </StyledApp>
     )
