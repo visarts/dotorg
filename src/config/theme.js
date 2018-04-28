@@ -11,6 +11,20 @@ const padding = {
   }
 }
 
+const spacing = {
+  globalGutter: padding.rel[10],
+  globalGutter_sm: padding.lg,
+}
+
+const sizing = {
+  footerHeight: '150px',
+}
+
+const breakpoints = {
+  sm: '376px',
+  md: '768px',
+}
+
 export const themeConfig = {
   colors: {
     foreground: {
@@ -30,9 +44,7 @@ export const themeConfig = {
     },
   },
   padding,
-  spacing: {
-    globalGutter: padding.rel[10],
-    globalGutter_sm: padding.lg,
-    globalFooterHeight: '150px'
-  }
+  spacing,
+  sizing,
+  breakpoints,
 }
