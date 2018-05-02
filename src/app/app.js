@@ -4,9 +4,8 @@ import { Route } from 'react-router-dom'
 import dataService from 'Services/data.service'
 import navigationService from 'Services/navigation.service'
 
-import GlobalHeader from 'global/header'
 import GlobalNav from 'global/navigation'
-import { Footer } from 'global'
+import { Header, Footer } from 'global'
 
 import Home from './home'
 
@@ -79,7 +78,7 @@ export default class App extends React.Component {
 
     return (
       <StyledApp id="portitude">
-        <GlobalHeader
+        <Header
           globalState={this.state} />
         <GlobalNav
           globalState={this.state} />

@@ -3,7 +3,7 @@ import Typography from 'common/typography'
 import Favorite from 'material-ui-icons/Favorite'
 import './globalHeader.style.scss'
 
-const GlobalHeaderComponent = props => {
+const HeaderComponent = props => {
   const { navigationData, globalState } = props
   const { routing } = globalState
   const levels = {
@@ -50,4 +50,4 @@ const GlobalHeaderComponent = props => {
   )
 }
 
-export default GlobalHeaderComponent
+export default HeaderComponent
