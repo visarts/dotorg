@@ -3,21 +3,21 @@ import Typography from 'common/typography'
 import './globalNav.style.scss'
 
 const GlobalNavComponent = props => {
-  const { navigationData, globalState } = props
+  const { navigationState, globalState } = props
   const { routing } = globalState
   const visibilityClass = routing.section ? 'visible' : 'hidden'
   const getDescText = () => {
     let descText = ''
     if (routing.section) {
       if (routing.collection) {
-        if (navigationData.collection.type === 'category') {
+        if (navigationState.collection.type === 'category') {
           if (routing.section === 'artwork') {
-            descText = `The ${navigationData.collection.name} era`
+            descText = `The ${navigationState.collection.name} era`
           } else {
-            descText = `Genre: ${navigationData.collection.name}`
+            descText = `Genre: ${navigationState.collection.name}`
           }
         } else {
-          descText = `${navigationData.collection.name.first} ${navigationData.collection.name.last}`
+          descText = `${navigationState.collection.name.first} ${navigationState.collection.name.last}`
         }
       } else {
         if (routing.section === 'artwork') {

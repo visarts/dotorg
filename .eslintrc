@@ -238,7 +238,7 @@ rules:
     no-restricted-globals: 0             # disallow specified global variables
     no-shadow: 0                         # disallow variable declarations from shadowing variables declared in the outer scope
     no-shadow-restricted-names: 0        # disallow identifiers from shadowing restricted names
-    no-undef: 0                          # disallow the use of undeclared variables unless mentioned in /*global */ comments
+    no-undef: 2                          # disallow the use of undeclared variables unless mentioned in /*global */ comments
     no-undef-init: 0                     # disallow initializing variables to undefined
     no-undefined: 0                      # disallow the use of undefined as an identifier
     no-unused-vars: [1, { "vars": "all", "args": "none", "ignoreRestSiblings": false }]                    # disallow unused variables

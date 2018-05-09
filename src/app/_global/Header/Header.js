@@ -5,7 +5,7 @@ export default class GlobalHeader extends Component {
   render () {
 
     return (
-      <HeaderComponent navigationData={this.props.globalState.navigationData} {...this.props} />
+      <HeaderComponent navigationState={this.props.globalState.navigationState} {...this.props} />
     )
   }
 }

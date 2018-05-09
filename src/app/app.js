@@ -22,7 +22,7 @@ export default class App extends React.Component {
     const routing = dataService.getRoutingState(this.currentLocation)
     this.state = {
       routing,
-      navigationData: navigationService.getNavigationData(routing)
+      navigationState: navigationService.getnavigationState(routing)
     }
   }
 
@@ -45,7 +45,7 @@ export default class App extends React.Component {
       const routing = dataService.getRoutingState(updatedLocation)
       this.setState({
         routing,
-        navigationData: navigationService.getNavigationData(routing)
+        navigationState: navigationService.getnavigationState(routing)
       }, () => {
         this.currentLocation = updatedLocation
         this.setGlobalClassName()

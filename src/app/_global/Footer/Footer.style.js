@@ -8,7 +8,7 @@ export const StyledFooter = styled.div`
   bottom: 0px;
   left: 0px;
   right: 0px;
-  height: ${props => props.theme.sizing.footerHeight};
+  height: ${props => props.theme.sizes.containers.footerHeight};
   ${globalGutters()}
   ${paddingHorizontal('sm')}
 `

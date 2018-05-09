@@ -27,22 +27,15 @@
     color: $lightTextColor;
   }
 
-  h1 {
-    margin: 0rem;
-  }
-
   &-navigation {
     display: flex;
     flex-wrap: nowrap;
-    align-items:stretch;
-
-    li {
-      margin: 0;
-    }
+    align-items: center;
 
     &-item {
       display: inline-flex;
       margin-right: map-get($sizes, 'sm');
+      align-items: center;
     }
 
     &-icon {

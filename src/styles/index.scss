@@ -87,14 +87,6 @@ pre {
   padding-bottom: $globalFooterHeight;
 }
 
-.artwork {
-  // background-color: $artwork_theme;
-}
-
-.literature {
-  // background-color: $literature_theme;
-}
-
 .view {
   @include paddingHorizontal('lg');
   @include globalGutters();

@@ -12,15 +12,15 @@ export const globalGutters = () => {
     padding-left: ${themeConfig.spacing.globalGutter};
     padding-right: ${themeConfig.spacing.globalGutter};
     @media (max-width: ${themeConfig.breakpoints.md}) {
-      padding-left: ${themeConfig.padding.lg};
-      padding-right: ${themeConfig.padding.lg};
+      padding-left: ${themeConfig.sizes.lg};
+      padding-right: ${themeConfig.sizes.lg};
     }
   `
 }
 
 export const paddingHorizontal = size => {
   return `
-    padding-top: ${themeConfig.padding[size]}
-    padding-bottom: ${themeConfig.padding[size]}
+    padding-top: ${themeConfig.sizes[size]}
+    padding-bottom: ${themeConfig.sizes[size]}
   `
 }

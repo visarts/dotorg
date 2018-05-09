@@ -1,4 +1,4 @@
-const padding = {
+const sizes = {
   xs: '5px',
   sm: '10px',
   md: '15px',
@@ -8,21 +8,32 @@ const padding = {
     [10]: '10vw',
     [15]: '15vw',
     [20]: '20vw',
+  },
+  containers: {
+    footerHeight: '150px',
+    headerHeight: '65px',
   }
 }
 
 const spacing = {
-  globalGutter: padding.rel[10],
-  globalGutter_sm: padding.lg,
-}
-
-const sizing = {
-  footerHeight: '150px',
+  globalGutter: sizes.rel[10],
+  globalGutter_sm: sizes.lg,
 }
 
 const breakpoints = {
   sm: '376px',
   md: '768px',
+}
+
+const layers = {
+  header: 1,
+  footer: 1,
+  modal: 2,
+}
+
+const boxShadows = {
+  [10]: '0px 0px 10px rgba(0, 0, 0, .5)',
+  [20]: '0px 0px 20px rgba(0, 0, 0, .5)',
 }
 
 export const themeConfig = {
@@ -32,6 +43,7 @@ export const themeConfig = {
       light2: '#CFCFCF',
       dark: '#5A5A55',
       dark2: '#6E6E66',
+      darkest: '#424242',
     },
     background: {
       light: '#afafaa',
@@ -43,8 +55,9 @@ export const themeConfig = {
       blue: '#333a4f',
     },
   },
-  padding,
+  sizes,
   spacing,
-  sizing,
   breakpoints,
+  layers,
+  boxShadows,
 }

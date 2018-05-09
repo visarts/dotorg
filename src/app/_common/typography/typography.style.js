@@ -7,9 +7,11 @@ export const StyledTypography = styled(({element, children, type, ...other}) => 
   transition: .2s all;
   ${props => props.type === 'headline' && css`
     font-size: calc(1rem + 1vw);
+    margin: 0px;
   `}
   ${props => props.type === 'headlineLarge' && css`
     font-size: calc(1rem + 1vw + 10px);
+    margin: 0px;
   `}
   ${props => props.type ==='subheadline' && css`
     font-size: calc(.8rem + 1vw);

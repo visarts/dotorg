@@ -2,11 +2,11 @@ import artworkService from 'Services/artwork.service'
 import literatureService from 'Services/literature.service'
 import _ from 'lodash'
 
-const getNavigationData = routing => {
+const getnavigationState = routing => {
   const collection = artworkService.getCollection(routing.collection) ||
     literatureService.getCollection(routing.collection) || ''
   const collectionName = collection && collection.name
-  const navigationData = {
+  const navigationState = {
     root: {
       path: '/',
       fullPath: '/',
@@ -29,11 +29,11 @@ const getNavigationData = routing => {
       name: routing.item.split('-')[0] || ''
     }
   }
-  return navigationData
+  return navigationState
 }
 
 const navigationService = {
-  getNavigationData
+  getnavigationState
 }
 
 export default navigationService
