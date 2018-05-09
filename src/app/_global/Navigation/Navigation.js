@@ -1,11 +1,10 @@
 // import { Link } from 'react-router-dom'
 import Typography from 'common/typography'
-import './globalNav.style.scss'
+import { StyledNav } from './Navigation.style'
 
 const GlobalNavComponent = props => {
-  const { navigation, globalState } = props
-  const { routing } = globalState
-  const visibilityClass = routing.section ? 'visible' : 'hidden'
+  const { routing, navigation } = props.globalState
+
   const getDescText = () => {
     let descText = ''
     if (routing.section) {
@@ -29,10 +28,11 @@ const GlobalNavComponent = props => {
     }
     return descText
   }
+
   return (
-      <div className={`navigation container ${props.globalState.routing.section} ${visibilityClass}`}>
-        <Typography type="title" className="nomargin">{getDescText()}</Typography>
-      </div>
+    <StyledNav section={routing.section}>
+      <Typography type="title">{getDescText()}</Typography>
+    </StyledNav>
   )
 }
 

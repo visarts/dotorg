@@ -12,6 +12,7 @@ const sizes = {
   containers: {
     footerHeight: '150px',
     headerHeight: '65px',
+    navHeight: '55px',
   }
 }
 

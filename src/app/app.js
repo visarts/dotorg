@@ -4,11 +4,9 @@ import { Route } from 'react-router-dom'
 import dataService from 'Services/data.service'
 import navigationService from 'Services/navigation.service'
 
-import GlobalNav from 'global/navigation'
-import { Header, Footer } from 'global'
+import { Header, Footer, Navigation } from 'global'
 
 import Home from './home'
-
 import Artwork from './artwork'
 import Literature from './literature'
 
@@ -80,7 +78,7 @@ export default class App extends React.Component {
       <StyledApp id="portitude">
         <Header
           globalState={this.state} />
-        <GlobalNav
+        <Navigation
           globalState={this.state} />
         <div className="view">
           <Route exact path="/" render={routeProps => (
