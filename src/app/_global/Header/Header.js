@@ -1,11 +1,38 @@
-import { Component } from 'react'
-import HeaderComponent from './Header.component'
+import Typography from 'common/typography'
+import Favorite from 'material-ui-icons/Favorite'
+import {
+  StyledHeader,
+  StyledHeaderNavigation,
+  StyledHeaderNavigationLink,
+  StyledHeaderNavigationIcon,
+} from './Header.style'
 
-export default class GlobalHeader extends Component {
-  render () {
+const Header = props => {
+  const { routing, navigation } = props.globalState
 
-    return (
-      <HeaderComponent navigationState={this.props.globalState.navigationState} {...this.props} />
-    )
-  }
+  return (
+    <StyledHeader>
+      <StyledHeaderNavigation>
+        <StyledHeaderNavigationLink to={navigation.root.fullPath}>
+          <StyledHeaderNavigationIcon>
+            <Favorite />
+          </StyledHeaderNavigationIcon>
+        </StyledHeaderNavigationLink>
+        <StyledHeaderNavigationLink to={navigation.root.fullPath}>
+          <Typography type={routing.section ? 'headline' : 'headlineLarge'}>
+            {navigation.root.name}
+          </Typography>
+        </StyledHeaderNavigationLink>
+        {navigation.section.name &&
+          <StyledHeaderNavigationLink to={navigation.section.fullPath}>
+            <Typography type="headline">
+              {navigation.section.name}
+            </Typography>
+          </StyledHeaderNavigationLink>
+        }
+      </StyledHeaderNavigation>
+    </StyledHeader>
+  )
 }
+
+export default Header
