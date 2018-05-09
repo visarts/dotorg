@@ -2,7 +2,7 @@
 import Typography from 'common/typography'
 import { StyledNav } from './Navigation.style'
 
-const GlobalNavComponent = props => {
+const Navigation = props => {
   const { routing, navigation } = props.globalState
 
   const getDescText = () => {
@@ -36,4 +36,4 @@ const GlobalNavComponent = props => {
   )
 }
 
-export default GlobalNavComponent
+export default Navigation
