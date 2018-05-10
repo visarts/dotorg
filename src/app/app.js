@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Route } from 'react-router-dom'
 
 import dataService from 'Services/data.service'
@@ -20,7 +21,7 @@ export default class App extends React.Component {
     const routing = dataService.getRoutingState(this.currentLocation)
     this.state = {
       routing,
-      navigation: navigationService.getnavigation(routing)
+      navigation: { ...navigationService.getnavigation(routing), current: navigationService.getCurrent(routing) }
     }
   }
 
@@ -43,7 +44,7 @@ export default class App extends React.Component {
       const routing = dataService.getRoutingState(updatedLocation)
       this.setState({
         routing,
-        navigation: navigationService.getnavigation(routing)
+        navigation: { ...navigationService.getnavigation(routing), current: navigationService.getCurrent(routing) }
       }, () => {
         this.currentLocation = updatedLocation
         this.setGlobalClassName()

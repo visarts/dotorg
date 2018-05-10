@@ -5,6 +5,7 @@ export const StyledNav = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  opacity: 1;
   transition: .3s all;
   ${globalGutters()};
   ${paddingHorizontal('sm')};
@@ -22,6 +23,7 @@ export const StyledNav = styled.div`
       height: 1px;
       background-color: transparent;
       padding: 0;
+      opacity: 0;
     `}
   `}
 `
