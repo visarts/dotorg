@@ -19,7 +19,7 @@ const ItemComponent = (props) => {
         open={props.modalIsOpen}
         onClose={props.hideModal}
         size="md">
-        <Modal.Header title={item.name} subtitle={`${author.name.first} ${author.name.last}`} />
+        <Modal.Header title={item.name} subtitle={author.name.long} />
         <Modal.Body fullHeight={totalDisplayPages < 2}>
           <div className={`modalContent ${currentDisplayPage === 1 && 'firstPage'}`} dangerouslySetInnerHTML={{__html: props.pages[props.currentPage]}} />
         </Modal.Body>

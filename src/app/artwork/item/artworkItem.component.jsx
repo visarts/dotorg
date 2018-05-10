@@ -14,7 +14,7 @@ const ItemComponent = (props) => {
         open={true}
         onClose={props.hideModal}
         size="lg">
-        <Modal.Header title={item.name} subtitle={`${creator.name.first} ${creator.name.last}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
+        <Modal.Header title={item.name} subtitle={`${creator.name.long}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
         <Modal.Body fullHeight={true}>
           <div className="image--container">
             <img

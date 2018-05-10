@@ -19,7 +19,7 @@ const getnavigation = routing => {
     collection: {
       path: routing.collection ? `${routing.collection}/` : '',
       fullPath: routing.colection ? `/${routing.section}/${routing.collection}/` : '',
-      name: (collection && collection.name) || '',
+      name: (collection && collection.name.long) || '',
       type: collection.type
     },
     item: {

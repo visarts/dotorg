@@ -15,7 +15,7 @@ const CollectionComponent = props => {
       {_.map(groupedCollection, (creator, index) => {
         return (
           <div className="section" key={index}>
-            <Typography type="subtitle">{creator.name.last}</Typography>
+            <Typography type="subtitle">{creator.name.long}</Typography>
             <List>
               {_.map(creator.items, (item, itemIndex) => (
                 <ListItem
@@ -23,10 +23,10 @@ const CollectionComponent = props => {
                   key={itemIndex}
                   image={{
                     src: artworkService.getImagePathSm(creator.id, item.id),
-                    alt: item.name
+                    alt: item.name.short,
                   }}
-                  headline={item.name}
-                  subHeadline={`${creator.name.first} ${creator.name.last}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
+                  headline={item.name.long}
+                  subHeadline={`${creator.name.long}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
               ))}
             </List>
           </div>

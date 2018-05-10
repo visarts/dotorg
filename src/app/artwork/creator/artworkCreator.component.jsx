@@ -11,7 +11,7 @@ const CreatorComponent = props => {
 
   return (
     <div className="artwork_creator">
-      <Typography type="title">{creator.name.first} {creator.name.last}</Typography>
+      <Typography type="title">{creator.name.long}</Typography>
       <div className="section">
         <Typography type="subtitle">Gallery</Typography>
         <List>
@@ -24,7 +24,7 @@ const CreatorComponent = props => {
                 alt: item.title
               }}
               headline={item.name}
-              subHeadline={`${creator.name.first} ${creator.name.last}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
+              subHeadline={`${creator.name.long}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
           ))}
         </List>
       </div>

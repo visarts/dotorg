@@ -78,6 +78,7 @@ const getCollectionGroupedByCreators = collectionId => {
     const creatorId = _.head(collectionItem.id.split('-'))
     if (!_.includes(creatorNames, creatorId)) {
       const creator = literature.collections[creatorId]
+      console.log(creator)
       creatorNames.push(creatorId)
       creators.push({
         id: creatorId,

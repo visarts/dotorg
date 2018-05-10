@@ -21,7 +21,10 @@ export default class App extends React.Component {
     const routing = dataService.getRoutingState(this.currentLocation)
     this.state = {
       routing,
-      navigation: { ...navigationService.getnavigation(routing), current: navigationService.getCurrent(routing) }
+      navigation: {
+        ...navigationService.getnavigation(routing),
+        current: navigationService.getCurrent(routing)
+      }
     }
   }
 
@@ -74,7 +77,7 @@ export default class App extends React.Component {
       refactor history display into carousel
 
     */
-
+    console.log(this.state)
     return (
       <StyledApp id="portitude">
         <Header

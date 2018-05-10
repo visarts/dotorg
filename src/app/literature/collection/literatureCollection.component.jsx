@@ -14,14 +14,14 @@ const CollectionComponent = (props) => {
       {_.map(groupedCollection, (creator, index) => {
         return (
           <div className="section" key={index}>
-            <Typography type="subtitle">{creator.name.last}</Typography>
+            <Typography type="subtitle">{creator.name.short}</Typography>
             <List>
               {_.map(creator.items, (item, itemIndex) => (
                 <ListItem
                   to={literatureService.getItemPath(collectionId, item.id)}
                   key={itemIndex}
                   headline={item.name}
-                  subHeadline={`${creator.name.first} ${creator.name.last}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
+                  subHeadline={`${creator.name.long}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
               ))}
             </List>
           </div>
