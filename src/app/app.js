@@ -77,7 +77,6 @@ export default class App extends React.Component {
       refactor history display into carousel
 
     */
-    console.log(this.state)
     return (
       <StyledApp id="portitude">
         <Header

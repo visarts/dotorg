@@ -17,13 +17,16 @@ const CreatorComponent = (props) => {
           <div className="section" key={collection.id}>
             <Typography type="subtitle">{collection.name.long}</Typography>
             <List>
-              {_.map(collection.items, (item, itemIndex) => (
-                <ListItem
-                  to={literatureService.getItemPath(creatorId, item.id)}
-                  key={item.id}
-                  headline={item.name.long}
-                  subHeadline={`${creator.name.long}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`}/>
-              ))}
+              {_.map(collection.items, (item, itemIndex) => {
+                const date = item.id.substring(item.id.lastIndexOf('-') + 1)
+                return (
+                  <ListItem
+                    to={literatureService.getItemPath(creatorId, item.id)}
+                    key={item.id}
+                    headline={item.name}
+                    subHeadline={`${creator.name.long}${date && `, ${date}`}`}/>
+                )
+              })}
             </List>
           </div>
         )

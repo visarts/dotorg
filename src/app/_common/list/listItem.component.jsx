@@ -26,7 +26,7 @@ const ListItemComponent = props => {
     )
   } else {
     return (
-      <li className={className} key={props.key || 0}>
+      <li key={props.key || 0}>
         {props.headline && <Typography type="listPrimary">{props.headline}</Typography>}
         {props.subHeadline && <Typography type="listSecondary">{props.subHeadline}</Typography>}
       </li>
