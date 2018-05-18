@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom'
 import Typography from 'common/typography'
-'./card.style.scss'
 
-const CardComponent = props => {
+const Card = props => {
   return (
     <div className="cardComponent">
       <Link to={props.to || ''} className="cardComponent-link">
@@ -22,4 +21,4 @@ const CardComponent = props => {
   )
 }
 
-export default CardComponent
+export default Card
