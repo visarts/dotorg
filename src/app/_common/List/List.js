@@ -1,6 +1,6 @@
 import { Component } from 'react'
 import ListComponent from './list.component'
-import ListItemComponent from './listItem.component'
+import ListItem from './ListItem'
 
 class List extends Component {
   render () {
@@ -12,12 +12,5 @@ class List extends Component {
   }
 }
 
-class ListItem extends Component {
-  render () {
-    return (
-      <ListItemComponent {...this.props} />
-    )
-  }
-}
-
-export { List, ListItem }
+export default List
+export { ListItem }

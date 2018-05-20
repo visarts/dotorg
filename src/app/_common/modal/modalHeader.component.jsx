@@ -1,4 +1,4 @@
-import Typography from 'common/typography'
+import { Typography } from 'common'
 
 const ModalHeader = props => {
 

@@ -1,4 +1,4 @@
-import Typography from 'common/typography'
+import { Typography } from 'common'
 import Favorite from 'material-ui-icons/Favorite'
 import {
   StyledHeader,

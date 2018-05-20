@@ -1,6 +1,9 @@
 import _ from 'lodash'
-import { List, ListItem } from 'common/list'
-import Typography from 'common/typography'
+import {
+  List,
+  ListItem,
+  Typography,
+} from 'common'
 import artworkService from 'Services/artwork.service'
 import './artworkCreator.style.scss'
 

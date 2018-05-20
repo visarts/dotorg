@@ -2,11 +2,11 @@ import _ from 'lodash'
 import { Link } from 'react-router-dom'
 import { Typography, Image } from 'common'
 
-const ListItemComponent = props => {
+const ListItem = props => {
   const truncateLength = window.innerWidth > 768 ? 220 : 100
   if (props.to) {
     return (
-      <li className={`list-item ${props.className || ''}`} key={props.key || 0}>
+      <li className={`list-item ${props.className || ''}`}>
         <Link to={props.to} className={`${props.image ? 'list-item-link list-item-link--thumbnail' : 'list-item-link'}`}>
           {props.image &&
             <Image
@@ -33,4 +33,4 @@ const ListItemComponent = props => {
   }
 }
 
-export default ListItemComponent
+export default ListItem

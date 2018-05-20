@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import Typography from 'common/typography'
+import { Typography } from 'common'
 import './home.style.scss'
 
 const HomeComponent = (/* props */) => {
