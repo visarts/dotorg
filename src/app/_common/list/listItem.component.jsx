@@ -1,7 +1,6 @@
 import _ from 'lodash'
 import { Link } from 'react-router-dom'
-import Typography from 'common/typography'
-import Image from 'common/image'
+import { Typography, Image } from 'common'
 
 const ListItemComponent = props => {
   const truncateLength = window.innerWidth > 768 ? 220 : 100
@@ -17,9 +16,9 @@ const ListItemComponent = props => {
               alt={props.image.alt || props.image.src} />
           }
           <div className="list-item-desc">
-            {props.headline && <Typography type="listPrimary" className={props.image && 'list-item-text'}>{props.headline}</Typography>}
-            {props.subHeadline && <Typography type="listSecondary" className={props.image && 'list-item-text'}>{props.subHeadline}</Typography>}
-            {props.primaryText && <Typography type="listSecondary" className={props.image && 'list-item-text'}>{_.truncate(props.primaryText, { length: truncateLength, separator: ' ' })}</Typography>}
+            {props.headline && <Typography type="listPrimary">{props.headline}</Typography>}
+            {props.subHeadline && <Typography type="listSecondary">{props.subHeadline}</Typography>}
+            {props.primaryText && <Typography type="listSecondary">{_.truncate(props.primaryText, { length: truncateLength, separator: ' ' })}</Typography>}
           </div>
         </Link>
       </li>

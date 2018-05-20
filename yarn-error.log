@@ -111,6 +111,12 @@ Lockfile:
       source-map "^0.5.0"
       trim-right "^1.0.1"
   
+  "@babel/helper-annotate-as-pure@^7.0.0-beta.37":
+    version "7.0.0-beta.46"
+    resolved "https://registry.yarnpkg.com/@babel/helper-annotate-as-pure/-/helper-annotate-as-pure-7.0.0-beta.46.tgz#4cd76d5c93409ea01d31be66395a3b98a372792e"
+    dependencies:
+      "@babel/types" "7.0.0-beta.46"
+  
   "@babel/helper-function-name@7.0.0-beta.40":
     version "7.0.0-beta.40"
     resolved "https://registry.yarnpkg.com/@babel/helper-function-name/-/helper-function-name-7.0.0-beta.40.tgz#9d033341ab16517f40d43a73f2d81fc431ccd7b6"
@@ -159,6 +165,14 @@ Lockfile:
   "@babel/types@7.0.0-beta.40", "@babel/types@^7.0.0-beta.40":
     version "7.0.0-beta.40"
     resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.0.0-beta.40.tgz#25c3d7aae14126abe05fcb098c65a66b6d6b8c14"
+    dependencies:
+      esutils "^2.0.2"
+      lodash "^4.2.0"
+      to-fast-properties "^2.0.0"
+  
+  "@babel/types@7.0.0-beta.46":
+    version "7.0.0-beta.46"
+    resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.0.0-beta.46.tgz#eb84399a699af9fcb244440cce78e1acbeb40e0c"
     dependencies:
       esutils "^2.0.2"
       lodash "^4.2.0"
@@ -705,6 +719,14 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/babel-plugin-check-es2015-constants/-/babel-plugin-check-es2015-constants-6.22.0.tgz#35157b101426fd2ffd3da3f75c7d1e91835bbf8a"
     dependencies:
       babel-runtime "^6.22.0"
+  
+  babel-plugin-styled-components@^1.5.1:
+    version "1.5.1"
+    resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.5.1.tgz#31dbeb696d1354d1585e60d66c7905f5e474afcd"
+    dependencies:
+      "@babel/helper-annotate-as-pure" "^7.0.0-beta.37"
+      babel-types "^6.26.0"
+      stylis "^3.0.0"
   
   babel-plugin-syntax-async-functions@^6.8.0:
     version "6.13.0"
@@ -6444,7 +6466,7 @@ Lockfile:
     version "0.0.10"
     resolved "https://registry.yarnpkg.com/stylis-rule-sheet/-/stylis-rule-sheet-0.0.10.tgz#44e64a2b076643f4b52e5ff71efc04d8c3c4a430"
   
-  stylis@^3.5.0:
+  stylis@^3.0.0, stylis@^3.5.0:
     version "3.5.0"
     resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.5.0.tgz#016fa239663d77f868fef5b67cf201c4b7c701e1"
   
@@ -7090,7 +7112,7 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 127
+  Exit code: 2
   Command: sh
   Arguments: -c webpack && webpack-dev-server
   Directory: /Users/a600749/development/dotorg

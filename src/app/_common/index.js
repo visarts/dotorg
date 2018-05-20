@@ -1,5 +1,5 @@
-export { default as Card } from './Card'
-export { default as Image } from './image'
+export { default as Card } from './Card/Card'
+export { default as Image } from './Image/Image'
 export { default as List } from './list'
 export { default as Modal } from './modal'
 export { default as Typography } from './typography'

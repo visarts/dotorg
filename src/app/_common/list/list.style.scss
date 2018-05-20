@@ -35,8 +35,4 @@
     flex-direction: column;
     @include padding('md');
   }
-
-  &-text {
-    display: inline-block;
-  }
 }
