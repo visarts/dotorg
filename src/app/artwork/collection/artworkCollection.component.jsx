@@ -14,7 +14,7 @@ const CollectionComponent = props => {
   const groupedCollection = artworkService.getCollectionGroupedByCreators(collectionId)
 
   return (
-    <div className="artwork_collection">
+    <div>
       {_.map(groupedCollection, (creator, index) => {
         return (
           <div className="section" key={index}>
@@ -28,7 +28,7 @@ const CollectionComponent = props => {
                     src: artworkService.getImagePathSm(creator.id, item.id),
                     alt: item.name.short,
                   }}
-                  headline={item.name.long}
+                  headline={item.name}
                   subHeadline={`${creator.name.long}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
               ))}
             </List>
