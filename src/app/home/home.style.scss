@@ -19,12 +19,22 @@
     // @include paddingHorizontal('lg');
     // @include paddingVertical('lg');
 
+    &:hover {
+      background: #999;
+    }
+
     &--artwork {
-      // background: $artwork_theme;
+      border-left: 12px solid $artwork_theme;
+      &:hover {
+        border-left-color: lighten($artwork_theme, 10%);
+      }
     }
 
     &--literature {
-      // background: $literature_theme;
+      border-left: 12px solid $literature_theme;
+      &:hover {
+        border-left-color: lighten($literature_theme, 10%);
+      }
     }
   }
 }
