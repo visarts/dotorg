@@ -6,13 +6,16 @@
 }
 
 .subSection {
-  width: 50%;
+  max-width: 400px;
   margin-right: 15px;
+  margin-bottom: 15px;
 
   &--link {
     display: inline-flex;
     width: 100%;
     color: $text_link_light;
+    background: #888;
+    padding: 10px;
     // @include paddingHorizontal('lg');
     // @include paddingVertical('lg');
 

@@ -5,8 +5,11 @@ import './home.style.scss'
 const HomeComponent = (/* props */) => {
   return (
     <div className="home">
-      <Typography type="headline">Welcome home</Typography>
+      <Typography type="headline" gutterBottom>Welcome home</Typography>
       <div className="section">
+        <div className="subSection">
+          Portitude is the home of classic art and literature from around the world.
+        </div>
         <div className="subSection">
           <Link to="artwork" className="subSection--link subSection--link--artwork">
             <Typography type="listPrimary">Artwork</Typography>

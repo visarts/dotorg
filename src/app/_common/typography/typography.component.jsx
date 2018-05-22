@@ -19,7 +19,7 @@ const TypographyComponent = props => {
 
   return (
     // React.createElement(elementType, {className, style: props.style}, props.children || '')
-    <StyledTypography type={props.type} element={types[props.type] || 'h1'}>
+    <StyledTypography type={props.type} element={types[props.type] || 'h1'} gutterBottom={props.gutterBottom}>
       {props.children}
     </StyledTypography>
   )

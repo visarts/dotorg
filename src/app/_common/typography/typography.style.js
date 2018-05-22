@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-export const StyledTypography = styled(({element, children, type, ...other}) => {
+export const StyledTypography = styled(({element, children, type, gutterBottom, ...other}) => {
   return React.createElement(element, {...other}, children)
 })`
   opacity: 1;
@@ -26,5 +26,8 @@ export const StyledTypography = styled(({element, children, type, ...other}) => 
   ${props => props.type === 'paragraph' && css`
     margin: 0;
     margin-bottom: 1rem;
+  `}
+  ${props => props.gutterBottom && css`
+    margin-bottom: 15px;
   `}
 `
