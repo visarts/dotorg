@@ -1,5 +1,5 @@
 import { Typography } from 'common'
-import Favorite from 'material-ui-icons/Favorite'
+import Favorite from '@material-ui/icons/Favorite'
 import {
   StyledHeader,
   StyledHeaderNavigation,

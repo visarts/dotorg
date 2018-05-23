@@ -10,7 +10,7 @@ const sizes = {
     [20]: '20vw',
   },
   containers: {
-    footerHeight: '150px',
+    footerHeight: '100px',
     headerHeight: '65px',
     navHeight: '55px',
   }

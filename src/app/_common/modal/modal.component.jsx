@@ -1,4 +1,4 @@
-import Modal from 'material-ui/Modal'
+import Modal from '@material-ui/core/Modal'
 import './portitudeModal.style.scss'
 
 /*
