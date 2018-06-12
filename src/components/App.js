@@ -17,12 +17,13 @@ export default class App extends React.Component {
 
   constructor (props) {
     super(props)
-    this.currentLocation = location.hash.slice(1)
+    // this insane logic is needed (for now) to split out any query params on the url
+    this.currentLocation = location.hash.slice(1, location.hash.indexOf('?') > -1 ? location.hash.indexOf('?') : location.hash.length)
     const routing = dataService.getRoutingState(this.currentLocation)
     this.state = {
       routing,
       navigation: {
-        ...navigationService.getnavigation(routing),
+        ...navigationService.getNavigation(routing),
         current: navigationService.getCurrent(routing)
       }
     }
@@ -47,7 +48,7 @@ export default class App extends React.Component {
       const routing = dataService.getRoutingState(updatedLocation)
       this.setState({
         routing,
-        navigation: { ...navigationService.getnavigation(routing), current: navigationService.getCurrent(routing) }
+        navigation: { ...navigationService.getNavigation(routing), current: navigationService.getCurrent(routing) }
       }, () => {
         this.currentLocation = updatedLocation
         this.setGlobalClassName()

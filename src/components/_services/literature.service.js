@@ -13,6 +13,7 @@ const getItem = (collectionId, itemId) => {
 }
 
 const getItemWith = (collectionId, itemId) => {
+  console.log(collectionId, itemId)
   const item = getItem(collectionId, itemId)
   const creatorId = _.head(item.id.split('-'))
   const creator = getCollection(creatorId)

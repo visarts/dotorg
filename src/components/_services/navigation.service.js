@@ -2,7 +2,7 @@ import artworkService from 'Services/artwork.service'
 import literatureService from 'Services/literature.service'
 import _ from 'lodash'
 
-const getnavigation = routing => {
+const getNavigation = routing => {
   const collection = artworkService.getCollection(routing.collection) ||
     literatureService.getCollection(routing.collection) || ''
   const navigation = {
@@ -43,7 +43,7 @@ const getCurrent = routing => {
 }
 
 const navigationService = {
-  getnavigation,
+  getNavigation,
   getCurrent,
 }
 

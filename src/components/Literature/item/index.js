@@ -9,21 +9,16 @@ export default class LiteratureItem extends React.Component {
     super(props)
     this.state = {
       content: false,
-      currentPage: 0,
+      currentPage:  0,
       modalIsOpen: true
     }
     this.item = literatureService.getItemWith(this.props.globalState.routing.collection, this.props.globalState.routing.item)
     this.pages = []
-    this.setPages = this.setPages.bind(this)
-    this.setFirstPage = this.setFirstPage.bind(this)
-    this.setLastPage = this.setLastPage.bind(this)
-    this.setNextPage = this.setNextPage.bind(this)
-    this.setPreviousPage = this.setPreviousPage.bind(this)
-    this.setContent.call(this)
+    this.setContent()
   }
 
   // take the HTML and split it into an array by the items precaculated page sizes
-  setPages (content) {
+  setPages = content => {
     let remainingContent = content
     _.map(this.item.pageSizes, pageSize => {
       this.pages.push(remainingContent.substring(0, pageSize))
@@ -31,32 +26,40 @@ export default class LiteratureItem extends React.Component {
     })
   }
 
-  setContent () {
+  setContent = () => {
     dataService.getHTMLContent(this.item.creator.id, this.item.id)
       .then(content => {
+        this.originalHash = document.location.hash
+        this.setPageQuery(this.state.currentPage)
         this.setPages(content)
         this.setState({content: this.pages[this.state.currentPage]})
       })
   }
 
-  setFirstPage () {
+  setPageQuery = pageNum => {
+    const pageQueryNum = parseInt(pageNum + 1)
+    const currentHash = this.originalHash.indexOf('?page=') > -1 ? this.originalHash.slice(0, this.originalHash.indexOf('?')) : this.originalHash
+    document.location.hash = `${currentHash}?page=${pageQueryNum}`
+  }
+
+  setFirstPage = () => {
     const currentPage = 0
-    this.setState({content: this.pages[currentPage], currentPage})
+    this.setState({content: this.pages[currentPage], currentPage}, () => this.setPageQuery(currentPage))
   }
 
-  setLastPage () {
+  setLastPage = () => {
     const currentPage = this.pages.length - 1
-    this.setState({content: this.pages[currentPage], currentPage})
+    this.setState({content: this.pages[currentPage], currentPage}, () => this.setPageQuery(currentPage))
   }
 
-  setNextPage (e) {
+  setNextPage = e => {
     const currentPage = this.state.currentPage + 1
-    this.setState({content: this.pages[currentPage], currentPage})
+    this.setState({content: this.pages[currentPage], currentPage}, () => this.setPageQuery(currentPage))
   }
 
-  setPreviousPage () {
+  setPreviousPage = () => {
     const currentPage = this.state.currentPage - 1
-    this.setState({content: this.pages[currentPage], currentPage})
+    this.setState({content: this.pages[currentPage], currentPage}, () => this.setPageQuery(currentPage))
   }
 
   hideModal = () => {
