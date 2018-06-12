@@ -7,7 +7,7 @@ import { themeConfig } from './config/theme'
 
 import dataService from 'Services/data.service'
 import storeService from 'Services/store.service'
-import App from './app/app'
+import App from './components/App'
 
 dataService.getAllData()
   .then(response => {
