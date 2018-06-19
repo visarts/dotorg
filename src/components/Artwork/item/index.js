@@ -4,7 +4,7 @@ import './artworkItem.style.scss'
 
 const ArtworkItem = props => {
   const item = artworkService.getItemWith(props.globalState.routing.collection, props.globalState.routing.item)
-  const imagePath = artworkService.getImagePathLg(item.creator.id, this.item.id)
+  const imagePath = artworkService.getImagePathLg(item.creator.id, item.id)
   const creator = item.creator
 
   const onClose = () => {
