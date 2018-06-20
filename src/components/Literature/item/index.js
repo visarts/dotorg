@@ -7,14 +7,19 @@ import LiteratureItemComponent from './LiteratureItemComponent'
 export default class LiteratureItem extends React.Component {
   constructor (props) {
     super(props)
+    this.originalHash = document.location.hash
     this.state = {
       content: false,
-      currentPage:  0,
+      currentPage:  this.getInitialPageNumber(),
       modalIsOpen: true
     }
     this.item = literatureService.getItemWith(this.props.globalState.routing.collection, this.props.globalState.routing.item)
     this.pages = []
     this.setContent()
+  }
+
+  getInitialPageNumber = () => {
+    return this.originalHash.indexOf('?page=') > -1 ? parseInt(this.originalHash.slice(this.originalHash.indexOf('=') + 1)) : 1
   }
 
   // take the HTML and split it into an array by the items precaculated page sizes
@@ -29,17 +34,15 @@ export default class LiteratureItem extends React.Component {
   setContent = () => {
     dataService.getHTMLContent(this.item.creator.id, this.item.id)
       .then(content => {
-        this.originalHash = document.location.hash
-        this.setPageQuery(this.state.currentPage)
+        this.setPageQuery()
         this.setPages(content)
-        this.setState({content: this.pages[this.state.currentPage]})
+        this.setState({content: this.pages[this.state.currentPage - 1]})
       })
   }
 
-  setPageQuery = pageNum => {
-    const pageQueryNum = parseInt(pageNum + 1)
+  setPageQuery = () => {
     const currentHash = this.originalHash.indexOf('?page=') > -1 ? this.originalHash.slice(0, this.originalHash.indexOf('?')) : this.originalHash
-    document.location.hash = `${currentHash}?page=${pageQueryNum}`
+    document.location.hash = `${currentHash}?page=${this.state.currentPage}`
   }
 
   setFirstPage = () => {

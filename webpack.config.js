@@ -9,7 +9,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 // const AutoPrefixer = require('autoprefixer')
 
 module.exports = {
-  devtool: 'eval',
+  devtool: 'cheap-module-source-map',
   devServer: {
      contentBase: path.join(ROOT_PATH, 'dist')
      // hot: true
