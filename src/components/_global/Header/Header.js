@@ -9,9 +9,8 @@ import {
 
 const Header = props => {
   const { routing, navigation } = props.globalState
-
   return (
-    <StyledHeader>
+    <StyledHeader isRoot={navigation.current === 'root'}>
       <StyledHeaderNavigation>
         <StyledHeaderNavigationLink to={navigation.root.fullPath}>
           <StyledHeaderNavigationIcon>

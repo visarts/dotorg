@@ -21,7 +21,7 @@ export const StyledHeader = styled.div`
   ${props => css`
     z-index: ${props.theme.layers.header};
     background: ${props.theme.colors.background.darker};
-    height: ${props.theme.sizes.containers.headerHeight};
+    height: ${props.isRoot ? props.theme.sizes.containers.headerHeight : props.theme.sizes.containers.headerHeight_sm};
     border-bottom: ${props.theme.colors.foreground.darkest};
     box-shadow: ${props.theme.boxShadows[20]}
   `}

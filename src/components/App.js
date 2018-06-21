@@ -79,7 +79,7 @@ export default class App extends React.Component {
 
     */
     return (
-      <StyledApp id="portitude">
+      <StyledApp isRoot={this.state.navigation.current === 'root'} id="portitude">
         <Header
           globalState={this.state} />
         <Navigation
