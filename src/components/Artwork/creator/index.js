@@ -13,7 +13,6 @@ const ArtworkCreator = props => {
 
   return (
     <div className="artwork_creator">
-      <Typography type="title">{creator.name.long}</Typography>
       <div className="section">
         <Typography type="subtitle">Gallery</Typography>
         <List>

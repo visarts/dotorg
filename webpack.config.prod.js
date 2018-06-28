@@ -124,13 +124,13 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.jsx', '.json', '.scss', '.html'],
     alias:{
-      Services: path.resolve(ROOT_PATH, 'src/app/_services'),
+      Services: path.resolve(ROOT_PATH, 'src/components/_services'),
       Literature: path.resolve(ROOT_PATH, 'content/literature'),
       Artwork: path.resolve(ROOT_PATH, 'content/artwork'),
-      SharedComponents: path.resolve(ROOT_PATH, 'src/app/sharedComponents'),
+      SharedComponents: path.resolve(ROOT_PATH, 'src/components/sharedComponents'),
       Images: path.resolve(ROOT_PATH, 'src/images'),
-      global: path.resolve(ROOT_PATH, 'src/app/_global'),
-      common: path.resolve(ROOT_PATH, 'src/app/_common'),
+      global: path.resolve(ROOT_PATH, 'src/components/_global'),
+      common: path.resolve(ROOT_PATH, 'src/components/_common'),
       config: path.resolve(ROOT_PATH, 'src/config')
     },
     modules: [
