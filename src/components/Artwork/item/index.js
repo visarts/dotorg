@@ -12,23 +12,21 @@ const ArtworkItem = props => {
   }
 
   return (
-    <div className="artwork--item">
-      <Modal
-        open={true}
-        onClose={onClose}
-        size="lg">
-        <Modal.Header title={item.name} subtitle={`${creator.name.long}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
-        <Modal.Body fullHeight={true}>
-          <div className="image--container">
-            <img
-              src={imagePath}
-              className="image--large"
-              alt={item.title} />
-          </div>
-        </Modal.Body>
-        {/* <PortitudeModal.Footer></PortitudeModal.Footer> */}
-      </Modal>
-    </div>
+    <Modal
+      open={true}
+      onClose={onClose}
+      size="lg">
+      <Modal.Header title={item.name} subtitle={`${creator.name.long}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
+      <Modal.Body fullHeight={true}>
+        <div className="image--container">
+          <img
+            src={imagePath}
+            className="image--large"
+            alt={item.title} />
+        </div>
+      </Modal.Body>
+      {/* <PortitudeModal.Footer></PortitudeModal.Footer> */}
+    </Modal>
   )
 }
 
