@@ -23,6 +23,7 @@
     "@material-ui/core": "1.0.0",
     "@material-ui/icons": "1.0.0",
     "axios": "^0.16.1",
+    "express": "^4.16.3",
     "fs-extra": "^4.0.2",
     "json-concat": "0.0.1",
     "lodash": "^4.17.4",
