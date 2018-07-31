@@ -1,6 +1,6 @@
 import artworkService from 'Services/artwork.service'
 import Modal from 'common/modal'
-import './artworkItem.style.scss'
+import { StyledItemBody, StyledItemImage } from './artworkItem.style'
 
 const ArtworkItem = props => {
   const item = artworkService.getItemWith(props.globalState.routing.collection, props.globalState.routing.item)
@@ -12,21 +12,20 @@ const ArtworkItem = props => {
   }
 
   return (
-    <Modal
-      open={true}
-      onClose={onClose}
-      size="lg">
-      <Modal.Header title={item.name} subtitle={`${creator.name.long}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
-      <Modal.Body fullHeight={true}>
-        <div className="image--container">
-          <img
+    <StyledItemBody>
+      <Modal
+        open={true}
+        onClose={onClose}
+        size="lg">
+        <Modal.Header title={item.name} subtitle={`${creator.name.long}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
+        <Modal.Body fullHeight={true}>
+          <StyledItemImage
             src={imagePath}
-            className="image--large"
             alt={item.title} />
-        </div>
-      </Modal.Body>
-      {/* <PortitudeModal.Footer></PortitudeModal.Footer> */}
-    </Modal>
+        </Modal.Body>
+        {/* <PortitudeModal.Footer></PortitudeModal.Footer> */}
+      </Modal>
+    </StyledItemBody>
   )
 }
 
