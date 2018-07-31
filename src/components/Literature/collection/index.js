@@ -13,10 +13,9 @@ const LiteratureCollection = (props) => {
   const groupedCollection = literatureService.getCollectionGroupedByCreators(collectionId)
 
   return (
-    <div className="literature_collection">
-      {_.map(groupedCollection, (creator, index) => {
-        return (
-          <div className="section" key={index}>
+    <div>
+      {_.map(groupedCollection, creator => (
+          <div key={creator.name.short}>
             <Typography type="subtitle">{creator.name.short}</Typography>
             <List>
               {_.map(creator.items, (item, itemIndex) => (
@@ -28,8 +27,7 @@ const LiteratureCollection = (props) => {
               ))}
             </List>
           </div>
-        )
-      })}
+        ))}
     </div>
   )
 }

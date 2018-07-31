@@ -12,30 +12,24 @@ const ArtworkCollection = props => {
   // const collection = artworkService.getCollection(collectionId)
   const groupedCollection = artworkService.getCollectionGroupedByCreators(collectionId)
 
-  return (
-    <div>
-      {_.map(groupedCollection, (creator, index) => {
-        return (
-          <div className="section" key={index}>
-            <Typography type="subtitle">{creator.name.long}</Typography>
-            <List>
-              {_.map(creator.items, (item, itemIndex) => (
-                <ListItem
-                  to={artworkService.getItemPath(collectionId, item.id)}
-                  key={itemIndex}
-                  image={{
-                    src: artworkService.getImagePathSm(creator.id, item.id),
-                    alt: item.name.short,
-                  }}
-                  headline={item.name}
-                  subHeadline={`${creator.name.long}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
-              ))}
-            </List>
-          </div>
-        )
-      })}
-    </div>
-  )
+  return _.map(groupedCollection, creator => (
+      <div key={creator.name.short}>
+        <Typography type="subtitle">{creator.name.long}</Typography>
+        <List>
+          {_.map(creator.items, item => (
+            <ListItem
+              to={artworkService.getItemPath(collectionId, item.id)}
+              key={item.id}
+              image={{
+                src: artworkService.getImagePathSm(creator.id, item.id),
+                alt: item.name.short,
+              }}
+              headline={item.name}
+              subHeadline={`${creator.name.long}, ${item.id.substring(item.id.lastIndexOf('-') + 1)}`} />
+          ))}
+        </List>
+      </div>
+    ))
 }
 
 export default ArtworkCollection
