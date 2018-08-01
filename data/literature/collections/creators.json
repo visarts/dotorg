@@ -7,26 +7,26 @@
   },
   "andersen": {
     "name": { "long": "Hans Christian Andersen", "short": "Andersen" },
-    "desc": "Hans Christian Andersen was born in the town of Odense, Denmark, on 2 April 1805. He was an only child. Andersen's father, also Hans, considered himself related to nobility. His paternal grandmother had told his father that their family had in the past belonged to a higher social class, but investigations prove these stories unfounded. A persistent theory suggests that Andersen was an illegitimate son of King Christian VIII, but this theory has been criticized by others.",
-    "dates": ["April 2 1805", "August 4 1875"],
+    "desc": "Hans Christian Andersen was born in the town of Odense, Denmark, on 2 Apr 1805. He was an only child. Andersen's father, also Hans, considered himself related to nobility. His paternal grandmother had told his father that their family had in the past belonged to a higher social class, but investigations prove these stories unfounded. A persistent theory suggests that Andersen was an illegitimate son of King Christian VIII, but this theory has been criticized by others.",
+    "dates": ["Apr 2 1805", "Aug 4 1875"],
     "type": "creator"
   },
   "dickens": {
     "name": { "long": "Charles Dickens", "short": "Dickens" },
     "desc": "Much has been said of Dickens which cannot be detailed here.",
-    "dates": ["February 7, 1812", "June 9, 1870"],
+    "dates": ["Feb 7, 1812", "June 9, 1870"],
     "type": "creator"
   },
   "dickinson": {
     "name": { "long": "Emily Dickinson", "short": "Dickinson" },
     "desc": "Much has been said of Emily which cannot be detailed here.",
-    "dates": ["December 10, 1830", "May 15, 1886"],
+    "dates": ["Dec 10, 1830", "May 15, 1886"],
     "type": "creator"
   },
   "dickinson": {
     "name": { "long": "Robert Frost", "short": "Frost" },
     "desc": "Much has been said of Frost which cannot be detailed here.",
-    "dates": ["March 26, 1874", "January 29, 1963"],
+    "dates": ["Mar 26, 1874", "Jan 29, 1963"],
     "type": "creator"
   },
   "grimm": {
@@ -44,31 +44,31 @@
   "kipling": {
     "name": { "long": "Rudyard Kipling", "short": "Kipling" },
     "desc": "Much has been said of Rudyard which cannot be detailed here.",
-    "dates": ["December 30, 1865", "January 18, 1936"],
+    "dates": ["Dec 30, 1865", "Jan 18, 1936"],
     "type": "creator"
   },
   "longfellow": {
     "name": { "long": "Henry Wadsworth Longfellow", "short": "Longfellow" },
     "desc": "Much has been said of Mr. Longfellow which cannot be detailed here.",
-    "dates": ["February 27, 1807", "March 24, 1882"],
+    "dates": ["Feb 27, 1807", "Mar 24, 1882"],
     "type": "creator"
   },
   "ohenry": {
     "name": { "long": "O. Henry", "short": "O. Henry" },
     "desc": "Much has been said of O. Henry which cannot be detailed here.",
-    "dates": ["September 11, 1862", "June 5, 1910"],
+    "dates": ["Sept 11, 1862", "June 5, 1910"],
     "type": "creator"
   },
   "poe": {
     "name": { "long": "Edgar Allan Poe", "short": "Poe" },
     "desc": "Much has been said of Mr. Poe which cannot be detailed here.",
-    "dates": ["January 19, 1809", "October 7, 1849"],
+    "dates": ["Jan 19, 1809", "Oct 7, 1849"],
     "type": "creator"
   },
   "shakespeare": {
     "name": { "long": "William Shakespeare", "short": "Shakespeare" },
     "desc": "Much has been said of Shakespeare which cannot be detailed here.",
-    "dates": ["1564", "April 23, 1616"],
+    "dates": ["1564", "Apr 23, 1616"],
     "type": "creator"
   },
   "thoreau": {
@@ -80,13 +80,13 @@
   "twain": {
     "name": { "long": "Mark Twain", "short": "Twain" },
     "desc": "Much has been said of Mark Twain which cannot be detailed here.",
-    "dates": ["November 30, 1835", "April 21, 1910"],
+    "dates": ["Nov 30, 1835", "Apr 21, 1910"],
     "type": "creator"
   },
   "wilde": {
     "name": { "long": "Oscar Wilde", "short": "Wilde" },
     "desc": "Much has been said of Oscar which cannot be detailed here.",
-    "dates": ["October 16, 1854", "November 30, 1900"],
+    "dates": ["Oct 16, 1854", "Nov 30, 1900"],
     "type": "creator"
   }
 }

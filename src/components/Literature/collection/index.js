@@ -5,7 +5,6 @@ import {
   Typography,
 } from 'common'
 import literatureService from 'Services/literature.service'
-import './literatureCollection.style.scss'
 
 const LiteratureCollection = (props) => {
   const collectionId = props.globalState.routing.collection
