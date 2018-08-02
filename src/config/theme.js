@@ -1,3 +1,5 @@
+import Color from 'color'
+
 const sizes = {
   xs: '5px',
   sm: '10px',
@@ -23,8 +25,9 @@ const spacing = {
 }
 
 const breakpoints = {
-  sm: '376px',
-  md: '768px',
+  sm: 376,
+  md: 768,
+  lg: 1280,
 }
 
 const layers = {
@@ -49,6 +52,7 @@ export const themeConfig = {
     },
     background: {
       light: '#afafaa',
+      light2: '#bebebb',
       dark: '#363630',
       darker: '#181615',
     },
@@ -63,3 +67,5 @@ export const themeConfig = {
   layers,
   boxShadows,
 }
+
+console.log(Color(themeConfig.colors.foreground.dark).darken('0.1').string())

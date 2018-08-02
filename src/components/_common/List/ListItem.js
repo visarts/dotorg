@@ -1,13 +1,13 @@
 import _ from 'lodash'
-import { Link } from 'react-router-dom'
 import { Typography, Image } from 'common'
+import { StyledListItem, StyledListItemLink } from './List.style'
 
 const ListItem = props => {
   const truncateLength = window.innerWidth > 768 ? 220 : 100
   if (props.to) {
     return (
-      <li className={`list-item ${props.className || ''}`}>
-        <Link to={props.to} className={`${props.image ? 'list-item-link list-item-link--thumbnail' : 'list-item-link'}`}>
+      <StyledListItem>
+        <StyledListItemLink to={props.to} image={props.image}>
           {props.image &&
             <Image
               type="thumbnail"
@@ -20,15 +20,15 @@ const ListItem = props => {
             {props.subHeadline && <Typography type="listSecondary">{props.subHeadline}</Typography>}
             {props.primaryText && <Typography type="listSecondary">{_.truncate(props.primaryText, { length: truncateLength, separator: ' ' })}</Typography>}
           </div>
-        </Link>
-      </li>
+        </StyledListItemLink>
+      </StyledListItem>
     )
   } else {
     return (
-      <li key={props.key || 0}>
+      <StyledListItem key={props.key || 0}>
         {props.headline && <Typography type="listPrimary">{props.headline}</Typography>}
         {props.subHeadline && <Typography type="listSecondary">{props.subHeadline}</Typography>}
-      </li>
+      </StyledListItem>
     )
   }
 }

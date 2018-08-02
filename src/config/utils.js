@@ -7,6 +7,13 @@ export const smallScreen = (...args) => css`
     ${css(...args)}
   }
 `
+
+export const largeScreen = (...args) => css`
+  @media (min-width: ${themeConfig.breakpoints.lg}) {
+    ${css(...args)}
+  }
+`
+
 export const globalGutters = () => {
   return `
     padding-left: ${themeConfig.spacing.globalGutter};
