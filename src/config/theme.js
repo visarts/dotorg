@@ -57,8 +57,8 @@ const colors = {
     darker: '#181615',
   },
   accent: {
-    purple: '#4c2950',
-    blue: '#333a4f',
+    purple: '#582d5d',
+    blue: '#2d3b65',
   },
 }
 

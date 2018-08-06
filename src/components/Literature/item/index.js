@@ -34,15 +34,14 @@ export default class LiteratureItem extends React.Component {
   setContent = () => {
     dataService.getHTMLContent(this.item.creator.id, this.item.id)
       .then(content => {
-        this.setPageQuery()
         this.setPages(content)
         this.setState({content: this.pages[this.state.currentPage - 1]})
       })
   }
 
-  setPageQuery = () => {
+  setPageQuery = currentPage => {
     const currentHash = this.originalHash.indexOf('?page=') > -1 ? this.originalHash.slice(0, this.originalHash.indexOf('?')) : this.originalHash
-    document.location.hash = `${currentHash}?page=${this.state.currentPage}`
+    document.location.hash = `${currentHash}?page=${currentPage}`
   }
 
   setFirstPage = () => {
@@ -57,12 +56,13 @@ export default class LiteratureItem extends React.Component {
 
   setNextPage = e => {
     const currentPage = this.state.currentPage + 1
-    this.setState({content: this.pages[currentPage], currentPage}, () => this.setPageQuery(currentPage))
+    console.log(currentPage, this.pages)
+    this.setState({content: this.pages[currentPage - 1], currentPage}, () => this.setPageQuery(currentPage))
   }
 
   setPreviousPage = () => {
     const currentPage = this.state.currentPage - 1
-    this.setState({content: this.pages[currentPage], currentPage}, () => this.setPageQuery(currentPage))
+    this.setState({content: this.pages[currentPage - 1], currentPage}, () => this.setPageQuery(currentPage))
   }
 
   hideModal = () => {

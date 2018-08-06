@@ -48,7 +48,7 @@ const getAllCreatorsMetaData = () => {
         id: creatorKey,
         name: creator.name,
         desc: creator.desc,
-        dates: creator.dates
+        dates: creator.dates,
       }
     }
   }))
@@ -62,7 +62,7 @@ const getAllCollectionsMetaData = () => {
       return {
         id: collectionKey,
         name: collection.name,
-        desc: collection.desc
+        desc: collection.desc,
       }
     }
   }))
@@ -84,7 +84,7 @@ const getCollectionGroupedByCreators = collectionId => {
         name: creator.name,
         dates: creator.dates,
         desc: creator.desc,
-        items: []
+        items: [],
       })
     }
     const creatorMatch = _.find(creators, creatorItem => creatorItem.id === creatorId)
@@ -106,7 +106,7 @@ const getCreatorGroupedByCollections = creatorId => {
         id: collectionId,
         name: collection.name,
         desc: collection.desc,
-        items: []
+        items: [],
       })
     }
     const collectionMatch = _.find(collections, collectionItem => collectionItem.id === collectionId)
@@ -120,7 +120,7 @@ const getCollectionPath = collectionId => {
 }
 
 const getItemPath = (collectionId, itemId) => {
-  return `/literature/${collectionId}/${itemId}`
+  return `/literature/${collectionId}/${itemId}?page=1`
 }
 
 export default {
@@ -133,5 +133,5 @@ export default {
   getCollectionPath,
   getAllCreatorKeys,
   getAllCreatorsMetaData,
-  getAllCollectionsMetaData
+  getAllCollectionsMetaData,
 }
