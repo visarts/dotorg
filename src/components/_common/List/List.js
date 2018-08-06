@@ -1,15 +1,12 @@
-import { Component } from 'react'
-import ListComponent from './list.component'
+import React from 'react'
 import ListItem from './ListItem'
 
-class List extends Component {
-  render () {
-    return (
-      <ListComponent {...this.props}>
-        {this.props.children}
-      </ListComponent>
-    )
-  }
+function List (props) {
+  return (
+    <ul>
+      {props.children}
+    </ul>
+  )
 }
 
 export default List

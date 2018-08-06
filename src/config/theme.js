@@ -41,26 +41,29 @@ const boxShadows = {
   [20]: '0px 0px 20px rgba(0, 0, 0, .5)',
 }
 
-export const themeConfig = {
-  colors: {
-    foreground: {
-      light: '#DFDFDF',
-      light2: '#CFCFCF',
-      dark: '#5A5A55',
-      dark2: '#6E6E66',
-      darkest: '#424242',
-    },
-    background: {
-      light: '#afafaa',
-      light2: '#bebebb',
-      dark: '#363630',
-      darker: '#181615',
-    },
-    accent: {
-      purple: '#4c2950',
-      blue: '#333a4f',
-    },
+const colors = {
+  foreground: {
+    light: '#DFDFDF',
+    light2: '#CFCFCF',
+    dark: '#5A5A55',
+    dark2: '#6E6E66',
+    darkest: '#424242',
   },
+  background: {
+    light: '#afafaa',
+    light2: '#bebebb',
+    light3: '#cfcfca',
+    dark: '#363630',
+    darker: '#181615',
+  },
+  accent: {
+    purple: '#4c2950',
+    blue: '#333a4f',
+  },
+}
+
+export const themeConfig = {
+  colors,
   sizes,
   spacing,
   breakpoints,
@@ -68,4 +71,4 @@ export const themeConfig = {
   boxShadows,
 }
 
-console.log(Color(themeConfig.colors.foreground.dark).darken('0.1').string())
+console.log(Color(colors.foreground.dark).darken('0.1'))

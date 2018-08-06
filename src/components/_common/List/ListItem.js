@@ -1,9 +1,13 @@
 import _ from 'lodash'
 import { Typography, Image } from 'common'
-import { StyledListItem, StyledListItemLink } from './List.style'
+import {
+  StyledListItem,
+  StyledListItemLink,
+  StyledListItemDesc,
+} from './List.style'
 
 const ListItem = props => {
-  const truncateLength = window.innerWidth > 768 ? 220 : 100
+  const truncateLength = window.innerWidth > 768 ? 190 : 100
   if (props.to) {
     return (
       <StyledListItem>
@@ -15,11 +19,11 @@ const ListItem = props => {
               default={props.image.default}
               alt={props.image.alt || props.image.src} />
           }
-          <div className="list-item-desc">
+          <StyledListItemDesc>
             {props.headline && <Typography type="listPrimary">{props.headline}</Typography>}
             {props.subHeadline && <Typography type="listSecondary">{props.subHeadline}</Typography>}
             {props.primaryText && <Typography type="listSecondary">{_.truncate(props.primaryText, { length: truncateLength, separator: ' ' })}</Typography>}
-          </div>
+          </StyledListItemDesc>
         </StyledListItemLink>
       </StyledListItem>
     )

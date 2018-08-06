@@ -10,5 +10,18 @@ export const StyledListItemLink = styled(Link)`
     display: ${props.image ? 'flex' : 'block'};
     background-color: ${props.theme.colors.background.light2};
     color: ${props.theme.colors.foreground.darkest};
+    transition: .2s all;
+    &:hover {
+      color: ${props.theme.colors.foreground.dark};
+      background-color: ${props.theme.colors.background.light3};
+    }
+  `}
+`
+
+export const StyledListItemDesc = styled.div`
+  display: flex;
+  flex-direction: column;
+  ${props => css`
+    padding: ${props.theme.sizes.sm};
   `}
 `
