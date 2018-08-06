@@ -58,7 +58,7 @@ const colors = {
   },
   accent: {
     purple: '#582d5d',
-    blue: '#2d3b65',
+    blue: '#29365b',
   },
 }
 

@@ -56,7 +56,6 @@ export default class LiteratureItem extends React.Component {
 
   setNextPage = e => {
     const currentPage = this.state.currentPage + 1
-    console.log(currentPage, this.pages)
     this.setState({content: this.pages[currentPage - 1], currentPage}, () => this.setPageQuery(currentPage))
   }
 
