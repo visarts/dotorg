@@ -1,26 +1,24 @@
 import { Link } from 'react-router-dom'
 import { Typography } from 'common'
-import './home.style.scss'
+import { StyledHomeSection, StyledHomeSectionLink } from './Home.style'
 
 const Home = props => {
   return (
     <div className="home">
       <Typography type="headline" gutterBottom>Welcome home</Typography>
-      <div className="section">
-        <div className="subSection">
+        <StyledHomeSection>
           Portitude is the home of classic art and literature from around the world.
-        </div>
-        <div className="subSection">
-          <Link to="artwork" className="subSection--link subSection--link--artwork">
+        </StyledHomeSection>
+        <StyledHomeSection>
+          <StyledHomeSectionLink to="artwork" section="artwork">
             <Typography type="listPrimary">Artwork</Typography>
-          </Link>
-        </div>
-        <div className="subSection">
-          <Link to="literature" className="subSection--link subSection--link--literature">
+          </StyledHomeSectionLink>
+        </StyledHomeSection>
+        <StyledHomeSection>
+          <StyledHomeSectionLink to="literature" section="literature">
             <Typography type="listPrimary">Literature</Typography>
-          </Link>
-        </div>
-      </div>
+          </StyledHomeSectionLink>
+        </StyledHomeSection>
     </div>
   )
 }
