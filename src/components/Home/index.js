@@ -1,5 +1,5 @@
 import { Typography } from 'common'
-import { StyledHomeSection, StyledHomeSectionLink } from './Home.style'
+import { StyledHomeSection, StyledHomeSubSection, StyledHomeSectionLink } from './Home.style'
 
 const Home = props => {
   return (
@@ -11,11 +11,17 @@ const Home = props => {
       <StyledHomeSection>
         <StyledHomeSectionLink to="artwork" section="artwork">
           <Typography type="listPrimary">Artwork</Typography>
+          <StyledHomeSubSection>
+            <Typography type="paragraph">This is the text that describes the artwork section in detail</Typography>
+          </StyledHomeSubSection>
         </StyledHomeSectionLink>
       </StyledHomeSection>
       <StyledHomeSection>
         <StyledHomeSectionLink to="literature" section="literature">
           <Typography type="listPrimary">Literature</Typography>
+          <StyledHomeSubSection>
+            <Typography type="paragraph">This is the text that describes the artwork section in detail</Typography>
+          </StyledHomeSubSection>
         </StyledHomeSectionLink>
       </StyledHomeSection>
     </div>
