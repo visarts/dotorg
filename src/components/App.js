@@ -42,15 +42,14 @@ export default class App extends React.Component {
   }
 
   // this will update when the route changes and set state with new params
-  componentWillReceiveProps = nextProps => {
-    const updatedLocation = nextProps.location.pathname
-    if (this.currentLocation !== updatedLocation) {
-      const routing = dataService.getRoutingState(updatedLocation)
+  UNSAFE_componentWillReceiveProps = nextProps => {
+    if (this.currentLocation !== nextProps.location.pathname) {
+      const routing = dataService.getRoutingState(nextProps.location.pathname)
       this.setState({
         routing,
         navigation: { ...navigationService.getNavigation(routing), current: navigationService.getCurrent(routing) }
       }, () => {
-        this.currentLocation = updatedLocation
+        this.currentLocation = nextProps.location.pathname
         this.setGlobalClassName()
       })
     }
