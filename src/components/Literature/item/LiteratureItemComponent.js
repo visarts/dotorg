@@ -27,7 +27,7 @@ const ItemComponent = (props) => {
           <div className="pagination">
             <Button
               className="pagination--button"
-              color="primary" variant="raised"
+              color="primary" variant="contained"
               onClick={props.setPreviousPage}
               disabled={props.currentPage === 1}>
               <KeyboardArrowLeft />
@@ -37,7 +37,7 @@ const ItemComponent = (props) => {
             </span>
             <Button
               className="pagination--button"
-              color="primary" variant="raised"
+              color="primary" variant="contained"
               onClick={props.setNextPage}
               disabled={props.currentPage === totalDisplayPages}>
               <KeyboardArrowRight />
