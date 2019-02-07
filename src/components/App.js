@@ -18,7 +18,7 @@ export default class App extends React.Component {
   constructor (props) {
     super(props)
     // this insane logic is needed (for now) to split out any query params on the url
-    this.currentLocation = location.hash.slice(1, location.hash.indexOf('?') > -1 ? location.hash.indexOf('?') : location.hash.length)
+    this.currentLocation = this.getCurrentLocation()
     const routing = dataService.getRoutingState(this.currentLocation)
     this.state = {
       routing,
@@ -27,6 +27,10 @@ export default class App extends React.Component {
         current: navigationService.getCurrent(routing)
       }
     }
+  }
+
+  getCurrentLocation = () => {
+    return location.hash.slice(1, location.hash.indexOf('?') > -1 ? location.hash.indexOf('?') : location.hash.length)
   }
 
   updateAppState = newState => {
@@ -43,14 +47,13 @@ export default class App extends React.Component {
 
   // this will update when the route changes and set state with new params
   UNSAFE_componentWillReceiveProps = nextProps => {
-    const updatedLocation = nextProps.location.pathname
-    if (this.currentLocation !== updatedLocation) {
-      const routing = dataService.getRoutingState(updatedLocation)
+    if (this.currentLocation !== nextProps.location.pathname) {
+      const routing = dataService.getRoutingState(nextProps.location.pathname)
       this.setState({
         routing,
         navigation: { ...navigationService.getNavigation(routing), current: navigationService.getCurrent(routing) }
       }, () => {
-        this.currentLocation = updatedLocation
+        this.currentLocation = nextProps.location.pathname
         this.setGlobalClassName()
       })
     }

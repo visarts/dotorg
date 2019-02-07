@@ -81,6 +81,7 @@ globals:
 #    # - react
 plugins:
   - react
+  - react-hooks
 #plugins:
     #- react
 # extends:
@@ -110,6 +111,7 @@ rules:
     react/react-in-jsx-scope: 0
     react/prop-types: 0
     react/no-unused-state: 2
+    react-hooks/rules-of-hooks: 2
 
     ######## Possible Errors ########
 

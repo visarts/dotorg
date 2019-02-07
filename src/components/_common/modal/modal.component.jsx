@@ -1,4 +1,6 @@
-import Modal from '@material-ui/core/Modal'
+import Dialog from '@material-ui/core/Dialog'
+import Slide from '@material-ui/core/Slide'
+
 import './portitudeModal.style.scss'
 
 /*
@@ -10,17 +12,24 @@ import './portitudeModal.style.scss'
     headerSubTitle: ''
 
 */
+
+const Transition = props => {
+  return <Slide direction="up" {...props} />
+}
+
 const ModalComponent = props => {
   const modalClass = props.size ? `portitudeModal--${props.size}` : ''
 
   return (
-    <Modal
+    <Dialog
+      maxWidth="md"
       open={props.open}
-      onClose={props.onClose}>
+      onClose={props.onClose}
+      TransitionComponent={Transition}>
       <div className={`portitudeModal ${modalClass}`}>
         {props.children}
       </div>
-    </Modal>
+    </Dialog>
   )
 }
 
