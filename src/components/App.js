@@ -42,7 +42,7 @@ export default class App extends React.Component {
   }
 
   // this will update when the route changes and set state with new params
-  componentWillReceiveProps = nextProps => {
+  UNSAFE_componentWillReceiveProps = nextProps => {
     const updatedLocation = nextProps.location.pathname
     if (this.currentLocation !== updatedLocation) {
       const routing = dataService.getRoutingState(updatedLocation)

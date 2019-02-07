@@ -3,13 +3,14 @@ const path = require('path')
 const ROOT_PATH = path.resolve(__dirname)
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 // const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 // const MergeJsonWebpackPlugin = require('merge-jsons-webpack-plugin')
 // const AutoPrefixer = require('autoprefixer')
 
 module.exports = {
+  mode: 'production',
   devtool: 'source-map',
   entry: {
     vendors: './src/vendors.js',
@@ -18,6 +19,11 @@ module.exports = {
   output: {
     path: path.resolve(ROOT_PATH, 'dist'),
     filename: '[name].js'
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    }
   },
   plugins: [
     new CleanWebpackPlugin('dist'),
@@ -30,12 +36,9 @@ module.exports = {
         'NODE_ENV': JSON.stringify('production')
       }
     }),
-    new ExtractTextPlugin({
+    new MiniCssExtractPlugin({
       filename: 'styles/[name].css',
       allChunks: true
-    }),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendors'
     }),
     new webpack.optimize.AggressiveMergingPlugin(),
     new HtmlWebpackPlugin({
@@ -61,32 +64,21 @@ module.exports = {
       {
         test: /\.scss$/,
         exclude: /node_modules/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                url: false,
-                // modules: true,
-                importLoaders: 1,
-                // localIdentName: '[name]__[local]___[hash:base64:4]'
-              }
-            },
-            /* {
-              loader: 'postcss-loader'
-            },*/
-            {
-              loader: 'sass-loader',
-              options: {
-                includePaths: [
-                  path.resolve(ROOT_PATH, 'node_modules'),
-                  path.resolve(ROOT_PATH, 'src/styles')
-                ]
-              }
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader'
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              includePaths: [
+                // path.resolve(ROOT_PATH, 'node_modules'),
+                path.resolve(ROOT_PATH, 'src/styles')
+              ]
             }
-          ]
-        })
+          },
+        ]
       },
       {
 				test: /\.(js|jsx)$/,

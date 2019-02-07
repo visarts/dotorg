@@ -3,12 +3,13 @@ const path = require('path')
 const ROOT_PATH = path.resolve(__dirname)
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 // const MergeJsonWebpackPlugin = require('merge-jsons-webpack-plugin')
 // const AutoPrefixer = require('autoprefixer')
 
 module.exports = {
+  mode: 'development',
   devtool: 'cheap-module-source-map',
   devServer: {
      contentBase: path.join(ROOT_PATH, 'dist')
@@ -22,6 +23,11 @@ module.exports = {
     path: path.resolve(ROOT_PATH, 'dist'),
     filename: '[name].js'
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    }
+  },
   plugins: [
     new CleanWebpackPlugin('dist'),
     new webpack.ProvidePlugin({
@@ -33,11 +39,8 @@ module.exports = {
         'NODE_ENV': JSON.stringify('development')
       }
     }),
-    new ExtractTextPlugin({
+    new MiniCssExtractPlugin({
       filename: 'styles/[name].css'
-    }),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendors'
     }),
     new CopyWebpackPlugin([
       { from: 'src/images', to: 'images'},
@@ -89,27 +92,21 @@ module.exports = {
       {
         test: /\.scss$/,
         exclude: /node_modules/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                url: false,
-                importLoaders: 1,
-              }
-            },
-            {
-              loader: 'sass-loader',
-              options: {
-                includePaths: [
-                  path.resolve(ROOT_PATH, 'node_modules'),
-                  path.resolve(ROOT_PATH, 'src/styles')
-                ]
-              }
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader'
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              includePaths: [
+                // path.resolve(ROOT_PATH, 'node_modules'),
+                path.resolve(ROOT_PATH, 'src/styles')
+              ]
             }
-          ]
-        })
+          },
+        ]
       },
 			{
 				test: /\.(js|jsx)$/,
