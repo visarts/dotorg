@@ -1,5 +1,5 @@
 import artworkService from 'Services/artwork.service'
-import Modal from 'common/modal'
+import { Modal } from 'common'
 import { StyledItemBody, StyledItemImage } from './artworkItem.style'
 
 const ArtworkItem = props => {

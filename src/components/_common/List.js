@@ -1,10 +1,34 @@
+import React from 'react'
 import _ from 'lodash'
 import { Typography, Image } from 'common'
-import {
-  StyledListItem,
-  StyledListItemLink,
-  StyledListItemDesc,
-} from './List.style'
+import styled, { css } from 'styled-components'
+import { Link } from 'react-router-dom'
+
+const StyledListItem = styled.li`
+  border-radius: 5px;
+`
+
+const StyledListItemLink = styled(Link)`
+  ${props => css`
+    display: ${props.image ? 'flex' : 'block'};
+    background-color: ${props.theme.colors.background.light2};
+    color: ${props.theme.colors.foreground.darkest};
+    transition: .2s all;
+    &:hover {
+      color: ${props.theme.colors.foreground.dark};
+      background-color: ${props.theme.colors.background.light3};
+    }
+  `}
+`
+
+const StyledListItemDesc = styled.div`
+  display: flex;
+  flex-direction: column;
+  ${props => css`
+    padding: ${props.theme.sizes.sm};
+  `}
+`
+
 
 const ListItem = props => {
   const truncateLength = window.innerWidth > 768 ? 190 : 100
@@ -37,4 +61,13 @@ const ListItem = props => {
   }
 }
 
-export default ListItem
+function List (props) {
+  return (
+    <ul>
+      {props.children}
+    </ul>
+  )
+}
+
+export default List
+export { ListItem }

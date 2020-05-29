@@ -1,7 +1,7 @@
 import Button from '@material-ui/core/Button'
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft'
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight'
-import Modal from 'common/modal'
+import { Modal } from 'common'
 import { StyledLiteratureItemContent } from './LiteratureItem.style'
 
 const ItemComponent = (props) => {
