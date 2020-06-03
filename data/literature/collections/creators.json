@@ -23,7 +23,7 @@
     "dates": ["Dec 10, 1830", "May 15, 1886"],
     "type": "creator"
   },
-  "dickinson": {
+  "frost": {
     "name": { "long": "Robert Frost", "short": "Frost" },
     "desc": "Much has been said of Frost which cannot be detailed here.",
     "dates": ["Mar 26, 1874", "Jan 29, 1963"],

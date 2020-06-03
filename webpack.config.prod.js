@@ -18,7 +18,8 @@ module.exports = {
   },
   output: {
     path: path.resolve(ROOT_PATH, 'dist'),
-    filename: '[name].js'
+    filename: '[name].js',
+    publicPath: '/',
   },
   optimization: {
     splitChunks: {

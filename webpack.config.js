@@ -12,8 +12,9 @@ module.exports = {
   mode: 'development',
   devtool: 'cheap-module-source-map',
   devServer: {
-     contentBase: path.join(ROOT_PATH, 'dist')
-     // hot: true
+     contentBase: path.join(ROOT_PATH, 'dist'),
+     historyApiFallback: true,
+     hot: true
   },
   entry: {
     vendors: './src/vendors.js',
@@ -21,7 +22,8 @@ module.exports = {
   },
   output: {
     path: path.resolve(ROOT_PATH, 'dist'),
-    filename: '[name].js'
+    filename: '[name].js',
+    publicPath: '/',
   },
   optimization: {
     splitChunks: {
