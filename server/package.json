@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "portitude backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build-client && node index",
+    "start-local": "npm run build-client && PORT=8080 node index",
+    "build-client": "cd .. && npm run build && cd ./server"
+  },
+  "author": "Brendan Best",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

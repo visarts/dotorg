@@ -6,7 +6,7 @@ import ArtworkCreator from './creator'
 import ArtworkItem from './item'
 
 const Artwork = props => {
-
+console.log(props)
   return (
     <div className="artwork">
       <Route exact path="/artwork" render={routeProps => (

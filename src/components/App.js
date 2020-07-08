@@ -30,7 +30,7 @@ export default class App extends React.Component {
   }
 
   getCurrentLocation = () => {
-    return location.hash.slice(1, location.hash.indexOf('?') > -1 ? location.hash.indexOf('?') : location.hash.length)
+    return location.pathname.slice(1, location.pathname.indexOf('?') > -1 ? location.pathname.indexOf('?') : location.pathname.length)
   }
 
   updateAppState = newState => {

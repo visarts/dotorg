@@ -1,16 +1,17 @@
 import axios from 'axios'
 
 const getCollections = type => {
-  return axios.get(`./data/${type}-collections.json`, {
+  return axios.get(`../data/${type}-collections.json`, {
     transformResponse: res => decodeURIComponent(res)
   })
     .then((results) => {
+      console.log(results)
       return JSON.parse(results.data)
     })
 }
 
 const getItems = type => {
-  return axios.get(`./data/${type}-items.json`, {
+  return axios.get(`../data/${type}-items.json`, {
     transformResponse: res => decodeURIComponent(res)
   })
     .then((results) => {
@@ -79,7 +80,7 @@ Work from genre:
 } */
 
 const getRoutingState = (currentRoute) => {
-  const params = currentRoute.slice(1).split('/')
+  const params = currentRoute.split('/').filter(Boolean)
   const mappedParams = {
     section: params[0] || '',
     collection: params[1] || '',

@@ -5,6 +5,7 @@ import storeService from 'Services/store.service'
 const { artwork } = storeService.getStore()
 
 const getCollection = collectionId => {
+  console.log(artwork.collections, collectionId)
   return artwork.collections[collectionId]
 }
 
@@ -107,11 +108,11 @@ const getItemPath = (collectionId, itemId) => {
 }
 
 const getImagePathLg = (collectionId, itemId) => {
-  return `./content/artwork/${collectionId}/${itemId}.jpg`
+  return `../content/artwork/${collectionId}/${itemId}.jpg`
 }
 
 const getImagePathSm = (collectionId, itemId) => {
-  return `./content/artwork/${collectionId}/${itemId}_sm.jpg`
+  return `../content/artwork/${collectionId}/${itemId}_sm.jpg`
 }
 
 export default {

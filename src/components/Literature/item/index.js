@@ -7,7 +7,7 @@ import LiteratureItemComponent from './LiteratureItemComponent'
 export default class LiteratureItem extends React.Component {
   constructor (props) {
     super(props)
-    this.originalHash = document.location.hash
+    this.originalPath = document.location.pathname
     this.state = {
       content: false,
       currentPage:  this.getInitialPageNumber(),
@@ -19,7 +19,7 @@ export default class LiteratureItem extends React.Component {
   }
 
   getInitialPageNumber = () => {
-    return this.originalHash.indexOf('?page=') > -1 ? parseInt(this.originalHash.slice(this.originalHash.indexOf('=') + 1)) : 1
+    return this.originalPath.indexOf('?page=') > -1 ? parseInt(this.originalPath.slice(this.originalPath.indexOf('=') + 1)) : 1
   }
 
   // take the HTML and split it into an array by the items precaculated page sizes
@@ -40,8 +40,8 @@ export default class LiteratureItem extends React.Component {
   }
 
   setPageQuery = currentPage => {
-    const currentHash = this.originalHash.indexOf('?page=') > -1 ? this.originalHash.slice(0, this.originalHash.indexOf('?')) : this.originalHash
-    document.location.hash = `${currentHash}?page=${currentPage}`
+    const currentPath = this.originalPath.indexOf('?page=') > -1 ? this.originalPath.slice(0, this.originalPath.indexOf('?')) : this.originalPath
+    document.location.pathname = `${currentPath}?page=${currentPage}`
   }
 
   setFirstPage = () => {
@@ -66,7 +66,7 @@ export default class LiteratureItem extends React.Component {
 
   hideModal = () => {
     this.setState({modalIsOpen: false}, () => {
-      location.hash = location.hash.substring(0, location.hash.lastIndexOf('/'))
+      location.pathname = location.pathname.substring(0, location.pathname.lastIndexOf('/'))
     })
   }
 

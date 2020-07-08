@@ -46,12 +46,6 @@ module.exports = {
       title: 'Portitude: the Art of Learning',
       inject: true,
       template: './index.ejs',
-      hash: true
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      compressor: {
-        warnings: false
-      }
     }),
     new CopyWebpackPlugin([
       { from: 'src/images', to: 'images'},

@@ -1,6 +1,6 @@
 import './styles/index.scss'
 import { render } from 'react-dom'
-import { Route, HashRouter as Router } from 'react-router-dom'
+import { Route, BrowserRouter as Router } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 
 import { themeConfig } from './config/theme'

@@ -8,7 +8,7 @@ const ArtworkItem = props => {
   const creator = item.creator
 
   const onClose = () => {
-    location.hash = location.hash.substring(0, location.hash.lastIndexOf('/'))
+    location.pathname = location.pathname.substring(0, location.pathname.lastIndexOf('/'))
   }
 
   return (

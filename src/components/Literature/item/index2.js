@@ -5,10 +5,10 @@ import dataService from 'Services/data.service'
 import literatureService from 'Services/literature.service'
 import LiteratureItemComponent from './LiteratureItemComponent'
 
-const originalHash = document.location.hash
+const originalPath = document.location.pathname
 
 const getInitialPageNumber = () => {
-  return originalHash.indexOf('?page=') > -1 ? parseInt(originalHash.slice(originalHash.indexOf('=') + 1)) : 1
+  return originalPath.indexOf('?page=') > -1 ? parseInt(originalPath.slice(originalPath.indexOf('=') + 1)) : 1
 }
 
 const LiteratureItem = props => {
@@ -37,8 +37,8 @@ const LiteratureItem = props => {
   }
 
   const setPageQuery = currentPage => {
-    const currentHash = originalHash.indexOf('?page=') > -1 ? originalHash.slice(0, originalHash.indexOf('?')) : originalHash
-    document.location.hash = `${currentHash}?page=${currentPage}`
+    const currentPath = originalPath.indexOf('?page=') > -1 ? originalPath.slice(0, originalPath.indexOf('?')) : originalPath
+    document.location.pathname = `${currentPath}?page=${currentPage}`
   }
 
   const setFirstPage = () => {
@@ -63,7 +63,7 @@ const LiteratureItem = props => {
 
   const hideModal = () => {
     setState({modalIsOpen: false}, () => {
-      location.hash = location.hash.substring(0, location.hash.lastIndexOf('/'))
+      location.pathname = location.pathname.substring(0, location.pathname.lastIndexOf('/'))
     })
   }
 

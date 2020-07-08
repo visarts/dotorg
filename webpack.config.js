@@ -66,7 +66,6 @@ module.exports = {
       title: 'Portitude: the Art of Learning',
       inject: true,
       template: './index.ejs',
-      hash: false
     })
     /* new MergeJsonWebpackPlugin({
       'output': {
