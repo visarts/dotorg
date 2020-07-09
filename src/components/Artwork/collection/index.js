@@ -11,7 +11,7 @@ const ArtworkCollection = props => {
   const collectionId = props.globalState.routing.collection
   // const collection = artworkService.getCollection(collectionId)
   const groupedCollection = artworkService.getCollectionGroupedByCreators(collectionId)
-
+  console.log(groupedCollection)
   return _.map(groupedCollection, creator => (
       <div key={creator.name.short}>
         <Typography type="subtitle">{creator.name.long}</Typography>

@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 
-import { Route } from 'react-router-dom'
+import { Route, useLocation } from 'react-router-dom'
 
 import dataService from 'Services/data.service'
 import navigationService from 'Services/navigation.service'
@@ -13,7 +13,47 @@ import Literature from './Literature'
 
 import StyledApp from './App.style'
 
-export default class App extends React.Component {
+export default function App () {
+  const [state, setState] = useState({ routing: null, navigation: null })
+  const AppContext = React.createContext(state)
+  const location = useLocation()
+
+  useEffect(() => {
+    console.log('ONE', { state, location })
+    const routing = dataService.getRoutingState(location.pathname)
+    setState({
+      routing,
+      navigation: { ...navigationService.getNavigation(routing), current: navigationService.getCurrent(routing) },
+    })
+    console.log('TWO', { state, location })
+    document.body.className = routing.section || ''
+  }, [location])
+
+  return (
+    <AppContext.Provider value={state}>
+      {state.navigation && state.routing && (
+        <StyledApp isRoot={state.navigation.current === 'root'} id="portitude">
+          <Header globalState={state} />
+          <Navigation globalState={state} />
+          <div className="view">
+            <Route exact path="/" render={routeProps => (
+              <Home globalState={state} {...routeProps} />
+            )} />
+            <Route path="/artwork" render={routeProps => (
+              <Artwork globalState={state} {...routeProps} />
+            )} />
+            <Route path="/literature" render={routeProps => (
+              <Literature globalState={state} {...routeProps} />
+            )} />
+          </div>
+          <Footer globalState={state} />
+        </StyledApp>
+      )}
+    </AppContext.Provider>
+  )
+}
+/*
+export  class asdf extends React.Component {
 
   constructor (props) {
     super(props)
@@ -31,10 +71,6 @@ export default class App extends React.Component {
 
   getCurrentLocation = () => {
     return location.hash.slice(1, location.hash.indexOf('?') > -1 ? location.hash.indexOf('?') : location.hash.length)
-  }
-
-  updateAppState = newState => {
-    this.setState(Object.assign(this.state, newState))
   }
 
   setGlobalClassName = () => {
@@ -80,7 +116,7 @@ export default class App extends React.Component {
 
       refactor history display into carousel
 
-    */
+    
     return (
       <StyledApp isRoot={this.state.navigation.current === 'root'} id="portitude">
         <Header
@@ -110,3 +146,4 @@ export default class App extends React.Component {
     )
   }
 }
+*/
