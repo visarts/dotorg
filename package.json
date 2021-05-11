@@ -26,7 +26,7 @@
     "color": "^3.0.0",
     "fs-extra": "^4.0.2",
     "json-concat": "0.0.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "normalize.css": "^7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
